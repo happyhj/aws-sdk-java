@@ -26,8 +26,8 @@ import java.io.InputStream;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import com.amazonaws.internal.ResettableInputStream;
-import com.amazonaws.internal.SdkInputStream;
+import com.amazonaws.sdkutil.ResettableInputStream;
+import com.amazonaws.sdkutil.SdkInputStream;
 
 /**
  * @deprecated by {@link ResettableInputStream} and this class will be removed

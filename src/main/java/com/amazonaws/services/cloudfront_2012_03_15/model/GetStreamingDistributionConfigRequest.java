@@ -13,7 +13,7 @@
  * permissions and limitations under the License.
  */
 package com.amazonaws.services.cloudfront_2012_03_15.model;
-import com.amazonaws.AmazonWebServiceRequest;
+import com.amazonaws.network.request.AmazonWebServiceRequest;
 
 /**
  * Container for the parameters to the {@link com.amazonaws.services.cloudfront_2012_03_152012_03_15AmazonCloudFront#getStreamingDistributionConfig(GetStreamingDistributionConfigRequest) GetStreamingDistributionConfig operation}.

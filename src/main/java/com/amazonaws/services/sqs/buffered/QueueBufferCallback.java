@@ -16,8 +16,8 @@
 
 package com.amazonaws.services.sqs.buffered;
 
-import com.amazonaws.AmazonWebServiceRequest;
-import com.amazonaws.handlers.AsyncHandler;
+import com.amazonaws.client.handler.request.AsyncHandler;
+import com.amazonaws.network.request.AmazonWebServiceRequest;
 
 /**
  * This class combines the handler we are supposed to call after the request is

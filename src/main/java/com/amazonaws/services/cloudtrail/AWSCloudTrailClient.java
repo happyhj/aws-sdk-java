@@ -20,19 +20,38 @@ import java.util.*;
 import org.apache.commons.logging.*;
 
 import com.amazonaws.*;
-import com.amazonaws.regions.*;
 import com.amazonaws.auth.*;
-import com.amazonaws.handlers.*;
-import com.amazonaws.http.*;
-import com.amazonaws.regions.*;
+import com.amazonaws.authprovider.DefaultAWSCredentialsProviderChain;
+import com.amazonaws.client.ClientConfiguration;
+import com.amazonaws.client.handler.*;
+import com.amazonaws.client.handler.request.HandlerChainFactory;
+import com.amazonaws.client.handler.response.HttpResponseHandler;
+import com.amazonaws.client.handler.response.JsonErrorResponseHandler;
+import com.amazonaws.client.handler.response.JsonResponseHandler;
+import com.amazonaws.client.http.*;
+import com.amazonaws.client.metrics.*;
+import com.amazonaws.client.regions.*;
+import com.amazonaws.client.service.AmazonWebServiceClient;
+import com.amazonaws.client.service.ExecutionContext;
+import com.amazonaws.credential.AWSCredentials;
+import com.amazonaws.credential.AWSCredentialsProvider;
+import com.amazonaws.credential.StaticCredentialsProvider;
+import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.internal.*;
-import com.amazonaws.metrics.*;
+import com.amazonaws.metricsutil.AWSRequestMetrics;
+import com.amazonaws.metricsutil.AWSRequestMetrics.Field;
+import com.amazonaws.network.request.AmazonWebServiceRequest;
+import com.amazonaws.network.request.RequestMetricCollector;
+import com.amazonaws.network.response.AmazonWebServiceResponse;
+import com.amazonaws.network.type.Request;
+import com.amazonaws.network.type.Response;
 import com.amazonaws.transform.*;
 import com.amazonaws.util.*;
-import static com.amazonaws.util.IOUtils.*;
-import com.amazonaws.util.AWSRequestMetrics.Field;
-import com.amazonaws.util.json.*;
 
+import static com.amazonaws.sdkutil.IOUtils.*;
+
+import com.amazonaws.util.json.*;
 import com.amazonaws.services.cloudtrail.model.*;
 import com.amazonaws.services.cloudtrail.model.transform.*;
 

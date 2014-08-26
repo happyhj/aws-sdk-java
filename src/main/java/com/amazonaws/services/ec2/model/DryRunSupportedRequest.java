@@ -14,8 +14,8 @@
  */
 package com.amazonaws.services.ec2.model;
 
-import com.amazonaws.AmazonWebServiceRequest;
-import com.amazonaws.Request;
+import com.amazonaws.network.request.AmazonWebServiceRequest;
+import com.amazonaws.network.type.Request;
 
 /**
  * Generic interface for operation request that is supported with dry-run.

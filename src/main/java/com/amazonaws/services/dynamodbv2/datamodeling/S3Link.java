@@ -20,8 +20,9 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.net.URL;
 
-import com.amazonaws.AmazonClientException;
-import com.amazonaws.metrics.RequestMetricCollector;
+import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.json.Jackson;
+import com.amazonaws.network.request.RequestMetricCollector;
 import com.amazonaws.services.s3.AmazonS3Client;
 import com.amazonaws.services.s3.internal.BucketNameUtils;
 import com.amazonaws.services.s3.model.AccessControlList;
@@ -34,7 +35,6 @@ import com.amazonaws.services.s3.model.Region;
 import com.amazonaws.services.s3.model.S3Object;
 import com.amazonaws.services.s3.model.S3ObjectInputStream;
 import com.amazonaws.services.s3.transfer.TransferManager;
-import com.amazonaws.util.json.Jackson;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 

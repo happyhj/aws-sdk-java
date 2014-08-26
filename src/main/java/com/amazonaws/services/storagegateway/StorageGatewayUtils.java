@@ -24,8 +24,8 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.params.BasicHttpParams;
 import org.apache.http.params.HttpParams;
 
-import com.amazonaws.AmazonClientException;
-import com.amazonaws.regions.Region;
+import com.amazonaws.client.region.Region;
+import com.amazonaws.exception.AmazonClientException;
 
 /**
  * Utilities for working with the AWS Storage Gateway service, such as

@@ -16,7 +16,7 @@ package com.amazonaws.services.cognitosync.model;
 
 import java.io.Serializable;
 
-import com.amazonaws.AmazonWebServiceRequest;
+import com.amazonaws.network.request.AmazonWebServiceRequest;
 
 /**
  * Container for the parameters to the {@link com.amazonaws.services.cognitosync.AmazonCognitoSync#describeIdentityUsage(DescribeIdentityUsageRequest) DescribeIdentityUsage operation}.

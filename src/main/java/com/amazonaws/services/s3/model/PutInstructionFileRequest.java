@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.amazonaws.AmazonWebServiceRequest;
+import com.amazonaws.network.request.AmazonWebServiceRequest;
 
 /**
  * Used to create a new instruction file, typically used to share an encrypted

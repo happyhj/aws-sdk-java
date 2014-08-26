@@ -14,6 +14,7 @@
  */
 package com.amazonaws.event;
 
+
 /**
  * An interface that filters the incoming events before passing
  * them into the registered listeners.

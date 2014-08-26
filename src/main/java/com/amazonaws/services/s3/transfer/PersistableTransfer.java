@@ -14,14 +14,14 @@
  */
 package com.amazonaws.services.s3.transfer;
 
-import static com.amazonaws.util.StringUtils.UTF8;
+import static com.amazonaws.stringutil.StringUtils.UTF8;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-import com.amazonaws.util.json.Jackson;
+import com.amazonaws.json.Jackson;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;

@@ -16,8 +16,8 @@ package com.amazonaws.services.simpleworkflow.flow;
 
 import java.util.concurrent.CancellationException;
 
-import com.amazonaws.AmazonClientException;
-import com.amazonaws.AmazonServiceException;
+import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.services.simpleworkflow.AmazonSimpleWorkflow;
 import com.amazonaws.services.simpleworkflow.flow.annotations.ManualActivityCompletion;
 import com.amazonaws.services.simpleworkflow.flow.generic.ActivityImplementation;

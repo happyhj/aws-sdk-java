@@ -21,8 +21,8 @@ import java.util.concurrent.CancellationException;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import com.amazonaws.AmazonServiceException;
-import com.amazonaws.AmazonServiceException.ErrorType;
+import com.amazonaws.exception.AmazonServiceException;
+import com.amazonaws.exception.AmazonServiceException.ErrorType;
 import com.amazonaws.services.simpleworkflow.flow.DecisionContext;
 import com.amazonaws.services.simpleworkflow.flow.WorkflowException;
 import com.amazonaws.services.simpleworkflow.flow.core.AsyncScope;

@@ -14,8 +14,8 @@
  */
 package com.amazonaws.services.ec2.model;
 
-import com.amazonaws.AmazonServiceException;
-import com.amazonaws.AmazonWebServiceRequest;
+import com.amazonaws.exception.AmazonServiceException;
+import com.amazonaws.network.request.AmazonWebServiceRequest;
 
 /**
  * Result of a dry-run operation.

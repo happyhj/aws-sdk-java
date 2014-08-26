@@ -19,11 +19,11 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
-import com.amazonaws.AmazonClientException;
-import com.amazonaws.AmazonServiceException;
-import com.amazonaws.ClientConfiguration;
-import com.amazonaws.auth.AWSCredentials;
-import com.amazonaws.auth.AWSCredentialsProvider;
+import com.amazonaws.client.ClientConfiguration;
+import com.amazonaws.credential.AWSCredentials;
+import com.amazonaws.credential.AWSCredentialsProvider;
+import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.services.cloudfront_2012_03_15.model.CreateCloudFrontOriginAccessIdentityRequest;
 import com.amazonaws.services.cloudfront_2012_03_15.model.CreateCloudFrontOriginAccessIdentityResult;
 import com.amazonaws.services.cloudfront_2012_03_15.model.CreateDistributionRequest;

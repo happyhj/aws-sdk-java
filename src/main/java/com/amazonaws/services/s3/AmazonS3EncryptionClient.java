@@ -16,13 +16,13 @@ package com.amazonaws.services.s3;
 
 import java.io.File;
 
-import com.amazonaws.AmazonClientException;
-import com.amazonaws.AmazonServiceException;
-import com.amazonaws.ClientConfiguration;
-import com.amazonaws.auth.AWSCredentials;
-import com.amazonaws.auth.AWSCredentialsProvider;
-import com.amazonaws.internal.StaticCredentialsProvider;
-import com.amazonaws.metrics.RequestMetricCollector;
+import com.amazonaws.client.ClientConfiguration;
+import com.amazonaws.credential.AWSCredentials;
+import com.amazonaws.credential.AWSCredentialsProvider;
+import com.amazonaws.credential.StaticCredentialsProvider;
+import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.exception.AmazonServiceException;
+import com.amazonaws.network.request.RequestMetricCollector;
 import com.amazonaws.services.s3.internal.S3Direct;
 import com.amazonaws.services.s3.internal.crypto.CryptoModuleDispatcher;
 import com.amazonaws.services.s3.internal.crypto.S3CryptoModule;

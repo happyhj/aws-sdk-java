@@ -19,8 +19,8 @@ package com.amazonaws.services.s3.internal;
 
 import java.io.InputStream;
 
-import com.amazonaws.AmazonWebServiceResponse;
-import com.amazonaws.http.HttpResponse;
+import com.amazonaws.network.response.AmazonWebServiceResponse;
+import com.amazonaws.network.response.HttpResponse;
 
 /**
  * Custom S3 response handler for responses that simply contain text data that

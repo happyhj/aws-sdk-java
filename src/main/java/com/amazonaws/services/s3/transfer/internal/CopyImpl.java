@@ -17,8 +17,8 @@ package com.amazonaws.services.s3.transfer.internal;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 
-import com.amazonaws.AmazonClientException;
-import com.amazonaws.AmazonServiceException;
+import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.services.s3.transfer.Copy;
 import com.amazonaws.services.s3.transfer.TransferProgress;
 import com.amazonaws.services.s3.transfer.model.CopyResult;

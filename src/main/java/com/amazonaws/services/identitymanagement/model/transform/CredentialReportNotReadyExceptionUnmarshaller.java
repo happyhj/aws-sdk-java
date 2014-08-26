@@ -16,10 +16,9 @@ package com.amazonaws.services.identitymanagement.model.transform;
 
 import org.w3c.dom.Node;
 
-import com.amazonaws.AmazonServiceException;
 import com.amazonaws.util.XpathUtils;
 import com.amazonaws.transform.StandardErrorUnmarshaller;
-
+import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.services.identitymanagement.model.CredentialReportNotReadyException;
 
 public class CredentialReportNotReadyExceptionUnmarshaller extends StandardErrorUnmarshaller {

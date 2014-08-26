@@ -20,8 +20,8 @@ import java.util.Map;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import com.amazonaws.AmazonWebServiceResponse;
-import com.amazonaws.http.HttpResponse;
+import com.amazonaws.network.response.AmazonWebServiceResponse;
+import com.amazonaws.network.response.HttpResponse;
 import com.amazonaws.transform.Unmarshaller;
 
 /**
@@ -51,7 +51,7 @@ public class S3XmlResponseHandler<T> extends AbstractS3ResponseHandler<T> {
     }
 
     /**
-     * @see com.amazonaws.http.HttpResponseHandler#handle(com.amazonaws.http.HttpResponse)
+     * @see com.amazonaws.client.handler.response.HttpResponseHandler#handle(com.amazonaws.network.response.HttpResponse)
      */
     public AmazonWebServiceResponse<T> handle(HttpResponse response) throws Exception {
         AmazonWebServiceResponse<T> awsResponse = parseResponseMetadata(response);

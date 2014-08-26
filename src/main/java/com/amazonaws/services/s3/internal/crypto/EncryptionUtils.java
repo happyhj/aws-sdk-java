@@ -35,7 +35,10 @@ import javax.crypto.SecretKey;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
-import com.amazonaws.AmazonClientException;
+import com.amazonaws.codec.Base64;
+import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.json.JSONException;
+import com.amazonaws.json.JSONObject;
 import com.amazonaws.services.s3.Headers;
 import com.amazonaws.services.s3.internal.InputSubstream;
 import com.amazonaws.services.s3.internal.Mimetypes;
@@ -54,10 +57,7 @@ import com.amazonaws.services.s3.model.S3ObjectId;
 import com.amazonaws.services.s3.model.S3ObjectInputStream;
 import com.amazonaws.services.s3.model.StaticEncryptionMaterialsProvider;
 import com.amazonaws.services.s3.model.UploadPartRequest;
-import com.amazonaws.util.Base64;
 import com.amazonaws.util.LengthCheckInputStream;
-import com.amazonaws.util.json.JSONException;
-import com.amazonaws.util.json.JSONObject;
 
 /**
  * The EncryptionUtils class encrypts and decrypts data stored in S3.  It can be used to prepare

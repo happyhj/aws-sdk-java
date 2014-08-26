@@ -24,9 +24,9 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.http.annotation.Immutable;
 
-import com.amazonaws.regions.Regions;
-import com.amazonaws.util.ClassLoaderHelper;
-import com.amazonaws.util.json.Jackson;
+import com.amazonaws.classutil.ClassLoaderHelper;
+import com.amazonaws.client.region.Regions;
+import com.amazonaws.json.Jackson;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 

@@ -19,9 +19,9 @@ import static com.amazonaws.services.s3.model.CryptoMode.EncryptionOnly;
 
 import java.io.File;
 
-import com.amazonaws.AmazonClientException;
-import com.amazonaws.AmazonServiceException;
-import com.amazonaws.auth.AWSCredentialsProvider;
+import com.amazonaws.credential.AWSCredentialsProvider;
+import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.services.s3.internal.S3Direct;
 import com.amazonaws.services.s3.model.AbortMultipartUploadRequest;
 import com.amazonaws.services.s3.model.CompleteMultipartUploadRequest;

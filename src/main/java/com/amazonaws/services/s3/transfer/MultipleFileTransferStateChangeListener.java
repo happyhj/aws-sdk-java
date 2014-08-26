@@ -16,7 +16,7 @@ package com.amazonaws.services.s3.transfer;
 
 import java.util.concurrent.CountDownLatch;
 
-import com.amazonaws.AmazonClientException;
+import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.services.s3.transfer.Transfer.TransferState;
 import com.amazonaws.services.s3.transfer.internal.MultipleFileTransfer;
 import com.amazonaws.services.s3.transfer.internal.TransferStateChangeListener;

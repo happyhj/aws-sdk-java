@@ -14,7 +14,7 @@
  */
 package com.amazonaws.services.autoscaling.model;
 
-import com.amazonaws.AmazonServiceException;
+import com.amazonaws.exception.AmazonServiceException;
 
 /**
  * <p>

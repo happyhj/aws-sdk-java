@@ -14,7 +14,7 @@
  */
 package com.amazonaws.services.s3.model;
 
-import com.amazonaws.AmazonServiceException;
+import com.amazonaws.exception.AmazonServiceException;
 
 /**
  * Provides an extension of the AmazonServiceException

@@ -19,7 +19,7 @@ import java.io.InputStream;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-import com.amazonaws.internal.SdkFilterInputStream;
+import com.amazonaws.sdkutil.SdkFilterInputStream;
 
 /**
  * Simple InputStream wrapper that examines the wrapped stream's contents as

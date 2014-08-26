@@ -16,8 +16,8 @@ package com.amazonaws.services.ec2.model;
 
 import java.io.Serializable;
 
-import com.amazonaws.AmazonWebServiceRequest;
-import com.amazonaws.Request;
+import com.amazonaws.network.request.AmazonWebServiceRequest;
+import com.amazonaws.network.type.Request;
 import com.amazonaws.services.ec2.model.transform.ReplaceNetworkAclAssociationRequestMarshaller;
 
 /**

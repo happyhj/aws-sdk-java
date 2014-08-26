@@ -14,7 +14,7 @@
  */
 package com.amazonaws.services.simpleworkflow.model;
 
-import com.amazonaws.AmazonServiceException;
+import com.amazonaws.exception.AmazonServiceException;
 
 /**
  * AmazonSimpleWorkflow exception

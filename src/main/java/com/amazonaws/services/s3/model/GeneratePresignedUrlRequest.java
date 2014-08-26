@@ -18,8 +18,8 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.amazonaws.AmazonWebServiceRequest;
 import com.amazonaws.HttpMethod;
+import com.amazonaws.network.request.AmazonWebServiceRequest;
 import com.amazonaws.services.s3.AmazonS3;
 
 /**

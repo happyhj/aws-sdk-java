@@ -14,7 +14,7 @@
  */
 package com.amazonaws.event;
 
-import com.amazonaws.AmazonClientException;
+import com.amazonaws.exception.AmazonClientException;
 
 /**
  * Listener interface for transfer progress events.

@@ -17,9 +17,9 @@ package com.amazonaws.services.s3.transfer.internal;
 import java.io.IOException;
 import java.util.Collection;
 
-import com.amazonaws.AmazonClientException;
-import com.amazonaws.AmazonServiceException;
 import com.amazonaws.event.ProgressListenerChain;
+import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.services.s3.transfer.Download;
 import com.amazonaws.services.s3.transfer.MultipleFileDownload;
 import com.amazonaws.services.s3.transfer.Transfer;

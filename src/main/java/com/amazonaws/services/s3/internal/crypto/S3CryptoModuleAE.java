@@ -14,11 +14,11 @@
  */
 package com.amazonaws.services.s3.internal.crypto;
 
+import static com.amazonaws.sdkutil.IOUtils.closeQuietly;
 import static com.amazonaws.services.s3.AmazonS3EncryptionClient.USER_AGENT;
 import static com.amazonaws.services.s3.model.CryptoMode.AuthenticatedEncryption;
 import static com.amazonaws.services.s3.model.CryptoMode.StrictAuthenticatedEncryption;
 import static com.amazonaws.services.s3.model.ExtraMaterialsDescription.NONE;
-import static com.amazonaws.util.IOUtils.closeQuietly;
 
 import java.io.BufferedOutputStream;
 import java.io.ByteArrayInputStream;
@@ -30,10 +30,11 @@ import java.io.OutputStream;
 import java.util.Collections;
 import java.util.Map;
 
-import com.amazonaws.AmazonClientException;
-import com.amazonaws.auth.AWSCredentialsProvider;
-import com.amazonaws.auth.DefaultAWSCredentialsProviderChain;
-import com.amazonaws.internal.SdkFilterInputStream;
+import com.amazonaws.authprovider.DefaultAWSCredentialsProviderChain;
+import com.amazonaws.credential.AWSCredentialsProvider;
+import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.json.Jackson;
+import com.amazonaws.sdkutil.SdkFilterInputStream;
 import com.amazonaws.services.s3.internal.S3Direct;
 import com.amazonaws.services.s3.model.CryptoConfiguration;
 import com.amazonaws.services.s3.model.CryptoMode;
@@ -47,7 +48,6 @@ import com.amazonaws.services.s3.model.S3Object;
 import com.amazonaws.services.s3.model.S3ObjectId;
 import com.amazonaws.services.s3.model.S3ObjectInputStream;
 import com.amazonaws.services.s3.model.UploadPartRequest;
-import com.amazonaws.util.json.Jackson;
 
 /**
  * Authenticated encryption (AE) cryptographic module for the S3 encryption client.

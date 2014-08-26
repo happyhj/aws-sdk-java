@@ -15,7 +15,12 @@
 package com.amazonaws.services.route53domains;
 
 import com.amazonaws.*;
-import com.amazonaws.regions.*;
+import com.amazonaws.client.ClientConfiguration;
+import com.amazonaws.client.region.Region;
+import com.amazonaws.client.regions.*;
+import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.exception.AmazonServiceException;
+import com.amazonaws.network.request.AmazonWebServiceRequest;
 import com.amazonaws.services.route53domains.model.*;
 
 /**
@@ -70,13 +75,13 @@ public interface AmazonRoute53Domains {
      *
      * @param region
      *            The region this client will communicate with. See
-     *            {@link Region#getRegion(com.amazonaws.regions.Regions)} for
+     *            {@link Region#getRegion(com.amazonaws.client.regions.Regions)} for
      *            accessing a given region.
      * @throws java.lang.IllegalArgumentException
      *             If the given region is null, or if this service isn't
      *             available in the given region. See
      *             {@link Region#isServiceSupported(String)}
-     * @see Region#getRegion(com.amazonaws.regions.Regions)
+     * @see Region#getRegion(com.amazonaws.client.regions.Regions)
      * @see Region#createClient(Class, com.amazonaws.auth.AWSCredentialsProvider, ClientConfiguration)
      */
     public void setRegion(Region region) throws java.lang.IllegalArgumentException;

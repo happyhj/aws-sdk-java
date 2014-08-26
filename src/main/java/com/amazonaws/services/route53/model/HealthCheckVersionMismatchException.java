@@ -14,7 +14,7 @@
  */
 package com.amazonaws.services.route53.model;
 
-import com.amazonaws.AmazonServiceException;
+import com.amazonaws.exception.AmazonServiceException;
 
 /**
  * AmazonRoute53 exception

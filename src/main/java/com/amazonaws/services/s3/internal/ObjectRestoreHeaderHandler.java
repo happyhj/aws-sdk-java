@@ -21,7 +21,7 @@ import java.util.regex.Pattern;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import com.amazonaws.http.HttpResponse;
+import com.amazonaws.network.response.HttpResponse;
 import com.amazonaws.services.s3.Headers;
 
 /**

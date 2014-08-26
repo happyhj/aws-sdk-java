@@ -18,7 +18,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import com.amazonaws.AmazonClientException;
+import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.services.s3.internal.XmlWriter;
 import com.amazonaws.services.s3.model.PartETag;
 import com.amazonaws.services.s3.model.RestoreObjectRequest;

@@ -34,6 +34,9 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
+import com.amazonaws.codec.Base64;
+import com.amazonaws.dateutil.DateUtils;
+import com.amazonaws.stringutil.StringUtils;
 import com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl;
 import com.sun.org.apache.xml.internal.dtm.DTMManager;
 import com.sun.org.apache.xml.internal.dtm.ref.DTMManagerDefault;

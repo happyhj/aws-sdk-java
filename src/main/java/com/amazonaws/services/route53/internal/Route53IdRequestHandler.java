@@ -14,8 +14,8 @@
  */
 package com.amazonaws.services.route53.internal;
 
-import com.amazonaws.Request;
-import com.amazonaws.handlers.AbstractRequestHandler;
+import com.amazonaws.client.handler.request.AbstractRequestHandler;
+import com.amazonaws.network.type.Request;
 import com.amazonaws.services.route53.model.AliasTarget;
 import com.amazonaws.services.route53.model.ChangeInfo;
 import com.amazonaws.services.route53.model.ChangeResourceRecordSetsResult;

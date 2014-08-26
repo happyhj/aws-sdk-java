@@ -14,7 +14,7 @@
  */
 package com.amazonaws.services.logs.model;
 
-import com.amazonaws.AmazonServiceException;
+import com.amazonaws.exception.AmazonServiceException;
 
 /**
  * AWSLogs exception

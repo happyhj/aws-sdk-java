@@ -16,9 +16,9 @@ package com.amazonaws.retry;
 
 import org.apache.http.annotation.Immutable;
 
-import com.amazonaws.AmazonClientException;
-import com.amazonaws.AmazonWebServiceRequest;
-import com.amazonaws.ClientConfiguration;
+import com.amazonaws.client.ClientConfiguration;
+import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.network.request.AmazonWebServiceRequest;
 
 /**
  * Retry policy that can be configured on a specific service client using

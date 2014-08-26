@@ -17,7 +17,7 @@
 
 package com.amazonaws.services.sqs.buffered;
 
-import com.amazonaws.AmazonClientException;
+import com.amazonaws.exception.AmazonClientException;
 
 public class QueueBufferConfig {
 

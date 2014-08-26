@@ -14,7 +14,7 @@
  */
 package com.amazonaws.services.kinesis.model;
 
-import com.amazonaws.AmazonServiceException;
+import com.amazonaws.exception.AmazonServiceException;
 
 /**
  * 

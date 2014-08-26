@@ -28,6 +28,8 @@ import java.security.NoSuchAlgorithmException;
 
 import org.apache.commons.logging.LogFactory;
 
+import com.amazonaws.codec.Base64;
+
 /**
  * Utility methods for computing MD5 sums.
  */

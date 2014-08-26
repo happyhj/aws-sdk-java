@@ -14,7 +14,7 @@
  */
 package com.amazonaws.services.s3.model;
 
-import static com.amazonaws.util.IOUtils.release;
+import static com.amazonaws.sdkutil.IOUtils.release;
 
 import java.io.File;
 import java.io.InputStream;

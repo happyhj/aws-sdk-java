@@ -14,6 +14,8 @@
  */
 package com.amazonaws.auth;
 
+import com.amazonaws.credential.AWSCredentials;
+
 
 /**
  * Basic implementation of the AWSCredentials interface that allows use of "anonymous"

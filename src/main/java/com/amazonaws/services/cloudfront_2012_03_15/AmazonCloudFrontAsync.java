@@ -16,8 +16,8 @@ package com.amazonaws.services.cloudfront_2012_03_15;
 
 import java.util.concurrent.Future;
 
-import com.amazonaws.AmazonClientException;
-import com.amazonaws.AmazonServiceException;
+import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.services.cloudfront_2012_03_15.model.CreateCloudFrontOriginAccessIdentityRequest;
 import com.amazonaws.services.cloudfront_2012_03_15.model.CreateCloudFrontOriginAccessIdentityResult;
 import com.amazonaws.services.cloudfront_2012_03_15.model.CreateDistributionRequest;

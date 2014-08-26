@@ -18,8 +18,8 @@ import java.net.URI;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.amazonaws.Request;
-import com.amazonaws.handlers.AbstractRequestHandler;
+import com.amazonaws.client.handler.request.AbstractRequestHandler;
+import com.amazonaws.network.type.Request;
 
 public class SQSRequestHandler extends AbstractRequestHandler {
 

@@ -14,7 +14,7 @@
  */
 package com.amazonaws.services.s3.model;
 
-import com.amazonaws.AmazonWebServiceRequest;
+import com.amazonaws.network.request.AmazonWebServiceRequest;
 
 /**
  * Request object containing all the options for setting a bucket's Access Control List (ACL).

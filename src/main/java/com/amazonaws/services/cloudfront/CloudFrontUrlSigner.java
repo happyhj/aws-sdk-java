@@ -14,7 +14,7 @@
  */
 package com.amazonaws.services.cloudfront;
 
-import static com.amazonaws.util.StringUtils.UTF8;
+import static com.amazonaws.stringutil.StringUtils.UTF8;
 import static java.util.concurrent.TimeUnit.MILLISECONDS;
 
 import java.io.File;
@@ -31,13 +31,13 @@ import java.security.spec.InvalidKeySpecException;
 import java.util.Calendar;
 import java.util.Date;
 
-import com.amazonaws.AmazonClientException;
 import com.amazonaws.auth.PEM;
 import com.amazonaws.auth.RSA;
-import com.amazonaws.util.Base64;
-import com.amazonaws.util.DateUtils;
-import com.amazonaws.util.IOUtils;
-import com.amazonaws.util.StringUtils;
+import com.amazonaws.codec.Base64;
+import com.amazonaws.dateutil.DateUtils;
+import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.sdkutil.IOUtils;
+import com.amazonaws.stringutil.StringUtils;
 
 // The source code originated from the .NET implementation at
 // https://github.com/aws/aws-sdk-net/blob/master/AWSSDK_DotNet35/Amazon.CloudFront/AmazonCloudFrontUrlSigner.cs

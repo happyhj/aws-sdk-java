@@ -14,7 +14,7 @@
  */
 package com.amazonaws.services.s3.model;
 
-import com.amazonaws.AmazonWebServiceRequest;
+import com.amazonaws.network.request.AmazonWebServiceRequest;
 
 /**
  * Container object for overriding headers on a {@link GetObjectRequest} or

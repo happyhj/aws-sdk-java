@@ -14,10 +14,9 @@
  */
 package com.amazonaws.services.glacier.model.transform;
 
-import com.amazonaws.AmazonServiceException;
 import com.amazonaws.transform.GlacierErrorUnmarshaller;
-import com.amazonaws.util.json.JSONObject;
-
+import com.amazonaws.exception.AmazonServiceException;
+import com.amazonaws.json.JSONObject;
 import com.amazonaws.services.glacier.model.ServiceUnavailableException;
 
 public class ServiceUnavailableExceptionUnmarshaller extends GlacierErrorUnmarshaller {

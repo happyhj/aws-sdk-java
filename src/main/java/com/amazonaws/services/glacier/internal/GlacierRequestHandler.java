@@ -17,8 +17,8 @@ package com.amazonaws.services.glacier.internal;
 import java.util.Arrays;
 import java.util.List;
 
-import com.amazonaws.Request;
-import com.amazonaws.handlers.AbstractRequestHandler;
+import com.amazonaws.client.handler.request.AbstractRequestHandler;
+import com.amazonaws.network.type.Request;
 import com.amazonaws.services.glacier.model.DescribeJobRequest;
 import com.amazonaws.services.glacier.model.GetJobOutputRequest;
 import com.amazonaws.services.glacier.model.UploadArchiveRequest;

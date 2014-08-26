@@ -14,7 +14,7 @@
  */
 package com.amazonaws.services.s3.model;
 
-import com.amazonaws.AmazonWebServiceRequest;
+import com.amazonaws.network.request.AmazonWebServiceRequest;
 import com.amazonaws.services.s3.AmazonS3Client;
 
 /**

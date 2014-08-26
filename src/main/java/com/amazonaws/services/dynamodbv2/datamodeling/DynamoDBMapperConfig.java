@@ -14,7 +14,7 @@
  */
 package com.amazonaws.services.dynamodbv2.datamodeling;
 
-import com.amazonaws.metrics.RequestMetricCollector;
+import com.amazonaws.network.request.RequestMetricCollector;
 
 /**
  * Immutable configuration object for service call behavior. An instance of this

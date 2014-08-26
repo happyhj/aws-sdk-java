@@ -23,14 +23,15 @@ import java.io.Writer;
 import java.util.Map;
 import java.util.List;
 
-import com.amazonaws.AmazonClientException;
-import com.amazonaws.Request;
-import com.amazonaws.DefaultRequest;
-import com.amazonaws.http.HttpMethodName;
+import com.amazonaws.codec.BinaryUtils;
+import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.json.JSONWriter;
+import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.request.DefaultRequest;
+import com.amazonaws.network.type.Request;
 import com.amazonaws.services.dynamodb.model.*;
+import com.amazonaws.stringutil.StringUtils;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.BinaryUtils;
-import com.amazonaws.util.StringUtils;
 import com.amazonaws.util.StringInputStream;
 import com.amazonaws.util.json.*;
 

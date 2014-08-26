@@ -16,12 +16,12 @@ package com.amazonaws.services.s3.internal;
 
 import java.util.Date;
 
-import com.amazonaws.AmazonClientException;
-import com.amazonaws.Request;
-import com.amazonaws.auth.AWSCredentials;
 import com.amazonaws.auth.AWSSessionCredentials;
-import com.amazonaws.auth.AbstractAWSSigner;
 import com.amazonaws.auth.SigningAlgorithm;
+import com.amazonaws.client.signer.AbstractAWSSigner;
+import com.amazonaws.credential.AWSCredentials;
+import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.network.type.Request;
 
 public class S3QueryStringSigner<T> extends AbstractAWSSigner {
 

@@ -21,6 +21,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.http.annotation.ThreadSafe;
 
+import com.amazonaws.classutil.ClassLoaderHelper;
 import com.amazonaws.internal.config.InternalConfig;
 
 /**

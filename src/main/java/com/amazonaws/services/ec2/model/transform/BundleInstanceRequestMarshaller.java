@@ -18,13 +18,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.amazonaws.AmazonClientException;
-import com.amazonaws.Request;
-import com.amazonaws.DefaultRequest;
+import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.internal.ListWithAutoConstructFlag;
+import com.amazonaws.network.request.DefaultRequest;
+import com.amazonaws.network.type.Request;
 import com.amazonaws.services.ec2.model.*;
+import com.amazonaws.stringutil.StringUtils;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringUtils;
 
 /**
  * Bundle Instance Request Marshaller

@@ -18,8 +18,8 @@ import java.io.InputStream;
 import java.util.Arrays;
 import java.util.List;
 
-import com.amazonaws.AmazonWebServiceResponse;
-import com.amazonaws.http.HttpResponse;
+import com.amazonaws.network.response.AmazonWebServiceResponse;
+import com.amazonaws.network.response.HttpResponse;
 import com.amazonaws.transform.Unmarshaller;
 
 

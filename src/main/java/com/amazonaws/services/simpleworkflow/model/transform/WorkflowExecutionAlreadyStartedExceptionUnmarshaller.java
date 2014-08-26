@@ -14,10 +14,9 @@
  */
 package com.amazonaws.services.simpleworkflow.model.transform;
 
-import com.amazonaws.AmazonServiceException;
 import com.amazonaws.transform.JsonErrorUnmarshaller;
-import com.amazonaws.util.json.JSONObject;
-
+import com.amazonaws.exception.AmazonServiceException;
+import com.amazonaws.json.JSONObject;
 import com.amazonaws.services.simpleworkflow.model.WorkflowExecutionAlreadyStartedException;
 
 public class WorkflowExecutionAlreadyStartedExceptionUnmarshaller extends JsonErrorUnmarshaller {

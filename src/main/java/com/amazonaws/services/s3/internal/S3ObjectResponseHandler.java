@@ -15,13 +15,13 @@
 package com.amazonaws.services.s3.internal;
 
 
-import com.amazonaws.AmazonWebServiceResponse;
-import com.amazonaws.http.HttpResponse;
+import com.amazonaws.codec.BinaryUtils;
+import com.amazonaws.network.response.AmazonWebServiceResponse;
+import com.amazonaws.network.response.HttpResponse;
 import com.amazonaws.services.s3.Headers;
 import com.amazonaws.services.s3.model.ObjectMetadata;
 import com.amazonaws.services.s3.model.S3Object;
 import com.amazonaws.services.s3.model.S3ObjectInputStream;
-import com.amazonaws.util.BinaryUtils;
 
 /**
  * S3 HTTP response handler that knows how to pull S3 object content and
@@ -30,7 +30,7 @@ import com.amazonaws.util.BinaryUtils;
 public class S3ObjectResponseHandler extends AbstractS3ResponseHandler<S3Object> {
 
     /**
-     * @see com.amazonaws.http.HttpResponseHandler#handle(com.amazonaws.http.HttpResponse)
+     * @see com.amazonaws.client.handler.response.HttpResponseHandler#handle(com.amazonaws.network.response.HttpResponse)
      */
     public AmazonWebServiceResponse<S3Object> handle(HttpResponse response) throws Exception {
         /*
@@ -63,7 +63,7 @@ public class S3ObjectResponseHandler extends AbstractS3ResponseHandler<S3Object>
      * handler handles the response. This enables us to keep the underlying HTTP
      * connection open, so that the caller can stream it off.
      *
-     * @see com.amazonaws.http.HttpResponseHandler#needsConnectionLeftOpen()
+     * @see com.amazonaws.client.handler.response.HttpResponseHandler#needsConnectionLeftOpen()
      */
     @Override
     public boolean needsConnectionLeftOpen() {

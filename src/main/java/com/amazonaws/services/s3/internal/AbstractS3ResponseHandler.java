@@ -23,14 +23,14 @@ import java.util.Set;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import com.amazonaws.AmazonWebServiceResponse;
 import com.amazonaws.ResponseMetadata;
-import com.amazonaws.http.HttpResponse;
-import com.amazonaws.http.HttpResponseHandler;
+import com.amazonaws.client.handler.response.HttpResponseHandler;
+import com.amazonaws.dateutil.DateUtils;
+import com.amazonaws.network.response.AmazonWebServiceResponse;
+import com.amazonaws.network.response.HttpResponse;
 import com.amazonaws.services.s3.Headers;
 import com.amazonaws.services.s3.S3ResponseMetadata;
 import com.amazonaws.services.s3.model.ObjectMetadata;
-import com.amazonaws.util.DateUtils;
 
 /**
  * Abstract HTTP response handler for Amazon S3 responses. Provides common
@@ -62,7 +62,7 @@ public abstract class AbstractS3ResponseHandler<T>
      * handling it, and don't need to manually manage the underlying HTTP
      * connection.
      *
-     * @see com.amazonaws.http.HttpResponseHandler#needsConnectionLeftOpen()
+     * @see com.amazonaws.client.handler.response.HttpResponseHandler#needsConnectionLeftOpen()
      */
     public boolean needsConnectionLeftOpen() {
         return false;

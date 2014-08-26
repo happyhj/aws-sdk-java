@@ -18,12 +18,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.amazonaws.AmazonClientException;
-import com.amazonaws.Request;
-import com.amazonaws.DefaultRequest;
+import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.network.request.DefaultRequest;
+import com.amazonaws.network.type.Request;
 import com.amazonaws.services.cloudsearch.model.*;
+import com.amazonaws.stringutil.StringUtils;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringUtils;
 
 /**
  * Define Index Field Request Marshaller

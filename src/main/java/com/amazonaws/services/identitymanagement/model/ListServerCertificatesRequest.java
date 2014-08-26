@@ -16,7 +16,7 @@ package com.amazonaws.services.identitymanagement.model;
 
 import java.io.Serializable;
 
-import com.amazonaws.AmazonWebServiceRequest;
+import com.amazonaws.network.request.AmazonWebServiceRequest;
 
 /**
  * Container for the parameters to the {@link com.amazonaws.services.identitymanagement.AmazonIdentityManagement#listServerCertificates(ListServerCertificatesRequest) ListServerCertificates operation}.

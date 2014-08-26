@@ -16,8 +16,8 @@
  * permissions and limitations under the License.
  */
 package com.amazonaws.services.s3.internal;
-import static com.amazonaws.util.StringUtils.UTF8;
-import static com.amazonaws.util.IOUtils.closeQuietly;
+import static com.amazonaws.sdkutil.IOUtils.closeQuietly;
+import static com.amazonaws.stringutil.StringUtils.UTF8;
 
 import java.io.BufferedOutputStream;
 import java.io.File;
@@ -38,13 +38,13 @@ import javax.net.ssl.SSLProtocolException;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import com.amazonaws.AmazonClientException;
-import com.amazonaws.Request;
+import com.amazonaws.client.region.HttpUtils;
+import com.amazonaws.codec.BinaryUtils;
+import com.amazonaws.dateutil.DateUtils;
+import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.network.type.Request;
 import com.amazonaws.services.s3.AmazonS3Client;
 import com.amazonaws.services.s3.model.S3Object;
-import com.amazonaws.util.BinaryUtils;
-import com.amazonaws.util.DateUtils;
-import com.amazonaws.util.HttpUtils;
 import com.amazonaws.util.Md5Utils;
 
 /**

@@ -24,10 +24,10 @@ import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.amazonaws.AmazonClientException;
-import com.amazonaws.internal.ResettableInputStream;
+import com.amazonaws.codec.BinaryUtils;
+import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.sdkutil.ResettableInputStream;
 import com.amazonaws.services.glacier.internal.TreeHashInputStream;
-import com.amazonaws.util.BinaryUtils;
 
 /**
  * Utility class for calculating tree hashes.

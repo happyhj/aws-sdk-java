@@ -16,7 +16,7 @@ package com.amazonaws.transform;
 
 import java.lang.reflect.Constructor;
 
-import com.amazonaws.AmazonServiceException;
+import com.amazonaws.exception.AmazonServiceException;
 
 public abstract class AbstractErrorUnmarshaller<T> implements Unmarshaller<AmazonServiceException, T> {
 

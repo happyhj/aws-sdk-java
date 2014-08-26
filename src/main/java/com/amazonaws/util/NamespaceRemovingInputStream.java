@@ -18,7 +18,7 @@ import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-import com.amazonaws.internal.SdkFilterInputStream;
+import com.amazonaws.sdkutil.SdkFilterInputStream;
 
 /**
  * FilterInputStream implementation that wraps an InputStream containing an XML

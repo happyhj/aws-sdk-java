@@ -14,8 +14,8 @@
  */
 package com.amazonaws.auth.profile;
 
-import com.amazonaws.auth.AWSCredentials;
-import com.amazonaws.auth.AWSCredentialsProvider;
+import com.amazonaws.credential.AWSCredentials;
+import com.amazonaws.credential.AWSCredentialsProvider;
 
 /**
  * Credentials provider based on AWS configuration profiles. This provider vends

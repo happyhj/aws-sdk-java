@@ -14,10 +14,9 @@
  */
 package com.amazonaws.services.cognitosync.model.transform;
 
-import com.amazonaws.AmazonServiceException;
 import com.amazonaws.transform.JsonErrorUnmarshaller;
-import com.amazonaws.util.json.JSONObject;
-
+import com.amazonaws.exception.AmazonServiceException;
+import com.amazonaws.json.JSONObject;
 import com.amazonaws.services.cognitosync.model.InvalidParameterException;
 
 public class InvalidParameterExceptionUnmarshaller extends JsonErrorUnmarshaller {

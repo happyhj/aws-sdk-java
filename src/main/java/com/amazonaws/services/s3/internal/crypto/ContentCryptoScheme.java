@@ -26,7 +26,7 @@ import javax.crypto.NoSuchPaddingException;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.IvParameterSpec;
 
-import com.amazonaws.AmazonClientException;
+import com.amazonaws.exception.AmazonClientException;
 
 /**
  * Cryptographic scheme for content encrypt/decryption.

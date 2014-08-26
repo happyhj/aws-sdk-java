@@ -14,10 +14,10 @@
  */
 package com.amazonaws.transform;
 
-import com.amazonaws.AmazonClientException;
-import com.amazonaws.AmazonServiceException;
-import com.amazonaws.util.json.JSONException;
-import com.amazonaws.util.json.JSONObject;
+import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.exception.AmazonServiceException;
+import com.amazonaws.json.JSONException;
+import com.amazonaws.json.JSONObject;
 
 /**
  * Unmarshaller for JSON error responses from AWS services.

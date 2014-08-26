@@ -26,14 +26,14 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.w3c.dom.Document;
 
-import com.amazonaws.AmazonServiceException;
-import com.amazonaws.AmazonServiceException.ErrorType;
-import com.amazonaws.http.HttpMethodName;
-import com.amazonaws.http.HttpResponse;
-import com.amazonaws.http.HttpResponseHandler;
+import com.amazonaws.client.handler.response.HttpResponseHandler;
+import com.amazonaws.exception.AmazonServiceException;
+import com.amazonaws.exception.AmazonServiceException.ErrorType;
+import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.response.HttpResponse;
+import com.amazonaws.sdkutil.IOUtils;
 import com.amazonaws.services.s3.Headers;
 import com.amazonaws.services.s3.model.AmazonS3Exception;
-import com.amazonaws.util.IOUtils;
 import com.amazonaws.util.XpathUtils;
 
 /**
@@ -133,7 +133,7 @@ public class S3ErrorResponseHandler
      * underlying HTTP connection during the handle method, we don't need to
      * keep the HTTP connection open.
      *
-     * @see com.amazonaws.http.HttpResponseHandler#needsConnectionLeftOpen()
+     * @see com.amazonaws.client.handler.response.HttpResponseHandler#needsConnectionLeftOpen()
      */
     public boolean needsConnectionLeftOpen() {
         return false;

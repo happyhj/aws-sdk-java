@@ -16,7 +16,7 @@ package com.amazonaws.retry;
 
 import org.apache.http.HttpStatus;
 
-import com.amazonaws.AmazonServiceException;
+import com.amazonaws.exception.AmazonServiceException;
 
 public class RetryUtils {
     

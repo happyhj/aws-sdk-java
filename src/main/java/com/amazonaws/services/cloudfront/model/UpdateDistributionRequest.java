@@ -16,7 +16,7 @@ package com.amazonaws.services.cloudfront.model;
 
 import java.io.Serializable;
 
-import com.amazonaws.AmazonWebServiceRequest;
+import com.amazonaws.network.request.AmazonWebServiceRequest;
 
 /**
  * Container for the parameters to the {@link com.amazonaws.services.cloudfront.AmazonCloudFront#updateDistribution(UpdateDistributionRequest) UpdateDistribution operation}.

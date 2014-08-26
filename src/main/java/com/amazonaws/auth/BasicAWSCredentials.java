@@ -14,6 +14,8 @@
  */
 package com.amazonaws.auth;
 
+import com.amazonaws.credential.AWSCredentials;
+
 /**
  * Basic implementation of the AWSCredentials interface that allows callers to
  * pass in the AWS access key and secret access in the constructor.

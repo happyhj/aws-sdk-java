@@ -31,9 +31,9 @@ import java.util.UUID;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import com.amazonaws.AmazonClientException;
 import com.amazonaws.auth.profile.internal.AbstractProfilesConfigFileScanner;
 import com.amazonaws.auth.profile.internal.Profile;
+import com.amazonaws.exception.AmazonClientException;
 
 /**
  * The class for creating and modifying the credential profiles file.

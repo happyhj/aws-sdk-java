@@ -17,14 +17,14 @@ package com.amazonaws.services.s3.internal;
 import java.io.IOException;
 import java.io.InputStream;
 
-import com.amazonaws.AmazonClientException;
-import com.amazonaws.Request;
-import com.amazonaws.auth.AWS4Signer;
-import com.amazonaws.auth.AwsChunkedEncodingInputStream;
+import com.amazonaws.client.signer.AWS4Signer;
+import com.amazonaws.client.signer.AwsChunkedEncodingInputStream;
+import com.amazonaws.codec.BinaryUtils;
+import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.network.type.Request;
 import com.amazonaws.services.s3.Headers;
 import com.amazonaws.services.s3.model.PutObjectRequest;
 import com.amazonaws.services.s3.model.UploadPartRequest;
-import com.amazonaws.util.BinaryUtils;
 
 /**
  * AWS4 signer implementation for AWS S3

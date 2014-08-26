@@ -14,9 +14,9 @@
  */
 package com.amazonaws.services.s3.metrics;
 
-import com.amazonaws.metrics.ServiceMetricType;
-import com.amazonaws.metrics.SimpleMetricType;
-import com.amazonaws.metrics.ThroughputMetricType;
+import com.amazonaws.metricstype.ServiceMetricType;
+import com.amazonaws.metricstype.SimpleMetricType;
+import com.amazonaws.metricstype.ThroughputMetricType;
 import com.amazonaws.services.s3.internal.Constants;
 
 /**

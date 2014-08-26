@@ -16,9 +16,9 @@ package com.amazonaws.services.cloudsearchdomain;
 
 import java.util.concurrent.Future;
 
-import com.amazonaws.AmazonClientException;
-import com.amazonaws.AmazonServiceException;
-import com.amazonaws.handlers.AsyncHandler;
+import com.amazonaws.client.handler.request.AsyncHandler;
+import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.services.cloudsearchdomain.model.*;
 
 /**

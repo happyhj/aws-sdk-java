@@ -16,7 +16,7 @@ package com.amazonaws.services.s3.model;
 
 import javax.crypto.SecretKey;
 
-import com.amazonaws.util.Base64;
+import com.amazonaws.codec.Base64;
 
 /**
  * Represents a customer provided key for use with Amazon S3 server-side

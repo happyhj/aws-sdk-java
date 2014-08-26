@@ -16,10 +16,9 @@ package com.amazonaws.services.cloudsearchv2.model.transform;
 
 import org.w3c.dom.Node;
 
-import com.amazonaws.AmazonServiceException;
 import com.amazonaws.util.XpathUtils;
 import com.amazonaws.transform.StandardErrorUnmarshaller;
-
+import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.services.cloudsearchv2.model.ResourceNotFoundException;
 
 public class ResourceNotFoundExceptionUnmarshaller extends StandardErrorUnmarshaller {

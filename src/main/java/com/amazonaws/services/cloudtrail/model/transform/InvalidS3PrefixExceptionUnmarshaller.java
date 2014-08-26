@@ -14,10 +14,9 @@
  */
 package com.amazonaws.services.cloudtrail.model.transform;
 
-import com.amazonaws.AmazonServiceException;
 import com.amazonaws.transform.JsonErrorUnmarshaller;
-import com.amazonaws.util.json.JSONObject;
-
+import com.amazonaws.exception.AmazonServiceException;
+import com.amazonaws.json.JSONObject;
 import com.amazonaws.services.cloudtrail.model.InvalidS3PrefixException;
 
 public class InvalidS3PrefixExceptionUnmarshaller extends JsonErrorUnmarshaller {

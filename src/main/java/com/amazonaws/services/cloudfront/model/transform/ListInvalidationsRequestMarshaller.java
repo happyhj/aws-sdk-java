@@ -14,7 +14,7 @@
  */
 package com.amazonaws.services.cloudfront.model.transform;
 
-import static com.amazonaws.util.StringUtils.UTF8;
+import static com.amazonaws.stringutil.StringUtils.UTF8;
 
 import java.io.StringWriter;
 import java.io.UnsupportedEncodingException;
@@ -22,14 +22,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.amazonaws.AmazonClientException;
-import com.amazonaws.Request;
-import com.amazonaws.DefaultRequest;
-import com.amazonaws.http.HttpMethodName;
+import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.request.DefaultRequest;
+import com.amazonaws.network.type.Request;
 import com.amazonaws.services.cloudfront.model.*;
+import com.amazonaws.stringutil.StringUtils;
 import com.amazonaws.transform.Marshaller;
 import com.amazonaws.util.StringInputStream;
-import com.amazonaws.util.StringUtils;
 import com.amazonaws.util.XMLWriter;
 
 /**

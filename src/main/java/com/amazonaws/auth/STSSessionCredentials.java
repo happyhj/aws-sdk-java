@@ -16,6 +16,8 @@ package com.amazonaws.auth;
 
 import java.util.Date;
 
+import com.amazonaws.authprovider.STSSessionCredentialsProvider;
+import com.amazonaws.credential.AWSCredentials;
 import com.amazonaws.services.securitytoken.AWSSecurityTokenService;
 import com.amazonaws.services.securitytoken.AWSSecurityTokenServiceClient;
 import com.amazonaws.services.securitytoken.model.Credentials;

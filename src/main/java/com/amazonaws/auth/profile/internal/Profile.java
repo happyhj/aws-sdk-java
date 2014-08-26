@@ -19,8 +19,8 @@ import java.util.Map;
 
 import org.apache.http.annotation.Immutable;
 
-import com.amazonaws.auth.AWSCredentials;
 import com.amazonaws.auth.AWSSessionCredentials;
+import com.amazonaws.credential.AWSCredentials;
 
 /**
  * Contains the information stored in an AWS profile, such as AWS security

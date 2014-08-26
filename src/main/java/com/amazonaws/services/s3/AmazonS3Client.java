@@ -15,7 +15,7 @@
 package com.amazonaws.services.s3;
 
 import static com.amazonaws.event.SDKProgressPublisher.publishProgress;
-import static com.amazonaws.internal.ResettableInputStream.newResettableInputStream;
+import static com.amazonaws.sdkutil.ResettableInputStream.newResettableInputStream;
 import static com.amazonaws.services.s3.model.S3DataSource.Utils.cleanupDataSource;
 import static com.amazonaws.util.LengthCheckInputStream.EXCLUDE_SKIPPED_BYTES;
 import static com.amazonaws.util.LengthCheckInputStream.INCLUDE_SKIPPED_BYTES;
@@ -45,44 +45,52 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.http.client.methods.HttpRequestBase;
 
-import com.amazonaws.AmazonClientException;
-import com.amazonaws.AmazonServiceException;
-import com.amazonaws.AmazonServiceException.ErrorType;
-import com.amazonaws.AmazonWebServiceClient;
-import com.amazonaws.AmazonWebServiceRequest;
-import com.amazonaws.AmazonWebServiceResponse;
-import com.amazonaws.ClientConfiguration;
-import com.amazonaws.DefaultRequest;
 import com.amazonaws.HttpMethod;
 import com.amazonaws.Protocol;
-import com.amazonaws.Request;
-import com.amazonaws.Response;
 import com.amazonaws.SDKGlobalConfiguration;
-import com.amazonaws.auth.AWSCredentials;
-import com.amazonaws.auth.AWSCredentialsProvider;
-import com.amazonaws.auth.AWSCredentialsProviderChain;
-import com.amazonaws.auth.DefaultAWSCredentialsProviderChain;
-import com.amazonaws.auth.EnvironmentVariableCredentialsProvider;
-import com.amazonaws.auth.InstanceProfileCredentialsProvider;
 import com.amazonaws.auth.Presigner;
-import com.amazonaws.auth.Signer;
-import com.amazonaws.auth.SignerFactory;
-import com.amazonaws.auth.SystemPropertiesCredentialsProvider;
 import com.amazonaws.auth.profile.ProfileCredentialsProvider;
+import com.amazonaws.authprovider.AWSCredentialsProviderChain;
+import com.amazonaws.authprovider.DefaultAWSCredentialsProviderChain;
+import com.amazonaws.authprovider.EnvironmentVariableCredentialsProvider;
+import com.amazonaws.authprovider.InstanceProfileCredentialsProvider;
+import com.amazonaws.authprovider.SystemPropertiesCredentialsProvider;
+import com.amazonaws.client.ClientConfiguration;
+import com.amazonaws.client.handler.request.HandlerChainFactory;
+import com.amazonaws.client.handler.request.RequestHandler2;
+import com.amazonaws.client.handler.response.HttpResponseHandler;
+import com.amazonaws.client.metrics.AwsSdkMetrics;
+import com.amazonaws.client.region.HttpUtils;
+import com.amazonaws.client.region.RegionUtils;
+import com.amazonaws.client.service.AmazonWebServiceClient;
+import com.amazonaws.client.service.ExecutionContext;
+import com.amazonaws.client.service.ServiceClientHolderInputStream;
+import com.amazonaws.client.signer.Signer;
+import com.amazonaws.client.signer.SignerFactory;
+import com.amazonaws.codec.Base16;
+import com.amazonaws.codec.Base64;
+import com.amazonaws.codec.BinaryUtils;
+import com.amazonaws.credential.AWSCredentials;
+import com.amazonaws.credential.AWSCredentialsProvider;
+import com.amazonaws.credential.StaticCredentialsProvider;
+import com.amazonaws.dateutil.DateUtils;
 import com.amazonaws.event.ProgressEventType;
-import com.amazonaws.event.ProgressInputStream;
 import com.amazonaws.event.ProgressListener;
-import com.amazonaws.handlers.HandlerChainFactory;
-import com.amazonaws.handlers.RequestHandler2;
-import com.amazonaws.http.ExecutionContext;
-import com.amazonaws.http.HttpMethodName;
-import com.amazonaws.http.HttpResponseHandler;
-import com.amazonaws.internal.ReleasableInputStream;
-import com.amazonaws.internal.ResettableInputStream;
-import com.amazonaws.internal.StaticCredentialsProvider;
-import com.amazonaws.metrics.AwsSdkMetrics;
-import com.amazonaws.metrics.RequestMetricCollector;
-import com.amazonaws.regions.RegionUtils;
+import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.exception.AmazonServiceException;
+import com.amazonaws.exception.AmazonServiceException.ErrorType;
+import com.amazonaws.ioutil.ProgressInputStream;
+import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.metricsutil.AWSRequestMetrics;
+import com.amazonaws.metricsutil.AWSRequestMetrics.Field;
+import com.amazonaws.network.request.AmazonWebServiceRequest;
+import com.amazonaws.network.request.DefaultRequest;
+import com.amazonaws.network.request.RequestMetricCollector;
+import com.amazonaws.network.response.AmazonWebServiceResponse;
+import com.amazonaws.network.type.Request;
+import com.amazonaws.network.type.Response;
+import com.amazonaws.sdkutil.ReleasableInputStream;
+import com.amazonaws.sdkutil.ResettableInputStream;
 import com.amazonaws.services.s3.internal.AWSS3V4Signer;
 import com.amazonaws.services.s3.internal.BucketNameUtils;
 import com.amazonaws.services.s3.internal.Constants;
@@ -199,16 +207,8 @@ import com.amazonaws.services.s3.model.transform.Unmarshallers;
 import com.amazonaws.services.s3.model.transform.XmlResponsesSaxParser.CompleteMultipartUploadHandler;
 import com.amazonaws.services.s3.model.transform.XmlResponsesSaxParser.CopyObjectResultHandler;
 import com.amazonaws.transform.Unmarshaller;
-import com.amazonaws.util.AWSRequestMetrics;
-import com.amazonaws.util.AWSRequestMetrics.Field;
-import com.amazonaws.util.Base16;
-import com.amazonaws.util.Base64;
-import com.amazonaws.util.BinaryUtils;
-import com.amazonaws.util.DateUtils;
-import com.amazonaws.util.HttpUtils;
 import com.amazonaws.util.LengthCheckInputStream;
 import com.amazonaws.util.Md5Utils;
-import com.amazonaws.util.ServiceClientHolderInputStream;
 
 /**
  * <p>
@@ -498,7 +498,7 @@ public class AmazonS3Client extends AmazonWebServiceClient implements AmazonS3 {
     }
 
     @Override
-    public void setRegion(com.amazonaws.regions.Region region) {
+    public void setRegion(com.amazonaws.client.region.Region region) {
         hasExplicitRegion = true;
         super.setRegion(region);
     }

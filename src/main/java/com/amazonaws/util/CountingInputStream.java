@@ -17,7 +17,7 @@ package com.amazonaws.util;
 import java.io.IOException;
 import java.io.InputStream;
 
-import com.amazonaws.internal.SdkFilterInputStream;
+import com.amazonaws.sdkutil.SdkFilterInputStream;
 
 /**
  * Simple input stream wrapper utility to count the bytes read from a stream.

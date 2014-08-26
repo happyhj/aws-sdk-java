@@ -14,6 +14,10 @@
  */
 package com.amazonaws.util;
 
+import com.amazonaws.codec.Base16;
+import com.amazonaws.codec.Base32;
+import com.amazonaws.codec.Base64;
+
 /**
  * Currently provided encoding schemes "out of the box".
  *  

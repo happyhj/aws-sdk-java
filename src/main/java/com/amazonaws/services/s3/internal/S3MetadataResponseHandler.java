@@ -14,8 +14,8 @@
  */
 package com.amazonaws.services.s3.internal;
 
-import com.amazonaws.AmazonWebServiceResponse;
-import com.amazonaws.http.HttpResponse;
+import com.amazonaws.network.response.AmazonWebServiceResponse;
+import com.amazonaws.network.response.HttpResponse;
 import com.amazonaws.services.s3.model.ObjectMetadata;
 
 /**
@@ -25,7 +25,7 @@ import com.amazonaws.services.s3.model.ObjectMetadata;
 public class S3MetadataResponseHandler extends AbstractS3ResponseHandler<ObjectMetadata> {
 
     /**
-     * @see com.amazonaws.http.HttpResponseHandler#handle(com.amazonaws.http.HttpResponse)
+     * @see com.amazonaws.client.handler.response.HttpResponseHandler#handle(com.amazonaws.network.response.HttpResponse)
      */
     public AmazonWebServiceResponse<ObjectMetadata> handle(HttpResponse response) throws Exception {
         ObjectMetadata metadata = new ObjectMetadata();

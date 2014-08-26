@@ -14,7 +14,7 @@
  */
 package com.amazonaws.services.s3.internal;
 
-import com.amazonaws.http.HttpResponse;
+import com.amazonaws.network.response.HttpResponse;
 
 /**
  * Assistant response handler that can pull an HTTP header out of the response

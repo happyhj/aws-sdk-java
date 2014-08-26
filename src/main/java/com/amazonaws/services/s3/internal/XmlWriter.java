@@ -13,7 +13,7 @@
  * permissions and limitations under the License.
  */
 package com.amazonaws.services.s3.internal;
-import static com.amazonaws.util.StringUtils.UTF8;
+import static com.amazonaws.stringutil.StringUtils.UTF8;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -19,15 +19,15 @@ import java.util.Date;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import com.amazonaws.AmazonClientException;
-import com.amazonaws.Request;
-import com.amazonaws.auth.AWSCredentials;
 import com.amazonaws.auth.AWSSessionCredentials;
-import com.amazonaws.auth.AbstractAWSSigner;
-import com.amazonaws.auth.Signer;
 import com.amazonaws.auth.SigningAlgorithm;
+import com.amazonaws.client.region.HttpUtils;
+import com.amazonaws.client.signer.AbstractAWSSigner;
+import com.amazonaws.client.signer.Signer;
+import com.amazonaws.credential.AWSCredentials;
+import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.network.type.Request;
 import com.amazonaws.services.s3.Headers;
-import com.amazonaws.util.HttpUtils;
 
 /**
  * Implementation of the {@linkplain Signer} interface specific to S3's signing

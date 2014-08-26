@@ -17,8 +17,8 @@ package com.amazonaws.services.s3.model;
 import java.io.File;
 import java.io.InputStream;
 
-import com.amazonaws.AmazonWebServiceRequest;
 import com.amazonaws.event.ProgressListener;
+import com.amazonaws.network.request.AmazonWebServiceRequest;
 
 /**
  * Contains the parameters used for the UploadPart operation on Amazon S3.

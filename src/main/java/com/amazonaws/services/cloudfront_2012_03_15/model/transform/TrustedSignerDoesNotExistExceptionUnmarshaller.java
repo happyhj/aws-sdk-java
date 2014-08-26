@@ -16,10 +16,9 @@ package com.amazonaws.services.cloudfront_2012_03_15.model.transform;
 
 import org.w3c.dom.Node;
 
-import com.amazonaws.AmazonServiceException;
 import com.amazonaws.util.XpathUtils;
 import com.amazonaws.transform.StandardErrorUnmarshaller;
-
+import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.services.cloudfront_2012_03_15.model.TrustedSignerDoesNotExistException;
 
 public class TrustedSignerDoesNotExistExceptionUnmarshaller extends StandardErrorUnmarshaller {

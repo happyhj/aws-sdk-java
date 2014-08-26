@@ -17,7 +17,7 @@ package com.amazonaws.services.elasticmapreduce.util;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.amazonaws.AmazonServiceException;
+import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.services.elasticmapreduce.model.HadoopJarStepConfig;
 
 /**

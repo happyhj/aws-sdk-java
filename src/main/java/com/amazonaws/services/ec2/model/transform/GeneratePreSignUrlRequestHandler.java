@@ -17,17 +17,17 @@ package com.amazonaws.services.ec2.model.transform;
 import java.net.URI;
 import java.net.URISyntaxException;
 
-import com.amazonaws.AmazonWebServiceRequest;
 import com.amazonaws.Protocol;
-import com.amazonaws.Request;
-import com.amazonaws.Response;
-import com.amazonaws.auth.AWS4Signer;
-import com.amazonaws.handlers.CredentialsRequestHandler;
-import com.amazonaws.http.HttpMethodName;
-import com.amazonaws.regions.RegionUtils;
+import com.amazonaws.client.handler.request.CredentialsRequestHandler;
+import com.amazonaws.client.region.HttpUtils;
+import com.amazonaws.client.region.RegionUtils;
+import com.amazonaws.client.signer.AWS4Signer;
+import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.request.AmazonWebServiceRequest;
+import com.amazonaws.network.type.Request;
+import com.amazonaws.network.type.Response;
 import com.amazonaws.services.ec2.model.CopySnapshotRequest;
-import com.amazonaws.util.HttpUtils;
-import com.amazonaws.util.StringUtils;
+import com.amazonaws.stringutil.StringUtils;
 
 /**
  * RequestHandler that generates a pre-signed URL for copying encrypted

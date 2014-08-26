@@ -24,7 +24,7 @@ import java.security.spec.InvalidKeySpecException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.amazonaws.util.Base64;
+import com.amazonaws.codec.Base64;
 
 /**
  * A PEM utility that can be used to read keys from PEM. With this PEM utility,

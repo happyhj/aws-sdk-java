@@ -16,9 +16,9 @@ package com.amazonaws.services.glacier.transfer;
 
 import static com.amazonaws.event.SDKProgressPublisher.publishProgress;
 import static com.amazonaws.event.SDKProgressPublisher.publishResponseBytesDiscarded;
-import static com.amazonaws.internal.ResettableInputStream.newResettableInputStream;
-import static com.amazonaws.util.IOUtils.closeQuietly;
-import static com.amazonaws.util.IOUtils.release;
+import static com.amazonaws.sdkutil.IOUtils.closeQuietly;
+import static com.amazonaws.sdkutil.IOUtils.release;
+import static com.amazonaws.sdkutil.ResettableInputStream.newResettableInputStream;
 import static com.amazonaws.util.Throwables.failure;
 
 import java.io.BufferedInputStream;
@@ -34,15 +34,16 @@ import java.util.List;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import com.amazonaws.AmazonClientException;
-import com.amazonaws.AmazonServiceException;
-import com.amazonaws.ClientConfiguration;
-import com.amazonaws.auth.AWSCredentials;
-import com.amazonaws.auth.AWSCredentialsProvider;
+import com.amazonaws.client.ClientConfiguration;
+import com.amazonaws.codec.BinaryUtils;
+import com.amazonaws.credential.AWSCredentials;
+import com.amazonaws.credential.AWSCredentialsProvider;
+import com.amazonaws.credential.StaticCredentialsProvider;
 import com.amazonaws.event.ProgressEventType;
 import com.amazonaws.event.ProgressListener;
-import com.amazonaws.internal.ResettableInputStream;
-import com.amazonaws.internal.StaticCredentialsProvider;
+import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.exception.AmazonServiceException;
+import com.amazonaws.sdkutil.ResettableInputStream;
 import com.amazonaws.services.glacier.AmazonGlacier;
 import com.amazonaws.services.glacier.AmazonGlacierClient;
 import com.amazonaws.services.glacier.TreeHashGenerator;
@@ -65,7 +66,6 @@ import com.amazonaws.services.glacier.model.UploadMultipartPartRequest;
 import com.amazonaws.services.s3.internal.InputSubstream;
 import com.amazonaws.services.sns.AmazonSNSClient;
 import com.amazonaws.services.sqs.AmazonSQSClient;
-import com.amazonaws.util.BinaryUtils;
 
 /**
  * Utilities for uploading and downloading data to and from AWS Glacier.

@@ -24,7 +24,7 @@ import java.net.URL;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import com.amazonaws.AmazonClientException;
+import com.amazonaws.exception.AmazonClientException;
 
 /**
  * Simple client for accessing the Amazon EC2 Instance Metadata Service.

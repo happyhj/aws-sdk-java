@@ -17,9 +17,9 @@
 
 package com.amazonaws.services.sqs.buffered;
 
-import com.amazonaws.AmazonServiceException;
-import com.amazonaws.AmazonWebServiceRequest;
-import com.amazonaws.AmazonServiceException.ErrorType;
+import com.amazonaws.exception.AmazonServiceException;
+import com.amazonaws.exception.AmazonServiceException.ErrorType;
+import com.amazonaws.network.request.AmazonWebServiceRequest;
 import com.amazonaws.services.sqs.model.BatchResultErrorEntry;
 import com.amazonaws.services.sqs.model.SendMessageBatchResultEntry;
 import com.amazonaws.services.sqs.model.SendMessageResult;

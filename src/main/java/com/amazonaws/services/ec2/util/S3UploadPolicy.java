@@ -13,7 +13,7 @@
  * permissions and limitations under the License.
  */
 package com.amazonaws.services.ec2.util;
-import static com.amazonaws.util.StringUtils.UTF8;
+import static com.amazonaws.stringutil.StringUtils.UTF8;
 
 import java.io.UnsupportedEncodingException;
 import java.security.InvalidKeyException;
@@ -25,7 +25,7 @@ import java.util.SimpleTimeZone;
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
 
-import com.amazonaws.util.Base64;
+import com.amazonaws.codec.Base64;
 
 /**
  * This class represents S3 upload policy. Policy string representation and

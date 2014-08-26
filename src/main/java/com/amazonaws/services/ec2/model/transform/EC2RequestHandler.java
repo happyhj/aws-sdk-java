@@ -18,9 +18,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-import com.amazonaws.AmazonWebServiceRequest;
-import com.amazonaws.Request;
-import com.amazonaws.handlers.AbstractRequestHandler;
+import com.amazonaws.client.handler.request.AbstractRequestHandler;
+import com.amazonaws.codec.Base64;
+import com.amazonaws.network.request.AmazonWebServiceRequest;
+import com.amazonaws.network.type.Request;
 import com.amazonaws.services.ec2.model.DescribeInstancesResult;
 import com.amazonaws.services.ec2.model.DescribeSpotInstanceRequestsResult;
 import com.amazonaws.services.ec2.model.GroupIdentifier;
@@ -33,7 +34,6 @@ import com.amazonaws.services.ec2.model.Reservation;
 import com.amazonaws.services.ec2.model.RunInstancesRequest;
 import com.amazonaws.services.ec2.model.RunInstancesResult;
 import com.amazonaws.services.ec2.model.SpotInstanceRequest;
-import com.amazonaws.util.Base64;
 import com.amazonaws.util.TimingInfo;
 
 public class EC2RequestHandler extends AbstractRequestHandler {

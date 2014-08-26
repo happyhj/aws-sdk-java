@@ -21,10 +21,10 @@ import java.util.Map;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import com.amazonaws.AmazonClientException;
-import com.amazonaws.auth.AWSCredentials;
 import com.amazonaws.auth.profile.internal.Profile;
 import com.amazonaws.auth.profile.internal.ProfilesConfigFileLoader;
+import com.amazonaws.credential.AWSCredentials;
+import com.amazonaws.exception.AmazonClientException;
 
 /**
  * Loads the local AWS credential profiles from the standard location

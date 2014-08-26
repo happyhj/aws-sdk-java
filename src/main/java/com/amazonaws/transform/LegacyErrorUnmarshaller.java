@@ -23,8 +23,8 @@ import javax.xml.xpath.XPath;
 
 import org.w3c.dom.Node;
 
-import com.amazonaws.AmazonServiceException;
-import com.amazonaws.AmazonServiceException.ErrorType;
+import com.amazonaws.exception.AmazonServiceException;
+import com.amazonaws.exception.AmazonServiceException.ErrorType;
 
 /**
  * Unmarshalls an AWS error response into an AmazonServiceException, or

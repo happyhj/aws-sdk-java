@@ -14,7 +14,7 @@
  */
 package com.amazonaws.services.s3.internal;
 
-import com.amazonaws.http.HttpResponse;
+import com.amazonaws.network.response.HttpResponse;
 import com.amazonaws.services.s3.Headers;
 import com.amazonaws.services.s3.model.transform.XmlResponsesSaxParser.CopyObjectResultHandler;
 

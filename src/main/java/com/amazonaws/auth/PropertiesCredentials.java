@@ -21,6 +21,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
+import com.amazonaws.credential.AWSCredentials;
+
 /**
  * Simple implementation AWSCredentials that reads in AWS access keys from a
  * properties file. The AWS access key is expected to be in the "accessKey"

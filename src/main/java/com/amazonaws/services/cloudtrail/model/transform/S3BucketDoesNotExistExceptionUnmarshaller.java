@@ -14,10 +14,9 @@
  */
 package com.amazonaws.services.cloudtrail.model.transform;
 
-import com.amazonaws.AmazonServiceException;
 import com.amazonaws.transform.JsonErrorUnmarshaller;
-import com.amazonaws.util.json.JSONObject;
-
+import com.amazonaws.exception.AmazonServiceException;
+import com.amazonaws.json.JSONObject;
 import com.amazonaws.services.cloudtrail.model.S3BucketDoesNotExistException;
 
 public class S3BucketDoesNotExistExceptionUnmarshaller extends JsonErrorUnmarshaller {

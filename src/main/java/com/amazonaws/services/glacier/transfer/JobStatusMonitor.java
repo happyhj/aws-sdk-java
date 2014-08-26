@@ -21,9 +21,6 @@ import java.util.Map;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import com.amazonaws.AmazonClientException;
-import com.amazonaws.ClientConfiguration;
-import com.amazonaws.auth.AWSCredentialsProvider;
 import com.amazonaws.auth.policy.Policy;
 import com.amazonaws.auth.policy.Principal;
 import com.amazonaws.auth.policy.Resource;
@@ -31,6 +28,12 @@ import com.amazonaws.auth.policy.Statement;
 import com.amazonaws.auth.policy.Statement.Effect;
 import com.amazonaws.auth.policy.actions.SQSActions;
 import com.amazonaws.auth.policy.conditions.ConditionFactory;
+import com.amazonaws.client.ClientConfiguration;
+import com.amazonaws.codec.BinaryUtils;
+import com.amazonaws.credential.AWSCredentialsProvider;
+import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.json.JSONException;
+import com.amazonaws.json.JSONObject;
 import com.amazonaws.services.glacier.model.StatusCode;
 import com.amazonaws.services.sns.AmazonSNSClient;
 import com.amazonaws.services.sns.model.CreateTopicRequest;
@@ -44,9 +47,6 @@ import com.amazonaws.services.sqs.model.GetQueueAttributesRequest;
 import com.amazonaws.services.sqs.model.Message;
 import com.amazonaws.services.sqs.model.ReceiveMessageRequest;
 import com.amazonaws.services.sqs.model.SetQueueAttributesRequest;
-import com.amazonaws.util.BinaryUtils;
-import com.amazonaws.util.json.JSONException;
-import com.amazonaws.util.json.JSONObject;
 
 /**
  * Utility for monitoring the status of an Amazon Glacier job, through Amazon

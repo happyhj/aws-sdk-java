@@ -16,7 +16,7 @@ package com.amazonaws.services.s3.internal.crypto;
 
 import static com.amazonaws.services.s3.model.CryptoMode.StrictAuthenticatedEncryption;
 
-import com.amazonaws.auth.AWSCredentialsProvider;
+import com.amazonaws.credential.AWSCredentialsProvider;
 import com.amazonaws.services.s3.internal.S3Direct;
 import com.amazonaws.services.s3.model.CryptoConfiguration;
 import com.amazonaws.services.s3.model.EncryptionMaterialsProvider;

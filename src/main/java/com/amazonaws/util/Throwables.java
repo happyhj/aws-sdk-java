@@ -16,7 +16,7 @@ package com.amazonaws.util;
 
 import org.apache.commons.logging.LogFactory;
 
-import com.amazonaws.AmazonClientException;
+import com.amazonaws.exception.AmazonClientException;
 
 /**
  * Utility for use with errors or exceptions.

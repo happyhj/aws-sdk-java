@@ -14,7 +14,7 @@
  */
 package com.amazonaws.services.dynamodbv2.metrics;
 
-import com.amazonaws.metrics.RequestMetricType;
+import com.amazonaws.metricstype.RequestMetricType;
 
 /**
  * DynamoDB specific request metric type.

@@ -19,8 +19,8 @@ import java.io.InputStream;
 
 import org.apache.http.annotation.NotThreadSafe;
 
-import com.amazonaws.AmazonClientException;
-import com.amazonaws.internal.SdkFilterInputStream;
+import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.sdkutil.SdkFilterInputStream;
 
 /**
  * Used to perform length check to ensure the number of bytes read from the

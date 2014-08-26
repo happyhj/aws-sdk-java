@@ -19,7 +19,8 @@ import java.io.Writer;
 import java.util.Date;
 import java.util.Stack;
 
-import com.amazonaws.AmazonClientException;
+import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.stringutil.StringUtils;
 
 /**
  * Utility for creating easily creating XML documents, one element at a time.

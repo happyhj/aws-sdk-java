@@ -19,10 +19,10 @@ import java.util.Random;
 
 import org.apache.http.HttpStatus;
 
-import com.amazonaws.AmazonClientException;
-import com.amazonaws.AmazonServiceException;
-import com.amazonaws.AmazonWebServiceRequest;
-import com.amazonaws.ClientConfiguration;
+import com.amazonaws.client.ClientConfiguration;
+import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.exception.AmazonServiceException;
+import com.amazonaws.network.request.AmazonWebServiceRequest;
 import com.amazonaws.retry.RetryUtils;
 
 /**

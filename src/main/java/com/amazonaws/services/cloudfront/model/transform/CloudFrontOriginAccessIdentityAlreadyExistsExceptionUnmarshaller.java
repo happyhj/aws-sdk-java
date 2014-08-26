@@ -16,10 +16,9 @@ package com.amazonaws.services.cloudfront.model.transform;
 
 import org.w3c.dom.Node;
 
-import com.amazonaws.AmazonServiceException;
 import com.amazonaws.util.XpathUtils;
 import com.amazonaws.transform.StandardErrorUnmarshaller;
-
+import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.services.cloudfront.model.CloudFrontOriginAccessIdentityAlreadyExistsException;
 
 public class CloudFrontOriginAccessIdentityAlreadyExistsExceptionUnmarshaller extends StandardErrorUnmarshaller {

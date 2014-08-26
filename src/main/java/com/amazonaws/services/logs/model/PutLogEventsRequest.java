@@ -16,7 +16,7 @@ package com.amazonaws.services.logs.model;
 
 import java.io.Serializable;
 
-import com.amazonaws.AmazonWebServiceRequest;
+import com.amazonaws.network.request.AmazonWebServiceRequest;
 
 /**
  * Container for the parameters to the {@link com.amazonaws.services.logs.AWSLogs#putLogEvents(PutLogEventsRequest) PutLogEvents operation}.

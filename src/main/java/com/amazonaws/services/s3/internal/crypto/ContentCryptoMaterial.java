@@ -32,7 +32,9 @@ import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
 
-import com.amazonaws.AmazonClientException;
+import com.amazonaws.codec.Base64;
+import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.json.Jackson;
 import com.amazonaws.services.s3.Headers;
 import com.amazonaws.services.s3.KeyWrapException;
 import com.amazonaws.services.s3.model.CryptoMode;
@@ -41,8 +43,6 @@ import com.amazonaws.services.s3.model.EncryptionMaterialsAccessor;
 import com.amazonaws.services.s3.model.ExtraMaterialsDescription;
 import com.amazonaws.services.s3.model.ObjectMetadata;
 import com.amazonaws.services.s3.model.S3Object;
-import com.amazonaws.util.Base64;
-import com.amazonaws.util.json.Jackson;
 
 /**
  * Cryptographic material used for client-side content encrypt/decryption in S3.

@@ -22,12 +22,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.Future;
 
-import com.amazonaws.AmazonClientException;
-import com.amazonaws.AmazonServiceException;
-import com.amazonaws.AmazonWebServiceRequest;
 import com.amazonaws.ResponseMetadata;
-import com.amazonaws.handlers.AsyncHandler;
-import com.amazonaws.regions.Region;
+import com.amazonaws.client.handler.request.AsyncHandler;
+import com.amazonaws.client.region.Region;
+import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.exception.AmazonServiceException;
+import com.amazonaws.network.request.AmazonWebServiceRequest;
 import com.amazonaws.services.sqs.AmazonSQSAsync;
 import com.amazonaws.services.sqs.model.AddPermissionRequest;
 import com.amazonaws.services.sqs.model.ChangeMessageVisibilityBatchRequest;

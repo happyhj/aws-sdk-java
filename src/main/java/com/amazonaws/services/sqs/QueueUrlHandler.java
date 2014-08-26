@@ -17,9 +17,9 @@ package com.amazonaws.services.sqs;
 import java.net.URI;
 import java.net.URISyntaxException;
 
-import com.amazonaws.AmazonClientException;
-import com.amazonaws.Request;
-import com.amazonaws.handlers.AbstractRequestHandler;
+import com.amazonaws.client.handler.request.AbstractRequestHandler;
+import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.network.type.Request;
 
 /**
  * Custom request handler for SQS that processes the request before it gets

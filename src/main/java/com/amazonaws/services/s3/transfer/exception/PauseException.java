@@ -14,7 +14,7 @@
  */
 package com.amazonaws.services.s3.transfer.exception;
 
-import com.amazonaws.AmazonClientException;
+import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.services.s3.transfer.PauseStatus;
 
 /**

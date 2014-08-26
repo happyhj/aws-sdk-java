@@ -23,8 +23,8 @@ import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
-import com.amazonaws.AmazonWebServiceRequest;
-import com.amazonaws.handlers.AsyncHandler;
+import com.amazonaws.client.handler.request.AsyncHandler;
+import com.amazonaws.network.request.AmazonWebServiceRequest;
 
 /**
  * QueueBufferFuture class is used to deliver asynchronous results of various

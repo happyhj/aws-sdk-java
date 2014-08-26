@@ -16,7 +16,7 @@ package com.amazonaws.services.s3.internal.crypto;
 
 import org.apache.http.annotation.GuardedBy;
 
-import com.amazonaws.AmazonClientException;
+import com.amazonaws.exception.AmazonClientException;
 
 class MultipartUploadCryptoContext extends MultipartUploadContext {
     private final ContentCryptoMaterial cekMaterial;

@@ -16,7 +16,8 @@ package com.amazonaws.auth;
 
 import java.util.Date;
 
-import com.amazonaws.Request;
+import com.amazonaws.credential.AWSCredentials;
+import com.amazonaws.network.type.Request;
 
 /**
  * A request signer that has special-case logic to presign requests, generating

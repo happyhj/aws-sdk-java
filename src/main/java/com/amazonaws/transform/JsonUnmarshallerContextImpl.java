@@ -25,7 +25,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
 
-import com.amazonaws.http.HttpResponse;
+import com.amazonaws.network.response.HttpResponse;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonToken;
 

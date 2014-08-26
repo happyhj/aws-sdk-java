@@ -14,7 +14,7 @@
  */
 package com.amazonaws.services.simpledb.internal;
 
-import com.amazonaws.http.StaxResponseHandler;
+import com.amazonaws.client.handler.response.StaxResponseHandler;
 import com.amazonaws.services.simpledb.SimpleDBResponseMetadata;
 import com.amazonaws.transform.StaxUnmarshallerContext;
 import com.amazonaws.transform.Unmarshaller;

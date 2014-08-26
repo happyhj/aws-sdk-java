@@ -20,11 +20,11 @@ import java.net.URL;
 import java.util.Date;
 import java.util.List;
 
-import com.amazonaws.AmazonClientException;
-import com.amazonaws.AmazonServiceException;
-import com.amazonaws.AmazonWebServiceRequest;
-import com.amazonaws.ClientConfiguration;
 import com.amazonaws.HttpMethod;
+import com.amazonaws.client.ClientConfiguration;
+import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.exception.AmazonServiceException;
+import com.amazonaws.network.request.AmazonWebServiceRequest;
 import com.amazonaws.services.s3.internal.Constants;
 import com.amazonaws.services.s3.model.AbortMultipartUploadRequest;
 import com.amazonaws.services.s3.model.AccessControlList;
@@ -130,7 +130,7 @@ public interface AmazonS3 {
      * Pass the endpoint (e.g. "s3.amazonaws.com") or a full
      * URL, including the protocol (e.g. "https://s3.amazonaws.com"). If the
      * protocol is not specified, the protocol  from this client's
-     * {@link com.amazonaws.ClientConfiguration} is used.
+     * {@link com.amazonaws.client.ClientConfiguration} is used.
      * </p>
      * @param endpoint
      *            The endpoint (e.g. "s3.amazonaws.com") or the full URL,
@@ -159,16 +159,16 @@ public interface AmazonS3 {
      *
      * @param region
      *            The region this client will communicate with. See
-     *            {@link com.amazonaws.regions.Region#getRegion(com.amazonaws.regions.Regions)} for
+     *            {@link com.amazonaws.client.region.Region#getRegion(com.amazonaws.client.regions.Regions)} for
      *            accessing a given region.
      * @throws java.lang.IllegalArgumentException
      *             If the given region is null, or if this service isn't
      *             available in the given region. See
-     *             {@link com.amazonaws.regions.Region#isServiceSupported(String)}
-     * @see com.amazonaws.regions.Region#getRegion(com.amazonaws.regions.Regions)
-     * @see com.amazonaws.regions.Region#createClient(Class, com.amazonaws.auth.AWSCredentialsProvider, ClientConfiguration)
+     *             {@link com.amazonaws.client.region.Region#isServiceSupported(String)}
+     * @see com.amazonaws.client.region.Region#getRegion(com.amazonaws.client.regions.Regions)
+     * @see com.amazonaws.client.region.Region#createClient(Class, com.amazonaws.auth.AWSCredentialsProvider, ClientConfiguration)
      */
-    public void setRegion(com.amazonaws.regions.Region region) throws IllegalArgumentException;
+    public void setRegion(com.amazonaws.client.region.Region region) throws IllegalArgumentException;
 
     /**
      * <p>

@@ -14,7 +14,7 @@
  */
 package com.amazonaws.services.cloudfront_2012_03_15.model;
 
-import com.amazonaws.AmazonServiceException;
+import com.amazonaws.exception.AmazonServiceException;
 
 /**
  * <p>

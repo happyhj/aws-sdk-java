@@ -19,8 +19,8 @@ import java.io.InputStream;
 import java.security.MessageDigest;
 import java.util.Arrays;
 
-import com.amazonaws.AmazonClientException;
-import com.amazonaws.internal.SdkDigestInputStream;
+import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.sdkutil.SdkDigestInputStream;
 
 /**
  * Input stream extends MD5DigestValidationInputStream, when you finish reading the stream, it

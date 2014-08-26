@@ -19,6 +19,8 @@ import java.util.Map;
 
 import org.apache.http.annotation.NotThreadSafe;
 
+import com.amazonaws.network.request.AmazonWebServiceRequest;
+
 /**
  * Client markers for individual {@link AmazonWebServiceRequest}s.
  */

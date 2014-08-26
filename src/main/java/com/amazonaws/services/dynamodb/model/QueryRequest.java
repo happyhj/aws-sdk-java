@@ -13,7 +13,8 @@
  * permissions and limitations under the License.
  */
 package com.amazonaws.services.dynamodb.model;
-import com.amazonaws.AmazonWebServiceRequest;
+import com.amazonaws.network.request.AmazonWebServiceRequest;
+
 import java.io.Serializable;
 
 /**

@@ -25,7 +25,7 @@ import java.util.Map;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
-import com.amazonaws.Request;
+import com.amazonaws.network.type.Request;
 import com.amazonaws.services.s3.Headers;
 import com.amazonaws.services.s3.model.ResponseHeaderOverrides;
 

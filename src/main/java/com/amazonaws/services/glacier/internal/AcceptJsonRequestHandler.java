@@ -14,8 +14,8 @@
  */
 package com.amazonaws.services.glacier.internal;
 
-import com.amazonaws.Request;
-import com.amazonaws.handlers.AbstractRequestHandler;
+import com.amazonaws.client.handler.request.AbstractRequestHandler;
+import com.amazonaws.network.type.Request;
 
 public class AcceptJsonRequestHandler extends AbstractRequestHandler {
 

@@ -14,6 +14,8 @@
  */
 package com.amazonaws.auth;
 
+import com.amazonaws.credential.AWSCredentials;
+
 /**
  * AWS session credentials object.
  */

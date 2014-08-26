@@ -19,7 +19,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import com.amazonaws.services.elasticmapreduce.model.HadoopJarStepConfig;
-import com.amazonaws.util.StringUtils;
+import com.amazonaws.stringutil.StringUtils;
 
 /**
  * This class provides helper methods for creating common Elastic MapReduce step

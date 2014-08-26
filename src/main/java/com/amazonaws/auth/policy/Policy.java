@@ -21,9 +21,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import com.amazonaws.auth.policy.internal.JsonPolicyReader;
-import com.amazonaws.auth.policy.internal.JsonPolicyWriter;
-
 /**
  * An AWS access control policy is a object that acts as a container for one or
  * more statements, which specify fine grained rules for allowing or denying
