@@ -14,10 +14,10 @@
  */
 package com.amazonaws.services.kinesis.model.transform;
 
-import com.amazonaws.transform.JsonErrorUnmarshaller;
 import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.json.JSONObject;
 import com.amazonaws.services.kinesis.model.ResourceInUseException;
+import com.amazonaws.transform.JsonErrorUnmarshaller;
 
 public class ResourceInUseExceptionUnmarshaller extends JsonErrorUnmarshaller {
 

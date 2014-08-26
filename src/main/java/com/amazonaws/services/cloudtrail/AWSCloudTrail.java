@@ -14,14 +14,37 @@
  */
 package com.amazonaws.services.cloudtrail;
 
-import com.amazonaws.*;
+import com.amazonaws.ResponseMetadata;
 import com.amazonaws.client.ClientConfiguration;
 import com.amazonaws.client.region.Region;
-import com.amazonaws.client.regions.*;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.network.request.AmazonWebServiceRequest;
-import com.amazonaws.services.cloudtrail.model.*;
+import com.amazonaws.services.cloudtrail.model.CreateTrailRequest;
+import com.amazonaws.services.cloudtrail.model.CreateTrailResult;
+import com.amazonaws.services.cloudtrail.model.DeleteTrailRequest;
+import com.amazonaws.services.cloudtrail.model.DeleteTrailResult;
+import com.amazonaws.services.cloudtrail.model.DescribeTrailsRequest;
+import com.amazonaws.services.cloudtrail.model.DescribeTrailsResult;
+import com.amazonaws.services.cloudtrail.model.GetTrailStatusRequest;
+import com.amazonaws.services.cloudtrail.model.GetTrailStatusResult;
+import com.amazonaws.services.cloudtrail.model.InsufficientS3BucketPolicyException;
+import com.amazonaws.services.cloudtrail.model.InsufficientSnsTopicPolicyException;
+import com.amazonaws.services.cloudtrail.model.InvalidS3BucketNameException;
+import com.amazonaws.services.cloudtrail.model.InvalidS3PrefixException;
+import com.amazonaws.services.cloudtrail.model.InvalidSnsTopicNameException;
+import com.amazonaws.services.cloudtrail.model.InvalidTrailNameException;
+import com.amazonaws.services.cloudtrail.model.MaximumNumberOfTrailsExceededException;
+import com.amazonaws.services.cloudtrail.model.S3BucketDoesNotExistException;
+import com.amazonaws.services.cloudtrail.model.StartLoggingRequest;
+import com.amazonaws.services.cloudtrail.model.StartLoggingResult;
+import com.amazonaws.services.cloudtrail.model.StopLoggingRequest;
+import com.amazonaws.services.cloudtrail.model.StopLoggingResult;
+import com.amazonaws.services.cloudtrail.model.TrailAlreadyExistsException;
+import com.amazonaws.services.cloudtrail.model.TrailNotFoundException;
+import com.amazonaws.services.cloudtrail.model.TrailNotProvidedException;
+import com.amazonaws.services.cloudtrail.model.UpdateTrailRequest;
+import com.amazonaws.services.cloudtrail.model.UpdateTrailResult;
 
 /**
  * Interface for accessing AWSCloudTrail.

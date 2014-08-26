@@ -14,10 +14,10 @@
  */
 package com.amazonaws.services.dynamodb.model.transform;
 
-import com.amazonaws.transform.JsonErrorUnmarshaller;
 import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.json.JSONObject;
 import com.amazonaws.services.dynamodb.model.ResourceNotFoundException;
+import com.amazonaws.transform.JsonErrorUnmarshaller;
 
 /**
  * @deprecated Use {@link com.amazonaws.services.dynamodbv2.model.transform.ResourceNotFoundExceptionUnmarshaller} instead.

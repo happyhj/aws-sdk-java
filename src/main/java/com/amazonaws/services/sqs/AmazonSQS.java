@@ -14,14 +14,55 @@
  */
 package com.amazonaws.services.sqs;
 
-import com.amazonaws.*;
+import com.amazonaws.ResponseMetadata;
 import com.amazonaws.client.ClientConfiguration;
 import com.amazonaws.client.region.Region;
-import com.amazonaws.client.regions.*;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.network.request.AmazonWebServiceRequest;
-import com.amazonaws.services.sqs.model.*;
+import com.amazonaws.services.sqs.model.AddPermissionRequest;
+import com.amazonaws.services.sqs.model.BatchEntryIdsNotDistinctException;
+import com.amazonaws.services.sqs.model.BatchRequestTooLongException;
+import com.amazonaws.services.sqs.model.ChangeMessageVisibilityBatchRequest;
+import com.amazonaws.services.sqs.model.ChangeMessageVisibilityBatchRequestEntry;
+import com.amazonaws.services.sqs.model.ChangeMessageVisibilityBatchResult;
+import com.amazonaws.services.sqs.model.ChangeMessageVisibilityRequest;
+import com.amazonaws.services.sqs.model.CreateQueueRequest;
+import com.amazonaws.services.sqs.model.CreateQueueResult;
+import com.amazonaws.services.sqs.model.DeleteMessageBatchRequest;
+import com.amazonaws.services.sqs.model.DeleteMessageBatchRequestEntry;
+import com.amazonaws.services.sqs.model.DeleteMessageBatchResult;
+import com.amazonaws.services.sqs.model.DeleteMessageRequest;
+import com.amazonaws.services.sqs.model.DeleteQueueRequest;
+import com.amazonaws.services.sqs.model.EmptyBatchRequestException;
+import com.amazonaws.services.sqs.model.GetQueueAttributesRequest;
+import com.amazonaws.services.sqs.model.GetQueueAttributesResult;
+import com.amazonaws.services.sqs.model.GetQueueUrlRequest;
+import com.amazonaws.services.sqs.model.GetQueueUrlResult;
+import com.amazonaws.services.sqs.model.InvalidAttributeNameException;
+import com.amazonaws.services.sqs.model.InvalidBatchEntryIdException;
+import com.amazonaws.services.sqs.model.InvalidIdFormatException;
+import com.amazonaws.services.sqs.model.InvalidMessageContentsException;
+import com.amazonaws.services.sqs.model.ListDeadLetterSourceQueuesRequest;
+import com.amazonaws.services.sqs.model.ListDeadLetterSourceQueuesResult;
+import com.amazonaws.services.sqs.model.ListQueuesRequest;
+import com.amazonaws.services.sqs.model.ListQueuesResult;
+import com.amazonaws.services.sqs.model.MessageNotInflightException;
+import com.amazonaws.services.sqs.model.OverLimitException;
+import com.amazonaws.services.sqs.model.QueueDeletedRecentlyException;
+import com.amazonaws.services.sqs.model.QueueDoesNotExistException;
+import com.amazonaws.services.sqs.model.QueueNameExistsException;
+import com.amazonaws.services.sqs.model.ReceiptHandleIsInvalidException;
+import com.amazonaws.services.sqs.model.ReceiveMessageRequest;
+import com.amazonaws.services.sqs.model.ReceiveMessageResult;
+import com.amazonaws.services.sqs.model.RemovePermissionRequest;
+import com.amazonaws.services.sqs.model.SendMessageBatchRequest;
+import com.amazonaws.services.sqs.model.SendMessageBatchRequestEntry;
+import com.amazonaws.services.sqs.model.SendMessageBatchResult;
+import com.amazonaws.services.sqs.model.SendMessageRequest;
+import com.amazonaws.services.sqs.model.SendMessageResult;
+import com.amazonaws.services.sqs.model.SetQueueAttributesRequest;
+import com.amazonaws.services.sqs.model.TooManyEntriesInBatchRequestException;
 
 /**
  * Interface for accessing AmazonSQS.

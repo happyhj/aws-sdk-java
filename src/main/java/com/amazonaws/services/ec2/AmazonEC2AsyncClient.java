@@ -19,13 +19,13 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
+import com.amazonaws.authprovider.DefaultAWSCredentialsProviderChain;
 import com.amazonaws.client.ClientConfiguration;
 import com.amazonaws.client.handler.request.AsyncHandler;
 import com.amazonaws.credential.AWSCredentials;
 import com.amazonaws.credential.AWSCredentialsProvider;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
-import com.amazonaws.authprovider.DefaultAWSCredentialsProviderChain;
 import com.amazonaws.services.ec2.model.*;
 
 /**

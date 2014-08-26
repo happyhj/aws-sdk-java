@@ -14,31 +14,32 @@
  */
 package com.amazonaws.services.elastictranscoder.model.transform;
 
-import static com.amazonaws.stringutil.StringUtils.COMMA_SEPARATOR;
 import static com.amazonaws.stringutil.StringUtils.UTF8;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.OutputStreamWriter;
 import java.io.StringWriter;
-import java.io.Writer;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.List;
-import java.util.regex.Pattern;
 
-import com.amazonaws.codec.BinaryUtils;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
 import com.amazonaws.method.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
-import com.amazonaws.services.elastictranscoder.model.*;
-import com.amazonaws.stringutil.StringUtils;
+import com.amazonaws.services.elastictranscoder.model.Artwork;
+import com.amazonaws.services.elastictranscoder.model.CaptionFormat;
+import com.amazonaws.services.elastictranscoder.model.CaptionSource;
+import com.amazonaws.services.elastictranscoder.model.Captions;
+import com.amazonaws.services.elastictranscoder.model.Clip;
+import com.amazonaws.services.elastictranscoder.model.CreateJobOutput;
+import com.amazonaws.services.elastictranscoder.model.CreateJobPlaylist;
+import com.amazonaws.services.elastictranscoder.model.CreateJobRequest;
+import com.amazonaws.services.elastictranscoder.model.JobAlbumArt;
+import com.amazonaws.services.elastictranscoder.model.JobInput;
+import com.amazonaws.services.elastictranscoder.model.JobWatermark;
+import com.amazonaws.services.elastictranscoder.model.TimeSpan;
 import com.amazonaws.transform.Marshaller;
 import com.amazonaws.util.StringInputStream;
-import com.amazonaws.util.json.*;
 
 /**
  * Create Job Request Marshaller

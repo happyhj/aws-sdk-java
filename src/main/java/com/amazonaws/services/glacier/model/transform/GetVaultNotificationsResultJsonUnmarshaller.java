@@ -15,15 +15,12 @@
 
 package com.amazonaws.services.glacier.model.transform;
 
-import java.util.Map;
-import java.util.Map.Entry;
+import static com.fasterxml.jackson.core.JsonToken.VALUE_NULL;
 
-import com.amazonaws.services.glacier.model.*;
-import com.amazonaws.transform.SimpleTypeJsonUnmarshallers.*;
-import com.amazonaws.transform.*;
-
+import com.amazonaws.services.glacier.model.GetVaultNotificationsResult;
+import com.amazonaws.transform.JsonUnmarshallerContext;
+import com.amazonaws.transform.Unmarshaller;
 import com.fasterxml.jackson.core.JsonToken;
-import static com.fasterxml.jackson.core.JsonToken.*;
 
 /**
  * Get Vault Notifications Result JSON Unmarshaller

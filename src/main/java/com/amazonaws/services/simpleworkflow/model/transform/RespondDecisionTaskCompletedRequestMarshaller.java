@@ -14,31 +14,34 @@
  */
 package com.amazonaws.services.simpleworkflow.model.transform;
 
-import static com.amazonaws.stringutil.StringUtils.COMMA_SEPARATOR;
 import static com.amazonaws.stringutil.StringUtils.UTF8;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.OutputStreamWriter;
 import java.io.StringWriter;
-import java.io.Writer;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.List;
-import java.util.regex.Pattern;
 
-import com.amazonaws.codec.BinaryUtils;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
 import com.amazonaws.method.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
-import com.amazonaws.services.simpleworkflow.model.*;
-import com.amazonaws.stringutil.StringUtils;
+import com.amazonaws.services.simpleworkflow.model.ActivityType;
+import com.amazonaws.services.simpleworkflow.model.CancelTimerDecisionAttributes;
+import com.amazonaws.services.simpleworkflow.model.CancelWorkflowExecutionDecisionAttributes;
+import com.amazonaws.services.simpleworkflow.model.CompleteWorkflowExecutionDecisionAttributes;
+import com.amazonaws.services.simpleworkflow.model.ContinueAsNewWorkflowExecutionDecisionAttributes;
+import com.amazonaws.services.simpleworkflow.model.Decision;
+import com.amazonaws.services.simpleworkflow.model.FailWorkflowExecutionDecisionAttributes;
+import com.amazonaws.services.simpleworkflow.model.RecordMarkerDecisionAttributes;
+import com.amazonaws.services.simpleworkflow.model.RequestCancelActivityTaskDecisionAttributes;
+import com.amazonaws.services.simpleworkflow.model.RequestCancelExternalWorkflowExecutionDecisionAttributes;
+import com.amazonaws.services.simpleworkflow.model.RespondDecisionTaskCompletedRequest;
+import com.amazonaws.services.simpleworkflow.model.ScheduleActivityTaskDecisionAttributes;
+import com.amazonaws.services.simpleworkflow.model.SignalExternalWorkflowExecutionDecisionAttributes;
+import com.amazonaws.services.simpleworkflow.model.StartChildWorkflowExecutionDecisionAttributes;
+import com.amazonaws.services.simpleworkflow.model.StartTimerDecisionAttributes;
+import com.amazonaws.services.simpleworkflow.model.TaskList;
+import com.amazonaws.services.simpleworkflow.model.WorkflowType;
 import com.amazonaws.transform.Marshaller;
 import com.amazonaws.util.StringInputStream;
-import com.amazonaws.util.json.*;
 
 /**
  * Respond Decision Task Completed Request Marshaller

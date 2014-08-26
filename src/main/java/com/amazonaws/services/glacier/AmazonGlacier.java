@@ -14,14 +14,51 @@
  */
 package com.amazonaws.services.glacier;
 
-import com.amazonaws.*;
+import com.amazonaws.ResponseMetadata;
 import com.amazonaws.client.ClientConfiguration;
 import com.amazonaws.client.region.Region;
-import com.amazonaws.client.regions.*;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.network.request.AmazonWebServiceRequest;
-import com.amazonaws.services.glacier.model.*;
+import com.amazonaws.services.glacier.model.AbortMultipartUploadRequest;
+import com.amazonaws.services.glacier.model.CompleteMultipartUploadRequest;
+import com.amazonaws.services.glacier.model.CompleteMultipartUploadResult;
+import com.amazonaws.services.glacier.model.CreateVaultRequest;
+import com.amazonaws.services.glacier.model.CreateVaultResult;
+import com.amazonaws.services.glacier.model.DeleteArchiveRequest;
+import com.amazonaws.services.glacier.model.DeleteVaultNotificationsRequest;
+import com.amazonaws.services.glacier.model.DeleteVaultRequest;
+import com.amazonaws.services.glacier.model.DescribeJobRequest;
+import com.amazonaws.services.glacier.model.DescribeJobResult;
+import com.amazonaws.services.glacier.model.DescribeVaultRequest;
+import com.amazonaws.services.glacier.model.DescribeVaultResult;
+import com.amazonaws.services.glacier.model.GetJobOutputRequest;
+import com.amazonaws.services.glacier.model.GetJobOutputResult;
+import com.amazonaws.services.glacier.model.GetVaultNotificationsRequest;
+import com.amazonaws.services.glacier.model.GetVaultNotificationsResult;
+import com.amazonaws.services.glacier.model.InitiateJobRequest;
+import com.amazonaws.services.glacier.model.InitiateJobResult;
+import com.amazonaws.services.glacier.model.InitiateMultipartUploadRequest;
+import com.amazonaws.services.glacier.model.InitiateMultipartUploadResult;
+import com.amazonaws.services.glacier.model.InvalidParameterValueException;
+import com.amazonaws.services.glacier.model.LimitExceededException;
+import com.amazonaws.services.glacier.model.ListJobsRequest;
+import com.amazonaws.services.glacier.model.ListJobsResult;
+import com.amazonaws.services.glacier.model.ListMultipartUploadsRequest;
+import com.amazonaws.services.glacier.model.ListMultipartUploadsResult;
+import com.amazonaws.services.glacier.model.ListPartsRequest;
+import com.amazonaws.services.glacier.model.ListPartsResult;
+import com.amazonaws.services.glacier.model.ListVaultsRequest;
+import com.amazonaws.services.glacier.model.ListVaultsResult;
+import com.amazonaws.services.glacier.model.MissingParameterValueException;
+import com.amazonaws.services.glacier.model.RequestTimeoutException;
+import com.amazonaws.services.glacier.model.ResourceNotFoundException;
+import com.amazonaws.services.glacier.model.ServiceUnavailableException;
+import com.amazonaws.services.glacier.model.SetVaultNotificationsRequest;
+import com.amazonaws.services.glacier.model.UploadArchiveRequest;
+import com.amazonaws.services.glacier.model.UploadArchiveResult;
+import com.amazonaws.services.glacier.model.UploadMultipartPartRequest;
+import com.amazonaws.services.glacier.model.UploadMultipartPartResult;
 
 /**
  * Interface for accessing AmazonGlacier.

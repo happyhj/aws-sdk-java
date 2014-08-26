@@ -19,7 +19,20 @@ import java.util.concurrent.Future;
 import com.amazonaws.client.handler.request.AsyncHandler;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
-import com.amazonaws.services.simpledb.model.*;
+import com.amazonaws.services.simpledb.model.BatchDeleteAttributesRequest;
+import com.amazonaws.services.simpledb.model.BatchPutAttributesRequest;
+import com.amazonaws.services.simpledb.model.CreateDomainRequest;
+import com.amazonaws.services.simpledb.model.DeleteAttributesRequest;
+import com.amazonaws.services.simpledb.model.DeleteDomainRequest;
+import com.amazonaws.services.simpledb.model.DomainMetadataRequest;
+import com.amazonaws.services.simpledb.model.DomainMetadataResult;
+import com.amazonaws.services.simpledb.model.GetAttributesRequest;
+import com.amazonaws.services.simpledb.model.GetAttributesResult;
+import com.amazonaws.services.simpledb.model.ListDomainsRequest;
+import com.amazonaws.services.simpledb.model.ListDomainsResult;
+import com.amazonaws.services.simpledb.model.PutAttributesRequest;
+import com.amazonaws.services.simpledb.model.SelectRequest;
+import com.amazonaws.services.simpledb.model.SelectResult;
 
 /**
  * Interface for accessing AmazonSimpleDB asynchronously.

@@ -14,10 +14,10 @@
  */
 package com.amazonaws.services.glacier.model.transform;
 
-import com.amazonaws.transform.GlacierErrorUnmarshaller;
 import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.json.JSONObject;
 import com.amazonaws.services.glacier.model.ResourceNotFoundException;
+import com.amazonaws.transform.GlacierErrorUnmarshaller;
 
 public class ResourceNotFoundExceptionUnmarshaller extends GlacierErrorUnmarshaller {
 

@@ -14,10 +14,10 @@
  */
 package com.amazonaws.services.opsworks.model.transform;
 
-import com.amazonaws.transform.JsonErrorUnmarshaller;
 import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.json.JSONObject;
 import com.amazonaws.services.opsworks.model.ResourceNotFoundException;
+import com.amazonaws.transform.JsonErrorUnmarshaller;
 
 public class ResourceNotFoundExceptionUnmarshaller extends JsonErrorUnmarshaller {
 

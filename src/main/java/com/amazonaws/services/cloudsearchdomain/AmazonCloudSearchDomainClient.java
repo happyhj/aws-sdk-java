@@ -14,24 +14,22 @@
  */
 package com.amazonaws.services.cloudsearchdomain;
 
-import java.io.*;
-import java.net.*;
-import java.util.*;
+import static com.amazonaws.sdkutil.IOUtils.closeQuietly;
 
-import org.apache.commons.logging.*;
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.List;
 
-import com.amazonaws.*;
-import com.amazonaws.auth.*;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
+import com.amazonaws.ResponseMetadata;
 import com.amazonaws.authprovider.DefaultAWSCredentialsProviderChain;
 import com.amazonaws.client.ClientConfiguration;
-import com.amazonaws.client.handler.*;
 import com.amazonaws.client.handler.request.HandlerChainFactory;
 import com.amazonaws.client.handler.response.HttpResponseHandler;
 import com.amazonaws.client.handler.response.JsonErrorResponseHandler;
 import com.amazonaws.client.handler.response.JsonResponseHandler;
-import com.amazonaws.client.http.*;
-import com.amazonaws.client.metrics.*;
-import com.amazonaws.client.regions.*;
 import com.amazonaws.client.service.AmazonWebServiceClient;
 import com.amazonaws.client.service.ExecutionContext;
 import com.amazonaws.credential.AWSCredentials;
@@ -39,7 +37,6 @@ import com.amazonaws.credential.AWSCredentialsProvider;
 import com.amazonaws.credential.StaticCredentialsProvider;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
-import com.amazonaws.internal.*;
 import com.amazonaws.metricsutil.AWSRequestMetrics;
 import com.amazonaws.metricsutil.AWSRequestMetrics.Field;
 import com.amazonaws.network.request.AmazonWebServiceRequest;
@@ -47,15 +44,26 @@ import com.amazonaws.network.request.RequestMetricCollector;
 import com.amazonaws.network.response.AmazonWebServiceResponse;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.network.type.Response;
-import com.amazonaws.transform.*;
-import com.amazonaws.util.*;
-
-import static com.amazonaws.sdkutil.IOUtils.*;
-
-import com.amazonaws.util.json.*;
 import com.amazonaws.sdkutil.ReleasableInputStream;
-import com.amazonaws.services.cloudsearchdomain.model.*;
-import com.amazonaws.services.cloudsearchdomain.model.transform.*;
+import com.amazonaws.services.cloudsearchdomain.model.DocumentServiceException;
+import com.amazonaws.services.cloudsearchdomain.model.SearchException;
+import com.amazonaws.services.cloudsearchdomain.model.SearchRequest;
+import com.amazonaws.services.cloudsearchdomain.model.SearchResult;
+import com.amazonaws.services.cloudsearchdomain.model.SuggestRequest;
+import com.amazonaws.services.cloudsearchdomain.model.SuggestResult;
+import com.amazonaws.services.cloudsearchdomain.model.UploadDocumentsRequest;
+import com.amazonaws.services.cloudsearchdomain.model.UploadDocumentsResult;
+import com.amazonaws.services.cloudsearchdomain.model.transform.DocumentServiceExceptionUnmarshaller;
+import com.amazonaws.services.cloudsearchdomain.model.transform.SearchExceptionUnmarshaller;
+import com.amazonaws.services.cloudsearchdomain.model.transform.SearchRequestMarshaller;
+import com.amazonaws.services.cloudsearchdomain.model.transform.SearchResultJsonUnmarshaller;
+import com.amazonaws.services.cloudsearchdomain.model.transform.SuggestRequestMarshaller;
+import com.amazonaws.services.cloudsearchdomain.model.transform.SuggestResultJsonUnmarshaller;
+import com.amazonaws.services.cloudsearchdomain.model.transform.UploadDocumentsRequestMarshaller;
+import com.amazonaws.services.cloudsearchdomain.model.transform.UploadDocumentsResultJsonUnmarshaller;
+import com.amazonaws.transform.JsonErrorUnmarshaller;
+import com.amazonaws.transform.JsonUnmarshallerContext;
+import com.amazonaws.transform.Unmarshaller;
 
 /**
  * Client for accessing AmazonCloudSearchDomain.  All service calls made

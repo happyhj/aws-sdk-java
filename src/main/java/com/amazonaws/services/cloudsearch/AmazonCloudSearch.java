@@ -14,14 +14,62 @@
  */
 package com.amazonaws.services.cloudsearch;
 
-import com.amazonaws.*;
+import com.amazonaws.ResponseMetadata;
 import com.amazonaws.client.ClientConfiguration;
 import com.amazonaws.client.region.Region;
-import com.amazonaws.client.regions.*;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.network.request.AmazonWebServiceRequest;
-import com.amazonaws.services.cloudsearch.model.*;
+import com.amazonaws.services.cloudsearch.model.BaseException;
+import com.amazonaws.services.cloudsearch.model.CreateDomainRequest;
+import com.amazonaws.services.cloudsearch.model.CreateDomainResult;
+import com.amazonaws.services.cloudsearch.model.DefineIndexFieldRequest;
+import com.amazonaws.services.cloudsearch.model.DefineIndexFieldResult;
+import com.amazonaws.services.cloudsearch.model.DefineRankExpressionRequest;
+import com.amazonaws.services.cloudsearch.model.DefineRankExpressionResult;
+import com.amazonaws.services.cloudsearch.model.DeleteDomainRequest;
+import com.amazonaws.services.cloudsearch.model.DeleteDomainResult;
+import com.amazonaws.services.cloudsearch.model.DeleteIndexFieldRequest;
+import com.amazonaws.services.cloudsearch.model.DeleteIndexFieldResult;
+import com.amazonaws.services.cloudsearch.model.DeleteRankExpressionRequest;
+import com.amazonaws.services.cloudsearch.model.DeleteRankExpressionResult;
+import com.amazonaws.services.cloudsearch.model.DescribeAvailabilityOptionsRequest;
+import com.amazonaws.services.cloudsearch.model.DescribeAvailabilityOptionsResult;
+import com.amazonaws.services.cloudsearch.model.DescribeDefaultSearchFieldRequest;
+import com.amazonaws.services.cloudsearch.model.DescribeDefaultSearchFieldResult;
+import com.amazonaws.services.cloudsearch.model.DescribeDomainsRequest;
+import com.amazonaws.services.cloudsearch.model.DescribeDomainsResult;
+import com.amazonaws.services.cloudsearch.model.DescribeIndexFieldsRequest;
+import com.amazonaws.services.cloudsearch.model.DescribeIndexFieldsResult;
+import com.amazonaws.services.cloudsearch.model.DescribeRankExpressionsRequest;
+import com.amazonaws.services.cloudsearch.model.DescribeRankExpressionsResult;
+import com.amazonaws.services.cloudsearch.model.DescribeServiceAccessPoliciesRequest;
+import com.amazonaws.services.cloudsearch.model.DescribeServiceAccessPoliciesResult;
+import com.amazonaws.services.cloudsearch.model.DescribeStemmingOptionsRequest;
+import com.amazonaws.services.cloudsearch.model.DescribeStemmingOptionsResult;
+import com.amazonaws.services.cloudsearch.model.DescribeStopwordOptionsRequest;
+import com.amazonaws.services.cloudsearch.model.DescribeStopwordOptionsResult;
+import com.amazonaws.services.cloudsearch.model.DescribeSynonymOptionsRequest;
+import com.amazonaws.services.cloudsearch.model.DescribeSynonymOptionsResult;
+import com.amazonaws.services.cloudsearch.model.DisabledOperationException;
+import com.amazonaws.services.cloudsearch.model.IndexDocumentsRequest;
+import com.amazonaws.services.cloudsearch.model.IndexDocumentsResult;
+import com.amazonaws.services.cloudsearch.model.InternalException;
+import com.amazonaws.services.cloudsearch.model.InvalidTypeException;
+import com.amazonaws.services.cloudsearch.model.LimitExceededException;
+import com.amazonaws.services.cloudsearch.model.ResourceNotFoundException;
+import com.amazonaws.services.cloudsearch.model.UpdateAvailabilityOptionsRequest;
+import com.amazonaws.services.cloudsearch.model.UpdateAvailabilityOptionsResult;
+import com.amazonaws.services.cloudsearch.model.UpdateDefaultSearchFieldRequest;
+import com.amazonaws.services.cloudsearch.model.UpdateDefaultSearchFieldResult;
+import com.amazonaws.services.cloudsearch.model.UpdateServiceAccessPoliciesRequest;
+import com.amazonaws.services.cloudsearch.model.UpdateServiceAccessPoliciesResult;
+import com.amazonaws.services.cloudsearch.model.UpdateStemmingOptionsRequest;
+import com.amazonaws.services.cloudsearch.model.UpdateStemmingOptionsResult;
+import com.amazonaws.services.cloudsearch.model.UpdateStopwordOptionsRequest;
+import com.amazonaws.services.cloudsearch.model.UpdateStopwordOptionsResult;
+import com.amazonaws.services.cloudsearch.model.UpdateSynonymOptionsRequest;
+import com.amazonaws.services.cloudsearch.model.UpdateSynonymOptionsResult;
 
 /**
  * Interface for accessing AmazonCloudSearch. Amazon CloudSearch Configuration

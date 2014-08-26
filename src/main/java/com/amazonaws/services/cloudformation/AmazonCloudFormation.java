@@ -14,14 +14,42 @@
  */
 package com.amazonaws.services.cloudformation;
 
-import com.amazonaws.*;
+import com.amazonaws.ResponseMetadata;
 import com.amazonaws.client.ClientConfiguration;
 import com.amazonaws.client.region.Region;
-import com.amazonaws.client.regions.*;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.network.request.AmazonWebServiceRequest;
-import com.amazonaws.services.cloudformation.model.*;
+import com.amazonaws.services.cloudformation.model.AlreadyExistsException;
+import com.amazonaws.services.cloudformation.model.CancelUpdateStackRequest;
+import com.amazonaws.services.cloudformation.model.CreateStackRequest;
+import com.amazonaws.services.cloudformation.model.CreateStackResult;
+import com.amazonaws.services.cloudformation.model.DeleteStackRequest;
+import com.amazonaws.services.cloudformation.model.DescribeStackEventsRequest;
+import com.amazonaws.services.cloudformation.model.DescribeStackEventsResult;
+import com.amazonaws.services.cloudformation.model.DescribeStackResourceRequest;
+import com.amazonaws.services.cloudformation.model.DescribeStackResourceResult;
+import com.amazonaws.services.cloudformation.model.DescribeStackResourcesRequest;
+import com.amazonaws.services.cloudformation.model.DescribeStackResourcesResult;
+import com.amazonaws.services.cloudformation.model.DescribeStacksRequest;
+import com.amazonaws.services.cloudformation.model.DescribeStacksResult;
+import com.amazonaws.services.cloudformation.model.EstimateTemplateCostRequest;
+import com.amazonaws.services.cloudformation.model.EstimateTemplateCostResult;
+import com.amazonaws.services.cloudformation.model.GetStackPolicyRequest;
+import com.amazonaws.services.cloudformation.model.GetStackPolicyResult;
+import com.amazonaws.services.cloudformation.model.GetTemplateRequest;
+import com.amazonaws.services.cloudformation.model.GetTemplateResult;
+import com.amazonaws.services.cloudformation.model.InsufficientCapabilitiesException;
+import com.amazonaws.services.cloudformation.model.LimitExceededException;
+import com.amazonaws.services.cloudformation.model.ListStackResourcesRequest;
+import com.amazonaws.services.cloudformation.model.ListStackResourcesResult;
+import com.amazonaws.services.cloudformation.model.ListStacksRequest;
+import com.amazonaws.services.cloudformation.model.ListStacksResult;
+import com.amazonaws.services.cloudformation.model.SetStackPolicyRequest;
+import com.amazonaws.services.cloudformation.model.UpdateStackRequest;
+import com.amazonaws.services.cloudformation.model.UpdateStackResult;
+import com.amazonaws.services.cloudformation.model.ValidateTemplateRequest;
+import com.amazonaws.services.cloudformation.model.ValidateTemplateResult;
 
 /**
  * Interface for accessing AmazonCloudFormation.

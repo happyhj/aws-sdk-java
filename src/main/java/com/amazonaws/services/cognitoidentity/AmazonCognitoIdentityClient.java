@@ -14,23 +14,19 @@
  */
 package com.amazonaws.services.cognitoidentity;
 
-import java.net.*;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
-import org.apache.commons.logging.*;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
-import com.amazonaws.*;
-import com.amazonaws.auth.*;
+import com.amazonaws.ResponseMetadata;
 import com.amazonaws.authprovider.DefaultAWSCredentialsProviderChain;
 import com.amazonaws.client.ClientConfiguration;
-import com.amazonaws.client.handler.*;
 import com.amazonaws.client.handler.request.HandlerChainFactory;
 import com.amazonaws.client.handler.response.HttpResponseHandler;
 import com.amazonaws.client.handler.response.JsonErrorResponseHandler;
 import com.amazonaws.client.handler.response.JsonResponseHandler;
-import com.amazonaws.client.http.*;
-import com.amazonaws.client.metrics.*;
-import com.amazonaws.client.regions.*;
 import com.amazonaws.client.service.AmazonWebServiceClient;
 import com.amazonaws.client.service.ExecutionContext;
 import com.amazonaws.credential.AWSCredentials;
@@ -38,7 +34,6 @@ import com.amazonaws.credential.AWSCredentialsProvider;
 import com.amazonaws.credential.StaticCredentialsProvider;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
-import com.amazonaws.internal.*;
 import com.amazonaws.metricsutil.AWSRequestMetrics;
 import com.amazonaws.metricsutil.AWSRequestMetrics.Field;
 import com.amazonaws.network.request.AmazonWebServiceRequest;
@@ -46,14 +41,55 @@ import com.amazonaws.network.request.RequestMetricCollector;
 import com.amazonaws.network.response.AmazonWebServiceResponse;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.network.type.Response;
-import com.amazonaws.transform.*;
-import com.amazonaws.util.*;
-
-import static com.amazonaws.sdkutil.IOUtils.*;
-
-import com.amazonaws.util.json.*;
-import com.amazonaws.services.cognitoidentity.model.*;
-import com.amazonaws.services.cognitoidentity.model.transform.*;
+import com.amazonaws.services.cognitoidentity.model.CreateIdentityPoolRequest;
+import com.amazonaws.services.cognitoidentity.model.CreateIdentityPoolResult;
+import com.amazonaws.services.cognitoidentity.model.DeleteIdentityPoolRequest;
+import com.amazonaws.services.cognitoidentity.model.DescribeIdentityPoolRequest;
+import com.amazonaws.services.cognitoidentity.model.DescribeIdentityPoolResult;
+import com.amazonaws.services.cognitoidentity.model.GetIdRequest;
+import com.amazonaws.services.cognitoidentity.model.GetIdResult;
+import com.amazonaws.services.cognitoidentity.model.GetOpenIdTokenRequest;
+import com.amazonaws.services.cognitoidentity.model.GetOpenIdTokenResult;
+import com.amazonaws.services.cognitoidentity.model.InternalErrorException;
+import com.amazonaws.services.cognitoidentity.model.InvalidParameterException;
+import com.amazonaws.services.cognitoidentity.model.LimitExceededException;
+import com.amazonaws.services.cognitoidentity.model.ListIdentitiesRequest;
+import com.amazonaws.services.cognitoidentity.model.ListIdentitiesResult;
+import com.amazonaws.services.cognitoidentity.model.ListIdentityPoolsRequest;
+import com.amazonaws.services.cognitoidentity.model.ListIdentityPoolsResult;
+import com.amazonaws.services.cognitoidentity.model.NotAuthorizedException;
+import com.amazonaws.services.cognitoidentity.model.ResourceConflictException;
+import com.amazonaws.services.cognitoidentity.model.ResourceNotFoundException;
+import com.amazonaws.services.cognitoidentity.model.TooManyRequestsException;
+import com.amazonaws.services.cognitoidentity.model.UnlinkIdentityRequest;
+import com.amazonaws.services.cognitoidentity.model.UpdateIdentityPoolRequest;
+import com.amazonaws.services.cognitoidentity.model.UpdateIdentityPoolResult;
+import com.amazonaws.services.cognitoidentity.model.transform.CreateIdentityPoolRequestMarshaller;
+import com.amazonaws.services.cognitoidentity.model.transform.CreateIdentityPoolResultJsonUnmarshaller;
+import com.amazonaws.services.cognitoidentity.model.transform.DeleteIdentityPoolRequestMarshaller;
+import com.amazonaws.services.cognitoidentity.model.transform.DescribeIdentityPoolRequestMarshaller;
+import com.amazonaws.services.cognitoidentity.model.transform.DescribeIdentityPoolResultJsonUnmarshaller;
+import com.amazonaws.services.cognitoidentity.model.transform.GetIdRequestMarshaller;
+import com.amazonaws.services.cognitoidentity.model.transform.GetIdResultJsonUnmarshaller;
+import com.amazonaws.services.cognitoidentity.model.transform.GetOpenIdTokenRequestMarshaller;
+import com.amazonaws.services.cognitoidentity.model.transform.GetOpenIdTokenResultJsonUnmarshaller;
+import com.amazonaws.services.cognitoidentity.model.transform.InternalErrorExceptionUnmarshaller;
+import com.amazonaws.services.cognitoidentity.model.transform.InvalidParameterExceptionUnmarshaller;
+import com.amazonaws.services.cognitoidentity.model.transform.LimitExceededExceptionUnmarshaller;
+import com.amazonaws.services.cognitoidentity.model.transform.ListIdentitiesRequestMarshaller;
+import com.amazonaws.services.cognitoidentity.model.transform.ListIdentitiesResultJsonUnmarshaller;
+import com.amazonaws.services.cognitoidentity.model.transform.ListIdentityPoolsRequestMarshaller;
+import com.amazonaws.services.cognitoidentity.model.transform.ListIdentityPoolsResultJsonUnmarshaller;
+import com.amazonaws.services.cognitoidentity.model.transform.NotAuthorizedExceptionUnmarshaller;
+import com.amazonaws.services.cognitoidentity.model.transform.ResourceConflictExceptionUnmarshaller;
+import com.amazonaws.services.cognitoidentity.model.transform.ResourceNotFoundExceptionUnmarshaller;
+import com.amazonaws.services.cognitoidentity.model.transform.TooManyRequestsExceptionUnmarshaller;
+import com.amazonaws.services.cognitoidentity.model.transform.UnlinkIdentityRequestMarshaller;
+import com.amazonaws.services.cognitoidentity.model.transform.UpdateIdentityPoolRequestMarshaller;
+import com.amazonaws.services.cognitoidentity.model.transform.UpdateIdentityPoolResultJsonUnmarshaller;
+import com.amazonaws.transform.JsonErrorUnmarshaller;
+import com.amazonaws.transform.JsonUnmarshallerContext;
+import com.amazonaws.transform.Unmarshaller;
 
 /**
  * Client for accessing AmazonCognitoIdentity.  All service calls made

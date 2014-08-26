@@ -14,14 +14,44 @@
  */
 package com.amazonaws.services.route53domains;
 
-import com.amazonaws.*;
+import com.amazonaws.ResponseMetadata;
 import com.amazonaws.client.ClientConfiguration;
 import com.amazonaws.client.region.Region;
-import com.amazonaws.client.regions.*;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.network.request.AmazonWebServiceRequest;
-import com.amazonaws.services.route53domains.model.*;
+import com.amazonaws.services.route53domains.model.CheckDomainAvailabilityRequest;
+import com.amazonaws.services.route53domains.model.CheckDomainAvailabilityResult;
+import com.amazonaws.services.route53domains.model.DisableDomainTransferLockRequest;
+import com.amazonaws.services.route53domains.model.DisableDomainTransferLockResult;
+import com.amazonaws.services.route53domains.model.DomainLimitExceededException;
+import com.amazonaws.services.route53domains.model.DuplicateRequestException;
+import com.amazonaws.services.route53domains.model.EnableDomainTransferLockRequest;
+import com.amazonaws.services.route53domains.model.EnableDomainTransferLockResult;
+import com.amazonaws.services.route53domains.model.GetDomainDetailRequest;
+import com.amazonaws.services.route53domains.model.GetDomainDetailResult;
+import com.amazonaws.services.route53domains.model.GetOperationDetailRequest;
+import com.amazonaws.services.route53domains.model.GetOperationDetailResult;
+import com.amazonaws.services.route53domains.model.InvalidInputException;
+import com.amazonaws.services.route53domains.model.ListDomainsRequest;
+import com.amazonaws.services.route53domains.model.ListDomainsResult;
+import com.amazonaws.services.route53domains.model.ListOperationsRequest;
+import com.amazonaws.services.route53domains.model.ListOperationsResult;
+import com.amazonaws.services.route53domains.model.OperationLimitExceededException;
+import com.amazonaws.services.route53domains.model.RegisterDomainRequest;
+import com.amazonaws.services.route53domains.model.RegisterDomainResult;
+import com.amazonaws.services.route53domains.model.RetrieveDomainAuthCodeRequest;
+import com.amazonaws.services.route53domains.model.RetrieveDomainAuthCodeResult;
+import com.amazonaws.services.route53domains.model.TLDRulesViolationException;
+import com.amazonaws.services.route53domains.model.TransferDomainRequest;
+import com.amazonaws.services.route53domains.model.TransferDomainResult;
+import com.amazonaws.services.route53domains.model.UnsupportedTLDException;
+import com.amazonaws.services.route53domains.model.UpdateDomainContactPrivacyRequest;
+import com.amazonaws.services.route53domains.model.UpdateDomainContactPrivacyResult;
+import com.amazonaws.services.route53domains.model.UpdateDomainContactRequest;
+import com.amazonaws.services.route53domains.model.UpdateDomainContactResult;
+import com.amazonaws.services.route53domains.model.UpdateDomainNameserversRequest;
+import com.amazonaws.services.route53domains.model.UpdateDomainNameserversResult;
 
 /**
  * Interface for accessing AmazonRoute53Domains.

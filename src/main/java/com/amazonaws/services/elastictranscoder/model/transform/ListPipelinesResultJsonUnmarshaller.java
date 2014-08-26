@@ -15,15 +15,19 @@
 
 package com.amazonaws.services.elastictranscoder.model.transform;
 
-import java.util.Map;
-import java.util.Map.Entry;
+import static com.fasterxml.jackson.core.JsonToken.END_ARRAY;
+import static com.fasterxml.jackson.core.JsonToken.END_OBJECT;
+import static com.fasterxml.jackson.core.JsonToken.FIELD_NAME;
+import static com.fasterxml.jackson.core.JsonToken.START_OBJECT;
+import static com.fasterxml.jackson.core.JsonToken.VALUE_NULL;
 
-import com.amazonaws.services.elastictranscoder.model.*;
-import com.amazonaws.transform.SimpleTypeJsonUnmarshallers.*;
-import com.amazonaws.transform.*;
-
+import com.amazonaws.services.elastictranscoder.model.ListPipelinesResult;
+import com.amazonaws.services.elastictranscoder.model.Pipeline;
+import com.amazonaws.transform.JsonUnmarshallerContext;
+import com.amazonaws.transform.ListUnmarshaller;
+import com.amazonaws.transform.SimpleTypeJsonUnmarshallers.StringJsonUnmarshaller;
+import com.amazonaws.transform.Unmarshaller;
 import com.fasterxml.jackson.core.JsonToken;
-import static com.fasterxml.jackson.core.JsonToken.*;
 
 /**
  * List Pipelines Result JSON Unmarshaller

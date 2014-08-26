@@ -14,10 +14,10 @@
  */
 package com.amazonaws.services.logs.model.transform;
 
-import com.amazonaws.transform.JsonErrorUnmarshaller;
 import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.json.JSONObject;
 import com.amazonaws.services.logs.model.InvalidParameterException;
+import com.amazonaws.transform.JsonErrorUnmarshaller;
 
 public class InvalidParameterExceptionUnmarshaller extends JsonErrorUnmarshaller {
 

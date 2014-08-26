@@ -19,7 +19,36 @@ import java.util.concurrent.Future;
 import com.amazonaws.client.handler.request.AsyncHandler;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
-import com.amazonaws.services.datapipeline.model.*;
+import com.amazonaws.services.datapipeline.model.ActivatePipelineRequest;
+import com.amazonaws.services.datapipeline.model.ActivatePipelineResult;
+import com.amazonaws.services.datapipeline.model.CreatePipelineRequest;
+import com.amazonaws.services.datapipeline.model.CreatePipelineResult;
+import com.amazonaws.services.datapipeline.model.DeletePipelineRequest;
+import com.amazonaws.services.datapipeline.model.DescribeObjectsRequest;
+import com.amazonaws.services.datapipeline.model.DescribeObjectsResult;
+import com.amazonaws.services.datapipeline.model.DescribePipelinesRequest;
+import com.amazonaws.services.datapipeline.model.DescribePipelinesResult;
+import com.amazonaws.services.datapipeline.model.EvaluateExpressionRequest;
+import com.amazonaws.services.datapipeline.model.EvaluateExpressionResult;
+import com.amazonaws.services.datapipeline.model.GetPipelineDefinitionRequest;
+import com.amazonaws.services.datapipeline.model.GetPipelineDefinitionResult;
+import com.amazonaws.services.datapipeline.model.ListPipelinesRequest;
+import com.amazonaws.services.datapipeline.model.ListPipelinesResult;
+import com.amazonaws.services.datapipeline.model.PollForTaskRequest;
+import com.amazonaws.services.datapipeline.model.PollForTaskResult;
+import com.amazonaws.services.datapipeline.model.PutPipelineDefinitionRequest;
+import com.amazonaws.services.datapipeline.model.PutPipelineDefinitionResult;
+import com.amazonaws.services.datapipeline.model.QueryObjectsRequest;
+import com.amazonaws.services.datapipeline.model.QueryObjectsResult;
+import com.amazonaws.services.datapipeline.model.ReportTaskProgressRequest;
+import com.amazonaws.services.datapipeline.model.ReportTaskProgressResult;
+import com.amazonaws.services.datapipeline.model.ReportTaskRunnerHeartbeatRequest;
+import com.amazonaws.services.datapipeline.model.ReportTaskRunnerHeartbeatResult;
+import com.amazonaws.services.datapipeline.model.SetStatusRequest;
+import com.amazonaws.services.datapipeline.model.SetTaskStatusRequest;
+import com.amazonaws.services.datapipeline.model.SetTaskStatusResult;
+import com.amazonaws.services.datapipeline.model.ValidatePipelineDefinitionRequest;
+import com.amazonaws.services.datapipeline.model.ValidatePipelineDefinitionResult;
 
 /**
  * Interface for accessing DataPipeline asynchronously.

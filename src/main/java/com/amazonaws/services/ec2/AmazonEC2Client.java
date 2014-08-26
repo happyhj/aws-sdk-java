@@ -14,23 +14,18 @@
  */
 package com.amazonaws.services.ec2;
 
-import org.w3c.dom.*;
-
-import java.net.*;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map.Entry;
 
-import com.amazonaws.*;
-import com.amazonaws.auth.*;
+import org.w3c.dom.Node;
+
+import com.amazonaws.ResponseMetadata;
 import com.amazonaws.authprovider.DefaultAWSCredentialsProviderChain;
 import com.amazonaws.client.ClientConfiguration;
-import com.amazonaws.client.handler.*;
 import com.amazonaws.client.handler.request.HandlerChainFactory;
 import com.amazonaws.client.handler.response.DefaultErrorResponseHandler;
 import com.amazonaws.client.handler.response.StaxResponseHandler;
-import com.amazonaws.client.http.*;
-import com.amazonaws.client.metrics.*;
-import com.amazonaws.client.regions.*;
 import com.amazonaws.client.service.AmazonWebServiceClient;
 import com.amazonaws.client.service.ExecutionContext;
 import com.amazonaws.credential.AWSCredentials;
@@ -38,20 +33,17 @@ import com.amazonaws.credential.AWSCredentialsProvider;
 import com.amazonaws.credential.StaticCredentialsProvider;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
-import com.amazonaws.internal.*;
 import com.amazonaws.metricsutil.AWSRequestMetrics;
 import com.amazonaws.metricsutil.AWSRequestMetrics.Field;
 import com.amazonaws.network.request.AmazonWebServiceRequest;
 import com.amazonaws.network.request.RequestMetricCollector;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.network.type.Response;
-import com.amazonaws.transform.*;
-import com.amazonaws.util.*;
-
-import static com.amazonaws.sdkutil.IOUtils.*;
-
 import com.amazonaws.services.ec2.model.*;
 import com.amazonaws.services.ec2.model.transform.*;
+import com.amazonaws.transform.LegacyErrorUnmarshaller;
+import com.amazonaws.transform.StaxUnmarshallerContext;
+import com.amazonaws.transform.Unmarshaller;
 
 /**
  * Client for accessing AmazonEC2.  All service calls made

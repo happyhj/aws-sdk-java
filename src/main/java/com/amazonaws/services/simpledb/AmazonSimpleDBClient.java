@@ -14,23 +14,18 @@
  */
 package com.amazonaws.services.simpledb;
 
-import org.w3c.dom.*;
-
-import java.net.*;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map.Entry;
 
-import com.amazonaws.*;
-import com.amazonaws.auth.*;
+import org.w3c.dom.Node;
+
+import com.amazonaws.ResponseMetadata;
 import com.amazonaws.authprovider.DefaultAWSCredentialsProviderChain;
 import com.amazonaws.client.ClientConfiguration;
-import com.amazonaws.client.handler.*;
 import com.amazonaws.client.handler.request.HandlerChainFactory;
 import com.amazonaws.client.handler.response.DefaultErrorResponseHandler;
 import com.amazonaws.client.handler.response.StaxResponseHandler;
-import com.amazonaws.client.http.*;
-import com.amazonaws.client.metrics.*;
-import com.amazonaws.client.regions.*;
 import com.amazonaws.client.service.AmazonWebServiceClient;
 import com.amazonaws.client.service.ExecutionContext;
 import com.amazonaws.credential.AWSCredentials;
@@ -38,20 +33,77 @@ import com.amazonaws.credential.AWSCredentialsProvider;
 import com.amazonaws.credential.StaticCredentialsProvider;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
-import com.amazonaws.internal.*;
 import com.amazonaws.metricsutil.AWSRequestMetrics;
 import com.amazonaws.metricsutil.AWSRequestMetrics.Field;
 import com.amazonaws.network.request.AmazonWebServiceRequest;
 import com.amazonaws.network.request.RequestMetricCollector;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.network.type.Response;
-import com.amazonaws.transform.*;
-import com.amazonaws.util.*;
-
-import static com.amazonaws.sdkutil.IOUtils.*;
-
-import com.amazonaws.services.simpledb.model.*;
-import com.amazonaws.services.simpledb.model.transform.*;
+import com.amazonaws.services.simpledb.model.AttributeDoesNotExistException;
+import com.amazonaws.services.simpledb.model.BatchDeleteAttributesRequest;
+import com.amazonaws.services.simpledb.model.BatchPutAttributesRequest;
+import com.amazonaws.services.simpledb.model.CreateDomainRequest;
+import com.amazonaws.services.simpledb.model.DeleteAttributesRequest;
+import com.amazonaws.services.simpledb.model.DeleteDomainRequest;
+import com.amazonaws.services.simpledb.model.DomainMetadataRequest;
+import com.amazonaws.services.simpledb.model.DomainMetadataResult;
+import com.amazonaws.services.simpledb.model.DuplicateItemNameException;
+import com.amazonaws.services.simpledb.model.GetAttributesRequest;
+import com.amazonaws.services.simpledb.model.GetAttributesResult;
+import com.amazonaws.services.simpledb.model.InvalidNextTokenException;
+import com.amazonaws.services.simpledb.model.InvalidNumberPredicatesException;
+import com.amazonaws.services.simpledb.model.InvalidNumberValueTestsException;
+import com.amazonaws.services.simpledb.model.InvalidParameterValueException;
+import com.amazonaws.services.simpledb.model.InvalidQueryExpressionException;
+import com.amazonaws.services.simpledb.model.ListDomainsRequest;
+import com.amazonaws.services.simpledb.model.ListDomainsResult;
+import com.amazonaws.services.simpledb.model.MissingParameterException;
+import com.amazonaws.services.simpledb.model.NoSuchDomainException;
+import com.amazonaws.services.simpledb.model.NumberDomainAttributesExceededException;
+import com.amazonaws.services.simpledb.model.NumberDomainBytesExceededException;
+import com.amazonaws.services.simpledb.model.NumberDomainsExceededException;
+import com.amazonaws.services.simpledb.model.NumberItemAttributesExceededException;
+import com.amazonaws.services.simpledb.model.NumberSubmittedAttributesExceededException;
+import com.amazonaws.services.simpledb.model.NumberSubmittedItemsExceededException;
+import com.amazonaws.services.simpledb.model.PutAttributesRequest;
+import com.amazonaws.services.simpledb.model.RequestTimeoutException;
+import com.amazonaws.services.simpledb.model.SelectRequest;
+import com.amazonaws.services.simpledb.model.SelectResult;
+import com.amazonaws.services.simpledb.model.TooManyRequestedAttributesException;
+import com.amazonaws.services.simpledb.model.transform.AttributeDoesNotExistExceptionUnmarshaller;
+import com.amazonaws.services.simpledb.model.transform.BatchDeleteAttributesRequestMarshaller;
+import com.amazonaws.services.simpledb.model.transform.BatchPutAttributesRequestMarshaller;
+import com.amazonaws.services.simpledb.model.transform.CreateDomainRequestMarshaller;
+import com.amazonaws.services.simpledb.model.transform.DeleteAttributesRequestMarshaller;
+import com.amazonaws.services.simpledb.model.transform.DeleteDomainRequestMarshaller;
+import com.amazonaws.services.simpledb.model.transform.DomainMetadataRequestMarshaller;
+import com.amazonaws.services.simpledb.model.transform.DomainMetadataResultStaxUnmarshaller;
+import com.amazonaws.services.simpledb.model.transform.DuplicateItemNameExceptionUnmarshaller;
+import com.amazonaws.services.simpledb.model.transform.GetAttributesRequestMarshaller;
+import com.amazonaws.services.simpledb.model.transform.GetAttributesResultStaxUnmarshaller;
+import com.amazonaws.services.simpledb.model.transform.InvalidNextTokenExceptionUnmarshaller;
+import com.amazonaws.services.simpledb.model.transform.InvalidNumberPredicatesExceptionUnmarshaller;
+import com.amazonaws.services.simpledb.model.transform.InvalidNumberValueTestsExceptionUnmarshaller;
+import com.amazonaws.services.simpledb.model.transform.InvalidParameterValueExceptionUnmarshaller;
+import com.amazonaws.services.simpledb.model.transform.InvalidQueryExpressionExceptionUnmarshaller;
+import com.amazonaws.services.simpledb.model.transform.ListDomainsRequestMarshaller;
+import com.amazonaws.services.simpledb.model.transform.ListDomainsResultStaxUnmarshaller;
+import com.amazonaws.services.simpledb.model.transform.MissingParameterExceptionUnmarshaller;
+import com.amazonaws.services.simpledb.model.transform.NoSuchDomainExceptionUnmarshaller;
+import com.amazonaws.services.simpledb.model.transform.NumberDomainAttributesExceededExceptionUnmarshaller;
+import com.amazonaws.services.simpledb.model.transform.NumberDomainBytesExceededExceptionUnmarshaller;
+import com.amazonaws.services.simpledb.model.transform.NumberDomainsExceededExceptionUnmarshaller;
+import com.amazonaws.services.simpledb.model.transform.NumberItemAttributesExceededExceptionUnmarshaller;
+import com.amazonaws.services.simpledb.model.transform.NumberSubmittedAttributesExceededExceptionUnmarshaller;
+import com.amazonaws.services.simpledb.model.transform.NumberSubmittedItemsExceededExceptionUnmarshaller;
+import com.amazonaws.services.simpledb.model.transform.PutAttributesRequestMarshaller;
+import com.amazonaws.services.simpledb.model.transform.RequestTimeoutExceptionUnmarshaller;
+import com.amazonaws.services.simpledb.model.transform.SelectRequestMarshaller;
+import com.amazonaws.services.simpledb.model.transform.SelectResultStaxUnmarshaller;
+import com.amazonaws.services.simpledb.model.transform.TooManyRequestedAttributesExceptionUnmarshaller;
+import com.amazonaws.transform.LegacyErrorUnmarshaller;
+import com.amazonaws.transform.StaxUnmarshallerContext;
+import com.amazonaws.transform.Unmarshaller;
 
 /**
  * Client for accessing AmazonSimpleDB.  All service calls made

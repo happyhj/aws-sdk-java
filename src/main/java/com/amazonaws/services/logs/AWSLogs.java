@@ -14,14 +14,40 @@
  */
 package com.amazonaws.services.logs;
 
-import com.amazonaws.*;
+import com.amazonaws.ResponseMetadata;
 import com.amazonaws.client.ClientConfiguration;
 import com.amazonaws.client.region.Region;
-import com.amazonaws.client.regions.*;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.network.request.AmazonWebServiceRequest;
-import com.amazonaws.services.logs.model.*;
+import com.amazonaws.services.logs.model.CreateLogGroupRequest;
+import com.amazonaws.services.logs.model.CreateLogStreamRequest;
+import com.amazonaws.services.logs.model.DataAlreadyAcceptedException;
+import com.amazonaws.services.logs.model.DeleteLogGroupRequest;
+import com.amazonaws.services.logs.model.DeleteLogStreamRequest;
+import com.amazonaws.services.logs.model.DeleteMetricFilterRequest;
+import com.amazonaws.services.logs.model.DeleteRetentionPolicyRequest;
+import com.amazonaws.services.logs.model.DescribeLogGroupsRequest;
+import com.amazonaws.services.logs.model.DescribeLogGroupsResult;
+import com.amazonaws.services.logs.model.DescribeLogStreamsRequest;
+import com.amazonaws.services.logs.model.DescribeLogStreamsResult;
+import com.amazonaws.services.logs.model.DescribeMetricFiltersRequest;
+import com.amazonaws.services.logs.model.DescribeMetricFiltersResult;
+import com.amazonaws.services.logs.model.GetLogEventsRequest;
+import com.amazonaws.services.logs.model.GetLogEventsResult;
+import com.amazonaws.services.logs.model.InvalidParameterException;
+import com.amazonaws.services.logs.model.InvalidSequenceTokenException;
+import com.amazonaws.services.logs.model.LimitExceededException;
+import com.amazonaws.services.logs.model.OperationAbortedException;
+import com.amazonaws.services.logs.model.PutLogEventsRequest;
+import com.amazonaws.services.logs.model.PutLogEventsResult;
+import com.amazonaws.services.logs.model.PutMetricFilterRequest;
+import com.amazonaws.services.logs.model.PutRetentionPolicyRequest;
+import com.amazonaws.services.logs.model.ResourceAlreadyExistsException;
+import com.amazonaws.services.logs.model.ResourceNotFoundException;
+import com.amazonaws.services.logs.model.ServiceUnavailableException;
+import com.amazonaws.services.logs.model.TestMetricFilterRequest;
+import com.amazonaws.services.logs.model.TestMetricFilterResult;
 
 /**
  * Interface for accessing AWSLogs.

@@ -15,25 +15,22 @@
 package com.amazonaws.services.dynamodb.model.transform;
 
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.OutputStreamWriter;
 import java.io.StringWriter;
-import java.io.Writer;
 import java.util.Map;
-import java.util.List;
 
-import com.amazonaws.codec.BinaryUtils;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
 import com.amazonaws.method.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
-import com.amazonaws.services.dynamodb.model.*;
-import com.amazonaws.stringutil.StringUtils;
+import com.amazonaws.services.dynamodb.model.AttributeValue;
+import com.amazonaws.services.dynamodb.model.BatchWriteItemRequest;
+import com.amazonaws.services.dynamodb.model.DeleteRequest;
+import com.amazonaws.services.dynamodb.model.Key;
+import com.amazonaws.services.dynamodb.model.PutRequest;
+import com.amazonaws.services.dynamodb.model.WriteRequest;
 import com.amazonaws.transform.Marshaller;
 import com.amazonaws.util.StringInputStream;
-import com.amazonaws.util.json.*;
 
 /**
  * Batch Write Item Request Marshaller

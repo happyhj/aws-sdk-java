@@ -14,13 +14,41 @@
  */
 package com.amazonaws.services.simpledb;
 
-import com.amazonaws.*;
 import com.amazonaws.client.ClientConfiguration;
 import com.amazonaws.client.region.Region;
-import com.amazonaws.client.regions.*;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
-import com.amazonaws.services.simpledb.model.*;
+import com.amazonaws.services.simpledb.model.AttributeDoesNotExistException;
+import com.amazonaws.services.simpledb.model.BatchDeleteAttributesRequest;
+import com.amazonaws.services.simpledb.model.BatchPutAttributesRequest;
+import com.amazonaws.services.simpledb.model.CreateDomainRequest;
+import com.amazonaws.services.simpledb.model.DeleteAttributesRequest;
+import com.amazonaws.services.simpledb.model.DeleteDomainRequest;
+import com.amazonaws.services.simpledb.model.DomainMetadataRequest;
+import com.amazonaws.services.simpledb.model.DomainMetadataResult;
+import com.amazonaws.services.simpledb.model.DuplicateItemNameException;
+import com.amazonaws.services.simpledb.model.GetAttributesRequest;
+import com.amazonaws.services.simpledb.model.GetAttributesResult;
+import com.amazonaws.services.simpledb.model.InvalidNextTokenException;
+import com.amazonaws.services.simpledb.model.InvalidNumberPredicatesException;
+import com.amazonaws.services.simpledb.model.InvalidNumberValueTestsException;
+import com.amazonaws.services.simpledb.model.InvalidParameterValueException;
+import com.amazonaws.services.simpledb.model.InvalidQueryExpressionException;
+import com.amazonaws.services.simpledb.model.ListDomainsRequest;
+import com.amazonaws.services.simpledb.model.ListDomainsResult;
+import com.amazonaws.services.simpledb.model.MissingParameterException;
+import com.amazonaws.services.simpledb.model.NoSuchDomainException;
+import com.amazonaws.services.simpledb.model.NumberDomainAttributesExceededException;
+import com.amazonaws.services.simpledb.model.NumberDomainBytesExceededException;
+import com.amazonaws.services.simpledb.model.NumberDomainsExceededException;
+import com.amazonaws.services.simpledb.model.NumberItemAttributesExceededException;
+import com.amazonaws.services.simpledb.model.NumberSubmittedAttributesExceededException;
+import com.amazonaws.services.simpledb.model.NumberSubmittedItemsExceededException;
+import com.amazonaws.services.simpledb.model.PutAttributesRequest;
+import com.amazonaws.services.simpledb.model.RequestTimeoutException;
+import com.amazonaws.services.simpledb.model.SelectRequest;
+import com.amazonaws.services.simpledb.model.SelectResult;
+import com.amazonaws.services.simpledb.model.TooManyRequestedAttributesException;
 
 /**
  * Interface for accessing AmazonSimpleDB.

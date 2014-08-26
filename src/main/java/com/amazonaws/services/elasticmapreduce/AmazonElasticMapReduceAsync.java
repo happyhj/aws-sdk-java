@@ -19,7 +19,36 @@ import java.util.concurrent.Future;
 import com.amazonaws.client.handler.request.AsyncHandler;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
-import com.amazonaws.services.elasticmapreduce.model.*;
+import com.amazonaws.services.elasticmapreduce.model.AddInstanceGroupsRequest;
+import com.amazonaws.services.elasticmapreduce.model.AddInstanceGroupsResult;
+import com.amazonaws.services.elasticmapreduce.model.AddJobFlowStepsRequest;
+import com.amazonaws.services.elasticmapreduce.model.AddJobFlowStepsResult;
+import com.amazonaws.services.elasticmapreduce.model.AddTagsRequest;
+import com.amazonaws.services.elasticmapreduce.model.AddTagsResult;
+import com.amazonaws.services.elasticmapreduce.model.DescribeClusterRequest;
+import com.amazonaws.services.elasticmapreduce.model.DescribeClusterResult;
+import com.amazonaws.services.elasticmapreduce.model.DescribeJobFlowsRequest;
+import com.amazonaws.services.elasticmapreduce.model.DescribeJobFlowsResult;
+import com.amazonaws.services.elasticmapreduce.model.DescribeStepRequest;
+import com.amazonaws.services.elasticmapreduce.model.DescribeStepResult;
+import com.amazonaws.services.elasticmapreduce.model.ListBootstrapActionsRequest;
+import com.amazonaws.services.elasticmapreduce.model.ListBootstrapActionsResult;
+import com.amazonaws.services.elasticmapreduce.model.ListClustersRequest;
+import com.amazonaws.services.elasticmapreduce.model.ListClustersResult;
+import com.amazonaws.services.elasticmapreduce.model.ListInstanceGroupsRequest;
+import com.amazonaws.services.elasticmapreduce.model.ListInstanceGroupsResult;
+import com.amazonaws.services.elasticmapreduce.model.ListInstancesRequest;
+import com.amazonaws.services.elasticmapreduce.model.ListInstancesResult;
+import com.amazonaws.services.elasticmapreduce.model.ListStepsRequest;
+import com.amazonaws.services.elasticmapreduce.model.ListStepsResult;
+import com.amazonaws.services.elasticmapreduce.model.ModifyInstanceGroupsRequest;
+import com.amazonaws.services.elasticmapreduce.model.RemoveTagsRequest;
+import com.amazonaws.services.elasticmapreduce.model.RemoveTagsResult;
+import com.amazonaws.services.elasticmapreduce.model.RunJobFlowRequest;
+import com.amazonaws.services.elasticmapreduce.model.RunJobFlowResult;
+import com.amazonaws.services.elasticmapreduce.model.SetTerminationProtectionRequest;
+import com.amazonaws.services.elasticmapreduce.model.SetVisibleToAllUsersRequest;
+import com.amazonaws.services.elasticmapreduce.model.TerminateJobFlowsRequest;
 
 /**
  * Interface for accessing AmazonElasticMapReduce asynchronously.

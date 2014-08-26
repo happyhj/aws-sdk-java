@@ -19,14 +19,25 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
+import com.amazonaws.authprovider.DefaultAWSCredentialsProviderChain;
 import com.amazonaws.client.ClientConfiguration;
 import com.amazonaws.client.handler.request.AsyncHandler;
 import com.amazonaws.credential.AWSCredentials;
 import com.amazonaws.credential.AWSCredentialsProvider;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
-import com.amazonaws.authprovider.DefaultAWSCredentialsProviderChain;
-import com.amazonaws.services.securitytoken.model.*;
+import com.amazonaws.services.securitytoken.model.AssumeRoleRequest;
+import com.amazonaws.services.securitytoken.model.AssumeRoleResult;
+import com.amazonaws.services.securitytoken.model.AssumeRoleWithSAMLRequest;
+import com.amazonaws.services.securitytoken.model.AssumeRoleWithSAMLResult;
+import com.amazonaws.services.securitytoken.model.AssumeRoleWithWebIdentityRequest;
+import com.amazonaws.services.securitytoken.model.AssumeRoleWithWebIdentityResult;
+import com.amazonaws.services.securitytoken.model.DecodeAuthorizationMessageRequest;
+import com.amazonaws.services.securitytoken.model.DecodeAuthorizationMessageResult;
+import com.amazonaws.services.securitytoken.model.GetFederationTokenRequest;
+import com.amazonaws.services.securitytoken.model.GetFederationTokenResult;
+import com.amazonaws.services.securitytoken.model.GetSessionTokenRequest;
+import com.amazonaws.services.securitytoken.model.GetSessionTokenResult;
 
 /**
  * Asynchronous client for accessing AWSSecurityTokenService.

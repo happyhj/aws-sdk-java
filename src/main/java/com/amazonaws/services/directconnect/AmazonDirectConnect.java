@@ -14,14 +14,52 @@
  */
 package com.amazonaws.services.directconnect;
 
-import com.amazonaws.*;
+import com.amazonaws.ResponseMetadata;
 import com.amazonaws.client.ClientConfiguration;
 import com.amazonaws.client.region.Region;
-import com.amazonaws.client.regions.*;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.network.request.AmazonWebServiceRequest;
-import com.amazonaws.services.directconnect.model.*;
+import com.amazonaws.services.directconnect.model.AllocateConnectionOnInterconnectRequest;
+import com.amazonaws.services.directconnect.model.AllocateConnectionOnInterconnectResult;
+import com.amazonaws.services.directconnect.model.AllocatePrivateVirtualInterfaceRequest;
+import com.amazonaws.services.directconnect.model.AllocatePrivateVirtualInterfaceResult;
+import com.amazonaws.services.directconnect.model.AllocatePublicVirtualInterfaceRequest;
+import com.amazonaws.services.directconnect.model.AllocatePublicVirtualInterfaceResult;
+import com.amazonaws.services.directconnect.model.ConfirmConnectionRequest;
+import com.amazonaws.services.directconnect.model.ConfirmConnectionResult;
+import com.amazonaws.services.directconnect.model.ConfirmPrivateVirtualInterfaceRequest;
+import com.amazonaws.services.directconnect.model.ConfirmPrivateVirtualInterfaceResult;
+import com.amazonaws.services.directconnect.model.ConfirmPublicVirtualInterfaceRequest;
+import com.amazonaws.services.directconnect.model.ConfirmPublicVirtualInterfaceResult;
+import com.amazonaws.services.directconnect.model.CreateConnectionRequest;
+import com.amazonaws.services.directconnect.model.CreateConnectionResult;
+import com.amazonaws.services.directconnect.model.CreateInterconnectRequest;
+import com.amazonaws.services.directconnect.model.CreateInterconnectResult;
+import com.amazonaws.services.directconnect.model.CreatePrivateVirtualInterfaceRequest;
+import com.amazonaws.services.directconnect.model.CreatePrivateVirtualInterfaceResult;
+import com.amazonaws.services.directconnect.model.CreatePublicVirtualInterfaceRequest;
+import com.amazonaws.services.directconnect.model.CreatePublicVirtualInterfaceResult;
+import com.amazonaws.services.directconnect.model.DeleteConnectionRequest;
+import com.amazonaws.services.directconnect.model.DeleteConnectionResult;
+import com.amazonaws.services.directconnect.model.DeleteInterconnectRequest;
+import com.amazonaws.services.directconnect.model.DeleteInterconnectResult;
+import com.amazonaws.services.directconnect.model.DeleteVirtualInterfaceRequest;
+import com.amazonaws.services.directconnect.model.DeleteVirtualInterfaceResult;
+import com.amazonaws.services.directconnect.model.DescribeConnectionsOnInterconnectRequest;
+import com.amazonaws.services.directconnect.model.DescribeConnectionsOnInterconnectResult;
+import com.amazonaws.services.directconnect.model.DescribeConnectionsRequest;
+import com.amazonaws.services.directconnect.model.DescribeConnectionsResult;
+import com.amazonaws.services.directconnect.model.DescribeInterconnectsRequest;
+import com.amazonaws.services.directconnect.model.DescribeInterconnectsResult;
+import com.amazonaws.services.directconnect.model.DescribeLocationsRequest;
+import com.amazonaws.services.directconnect.model.DescribeLocationsResult;
+import com.amazonaws.services.directconnect.model.DescribeVirtualGatewaysRequest;
+import com.amazonaws.services.directconnect.model.DescribeVirtualGatewaysResult;
+import com.amazonaws.services.directconnect.model.DescribeVirtualInterfacesRequest;
+import com.amazonaws.services.directconnect.model.DescribeVirtualInterfacesResult;
+import com.amazonaws.services.directconnect.model.DirectConnectClientException;
+import com.amazonaws.services.directconnect.model.DirectConnectServerException;
 
 /**
  * Interface for accessing AmazonDirectConnect.

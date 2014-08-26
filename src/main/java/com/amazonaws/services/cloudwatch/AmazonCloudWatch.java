@@ -14,14 +14,36 @@
  */
 package com.amazonaws.services.cloudwatch;
 
-import com.amazonaws.*;
+import com.amazonaws.ResponseMetadata;
 import com.amazonaws.client.ClientConfiguration;
 import com.amazonaws.client.region.Region;
-import com.amazonaws.client.regions.*;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.network.request.AmazonWebServiceRequest;
-import com.amazonaws.services.cloudwatch.model.*;
+import com.amazonaws.services.cloudwatch.model.DeleteAlarmsRequest;
+import com.amazonaws.services.cloudwatch.model.DescribeAlarmHistoryRequest;
+import com.amazonaws.services.cloudwatch.model.DescribeAlarmHistoryResult;
+import com.amazonaws.services.cloudwatch.model.DescribeAlarmsForMetricRequest;
+import com.amazonaws.services.cloudwatch.model.DescribeAlarmsForMetricResult;
+import com.amazonaws.services.cloudwatch.model.DescribeAlarmsRequest;
+import com.amazonaws.services.cloudwatch.model.DescribeAlarmsResult;
+import com.amazonaws.services.cloudwatch.model.DisableAlarmActionsRequest;
+import com.amazonaws.services.cloudwatch.model.EnableAlarmActionsRequest;
+import com.amazonaws.services.cloudwatch.model.GetMetricStatisticsRequest;
+import com.amazonaws.services.cloudwatch.model.GetMetricStatisticsResult;
+import com.amazonaws.services.cloudwatch.model.InternalServiceException;
+import com.amazonaws.services.cloudwatch.model.InvalidFormatException;
+import com.amazonaws.services.cloudwatch.model.InvalidNextTokenException;
+import com.amazonaws.services.cloudwatch.model.InvalidParameterCombinationException;
+import com.amazonaws.services.cloudwatch.model.InvalidParameterValueException;
+import com.amazonaws.services.cloudwatch.model.LimitExceededException;
+import com.amazonaws.services.cloudwatch.model.ListMetricsRequest;
+import com.amazonaws.services.cloudwatch.model.ListMetricsResult;
+import com.amazonaws.services.cloudwatch.model.MissingRequiredParameterException;
+import com.amazonaws.services.cloudwatch.model.PutMetricAlarmRequest;
+import com.amazonaws.services.cloudwatch.model.PutMetricDataRequest;
+import com.amazonaws.services.cloudwatch.model.ResourceNotFoundException;
+import com.amazonaws.services.cloudwatch.model.SetAlarmStateRequest;
 
 /**
  * Interface for accessing AmazonCloudWatch.

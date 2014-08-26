@@ -14,10 +14,10 @@
  */
 package com.amazonaws.services.cognitosync.model.transform;
 
-import com.amazonaws.transform.JsonErrorUnmarshaller;
 import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.json.JSONObject;
 import com.amazonaws.services.cognitosync.model.LimitExceededException;
+import com.amazonaws.transform.JsonErrorUnmarshaller;
 
 public class LimitExceededExceptionUnmarshaller extends JsonErrorUnmarshaller {
 

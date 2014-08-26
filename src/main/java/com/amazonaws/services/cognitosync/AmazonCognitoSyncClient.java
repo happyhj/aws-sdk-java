@@ -14,23 +14,19 @@
  */
 package com.amazonaws.services.cognitosync;
 
-import java.net.*;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
-import org.apache.commons.logging.*;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
-import com.amazonaws.*;
-import com.amazonaws.auth.*;
+import com.amazonaws.ResponseMetadata;
 import com.amazonaws.authprovider.DefaultAWSCredentialsProviderChain;
 import com.amazonaws.client.ClientConfiguration;
-import com.amazonaws.client.handler.*;
 import com.amazonaws.client.handler.request.HandlerChainFactory;
 import com.amazonaws.client.handler.response.HttpResponseHandler;
 import com.amazonaws.client.handler.response.JsonErrorResponseHandler;
 import com.amazonaws.client.handler.response.JsonResponseHandler;
-import com.amazonaws.client.http.*;
-import com.amazonaws.client.metrics.*;
-import com.amazonaws.client.regions.*;
 import com.amazonaws.client.service.AmazonWebServiceClient;
 import com.amazonaws.client.service.ExecutionContext;
 import com.amazonaws.credential.AWSCredentials;
@@ -38,7 +34,6 @@ import com.amazonaws.credential.AWSCredentialsProvider;
 import com.amazonaws.credential.StaticCredentialsProvider;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
-import com.amazonaws.internal.*;
 import com.amazonaws.metricsutil.AWSRequestMetrics;
 import com.amazonaws.metricsutil.AWSRequestMetrics.Field;
 import com.amazonaws.network.request.AmazonWebServiceRequest;
@@ -46,14 +41,55 @@ import com.amazonaws.network.request.RequestMetricCollector;
 import com.amazonaws.network.response.AmazonWebServiceResponse;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.network.type.Response;
-import com.amazonaws.transform.*;
-import com.amazonaws.util.*;
-
-import static com.amazonaws.sdkutil.IOUtils.*;
-
-import com.amazonaws.util.json.*;
-import com.amazonaws.services.cognitosync.model.*;
-import com.amazonaws.services.cognitosync.model.transform.*;
+import com.amazonaws.services.cognitosync.model.DeleteDatasetRequest;
+import com.amazonaws.services.cognitosync.model.DeleteDatasetResult;
+import com.amazonaws.services.cognitosync.model.DescribeDatasetRequest;
+import com.amazonaws.services.cognitosync.model.DescribeDatasetResult;
+import com.amazonaws.services.cognitosync.model.DescribeIdentityPoolUsageRequest;
+import com.amazonaws.services.cognitosync.model.DescribeIdentityPoolUsageResult;
+import com.amazonaws.services.cognitosync.model.DescribeIdentityUsageRequest;
+import com.amazonaws.services.cognitosync.model.DescribeIdentityUsageResult;
+import com.amazonaws.services.cognitosync.model.InternalErrorException;
+import com.amazonaws.services.cognitosync.model.InvalidParameterException;
+import com.amazonaws.services.cognitosync.model.LimitExceededException;
+import com.amazonaws.services.cognitosync.model.ListDatasetsRequest;
+import com.amazonaws.services.cognitosync.model.ListDatasetsResult;
+import com.amazonaws.services.cognitosync.model.ListIdentityPoolUsageRequest;
+import com.amazonaws.services.cognitosync.model.ListIdentityPoolUsageResult;
+import com.amazonaws.services.cognitosync.model.ListRecordsRequest;
+import com.amazonaws.services.cognitosync.model.ListRecordsResult;
+import com.amazonaws.services.cognitosync.model.NotAuthorizedException;
+import com.amazonaws.services.cognitosync.model.ResourceConflictException;
+import com.amazonaws.services.cognitosync.model.ResourceNotFoundException;
+import com.amazonaws.services.cognitosync.model.TooManyRequestsException;
+import com.amazonaws.services.cognitosync.model.UpdateRecordsRequest;
+import com.amazonaws.services.cognitosync.model.UpdateRecordsResult;
+import com.amazonaws.services.cognitosync.model.transform.DeleteDatasetRequestMarshaller;
+import com.amazonaws.services.cognitosync.model.transform.DeleteDatasetResultJsonUnmarshaller;
+import com.amazonaws.services.cognitosync.model.transform.DescribeDatasetRequestMarshaller;
+import com.amazonaws.services.cognitosync.model.transform.DescribeDatasetResultJsonUnmarshaller;
+import com.amazonaws.services.cognitosync.model.transform.DescribeIdentityPoolUsageRequestMarshaller;
+import com.amazonaws.services.cognitosync.model.transform.DescribeIdentityPoolUsageResultJsonUnmarshaller;
+import com.amazonaws.services.cognitosync.model.transform.DescribeIdentityUsageRequestMarshaller;
+import com.amazonaws.services.cognitosync.model.transform.DescribeIdentityUsageResultJsonUnmarshaller;
+import com.amazonaws.services.cognitosync.model.transform.InternalErrorExceptionUnmarshaller;
+import com.amazonaws.services.cognitosync.model.transform.InvalidParameterExceptionUnmarshaller;
+import com.amazonaws.services.cognitosync.model.transform.LimitExceededExceptionUnmarshaller;
+import com.amazonaws.services.cognitosync.model.transform.ListDatasetsRequestMarshaller;
+import com.amazonaws.services.cognitosync.model.transform.ListDatasetsResultJsonUnmarshaller;
+import com.amazonaws.services.cognitosync.model.transform.ListIdentityPoolUsageRequestMarshaller;
+import com.amazonaws.services.cognitosync.model.transform.ListIdentityPoolUsageResultJsonUnmarshaller;
+import com.amazonaws.services.cognitosync.model.transform.ListRecordsRequestMarshaller;
+import com.amazonaws.services.cognitosync.model.transform.ListRecordsResultJsonUnmarshaller;
+import com.amazonaws.services.cognitosync.model.transform.NotAuthorizedExceptionUnmarshaller;
+import com.amazonaws.services.cognitosync.model.transform.ResourceConflictExceptionUnmarshaller;
+import com.amazonaws.services.cognitosync.model.transform.ResourceNotFoundExceptionUnmarshaller;
+import com.amazonaws.services.cognitosync.model.transform.TooManyRequestsExceptionUnmarshaller;
+import com.amazonaws.services.cognitosync.model.transform.UpdateRecordsRequestMarshaller;
+import com.amazonaws.services.cognitosync.model.transform.UpdateRecordsResultJsonUnmarshaller;
+import com.amazonaws.transform.JsonErrorUnmarshaller;
+import com.amazonaws.transform.JsonUnmarshallerContext;
+import com.amazonaws.transform.Unmarshaller;
 
 /**
  * Client for accessing AmazonCognitoSync.  All service calls made

@@ -14,14 +14,47 @@
  */
 package com.amazonaws.services.simpleemail;
 
-import com.amazonaws.*;
+import com.amazonaws.ResponseMetadata;
 import com.amazonaws.client.ClientConfiguration;
 import com.amazonaws.client.region.Region;
-import com.amazonaws.client.regions.*;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.network.request.AmazonWebServiceRequest;
-import com.amazonaws.services.simpleemail.model.*;
+import com.amazonaws.services.simpleemail.model.DeleteIdentityRequest;
+import com.amazonaws.services.simpleemail.model.DeleteIdentityResult;
+import com.amazonaws.services.simpleemail.model.DeleteVerifiedEmailAddressRequest;
+import com.amazonaws.services.simpleemail.model.GetIdentityDkimAttributesRequest;
+import com.amazonaws.services.simpleemail.model.GetIdentityDkimAttributesResult;
+import com.amazonaws.services.simpleemail.model.GetIdentityNotificationAttributesRequest;
+import com.amazonaws.services.simpleemail.model.GetIdentityNotificationAttributesResult;
+import com.amazonaws.services.simpleemail.model.GetIdentityVerificationAttributesRequest;
+import com.amazonaws.services.simpleemail.model.GetIdentityVerificationAttributesResult;
+import com.amazonaws.services.simpleemail.model.GetSendQuotaRequest;
+import com.amazonaws.services.simpleemail.model.GetSendQuotaResult;
+import com.amazonaws.services.simpleemail.model.GetSendStatisticsRequest;
+import com.amazonaws.services.simpleemail.model.GetSendStatisticsResult;
+import com.amazonaws.services.simpleemail.model.ListIdentitiesRequest;
+import com.amazonaws.services.simpleemail.model.ListIdentitiesResult;
+import com.amazonaws.services.simpleemail.model.ListVerifiedEmailAddressesRequest;
+import com.amazonaws.services.simpleemail.model.ListVerifiedEmailAddressesResult;
+import com.amazonaws.services.simpleemail.model.MessageRejectedException;
+import com.amazonaws.services.simpleemail.model.SendEmailRequest;
+import com.amazonaws.services.simpleemail.model.SendEmailResult;
+import com.amazonaws.services.simpleemail.model.SendRawEmailRequest;
+import com.amazonaws.services.simpleemail.model.SendRawEmailResult;
+import com.amazonaws.services.simpleemail.model.SetIdentityDkimEnabledRequest;
+import com.amazonaws.services.simpleemail.model.SetIdentityDkimEnabledResult;
+import com.amazonaws.services.simpleemail.model.SetIdentityFeedbackForwardingEnabledRequest;
+import com.amazonaws.services.simpleemail.model.SetIdentityFeedbackForwardingEnabledResult;
+import com.amazonaws.services.simpleemail.model.SetIdentityNotificationTopicRequest;
+import com.amazonaws.services.simpleemail.model.SetIdentityNotificationTopicResult;
+import com.amazonaws.services.simpleemail.model.VerifyDomainDkimRequest;
+import com.amazonaws.services.simpleemail.model.VerifyDomainDkimResult;
+import com.amazonaws.services.simpleemail.model.VerifyDomainIdentityRequest;
+import com.amazonaws.services.simpleemail.model.VerifyDomainIdentityResult;
+import com.amazonaws.services.simpleemail.model.VerifyEmailAddressRequest;
+import com.amazonaws.services.simpleemail.model.VerifyEmailIdentityRequest;
+import com.amazonaws.services.simpleemail.model.VerifyEmailIdentityResult;
 
 /**
  * Interface for accessing AmazonSimpleEmailService.

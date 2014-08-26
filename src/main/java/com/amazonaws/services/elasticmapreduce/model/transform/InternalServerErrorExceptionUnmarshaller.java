@@ -14,10 +14,10 @@
  */
 package com.amazonaws.services.elasticmapreduce.model.transform;
 
-import com.amazonaws.transform.JsonErrorUnmarshaller;
 import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.json.JSONObject;
 import com.amazonaws.services.elasticmapreduce.model.InternalServerErrorException;
+import com.amazonaws.transform.JsonErrorUnmarshaller;
 
 public class InternalServerErrorExceptionUnmarshaller extends JsonErrorUnmarshaller {
 

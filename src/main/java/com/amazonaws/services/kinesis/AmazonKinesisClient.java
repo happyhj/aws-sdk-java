@@ -14,23 +14,19 @@
  */
 package com.amazonaws.services.kinesis;
 
-import java.net.*;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
-import org.apache.commons.logging.*;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
-import com.amazonaws.*;
-import com.amazonaws.auth.*;
+import com.amazonaws.ResponseMetadata;
 import com.amazonaws.authprovider.DefaultAWSCredentialsProviderChain;
 import com.amazonaws.client.ClientConfiguration;
-import com.amazonaws.client.handler.*;
 import com.amazonaws.client.handler.request.HandlerChainFactory;
 import com.amazonaws.client.handler.response.HttpResponseHandler;
 import com.amazonaws.client.handler.response.JsonErrorResponseHandler;
 import com.amazonaws.client.handler.response.JsonResponseHandler;
-import com.amazonaws.client.http.*;
-import com.amazonaws.client.metrics.*;
-import com.amazonaws.client.regions.*;
 import com.amazonaws.client.service.AmazonWebServiceClient;
 import com.amazonaws.client.service.ExecutionContext;
 import com.amazonaws.credential.AWSCredentials;
@@ -38,7 +34,6 @@ import com.amazonaws.credential.AWSCredentialsProvider;
 import com.amazonaws.credential.StaticCredentialsProvider;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
-import com.amazonaws.internal.*;
 import com.amazonaws.metricsutil.AWSRequestMetrics;
 import com.amazonaws.metricsutil.AWSRequestMetrics.Field;
 import com.amazonaws.network.request.AmazonWebServiceRequest;
@@ -46,14 +41,49 @@ import com.amazonaws.network.request.RequestMetricCollector;
 import com.amazonaws.network.response.AmazonWebServiceResponse;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.network.type.Response;
-import com.amazonaws.transform.*;
-import com.amazonaws.util.*;
-
-import static com.amazonaws.sdkutil.IOUtils.*;
-
-import com.amazonaws.util.json.*;
-import com.amazonaws.services.kinesis.model.*;
-import com.amazonaws.services.kinesis.model.transform.*;
+import com.amazonaws.services.kinesis.model.CreateStreamRequest;
+import com.amazonaws.services.kinesis.model.DeleteStreamRequest;
+import com.amazonaws.services.kinesis.model.DescribeStreamRequest;
+import com.amazonaws.services.kinesis.model.DescribeStreamResult;
+import com.amazonaws.services.kinesis.model.ExpiredIteratorException;
+import com.amazonaws.services.kinesis.model.GetRecordsRequest;
+import com.amazonaws.services.kinesis.model.GetRecordsResult;
+import com.amazonaws.services.kinesis.model.GetShardIteratorRequest;
+import com.amazonaws.services.kinesis.model.GetShardIteratorResult;
+import com.amazonaws.services.kinesis.model.InvalidArgumentException;
+import com.amazonaws.services.kinesis.model.LimitExceededException;
+import com.amazonaws.services.kinesis.model.ListStreamsRequest;
+import com.amazonaws.services.kinesis.model.ListStreamsResult;
+import com.amazonaws.services.kinesis.model.MergeShardsRequest;
+import com.amazonaws.services.kinesis.model.ProvisionedThroughputExceededException;
+import com.amazonaws.services.kinesis.model.PutRecordRequest;
+import com.amazonaws.services.kinesis.model.PutRecordResult;
+import com.amazonaws.services.kinesis.model.ResourceInUseException;
+import com.amazonaws.services.kinesis.model.ResourceNotFoundException;
+import com.amazonaws.services.kinesis.model.SplitShardRequest;
+import com.amazonaws.services.kinesis.model.transform.CreateStreamRequestMarshaller;
+import com.amazonaws.services.kinesis.model.transform.DeleteStreamRequestMarshaller;
+import com.amazonaws.services.kinesis.model.transform.DescribeStreamRequestMarshaller;
+import com.amazonaws.services.kinesis.model.transform.DescribeStreamResultJsonUnmarshaller;
+import com.amazonaws.services.kinesis.model.transform.ExpiredIteratorExceptionUnmarshaller;
+import com.amazonaws.services.kinesis.model.transform.GetRecordsRequestMarshaller;
+import com.amazonaws.services.kinesis.model.transform.GetRecordsResultJsonUnmarshaller;
+import com.amazonaws.services.kinesis.model.transform.GetShardIteratorRequestMarshaller;
+import com.amazonaws.services.kinesis.model.transform.GetShardIteratorResultJsonUnmarshaller;
+import com.amazonaws.services.kinesis.model.transform.InvalidArgumentExceptionUnmarshaller;
+import com.amazonaws.services.kinesis.model.transform.LimitExceededExceptionUnmarshaller;
+import com.amazonaws.services.kinesis.model.transform.ListStreamsRequestMarshaller;
+import com.amazonaws.services.kinesis.model.transform.ListStreamsResultJsonUnmarshaller;
+import com.amazonaws.services.kinesis.model.transform.MergeShardsRequestMarshaller;
+import com.amazonaws.services.kinesis.model.transform.ProvisionedThroughputExceededExceptionUnmarshaller;
+import com.amazonaws.services.kinesis.model.transform.PutRecordRequestMarshaller;
+import com.amazonaws.services.kinesis.model.transform.PutRecordResultJsonUnmarshaller;
+import com.amazonaws.services.kinesis.model.transform.ResourceInUseExceptionUnmarshaller;
+import com.amazonaws.services.kinesis.model.transform.ResourceNotFoundExceptionUnmarshaller;
+import com.amazonaws.services.kinesis.model.transform.SplitShardRequestMarshaller;
+import com.amazonaws.transform.JsonErrorUnmarshaller;
+import com.amazonaws.transform.JsonUnmarshallerContext;
+import com.amazonaws.transform.Unmarshaller;
 
 /**
  * Client for accessing AmazonKinesis.  All service calls made

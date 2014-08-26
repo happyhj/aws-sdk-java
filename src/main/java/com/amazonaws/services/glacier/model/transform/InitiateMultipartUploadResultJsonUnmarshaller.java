@@ -15,15 +15,10 @@
 
 package com.amazonaws.services.glacier.model.transform;
 
-import java.util.Map;
-import java.util.Map.Entry;
-
-import com.amazonaws.services.glacier.model.*;
-import com.amazonaws.transform.SimpleTypeJsonUnmarshallers.*;
-import com.amazonaws.transform.*;
-
-import com.fasterxml.jackson.core.JsonToken;
-import static com.fasterxml.jackson.core.JsonToken.*;
+import com.amazonaws.services.glacier.model.InitiateMultipartUploadResult;
+import com.amazonaws.transform.JsonUnmarshallerContext;
+import com.amazonaws.transform.SimpleTypeJsonUnmarshallers.StringJsonUnmarshaller;
+import com.amazonaws.transform.Unmarshaller;
 
 /**
  * Initiate Multipart Upload Result JSON Unmarshaller

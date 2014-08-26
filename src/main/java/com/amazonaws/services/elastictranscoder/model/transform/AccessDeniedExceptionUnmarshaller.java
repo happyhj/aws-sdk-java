@@ -14,10 +14,10 @@
  */
 package com.amazonaws.services.elastictranscoder.model.transform;
 
-import com.amazonaws.transform.JsonErrorUnmarshaller;
 import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.json.JSONObject;
 import com.amazonaws.services.elastictranscoder.model.AccessDeniedException;
+import com.amazonaws.transform.JsonErrorUnmarshaller;
 
 public class AccessDeniedExceptionUnmarshaller extends JsonErrorUnmarshaller {
 

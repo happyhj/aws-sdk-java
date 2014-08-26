@@ -14,23 +14,18 @@
  */
 package com.amazonaws.services.cloudformation;
 
-import org.w3c.dom.*;
-
-import java.net.*;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map.Entry;
 
-import com.amazonaws.*;
-import com.amazonaws.auth.*;
+import org.w3c.dom.Node;
+
+import com.amazonaws.ResponseMetadata;
 import com.amazonaws.authprovider.DefaultAWSCredentialsProviderChain;
 import com.amazonaws.client.ClientConfiguration;
-import com.amazonaws.client.handler.*;
 import com.amazonaws.client.handler.request.HandlerChainFactory;
 import com.amazonaws.client.handler.response.DefaultErrorResponseHandler;
 import com.amazonaws.client.handler.response.StaxResponseHandler;
-import com.amazonaws.client.http.*;
-import com.amazonaws.client.metrics.*;
-import com.amazonaws.client.regions.*;
 import com.amazonaws.client.service.AmazonWebServiceClient;
 import com.amazonaws.client.service.ExecutionContext;
 import com.amazonaws.credential.AWSCredentials;
@@ -38,20 +33,75 @@ import com.amazonaws.credential.AWSCredentialsProvider;
 import com.amazonaws.credential.StaticCredentialsProvider;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
-import com.amazonaws.internal.*;
 import com.amazonaws.metricsutil.AWSRequestMetrics;
 import com.amazonaws.metricsutil.AWSRequestMetrics.Field;
 import com.amazonaws.network.request.AmazonWebServiceRequest;
 import com.amazonaws.network.request.RequestMetricCollector;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.network.type.Response;
-import com.amazonaws.transform.*;
-import com.amazonaws.util.*;
-
-import static com.amazonaws.sdkutil.IOUtils.*;
-
-import com.amazonaws.services.cloudformation.model.*;
-import com.amazonaws.services.cloudformation.model.transform.*;
+import com.amazonaws.services.cloudformation.model.AlreadyExistsException;
+import com.amazonaws.services.cloudformation.model.CancelUpdateStackRequest;
+import com.amazonaws.services.cloudformation.model.CreateStackRequest;
+import com.amazonaws.services.cloudformation.model.CreateStackResult;
+import com.amazonaws.services.cloudformation.model.DeleteStackRequest;
+import com.amazonaws.services.cloudformation.model.DescribeStackEventsRequest;
+import com.amazonaws.services.cloudformation.model.DescribeStackEventsResult;
+import com.amazonaws.services.cloudformation.model.DescribeStackResourceRequest;
+import com.amazonaws.services.cloudformation.model.DescribeStackResourceResult;
+import com.amazonaws.services.cloudformation.model.DescribeStackResourcesRequest;
+import com.amazonaws.services.cloudformation.model.DescribeStackResourcesResult;
+import com.amazonaws.services.cloudformation.model.DescribeStacksRequest;
+import com.amazonaws.services.cloudformation.model.DescribeStacksResult;
+import com.amazonaws.services.cloudformation.model.EstimateTemplateCostRequest;
+import com.amazonaws.services.cloudformation.model.EstimateTemplateCostResult;
+import com.amazonaws.services.cloudformation.model.GetStackPolicyRequest;
+import com.amazonaws.services.cloudformation.model.GetStackPolicyResult;
+import com.amazonaws.services.cloudformation.model.GetTemplateRequest;
+import com.amazonaws.services.cloudformation.model.GetTemplateResult;
+import com.amazonaws.services.cloudformation.model.InsufficientCapabilitiesException;
+import com.amazonaws.services.cloudformation.model.LimitExceededException;
+import com.amazonaws.services.cloudformation.model.ListStackResourcesRequest;
+import com.amazonaws.services.cloudformation.model.ListStackResourcesResult;
+import com.amazonaws.services.cloudformation.model.ListStacksRequest;
+import com.amazonaws.services.cloudformation.model.ListStacksResult;
+import com.amazonaws.services.cloudformation.model.SetStackPolicyRequest;
+import com.amazonaws.services.cloudformation.model.UpdateStackRequest;
+import com.amazonaws.services.cloudformation.model.UpdateStackResult;
+import com.amazonaws.services.cloudformation.model.ValidateTemplateRequest;
+import com.amazonaws.services.cloudformation.model.ValidateTemplateResult;
+import com.amazonaws.services.cloudformation.model.transform.AlreadyExistsExceptionUnmarshaller;
+import com.amazonaws.services.cloudformation.model.transform.CancelUpdateStackRequestMarshaller;
+import com.amazonaws.services.cloudformation.model.transform.CreateStackRequestMarshaller;
+import com.amazonaws.services.cloudformation.model.transform.CreateStackResultStaxUnmarshaller;
+import com.amazonaws.services.cloudformation.model.transform.DeleteStackRequestMarshaller;
+import com.amazonaws.services.cloudformation.model.transform.DescribeStackEventsRequestMarshaller;
+import com.amazonaws.services.cloudformation.model.transform.DescribeStackEventsResultStaxUnmarshaller;
+import com.amazonaws.services.cloudformation.model.transform.DescribeStackResourceRequestMarshaller;
+import com.amazonaws.services.cloudformation.model.transform.DescribeStackResourceResultStaxUnmarshaller;
+import com.amazonaws.services.cloudformation.model.transform.DescribeStackResourcesRequestMarshaller;
+import com.amazonaws.services.cloudformation.model.transform.DescribeStackResourcesResultStaxUnmarshaller;
+import com.amazonaws.services.cloudformation.model.transform.DescribeStacksRequestMarshaller;
+import com.amazonaws.services.cloudformation.model.transform.DescribeStacksResultStaxUnmarshaller;
+import com.amazonaws.services.cloudformation.model.transform.EstimateTemplateCostRequestMarshaller;
+import com.amazonaws.services.cloudformation.model.transform.EstimateTemplateCostResultStaxUnmarshaller;
+import com.amazonaws.services.cloudformation.model.transform.GetStackPolicyRequestMarshaller;
+import com.amazonaws.services.cloudformation.model.transform.GetStackPolicyResultStaxUnmarshaller;
+import com.amazonaws.services.cloudformation.model.transform.GetTemplateRequestMarshaller;
+import com.amazonaws.services.cloudformation.model.transform.GetTemplateResultStaxUnmarshaller;
+import com.amazonaws.services.cloudformation.model.transform.InsufficientCapabilitiesExceptionUnmarshaller;
+import com.amazonaws.services.cloudformation.model.transform.LimitExceededExceptionUnmarshaller;
+import com.amazonaws.services.cloudformation.model.transform.ListStackResourcesRequestMarshaller;
+import com.amazonaws.services.cloudformation.model.transform.ListStackResourcesResultStaxUnmarshaller;
+import com.amazonaws.services.cloudformation.model.transform.ListStacksRequestMarshaller;
+import com.amazonaws.services.cloudformation.model.transform.ListStacksResultStaxUnmarshaller;
+import com.amazonaws.services.cloudformation.model.transform.SetStackPolicyRequestMarshaller;
+import com.amazonaws.services.cloudformation.model.transform.UpdateStackRequestMarshaller;
+import com.amazonaws.services.cloudformation.model.transform.UpdateStackResultStaxUnmarshaller;
+import com.amazonaws.services.cloudformation.model.transform.ValidateTemplateRequestMarshaller;
+import com.amazonaws.services.cloudformation.model.transform.ValidateTemplateResultStaxUnmarshaller;
+import com.amazonaws.transform.StandardErrorUnmarshaller;
+import com.amazonaws.transform.StaxUnmarshallerContext;
+import com.amazonaws.transform.Unmarshaller;
 
 /**
  * Client for accessing AmazonCloudFormation.  All service calls made

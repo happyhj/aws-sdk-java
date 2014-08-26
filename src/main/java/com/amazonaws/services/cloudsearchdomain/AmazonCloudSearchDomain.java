@@ -14,14 +14,20 @@
  */
 package com.amazonaws.services.cloudsearchdomain;
 
-import com.amazonaws.*;
+import com.amazonaws.ResponseMetadata;
 import com.amazonaws.client.ClientConfiguration;
 import com.amazonaws.client.region.Region;
-import com.amazonaws.client.regions.*;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.network.request.AmazonWebServiceRequest;
-import com.amazonaws.services.cloudsearchdomain.model.*;
+import com.amazonaws.services.cloudsearchdomain.model.DocumentServiceException;
+import com.amazonaws.services.cloudsearchdomain.model.SearchException;
+import com.amazonaws.services.cloudsearchdomain.model.SearchRequest;
+import com.amazonaws.services.cloudsearchdomain.model.SearchResult;
+import com.amazonaws.services.cloudsearchdomain.model.SuggestRequest;
+import com.amazonaws.services.cloudsearchdomain.model.SuggestResult;
+import com.amazonaws.services.cloudsearchdomain.model.UploadDocumentsRequest;
+import com.amazonaws.services.cloudsearchdomain.model.UploadDocumentsResult;
 
 /**
  * Interface for accessing AmazonCloudSearchDomain.

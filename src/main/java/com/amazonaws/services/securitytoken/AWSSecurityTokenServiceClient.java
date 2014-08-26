@@ -14,23 +14,18 @@
  */
 package com.amazonaws.services.securitytoken;
 
-import org.w3c.dom.*;
-
-import java.net.*;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map.Entry;
 
-import com.amazonaws.*;
-import com.amazonaws.auth.*;
+import org.w3c.dom.Node;
+
+import com.amazonaws.ResponseMetadata;
 import com.amazonaws.authprovider.DefaultAWSCredentialsProviderChain;
 import com.amazonaws.client.ClientConfiguration;
-import com.amazonaws.client.handler.*;
 import com.amazonaws.client.handler.request.HandlerChainFactory;
 import com.amazonaws.client.handler.response.DefaultErrorResponseHandler;
 import com.amazonaws.client.handler.response.StaxResponseHandler;
-import com.amazonaws.client.http.*;
-import com.amazonaws.client.metrics.*;
-import com.amazonaws.client.regions.*;
 import com.amazonaws.client.service.AmazonWebServiceClient;
 import com.amazonaws.client.service.ExecutionContext;
 import com.amazonaws.credential.AWSCredentials;
@@ -38,20 +33,53 @@ import com.amazonaws.credential.AWSCredentialsProvider;
 import com.amazonaws.credential.StaticCredentialsProvider;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
-import com.amazonaws.internal.*;
 import com.amazonaws.metricsutil.AWSRequestMetrics;
 import com.amazonaws.metricsutil.AWSRequestMetrics.Field;
 import com.amazonaws.network.request.AmazonWebServiceRequest;
 import com.amazonaws.network.request.RequestMetricCollector;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.network.type.Response;
-import com.amazonaws.transform.*;
-import com.amazonaws.util.*;
-
-import static com.amazonaws.sdkutil.IOUtils.*;
-
-import com.amazonaws.services.securitytoken.model.*;
-import com.amazonaws.services.securitytoken.model.transform.*;
+import com.amazonaws.services.securitytoken.model.AssumeRoleRequest;
+import com.amazonaws.services.securitytoken.model.AssumeRoleResult;
+import com.amazonaws.services.securitytoken.model.AssumeRoleWithSAMLRequest;
+import com.amazonaws.services.securitytoken.model.AssumeRoleWithSAMLResult;
+import com.amazonaws.services.securitytoken.model.AssumeRoleWithWebIdentityRequest;
+import com.amazonaws.services.securitytoken.model.AssumeRoleWithWebIdentityResult;
+import com.amazonaws.services.securitytoken.model.DecodeAuthorizationMessageRequest;
+import com.amazonaws.services.securitytoken.model.DecodeAuthorizationMessageResult;
+import com.amazonaws.services.securitytoken.model.ExpiredTokenException;
+import com.amazonaws.services.securitytoken.model.GetFederationTokenRequest;
+import com.amazonaws.services.securitytoken.model.GetFederationTokenResult;
+import com.amazonaws.services.securitytoken.model.GetSessionTokenRequest;
+import com.amazonaws.services.securitytoken.model.GetSessionTokenResult;
+import com.amazonaws.services.securitytoken.model.IDPCommunicationErrorException;
+import com.amazonaws.services.securitytoken.model.IDPRejectedClaimException;
+import com.amazonaws.services.securitytoken.model.InvalidAuthorizationMessageException;
+import com.amazonaws.services.securitytoken.model.InvalidIdentityTokenException;
+import com.amazonaws.services.securitytoken.model.MalformedPolicyDocumentException;
+import com.amazonaws.services.securitytoken.model.PackedPolicyTooLargeException;
+import com.amazonaws.services.securitytoken.model.transform.AssumeRoleRequestMarshaller;
+import com.amazonaws.services.securitytoken.model.transform.AssumeRoleResultStaxUnmarshaller;
+import com.amazonaws.services.securitytoken.model.transform.AssumeRoleWithSAMLRequestMarshaller;
+import com.amazonaws.services.securitytoken.model.transform.AssumeRoleWithSAMLResultStaxUnmarshaller;
+import com.amazonaws.services.securitytoken.model.transform.AssumeRoleWithWebIdentityRequestMarshaller;
+import com.amazonaws.services.securitytoken.model.transform.AssumeRoleWithWebIdentityResultStaxUnmarshaller;
+import com.amazonaws.services.securitytoken.model.transform.DecodeAuthorizationMessageRequestMarshaller;
+import com.amazonaws.services.securitytoken.model.transform.DecodeAuthorizationMessageResultStaxUnmarshaller;
+import com.amazonaws.services.securitytoken.model.transform.ExpiredTokenExceptionUnmarshaller;
+import com.amazonaws.services.securitytoken.model.transform.GetFederationTokenRequestMarshaller;
+import com.amazonaws.services.securitytoken.model.transform.GetFederationTokenResultStaxUnmarshaller;
+import com.amazonaws.services.securitytoken.model.transform.GetSessionTokenRequestMarshaller;
+import com.amazonaws.services.securitytoken.model.transform.GetSessionTokenResultStaxUnmarshaller;
+import com.amazonaws.services.securitytoken.model.transform.IDPCommunicationErrorExceptionUnmarshaller;
+import com.amazonaws.services.securitytoken.model.transform.IDPRejectedClaimExceptionUnmarshaller;
+import com.amazonaws.services.securitytoken.model.transform.InvalidAuthorizationMessageExceptionUnmarshaller;
+import com.amazonaws.services.securitytoken.model.transform.InvalidIdentityTokenExceptionUnmarshaller;
+import com.amazonaws.services.securitytoken.model.transform.MalformedPolicyDocumentExceptionUnmarshaller;
+import com.amazonaws.services.securitytoken.model.transform.PackedPolicyTooLargeExceptionUnmarshaller;
+import com.amazonaws.transform.StandardErrorUnmarshaller;
+import com.amazonaws.transform.StaxUnmarshallerContext;
+import com.amazonaws.transform.Unmarshaller;
 
 /**
  * Client for accessing AWSSecurityTokenService.  All service calls made

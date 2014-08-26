@@ -14,14 +14,31 @@
  */
 package com.amazonaws.services.securitytoken;
 
-import com.amazonaws.*;
+import com.amazonaws.ResponseMetadata;
 import com.amazonaws.client.ClientConfiguration;
 import com.amazonaws.client.region.Region;
-import com.amazonaws.client.regions.*;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.network.request.AmazonWebServiceRequest;
-import com.amazonaws.services.securitytoken.model.*;
+import com.amazonaws.services.securitytoken.model.AssumeRoleRequest;
+import com.amazonaws.services.securitytoken.model.AssumeRoleResult;
+import com.amazonaws.services.securitytoken.model.AssumeRoleWithSAMLRequest;
+import com.amazonaws.services.securitytoken.model.AssumeRoleWithSAMLResult;
+import com.amazonaws.services.securitytoken.model.AssumeRoleWithWebIdentityRequest;
+import com.amazonaws.services.securitytoken.model.AssumeRoleWithWebIdentityResult;
+import com.amazonaws.services.securitytoken.model.DecodeAuthorizationMessageRequest;
+import com.amazonaws.services.securitytoken.model.DecodeAuthorizationMessageResult;
+import com.amazonaws.services.securitytoken.model.ExpiredTokenException;
+import com.amazonaws.services.securitytoken.model.GetFederationTokenRequest;
+import com.amazonaws.services.securitytoken.model.GetFederationTokenResult;
+import com.amazonaws.services.securitytoken.model.GetSessionTokenRequest;
+import com.amazonaws.services.securitytoken.model.GetSessionTokenResult;
+import com.amazonaws.services.securitytoken.model.IDPCommunicationErrorException;
+import com.amazonaws.services.securitytoken.model.IDPRejectedClaimException;
+import com.amazonaws.services.securitytoken.model.InvalidAuthorizationMessageException;
+import com.amazonaws.services.securitytoken.model.InvalidIdentityTokenException;
+import com.amazonaws.services.securitytoken.model.MalformedPolicyDocumentException;
+import com.amazonaws.services.securitytoken.model.PackedPolicyTooLargeException;
 
 /**
  * Interface for accessing AWSSecurityTokenService.

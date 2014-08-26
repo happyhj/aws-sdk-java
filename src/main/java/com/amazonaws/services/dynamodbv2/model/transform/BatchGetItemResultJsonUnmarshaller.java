@@ -15,15 +15,22 @@
 
 package com.amazonaws.services.dynamodbv2.model.transform;
 
-import java.util.Map;
-import java.util.Map.Entry;
+import static com.fasterxml.jackson.core.JsonToken.END_ARRAY;
+import static com.fasterxml.jackson.core.JsonToken.END_OBJECT;
+import static com.fasterxml.jackson.core.JsonToken.FIELD_NAME;
+import static com.fasterxml.jackson.core.JsonToken.START_OBJECT;
+import static com.fasterxml.jackson.core.JsonToken.VALUE_NULL;
 
-import com.amazonaws.services.dynamodbv2.model.*;
-import com.amazonaws.transform.SimpleTypeJsonUnmarshallers.*;
-import com.amazonaws.transform.*;
-
+import com.amazonaws.services.dynamodbv2.model.AttributeValue;
+import com.amazonaws.services.dynamodbv2.model.BatchGetItemResult;
+import com.amazonaws.services.dynamodbv2.model.ConsumedCapacity;
+import com.amazonaws.services.dynamodbv2.model.KeysAndAttributes;
+import com.amazonaws.transform.JsonUnmarshallerContext;
+import com.amazonaws.transform.ListUnmarshaller;
+import com.amazonaws.transform.MapUnmarshaller;
+import com.amazonaws.transform.SimpleTypeJsonUnmarshallers.StringJsonUnmarshaller;
+import com.amazonaws.transform.Unmarshaller;
 import com.fasterxml.jackson.core.JsonToken;
-import static com.fasterxml.jackson.core.JsonToken.*;
 
 /**
  * Batch Get Item Result JSON Unmarshaller

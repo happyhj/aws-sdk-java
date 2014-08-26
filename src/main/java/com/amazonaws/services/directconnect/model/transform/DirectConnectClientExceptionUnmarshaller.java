@@ -14,10 +14,10 @@
  */
 package com.amazonaws.services.directconnect.model.transform;
 
-import com.amazonaws.transform.JsonErrorUnmarshaller;
 import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.json.JSONObject;
 import com.amazonaws.services.directconnect.model.DirectConnectClientException;
+import com.amazonaws.transform.JsonErrorUnmarshaller;
 
 public class DirectConnectClientExceptionUnmarshaller extends JsonErrorUnmarshaller {
 

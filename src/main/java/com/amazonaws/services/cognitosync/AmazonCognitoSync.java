@@ -14,14 +14,35 @@
  */
 package com.amazonaws.services.cognitosync;
 
-import com.amazonaws.*;
+import com.amazonaws.ResponseMetadata;
 import com.amazonaws.client.ClientConfiguration;
 import com.amazonaws.client.region.Region;
-import com.amazonaws.client.regions.*;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.network.request.AmazonWebServiceRequest;
-import com.amazonaws.services.cognitosync.model.*;
+import com.amazonaws.services.cognitosync.model.DeleteDatasetRequest;
+import com.amazonaws.services.cognitosync.model.DeleteDatasetResult;
+import com.amazonaws.services.cognitosync.model.DescribeDatasetRequest;
+import com.amazonaws.services.cognitosync.model.DescribeDatasetResult;
+import com.amazonaws.services.cognitosync.model.DescribeIdentityPoolUsageRequest;
+import com.amazonaws.services.cognitosync.model.DescribeIdentityPoolUsageResult;
+import com.amazonaws.services.cognitosync.model.DescribeIdentityUsageRequest;
+import com.amazonaws.services.cognitosync.model.DescribeIdentityUsageResult;
+import com.amazonaws.services.cognitosync.model.InternalErrorException;
+import com.amazonaws.services.cognitosync.model.InvalidParameterException;
+import com.amazonaws.services.cognitosync.model.LimitExceededException;
+import com.amazonaws.services.cognitosync.model.ListDatasetsRequest;
+import com.amazonaws.services.cognitosync.model.ListDatasetsResult;
+import com.amazonaws.services.cognitosync.model.ListIdentityPoolUsageRequest;
+import com.amazonaws.services.cognitosync.model.ListIdentityPoolUsageResult;
+import com.amazonaws.services.cognitosync.model.ListRecordsRequest;
+import com.amazonaws.services.cognitosync.model.ListRecordsResult;
+import com.amazonaws.services.cognitosync.model.NotAuthorizedException;
+import com.amazonaws.services.cognitosync.model.ResourceConflictException;
+import com.amazonaws.services.cognitosync.model.ResourceNotFoundException;
+import com.amazonaws.services.cognitosync.model.TooManyRequestsException;
+import com.amazonaws.services.cognitosync.model.UpdateRecordsRequest;
+import com.amazonaws.services.cognitosync.model.UpdateRecordsResult;
 
 /**
  * Interface for accessing AmazonCognitoSync.

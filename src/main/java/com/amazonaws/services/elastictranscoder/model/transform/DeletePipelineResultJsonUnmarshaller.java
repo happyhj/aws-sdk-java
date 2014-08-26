@@ -15,15 +15,9 @@
 
 package com.amazonaws.services.elastictranscoder.model.transform;
 
-import java.util.Map;
-import java.util.Map.Entry;
-
-import com.amazonaws.services.elastictranscoder.model.*;
-import com.amazonaws.transform.SimpleTypeJsonUnmarshallers.*;
-import com.amazonaws.transform.*;
-
-import com.fasterxml.jackson.core.JsonToken;
-import static com.fasterxml.jackson.core.JsonToken.*;
+import com.amazonaws.services.elastictranscoder.model.DeletePipelineResult;
+import com.amazonaws.transform.JsonUnmarshallerContext;
+import com.amazonaws.transform.Unmarshaller;
 
 /**
  * Delete Pipeline Result JSON Unmarshaller

@@ -14,14 +14,49 @@
  */
 package com.amazonaws.services.support;
 
-import com.amazonaws.*;
+import com.amazonaws.ResponseMetadata;
 import com.amazonaws.client.ClientConfiguration;
 import com.amazonaws.client.region.Region;
-import com.amazonaws.client.regions.*;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.network.request.AmazonWebServiceRequest;
-import com.amazonaws.services.support.model.*;
+import com.amazonaws.services.support.model.AddAttachmentsToSetRequest;
+import com.amazonaws.services.support.model.AddAttachmentsToSetResult;
+import com.amazonaws.services.support.model.AddCommunicationToCaseRequest;
+import com.amazonaws.services.support.model.AddCommunicationToCaseResult;
+import com.amazonaws.services.support.model.AttachmentIdNotFoundException;
+import com.amazonaws.services.support.model.AttachmentLimitExceededException;
+import com.amazonaws.services.support.model.AttachmentSetExpiredException;
+import com.amazonaws.services.support.model.AttachmentSetIdNotFoundException;
+import com.amazonaws.services.support.model.AttachmentSetSizeLimitExceededException;
+import com.amazonaws.services.support.model.CaseCreationLimitExceededException;
+import com.amazonaws.services.support.model.CaseIdNotFoundException;
+import com.amazonaws.services.support.model.CreateCaseRequest;
+import com.amazonaws.services.support.model.CreateCaseResult;
+import com.amazonaws.services.support.model.DescribeAttachmentLimitExceededException;
+import com.amazonaws.services.support.model.DescribeAttachmentRequest;
+import com.amazonaws.services.support.model.DescribeAttachmentResult;
+import com.amazonaws.services.support.model.DescribeCasesRequest;
+import com.amazonaws.services.support.model.DescribeCasesResult;
+import com.amazonaws.services.support.model.DescribeCommunicationsRequest;
+import com.amazonaws.services.support.model.DescribeCommunicationsResult;
+import com.amazonaws.services.support.model.DescribeServicesRequest;
+import com.amazonaws.services.support.model.DescribeServicesResult;
+import com.amazonaws.services.support.model.DescribeSeverityLevelsRequest;
+import com.amazonaws.services.support.model.DescribeSeverityLevelsResult;
+import com.amazonaws.services.support.model.DescribeTrustedAdvisorCheckRefreshStatusesRequest;
+import com.amazonaws.services.support.model.DescribeTrustedAdvisorCheckRefreshStatusesResult;
+import com.amazonaws.services.support.model.DescribeTrustedAdvisorCheckResultRequest;
+import com.amazonaws.services.support.model.DescribeTrustedAdvisorCheckResultResult;
+import com.amazonaws.services.support.model.DescribeTrustedAdvisorCheckSummariesRequest;
+import com.amazonaws.services.support.model.DescribeTrustedAdvisorCheckSummariesResult;
+import com.amazonaws.services.support.model.DescribeTrustedAdvisorChecksRequest;
+import com.amazonaws.services.support.model.DescribeTrustedAdvisorChecksResult;
+import com.amazonaws.services.support.model.InternalServerErrorException;
+import com.amazonaws.services.support.model.RefreshTrustedAdvisorCheckRequest;
+import com.amazonaws.services.support.model.RefreshTrustedAdvisorCheckResult;
+import com.amazonaws.services.support.model.ResolveCaseRequest;
+import com.amazonaws.services.support.model.ResolveCaseResult;
 
 /**
  * Interface for accessing AWSSupport.

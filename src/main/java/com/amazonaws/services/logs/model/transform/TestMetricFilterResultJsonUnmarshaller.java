@@ -15,15 +15,18 @@
 
 package com.amazonaws.services.logs.model.transform;
 
-import java.util.Map;
-import java.util.Map.Entry;
+import static com.fasterxml.jackson.core.JsonToken.END_ARRAY;
+import static com.fasterxml.jackson.core.JsonToken.END_OBJECT;
+import static com.fasterxml.jackson.core.JsonToken.FIELD_NAME;
+import static com.fasterxml.jackson.core.JsonToken.START_OBJECT;
+import static com.fasterxml.jackson.core.JsonToken.VALUE_NULL;
 
-import com.amazonaws.services.logs.model.*;
-import com.amazonaws.transform.SimpleTypeJsonUnmarshallers.*;
-import com.amazonaws.transform.*;
-
+import com.amazonaws.services.logs.model.MetricFilterMatchRecord;
+import com.amazonaws.services.logs.model.TestMetricFilterResult;
+import com.amazonaws.transform.JsonUnmarshallerContext;
+import com.amazonaws.transform.ListUnmarshaller;
+import com.amazonaws.transform.Unmarshaller;
 import com.fasterxml.jackson.core.JsonToken;
-import static com.fasterxml.jackson.core.JsonToken.*;
 
 /**
  * Test Metric Filter Result JSON Unmarshaller

@@ -14,14 +14,35 @@
  */
 package com.amazonaws.services.cognitoidentity;
 
-import com.amazonaws.*;
+import com.amazonaws.ResponseMetadata;
 import com.amazonaws.client.ClientConfiguration;
 import com.amazonaws.client.region.Region;
-import com.amazonaws.client.regions.*;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.network.request.AmazonWebServiceRequest;
-import com.amazonaws.services.cognitoidentity.model.*;
+import com.amazonaws.services.cognitoidentity.model.CreateIdentityPoolRequest;
+import com.amazonaws.services.cognitoidentity.model.CreateIdentityPoolResult;
+import com.amazonaws.services.cognitoidentity.model.DeleteIdentityPoolRequest;
+import com.amazonaws.services.cognitoidentity.model.DescribeIdentityPoolRequest;
+import com.amazonaws.services.cognitoidentity.model.DescribeIdentityPoolResult;
+import com.amazonaws.services.cognitoidentity.model.GetIdRequest;
+import com.amazonaws.services.cognitoidentity.model.GetIdResult;
+import com.amazonaws.services.cognitoidentity.model.GetOpenIdTokenRequest;
+import com.amazonaws.services.cognitoidentity.model.GetOpenIdTokenResult;
+import com.amazonaws.services.cognitoidentity.model.InternalErrorException;
+import com.amazonaws.services.cognitoidentity.model.InvalidParameterException;
+import com.amazonaws.services.cognitoidentity.model.LimitExceededException;
+import com.amazonaws.services.cognitoidentity.model.ListIdentitiesRequest;
+import com.amazonaws.services.cognitoidentity.model.ListIdentitiesResult;
+import com.amazonaws.services.cognitoidentity.model.ListIdentityPoolsRequest;
+import com.amazonaws.services.cognitoidentity.model.ListIdentityPoolsResult;
+import com.amazonaws.services.cognitoidentity.model.NotAuthorizedException;
+import com.amazonaws.services.cognitoidentity.model.ResourceConflictException;
+import com.amazonaws.services.cognitoidentity.model.ResourceNotFoundException;
+import com.amazonaws.services.cognitoidentity.model.TooManyRequestsException;
+import com.amazonaws.services.cognitoidentity.model.UnlinkIdentityRequest;
+import com.amazonaws.services.cognitoidentity.model.UpdateIdentityPoolRequest;
+import com.amazonaws.services.cognitoidentity.model.UpdateIdentityPoolResult;
 
 /**
  * Interface for accessing AmazonCognitoIdentity.
