@@ -26,13 +26,14 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 import com.amazonaws.classutil.Classes;
+import com.amazonaws.client.AWSClient;
 import com.amazonaws.client.ClientConfiguration;
+import com.amazonaws.client.Region;
+import com.amazonaws.client.Signer;
 import com.amazonaws.client.handler.request.RequestHandler;
 import com.amazonaws.client.handler.request.RequestHandler2;
 import com.amazonaws.client.metrics.AwsSdkMetrics;
-import com.amazonaws.client.region.Region;
 import com.amazonaws.client.signer.RegionAwareSigner;
-import com.amazonaws.client.signer.Signer;
 import com.amazonaws.client.signer.SignerFactory;
 import com.amazonaws.method.HttpMethodName;
 import com.amazonaws.metricsutil.AWSRequestMetrics;
@@ -50,7 +51,7 @@ import com.amazonaws.util.AwsHostNameUtils;
  * Responsible for basic client capabilities that are the same across all AWS
  * SDK Java clients (ex: setting the client endpoint).
  */
-public abstract class AmazonWebServiceClient {
+public abstract class AmazonWebServiceClient implements AWSClient{
     private static final String AMAZON = "Amazon";
     private static final String AWS = "AWS";
     public static final boolean LOGGING_AWS_REQUEST_METRIC = true;
@@ -573,7 +574,9 @@ public abstract class AmazonWebServiceClient {
      *
      * @return the updated web service client
      */
-    public AmazonWebServiceClient withTimeOffset(int timeOffset) {
+    
+//    public AmazonWebServiceClient withTimeOffset(int timeOffset) {
+    public AWSClient withTimeOffset(int timeOffset) {
         setTimeOffset(timeOffset);
         return this;
     }

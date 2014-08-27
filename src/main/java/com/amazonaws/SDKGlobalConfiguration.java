@@ -16,7 +16,7 @@ package com.amazonaws;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-import com.amazonaws.client.region.RegionUtils;
+import com.amazonaws.client.RegionUtils;
 import com.amazonaws.network.type.Request;
 
 /**

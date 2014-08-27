@@ -14,6 +14,8 @@
  */
 package com.amazonaws.client.signer;
 
+import com.amazonaws.client.Signer;
+
 
 /**
  * A signer that needs to know which service it is talking to.

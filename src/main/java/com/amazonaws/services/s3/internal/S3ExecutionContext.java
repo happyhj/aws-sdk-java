@@ -17,10 +17,10 @@ package com.amazonaws.services.s3.internal;
 import java.net.URI;
 import java.util.List;
 
+import com.amazonaws.client.Signer;
 import com.amazonaws.client.handler.request.RequestHandler2;
 import com.amazonaws.client.service.AmazonWebServiceClient;
 import com.amazonaws.client.service.ExecutionContext;
-import com.amazonaws.client.signer.Signer;
 
 public class S3ExecutionContext extends ExecutionContext {
     private Signer signer;

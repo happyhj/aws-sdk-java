@@ -23,8 +23,8 @@ import java.util.Map;
 import java.util.concurrent.Future;
 
 import com.amazonaws.ResponseMetadata;
+import com.amazonaws.client.Region;
 import com.amazonaws.client.handler.request.AsyncHandler;
-import com.amazonaws.client.region.Region;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.network.request.AmazonWebServiceRequest;

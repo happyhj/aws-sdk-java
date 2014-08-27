@@ -12,7 +12,7 @@
  * express or implied. See the License for the specific language governing
  * permissions and limitations under the License.
  */
-package com.amazonaws.client.signer;
+package com.amazonaws.client;
 
 import com.amazonaws.credential.AWSCredentials;
 import com.amazonaws.network.type.Request;

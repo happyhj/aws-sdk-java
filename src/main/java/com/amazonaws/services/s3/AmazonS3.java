@@ -159,16 +159,16 @@ public interface AmazonS3 {
      *
      * @param region
      *            The region this client will communicate with. See
-     *            {@link com.amazonaws.client.region.Region#getRegion(com.amazonaws.client.regions.Regions)} for
+     *            {@link com.amazonaws.client.Region#getRegion(com.amazonaws.client.regions.Regions)} for
      *            accessing a given region.
      * @throws java.lang.IllegalArgumentException
      *             If the given region is null, or if this service isn't
      *             available in the given region. See
-     *             {@link com.amazonaws.client.region.Region#isServiceSupported(String)}
-     * @see com.amazonaws.client.region.Region#getRegion(com.amazonaws.client.regions.Regions)
-     * @see com.amazonaws.client.region.Region#createClient(Class, com.amazonaws.auth.AWSCredentialsProvider, ClientConfiguration)
+     *             {@link com.amazonaws.client.Region#isServiceSupported(String)}
+     * @see com.amazonaws.client.Region#getRegion(com.amazonaws.client.regions.Regions)
+     * @see com.amazonaws.client.Region#createClient(Class, com.amazonaws.auth.AWSCredentialsProvider, ClientConfiguration)
      */
-    public void setRegion(com.amazonaws.client.region.Region region) throws IllegalArgumentException;
+    public void setRegion(com.amazonaws.client.Region region) throws IllegalArgumentException;
 
     /**
      * <p>

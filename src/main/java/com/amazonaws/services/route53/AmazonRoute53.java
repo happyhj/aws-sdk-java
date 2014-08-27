@@ -16,7 +16,7 @@ package com.amazonaws.services.route53;
 
 import com.amazonaws.ResponseMetadata;
 import com.amazonaws.client.ClientConfiguration;
-import com.amazonaws.client.region.Region;
+import com.amazonaws.client.Region;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.network.request.AmazonWebServiceRequest;

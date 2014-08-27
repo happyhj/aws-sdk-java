@@ -14,6 +14,7 @@
  */
 package com.amazonaws.client.signer;
 
+import com.amazonaws.client.Signer;
 import com.amazonaws.credential.AWSCredentials;
 import com.amazonaws.network.type.Request;
 

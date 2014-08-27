@@ -23,13 +23,13 @@ import org.w3c.dom.Node;
 
 import com.amazonaws.ResponseMetadata;
 import com.amazonaws.client.ClientConfiguration;
+import com.amazonaws.client.Signer;
 import com.amazonaws.client.handler.request.HandlerChainFactory;
 import com.amazonaws.client.handler.response.DefaultErrorResponseHandler;
 import com.amazonaws.client.handler.response.StaxResponseHandler;
 import com.amazonaws.client.service.AmazonWebServiceClient;
 import com.amazonaws.client.service.ExecutionContext;
 import com.amazonaws.client.signer.CloudFrontSigner;
-import com.amazonaws.client.signer.Signer;
 import com.amazonaws.credential.AWSCredentials;
 import com.amazonaws.credential.AWSCredentialsProvider;
 import com.amazonaws.credential.StaticCredentialsProvider;

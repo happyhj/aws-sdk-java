@@ -12,7 +12,7 @@
  * License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.amazonaws.client.region;
+package com.amazonaws.client;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.util.EC2MetadataUtils;

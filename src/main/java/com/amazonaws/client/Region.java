@@ -12,14 +12,12 @@
  * License for the specific language governing permissions and 
  * limitations under the License. 
  */
-package com.amazonaws.client.region;
+package com.amazonaws.client;
 
 import java.lang.reflect.Constructor;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.amazonaws.client.ClientConfiguration;
-import com.amazonaws.client.service.AmazonWebServiceClient;
 import com.amazonaws.credential.AWSCredentialsProvider;
 
 /**
@@ -148,9 +146,8 @@ public final class Region {
      *            
      * @see ServiceAbbreviations
      */
-    public <T extends AmazonWebServiceClient> T createClient(Class<T> serviceClass,
-                                                             AWSCredentialsProvider credentials,
-                                                             ClientConfiguration config) {
+//    public <T extends AmazonWebServiceClient> T createClient(Class<T> serviceClass, AWSCredentialsProvider credentials, ClientConfiguration config) {
+    public <T extends AWSClient> T createClient(Class<T> serviceClass, AWSCredentialsProvider credentials, ClientConfiguration config) {
         Constructor<T> constructor;
         T client;
         try {

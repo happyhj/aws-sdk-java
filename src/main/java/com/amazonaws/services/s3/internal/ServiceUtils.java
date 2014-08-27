@@ -38,7 +38,7 @@ import javax.net.ssl.SSLProtocolException;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import com.amazonaws.client.region.HttpUtils;
+import com.amazonaws.client.HttpUtils;
 import com.amazonaws.codec.BinaryUtils;
 import com.amazonaws.dateutil.DateUtils;
 import com.amazonaws.exception.AmazonClientException;

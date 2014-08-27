@@ -18,7 +18,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.regex.Pattern;
 
-import com.amazonaws.client.region.RegionUtils;
+import com.amazonaws.client.RegionUtils;
 import com.amazonaws.services.s3.internal.Constants;
 
 
@@ -219,7 +219,7 @@ public enum Region {
     /**
      * Returns the respective AWS region.
      */
-    public com.amazonaws.client.region.Region toAWSRegion() {
+    public com.amazonaws.client.Region toAWSRegion() {
         String s3regionId = getFirstRegionId();
         if ( s3regionId == null ) { // US Standard
             return RegionUtils.getRegionByEndpoint(Constants.S3_HOSTNAME);

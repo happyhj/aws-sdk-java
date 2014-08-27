@@ -12,7 +12,7 @@
  * License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.amazonaws.client.region;
+package com.amazonaws.client;
 
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -30,7 +30,6 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 import com.amazonaws.SDKGlobalConfiguration;
-import com.amazonaws.client.ClientConfiguration;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.util.VersionInfoUtils;
 

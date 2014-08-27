@@ -56,16 +56,16 @@ import com.amazonaws.authprovider.EnvironmentVariableCredentialsProvider;
 import com.amazonaws.authprovider.InstanceProfileCredentialsProvider;
 import com.amazonaws.authprovider.SystemPropertiesCredentialsProvider;
 import com.amazonaws.client.ClientConfiguration;
+import com.amazonaws.client.HttpUtils;
+import com.amazonaws.client.RegionUtils;
+import com.amazonaws.client.Signer;
 import com.amazonaws.client.handler.request.HandlerChainFactory;
 import com.amazonaws.client.handler.request.RequestHandler2;
 import com.amazonaws.client.handler.response.HttpResponseHandler;
 import com.amazonaws.client.metrics.AwsSdkMetrics;
-import com.amazonaws.client.region.HttpUtils;
-import com.amazonaws.client.region.RegionUtils;
 import com.amazonaws.client.service.AmazonWebServiceClient;
 import com.amazonaws.client.service.ExecutionContext;
 import com.amazonaws.client.service.ServiceClientHolderInputStream;
-import com.amazonaws.client.signer.Signer;
 import com.amazonaws.client.signer.SignerFactory;
 import com.amazonaws.codec.Base16;
 import com.amazonaws.codec.Base64;
@@ -498,7 +498,7 @@ public class AmazonS3Client extends AmazonWebServiceClient implements AmazonS3 {
     }
 
     @Override
-    public void setRegion(com.amazonaws.client.region.Region region) {
+    public void setRegion(com.amazonaws.client.Region region) {
         hasExplicitRegion = true;
         super.setRegion(region);
     }

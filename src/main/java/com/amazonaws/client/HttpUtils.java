@@ -12,7 +12,7 @@
  * express or implied. See the License for the specific language governing
  * permissions and limitations under the License.
  */
-package com.amazonaws.client.region;
+package com.amazonaws.client;
 
 import java.io.FilterInputStream;
 import java.io.InputStream;
@@ -43,7 +43,6 @@ import org.apache.http.params.HttpConnectionParams;
 import org.apache.http.params.HttpParams;
 import org.apache.http.params.HttpProtocolParams;
 
-import com.amazonaws.client.ClientConfiguration;
 import com.amazonaws.method.HttpMethodName;
 import com.amazonaws.network.type.Request;
 

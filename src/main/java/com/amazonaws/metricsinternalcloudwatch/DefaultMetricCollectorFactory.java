@@ -15,8 +15,8 @@
 package com.amazonaws.metricsinternalcloudwatch;
 
 import com.amazonaws.SDKGlobalConfiguration;
+import com.amazonaws.client.Regions;
 import com.amazonaws.client.metrics.AwsSdkMetrics;
-import com.amazonaws.client.region.Regions;
 import com.amazonaws.credential.AWSCredentialsProvider;
 import com.amazonaws.metricscollector.MetricCollector;
 

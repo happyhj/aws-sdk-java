@@ -26,6 +26,7 @@ import com.amazonaws.auth.AWSSessionCredentials;
 import com.amazonaws.auth.AnonymousAWSCredentials;
 import com.amazonaws.auth.SignatureVersion;
 import com.amazonaws.auth.SigningAlgorithm;
+import com.amazonaws.client.Signer;
 import com.amazonaws.credential.AWSCredentials;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.network.type.Request;

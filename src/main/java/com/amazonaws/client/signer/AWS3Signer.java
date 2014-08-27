@@ -32,7 +32,7 @@ import org.apache.commons.logging.LogFactory;
 import com.amazonaws.auth.AWSSessionCredentials;
 import com.amazonaws.auth.AnonymousAWSCredentials;
 import com.amazonaws.auth.SigningAlgorithm;
-import com.amazonaws.client.region.HttpUtils;
+import com.amazonaws.client.HttpUtils;
 import com.amazonaws.credential.AWSCredentials;
 import com.amazonaws.dateutil.DateUtils;
 import com.amazonaws.exception.AmazonClientException;

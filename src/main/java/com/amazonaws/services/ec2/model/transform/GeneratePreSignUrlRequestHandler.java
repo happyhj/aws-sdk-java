@@ -18,9 +18,9 @@ import java.net.URI;
 import java.net.URISyntaxException;
 
 import com.amazonaws.Protocol;
+import com.amazonaws.client.HttpUtils;
+import com.amazonaws.client.RegionUtils;
 import com.amazonaws.client.handler.request.CredentialsRequestHandler;
-import com.amazonaws.client.region.HttpUtils;
-import com.amazonaws.client.region.RegionUtils;
 import com.amazonaws.client.signer.AWS4Signer;
 import com.amazonaws.method.HttpMethodName;
 import com.amazonaws.network.request.AmazonWebServiceRequest;

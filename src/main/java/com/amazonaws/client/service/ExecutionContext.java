@@ -19,9 +19,9 @@ import java.util.List;
 
 import org.apache.http.annotation.NotThreadSafe;
 
+import com.amazonaws.client.Signer;
 import com.amazonaws.client.handler.request.RequestHandler2;
 import com.amazonaws.client.metrics.support.AWSRequestMetricsFullSupport;
-import com.amazonaws.client.signer.Signer;
 import com.amazonaws.credential.AWSCredentials;
 import com.amazonaws.metricsutil.AWSRequestMetrics;
 

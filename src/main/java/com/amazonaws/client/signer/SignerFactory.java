@@ -17,6 +17,7 @@ package com.amazonaws.client.signer;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+import com.amazonaws.client.Signer;
 import com.amazonaws.internal.config.InternalConfig;
 import com.amazonaws.internal.config.SignerConfig;
 

@@ -21,9 +21,9 @@ import org.apache.commons.logging.LogFactory;
 
 import com.amazonaws.auth.AWSSessionCredentials;
 import com.amazonaws.auth.SigningAlgorithm;
-import com.amazonaws.client.region.HttpUtils;
+import com.amazonaws.client.HttpUtils;
+import com.amazonaws.client.Signer;
 import com.amazonaws.client.signer.AbstractAWSSigner;
-import com.amazonaws.client.signer.Signer;
 import com.amazonaws.credential.AWSCredentials;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.network.type.Request;
