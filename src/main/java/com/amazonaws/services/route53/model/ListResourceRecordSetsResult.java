@@ -29,7 +29,7 @@ public class ListResourceRecordSetsResult implements Serializable {
      * A complex type that contains information about the resource record
      * sets that are returned by the request.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ResourceRecordSet> resourceRecordSets;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ResourceRecordSet> resourceRecordSets;
 
     /**
      * A flag that indicates whether there are more resource record sets to
@@ -86,7 +86,7 @@ public class ListResourceRecordSetsResult implements Serializable {
      */
     public java.util.List<ResourceRecordSet> getResourceRecordSets() {
         if (resourceRecordSets == null) {
-              resourceRecordSets = new com.amazonaws.internal.ListWithAutoConstructFlag<ResourceRecordSet>();
+              resourceRecordSets = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ResourceRecordSet>();
               resourceRecordSets.setAutoConstruct(true);
         }
         return resourceRecordSets;
@@ -104,7 +104,7 @@ public class ListResourceRecordSetsResult implements Serializable {
             this.resourceRecordSets = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ResourceRecordSet> resourceRecordSetsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ResourceRecordSet>(resourceRecordSets.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ResourceRecordSet> resourceRecordSetsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ResourceRecordSet>(resourceRecordSets.size());
         resourceRecordSetsCopy.addAll(resourceRecordSets);
         this.resourceRecordSets = resourceRecordSetsCopy;
     }
@@ -145,7 +145,7 @@ public class ListResourceRecordSetsResult implements Serializable {
         if (resourceRecordSets == null) {
             this.resourceRecordSets = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ResourceRecordSet> resourceRecordSetsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ResourceRecordSet>(resourceRecordSets.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ResourceRecordSet> resourceRecordSetsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ResourceRecordSet>(resourceRecordSets.size());
             resourceRecordSetsCopy.addAll(resourceRecordSets);
             this.resourceRecordSets = resourceRecordSetsCopy;
         }

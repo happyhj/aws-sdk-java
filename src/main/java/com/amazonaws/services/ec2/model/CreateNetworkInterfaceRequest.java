@@ -55,12 +55,12 @@ public class CreateNetworkInterfaceRequest extends AmazonWebServiceRequest imple
     /**
      * The IDs of one or more security groups.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> groups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> groups;
 
     /**
      * One or more private IP addresses.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<PrivateIpAddressSpecification> privateIpAddresses;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PrivateIpAddressSpecification> privateIpAddresses;
 
     /**
      * The number of secondary private IP addresses to assign to a network
@@ -192,7 +192,7 @@ public class CreateNetworkInterfaceRequest extends AmazonWebServiceRequest imple
      */
     public java.util.List<String> getGroups() {
         if (groups == null) {
-              groups = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              groups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               groups.setAutoConstruct(true);
         }
         return groups;
@@ -208,7 +208,7 @@ public class CreateNetworkInterfaceRequest extends AmazonWebServiceRequest imple
             this.groups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> groupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(groups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> groupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(groups.size());
         groupsCopy.addAll(groups);
         this.groups = groupsCopy;
     }
@@ -245,7 +245,7 @@ public class CreateNetworkInterfaceRequest extends AmazonWebServiceRequest imple
         if (groups == null) {
             this.groups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> groupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(groups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> groupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(groups.size());
             groupsCopy.addAll(groups);
             this.groups = groupsCopy;
         }
@@ -260,7 +260,7 @@ public class CreateNetworkInterfaceRequest extends AmazonWebServiceRequest imple
      */
     public java.util.List<PrivateIpAddressSpecification> getPrivateIpAddresses() {
         if (privateIpAddresses == null) {
-              privateIpAddresses = new com.amazonaws.internal.ListWithAutoConstructFlag<PrivateIpAddressSpecification>();
+              privateIpAddresses = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PrivateIpAddressSpecification>();
               privateIpAddresses.setAutoConstruct(true);
         }
         return privateIpAddresses;
@@ -276,7 +276,7 @@ public class CreateNetworkInterfaceRequest extends AmazonWebServiceRequest imple
             this.privateIpAddresses = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<PrivateIpAddressSpecification> privateIpAddressesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<PrivateIpAddressSpecification>(privateIpAddresses.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PrivateIpAddressSpecification> privateIpAddressesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PrivateIpAddressSpecification>(privateIpAddresses.size());
         privateIpAddressesCopy.addAll(privateIpAddresses);
         this.privateIpAddresses = privateIpAddressesCopy;
     }
@@ -313,7 +313,7 @@ public class CreateNetworkInterfaceRequest extends AmazonWebServiceRequest imple
         if (privateIpAddresses == null) {
             this.privateIpAddresses = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<PrivateIpAddressSpecification> privateIpAddressesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<PrivateIpAddressSpecification>(privateIpAddresses.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PrivateIpAddressSpecification> privateIpAddressesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PrivateIpAddressSpecification>(privateIpAddresses.size());
             privateIpAddressesCopy.addAll(privateIpAddresses);
             this.privateIpAddresses = privateIpAddressesCopy;
         }

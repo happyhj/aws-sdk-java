@@ -27,7 +27,7 @@ public class DescribeElasticIpsResult implements Serializable {
      * An <code>ElasticIps</code> object that describes the specified Elastic
      * IP addresses.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ElasticIp> elasticIps;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ElasticIp> elasticIps;
 
     /**
      * An <code>ElasticIps</code> object that describes the specified Elastic
@@ -38,7 +38,7 @@ public class DescribeElasticIpsResult implements Serializable {
      */
     public java.util.List<ElasticIp> getElasticIps() {
         if (elasticIps == null) {
-              elasticIps = new com.amazonaws.internal.ListWithAutoConstructFlag<ElasticIp>();
+              elasticIps = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ElasticIp>();
               elasticIps.setAutoConstruct(true);
         }
         return elasticIps;
@@ -56,7 +56,7 @@ public class DescribeElasticIpsResult implements Serializable {
             this.elasticIps = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ElasticIp> elasticIpsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ElasticIp>(elasticIps.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ElasticIp> elasticIpsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ElasticIp>(elasticIps.size());
         elasticIpsCopy.addAll(elasticIps);
         this.elasticIps = elasticIpsCopy;
     }
@@ -97,7 +97,7 @@ public class DescribeElasticIpsResult implements Serializable {
         if (elasticIps == null) {
             this.elasticIps = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ElasticIp> elasticIpsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ElasticIp>(elasticIps.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ElasticIp> elasticIpsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ElasticIp>(elasticIps.size());
             elasticIpsCopy.addAll(elasticIps);
             this.elasticIps = elasticIpsCopy;
         }

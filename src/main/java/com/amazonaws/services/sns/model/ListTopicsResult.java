@@ -26,7 +26,7 @@ public class ListTopicsResult implements Serializable {
     /**
      * A list of topic ARNs.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Topic> topics;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Topic> topics;
 
     /**
      * Token to pass along to the next <code>ListTopics</code> request. This
@@ -41,7 +41,7 @@ public class ListTopicsResult implements Serializable {
      */
     public java.util.List<Topic> getTopics() {
         if (topics == null) {
-              topics = new com.amazonaws.internal.ListWithAutoConstructFlag<Topic>();
+              topics = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Topic>();
               topics.setAutoConstruct(true);
         }
         return topics;
@@ -57,7 +57,7 @@ public class ListTopicsResult implements Serializable {
             this.topics = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Topic> topicsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Topic>(topics.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Topic> topicsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Topic>(topics.size());
         topicsCopy.addAll(topics);
         this.topics = topicsCopy;
     }
@@ -94,7 +94,7 @@ public class ListTopicsResult implements Serializable {
         if (topics == null) {
             this.topics = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Topic> topicsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Topic>(topics.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Topic> topicsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Topic>(topics.size());
             topicsCopy.addAll(topics);
             this.topics = topicsCopy;
         }

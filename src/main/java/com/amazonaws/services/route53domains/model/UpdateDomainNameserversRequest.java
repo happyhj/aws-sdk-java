@@ -53,7 +53,7 @@ public class UpdateDomainNameserversRequest extends AmazonWebServiceRequest impl
      * A list of new name servers for the domain. <p>Type: Complex
      * <p>Children: <code>Name</code>, <code>GlueIps</code> <p>Required: Yes
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Nameserver> nameservers;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Nameserver> nameservers;
 
     /**
      * The name of a domain. <p>Type: String <p>Default: None <p>Constraints:
@@ -127,7 +127,7 @@ public class UpdateDomainNameserversRequest extends AmazonWebServiceRequest impl
      */
     public java.util.List<Nameserver> getNameservers() {
         if (nameservers == null) {
-              nameservers = new com.amazonaws.internal.ListWithAutoConstructFlag<Nameserver>();
+              nameservers = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Nameserver>();
               nameservers.setAutoConstruct(true);
         }
         return nameservers;
@@ -145,7 +145,7 @@ public class UpdateDomainNameserversRequest extends AmazonWebServiceRequest impl
             this.nameservers = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Nameserver> nameserversCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Nameserver>(nameservers.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Nameserver> nameserversCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Nameserver>(nameservers.size());
         nameserversCopy.addAll(nameservers);
         this.nameservers = nameserversCopy;
     }
@@ -186,7 +186,7 @@ public class UpdateDomainNameserversRequest extends AmazonWebServiceRequest impl
         if (nameservers == null) {
             this.nameservers = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Nameserver> nameserversCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Nameserver>(nameservers.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Nameserver> nameserversCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Nameserver>(nameservers.size());
             nameserversCopy.addAll(nameservers);
             this.nameservers = nameserversCopy;
         }

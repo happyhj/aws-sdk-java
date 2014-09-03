@@ -27,7 +27,7 @@ public class ListGroupsResult implements Serializable {
     /**
      * A list of groups.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Group> groups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Group> groups;
 
     /**
      * A flag that indicates whether there are more groups to list. If your
@@ -55,7 +55,7 @@ public class ListGroupsResult implements Serializable {
      */
     public java.util.List<Group> getGroups() {
         if (groups == null) {
-              groups = new com.amazonaws.internal.ListWithAutoConstructFlag<Group>();
+              groups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Group>();
               groups.setAutoConstruct(true);
         }
         return groups;
@@ -71,7 +71,7 @@ public class ListGroupsResult implements Serializable {
             this.groups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Group> groupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Group>(groups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Group> groupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Group>(groups.size());
         groupsCopy.addAll(groups);
         this.groups = groupsCopy;
     }
@@ -108,7 +108,7 @@ public class ListGroupsResult implements Serializable {
         if (groups == null) {
             this.groups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Group> groupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Group>(groups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Group> groupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Group>(groups.size());
             groupsCopy.addAll(groups);
             this.groups = groupsCopy;
         }

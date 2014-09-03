@@ -52,7 +52,7 @@ import com.amazonaws.services.s3.model.S3ObjectId;
 import com.amazonaws.services.s3.model.StaticEncryptionMaterialsProvider;
 import com.amazonaws.services.s3.model.UploadPartRequest;
 import com.amazonaws.services.s3.model.UploadPartResult;
-import com.amazonaws.util.VersionInfoUtils;
+import com.amazonaws.utility.VersionInfoUtils;
 
 /**
  * Used to perform client-side encryption for storing data securely in S3. Data

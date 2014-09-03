@@ -21,7 +21,6 @@ import java.util.Map.Entry;
 
 import org.w3c.dom.Node;
 
-import com.amazonaws.ResponseMetadata;
 import com.amazonaws.client.ClientConfiguration;
 import com.amazonaws.client.Signer;
 import com.amazonaws.client.handler.request.HandlerChainFactory;
@@ -35,6 +34,7 @@ import com.amazonaws.credential.AWSCredentialsProvider;
 import com.amazonaws.credential.StaticCredentialsProvider;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
+import com.amazonaws.network.ResponseMetadata;
 import com.amazonaws.network.request.AmazonWebServiceRequest;
 import com.amazonaws.network.response.Response;
 import com.amazonaws.network.type.Request;

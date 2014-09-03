@@ -52,13 +52,13 @@ public class ApplicationDescription implements Serializable {
     /**
      * The names of the versions for this application.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> versions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> versions;
 
     /**
      * The names of the configuration templates associated with this
      * application.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> configurationTemplates;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> configurationTemplates;
 
     /**
      * Default constructor for a new ApplicationDescription object.  Callers should use the
@@ -223,7 +223,7 @@ public class ApplicationDescription implements Serializable {
      */
     public java.util.List<String> getVersions() {
         if (versions == null) {
-              versions = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              versions = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               versions.setAutoConstruct(true);
         }
         return versions;
@@ -239,7 +239,7 @@ public class ApplicationDescription implements Serializable {
             this.versions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> versionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(versions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> versionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(versions.size());
         versionsCopy.addAll(versions);
         this.versions = versionsCopy;
     }
@@ -276,7 +276,7 @@ public class ApplicationDescription implements Serializable {
         if (versions == null) {
             this.versions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> versionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(versions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> versionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(versions.size());
             versionsCopy.addAll(versions);
             this.versions = versionsCopy;
         }
@@ -293,7 +293,7 @@ public class ApplicationDescription implements Serializable {
      */
     public java.util.List<String> getConfigurationTemplates() {
         if (configurationTemplates == null) {
-              configurationTemplates = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              configurationTemplates = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               configurationTemplates.setAutoConstruct(true);
         }
         return configurationTemplates;
@@ -311,7 +311,7 @@ public class ApplicationDescription implements Serializable {
             this.configurationTemplates = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> configurationTemplatesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(configurationTemplates.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> configurationTemplatesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(configurationTemplates.size());
         configurationTemplatesCopy.addAll(configurationTemplates);
         this.configurationTemplates = configurationTemplatesCopy;
     }
@@ -352,7 +352,7 @@ public class ApplicationDescription implements Serializable {
         if (configurationTemplates == null) {
             this.configurationTemplates = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> configurationTemplatesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(configurationTemplates.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> configurationTemplatesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(configurationTemplates.size());
             configurationTemplatesCopy.addAll(configurationTemplates);
             this.configurationTemplates = configurationTemplatesCopy;
         }

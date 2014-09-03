@@ -27,7 +27,7 @@ public class ListStreamsResult implements Serializable {
      * The names of the streams that are associated with the AWS account
      * making the <code>ListStreams</code> request.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> streamNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> streamNames;
 
     /**
      * If set to <code>true</code>, there are more streams available to list.
@@ -43,7 +43,7 @@ public class ListStreamsResult implements Serializable {
      */
     public java.util.List<String> getStreamNames() {
         if (streamNames == null) {
-              streamNames = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              streamNames = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               streamNames.setAutoConstruct(true);
         }
         return streamNames;
@@ -61,7 +61,7 @@ public class ListStreamsResult implements Serializable {
             this.streamNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> streamNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(streamNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> streamNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(streamNames.size());
         streamNamesCopy.addAll(streamNames);
         this.streamNames = streamNamesCopy;
     }
@@ -102,7 +102,7 @@ public class ListStreamsResult implements Serializable {
         if (streamNames == null) {
             this.streamNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> streamNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(streamNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> streamNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(streamNames.size());
             streamNamesCopy.addAll(streamNames);
             this.streamNames = streamNamesCopy;
         }

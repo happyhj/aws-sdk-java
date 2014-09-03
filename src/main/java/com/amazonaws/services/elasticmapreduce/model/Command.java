@@ -36,7 +36,7 @@ public class Command implements Serializable {
     /**
      * Arguments for Amazon EMR to pass to the command for execution.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> args;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> args;
 
     /**
      * The name of the command.
@@ -111,7 +111,7 @@ public class Command implements Serializable {
      */
     public java.util.List<String> getArgs() {
         if (args == null) {
-              args = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              args = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               args.setAutoConstruct(true);
         }
         return args;
@@ -127,7 +127,7 @@ public class Command implements Serializable {
             this.args = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> argsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(args.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> argsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(args.size());
         argsCopy.addAll(args);
         this.args = argsCopy;
     }
@@ -164,7 +164,7 @@ public class Command implements Serializable {
         if (args == null) {
             this.args = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> argsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(args.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> argsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(args.size());
             argsCopy.addAll(args);
             this.args = argsCopy;
         }

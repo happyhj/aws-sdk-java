@@ -32,7 +32,7 @@ public class DescribeCacheClustersResult implements Serializable {
      * A list of cache clusters. Each item in the list contains detailed
      * information about one cache cluster.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<CacheCluster> cacheClusters;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheCluster> cacheClusters;
 
     /**
      * Provides an identifier to allow retrieval of paginated results.
@@ -76,7 +76,7 @@ public class DescribeCacheClustersResult implements Serializable {
      */
     public java.util.List<CacheCluster> getCacheClusters() {
         if (cacheClusters == null) {
-              cacheClusters = new com.amazonaws.internal.ListWithAutoConstructFlag<CacheCluster>();
+              cacheClusters = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheCluster>();
               cacheClusters.setAutoConstruct(true);
         }
         return cacheClusters;
@@ -94,7 +94,7 @@ public class DescribeCacheClustersResult implements Serializable {
             this.cacheClusters = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<CacheCluster> cacheClustersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CacheCluster>(cacheClusters.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheCluster> cacheClustersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheCluster>(cacheClusters.size());
         cacheClustersCopy.addAll(cacheClusters);
         this.cacheClusters = cacheClustersCopy;
     }
@@ -135,7 +135,7 @@ public class DescribeCacheClustersResult implements Serializable {
         if (cacheClusters == null) {
             this.cacheClusters = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<CacheCluster> cacheClustersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CacheCluster>(cacheClusters.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheCluster> cacheClustersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheCluster>(cacheClusters.size());
             cacheClustersCopy.addAll(cacheClusters);
             this.cacheClusters = cacheClustersCopy;
         }

@@ -43,7 +43,7 @@ public class Nameserver implements Serializable {
      * list can contain only one IPv4 and one IPv6 address. <p>Parent:
      * <code>Nameservers</code>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> glueIps;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> glueIps;
 
     /**
      * The fully qualified host name of the name server. <p>Type: String
@@ -121,7 +121,7 @@ public class Nameserver implements Serializable {
      */
     public java.util.List<String> getGlueIps() {
         if (glueIps == null) {
-              glueIps = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              glueIps = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               glueIps.setAutoConstruct(true);
         }
         return glueIps;
@@ -149,7 +149,7 @@ public class Nameserver implements Serializable {
             this.glueIps = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> glueIpsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(glueIps.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> glueIpsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(glueIps.size());
         glueIpsCopy.addAll(glueIps);
         this.glueIps = glueIpsCopy;
     }
@@ -210,7 +210,7 @@ public class Nameserver implements Serializable {
         if (glueIps == null) {
             this.glueIps = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> glueIpsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(glueIps.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> glueIpsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(glueIps.size());
             glueIpsCopy.addAll(glueIps);
             this.glueIps = glueIpsCopy;
         }

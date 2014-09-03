@@ -49,12 +49,12 @@ public class MessageAttributeValue implements Serializable {
     /**
      * Not implemented. Reserved for future use.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> stringListValues;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> stringListValues;
 
     /**
      * Not implemented. Reserved for future use.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<java.nio.ByteBuffer> binaryListValues;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<java.nio.ByteBuffer> binaryListValues;
 
     /**
      * Amazon SQS supports the following logical data types: String, Number,
@@ -156,7 +156,7 @@ public class MessageAttributeValue implements Serializable {
      */
     public java.util.List<String> getStringListValues() {
         if (stringListValues == null) {
-              stringListValues = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              stringListValues = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               stringListValues.setAutoConstruct(true);
         }
         return stringListValues;
@@ -172,7 +172,7 @@ public class MessageAttributeValue implements Serializable {
             this.stringListValues = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> stringListValuesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(stringListValues.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> stringListValuesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(stringListValues.size());
         stringListValuesCopy.addAll(stringListValues);
         this.stringListValues = stringListValuesCopy;
     }
@@ -209,7 +209,7 @@ public class MessageAttributeValue implements Serializable {
         if (stringListValues == null) {
             this.stringListValues = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> stringListValuesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(stringListValues.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> stringListValuesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(stringListValues.size());
             stringListValuesCopy.addAll(stringListValues);
             this.stringListValues = stringListValuesCopy;
         }
@@ -224,7 +224,7 @@ public class MessageAttributeValue implements Serializable {
      */
     public java.util.List<java.nio.ByteBuffer> getBinaryListValues() {
         if (binaryListValues == null) {
-              binaryListValues = new com.amazonaws.internal.ListWithAutoConstructFlag<java.nio.ByteBuffer>();
+              binaryListValues = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<java.nio.ByteBuffer>();
               binaryListValues.setAutoConstruct(true);
         }
         return binaryListValues;
@@ -240,7 +240,7 @@ public class MessageAttributeValue implements Serializable {
             this.binaryListValues = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<java.nio.ByteBuffer> binaryListValuesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<java.nio.ByteBuffer>(binaryListValues.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<java.nio.ByteBuffer> binaryListValuesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<java.nio.ByteBuffer>(binaryListValues.size());
         binaryListValuesCopy.addAll(binaryListValues);
         this.binaryListValues = binaryListValuesCopy;
     }
@@ -277,7 +277,7 @@ public class MessageAttributeValue implements Serializable {
         if (binaryListValues == null) {
             this.binaryListValues = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<java.nio.ByteBuffer> binaryListValuesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<java.nio.ByteBuffer>(binaryListValues.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<java.nio.ByteBuffer> binaryListValuesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<java.nio.ByteBuffer>(binaryListValues.size());
             binaryListValuesCopy.addAll(binaryListValues);
             this.binaryListValues = binaryListValuesCopy;
         }

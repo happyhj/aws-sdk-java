@@ -70,24 +70,24 @@ public class Layer implements Serializable {
     /**
      * An array containing the layer's custom security group IDs.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> customSecurityGroupIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> customSecurityGroupIds;
 
     /**
      * An array containing the layer's security group names.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> defaultSecurityGroupNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> defaultSecurityGroupNames;
 
     /**
      * An array of <code>Package</code> objects that describe the layer's
      * packages.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> packages;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> packages;
 
     /**
      * A <code>VolumeConfigurations</code> object that describes the layer's
      * Amazon EBS volumes.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<VolumeConfiguration> volumeConfigurations;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeConfiguration> volumeConfigurations;
 
     /**
      * Whether auto healing is disabled for the layer.
@@ -526,7 +526,7 @@ public class Layer implements Serializable {
      */
     public java.util.List<String> getCustomSecurityGroupIds() {
         if (customSecurityGroupIds == null) {
-              customSecurityGroupIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              customSecurityGroupIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               customSecurityGroupIds.setAutoConstruct(true);
         }
         return customSecurityGroupIds;
@@ -542,7 +542,7 @@ public class Layer implements Serializable {
             this.customSecurityGroupIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> customSecurityGroupIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(customSecurityGroupIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> customSecurityGroupIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(customSecurityGroupIds.size());
         customSecurityGroupIdsCopy.addAll(customSecurityGroupIds);
         this.customSecurityGroupIds = customSecurityGroupIdsCopy;
     }
@@ -579,7 +579,7 @@ public class Layer implements Serializable {
         if (customSecurityGroupIds == null) {
             this.customSecurityGroupIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> customSecurityGroupIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(customSecurityGroupIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> customSecurityGroupIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(customSecurityGroupIds.size());
             customSecurityGroupIdsCopy.addAll(customSecurityGroupIds);
             this.customSecurityGroupIds = customSecurityGroupIdsCopy;
         }
@@ -594,7 +594,7 @@ public class Layer implements Serializable {
      */
     public java.util.List<String> getDefaultSecurityGroupNames() {
         if (defaultSecurityGroupNames == null) {
-              defaultSecurityGroupNames = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              defaultSecurityGroupNames = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               defaultSecurityGroupNames.setAutoConstruct(true);
         }
         return defaultSecurityGroupNames;
@@ -610,7 +610,7 @@ public class Layer implements Serializable {
             this.defaultSecurityGroupNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> defaultSecurityGroupNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(defaultSecurityGroupNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> defaultSecurityGroupNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(defaultSecurityGroupNames.size());
         defaultSecurityGroupNamesCopy.addAll(defaultSecurityGroupNames);
         this.defaultSecurityGroupNames = defaultSecurityGroupNamesCopy;
     }
@@ -647,7 +647,7 @@ public class Layer implements Serializable {
         if (defaultSecurityGroupNames == null) {
             this.defaultSecurityGroupNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> defaultSecurityGroupNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(defaultSecurityGroupNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> defaultSecurityGroupNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(defaultSecurityGroupNames.size());
             defaultSecurityGroupNamesCopy.addAll(defaultSecurityGroupNames);
             this.defaultSecurityGroupNames = defaultSecurityGroupNamesCopy;
         }
@@ -664,7 +664,7 @@ public class Layer implements Serializable {
      */
     public java.util.List<String> getPackages() {
         if (packages == null) {
-              packages = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              packages = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               packages.setAutoConstruct(true);
         }
         return packages;
@@ -682,7 +682,7 @@ public class Layer implements Serializable {
             this.packages = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> packagesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(packages.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> packagesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(packages.size());
         packagesCopy.addAll(packages);
         this.packages = packagesCopy;
     }
@@ -723,7 +723,7 @@ public class Layer implements Serializable {
         if (packages == null) {
             this.packages = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> packagesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(packages.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> packagesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(packages.size());
             packagesCopy.addAll(packages);
             this.packages = packagesCopy;
         }
@@ -740,7 +740,7 @@ public class Layer implements Serializable {
      */
     public java.util.List<VolumeConfiguration> getVolumeConfigurations() {
         if (volumeConfigurations == null) {
-              volumeConfigurations = new com.amazonaws.internal.ListWithAutoConstructFlag<VolumeConfiguration>();
+              volumeConfigurations = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeConfiguration>();
               volumeConfigurations.setAutoConstruct(true);
         }
         return volumeConfigurations;
@@ -758,7 +758,7 @@ public class Layer implements Serializable {
             this.volumeConfigurations = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<VolumeConfiguration> volumeConfigurationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<VolumeConfiguration>(volumeConfigurations.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeConfiguration> volumeConfigurationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeConfiguration>(volumeConfigurations.size());
         volumeConfigurationsCopy.addAll(volumeConfigurations);
         this.volumeConfigurations = volumeConfigurationsCopy;
     }
@@ -799,7 +799,7 @@ public class Layer implements Serializable {
         if (volumeConfigurations == null) {
             this.volumeConfigurations = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<VolumeConfiguration> volumeConfigurationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<VolumeConfiguration>(volumeConfigurations.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeConfiguration> volumeConfigurationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeConfiguration>(volumeConfigurations.size());
             volumeConfigurationsCopy.addAll(volumeConfigurations);
             this.volumeConfigurations = volumeConfigurationsCopy;
         }

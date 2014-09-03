@@ -32,7 +32,7 @@ public class DescribeScheduledActionsResult implements Serializable {
     /**
      * A list of scheduled actions designed to update an Auto Scaling group.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ScheduledUpdateGroupAction> scheduledUpdateGroupActions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ScheduledUpdateGroupAction> scheduledUpdateGroupActions;
 
     /**
      * A string that marks the start of the next batch of returned results.
@@ -49,7 +49,7 @@ public class DescribeScheduledActionsResult implements Serializable {
      */
     public java.util.List<ScheduledUpdateGroupAction> getScheduledUpdateGroupActions() {
         if (scheduledUpdateGroupActions == null) {
-              scheduledUpdateGroupActions = new com.amazonaws.internal.ListWithAutoConstructFlag<ScheduledUpdateGroupAction>();
+              scheduledUpdateGroupActions = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ScheduledUpdateGroupAction>();
               scheduledUpdateGroupActions.setAutoConstruct(true);
         }
         return scheduledUpdateGroupActions;
@@ -65,7 +65,7 @@ public class DescribeScheduledActionsResult implements Serializable {
             this.scheduledUpdateGroupActions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ScheduledUpdateGroupAction> scheduledUpdateGroupActionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ScheduledUpdateGroupAction>(scheduledUpdateGroupActions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ScheduledUpdateGroupAction> scheduledUpdateGroupActionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ScheduledUpdateGroupAction>(scheduledUpdateGroupActions.size());
         scheduledUpdateGroupActionsCopy.addAll(scheduledUpdateGroupActions);
         this.scheduledUpdateGroupActions = scheduledUpdateGroupActionsCopy;
     }
@@ -102,7 +102,7 @@ public class DescribeScheduledActionsResult implements Serializable {
         if (scheduledUpdateGroupActions == null) {
             this.scheduledUpdateGroupActions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ScheduledUpdateGroupAction> scheduledUpdateGroupActionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ScheduledUpdateGroupAction>(scheduledUpdateGroupActions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ScheduledUpdateGroupAction> scheduledUpdateGroupActionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ScheduledUpdateGroupAction>(scheduledUpdateGroupActions.size());
             scheduledUpdateGroupActionsCopy.addAll(scheduledUpdateGroupActions);
             this.scheduledUpdateGroupActions = scheduledUpdateGroupActionsCopy;
         }

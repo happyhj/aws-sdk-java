@@ -32,7 +32,7 @@ public class DelegationSet implements Serializable {
      * <b>Constraints:</b><br/>
      * <b>Length: </b>1 - <br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> nameServers;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> nameServers;
 
     /**
      * Default constructor for a new DelegationSet object.  Callers should use the
@@ -70,7 +70,7 @@ public class DelegationSet implements Serializable {
      */
     public java.util.List<String> getNameServers() {
         if (nameServers == null) {
-              nameServers = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              nameServers = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               nameServers.setAutoConstruct(true);
         }
         return nameServers;
@@ -95,7 +95,7 @@ public class DelegationSet implements Serializable {
             this.nameServers = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> nameServersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(nameServers.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> nameServersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(nameServers.size());
         nameServersCopy.addAll(nameServers);
         this.nameServers = nameServersCopy;
     }
@@ -150,7 +150,7 @@ public class DelegationSet implements Serializable {
         if (nameServers == null) {
             this.nameServers = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> nameServersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(nameServers.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> nameServersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(nameServers.size());
             nameServersCopy.addAll(nameServers);
             this.nameServers = nameServersCopy;
         }

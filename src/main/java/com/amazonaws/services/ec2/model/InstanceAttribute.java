@@ -69,12 +69,12 @@ public class InstanceAttribute implements Serializable {
     /**
      * The block device mapping of the instance.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<InstanceBlockDeviceMapping> blockDeviceMappings;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceBlockDeviceMapping> blockDeviceMappings;
 
     /**
      * A list of product codes.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ProductCode> productCodes;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ProductCode> productCodes;
 
     /**
      * Indicates whether the instance is optimized for EBS I/O.
@@ -93,7 +93,7 @@ public class InstanceAttribute implements Serializable {
      */
     private Boolean sourceDestCheck;
 
-    private com.amazonaws.internal.ListWithAutoConstructFlag<GroupIdentifier> groups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GroupIdentifier> groups;
 
     /**
      * The ID of the instance.
@@ -395,7 +395,7 @@ public class InstanceAttribute implements Serializable {
      */
     public java.util.List<InstanceBlockDeviceMapping> getBlockDeviceMappings() {
         if (blockDeviceMappings == null) {
-              blockDeviceMappings = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceBlockDeviceMapping>();
+              blockDeviceMappings = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceBlockDeviceMapping>();
               blockDeviceMappings.setAutoConstruct(true);
         }
         return blockDeviceMappings;
@@ -411,7 +411,7 @@ public class InstanceAttribute implements Serializable {
             this.blockDeviceMappings = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<InstanceBlockDeviceMapping> blockDeviceMappingsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceBlockDeviceMapping>(blockDeviceMappings.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceBlockDeviceMapping> blockDeviceMappingsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceBlockDeviceMapping>(blockDeviceMappings.size());
         blockDeviceMappingsCopy.addAll(blockDeviceMappings);
         this.blockDeviceMappings = blockDeviceMappingsCopy;
     }
@@ -448,7 +448,7 @@ public class InstanceAttribute implements Serializable {
         if (blockDeviceMappings == null) {
             this.blockDeviceMappings = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<InstanceBlockDeviceMapping> blockDeviceMappingsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceBlockDeviceMapping>(blockDeviceMappings.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceBlockDeviceMapping> blockDeviceMappingsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceBlockDeviceMapping>(blockDeviceMappings.size());
             blockDeviceMappingsCopy.addAll(blockDeviceMappings);
             this.blockDeviceMappings = blockDeviceMappingsCopy;
         }
@@ -463,7 +463,7 @@ public class InstanceAttribute implements Serializable {
      */
     public java.util.List<ProductCode> getProductCodes() {
         if (productCodes == null) {
-              productCodes = new com.amazonaws.internal.ListWithAutoConstructFlag<ProductCode>();
+              productCodes = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ProductCode>();
               productCodes.setAutoConstruct(true);
         }
         return productCodes;
@@ -479,7 +479,7 @@ public class InstanceAttribute implements Serializable {
             this.productCodes = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ProductCode> productCodesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ProductCode>(productCodes.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ProductCode> productCodesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ProductCode>(productCodes.size());
         productCodesCopy.addAll(productCodes);
         this.productCodes = productCodesCopy;
     }
@@ -516,7 +516,7 @@ public class InstanceAttribute implements Serializable {
         if (productCodes == null) {
             this.productCodes = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ProductCode> productCodesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ProductCode>(productCodes.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ProductCode> productCodesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ProductCode>(productCodes.size());
             productCodesCopy.addAll(productCodes);
             this.productCodes = productCodesCopy;
         }
@@ -664,7 +664,7 @@ public class InstanceAttribute implements Serializable {
      */
     public java.util.List<GroupIdentifier> getGroups() {
         if (groups == null) {
-              groups = new com.amazonaws.internal.ListWithAutoConstructFlag<GroupIdentifier>();
+              groups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GroupIdentifier>();
               groups.setAutoConstruct(true);
         }
         return groups;
@@ -680,7 +680,7 @@ public class InstanceAttribute implements Serializable {
             this.groups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<GroupIdentifier> groupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<GroupIdentifier>(groups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GroupIdentifier> groupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GroupIdentifier>(groups.size());
         groupsCopy.addAll(groups);
         this.groups = groupsCopy;
     }
@@ -717,7 +717,7 @@ public class InstanceAttribute implements Serializable {
         if (groups == null) {
             this.groups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<GroupIdentifier> groupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<GroupIdentifier>(groups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GroupIdentifier> groupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GroupIdentifier>(groups.size());
             groupsCopy.addAll(groups);
             this.groups = groupsCopy;
         }

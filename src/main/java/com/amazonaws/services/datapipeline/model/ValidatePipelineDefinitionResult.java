@@ -27,13 +27,13 @@ public class ValidatePipelineDefinitionResult implements Serializable {
      * Lists the validation errors that were found by
      * <a>ValidatePipelineDefinition</a>.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ValidationError> validationErrors;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ValidationError> validationErrors;
 
     /**
      * Lists the validation warnings that were found by
      * <a>ValidatePipelineDefinition</a>.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ValidationWarning> validationWarnings;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ValidationWarning> validationWarnings;
 
     /**
      * If <code>True</code>, there were validation errors.
@@ -49,7 +49,7 @@ public class ValidatePipelineDefinitionResult implements Serializable {
      */
     public java.util.List<ValidationError> getValidationErrors() {
         if (validationErrors == null) {
-              validationErrors = new com.amazonaws.internal.ListWithAutoConstructFlag<ValidationError>();
+              validationErrors = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ValidationError>();
               validationErrors.setAutoConstruct(true);
         }
         return validationErrors;
@@ -67,7 +67,7 @@ public class ValidatePipelineDefinitionResult implements Serializable {
             this.validationErrors = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ValidationError> validationErrorsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ValidationError>(validationErrors.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ValidationError> validationErrorsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ValidationError>(validationErrors.size());
         validationErrorsCopy.addAll(validationErrors);
         this.validationErrors = validationErrorsCopy;
     }
@@ -108,7 +108,7 @@ public class ValidatePipelineDefinitionResult implements Serializable {
         if (validationErrors == null) {
             this.validationErrors = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ValidationError> validationErrorsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ValidationError>(validationErrors.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ValidationError> validationErrorsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ValidationError>(validationErrors.size());
             validationErrorsCopy.addAll(validationErrors);
             this.validationErrors = validationErrorsCopy;
         }
@@ -125,7 +125,7 @@ public class ValidatePipelineDefinitionResult implements Serializable {
      */
     public java.util.List<ValidationWarning> getValidationWarnings() {
         if (validationWarnings == null) {
-              validationWarnings = new com.amazonaws.internal.ListWithAutoConstructFlag<ValidationWarning>();
+              validationWarnings = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ValidationWarning>();
               validationWarnings.setAutoConstruct(true);
         }
         return validationWarnings;
@@ -143,7 +143,7 @@ public class ValidatePipelineDefinitionResult implements Serializable {
             this.validationWarnings = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ValidationWarning> validationWarningsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ValidationWarning>(validationWarnings.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ValidationWarning> validationWarningsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ValidationWarning>(validationWarnings.size());
         validationWarningsCopy.addAll(validationWarnings);
         this.validationWarnings = validationWarningsCopy;
     }
@@ -184,7 +184,7 @@ public class ValidatePipelineDefinitionResult implements Serializable {
         if (validationWarnings == null) {
             this.validationWarnings = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ValidationWarning> validationWarningsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ValidationWarning>(validationWarnings.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ValidationWarning> validationWarningsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ValidationWarning>(validationWarnings.size());
             validationWarningsCopy.addAll(validationWarnings);
             this.validationWarnings = validationWarningsCopy;
         }

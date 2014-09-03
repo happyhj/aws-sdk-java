@@ -21,7 +21,7 @@ import java.util.Map;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.opsworks.model.ChefConfiguration;
@@ -29,7 +29,7 @@ import com.amazonaws.services.opsworks.model.CloneStackRequest;
 import com.amazonaws.services.opsworks.model.Source;
 import com.amazonaws.services.opsworks.model.StackConfigurationManager;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Clone Stack Request Marshaller
@@ -166,7 +166,7 @@ public class CloneStackRequestMarshaller implements Marshaller<Request<CloneStac
                 jsonWriter.key("ClonePermissions").value(cloneStackRequest.isClonePermissions());
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> cloneAppIdsList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(cloneStackRequest.getCloneAppIds());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> cloneAppIdsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(cloneStackRequest.getCloneAppIds());
             if (cloneAppIdsList != null && !(cloneAppIdsList.isAutoConstruct() && cloneAppIdsList.isEmpty())) {
 
                 jsonWriter.key("CloneAppIds");

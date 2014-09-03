@@ -26,7 +26,7 @@ public class DescribeScalingActivitiesResult implements Serializable {
     /**
      * A list of the requested scaling activities.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Activity> activities;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Activity> activities;
 
     /**
      * Acts as a paging mechanism for large result sets. Set to a non-empty
@@ -45,7 +45,7 @@ public class DescribeScalingActivitiesResult implements Serializable {
      */
     public java.util.List<Activity> getActivities() {
         if (activities == null) {
-              activities = new com.amazonaws.internal.ListWithAutoConstructFlag<Activity>();
+              activities = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Activity>();
               activities.setAutoConstruct(true);
         }
         return activities;
@@ -61,7 +61,7 @@ public class DescribeScalingActivitiesResult implements Serializable {
             this.activities = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Activity> activitiesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Activity>(activities.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Activity> activitiesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Activity>(activities.size());
         activitiesCopy.addAll(activities);
         this.activities = activitiesCopy;
     }
@@ -98,7 +98,7 @@ public class DescribeScalingActivitiesResult implements Serializable {
         if (activities == null) {
             this.activities = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Activity> activitiesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Activity>(activities.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Activity> activitiesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Activity>(activities.size());
             activitiesCopy.addAll(activities);
             this.activities = activitiesCopy;
         }

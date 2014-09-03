@@ -27,7 +27,7 @@ public class BuildSuggestersResult implements Serializable {
     /**
      * A list of field names.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> fieldNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> fieldNames;
 
     /**
      * A list of field names.
@@ -36,7 +36,7 @@ public class BuildSuggestersResult implements Serializable {
      */
     public java.util.List<String> getFieldNames() {
         if (fieldNames == null) {
-              fieldNames = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              fieldNames = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               fieldNames.setAutoConstruct(true);
         }
         return fieldNames;
@@ -52,7 +52,7 @@ public class BuildSuggestersResult implements Serializable {
             this.fieldNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> fieldNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(fieldNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> fieldNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(fieldNames.size());
         fieldNamesCopy.addAll(fieldNames);
         this.fieldNames = fieldNamesCopy;
     }
@@ -89,7 +89,7 @@ public class BuildSuggestersResult implements Serializable {
         if (fieldNames == null) {
             this.fieldNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> fieldNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(fieldNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> fieldNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(fieldNames.size());
             fieldNamesCopy.addAll(fieldNames);
             this.fieldNames = fieldNamesCopy;
         }

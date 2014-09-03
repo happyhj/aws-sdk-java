@@ -20,12 +20,12 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.storagegateway.model.AddWorkingStorageRequest;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Add Working Storage Request Marshaller
@@ -54,7 +54,7 @@ public class AddWorkingStorageRequestMarshaller implements Marshaller<Request<Ad
                 jsonWriter.key("GatewayARN").value(addWorkingStorageRequest.getGatewayARN());
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> diskIdsList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(addWorkingStorageRequest.getDiskIds());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> diskIdsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(addWorkingStorageRequest.getDiskIds());
             if (diskIdsList != null && !(diskIdsList.isAutoConstruct() && diskIdsList.isEmpty())) {
 
                 jsonWriter.key("DiskIds");

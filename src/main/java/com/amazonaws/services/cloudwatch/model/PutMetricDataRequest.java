@@ -58,7 +58,7 @@ public class PutMetricDataRequest extends AmazonWebServiceRequest implements Ser
     /**
      * A list of data describing the metric.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<MetricDatum> metricData;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricDatum> metricData;
 
     /**
      * The namespace for the metric data.
@@ -112,7 +112,7 @@ public class PutMetricDataRequest extends AmazonWebServiceRequest implements Ser
      */
     public java.util.List<MetricDatum> getMetricData() {
         if (metricData == null) {
-              metricData = new com.amazonaws.internal.ListWithAutoConstructFlag<MetricDatum>();
+              metricData = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricDatum>();
               metricData.setAutoConstruct(true);
         }
         return metricData;
@@ -128,7 +128,7 @@ public class PutMetricDataRequest extends AmazonWebServiceRequest implements Ser
             this.metricData = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<MetricDatum> metricDataCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<MetricDatum>(metricData.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricDatum> metricDataCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricDatum>(metricData.size());
         metricDataCopy.addAll(metricData);
         this.metricData = metricDataCopy;
     }
@@ -165,7 +165,7 @@ public class PutMetricDataRequest extends AmazonWebServiceRequest implements Ser
         if (metricData == null) {
             this.metricData = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<MetricDatum> metricDataCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<MetricDatum>(metricData.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricDatum> metricDataCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricDatum>(metricData.size());
             metricDataCopy.addAll(metricData);
             this.metricData = metricDataCopy;
         }

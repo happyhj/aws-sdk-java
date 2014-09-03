@@ -27,7 +27,7 @@ public class ListSAMLProvidersResult implements Serializable {
     /**
      * The list of SAML providers for this account.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<SAMLProviderListEntry> sAMLProviderList;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SAMLProviderListEntry> sAMLProviderList;
 
     /**
      * The list of SAML providers for this account.
@@ -36,7 +36,7 @@ public class ListSAMLProvidersResult implements Serializable {
      */
     public java.util.List<SAMLProviderListEntry> getSAMLProviderList() {
         if (sAMLProviderList == null) {
-              sAMLProviderList = new com.amazonaws.internal.ListWithAutoConstructFlag<SAMLProviderListEntry>();
+              sAMLProviderList = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SAMLProviderListEntry>();
               sAMLProviderList.setAutoConstruct(true);
         }
         return sAMLProviderList;
@@ -52,7 +52,7 @@ public class ListSAMLProvidersResult implements Serializable {
             this.sAMLProviderList = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<SAMLProviderListEntry> sAMLProviderListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<SAMLProviderListEntry>(sAMLProviderList.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SAMLProviderListEntry> sAMLProviderListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SAMLProviderListEntry>(sAMLProviderList.size());
         sAMLProviderListCopy.addAll(sAMLProviderList);
         this.sAMLProviderList = sAMLProviderListCopy;
     }
@@ -89,7 +89,7 @@ public class ListSAMLProvidersResult implements Serializable {
         if (sAMLProviderList == null) {
             this.sAMLProviderList = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<SAMLProviderListEntry> sAMLProviderListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<SAMLProviderListEntry>(sAMLProviderList.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SAMLProviderListEntry> sAMLProviderListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SAMLProviderListEntry>(sAMLProviderList.size());
             sAMLProviderListCopy.addAll(sAMLProviderList);
             this.sAMLProviderList = sAMLProviderListCopy;
         }

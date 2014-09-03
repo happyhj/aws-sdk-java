@@ -24,7 +24,7 @@ public class DescribeNetworkInterfacesResult implements Serializable {
     /**
      * Information about one or more network interfaces.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<NetworkInterface> networkInterfaces;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NetworkInterface> networkInterfaces;
 
     /**
      * Information about one or more network interfaces.
@@ -33,7 +33,7 @@ public class DescribeNetworkInterfacesResult implements Serializable {
      */
     public java.util.List<NetworkInterface> getNetworkInterfaces() {
         if (networkInterfaces == null) {
-              networkInterfaces = new com.amazonaws.internal.ListWithAutoConstructFlag<NetworkInterface>();
+              networkInterfaces = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NetworkInterface>();
               networkInterfaces.setAutoConstruct(true);
         }
         return networkInterfaces;
@@ -49,7 +49,7 @@ public class DescribeNetworkInterfacesResult implements Serializable {
             this.networkInterfaces = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<NetworkInterface> networkInterfacesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<NetworkInterface>(networkInterfaces.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NetworkInterface> networkInterfacesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NetworkInterface>(networkInterfaces.size());
         networkInterfacesCopy.addAll(networkInterfaces);
         this.networkInterfaces = networkInterfacesCopy;
     }
@@ -86,7 +86,7 @@ public class DescribeNetworkInterfacesResult implements Serializable {
         if (networkInterfaces == null) {
             this.networkInterfaces = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<NetworkInterface> networkInterfacesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<NetworkInterface>(networkInterfaces.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NetworkInterface> networkInterfacesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NetworkInterface>(networkInterfaces.size());
             networkInterfacesCopy.addAll(networkInterfaces);
             this.networkInterfaces = networkInterfacesCopy;
         }

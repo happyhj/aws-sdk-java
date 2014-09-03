@@ -26,7 +26,7 @@ public class DescribeInstanceHealthResult implements Serializable {
     /**
      * A list containing health information for the specified instances.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<InstanceState> instanceStates;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceState> instanceStates;
 
     /**
      * A list containing health information for the specified instances.
@@ -35,7 +35,7 @@ public class DescribeInstanceHealthResult implements Serializable {
      */
     public java.util.List<InstanceState> getInstanceStates() {
         if (instanceStates == null) {
-              instanceStates = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceState>();
+              instanceStates = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceState>();
               instanceStates.setAutoConstruct(true);
         }
         return instanceStates;
@@ -51,7 +51,7 @@ public class DescribeInstanceHealthResult implements Serializable {
             this.instanceStates = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<InstanceState> instanceStatesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceState>(instanceStates.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceState> instanceStatesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceState>(instanceStates.size());
         instanceStatesCopy.addAll(instanceStates);
         this.instanceStates = instanceStatesCopy;
     }
@@ -88,7 +88,7 @@ public class DescribeInstanceHealthResult implements Serializable {
         if (instanceStates == null) {
             this.instanceStates = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<InstanceState> instanceStatesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceState>(instanceStates.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceState> instanceStatesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceState>(instanceStates.size());
             instanceStatesCopy.addAll(instanceStates);
             this.instanceStates = instanceStatesCopy;
         }

@@ -20,13 +20,13 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.logs.model.InputLogEvent;
 import com.amazonaws.services.logs.model.PutLogEventsRequest;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Put Log Events Request Marshaller
@@ -58,7 +58,7 @@ public class PutLogEventsRequestMarshaller implements Marshaller<Request<PutLogE
                 jsonWriter.key("logStreamName").value(putLogEventsRequest.getLogStreamName());
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<InputLogEvent> logEventsList = (com.amazonaws.internal.ListWithAutoConstructFlag<InputLogEvent>)(putLogEventsRequest.getLogEvents());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InputLogEvent> logEventsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InputLogEvent>)(putLogEventsRequest.getLogEvents());
             if (logEventsList != null && !(logEventsList.isAutoConstruct() && logEventsList.isEmpty())) {
 
                 jsonWriter.key("logEvents");

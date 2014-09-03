@@ -36,7 +36,7 @@ public class PolicyDescription implements Serializable {
     /**
      * A list of policy attribute description structures.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<PolicyAttributeDescription> policyAttributeDescriptions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PolicyAttributeDescription> policyAttributeDescriptions;
 
     /**
      * The name of the policy associated with the load balancer.
@@ -111,7 +111,7 @@ public class PolicyDescription implements Serializable {
      */
     public java.util.List<PolicyAttributeDescription> getPolicyAttributeDescriptions() {
         if (policyAttributeDescriptions == null) {
-              policyAttributeDescriptions = new com.amazonaws.internal.ListWithAutoConstructFlag<PolicyAttributeDescription>();
+              policyAttributeDescriptions = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PolicyAttributeDescription>();
               policyAttributeDescriptions.setAutoConstruct(true);
         }
         return policyAttributeDescriptions;
@@ -127,7 +127,7 @@ public class PolicyDescription implements Serializable {
             this.policyAttributeDescriptions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<PolicyAttributeDescription> policyAttributeDescriptionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<PolicyAttributeDescription>(policyAttributeDescriptions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PolicyAttributeDescription> policyAttributeDescriptionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PolicyAttributeDescription>(policyAttributeDescriptions.size());
         policyAttributeDescriptionsCopy.addAll(policyAttributeDescriptions);
         this.policyAttributeDescriptions = policyAttributeDescriptionsCopy;
     }
@@ -164,7 +164,7 @@ public class PolicyDescription implements Serializable {
         if (policyAttributeDescriptions == null) {
             this.policyAttributeDescriptions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<PolicyAttributeDescription> policyAttributeDescriptionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<PolicyAttributeDescription>(policyAttributeDescriptions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PolicyAttributeDescription> policyAttributeDescriptionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PolicyAttributeDescription>(policyAttributeDescriptions.size());
             policyAttributeDescriptionsCopy.addAll(policyAttributeDescriptions);
             this.policyAttributeDescriptions = policyAttributeDescriptionsCopy;
         }

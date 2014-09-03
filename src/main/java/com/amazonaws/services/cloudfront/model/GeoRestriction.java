@@ -61,7 +61,7 @@ public class GeoRestriction implements Serializable {
      * for Standardization website. You can also refer to the country list in
      * the CloudFront console, which includes both country names and codes.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> items;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> items;
 
     /**
      * Default constructor for a new GeoRestriction object.  Callers should use the
@@ -315,7 +315,7 @@ public class GeoRestriction implements Serializable {
      */
     public java.util.List<String> getItems() {
         if (items == null) {
-              items = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              items = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               items.setAutoConstruct(true);
         }
         return items;
@@ -349,7 +349,7 @@ public class GeoRestriction implements Serializable {
             this.items = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> itemsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(items.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> itemsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(items.size());
         itemsCopy.addAll(items);
         this.items = itemsCopy;
     }
@@ -422,7 +422,7 @@ public class GeoRestriction implements Serializable {
         if (items == null) {
             this.items = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> itemsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(items.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> itemsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(items.size());
             itemsCopy.addAll(items);
             this.items = itemsCopy;
         }

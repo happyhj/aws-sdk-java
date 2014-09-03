@@ -36,7 +36,7 @@ public class ListStepsRequest extends AmazonWebServiceRequest implements Seriali
     /**
      * The filter to limit the step list based on certain states.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> stepStates;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> stepStates;
 
     /**
      * The pagination token that indicates the next set of results to
@@ -84,7 +84,7 @@ public class ListStepsRequest extends AmazonWebServiceRequest implements Seriali
      */
     public java.util.List<String> getStepStates() {
         if (stepStates == null) {
-              stepStates = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              stepStates = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               stepStates.setAutoConstruct(true);
         }
         return stepStates;
@@ -100,7 +100,7 @@ public class ListStepsRequest extends AmazonWebServiceRequest implements Seriali
             this.stepStates = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> stepStatesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(stepStates.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> stepStatesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(stepStates.size());
         stepStatesCopy.addAll(stepStates);
         this.stepStates = stepStatesCopy;
     }
@@ -137,7 +137,7 @@ public class ListStepsRequest extends AmazonWebServiceRequest implements Seriali
         if (stepStates == null) {
             this.stepStates = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> stepStatesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(stepStates.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> stepStatesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(stepStates.size());
             stepStatesCopy.addAll(stepStates);
             this.stepStates = stepStatesCopy;
         }

@@ -31,12 +31,12 @@ public class ImageAttribute implements Serializable {
     /**
      * One or more launch permissions.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<LaunchPermission> launchPermissions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LaunchPermission> launchPermissions;
 
     /**
      * One or more product codes.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ProductCode> productCodes;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ProductCode> productCodes;
 
     /**
      * The kernel ID.
@@ -61,7 +61,7 @@ public class ImageAttribute implements Serializable {
     /**
      * One or more block device mapping entries.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<BlockDeviceMapping> blockDeviceMappings;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BlockDeviceMapping> blockDeviceMappings;
 
     /**
      * The ID of the AMI.
@@ -103,7 +103,7 @@ public class ImageAttribute implements Serializable {
      */
     public java.util.List<LaunchPermission> getLaunchPermissions() {
         if (launchPermissions == null) {
-              launchPermissions = new com.amazonaws.internal.ListWithAutoConstructFlag<LaunchPermission>();
+              launchPermissions = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LaunchPermission>();
               launchPermissions.setAutoConstruct(true);
         }
         return launchPermissions;
@@ -119,7 +119,7 @@ public class ImageAttribute implements Serializable {
             this.launchPermissions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<LaunchPermission> launchPermissionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<LaunchPermission>(launchPermissions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LaunchPermission> launchPermissionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LaunchPermission>(launchPermissions.size());
         launchPermissionsCopy.addAll(launchPermissions);
         this.launchPermissions = launchPermissionsCopy;
     }
@@ -156,7 +156,7 @@ public class ImageAttribute implements Serializable {
         if (launchPermissions == null) {
             this.launchPermissions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<LaunchPermission> launchPermissionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<LaunchPermission>(launchPermissions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LaunchPermission> launchPermissionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LaunchPermission>(launchPermissions.size());
             launchPermissionsCopy.addAll(launchPermissions);
             this.launchPermissions = launchPermissionsCopy;
         }
@@ -171,7 +171,7 @@ public class ImageAttribute implements Serializable {
      */
     public java.util.List<ProductCode> getProductCodes() {
         if (productCodes == null) {
-              productCodes = new com.amazonaws.internal.ListWithAutoConstructFlag<ProductCode>();
+              productCodes = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ProductCode>();
               productCodes.setAutoConstruct(true);
         }
         return productCodes;
@@ -187,7 +187,7 @@ public class ImageAttribute implements Serializable {
             this.productCodes = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ProductCode> productCodesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ProductCode>(productCodes.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ProductCode> productCodesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ProductCode>(productCodes.size());
         productCodesCopy.addAll(productCodes);
         this.productCodes = productCodesCopy;
     }
@@ -224,7 +224,7 @@ public class ImageAttribute implements Serializable {
         if (productCodes == null) {
             this.productCodes = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ProductCode> productCodesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ProductCode>(productCodes.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ProductCode> productCodesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ProductCode>(productCodes.size());
             productCodesCopy.addAll(productCodes);
             this.productCodes = productCodesCopy;
         }
@@ -371,7 +371,7 @@ public class ImageAttribute implements Serializable {
      */
     public java.util.List<BlockDeviceMapping> getBlockDeviceMappings() {
         if (blockDeviceMappings == null) {
-              blockDeviceMappings = new com.amazonaws.internal.ListWithAutoConstructFlag<BlockDeviceMapping>();
+              blockDeviceMappings = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BlockDeviceMapping>();
               blockDeviceMappings.setAutoConstruct(true);
         }
         return blockDeviceMappings;
@@ -387,7 +387,7 @@ public class ImageAttribute implements Serializable {
             this.blockDeviceMappings = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<BlockDeviceMapping> blockDeviceMappingsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<BlockDeviceMapping>(blockDeviceMappings.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BlockDeviceMapping> blockDeviceMappingsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BlockDeviceMapping>(blockDeviceMappings.size());
         blockDeviceMappingsCopy.addAll(blockDeviceMappings);
         this.blockDeviceMappings = blockDeviceMappingsCopy;
     }
@@ -424,7 +424,7 @@ public class ImageAttribute implements Serializable {
         if (blockDeviceMappings == null) {
             this.blockDeviceMappings = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<BlockDeviceMapping> blockDeviceMappingsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<BlockDeviceMapping>(blockDeviceMappings.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BlockDeviceMapping> blockDeviceMappingsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BlockDeviceMapping>(blockDeviceMappings.size());
             blockDeviceMappingsCopy.addAll(blockDeviceMappings);
             this.blockDeviceMappings = blockDeviceMappingsCopy;
         }

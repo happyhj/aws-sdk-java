@@ -51,7 +51,7 @@ public class DeregisterInstancesFromLoadBalancerRequest extends AmazonWebService
      * A list of EC2 instance IDs consisting of all instances to be
      * deregistered.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Instance> instances;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Instance> instances;
 
     /**
      * Default constructor for a new DeregisterInstancesFromLoadBalancerRequest object.  Callers should use the
@@ -115,7 +115,7 @@ public class DeregisterInstancesFromLoadBalancerRequest extends AmazonWebService
      */
     public java.util.List<Instance> getInstances() {
         if (instances == null) {
-              instances = new com.amazonaws.internal.ListWithAutoConstructFlag<Instance>();
+              instances = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Instance>();
               instances.setAutoConstruct(true);
         }
         return instances;
@@ -133,7 +133,7 @@ public class DeregisterInstancesFromLoadBalancerRequest extends AmazonWebService
             this.instances = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Instance> instancesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Instance>(instances.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Instance> instancesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Instance>(instances.size());
         instancesCopy.addAll(instances);
         this.instances = instancesCopy;
     }
@@ -174,7 +174,7 @@ public class DeregisterInstancesFromLoadBalancerRequest extends AmazonWebService
         if (instances == null) {
             this.instances = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Instance> instancesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Instance>(instances.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Instance> instancesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Instance>(instances.size());
             instancesCopy.addAll(instances);
             this.instances = instancesCopy;
         }

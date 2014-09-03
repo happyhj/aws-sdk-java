@@ -36,7 +36,7 @@ public class LoadBalancerDescription implements Serializable {
     /**
      * A list of Listeners used by the LoadBalancer.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Listener> listeners;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Listener> listeners;
 
     /**
      * The name of the LoadBalancer.
@@ -111,7 +111,7 @@ public class LoadBalancerDescription implements Serializable {
      */
     public java.util.List<Listener> getListeners() {
         if (listeners == null) {
-              listeners = new com.amazonaws.internal.ListWithAutoConstructFlag<Listener>();
+              listeners = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Listener>();
               listeners.setAutoConstruct(true);
         }
         return listeners;
@@ -127,7 +127,7 @@ public class LoadBalancerDescription implements Serializable {
             this.listeners = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Listener> listenersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Listener>(listeners.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Listener> listenersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Listener>(listeners.size());
         listenersCopy.addAll(listeners);
         this.listeners = listenersCopy;
     }
@@ -164,7 +164,7 @@ public class LoadBalancerDescription implements Serializable {
         if (listeners == null) {
             this.listeners = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Listener> listenersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Listener>(listeners.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Listener> listenersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Listener>(listeners.size());
             listenersCopy.addAll(listeners);
             this.listeners = listenersCopy;
         }

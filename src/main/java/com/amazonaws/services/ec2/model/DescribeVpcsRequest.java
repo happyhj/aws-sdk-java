@@ -33,7 +33,7 @@ public class DescribeVpcsRequest extends AmazonWebServiceRequest implements Seri
     /**
      * One or more VPC IDs. <p>Default: Describes all your VPCs.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> vpcIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> vpcIds;
 
     /**
      * One or more filters. <ul> <li> <p><code>cidr</code> - The CIDR block
@@ -58,7 +58,7 @@ public class DescribeVpcsRequest extends AmazonWebServiceRequest implements Seri
      * filter. </li> <li> <p><code>vpc-id</code> - The ID of the VPC. </li>
      * </ul>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filters;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filters;
 
     /**
      * One or more VPC IDs. <p>Default: Describes all your VPCs.
@@ -67,7 +67,7 @@ public class DescribeVpcsRequest extends AmazonWebServiceRequest implements Seri
      */
     public java.util.List<String> getVpcIds() {
         if (vpcIds == null) {
-              vpcIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              vpcIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               vpcIds.setAutoConstruct(true);
         }
         return vpcIds;
@@ -83,7 +83,7 @@ public class DescribeVpcsRequest extends AmazonWebServiceRequest implements Seri
             this.vpcIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> vpcIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(vpcIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> vpcIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(vpcIds.size());
         vpcIdsCopy.addAll(vpcIds);
         this.vpcIds = vpcIdsCopy;
     }
@@ -120,7 +120,7 @@ public class DescribeVpcsRequest extends AmazonWebServiceRequest implements Seri
         if (vpcIds == null) {
             this.vpcIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> vpcIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(vpcIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> vpcIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(vpcIds.size());
             vpcIdsCopy.addAll(vpcIds);
             this.vpcIds = vpcIdsCopy;
         }
@@ -175,7 +175,7 @@ public class DescribeVpcsRequest extends AmazonWebServiceRequest implements Seri
      */
     public java.util.List<Filter> getFilters() {
         if (filters == null) {
-              filters = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>();
+              filters = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>();
               filters.setAutoConstruct(true);
         }
         return filters;
@@ -231,7 +231,7 @@ public class DescribeVpcsRequest extends AmazonWebServiceRequest implements Seri
             this.filters = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
         filtersCopy.addAll(filters);
         this.filters = filtersCopy;
     }
@@ -348,7 +348,7 @@ public class DescribeVpcsRequest extends AmazonWebServiceRequest implements Seri
         if (filters == null) {
             this.filters = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
             filtersCopy.addAll(filters);
             this.filters = filtersCopy;
         }

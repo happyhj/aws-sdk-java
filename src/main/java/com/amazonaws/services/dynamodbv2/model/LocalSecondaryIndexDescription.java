@@ -40,7 +40,7 @@ public class LocalSecondaryIndexDescription implements Serializable {
      * <b>Constraints:</b><br/>
      * <b>Length: </b>1 - 2<br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<KeySchemaElement> keySchema;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<KeySchemaElement> keySchema;
 
     /**
      * Represents attributes that are copied (projected) from the table into
@@ -141,7 +141,7 @@ public class LocalSecondaryIndexDescription implements Serializable {
             this.keySchema = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<KeySchemaElement> keySchemaCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<KeySchemaElement>(keySchema.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<KeySchemaElement> keySchemaCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<KeySchemaElement>(keySchema.size());
         keySchemaCopy.addAll(keySchema);
         this.keySchema = keySchemaCopy;
     }
@@ -192,7 +192,7 @@ public class LocalSecondaryIndexDescription implements Serializable {
         if (keySchema == null) {
             this.keySchema = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<KeySchemaElement> keySchemaCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<KeySchemaElement>(keySchema.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<KeySchemaElement> keySchemaCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<KeySchemaElement>(keySchema.size());
             keySchemaCopy.addAll(keySchema);
             this.keySchema = keySchemaCopy;
         }

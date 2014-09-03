@@ -29,7 +29,7 @@ public class EventInfoMap implements Serializable {
     /**
      * The category of an Amazon Redshift event.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> eventCategories;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> eventCategories;
 
     /**
      * The description of an Amazon Redshift event.
@@ -81,7 +81,7 @@ public class EventInfoMap implements Serializable {
      */
     public java.util.List<String> getEventCategories() {
         if (eventCategories == null) {
-              eventCategories = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              eventCategories = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               eventCategories.setAutoConstruct(true);
         }
         return eventCategories;
@@ -97,7 +97,7 @@ public class EventInfoMap implements Serializable {
             this.eventCategories = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> eventCategoriesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(eventCategories.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> eventCategoriesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(eventCategories.size());
         eventCategoriesCopy.addAll(eventCategories);
         this.eventCategories = eventCategoriesCopy;
     }
@@ -134,7 +134,7 @@ public class EventInfoMap implements Serializable {
         if (eventCategories == null) {
             this.eventCategories = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> eventCategoriesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(eventCategories.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> eventCategoriesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(eventCategories.size());
             eventCategoriesCopy.addAll(eventCategories);
             this.eventCategories = eventCategoriesCopy;
         }

@@ -26,7 +26,7 @@ public class DescribeAlarmsForMetricResult implements Serializable {
     /**
      * A list of information for each alarm with the specified metric.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<MetricAlarm> metricAlarms;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricAlarm> metricAlarms;
 
     /**
      * A list of information for each alarm with the specified metric.
@@ -35,7 +35,7 @@ public class DescribeAlarmsForMetricResult implements Serializable {
      */
     public java.util.List<MetricAlarm> getMetricAlarms() {
         if (metricAlarms == null) {
-              metricAlarms = new com.amazonaws.internal.ListWithAutoConstructFlag<MetricAlarm>();
+              metricAlarms = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricAlarm>();
               metricAlarms.setAutoConstruct(true);
         }
         return metricAlarms;
@@ -51,7 +51,7 @@ public class DescribeAlarmsForMetricResult implements Serializable {
             this.metricAlarms = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<MetricAlarm> metricAlarmsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<MetricAlarm>(metricAlarms.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricAlarm> metricAlarmsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricAlarm>(metricAlarms.size());
         metricAlarmsCopy.addAll(metricAlarms);
         this.metricAlarms = metricAlarmsCopy;
     }
@@ -88,7 +88,7 @@ public class DescribeAlarmsForMetricResult implements Serializable {
         if (metricAlarms == null) {
             this.metricAlarms = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<MetricAlarm> metricAlarmsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<MetricAlarm>(metricAlarms.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricAlarm> metricAlarmsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricAlarm>(metricAlarms.size());
             metricAlarmsCopy.addAll(metricAlarms);
             this.metricAlarms = metricAlarmsCopy;
         }

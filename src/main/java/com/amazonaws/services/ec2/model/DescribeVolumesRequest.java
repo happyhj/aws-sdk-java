@@ -38,7 +38,7 @@ public class DescribeVolumesRequest extends AmazonWebServiceRequest implements S
     /**
      * One or more volume IDs.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> volumeIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> volumeIds;
 
     /**
      * One or more filters. <ul> <li> <p><code>attachment.attach-time</code>
@@ -78,7 +78,7 @@ public class DescribeVolumesRequest extends AmazonWebServiceRequest implements S
      * <code>io1</code> for Provisioned IOPS (SSD) volumes, or
      * <code>standard</code> for Magnetic volumes. </li> </ul>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filters;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filters;
 
     /**
      * Default constructor for a new DescribeVolumesRequest object.  Callers should use the
@@ -104,7 +104,7 @@ public class DescribeVolumesRequest extends AmazonWebServiceRequest implements S
      */
     public java.util.List<String> getVolumeIds() {
         if (volumeIds == null) {
-              volumeIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              volumeIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               volumeIds.setAutoConstruct(true);
         }
         return volumeIds;
@@ -120,7 +120,7 @@ public class DescribeVolumesRequest extends AmazonWebServiceRequest implements S
             this.volumeIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> volumeIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(volumeIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> volumeIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(volumeIds.size());
         volumeIdsCopy.addAll(volumeIds);
         this.volumeIds = volumeIdsCopy;
     }
@@ -157,7 +157,7 @@ public class DescribeVolumesRequest extends AmazonWebServiceRequest implements S
         if (volumeIds == null) {
             this.volumeIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> volumeIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(volumeIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> volumeIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(volumeIds.size());
             volumeIdsCopy.addAll(volumeIds);
             this.volumeIds = volumeIdsCopy;
         }
@@ -242,7 +242,7 @@ public class DescribeVolumesRequest extends AmazonWebServiceRequest implements S
      */
     public java.util.List<Filter> getFilters() {
         if (filters == null) {
-              filters = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>();
+              filters = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>();
               filters.setAutoConstruct(true);
         }
         return filters;
@@ -328,7 +328,7 @@ public class DescribeVolumesRequest extends AmazonWebServiceRequest implements S
             this.filters = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
         filtersCopy.addAll(filters);
         this.filters = filtersCopy;
     }
@@ -505,7 +505,7 @@ public class DescribeVolumesRequest extends AmazonWebServiceRequest implements S
         if (filters == null) {
             this.filters = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
             filtersCopy.addAll(filters);
             this.filters = filtersCopy;
         }

@@ -41,7 +41,7 @@ public class TestMetricFilterRequest extends AmazonWebServiceRequest implements 
      */
     private String filterPattern;
 
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> logEventMessages;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> logEventMessages;
 
     /**
      * A symbolic description of how Amazon CloudWatch Logs should interpret
@@ -113,7 +113,7 @@ public class TestMetricFilterRequest extends AmazonWebServiceRequest implements 
      */
     public java.util.List<String> getLogEventMessages() {
         if (logEventMessages == null) {
-              logEventMessages = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              logEventMessages = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               logEventMessages.setAutoConstruct(true);
         }
         return logEventMessages;
@@ -132,7 +132,7 @@ public class TestMetricFilterRequest extends AmazonWebServiceRequest implements 
             this.logEventMessages = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> logEventMessagesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(logEventMessages.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> logEventMessagesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(logEventMessages.size());
         logEventMessagesCopy.addAll(logEventMessages);
         this.logEventMessages = logEventMessagesCopy;
     }
@@ -175,7 +175,7 @@ public class TestMetricFilterRequest extends AmazonWebServiceRequest implements 
         if (logEventMessages == null) {
             this.logEventMessages = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> logEventMessagesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(logEventMessages.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> logEventMessagesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(logEventMessages.size());
             logEventMessagesCopy.addAll(logEventMessages);
             this.logEventMessages = logEventMessagesCopy;
         }

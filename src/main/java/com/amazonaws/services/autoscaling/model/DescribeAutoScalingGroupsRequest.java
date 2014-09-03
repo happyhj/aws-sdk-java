@@ -39,7 +39,7 @@ public class DescribeAutoScalingGroupsRequest extends AmazonWebServiceRequest im
     /**
      * A list of Auto Scaling group names.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> autoScalingGroupNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> autoScalingGroupNames;
 
     /**
      * A string that marks the start of the next batch of returned results.
@@ -61,7 +61,7 @@ public class DescribeAutoScalingGroupsRequest extends AmazonWebServiceRequest im
      */
     public java.util.List<String> getAutoScalingGroupNames() {
         if (autoScalingGroupNames == null) {
-              autoScalingGroupNames = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              autoScalingGroupNames = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               autoScalingGroupNames.setAutoConstruct(true);
         }
         return autoScalingGroupNames;
@@ -77,7 +77,7 @@ public class DescribeAutoScalingGroupsRequest extends AmazonWebServiceRequest im
             this.autoScalingGroupNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> autoScalingGroupNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(autoScalingGroupNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> autoScalingGroupNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(autoScalingGroupNames.size());
         autoScalingGroupNamesCopy.addAll(autoScalingGroupNames);
         this.autoScalingGroupNames = autoScalingGroupNamesCopy;
     }
@@ -114,7 +114,7 @@ public class DescribeAutoScalingGroupsRequest extends AmazonWebServiceRequest im
         if (autoScalingGroupNames == null) {
             this.autoScalingGroupNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> autoScalingGroupNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(autoScalingGroupNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> autoScalingGroupNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(autoScalingGroupNames.size());
             autoScalingGroupNamesCopy.addAll(autoScalingGroupNames);
             this.autoScalingGroupNames = autoScalingGroupNamesCopy;
         }

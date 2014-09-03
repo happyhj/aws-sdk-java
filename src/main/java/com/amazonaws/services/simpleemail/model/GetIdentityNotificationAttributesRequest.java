@@ -41,7 +41,7 @@ public class GetIdentityNotificationAttributesRequest extends AmazonWebServiceRe
     /**
      * A list of one or more identities.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> identities;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> identities;
 
     /**
      * A list of one or more identities.
@@ -50,7 +50,7 @@ public class GetIdentityNotificationAttributesRequest extends AmazonWebServiceRe
      */
     public java.util.List<String> getIdentities() {
         if (identities == null) {
-              identities = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              identities = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               identities.setAutoConstruct(true);
         }
         return identities;
@@ -66,7 +66,7 @@ public class GetIdentityNotificationAttributesRequest extends AmazonWebServiceRe
             this.identities = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> identitiesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(identities.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> identitiesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(identities.size());
         identitiesCopy.addAll(identities);
         this.identities = identitiesCopy;
     }
@@ -103,7 +103,7 @@ public class GetIdentityNotificationAttributesRequest extends AmazonWebServiceRe
         if (identities == null) {
             this.identities = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> identitiesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(identities.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> identitiesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(identities.size());
             identitiesCopy.addAll(identities);
             this.identities = identitiesCopy;
         }

@@ -57,7 +57,7 @@ public class ModifyNetworkInterfaceAttributeRequest extends AmazonWebServiceRequ
      * one group, even if it's just the default security group in the VPC.
      * You must specify the ID of the security group, not the name.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> groups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> groups;
 
     /**
      * The ID of the interface attachment.
@@ -225,7 +225,7 @@ public class ModifyNetworkInterfaceAttributeRequest extends AmazonWebServiceRequ
      */
     public java.util.List<String> getGroups() {
         if (groups == null) {
-              groups = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              groups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               groups.setAutoConstruct(true);
         }
         return groups;
@@ -247,7 +247,7 @@ public class ModifyNetworkInterfaceAttributeRequest extends AmazonWebServiceRequ
             this.groups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> groupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(groups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> groupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(groups.size());
         groupsCopy.addAll(groups);
         this.groups = groupsCopy;
     }
@@ -296,7 +296,7 @@ public class ModifyNetworkInterfaceAttributeRequest extends AmazonWebServiceRequ
         if (groups == null) {
             this.groups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> groupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(groups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> groupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(groups.size());
             groupsCopy.addAll(groups);
             this.groups = groupsCopy;
         }

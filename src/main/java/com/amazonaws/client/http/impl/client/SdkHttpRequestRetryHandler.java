@@ -20,8 +20,8 @@ import org.apache.http.annotation.ThreadSafe;
 import org.apache.http.impl.client.DefaultHttpRequestRetryHandler;
 import org.apache.http.protocol.HttpContext;
 
-import com.amazonaws.metricsutil.AWSRequestMetrics;
-import com.amazonaws.metricsutil.AWSRequestMetrics.Field;
+import com.amazonaws.network.metrics.util.AWSRequestMetrics;
+import com.amazonaws.network.metrics.util.AWSRequestMetrics.Field;
 
 @ThreadSafe
 public class SdkHttpRequestRetryHandler extends DefaultHttpRequestRetryHandler {

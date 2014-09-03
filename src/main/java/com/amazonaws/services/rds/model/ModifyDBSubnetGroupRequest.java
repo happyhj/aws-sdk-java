@@ -45,7 +45,7 @@ public class ModifyDBSubnetGroupRequest extends AmazonWebServiceRequest implemen
     /**
      * The EC2 subnet IDs for the DB subnet group.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> subnetIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> subnetIds;
 
     /**
      * The name for the DB subnet group. This value is stored as a lowercase
@@ -138,7 +138,7 @@ public class ModifyDBSubnetGroupRequest extends AmazonWebServiceRequest implemen
      */
     public java.util.List<String> getSubnetIds() {
         if (subnetIds == null) {
-              subnetIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              subnetIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               subnetIds.setAutoConstruct(true);
         }
         return subnetIds;
@@ -154,7 +154,7 @@ public class ModifyDBSubnetGroupRequest extends AmazonWebServiceRequest implemen
             this.subnetIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> subnetIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(subnetIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> subnetIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(subnetIds.size());
         subnetIdsCopy.addAll(subnetIds);
         this.subnetIds = subnetIdsCopy;
     }
@@ -191,7 +191,7 @@ public class ModifyDBSubnetGroupRequest extends AmazonWebServiceRequest implemen
         if (subnetIds == null) {
             this.subnetIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> subnetIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(subnetIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> subnetIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(subnetIds.size());
             subnetIdsCopy.addAll(subnetIds);
             this.subnetIds = subnetIdsCopy;
         }

@@ -20,14 +20,14 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.directconnect.model.AllocatePublicVirtualInterfaceRequest;
 import com.amazonaws.services.directconnect.model.NewPublicVirtualInterfaceAllocation;
 import com.amazonaws.services.directconnect.model.RouteFilterPrefix;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Allocate Public Virtual Interface Request Marshaller
@@ -83,7 +83,7 @@ public class AllocatePublicVirtualInterfaceRequestMarshaller implements Marshall
                     jsonWriter.key("customerAddress").value(newPublicVirtualInterfaceAllocation.getCustomerAddress());
                 }
 
-                com.amazonaws.internal.ListWithAutoConstructFlag<RouteFilterPrefix> routeFilterPrefixesList = (com.amazonaws.internal.ListWithAutoConstructFlag<RouteFilterPrefix>)(newPublicVirtualInterfaceAllocation.getRouteFilterPrefixes());
+                com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RouteFilterPrefix> routeFilterPrefixesList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RouteFilterPrefix>)(newPublicVirtualInterfaceAllocation.getRouteFilterPrefixes());
                 if (routeFilterPrefixesList != null && !(routeFilterPrefixesList.isAutoConstruct() && routeFilterPrefixesList.isEmpty())) {
 
                     jsonWriter.key("routeFilterPrefixes");

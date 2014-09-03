@@ -28,7 +28,7 @@ public class DescribeLoadBalancerPolicyTypesResult implements Serializable {
      * type. If no policy type names are specified, returns the description
      * of all the policy types defined by Elastic Load Balancing service.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<PolicyTypeDescription> policyTypeDescriptions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PolicyTypeDescription> policyTypeDescriptions;
 
     /**
      * List of policy type description structures of the specified policy
@@ -41,7 +41,7 @@ public class DescribeLoadBalancerPolicyTypesResult implements Serializable {
      */
     public java.util.List<PolicyTypeDescription> getPolicyTypeDescriptions() {
         if (policyTypeDescriptions == null) {
-              policyTypeDescriptions = new com.amazonaws.internal.ListWithAutoConstructFlag<PolicyTypeDescription>();
+              policyTypeDescriptions = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PolicyTypeDescription>();
               policyTypeDescriptions.setAutoConstruct(true);
         }
         return policyTypeDescriptions;
@@ -61,7 +61,7 @@ public class DescribeLoadBalancerPolicyTypesResult implements Serializable {
             this.policyTypeDescriptions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<PolicyTypeDescription> policyTypeDescriptionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<PolicyTypeDescription>(policyTypeDescriptions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PolicyTypeDescription> policyTypeDescriptionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PolicyTypeDescription>(policyTypeDescriptions.size());
         policyTypeDescriptionsCopy.addAll(policyTypeDescriptions);
         this.policyTypeDescriptions = policyTypeDescriptionsCopy;
     }
@@ -106,7 +106,7 @@ public class DescribeLoadBalancerPolicyTypesResult implements Serializable {
         if (policyTypeDescriptions == null) {
             this.policyTypeDescriptions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<PolicyTypeDescription> policyTypeDescriptionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<PolicyTypeDescription>(policyTypeDescriptions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PolicyTypeDescription> policyTypeDescriptionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PolicyTypeDescription>(policyTypeDescriptions.size());
             policyTypeDescriptionsCopy.addAll(policyTypeDescriptions);
             this.policyTypeDescriptions = policyTypeDescriptionsCopy;
         }

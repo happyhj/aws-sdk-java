@@ -63,7 +63,7 @@ public class ResetDBParameterGroupRequest extends AmazonWebServiceRequest implem
      * when DB instance reboots. <p><b>Oracle</b> <p>Valid Values (for Apply
      * method): <code>pending-reboot</code>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Parameter> parameters;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Parameter> parameters;
 
     /**
      * Default constructor for a new ResetDBParameterGroupRequest object.  Callers should use the
@@ -219,7 +219,7 @@ public class ResetDBParameterGroupRequest extends AmazonWebServiceRequest implem
      */
     public java.util.List<Parameter> getParameters() {
         if (parameters == null) {
-              parameters = new com.amazonaws.internal.ListWithAutoConstructFlag<Parameter>();
+              parameters = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Parameter>();
               parameters.setAutoConstruct(true);
         }
         return parameters;
@@ -253,7 +253,7 @@ public class ResetDBParameterGroupRequest extends AmazonWebServiceRequest implem
             this.parameters = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Parameter> parametersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Parameter>(parameters.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Parameter> parametersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Parameter>(parameters.size());
         parametersCopy.addAll(parameters);
         this.parameters = parametersCopy;
     }
@@ -326,7 +326,7 @@ public class ResetDBParameterGroupRequest extends AmazonWebServiceRequest implem
         if (parameters == null) {
             this.parameters = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Parameter> parametersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Parameter>(parameters.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Parameter> parametersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Parameter>(parameters.size());
             parametersCopy.addAll(parameters);
             this.parameters = parametersCopy;
         }

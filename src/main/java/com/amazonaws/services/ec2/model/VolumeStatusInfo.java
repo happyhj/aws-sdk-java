@@ -34,7 +34,7 @@ public class VolumeStatusInfo implements Serializable {
     /**
      * The details of the volume status.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<VolumeStatusDetails> details;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeStatusDetails> details;
 
     /**
      * The status of the volume.
@@ -125,7 +125,7 @@ public class VolumeStatusInfo implements Serializable {
      */
     public java.util.List<VolumeStatusDetails> getDetails() {
         if (details == null) {
-              details = new com.amazonaws.internal.ListWithAutoConstructFlag<VolumeStatusDetails>();
+              details = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeStatusDetails>();
               details.setAutoConstruct(true);
         }
         return details;
@@ -141,7 +141,7 @@ public class VolumeStatusInfo implements Serializable {
             this.details = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<VolumeStatusDetails> detailsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<VolumeStatusDetails>(details.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeStatusDetails> detailsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeStatusDetails>(details.size());
         detailsCopy.addAll(details);
         this.details = detailsCopy;
     }
@@ -178,7 +178,7 @@ public class VolumeStatusInfo implements Serializable {
         if (details == null) {
             this.details = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<VolumeStatusDetails> detailsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<VolumeStatusDetails>(details.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeStatusDetails> detailsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeStatusDetails>(details.size());
             detailsCopy.addAll(details);
             this.details = detailsCopy;
         }

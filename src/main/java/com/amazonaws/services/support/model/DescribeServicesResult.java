@@ -27,7 +27,7 @@ public class DescribeServicesResult implements Serializable {
     /**
      * A JSON-formatted list of AWS services.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Service> services;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Service> services;
 
     /**
      * A JSON-formatted list of AWS services.
@@ -36,7 +36,7 @@ public class DescribeServicesResult implements Serializable {
      */
     public java.util.List<Service> getServices() {
         if (services == null) {
-              services = new com.amazonaws.internal.ListWithAutoConstructFlag<Service>();
+              services = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Service>();
               services.setAutoConstruct(true);
         }
         return services;
@@ -52,7 +52,7 @@ public class DescribeServicesResult implements Serializable {
             this.services = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Service> servicesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Service>(services.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Service> servicesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Service>(services.size());
         servicesCopy.addAll(services);
         this.services = servicesCopy;
     }
@@ -89,7 +89,7 @@ public class DescribeServicesResult implements Serializable {
         if (services == null) {
             this.services = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Service> servicesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Service>(services.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Service> servicesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Service>(services.size());
             servicesCopy.addAll(services);
             this.services = servicesCopy;
         }

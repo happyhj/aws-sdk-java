@@ -24,7 +24,7 @@ public class DescribeKeyPairsResult implements Serializable {
     /**
      * Information about one or more key pairs.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<KeyPairInfo> keyPairs;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<KeyPairInfo> keyPairs;
 
     /**
      * Information about one or more key pairs.
@@ -33,7 +33,7 @@ public class DescribeKeyPairsResult implements Serializable {
      */
     public java.util.List<KeyPairInfo> getKeyPairs() {
         if (keyPairs == null) {
-              keyPairs = new com.amazonaws.internal.ListWithAutoConstructFlag<KeyPairInfo>();
+              keyPairs = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<KeyPairInfo>();
               keyPairs.setAutoConstruct(true);
         }
         return keyPairs;
@@ -49,7 +49,7 @@ public class DescribeKeyPairsResult implements Serializable {
             this.keyPairs = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<KeyPairInfo> keyPairsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<KeyPairInfo>(keyPairs.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<KeyPairInfo> keyPairsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<KeyPairInfo>(keyPairs.size());
         keyPairsCopy.addAll(keyPairs);
         this.keyPairs = keyPairsCopy;
     }
@@ -86,7 +86,7 @@ public class DescribeKeyPairsResult implements Serializable {
         if (keyPairs == null) {
             this.keyPairs = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<KeyPairInfo> keyPairsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<KeyPairInfo>(keyPairs.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<KeyPairInfo> keyPairsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<KeyPairInfo>(keyPairs.size());
             keyPairsCopy.addAll(keyPairs);
             this.keyPairs = keyPairsCopy;
         }

@@ -35,7 +35,7 @@ public class GetDomainDetailResult implements Serializable {
     /**
      * The name of the domain. <p>Type: String
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Nameserver> nameservers;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Nameserver> nameservers;
 
     /**
      * Specifies whether the domain registration is set to renew
@@ -193,7 +193,7 @@ public class GetDomainDetailResult implements Serializable {
      * searches sometimes return an old version of the document.) <p>Type:
      * Array of String
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> statusList;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> statusList;
 
     /**
      * The name of a domain. <p>Type: String
@@ -247,7 +247,7 @@ public class GetDomainDetailResult implements Serializable {
      */
     public java.util.List<Nameserver> getNameservers() {
         if (nameservers == null) {
-              nameservers = new com.amazonaws.internal.ListWithAutoConstructFlag<Nameserver>();
+              nameservers = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Nameserver>();
               nameservers.setAutoConstruct(true);
         }
         return nameservers;
@@ -263,7 +263,7 @@ public class GetDomainDetailResult implements Serializable {
             this.nameservers = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Nameserver> nameserversCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Nameserver>(nameservers.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Nameserver> nameserversCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Nameserver>(nameservers.size());
         nameserversCopy.addAll(nameservers);
         this.nameservers = nameserversCopy;
     }
@@ -300,7 +300,7 @@ public class GetDomainDetailResult implements Serializable {
         if (nameservers == null) {
             this.nameservers = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Nameserver> nameserversCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Nameserver>(nameservers.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Nameserver> nameserversCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Nameserver>(nameservers.size());
             nameserversCopy.addAll(nameservers);
             this.nameservers = nameserversCopy;
         }
@@ -1283,7 +1283,7 @@ public class GetDomainDetailResult implements Serializable {
      */
     public java.util.List<String> getStatusList() {
         if (statusList == null) {
-              statusList = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              statusList = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               statusList.setAutoConstruct(true);
         }
         return statusList;
@@ -1323,7 +1323,7 @@ public class GetDomainDetailResult implements Serializable {
             this.statusList = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> statusListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(statusList.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> statusListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(statusList.size());
         statusListCopy.addAll(statusList);
         this.statusList = statusListCopy;
     }
@@ -1408,7 +1408,7 @@ public class GetDomainDetailResult implements Serializable {
         if (statusList == null) {
             this.statusList = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> statusListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(statusList.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> statusListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(statusList.size());
             statusListCopy.addAll(statusList);
             this.statusList = statusListCopy;
         }

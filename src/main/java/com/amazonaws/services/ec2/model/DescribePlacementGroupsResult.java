@@ -24,7 +24,7 @@ public class DescribePlacementGroupsResult implements Serializable {
     /**
      * One or more placement groups.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<PlacementGroup> placementGroups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PlacementGroup> placementGroups;
 
     /**
      * One or more placement groups.
@@ -33,7 +33,7 @@ public class DescribePlacementGroupsResult implements Serializable {
      */
     public java.util.List<PlacementGroup> getPlacementGroups() {
         if (placementGroups == null) {
-              placementGroups = new com.amazonaws.internal.ListWithAutoConstructFlag<PlacementGroup>();
+              placementGroups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PlacementGroup>();
               placementGroups.setAutoConstruct(true);
         }
         return placementGroups;
@@ -49,7 +49,7 @@ public class DescribePlacementGroupsResult implements Serializable {
             this.placementGroups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<PlacementGroup> placementGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<PlacementGroup>(placementGroups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PlacementGroup> placementGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PlacementGroup>(placementGroups.size());
         placementGroupsCopy.addAll(placementGroups);
         this.placementGroups = placementGroupsCopy;
     }
@@ -86,7 +86,7 @@ public class DescribePlacementGroupsResult implements Serializable {
         if (placementGroups == null) {
             this.placementGroups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<PlacementGroup> placementGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<PlacementGroup>(placementGroups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PlacementGroup> placementGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PlacementGroup>(placementGroups.size());
             placementGroupsCopy.addAll(placementGroups);
             this.placementGroups = placementGroupsCopy;
         }

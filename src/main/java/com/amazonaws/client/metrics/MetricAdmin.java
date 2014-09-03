@@ -17,7 +17,7 @@ package com.amazonaws.client.metrics;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-import com.amazonaws.client.Regions;
+import com.amazonaws.client.regions.Regions;
 import com.amazonaws.network.metricscollector.MetricCollector;
 import com.amazonaws.network.metricscollector.RequestMetricCollector;
 import com.amazonaws.network.metricscollector.ServiceMetricCollector;

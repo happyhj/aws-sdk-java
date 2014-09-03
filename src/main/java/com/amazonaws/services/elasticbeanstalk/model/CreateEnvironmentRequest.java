@@ -81,7 +81,7 @@ public class CreateEnvironmentRequest extends AmazonWebServiceRequest implements
     /**
      * This specifies the tags applied to resources in the environment.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tags;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tags;
 
     /**
      * The name of the application version to deploy. <p> If the specified
@@ -132,13 +132,13 @@ public class CreateEnvironmentRequest extends AmazonWebServiceRequest implements
      * environment. These override the values obtained from the solution
      * stack or the configuration template.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ConfigurationOptionSetting> optionSettings;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ConfigurationOptionSetting> optionSettings;
 
     /**
      * A list of custom user-defined configuration options to remove from the
      * configuration set for this new environment.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<OptionSpecification> optionsToRemove;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionSpecification> optionsToRemove;
 
     /**
      * Default constructor for a new CreateEnvironmentRequest object.  Callers should use the
@@ -450,7 +450,7 @@ public class CreateEnvironmentRequest extends AmazonWebServiceRequest implements
      */
     public java.util.List<Tag> getTags() {
         if (tags == null) {
-              tags = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>();
+              tags = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>();
               tags.setAutoConstruct(true);
         }
         return tags;
@@ -466,7 +466,7 @@ public class CreateEnvironmentRequest extends AmazonWebServiceRequest implements
             this.tags = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tags.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tags.size());
         tagsCopy.addAll(tags);
         this.tags = tagsCopy;
     }
@@ -503,7 +503,7 @@ public class CreateEnvironmentRequest extends AmazonWebServiceRequest implements
         if (tags == null) {
             this.tags = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tags.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tags.size());
             tagsCopy.addAll(tags);
             this.tags = tagsCopy;
         }
@@ -764,7 +764,7 @@ public class CreateEnvironmentRequest extends AmazonWebServiceRequest implements
      */
     public java.util.List<ConfigurationOptionSetting> getOptionSettings() {
         if (optionSettings == null) {
-              optionSettings = new com.amazonaws.internal.ListWithAutoConstructFlag<ConfigurationOptionSetting>();
+              optionSettings = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ConfigurationOptionSetting>();
               optionSettings.setAutoConstruct(true);
         }
         return optionSettings;
@@ -786,7 +786,7 @@ public class CreateEnvironmentRequest extends AmazonWebServiceRequest implements
             this.optionSettings = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ConfigurationOptionSetting> optionSettingsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ConfigurationOptionSetting>(optionSettings.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ConfigurationOptionSetting> optionSettingsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ConfigurationOptionSetting>(optionSettings.size());
         optionSettingsCopy.addAll(optionSettings);
         this.optionSettings = optionSettingsCopy;
     }
@@ -835,7 +835,7 @@ public class CreateEnvironmentRequest extends AmazonWebServiceRequest implements
         if (optionSettings == null) {
             this.optionSettings = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ConfigurationOptionSetting> optionSettingsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ConfigurationOptionSetting>(optionSettings.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ConfigurationOptionSetting> optionSettingsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ConfigurationOptionSetting>(optionSettings.size());
             optionSettingsCopy.addAll(optionSettings);
             this.optionSettings = optionSettingsCopy;
         }
@@ -852,7 +852,7 @@ public class CreateEnvironmentRequest extends AmazonWebServiceRequest implements
      */
     public java.util.List<OptionSpecification> getOptionsToRemove() {
         if (optionsToRemove == null) {
-              optionsToRemove = new com.amazonaws.internal.ListWithAutoConstructFlag<OptionSpecification>();
+              optionsToRemove = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionSpecification>();
               optionsToRemove.setAutoConstruct(true);
         }
         return optionsToRemove;
@@ -870,7 +870,7 @@ public class CreateEnvironmentRequest extends AmazonWebServiceRequest implements
             this.optionsToRemove = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<OptionSpecification> optionsToRemoveCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<OptionSpecification>(optionsToRemove.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionSpecification> optionsToRemoveCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionSpecification>(optionsToRemove.size());
         optionsToRemoveCopy.addAll(optionsToRemove);
         this.optionsToRemove = optionsToRemoveCopy;
     }
@@ -911,7 +911,7 @@ public class CreateEnvironmentRequest extends AmazonWebServiceRequest implements
         if (optionsToRemove == null) {
             this.optionsToRemove = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<OptionSpecification> optionsToRemoveCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<OptionSpecification>(optionsToRemove.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionSpecification> optionsToRemoveCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionSpecification>(optionsToRemove.size());
             optionsToRemoveCopy.addAll(optionsToRemove);
             this.optionsToRemove = optionsToRemoveCopy;
         }

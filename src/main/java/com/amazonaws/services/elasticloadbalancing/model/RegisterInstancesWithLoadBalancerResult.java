@@ -26,7 +26,7 @@ public class RegisterInstancesWithLoadBalancerResult implements Serializable {
     /**
      * An updated list of instances for the load balancer.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Instance> instances;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Instance> instances;
 
     /**
      * An updated list of instances for the load balancer.
@@ -35,7 +35,7 @@ public class RegisterInstancesWithLoadBalancerResult implements Serializable {
      */
     public java.util.List<Instance> getInstances() {
         if (instances == null) {
-              instances = new com.amazonaws.internal.ListWithAutoConstructFlag<Instance>();
+              instances = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Instance>();
               instances.setAutoConstruct(true);
         }
         return instances;
@@ -51,7 +51,7 @@ public class RegisterInstancesWithLoadBalancerResult implements Serializable {
             this.instances = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Instance> instancesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Instance>(instances.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Instance> instancesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Instance>(instances.size());
         instancesCopy.addAll(instances);
         this.instances = instancesCopy;
     }
@@ -88,7 +88,7 @@ public class RegisterInstancesWithLoadBalancerResult implements Serializable {
         if (instances == null) {
             this.instances = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Instance> instancesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Instance>(instances.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Instance> instancesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Instance>(instances.size());
             instancesCopy.addAll(instances);
             this.instances = instancesCopy;
         }

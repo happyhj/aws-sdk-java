@@ -48,7 +48,7 @@ public class DescribeSuggestersRequest extends AmazonWebServiceRequest implement
     /**
      * The suggesters you want to describe.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> suggesterNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> suggesterNames;
 
     /**
      * Whether to display the deployed configuration (<code>true</code>) or
@@ -109,7 +109,7 @@ public class DescribeSuggestersRequest extends AmazonWebServiceRequest implement
      */
     public java.util.List<String> getSuggesterNames() {
         if (suggesterNames == null) {
-              suggesterNames = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              suggesterNames = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               suggesterNames.setAutoConstruct(true);
         }
         return suggesterNames;
@@ -125,7 +125,7 @@ public class DescribeSuggestersRequest extends AmazonWebServiceRequest implement
             this.suggesterNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> suggesterNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(suggesterNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> suggesterNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(suggesterNames.size());
         suggesterNamesCopy.addAll(suggesterNames);
         this.suggesterNames = suggesterNamesCopy;
     }
@@ -162,7 +162,7 @@ public class DescribeSuggestersRequest extends AmazonWebServiceRequest implement
         if (suggesterNames == null) {
             this.suggesterNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> suggesterNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(suggesterNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> suggesterNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(suggesterNames.size());
             suggesterNamesCopy.addAll(suggesterNames);
             this.suggesterNames = suggesterNamesCopy;
         }

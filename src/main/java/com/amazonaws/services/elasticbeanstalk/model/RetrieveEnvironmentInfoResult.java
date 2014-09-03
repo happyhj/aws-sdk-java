@@ -27,7 +27,7 @@ public class RetrieveEnvironmentInfoResult implements Serializable {
     /**
      * The <a>EnvironmentInfoDescription</a> of the environment.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<EnvironmentInfoDescription> environmentInfo;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EnvironmentInfoDescription> environmentInfo;
 
     /**
      * The <a>EnvironmentInfoDescription</a> of the environment.
@@ -36,7 +36,7 @@ public class RetrieveEnvironmentInfoResult implements Serializable {
      */
     public java.util.List<EnvironmentInfoDescription> getEnvironmentInfo() {
         if (environmentInfo == null) {
-              environmentInfo = new com.amazonaws.internal.ListWithAutoConstructFlag<EnvironmentInfoDescription>();
+              environmentInfo = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EnvironmentInfoDescription>();
               environmentInfo.setAutoConstruct(true);
         }
         return environmentInfo;
@@ -52,7 +52,7 @@ public class RetrieveEnvironmentInfoResult implements Serializable {
             this.environmentInfo = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<EnvironmentInfoDescription> environmentInfoCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<EnvironmentInfoDescription>(environmentInfo.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EnvironmentInfoDescription> environmentInfoCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EnvironmentInfoDescription>(environmentInfo.size());
         environmentInfoCopy.addAll(environmentInfo);
         this.environmentInfo = environmentInfoCopy;
     }
@@ -89,7 +89,7 @@ public class RetrieveEnvironmentInfoResult implements Serializable {
         if (environmentInfo == null) {
             this.environmentInfo = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<EnvironmentInfoDescription> environmentInfoCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<EnvironmentInfoDescription>(environmentInfo.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EnvironmentInfoDescription> environmentInfoCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EnvironmentInfoDescription>(environmentInfo.size());
             environmentInfoCopy.addAll(environmentInfo);
             this.environmentInfo = environmentInfoCopy;
         }

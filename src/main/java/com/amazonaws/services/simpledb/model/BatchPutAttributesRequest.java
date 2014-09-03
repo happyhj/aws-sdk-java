@@ -106,7 +106,7 @@ public class BatchPutAttributesRequest extends AmazonWebServiceRequest implement
     /**
      * A list of items on which to perform the operation.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ReplaceableItem> items;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReplaceableItem> items;
 
     /**
      * Default constructor for a new BatchPutAttributesRequest object.  Callers should use the
@@ -168,7 +168,7 @@ public class BatchPutAttributesRequest extends AmazonWebServiceRequest implement
      */
     public java.util.List<ReplaceableItem> getItems() {
         if (items == null) {
-              items = new com.amazonaws.internal.ListWithAutoConstructFlag<ReplaceableItem>();
+              items = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReplaceableItem>();
               items.setAutoConstruct(true);
         }
         return items;
@@ -184,7 +184,7 @@ public class BatchPutAttributesRequest extends AmazonWebServiceRequest implement
             this.items = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ReplaceableItem> itemsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ReplaceableItem>(items.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReplaceableItem> itemsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReplaceableItem>(items.size());
         itemsCopy.addAll(items);
         this.items = itemsCopy;
     }
@@ -221,7 +221,7 @@ public class BatchPutAttributesRequest extends AmazonWebServiceRequest implement
         if (items == null) {
             this.items = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ReplaceableItem> itemsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ReplaceableItem>(items.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReplaceableItem> itemsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReplaceableItem>(items.size());
             itemsCopy.addAll(items);
             this.items = itemsCopy;
         }

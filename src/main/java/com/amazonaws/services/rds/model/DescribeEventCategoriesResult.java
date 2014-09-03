@@ -26,7 +26,7 @@ public class DescribeEventCategoriesResult implements Serializable {
     /**
      * A list of EventCategoriesMap data types.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<EventCategoriesMap> eventCategoriesMapList;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EventCategoriesMap> eventCategoriesMapList;
 
     /**
      * A list of EventCategoriesMap data types.
@@ -35,7 +35,7 @@ public class DescribeEventCategoriesResult implements Serializable {
      */
     public java.util.List<EventCategoriesMap> getEventCategoriesMapList() {
         if (eventCategoriesMapList == null) {
-              eventCategoriesMapList = new com.amazonaws.internal.ListWithAutoConstructFlag<EventCategoriesMap>();
+              eventCategoriesMapList = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EventCategoriesMap>();
               eventCategoriesMapList.setAutoConstruct(true);
         }
         return eventCategoriesMapList;
@@ -51,7 +51,7 @@ public class DescribeEventCategoriesResult implements Serializable {
             this.eventCategoriesMapList = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<EventCategoriesMap> eventCategoriesMapListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<EventCategoriesMap>(eventCategoriesMapList.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EventCategoriesMap> eventCategoriesMapListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EventCategoriesMap>(eventCategoriesMapList.size());
         eventCategoriesMapListCopy.addAll(eventCategoriesMapList);
         this.eventCategoriesMapList = eventCategoriesMapListCopy;
     }
@@ -88,7 +88,7 @@ public class DescribeEventCategoriesResult implements Serializable {
         if (eventCategoriesMapList == null) {
             this.eventCategoriesMapList = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<EventCategoriesMap> eventCategoriesMapListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<EventCategoriesMap>(eventCategoriesMapList.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EventCategoriesMap> eventCategoriesMapListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EventCategoriesMap>(eventCategoriesMapList.size());
             eventCategoriesMapListCopy.addAll(eventCategoriesMapList);
             this.eventCategoriesMapList = eventCategoriesMapListCopy;
         }

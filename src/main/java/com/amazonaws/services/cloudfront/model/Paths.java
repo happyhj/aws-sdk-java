@@ -33,7 +33,7 @@ public class Paths implements Serializable {
      * A complex type that contains a list of the objects that you want to
      * invalidate.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> items;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> items;
 
     /**
      * The number of objects that you want to invalidate.
@@ -77,7 +77,7 @@ public class Paths implements Serializable {
      */
     public java.util.List<String> getItems() {
         if (items == null) {
-              items = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              items = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               items.setAutoConstruct(true);
         }
         return items;
@@ -95,7 +95,7 @@ public class Paths implements Serializable {
             this.items = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> itemsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(items.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> itemsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(items.size());
         itemsCopy.addAll(items);
         this.items = itemsCopy;
     }
@@ -136,7 +136,7 @@ public class Paths implements Serializable {
         if (items == null) {
             this.items = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> itemsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(items.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> itemsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(items.size());
             itemsCopy.addAll(items);
             this.items = itemsCopy;
         }

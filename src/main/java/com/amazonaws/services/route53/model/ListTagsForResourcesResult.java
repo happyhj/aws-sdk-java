@@ -27,7 +27,7 @@ public class ListTagsForResourcesResult implements Serializable {
      * A list of <code>ResourceTagSet</code>s containing tags associated with
      * the specified resources.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ResourceTagSet> resourceTagSets;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ResourceTagSet> resourceTagSets;
 
     /**
      * A list of <code>ResourceTagSet</code>s containing tags associated with
@@ -38,7 +38,7 @@ public class ListTagsForResourcesResult implements Serializable {
      */
     public java.util.List<ResourceTagSet> getResourceTagSets() {
         if (resourceTagSets == null) {
-              resourceTagSets = new com.amazonaws.internal.ListWithAutoConstructFlag<ResourceTagSet>();
+              resourceTagSets = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ResourceTagSet>();
               resourceTagSets.setAutoConstruct(true);
         }
         return resourceTagSets;
@@ -56,7 +56,7 @@ public class ListTagsForResourcesResult implements Serializable {
             this.resourceTagSets = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ResourceTagSet> resourceTagSetsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ResourceTagSet>(resourceTagSets.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ResourceTagSet> resourceTagSetsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ResourceTagSet>(resourceTagSets.size());
         resourceTagSetsCopy.addAll(resourceTagSets);
         this.resourceTagSets = resourceTagSetsCopy;
     }
@@ -97,7 +97,7 @@ public class ListTagsForResourcesResult implements Serializable {
         if (resourceTagSets == null) {
             this.resourceTagSets = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ResourceTagSet> resourceTagSetsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ResourceTagSet>(resourceTagSets.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ResourceTagSet> resourceTagSetsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ResourceTagSet>(resourceTagSets.size());
             resourceTagSetsCopy.addAll(resourceTagSets);
             this.resourceTagSets = resourceTagSetsCopy;
         }

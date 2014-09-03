@@ -34,7 +34,7 @@ public class DescribeDBSnapshotsResult implements Serializable {
     /**
      * A list of <a>DBSnapshot</a> instances.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<DBSnapshot> dBSnapshots;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBSnapshot> dBSnapshots;
 
     /**
      * An optional pagination token provided by a previous request. If this
@@ -88,7 +88,7 @@ public class DescribeDBSnapshotsResult implements Serializable {
      */
     public java.util.List<DBSnapshot> getDBSnapshots() {
         if (dBSnapshots == null) {
-              dBSnapshots = new com.amazonaws.internal.ListWithAutoConstructFlag<DBSnapshot>();
+              dBSnapshots = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBSnapshot>();
               dBSnapshots.setAutoConstruct(true);
         }
         return dBSnapshots;
@@ -104,7 +104,7 @@ public class DescribeDBSnapshotsResult implements Serializable {
             this.dBSnapshots = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<DBSnapshot> dBSnapshotsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DBSnapshot>(dBSnapshots.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBSnapshot> dBSnapshotsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBSnapshot>(dBSnapshots.size());
         dBSnapshotsCopy.addAll(dBSnapshots);
         this.dBSnapshots = dBSnapshotsCopy;
     }
@@ -141,7 +141,7 @@ public class DescribeDBSnapshotsResult implements Serializable {
         if (dBSnapshots == null) {
             this.dBSnapshots = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<DBSnapshot> dBSnapshotsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DBSnapshot>(dBSnapshots.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBSnapshot> dBSnapshotsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBSnapshot>(dBSnapshots.size());
             dBSnapshotsCopy.addAll(dBSnapshots);
             this.dBSnapshots = dBSnapshotsCopy;
         }

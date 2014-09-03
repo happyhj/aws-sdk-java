@@ -17,8 +17,8 @@ package com.amazonaws.services.s3.transfer.internal;
 import java.util.Collection;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import com.amazonaws.event.ProgressEventType;
-import com.amazonaws.event.ProgressListenerChain;
+import com.amazonaws.network.event.ProgressEventType;
+import com.amazonaws.network.event.ProgressListenerChain;
 import com.amazonaws.services.s3.transfer.Transfer;
 import com.amazonaws.services.s3.transfer.TransferProgress;
 

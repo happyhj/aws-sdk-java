@@ -24,7 +24,7 @@ public class TerminateInstancesResult implements Serializable {
     /**
      * Information about one or more terminated instances.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<InstanceStateChange> terminatingInstances;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceStateChange> terminatingInstances;
 
     /**
      * Information about one or more terminated instances.
@@ -33,7 +33,7 @@ public class TerminateInstancesResult implements Serializable {
      */
     public java.util.List<InstanceStateChange> getTerminatingInstances() {
         if (terminatingInstances == null) {
-              terminatingInstances = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceStateChange>();
+              terminatingInstances = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceStateChange>();
               terminatingInstances.setAutoConstruct(true);
         }
         return terminatingInstances;
@@ -49,7 +49,7 @@ public class TerminateInstancesResult implements Serializable {
             this.terminatingInstances = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<InstanceStateChange> terminatingInstancesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceStateChange>(terminatingInstances.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceStateChange> terminatingInstancesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceStateChange>(terminatingInstances.size());
         terminatingInstancesCopy.addAll(terminatingInstances);
         this.terminatingInstances = terminatingInstancesCopy;
     }
@@ -86,7 +86,7 @@ public class TerminateInstancesResult implements Serializable {
         if (terminatingInstances == null) {
             this.terminatingInstances = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<InstanceStateChange> terminatingInstancesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceStateChange>(terminatingInstances.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceStateChange> terminatingInstancesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceStateChange>(terminatingInstances.size());
             terminatingInstancesCopy.addAll(terminatingInstances);
             this.terminatingInstances = terminatingInstancesCopy;
         }

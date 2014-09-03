@@ -70,7 +70,7 @@ public class TestRoleRequest extends AmazonWebServiceRequest implements Serializ
      * <b>Constraints:</b><br/>
      * <b>Length: </b>0 - 30<br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> topics;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> topics;
 
     /**
      * The IAM Amazon Resource Name (ARN) for the role that you want Elastic
@@ -228,7 +228,7 @@ public class TestRoleRequest extends AmazonWebServiceRequest implements Serializ
      */
     public java.util.List<String> getTopics() {
         if (topics == null) {
-              topics = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              topics = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               topics.setAutoConstruct(true);
         }
         return topics;
@@ -249,7 +249,7 @@ public class TestRoleRequest extends AmazonWebServiceRequest implements Serializ
             this.topics = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> topicsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(topics.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> topicsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(topics.size());
         topicsCopy.addAll(topics);
         this.topics = topicsCopy;
     }
@@ -296,7 +296,7 @@ public class TestRoleRequest extends AmazonWebServiceRequest implements Serializ
         if (topics == null) {
             this.topics = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> topicsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(topics.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> topicsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(topics.size());
             topicsCopy.addAll(topics);
             this.topics = topicsCopy;
         }

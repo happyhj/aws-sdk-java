@@ -37,7 +37,7 @@ public class DescribeRdsDbInstancesRequest extends AmazonWebServiceRequest imple
     /**
      * An array containing the ARNs of the instances to be described.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> rdsDbInstanceArns;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> rdsDbInstanceArns;
 
     /**
      * The stack ID that the instances are registered with. The operation
@@ -85,7 +85,7 @@ public class DescribeRdsDbInstancesRequest extends AmazonWebServiceRequest imple
      */
     public java.util.List<String> getRdsDbInstanceArns() {
         if (rdsDbInstanceArns == null) {
-              rdsDbInstanceArns = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              rdsDbInstanceArns = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               rdsDbInstanceArns.setAutoConstruct(true);
         }
         return rdsDbInstanceArns;
@@ -101,7 +101,7 @@ public class DescribeRdsDbInstancesRequest extends AmazonWebServiceRequest imple
             this.rdsDbInstanceArns = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> rdsDbInstanceArnsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(rdsDbInstanceArns.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> rdsDbInstanceArnsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(rdsDbInstanceArns.size());
         rdsDbInstanceArnsCopy.addAll(rdsDbInstanceArns);
         this.rdsDbInstanceArns = rdsDbInstanceArnsCopy;
     }
@@ -138,7 +138,7 @@ public class DescribeRdsDbInstancesRequest extends AmazonWebServiceRequest imple
         if (rdsDbInstanceArns == null) {
             this.rdsDbInstanceArns = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> rdsDbInstanceArnsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(rdsDbInstanceArns.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> rdsDbInstanceArnsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(rdsDbInstanceArns.size());
             rdsDbInstanceArnsCopy.addAll(rdsDbInstanceArns);
             this.rdsDbInstanceArns = rdsDbInstanceArnsCopy;
         }

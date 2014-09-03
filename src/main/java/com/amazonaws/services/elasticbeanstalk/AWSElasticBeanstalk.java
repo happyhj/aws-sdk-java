@@ -14,11 +14,11 @@
  */
 package com.amazonaws.services.elasticbeanstalk;
 
-import com.amazonaws.ResponseMetadata;
 import com.amazonaws.client.ClientConfiguration;
-import com.amazonaws.client.Region;
+import com.amazonaws.client.regions.Region;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
+import com.amazonaws.network.ResponseMetadata;
 import com.amazonaws.network.request.AmazonWebServiceRequest;
 import com.amazonaws.services.elasticbeanstalk.model.CheckDNSAvailabilityRequest;
 import com.amazonaws.services.elasticbeanstalk.model.CheckDNSAvailabilityResult;

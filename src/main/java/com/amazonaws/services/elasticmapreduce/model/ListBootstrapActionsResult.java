@@ -26,7 +26,7 @@ public class ListBootstrapActionsResult implements Serializable {
     /**
      * The bootstrap actions associated with the cluster .
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Command> bootstrapActions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Command> bootstrapActions;
 
     /**
      * The pagination token that indicates the next set of results to
@@ -41,7 +41,7 @@ public class ListBootstrapActionsResult implements Serializable {
      */
     public java.util.List<Command> getBootstrapActions() {
         if (bootstrapActions == null) {
-              bootstrapActions = new com.amazonaws.internal.ListWithAutoConstructFlag<Command>();
+              bootstrapActions = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Command>();
               bootstrapActions.setAutoConstruct(true);
         }
         return bootstrapActions;
@@ -57,7 +57,7 @@ public class ListBootstrapActionsResult implements Serializable {
             this.bootstrapActions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Command> bootstrapActionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Command>(bootstrapActions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Command> bootstrapActionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Command>(bootstrapActions.size());
         bootstrapActionsCopy.addAll(bootstrapActions);
         this.bootstrapActions = bootstrapActionsCopy;
     }
@@ -94,7 +94,7 @@ public class ListBootstrapActionsResult implements Serializable {
         if (bootstrapActions == null) {
             this.bootstrapActions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Command> bootstrapActionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Command>(bootstrapActions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Command> bootstrapActionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Command>(bootstrapActions.size());
             bootstrapActionsCopy.addAll(bootstrapActions);
             this.bootstrapActions = bootstrapActionsCopy;
         }

@@ -106,7 +106,7 @@ public class ConfigurationOptionDescription implements Serializable {
      * If specified, values for the configuration option are selected from
      * this list.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> valueOptions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> valueOptions;
 
     /**
      * If specified, the configuration option must be a numeric value greater
@@ -763,7 +763,7 @@ public class ConfigurationOptionDescription implements Serializable {
      */
     public java.util.List<String> getValueOptions() {
         if (valueOptions == null) {
-              valueOptions = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              valueOptions = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               valueOptions.setAutoConstruct(true);
         }
         return valueOptions;
@@ -781,7 +781,7 @@ public class ConfigurationOptionDescription implements Serializable {
             this.valueOptions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> valueOptionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(valueOptions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> valueOptionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(valueOptions.size());
         valueOptionsCopy.addAll(valueOptions);
         this.valueOptions = valueOptionsCopy;
     }
@@ -822,7 +822,7 @@ public class ConfigurationOptionDescription implements Serializable {
         if (valueOptions == null) {
             this.valueOptions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> valueOptionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(valueOptions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> valueOptionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(valueOptions.size());
             valueOptionsCopy.addAll(valueOptions);
             this.valueOptions = valueOptionsCopy;
         }

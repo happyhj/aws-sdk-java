@@ -48,7 +48,7 @@ public class DescribeSpotInstanceRequestsRequest extends AmazonWebServiceRequest
     /**
      * One or more Spot Instance request IDs.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> spotInstanceRequestIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> spotInstanceRequestIds;
 
     /**
      * One or more filters. <ul> <li> <p><code>availability-zone-group</code>
@@ -132,7 +132,7 @@ public class DescribeSpotInstanceRequestsRequest extends AmazonWebServiceRequest
      * start date of the request. </li> <li> <p><code>valid-until</code> -
      * The end date of the request. </li> </ul>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filters;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filters;
 
     /**
      * One or more Spot Instance request IDs.
@@ -141,7 +141,7 @@ public class DescribeSpotInstanceRequestsRequest extends AmazonWebServiceRequest
      */
     public java.util.List<String> getSpotInstanceRequestIds() {
         if (spotInstanceRequestIds == null) {
-              spotInstanceRequestIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              spotInstanceRequestIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               spotInstanceRequestIds.setAutoConstruct(true);
         }
         return spotInstanceRequestIds;
@@ -157,7 +157,7 @@ public class DescribeSpotInstanceRequestsRequest extends AmazonWebServiceRequest
             this.spotInstanceRequestIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> spotInstanceRequestIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(spotInstanceRequestIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> spotInstanceRequestIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(spotInstanceRequestIds.size());
         spotInstanceRequestIdsCopy.addAll(spotInstanceRequestIds);
         this.spotInstanceRequestIds = spotInstanceRequestIdsCopy;
     }
@@ -194,7 +194,7 @@ public class DescribeSpotInstanceRequestsRequest extends AmazonWebServiceRequest
         if (spotInstanceRequestIds == null) {
             this.spotInstanceRequestIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> spotInstanceRequestIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(spotInstanceRequestIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> spotInstanceRequestIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(spotInstanceRequestIds.size());
             spotInstanceRequestIdsCopy.addAll(spotInstanceRequestIds);
             this.spotInstanceRequestIds = spotInstanceRequestIdsCopy;
         }
@@ -367,7 +367,7 @@ public class DescribeSpotInstanceRequestsRequest extends AmazonWebServiceRequest
      */
     public java.util.List<Filter> getFilters() {
         if (filters == null) {
-              filters = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>();
+              filters = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>();
               filters.setAutoConstruct(true);
         }
         return filters;
@@ -541,7 +541,7 @@ public class DescribeSpotInstanceRequestsRequest extends AmazonWebServiceRequest
             this.filters = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
         filtersCopy.addAll(filters);
         this.filters = filtersCopy;
     }
@@ -894,7 +894,7 @@ public class DescribeSpotInstanceRequestsRequest extends AmazonWebServiceRequest
         if (filters == null) {
             this.filters = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
             filtersCopy.addAll(filters);
             this.filters = filtersCopy;
         }

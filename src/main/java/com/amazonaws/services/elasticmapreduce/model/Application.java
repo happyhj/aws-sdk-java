@@ -52,7 +52,7 @@ public class Application implements Serializable {
     /**
      * Arguments for Amazon EMR to pass to the application.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> args;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> args;
 
     /**
      * This option is for advanced users only. This is meta information about
@@ -134,7 +134,7 @@ public class Application implements Serializable {
      */
     public java.util.List<String> getArgs() {
         if (args == null) {
-              args = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              args = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               args.setAutoConstruct(true);
         }
         return args;
@@ -150,7 +150,7 @@ public class Application implements Serializable {
             this.args = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> argsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(args.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> argsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(args.size());
         argsCopy.addAll(args);
         this.args = argsCopy;
     }
@@ -187,7 +187,7 @@ public class Application implements Serializable {
         if (args == null) {
             this.args = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> argsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(args.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> argsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(args.size());
             argsCopy.addAll(args);
             this.args = argsCopy;
         }

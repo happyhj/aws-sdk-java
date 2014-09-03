@@ -73,7 +73,7 @@ public class PipelineOutputConfig implements Serializable {
      * <b>Constraints:</b><br/>
      * <b>Length: </b>0 - 30<br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Permission> permissions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Permission> permissions;
 
     /**
      * The Amazon S3 bucket in which you want Elastic Transcoder to save the
@@ -289,7 +289,7 @@ public class PipelineOutputConfig implements Serializable {
      */
     public java.util.List<Permission> getPermissions() {
         if (permissions == null) {
-              permissions = new com.amazonaws.internal.ListWithAutoConstructFlag<Permission>();
+              permissions = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Permission>();
               permissions.setAutoConstruct(true);
         }
         return permissions;
@@ -332,7 +332,7 @@ public class PipelineOutputConfig implements Serializable {
             this.permissions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Permission> permissionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Permission>(permissions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Permission> permissionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Permission>(permissions.size());
         permissionsCopy.addAll(permissions);
         this.permissions = permissionsCopy;
     }
@@ -423,7 +423,7 @@ public class PipelineOutputConfig implements Serializable {
         if (permissions == null) {
             this.permissions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Permission> permissionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Permission>(permissions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Permission> permissionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Permission>(permissions.size());
             permissionsCopy.addAll(permissions);
             this.permissions = permissionsCopy;
         }

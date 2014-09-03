@@ -24,9 +24,9 @@ import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.amazonaws.codec.BinaryUtils;
+import com.amazonaws.client.util.sdk.ResettableInputStream;
 import com.amazonaws.exception.AmazonClientException;
-import com.amazonaws.sdkutil.ResettableInputStream;
+import com.amazonaws.json.codec.BinaryUtils;
 import com.amazonaws.services.glacier.internal.TreeHashInputStream;
 
 /**

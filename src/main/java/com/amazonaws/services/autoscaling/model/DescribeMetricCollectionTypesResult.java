@@ -33,12 +33,12 @@ public class DescribeMetricCollectionTypesResult implements Serializable {
      * returned by default. You must explicitly request it when calling
      * <a>EnableMetricsCollection</a>. </note>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<MetricCollectionType> metrics;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricCollectionType> metrics;
 
     /**
      * A list of granularities for the listed Metrics.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<MetricGranularityType> granularities;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricGranularityType> granularities;
 
     /**
      * The list of Metrics collected. The following metrics are supported:
@@ -61,7 +61,7 @@ public class DescribeMetricCollectionTypesResult implements Serializable {
      */
     public java.util.List<MetricCollectionType> getMetrics() {
         if (metrics == null) {
-              metrics = new com.amazonaws.internal.ListWithAutoConstructFlag<MetricCollectionType>();
+              metrics = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricCollectionType>();
               metrics.setAutoConstruct(true);
         }
         return metrics;
@@ -91,7 +91,7 @@ public class DescribeMetricCollectionTypesResult implements Serializable {
             this.metrics = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<MetricCollectionType> metricsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<MetricCollectionType>(metrics.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricCollectionType> metricsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricCollectionType>(metrics.size());
         metricsCopy.addAll(metrics);
         this.metrics = metricsCopy;
     }
@@ -156,7 +156,7 @@ public class DescribeMetricCollectionTypesResult implements Serializable {
         if (metrics == null) {
             this.metrics = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<MetricCollectionType> metricsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<MetricCollectionType>(metrics.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricCollectionType> metricsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricCollectionType>(metrics.size());
             metricsCopy.addAll(metrics);
             this.metrics = metricsCopy;
         }
@@ -171,7 +171,7 @@ public class DescribeMetricCollectionTypesResult implements Serializable {
      */
     public java.util.List<MetricGranularityType> getGranularities() {
         if (granularities == null) {
-              granularities = new com.amazonaws.internal.ListWithAutoConstructFlag<MetricGranularityType>();
+              granularities = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricGranularityType>();
               granularities.setAutoConstruct(true);
         }
         return granularities;
@@ -187,7 +187,7 @@ public class DescribeMetricCollectionTypesResult implements Serializable {
             this.granularities = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<MetricGranularityType> granularitiesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<MetricGranularityType>(granularities.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricGranularityType> granularitiesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricGranularityType>(granularities.size());
         granularitiesCopy.addAll(granularities);
         this.granularities = granularitiesCopy;
     }
@@ -224,7 +224,7 @@ public class DescribeMetricCollectionTypesResult implements Serializable {
         if (granularities == null) {
             this.granularities = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<MetricGranularityType> granularitiesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<MetricGranularityType>(granularities.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricGranularityType> granularitiesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricGranularityType>(granularities.size());
             granularitiesCopy.addAll(granularities);
             this.granularities = granularitiesCopy;
         }

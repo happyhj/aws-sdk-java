@@ -20,12 +20,12 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.storagegateway.model.AddUploadBufferRequest;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Add Upload Buffer Request Marshaller
@@ -54,7 +54,7 @@ public class AddUploadBufferRequestMarshaller implements Marshaller<Request<AddU
                 jsonWriter.key("GatewayARN").value(addUploadBufferRequest.getGatewayARN());
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> diskIdsList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(addUploadBufferRequest.getDiskIds());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> diskIdsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(addUploadBufferRequest.getDiskIds());
             if (diskIdsList != null && !(diskIdsList.isAutoConstruct() && diskIdsList.isEmpty())) {
 
                 jsonWriter.key("DiskIds");

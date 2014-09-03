@@ -23,14 +23,14 @@ import java.util.Set;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import com.amazonaws.ResponseMetadata;
 import com.amazonaws.client.handler.response.HttpResponseHandler;
-import com.amazonaws.dateutil.DateUtils;
+import com.amazonaws.network.ResponseMetadata;
 import com.amazonaws.network.response.AmazonWebServiceResponse;
 import com.amazonaws.network.response.HttpResponse;
 import com.amazonaws.services.s3.Headers;
 import com.amazonaws.services.s3.S3ResponseMetadata;
 import com.amazonaws.services.s3.model.ObjectMetadata;
+import com.amazonaws.utility.date.DateUtils;
 
 /**
  * Abstract HTTP response handler for Amazon S3 responses. Provides common

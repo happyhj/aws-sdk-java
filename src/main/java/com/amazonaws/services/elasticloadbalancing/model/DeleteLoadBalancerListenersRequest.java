@@ -37,7 +37,7 @@ public class DeleteLoadBalancerListenersRequest extends AmazonWebServiceRequest 
      * The client port number(s) of the load balancer listener(s) to be
      * removed.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Integer> loadBalancerPorts;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Integer> loadBalancerPorts;
 
     /**
      * Default constructor for a new DeleteLoadBalancerListenersRequest object.  Callers should use the
@@ -102,7 +102,7 @@ public class DeleteLoadBalancerListenersRequest extends AmazonWebServiceRequest 
      */
     public java.util.List<Integer> getLoadBalancerPorts() {
         if (loadBalancerPorts == null) {
-              loadBalancerPorts = new com.amazonaws.internal.ListWithAutoConstructFlag<Integer>();
+              loadBalancerPorts = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Integer>();
               loadBalancerPorts.setAutoConstruct(true);
         }
         return loadBalancerPorts;
@@ -120,7 +120,7 @@ public class DeleteLoadBalancerListenersRequest extends AmazonWebServiceRequest 
             this.loadBalancerPorts = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Integer> loadBalancerPortsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Integer>(loadBalancerPorts.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Integer> loadBalancerPortsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Integer>(loadBalancerPorts.size());
         loadBalancerPortsCopy.addAll(loadBalancerPorts);
         this.loadBalancerPorts = loadBalancerPortsCopy;
     }
@@ -161,7 +161,7 @@ public class DeleteLoadBalancerListenersRequest extends AmazonWebServiceRequest 
         if (loadBalancerPorts == null) {
             this.loadBalancerPorts = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Integer> loadBalancerPortsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Integer>(loadBalancerPorts.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Integer> loadBalancerPortsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Integer>(loadBalancerPorts.size());
             loadBalancerPortsCopy.addAll(loadBalancerPorts);
             this.loadBalancerPorts = loadBalancerPortsCopy;
         }

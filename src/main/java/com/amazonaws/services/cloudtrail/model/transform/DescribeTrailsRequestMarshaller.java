@@ -20,12 +20,12 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.cloudtrail.model.DescribeTrailsRequest;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Describe Trails Request Marshaller
@@ -50,7 +50,7 @@ public class DescribeTrailsRequestMarshaller implements Marshaller<Request<Descr
 
           jsonWriter.object();
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> trailNameListList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(describeTrailsRequest.getTrailNameList());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> trailNameListList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(describeTrailsRequest.getTrailNameList());
             if (trailNameListList != null && !(trailNameListList.isAutoConstruct() && trailNameListList.isEmpty())) {
 
                 jsonWriter.key("trailNameList");

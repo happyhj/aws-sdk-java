@@ -36,12 +36,12 @@ public class LaunchSpecification implements Serializable {
     /**
      * One or more security groups.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<GroupIdentifier> allSecurityGroups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GroupIdentifier> allSecurityGroups;
 
     /**
      * One or more security groups.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> securityGroups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> securityGroups;
 
     /**
      * The Base64-encoded MIME user data to make available to the instances.
@@ -79,7 +79,7 @@ public class LaunchSpecification implements Serializable {
     /**
      * One or more block device mapping entries.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<BlockDeviceMapping> blockDeviceMappings;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BlockDeviceMapping> blockDeviceMappings;
 
     /**
      * Enables monitoring for the instance. <p>Default: Disabled
@@ -94,7 +94,7 @@ public class LaunchSpecification implements Serializable {
     /**
      * One or more network interfaces.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<InstanceNetworkInterfaceSpecification> networkInterfaces;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceNetworkInterfaceSpecification> networkInterfaces;
 
     /**
      * The IAM instance profile.
@@ -184,7 +184,7 @@ public class LaunchSpecification implements Serializable {
      */
     public java.util.List<GroupIdentifier> getAllSecurityGroups() {
         if (allSecurityGroups == null) {
-              allSecurityGroups = new com.amazonaws.internal.ListWithAutoConstructFlag<GroupIdentifier>();
+              allSecurityGroups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GroupIdentifier>();
               allSecurityGroups.setAutoConstruct(true);
         }
         return allSecurityGroups;
@@ -200,7 +200,7 @@ public class LaunchSpecification implements Serializable {
             this.allSecurityGroups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<GroupIdentifier> allSecurityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<GroupIdentifier>(allSecurityGroups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GroupIdentifier> allSecurityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GroupIdentifier>(allSecurityGroups.size());
         allSecurityGroupsCopy.addAll(allSecurityGroups);
         this.allSecurityGroups = allSecurityGroupsCopy;
     }
@@ -237,7 +237,7 @@ public class LaunchSpecification implements Serializable {
         if (allSecurityGroups == null) {
             this.allSecurityGroups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<GroupIdentifier> allSecurityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<GroupIdentifier>(allSecurityGroups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GroupIdentifier> allSecurityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GroupIdentifier>(allSecurityGroups.size());
             allSecurityGroupsCopy.addAll(allSecurityGroups);
             this.allSecurityGroups = allSecurityGroupsCopy;
         }
@@ -252,7 +252,7 @@ public class LaunchSpecification implements Serializable {
      */
     public java.util.List<String> getSecurityGroups() {
         if (securityGroups == null) {
-              securityGroups = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              securityGroups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               securityGroups.setAutoConstruct(true);
         }
         return securityGroups;
@@ -268,7 +268,7 @@ public class LaunchSpecification implements Serializable {
             this.securityGroups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> securityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(securityGroups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> securityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(securityGroups.size());
         securityGroupsCopy.addAll(securityGroups);
         this.securityGroups = securityGroupsCopy;
     }
@@ -305,7 +305,7 @@ public class LaunchSpecification implements Serializable {
         if (securityGroups == null) {
             this.securityGroups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> securityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(securityGroups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> securityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(securityGroups.size());
             securityGroupsCopy.addAll(securityGroups);
             this.securityGroups = securityGroupsCopy;
         }
@@ -567,7 +567,7 @@ public class LaunchSpecification implements Serializable {
      */
     public java.util.List<BlockDeviceMapping> getBlockDeviceMappings() {
         if (blockDeviceMappings == null) {
-              blockDeviceMappings = new com.amazonaws.internal.ListWithAutoConstructFlag<BlockDeviceMapping>();
+              blockDeviceMappings = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BlockDeviceMapping>();
               blockDeviceMappings.setAutoConstruct(true);
         }
         return blockDeviceMappings;
@@ -583,7 +583,7 @@ public class LaunchSpecification implements Serializable {
             this.blockDeviceMappings = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<BlockDeviceMapping> blockDeviceMappingsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<BlockDeviceMapping>(blockDeviceMappings.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BlockDeviceMapping> blockDeviceMappingsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BlockDeviceMapping>(blockDeviceMappings.size());
         blockDeviceMappingsCopy.addAll(blockDeviceMappings);
         this.blockDeviceMappings = blockDeviceMappingsCopy;
     }
@@ -620,7 +620,7 @@ public class LaunchSpecification implements Serializable {
         if (blockDeviceMappings == null) {
             this.blockDeviceMappings = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<BlockDeviceMapping> blockDeviceMappingsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<BlockDeviceMapping>(blockDeviceMappings.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BlockDeviceMapping> blockDeviceMappingsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BlockDeviceMapping>(blockDeviceMappings.size());
             blockDeviceMappingsCopy.addAll(blockDeviceMappings);
             this.blockDeviceMappings = blockDeviceMappingsCopy;
         }
@@ -710,7 +710,7 @@ public class LaunchSpecification implements Serializable {
      */
     public java.util.List<InstanceNetworkInterfaceSpecification> getNetworkInterfaces() {
         if (networkInterfaces == null) {
-              networkInterfaces = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceNetworkInterfaceSpecification>();
+              networkInterfaces = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceNetworkInterfaceSpecification>();
               networkInterfaces.setAutoConstruct(true);
         }
         return networkInterfaces;
@@ -726,7 +726,7 @@ public class LaunchSpecification implements Serializable {
             this.networkInterfaces = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<InstanceNetworkInterfaceSpecification> networkInterfacesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceNetworkInterfaceSpecification>(networkInterfaces.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceNetworkInterfaceSpecification> networkInterfacesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceNetworkInterfaceSpecification>(networkInterfaces.size());
         networkInterfacesCopy.addAll(networkInterfaces);
         this.networkInterfaces = networkInterfacesCopy;
     }
@@ -763,7 +763,7 @@ public class LaunchSpecification implements Serializable {
         if (networkInterfaces == null) {
             this.networkInterfaces = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<InstanceNetworkInterfaceSpecification> networkInterfacesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceNetworkInterfaceSpecification>(networkInterfaces.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceNetworkInterfaceSpecification> networkInterfacesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceNetworkInterfaceSpecification>(networkInterfaces.size());
             networkInterfacesCopy.addAll(networkInterfaces);
             this.networkInterfaces = networkInterfacesCopy;
         }

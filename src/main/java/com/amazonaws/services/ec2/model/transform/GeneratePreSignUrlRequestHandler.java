@@ -17,12 +17,12 @@ package com.amazonaws.services.ec2.model.transform;
 import java.net.URI;
 import java.net.URISyntaxException;
 
-import com.amazonaws.Protocol;
 import com.amazonaws.client.HttpUtils;
-import com.amazonaws.client.RegionUtils;
 import com.amazonaws.client.handler.request.CredentialsRequestHandler;
+import com.amazonaws.client.regions.RegionUtils;
 import com.amazonaws.client.signer.AWS4Signer;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
+import com.amazonaws.network.Protocol;
 import com.amazonaws.network.request.AmazonWebServiceRequest;
 import com.amazonaws.network.response.Response;
 import com.amazonaws.network.type.Request;

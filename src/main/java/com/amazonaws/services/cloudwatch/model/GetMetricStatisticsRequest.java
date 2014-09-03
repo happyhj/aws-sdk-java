@@ -84,7 +84,7 @@ public class GetMetricStatisticsRequest extends AmazonWebServiceRequest implemen
      * <b>Constraints:</b><br/>
      * <b>Length: </b>0 - 10<br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Dimension> dimensions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Dimension> dimensions;
 
     /**
      * The time stamp to use for determining the first datapoint to return.
@@ -120,7 +120,7 @@ public class GetMetricStatisticsRequest extends AmazonWebServiceRequest implemen
      * <b>Constraints:</b><br/>
      * <b>Length: </b>1 - 5<br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> statistics;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> statistics;
 
     /**
      * The unit for the metric.
@@ -227,7 +227,7 @@ public class GetMetricStatisticsRequest extends AmazonWebServiceRequest implemen
      */
     public java.util.List<Dimension> getDimensions() {
         if (dimensions == null) {
-              dimensions = new com.amazonaws.internal.ListWithAutoConstructFlag<Dimension>();
+              dimensions = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Dimension>();
               dimensions.setAutoConstruct(true);
         }
         return dimensions;
@@ -246,7 +246,7 @@ public class GetMetricStatisticsRequest extends AmazonWebServiceRequest implemen
             this.dimensions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Dimension> dimensionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Dimension>(dimensions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Dimension> dimensionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Dimension>(dimensions.size());
         dimensionsCopy.addAll(dimensions);
         this.dimensions = dimensionsCopy;
     }
@@ -289,7 +289,7 @@ public class GetMetricStatisticsRequest extends AmazonWebServiceRequest implemen
         if (dimensions == null) {
             this.dimensions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Dimension> dimensionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Dimension>(dimensions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Dimension> dimensionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Dimension>(dimensions.size());
             dimensionsCopy.addAll(dimensions);
             this.dimensions = dimensionsCopy;
         }
@@ -475,7 +475,7 @@ public class GetMetricStatisticsRequest extends AmazonWebServiceRequest implemen
      */
     public java.util.List<String> getStatistics() {
         if (statistics == null) {
-              statistics = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              statistics = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               statistics.setAutoConstruct(true);
         }
         return statistics;
@@ -494,7 +494,7 @@ public class GetMetricStatisticsRequest extends AmazonWebServiceRequest implemen
             this.statistics = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> statisticsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(statistics.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> statisticsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(statistics.size());
         statisticsCopy.addAll(statistics);
         this.statistics = statisticsCopy;
     }
@@ -537,7 +537,7 @@ public class GetMetricStatisticsRequest extends AmazonWebServiceRequest implemen
         if (statistics == null) {
             this.statistics = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> statisticsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(statistics.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> statisticsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(statistics.size());
             statisticsCopy.addAll(statistics);
             this.statistics = statisticsCopy;
         }

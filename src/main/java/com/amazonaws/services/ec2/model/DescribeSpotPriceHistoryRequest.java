@@ -59,12 +59,12 @@ public class DescribeSpotPriceHistoryRequest extends AmazonWebServiceRequest imp
     /**
      * One or more instance types.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> instanceTypes;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> instanceTypes;
 
     /**
      * One or more basic product descriptions.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> productDescriptions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> productDescriptions;
 
     /**
      * One or more filters. <ul> <li> <p><code>availability-zone</code> - The
@@ -82,7 +82,7 @@ public class DescribeSpotPriceHistoryRequest extends AmazonWebServiceRequest imp
      * can use wildcards (* and ?). Greater than or less than comparison is
      * not supported. </li> </ul>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filters;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filters;
 
     /**
      * The Availability Zone.
@@ -172,7 +172,7 @@ public class DescribeSpotPriceHistoryRequest extends AmazonWebServiceRequest imp
      */
     public java.util.List<String> getInstanceTypes() {
         if (instanceTypes == null) {
-              instanceTypes = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              instanceTypes = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               instanceTypes.setAutoConstruct(true);
         }
         return instanceTypes;
@@ -188,7 +188,7 @@ public class DescribeSpotPriceHistoryRequest extends AmazonWebServiceRequest imp
             this.instanceTypes = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> instanceTypesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(instanceTypes.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> instanceTypesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(instanceTypes.size());
         instanceTypesCopy.addAll(instanceTypes);
         this.instanceTypes = instanceTypesCopy;
     }
@@ -225,7 +225,7 @@ public class DescribeSpotPriceHistoryRequest extends AmazonWebServiceRequest imp
         if (instanceTypes == null) {
             this.instanceTypes = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> instanceTypesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(instanceTypes.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> instanceTypesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(instanceTypes.size());
             instanceTypesCopy.addAll(instanceTypes);
             this.instanceTypes = instanceTypesCopy;
         }
@@ -263,7 +263,7 @@ public class DescribeSpotPriceHistoryRequest extends AmazonWebServiceRequest imp
      */
     public java.util.List<String> getProductDescriptions() {
         if (productDescriptions == null) {
-              productDescriptions = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              productDescriptions = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               productDescriptions.setAutoConstruct(true);
         }
         return productDescriptions;
@@ -279,7 +279,7 @@ public class DescribeSpotPriceHistoryRequest extends AmazonWebServiceRequest imp
             this.productDescriptions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> productDescriptionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(productDescriptions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> productDescriptionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(productDescriptions.size());
         productDescriptionsCopy.addAll(productDescriptions);
         this.productDescriptions = productDescriptionsCopy;
     }
@@ -316,7 +316,7 @@ public class DescribeSpotPriceHistoryRequest extends AmazonWebServiceRequest imp
         if (productDescriptions == null) {
             this.productDescriptions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> productDescriptionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(productDescriptions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> productDescriptionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(productDescriptions.size());
             productDescriptionsCopy.addAll(productDescriptions);
             this.productDescriptions = productDescriptionsCopy;
         }
@@ -357,7 +357,7 @@ public class DescribeSpotPriceHistoryRequest extends AmazonWebServiceRequest imp
      */
     public java.util.List<Filter> getFilters() {
         if (filters == null) {
-              filters = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>();
+              filters = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>();
               filters.setAutoConstruct(true);
         }
         return filters;
@@ -399,7 +399,7 @@ public class DescribeSpotPriceHistoryRequest extends AmazonWebServiceRequest imp
             this.filters = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
         filtersCopy.addAll(filters);
         this.filters = filtersCopy;
     }
@@ -488,7 +488,7 @@ public class DescribeSpotPriceHistoryRequest extends AmazonWebServiceRequest imp
         if (filters == null) {
             this.filters = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
             filtersCopy.addAll(filters);
             this.filters = filtersCopy;
         }

@@ -52,7 +52,7 @@ public class TrustedAdvisorResourceDetail implements Serializable {
      * <a>TrustedAdvisorCheckDescription</a> object returned by the call to
      * <a>DescribeTrustedAdvisorChecks</a>.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> metadata;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> metadata;
 
     /**
      * The status code for the resource identified in the Trusted Advisor
@@ -222,7 +222,7 @@ public class TrustedAdvisorResourceDetail implements Serializable {
      */
     public java.util.List<String> getMetadata() {
         if (metadata == null) {
-              metadata = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              metadata = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               metadata.setAutoConstruct(true);
         }
         return metadata;
@@ -244,7 +244,7 @@ public class TrustedAdvisorResourceDetail implements Serializable {
             this.metadata = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> metadataCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(metadata.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> metadataCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(metadata.size());
         metadataCopy.addAll(metadata);
         this.metadata = metadataCopy;
     }
@@ -293,7 +293,7 @@ public class TrustedAdvisorResourceDetail implements Serializable {
         if (metadata == null) {
             this.metadata = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> metadataCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(metadata.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> metadataCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(metadata.size());
             metadataCopy.addAll(metadata);
             this.metadata = metadataCopy;
         }

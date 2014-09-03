@@ -45,7 +45,7 @@ public class MetricFilter implements Serializable {
      */
     private String filterPattern;
 
-    private com.amazonaws.internal.ListWithAutoConstructFlag<MetricTransformation> metricTransformations;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricTransformation> metricTransformations;
 
     /**
      * A point in time expressed as the number milliseconds since Jan 1, 1970
@@ -172,7 +172,7 @@ public class MetricFilter implements Serializable {
      */
     public java.util.List<MetricTransformation> getMetricTransformations() {
         if (metricTransformations == null) {
-              metricTransformations = new com.amazonaws.internal.ListWithAutoConstructFlag<MetricTransformation>();
+              metricTransformations = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricTransformation>();
               metricTransformations.setAutoConstruct(true);
         }
         return metricTransformations;
@@ -191,7 +191,7 @@ public class MetricFilter implements Serializable {
             this.metricTransformations = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<MetricTransformation> metricTransformationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<MetricTransformation>(metricTransformations.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricTransformation> metricTransformationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricTransformation>(metricTransformations.size());
         metricTransformationsCopy.addAll(metricTransformations);
         this.metricTransformations = metricTransformationsCopy;
     }
@@ -234,7 +234,7 @@ public class MetricFilter implements Serializable {
         if (metricTransformations == null) {
             this.metricTransformations = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<MetricTransformation> metricTransformationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<MetricTransformation>(metricTransformations.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricTransformation> metricTransformationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricTransformation>(metricTransformations.size());
             metricTransformationsCopy.addAll(metricTransformations);
             this.metricTransformations = metricTransformationsCopy;
         }

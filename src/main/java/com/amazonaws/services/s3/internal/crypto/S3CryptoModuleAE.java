@@ -14,7 +14,7 @@
  */
 package com.amazonaws.services.s3.internal.crypto;
 
-import static com.amazonaws.sdkutil.IOUtils.closeQuietly;
+import static com.amazonaws.client.util.sdk.IOUtils.closeQuietly;
 import static com.amazonaws.services.s3.AmazonS3EncryptionClient.USER_AGENT;
 import static com.amazonaws.services.s3.model.CryptoMode.AuthenticatedEncryption;
 import static com.amazonaws.services.s3.model.CryptoMode.StrictAuthenticatedEncryption;
@@ -31,10 +31,10 @@ import java.util.Collections;
 import java.util.Map;
 
 import com.amazonaws.authprovider.DefaultAWSCredentialsProviderChain;
+import com.amazonaws.client.util.sdk.SdkFilterInputStream;
 import com.amazonaws.credential.AWSCredentialsProvider;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.Jackson;
-import com.amazonaws.sdkutil.SdkFilterInputStream;
 import com.amazonaws.services.s3.internal.S3Direct;
 import com.amazonaws.services.s3.model.CryptoConfiguration;
 import com.amazonaws.services.s3.model.CryptoMode;

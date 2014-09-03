@@ -33,7 +33,7 @@ public class CustomErrorResponses implements Serializable {
      * Optional: A complex type that contains custom error responses for this
      * distribution. If Quantity is 0, you can omit Items.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<CustomErrorResponse> items;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CustomErrorResponse> items;
 
     /**
      * The number of custom error responses for this distribution.
@@ -77,7 +77,7 @@ public class CustomErrorResponses implements Serializable {
      */
     public java.util.List<CustomErrorResponse> getItems() {
         if (items == null) {
-              items = new com.amazonaws.internal.ListWithAutoConstructFlag<CustomErrorResponse>();
+              items = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CustomErrorResponse>();
               items.setAutoConstruct(true);
         }
         return items;
@@ -95,7 +95,7 @@ public class CustomErrorResponses implements Serializable {
             this.items = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<CustomErrorResponse> itemsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CustomErrorResponse>(items.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CustomErrorResponse> itemsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CustomErrorResponse>(items.size());
         itemsCopy.addAll(items);
         this.items = itemsCopy;
     }
@@ -136,7 +136,7 @@ public class CustomErrorResponses implements Serializable {
         if (items == null) {
             this.items = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<CustomErrorResponse> itemsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CustomErrorResponse>(items.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CustomErrorResponse> itemsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CustomErrorResponse>(items.size());
             itemsCopy.addAll(items);
             this.items = itemsCopy;
         }

@@ -44,7 +44,7 @@ public class AddTagsRequest extends AmazonWebServiceRequest implements Serializa
      * The name of the load balancer to tag. You can specify a maximum of one
      * load balancer name.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> loadBalancerNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> loadBalancerNames;
 
     /**
      * A list of tags for each load balancer.
@@ -52,7 +52,7 @@ public class AddTagsRequest extends AmazonWebServiceRequest implements Serializa
      * <b>Constraints:</b><br/>
      * <b>Length: </b>1 - <br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tags;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tags;
 
     /**
      * The name of the load balancer to tag. You can specify a maximum of one
@@ -63,7 +63,7 @@ public class AddTagsRequest extends AmazonWebServiceRequest implements Serializa
      */
     public java.util.List<String> getLoadBalancerNames() {
         if (loadBalancerNames == null) {
-              loadBalancerNames = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              loadBalancerNames = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               loadBalancerNames.setAutoConstruct(true);
         }
         return loadBalancerNames;
@@ -81,7 +81,7 @@ public class AddTagsRequest extends AmazonWebServiceRequest implements Serializa
             this.loadBalancerNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> loadBalancerNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(loadBalancerNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> loadBalancerNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(loadBalancerNames.size());
         loadBalancerNamesCopy.addAll(loadBalancerNames);
         this.loadBalancerNames = loadBalancerNamesCopy;
     }
@@ -122,7 +122,7 @@ public class AddTagsRequest extends AmazonWebServiceRequest implements Serializa
         if (loadBalancerNames == null) {
             this.loadBalancerNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> loadBalancerNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(loadBalancerNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> loadBalancerNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(loadBalancerNames.size());
             loadBalancerNamesCopy.addAll(loadBalancerNames);
             this.loadBalancerNames = loadBalancerNamesCopy;
         }
@@ -140,7 +140,7 @@ public class AddTagsRequest extends AmazonWebServiceRequest implements Serializa
      */
     public java.util.List<Tag> getTags() {
         if (tags == null) {
-              tags = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>();
+              tags = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>();
               tags.setAutoConstruct(true);
         }
         return tags;
@@ -159,7 +159,7 @@ public class AddTagsRequest extends AmazonWebServiceRequest implements Serializa
             this.tags = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tags.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tags.size());
         tagsCopy.addAll(tags);
         this.tags = tagsCopy;
     }
@@ -202,7 +202,7 @@ public class AddTagsRequest extends AmazonWebServiceRequest implements Serializa
         if (tags == null) {
             this.tags = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tags.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tags.size());
             tagsCopy.addAll(tags);
             this.tags = tagsCopy;
         }

@@ -20,13 +20,13 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.route53domains.model.Nameserver;
 import com.amazonaws.services.route53domains.model.UpdateDomainNameserversRequest;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Update Domain Nameservers Request Marshaller
@@ -55,7 +55,7 @@ public class UpdateDomainNameserversRequestMarshaller implements Marshaller<Requ
                 jsonWriter.key("DomainName").value(updateDomainNameserversRequest.getDomainName());
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<Nameserver> nameserversList = (com.amazonaws.internal.ListWithAutoConstructFlag<Nameserver>)(updateDomainNameserversRequest.getNameservers());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Nameserver> nameserversList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Nameserver>)(updateDomainNameserversRequest.getNameservers());
             if (nameserversList != null && !(nameserversList.isAutoConstruct() && nameserversList.isEmpty())) {
 
                 jsonWriter.key("Nameservers");
@@ -68,7 +68,7 @@ public class UpdateDomainNameserversRequestMarshaller implements Marshaller<Requ
                             jsonWriter.key("Name").value(nameserversListValue.getName());
                         }
 
-                        com.amazonaws.internal.ListWithAutoConstructFlag<String> glueIpsList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(nameserversListValue.getGlueIps());
+                        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> glueIpsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(nameserversListValue.getGlueIps());
                         if (glueIpsList != null && !(glueIpsList.isAutoConstruct() && glueIpsList.isEmpty())) {
 
                             jsonWriter.key("GlueIps");

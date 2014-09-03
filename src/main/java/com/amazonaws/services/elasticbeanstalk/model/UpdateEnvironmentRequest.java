@@ -108,13 +108,13 @@ public class UpdateEnvironmentRequest extends AmazonWebServiceRequest implements
      * associated with the running environment and sets the specified
      * configuration options to the requested value.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ConfigurationOptionSetting> optionSettings;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ConfigurationOptionSetting> optionSettings;
 
     /**
      * A list of custom user-defined configuration options to remove from the
      * configuration set for this environment.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<OptionSpecification> optionsToRemove;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionSpecification> optionsToRemove;
 
     /**
      * Default constructor for a new UpdateEnvironmentRequest object.  Callers should use the
@@ -481,7 +481,7 @@ public class UpdateEnvironmentRequest extends AmazonWebServiceRequest implements
      */
     public java.util.List<ConfigurationOptionSetting> getOptionSettings() {
         if (optionSettings == null) {
-              optionSettings = new com.amazonaws.internal.ListWithAutoConstructFlag<ConfigurationOptionSetting>();
+              optionSettings = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ConfigurationOptionSetting>();
               optionSettings.setAutoConstruct(true);
         }
         return optionSettings;
@@ -501,7 +501,7 @@ public class UpdateEnvironmentRequest extends AmazonWebServiceRequest implements
             this.optionSettings = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ConfigurationOptionSetting> optionSettingsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ConfigurationOptionSetting>(optionSettings.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ConfigurationOptionSetting> optionSettingsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ConfigurationOptionSetting>(optionSettings.size());
         optionSettingsCopy.addAll(optionSettings);
         this.optionSettings = optionSettingsCopy;
     }
@@ -546,7 +546,7 @@ public class UpdateEnvironmentRequest extends AmazonWebServiceRequest implements
         if (optionSettings == null) {
             this.optionSettings = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ConfigurationOptionSetting> optionSettingsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ConfigurationOptionSetting>(optionSettings.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ConfigurationOptionSetting> optionSettingsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ConfigurationOptionSetting>(optionSettings.size());
             optionSettingsCopy.addAll(optionSettings);
             this.optionSettings = optionSettingsCopy;
         }
@@ -563,7 +563,7 @@ public class UpdateEnvironmentRequest extends AmazonWebServiceRequest implements
      */
     public java.util.List<OptionSpecification> getOptionsToRemove() {
         if (optionsToRemove == null) {
-              optionsToRemove = new com.amazonaws.internal.ListWithAutoConstructFlag<OptionSpecification>();
+              optionsToRemove = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionSpecification>();
               optionsToRemove.setAutoConstruct(true);
         }
         return optionsToRemove;
@@ -581,7 +581,7 @@ public class UpdateEnvironmentRequest extends AmazonWebServiceRequest implements
             this.optionsToRemove = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<OptionSpecification> optionsToRemoveCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<OptionSpecification>(optionsToRemove.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionSpecification> optionsToRemoveCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionSpecification>(optionsToRemove.size());
         optionsToRemoveCopy.addAll(optionsToRemove);
         this.optionsToRemove = optionsToRemoveCopy;
     }
@@ -622,7 +622,7 @@ public class UpdateEnvironmentRequest extends AmazonWebServiceRequest implements
         if (optionsToRemove == null) {
             this.optionsToRemove = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<OptionSpecification> optionsToRemoveCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<OptionSpecification>(optionsToRemove.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionSpecification> optionsToRemoveCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionSpecification>(optionsToRemove.size());
             optionsToRemoveCopy.addAll(optionsToRemove);
             this.optionsToRemove = optionsToRemoveCopy;
         }

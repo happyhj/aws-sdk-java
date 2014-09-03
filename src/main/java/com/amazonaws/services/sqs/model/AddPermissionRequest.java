@@ -76,7 +76,7 @@ public class AddPermissionRequest extends AmazonWebServiceRequest implements Ser
      * href="http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/AWSCredentials.html">Your
      * AWS Identifiers</a> in the <i>Amazon SQS Developer Guide</i>.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> aWSAccountIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> aWSAccountIds;
 
     /**
      * The action the client wants to allow for the specified principal. The
@@ -92,7 +92,7 @@ public class AddPermissionRequest extends AmazonWebServiceRequest implements Ser
      * <code>DeleteMessageBatch</code>, and
      * <code>ChangeMessageVisibilityBatch</code>.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> actions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> actions;
 
     /**
      * Default constructor for a new AddPermissionRequest object.  Callers should use the
@@ -235,7 +235,7 @@ public class AddPermissionRequest extends AmazonWebServiceRequest implements Ser
      */
     public java.util.List<String> getAWSAccountIds() {
         if (aWSAccountIds == null) {
-              aWSAccountIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              aWSAccountIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               aWSAccountIds.setAutoConstruct(true);
         }
         return aWSAccountIds;
@@ -263,7 +263,7 @@ public class AddPermissionRequest extends AmazonWebServiceRequest implements Ser
             this.aWSAccountIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> aWSAccountIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(aWSAccountIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> aWSAccountIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(aWSAccountIds.size());
         aWSAccountIdsCopy.addAll(aWSAccountIds);
         this.aWSAccountIds = aWSAccountIdsCopy;
     }
@@ -324,7 +324,7 @@ public class AddPermissionRequest extends AmazonWebServiceRequest implements Ser
         if (aWSAccountIds == null) {
             this.aWSAccountIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> aWSAccountIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(aWSAccountIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> aWSAccountIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(aWSAccountIds.size());
             aWSAccountIdsCopy.addAll(aWSAccountIds);
             this.aWSAccountIds = aWSAccountIdsCopy;
         }
@@ -361,7 +361,7 @@ public class AddPermissionRequest extends AmazonWebServiceRequest implements Ser
      */
     public java.util.List<String> getActions() {
         if (actions == null) {
-              actions = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              actions = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               actions.setAutoConstruct(true);
         }
         return actions;
@@ -399,7 +399,7 @@ public class AddPermissionRequest extends AmazonWebServiceRequest implements Ser
             this.actions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> actionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(actions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> actionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(actions.size());
         actionsCopy.addAll(actions);
         this.actions = actionsCopy;
     }
@@ -480,7 +480,7 @@ public class AddPermissionRequest extends AmazonWebServiceRequest implements Ser
         if (actions == null) {
             this.actions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> actionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(actions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> actionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(actions.size());
             actionsCopy.addAll(actions);
             this.actions = actionsCopy;
         }

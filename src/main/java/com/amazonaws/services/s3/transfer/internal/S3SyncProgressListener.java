@@ -14,8 +14,8 @@
  */
 package com.amazonaws.services.s3.transfer.internal;
 
-import com.amazonaws.event.ProgressEvent;
-import com.amazonaws.event.SyncProgressListener;
+import com.amazonaws.network.event.ProgressEvent;
+import com.amazonaws.network.event.SyncProgressListener;
 
 /**
  * Abstract adapter class for an S3 progress listener that is safe to be

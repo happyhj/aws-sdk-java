@@ -27,7 +27,7 @@ public class DescribeServiceErrorsResult implements Serializable {
      * An array of <code>ServiceError</code> objects that describe the
      * specified service errors.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ServiceError> serviceErrors;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ServiceError> serviceErrors;
 
     /**
      * An array of <code>ServiceError</code> objects that describe the
@@ -38,7 +38,7 @@ public class DescribeServiceErrorsResult implements Serializable {
      */
     public java.util.List<ServiceError> getServiceErrors() {
         if (serviceErrors == null) {
-              serviceErrors = new com.amazonaws.internal.ListWithAutoConstructFlag<ServiceError>();
+              serviceErrors = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ServiceError>();
               serviceErrors.setAutoConstruct(true);
         }
         return serviceErrors;
@@ -56,7 +56,7 @@ public class DescribeServiceErrorsResult implements Serializable {
             this.serviceErrors = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ServiceError> serviceErrorsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ServiceError>(serviceErrors.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ServiceError> serviceErrorsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ServiceError>(serviceErrors.size());
         serviceErrorsCopy.addAll(serviceErrors);
         this.serviceErrors = serviceErrorsCopy;
     }
@@ -97,7 +97,7 @@ public class DescribeServiceErrorsResult implements Serializable {
         if (serviceErrors == null) {
             this.serviceErrors = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ServiceError> serviceErrorsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ServiceError>(serviceErrors.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ServiceError> serviceErrorsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ServiceError>(serviceErrors.size());
             serviceErrorsCopy.addAll(serviceErrors);
             this.serviceErrors = serviceErrorsCopy;
         }

@@ -41,12 +41,12 @@ public class ModifyOptionGroupRequest extends AmazonWebServiceRequest implements
      * present, the specified configuration is used to update the existing
      * configuration.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<OptionConfiguration> optionsToInclude;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionConfiguration> optionsToInclude;
 
     /**
      * Options in this list are removed from the option group.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> optionsToRemove;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> optionsToRemove;
 
     /**
      * Indicates whether the changes should be applied immediately, or during
@@ -117,7 +117,7 @@ public class ModifyOptionGroupRequest extends AmazonWebServiceRequest implements
      */
     public java.util.List<OptionConfiguration> getOptionsToInclude() {
         if (optionsToInclude == null) {
-              optionsToInclude = new com.amazonaws.internal.ListWithAutoConstructFlag<OptionConfiguration>();
+              optionsToInclude = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionConfiguration>();
               optionsToInclude.setAutoConstruct(true);
         }
         return optionsToInclude;
@@ -137,7 +137,7 @@ public class ModifyOptionGroupRequest extends AmazonWebServiceRequest implements
             this.optionsToInclude = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<OptionConfiguration> optionsToIncludeCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<OptionConfiguration>(optionsToInclude.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionConfiguration> optionsToIncludeCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionConfiguration>(optionsToInclude.size());
         optionsToIncludeCopy.addAll(optionsToInclude);
         this.optionsToInclude = optionsToIncludeCopy;
     }
@@ -182,7 +182,7 @@ public class ModifyOptionGroupRequest extends AmazonWebServiceRequest implements
         if (optionsToInclude == null) {
             this.optionsToInclude = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<OptionConfiguration> optionsToIncludeCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<OptionConfiguration>(optionsToInclude.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionConfiguration> optionsToIncludeCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionConfiguration>(optionsToInclude.size());
             optionsToIncludeCopy.addAll(optionsToInclude);
             this.optionsToInclude = optionsToIncludeCopy;
         }
@@ -197,7 +197,7 @@ public class ModifyOptionGroupRequest extends AmazonWebServiceRequest implements
      */
     public java.util.List<String> getOptionsToRemove() {
         if (optionsToRemove == null) {
-              optionsToRemove = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              optionsToRemove = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               optionsToRemove.setAutoConstruct(true);
         }
         return optionsToRemove;
@@ -213,7 +213,7 @@ public class ModifyOptionGroupRequest extends AmazonWebServiceRequest implements
             this.optionsToRemove = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> optionsToRemoveCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(optionsToRemove.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> optionsToRemoveCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(optionsToRemove.size());
         optionsToRemoveCopy.addAll(optionsToRemove);
         this.optionsToRemove = optionsToRemoveCopy;
     }
@@ -250,7 +250,7 @@ public class ModifyOptionGroupRequest extends AmazonWebServiceRequest implements
         if (optionsToRemove == null) {
             this.optionsToRemove = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> optionsToRemoveCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(optionsToRemove.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> optionsToRemoveCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(optionsToRemove.size());
             optionsToRemoveCopy.addAll(optionsToRemove);
             this.optionsToRemove = optionsToRemoveCopy;
         }

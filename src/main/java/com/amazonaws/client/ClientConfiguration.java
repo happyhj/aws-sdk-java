@@ -18,12 +18,12 @@ import java.net.InetAddress;
 
 import org.apache.http.annotation.NotThreadSafe;
 
-import com.amazonaws.Protocol;
-import com.amazonaws.retry.PredefinedRetryPolicies;
-import com.amazonaws.retry.RetryPolicy;
 import com.amazonaws.client.http.IdleConnectionReaper;
+import com.amazonaws.client.retry.PredefinedRetryPolicies;
+import com.amazonaws.client.retry.RetryPolicy;
 import com.amazonaws.client.service.AmazonWebServiceClient;
-import com.amazonaws.util.VersionInfoUtils;
+import com.amazonaws.network.Protocol;
+import com.amazonaws.utility.VersionInfoUtils;
 /**
  * Client configuration options such as proxy settings, user agent string, max
  * retry attempts, etc.

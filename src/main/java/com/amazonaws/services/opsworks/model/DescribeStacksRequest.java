@@ -41,7 +41,7 @@ public class DescribeStacksRequest extends AmazonWebServiceRequest implements Se
      * omit this parameter, <code>DescribeStacks</code> returns a description
      * of every stack.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> stackIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> stackIds;
 
     /**
      * An array of stack IDs that specify the stacks to be described. If you
@@ -54,7 +54,7 @@ public class DescribeStacksRequest extends AmazonWebServiceRequest implements Se
      */
     public java.util.List<String> getStackIds() {
         if (stackIds == null) {
-              stackIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              stackIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               stackIds.setAutoConstruct(true);
         }
         return stackIds;
@@ -74,7 +74,7 @@ public class DescribeStacksRequest extends AmazonWebServiceRequest implements Se
             this.stackIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> stackIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(stackIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> stackIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(stackIds.size());
         stackIdsCopy.addAll(stackIds);
         this.stackIds = stackIdsCopy;
     }
@@ -119,7 +119,7 @@ public class DescribeStacksRequest extends AmazonWebServiceRequest implements Se
         if (stackIds == null) {
             this.stackIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> stackIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(stackIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> stackIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(stackIds.size());
             stackIdsCopy.addAll(stackIds);
             this.stackIds = stackIdsCopy;
         }

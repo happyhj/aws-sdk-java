@@ -27,7 +27,7 @@ public class DescribeOrderableClusterOptionsResult implements Serializable {
      * An <a>OrderableClusterOption</a> structure containing information
      * about orderable options for the Cluster.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<OrderableClusterOption> orderableClusterOptions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OrderableClusterOption> orderableClusterOptions;
 
     /**
      * A value that indicates the starting point for the next set of response
@@ -48,7 +48,7 @@ public class DescribeOrderableClusterOptionsResult implements Serializable {
      */
     public java.util.List<OrderableClusterOption> getOrderableClusterOptions() {
         if (orderableClusterOptions == null) {
-              orderableClusterOptions = new com.amazonaws.internal.ListWithAutoConstructFlag<OrderableClusterOption>();
+              orderableClusterOptions = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OrderableClusterOption>();
               orderableClusterOptions.setAutoConstruct(true);
         }
         return orderableClusterOptions;
@@ -66,7 +66,7 @@ public class DescribeOrderableClusterOptionsResult implements Serializable {
             this.orderableClusterOptions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<OrderableClusterOption> orderableClusterOptionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<OrderableClusterOption>(orderableClusterOptions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OrderableClusterOption> orderableClusterOptionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OrderableClusterOption>(orderableClusterOptions.size());
         orderableClusterOptionsCopy.addAll(orderableClusterOptions);
         this.orderableClusterOptions = orderableClusterOptionsCopy;
     }
@@ -107,7 +107,7 @@ public class DescribeOrderableClusterOptionsResult implements Serializable {
         if (orderableClusterOptions == null) {
             this.orderableClusterOptions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<OrderableClusterOption> orderableClusterOptionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<OrderableClusterOption>(orderableClusterOptions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OrderableClusterOption> orderableClusterOptionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OrderableClusterOption>(orderableClusterOptions.size());
             orderableClusterOptionsCopy.addAll(orderableClusterOptions);
             this.orderableClusterOptions = orderableClusterOptionsCopy;
         }

@@ -20,12 +20,12 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.logs.model.TestMetricFilterRequest;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Test Metric Filter Request Marshaller
@@ -54,7 +54,7 @@ public class TestMetricFilterRequestMarshaller implements Marshaller<Request<Tes
                 jsonWriter.key("filterPattern").value(testMetricFilterRequest.getFilterPattern());
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> logEventMessagesList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(testMetricFilterRequest.getLogEventMessages());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> logEventMessagesList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(testMetricFilterRequest.getLogEventMessages());
             if (logEventMessagesList != null && !(logEventMessagesList.isAutoConstruct() && logEventMessagesList.isEmpty())) {
 
                 jsonWriter.key("logEventMessages");

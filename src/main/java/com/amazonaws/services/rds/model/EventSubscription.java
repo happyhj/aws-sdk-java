@@ -63,13 +63,13 @@ public class EventSubscription implements Serializable {
     /**
      * A list of source Ids for the RDS event notification subscription.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> sourceIdsList;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> sourceIdsList;
 
     /**
      * A list of event categories for the RDS event notification
      * subscription.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> eventCategoriesList;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> eventCategoriesList;
 
     /**
      * A Boolean value indicating if the subscription is enabled. True
@@ -318,7 +318,7 @@ public class EventSubscription implements Serializable {
      */
     public java.util.List<String> getSourceIdsList() {
         if (sourceIdsList == null) {
-              sourceIdsList = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              sourceIdsList = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               sourceIdsList.setAutoConstruct(true);
         }
         return sourceIdsList;
@@ -334,7 +334,7 @@ public class EventSubscription implements Serializable {
             this.sourceIdsList = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> sourceIdsListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(sourceIdsList.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> sourceIdsListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(sourceIdsList.size());
         sourceIdsListCopy.addAll(sourceIdsList);
         this.sourceIdsList = sourceIdsListCopy;
     }
@@ -371,7 +371,7 @@ public class EventSubscription implements Serializable {
         if (sourceIdsList == null) {
             this.sourceIdsList = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> sourceIdsListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(sourceIdsList.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> sourceIdsListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(sourceIdsList.size());
             sourceIdsListCopy.addAll(sourceIdsList);
             this.sourceIdsList = sourceIdsListCopy;
         }
@@ -388,7 +388,7 @@ public class EventSubscription implements Serializable {
      */
     public java.util.List<String> getEventCategoriesList() {
         if (eventCategoriesList == null) {
-              eventCategoriesList = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              eventCategoriesList = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               eventCategoriesList.setAutoConstruct(true);
         }
         return eventCategoriesList;
@@ -406,7 +406,7 @@ public class EventSubscription implements Serializable {
             this.eventCategoriesList = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> eventCategoriesListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(eventCategoriesList.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> eventCategoriesListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(eventCategoriesList.size());
         eventCategoriesListCopy.addAll(eventCategoriesList);
         this.eventCategoriesList = eventCategoriesListCopy;
     }
@@ -447,7 +447,7 @@ public class EventSubscription implements Serializable {
         if (eventCategoriesList == null) {
             this.eventCategoriesList = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> eventCategoriesListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(eventCategoriesList.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> eventCategoriesListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(eventCategoriesList.size());
             eventCategoriesListCopy.addAll(eventCategoriesList);
             this.eventCategoriesList = eventCategoriesListCopy;
         }

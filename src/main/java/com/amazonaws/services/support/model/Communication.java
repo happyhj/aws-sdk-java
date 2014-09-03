@@ -45,7 +45,7 @@ public class Communication implements Serializable {
      */
     private String timeCreated;
 
-    private com.amazonaws.internal.ListWithAutoConstructFlag<AttachmentDetails> attachmentSet;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AttachmentDetails> attachmentSet;
 
     /**
      * The AWS Support case ID requested or returned in the call. The case ID
@@ -198,7 +198,7 @@ public class Communication implements Serializable {
      */
     public java.util.List<AttachmentDetails> getAttachmentSet() {
         if (attachmentSet == null) {
-              attachmentSet = new com.amazonaws.internal.ListWithAutoConstructFlag<AttachmentDetails>();
+              attachmentSet = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AttachmentDetails>();
               attachmentSet.setAutoConstruct(true);
         }
         return attachmentSet;
@@ -214,7 +214,7 @@ public class Communication implements Serializable {
             this.attachmentSet = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<AttachmentDetails> attachmentSetCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<AttachmentDetails>(attachmentSet.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AttachmentDetails> attachmentSetCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AttachmentDetails>(attachmentSet.size());
         attachmentSetCopy.addAll(attachmentSet);
         this.attachmentSet = attachmentSetCopy;
     }
@@ -251,7 +251,7 @@ public class Communication implements Serializable {
         if (attachmentSet == null) {
             this.attachmentSet = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<AttachmentDetails> attachmentSetCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<AttachmentDetails>(attachmentSet.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AttachmentDetails> attachmentSetCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AttachmentDetails>(attachmentSet.size());
             attachmentSetCopy.addAll(attachmentSet);
             this.attachmentSet = attachmentSetCopy;
         }

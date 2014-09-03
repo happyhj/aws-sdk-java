@@ -73,7 +73,7 @@ public class UpdateTableRequest extends AmazonWebServiceRequest implements Seria
      * An array of one or more global secondary indexes on the table,
      * together with provisioned throughput settings for each index.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<GlobalSecondaryIndexUpdate> globalSecondaryIndexUpdates;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GlobalSecondaryIndexUpdate> globalSecondaryIndexUpdates;
 
     /**
      * Default constructor for a new UpdateTableRequest object.  Callers should use the
@@ -230,7 +230,7 @@ public class UpdateTableRequest extends AmazonWebServiceRequest implements Seria
             this.globalSecondaryIndexUpdates = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<GlobalSecondaryIndexUpdate> globalSecondaryIndexUpdatesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<GlobalSecondaryIndexUpdate>(globalSecondaryIndexUpdates.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GlobalSecondaryIndexUpdate> globalSecondaryIndexUpdatesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GlobalSecondaryIndexUpdate>(globalSecondaryIndexUpdates.size());
         globalSecondaryIndexUpdatesCopy.addAll(globalSecondaryIndexUpdates);
         this.globalSecondaryIndexUpdates = globalSecondaryIndexUpdatesCopy;
     }
@@ -271,7 +271,7 @@ public class UpdateTableRequest extends AmazonWebServiceRequest implements Seria
         if (globalSecondaryIndexUpdates == null) {
             this.globalSecondaryIndexUpdates = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<GlobalSecondaryIndexUpdate> globalSecondaryIndexUpdatesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<GlobalSecondaryIndexUpdate>(globalSecondaryIndexUpdates.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GlobalSecondaryIndexUpdate> globalSecondaryIndexUpdatesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GlobalSecondaryIndexUpdate>(globalSecondaryIndexUpdates.size());
             globalSecondaryIndexUpdatesCopy.addAll(globalSecondaryIndexUpdates);
             this.globalSecondaryIndexUpdates = globalSecondaryIndexUpdatesCopy;
         }

@@ -30,7 +30,7 @@ public class TableDescription implements Serializable {
      * <li> <p><i>AttributeName</i> - The name of the attribute. </li> <li>
      * <p><i>AttributeType</i> - The data type for the attribute. </li> </ul>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<AttributeDefinition> attributeDefinitions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AttributeDefinition> attributeDefinitions;
 
     /**
      * The name of the table.
@@ -53,7 +53,7 @@ public class TableDescription implements Serializable {
      * <b>Constraints:</b><br/>
      * <b>Length: </b>1 - 2<br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<KeySchemaElement> keySchema;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<KeySchemaElement> keySchema;
 
     /**
      * The current state of the table: <ul> <li> <p><i>CREATING</i> - The
@@ -132,7 +132,7 @@ public class TableDescription implements Serializable {
      * <code>DELETING</code> state, no information about indexes will be
      * returned.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<LocalSecondaryIndexDescription> localSecondaryIndexes;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LocalSecondaryIndexDescription> localSecondaryIndexes;
 
     /**
      * The global secondary indexes, if any, on the table. Each index is
@@ -175,7 +175,7 @@ public class TableDescription implements Serializable {
      * <p>If the table is in the <code>DELETING</code> state, no information
      * about indexes will be returned.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<GlobalSecondaryIndexDescription> globalSecondaryIndexes;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GlobalSecondaryIndexDescription> globalSecondaryIndexes;
 
     /**
      * Default constructor for a new TableDescription object.  Callers should use the
@@ -218,7 +218,7 @@ public class TableDescription implements Serializable {
             this.attributeDefinitions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<AttributeDefinition> attributeDefinitionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<AttributeDefinition>(attributeDefinitions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AttributeDefinition> attributeDefinitionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AttributeDefinition>(attributeDefinitions.size());
         attributeDefinitionsCopy.addAll(attributeDefinitions);
         this.attributeDefinitions = attributeDefinitionsCopy;
     }
@@ -271,7 +271,7 @@ public class TableDescription implements Serializable {
         if (attributeDefinitions == null) {
             this.attributeDefinitions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<AttributeDefinition> attributeDefinitionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<AttributeDefinition>(attributeDefinitions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AttributeDefinition> attributeDefinitionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AttributeDefinition>(attributeDefinitions.size());
             attributeDefinitionsCopy.addAll(attributeDefinitions);
             this.attributeDefinitions = attributeDefinitionsCopy;
         }
@@ -373,7 +373,7 @@ public class TableDescription implements Serializable {
             this.keySchema = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<KeySchemaElement> keySchemaCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<KeySchemaElement>(keySchema.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<KeySchemaElement> keySchemaCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<KeySchemaElement>(keySchema.size());
         keySchemaCopy.addAll(keySchema);
         this.keySchema = keySchemaCopy;
     }
@@ -440,7 +440,7 @@ public class TableDescription implements Serializable {
         if (keySchema == null) {
             this.keySchema = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<KeySchemaElement> keySchemaCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<KeySchemaElement>(keySchema.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<KeySchemaElement> keySchemaCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<KeySchemaElement>(keySchema.size());
             keySchemaCopy.addAll(keySchema);
             this.keySchema = keySchemaCopy;
         }
@@ -915,7 +915,7 @@ public class TableDescription implements Serializable {
             this.localSecondaryIndexes = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<LocalSecondaryIndexDescription> localSecondaryIndexesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<LocalSecondaryIndexDescription>(localSecondaryIndexes.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LocalSecondaryIndexDescription> localSecondaryIndexesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LocalSecondaryIndexDescription>(localSecondaryIndexes.size());
         localSecondaryIndexesCopy.addAll(localSecondaryIndexes);
         this.localSecondaryIndexes = localSecondaryIndexesCopy;
     }
@@ -1084,7 +1084,7 @@ public class TableDescription implements Serializable {
         if (localSecondaryIndexes == null) {
             this.localSecondaryIndexes = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<LocalSecondaryIndexDescription> localSecondaryIndexesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<LocalSecondaryIndexDescription>(localSecondaryIndexes.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LocalSecondaryIndexDescription> localSecondaryIndexesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LocalSecondaryIndexDescription>(localSecondaryIndexes.size());
             localSecondaryIndexesCopy.addAll(localSecondaryIndexes);
             this.localSecondaryIndexes = localSecondaryIndexesCopy;
         }
@@ -1263,7 +1263,7 @@ public class TableDescription implements Serializable {
             this.globalSecondaryIndexes = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<GlobalSecondaryIndexDescription> globalSecondaryIndexesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<GlobalSecondaryIndexDescription>(globalSecondaryIndexes.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GlobalSecondaryIndexDescription> globalSecondaryIndexesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GlobalSecondaryIndexDescription>(globalSecondaryIndexes.size());
         globalSecondaryIndexesCopy.addAll(globalSecondaryIndexes);
         this.globalSecondaryIndexes = globalSecondaryIndexesCopy;
     }
@@ -1452,7 +1452,7 @@ public class TableDescription implements Serializable {
         if (globalSecondaryIndexes == null) {
             this.globalSecondaryIndexes = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<GlobalSecondaryIndexDescription> globalSecondaryIndexesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<GlobalSecondaryIndexDescription>(globalSecondaryIndexes.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GlobalSecondaryIndexDescription> globalSecondaryIndexesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GlobalSecondaryIndexDescription>(globalSecondaryIndexes.size());
             globalSecondaryIndexesCopy.addAll(globalSecondaryIndexes);
             this.globalSecondaryIndexes = globalSecondaryIndexesCopy;
         }

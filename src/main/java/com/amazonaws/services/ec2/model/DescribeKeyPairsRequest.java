@@ -38,14 +38,14 @@ public class DescribeKeyPairsRequest extends AmazonWebServiceRequest implements 
     /**
      * One or more key pair names. <p>Default: Describes all your key pairs.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> keyNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> keyNames;
 
     /**
      * One or more filters. <ul> <li> <p><code>fingerprint</code> - The
      * fingerprint of the key pair. </li> <li> <p><code>key-name</code> - The
      * name of the key pair. </li> </ul>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filters;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filters;
 
     /**
      * One or more key pair names. <p>Default: Describes all your key pairs.
@@ -54,7 +54,7 @@ public class DescribeKeyPairsRequest extends AmazonWebServiceRequest implements 
      */
     public java.util.List<String> getKeyNames() {
         if (keyNames == null) {
-              keyNames = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              keyNames = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               keyNames.setAutoConstruct(true);
         }
         return keyNames;
@@ -70,7 +70,7 @@ public class DescribeKeyPairsRequest extends AmazonWebServiceRequest implements 
             this.keyNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> keyNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(keyNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> keyNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(keyNames.size());
         keyNamesCopy.addAll(keyNames);
         this.keyNames = keyNamesCopy;
     }
@@ -107,7 +107,7 @@ public class DescribeKeyPairsRequest extends AmazonWebServiceRequest implements 
         if (keyNames == null) {
             this.keyNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> keyNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(keyNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> keyNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(keyNames.size());
             keyNamesCopy.addAll(keyNames);
             this.keyNames = keyNamesCopy;
         }
@@ -126,7 +126,7 @@ public class DescribeKeyPairsRequest extends AmazonWebServiceRequest implements 
      */
     public java.util.List<Filter> getFilters() {
         if (filters == null) {
-              filters = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>();
+              filters = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>();
               filters.setAutoConstruct(true);
         }
         return filters;
@@ -146,7 +146,7 @@ public class DescribeKeyPairsRequest extends AmazonWebServiceRequest implements 
             this.filters = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
         filtersCopy.addAll(filters);
         this.filters = filtersCopy;
     }
@@ -191,7 +191,7 @@ public class DescribeKeyPairsRequest extends AmazonWebServiceRequest implements 
         if (filters == null) {
             this.filters = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
             filtersCopy.addAll(filters);
             this.filters = filtersCopy;
         }

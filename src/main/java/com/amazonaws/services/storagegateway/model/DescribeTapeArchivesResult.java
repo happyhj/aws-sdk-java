@@ -30,7 +30,7 @@ public class DescribeTapeArchivesResult implements Serializable {
      * (ARNs) of the tapes, size of the tapes, status of the tapes, progress
      * of the description and tape barcode.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<TapeArchive> tapeArchives;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TapeArchive> tapeArchives;
 
     /**
      * An opaque string that indicates the position at which the virtual
@@ -59,7 +59,7 @@ public class DescribeTapeArchivesResult implements Serializable {
      */
     public java.util.List<TapeArchive> getTapeArchives() {
         if (tapeArchives == null) {
-              tapeArchives = new com.amazonaws.internal.ListWithAutoConstructFlag<TapeArchive>();
+              tapeArchives = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TapeArchive>();
               tapeArchives.setAutoConstruct(true);
         }
         return tapeArchives;
@@ -83,7 +83,7 @@ public class DescribeTapeArchivesResult implements Serializable {
             this.tapeArchives = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<TapeArchive> tapeArchivesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<TapeArchive>(tapeArchives.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TapeArchive> tapeArchivesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TapeArchive>(tapeArchives.size());
         tapeArchivesCopy.addAll(tapeArchives);
         this.tapeArchives = tapeArchivesCopy;
     }
@@ -136,7 +136,7 @@ public class DescribeTapeArchivesResult implements Serializable {
         if (tapeArchives == null) {
             this.tapeArchives = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<TapeArchive> tapeArchivesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<TapeArchive>(tapeArchives.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TapeArchive> tapeArchivesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TapeArchive>(tapeArchives.size());
             tapeArchivesCopy.addAll(tapeArchives);
             this.tapeArchives = tapeArchivesCopy;
         }

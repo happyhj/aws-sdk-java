@@ -26,7 +26,7 @@ public class DescribeEventsResult implements Serializable {
     /**
      * A list of <a>EventDescription</a>.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<EventDescription> events;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EventDescription> events;
 
     /**
      * If returned, this indicates that there are more results to obtain. Use
@@ -42,7 +42,7 @@ public class DescribeEventsResult implements Serializable {
      */
     public java.util.List<EventDescription> getEvents() {
         if (events == null) {
-              events = new com.amazonaws.internal.ListWithAutoConstructFlag<EventDescription>();
+              events = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EventDescription>();
               events.setAutoConstruct(true);
         }
         return events;
@@ -58,7 +58,7 @@ public class DescribeEventsResult implements Serializable {
             this.events = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<EventDescription> eventsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<EventDescription>(events.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EventDescription> eventsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EventDescription>(events.size());
         eventsCopy.addAll(events);
         this.events = eventsCopy;
     }
@@ -95,7 +95,7 @@ public class DescribeEventsResult implements Serializable {
         if (events == null) {
             this.events = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<EventDescription> eventsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<EventDescription>(events.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EventDescription> eventsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EventDescription>(events.size());
             eventsCopy.addAll(events);
             this.events = eventsCopy;
         }

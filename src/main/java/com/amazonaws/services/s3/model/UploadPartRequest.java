@@ -17,7 +17,7 @@ package com.amazonaws.services.s3.model;
 import java.io.File;
 import java.io.InputStream;
 
-import com.amazonaws.event.ProgressListener;
+import com.amazonaws.network.event.ProgressListener;
 import com.amazonaws.network.request.AmazonWebServiceRequest;
 
 /**

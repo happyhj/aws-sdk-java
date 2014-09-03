@@ -20,7 +20,7 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.simpleworkflow.model.CloseStatusFilter;
@@ -30,7 +30,7 @@ import com.amazonaws.services.simpleworkflow.model.TagFilter;
 import com.amazonaws.services.simpleworkflow.model.WorkflowExecutionFilter;
 import com.amazonaws.services.simpleworkflow.model.WorkflowTypeFilter;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * List Closed Workflow Executions Request Marshaller

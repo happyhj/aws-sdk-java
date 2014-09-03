@@ -46,7 +46,7 @@ public class AttachLoadBalancerToSubnetsRequest extends AmazonWebServiceRequest 
      * A list of subnet IDs to add for the load balancer. You can add only
      * one subnet per Availability Zone.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> subnets;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> subnets;
 
     /**
      * The name associated with the load balancer. The name must be unique
@@ -96,7 +96,7 @@ public class AttachLoadBalancerToSubnetsRequest extends AmazonWebServiceRequest 
      */
     public java.util.List<String> getSubnets() {
         if (subnets == null) {
-              subnets = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              subnets = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               subnets.setAutoConstruct(true);
         }
         return subnets;
@@ -114,7 +114,7 @@ public class AttachLoadBalancerToSubnetsRequest extends AmazonWebServiceRequest 
             this.subnets = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> subnetsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(subnets.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> subnetsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(subnets.size());
         subnetsCopy.addAll(subnets);
         this.subnets = subnetsCopy;
     }
@@ -155,7 +155,7 @@ public class AttachLoadBalancerToSubnetsRequest extends AmazonWebServiceRequest 
         if (subnets == null) {
             this.subnets = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> subnetsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(subnets.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> subnetsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(subnets.size());
             subnetsCopy.addAll(subnets);
             this.subnets = subnetsCopy;
         }

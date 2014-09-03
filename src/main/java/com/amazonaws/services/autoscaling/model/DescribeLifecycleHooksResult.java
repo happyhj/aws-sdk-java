@@ -27,7 +27,7 @@ public class DescribeLifecycleHooksResult implements Serializable {
      * A list describing the lifecycle hooks that belong to the specified
      * Auto Scaling group.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<LifecycleHook> lifecycleHooks;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LifecycleHook> lifecycleHooks;
 
     /**
      * A list describing the lifecycle hooks that belong to the specified
@@ -38,7 +38,7 @@ public class DescribeLifecycleHooksResult implements Serializable {
      */
     public java.util.List<LifecycleHook> getLifecycleHooks() {
         if (lifecycleHooks == null) {
-              lifecycleHooks = new com.amazonaws.internal.ListWithAutoConstructFlag<LifecycleHook>();
+              lifecycleHooks = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LifecycleHook>();
               lifecycleHooks.setAutoConstruct(true);
         }
         return lifecycleHooks;
@@ -56,7 +56,7 @@ public class DescribeLifecycleHooksResult implements Serializable {
             this.lifecycleHooks = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<LifecycleHook> lifecycleHooksCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<LifecycleHook>(lifecycleHooks.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LifecycleHook> lifecycleHooksCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LifecycleHook>(lifecycleHooks.size());
         lifecycleHooksCopy.addAll(lifecycleHooks);
         this.lifecycleHooks = lifecycleHooksCopy;
     }
@@ -97,7 +97,7 @@ public class DescribeLifecycleHooksResult implements Serializable {
         if (lifecycleHooks == null) {
             this.lifecycleHooks = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<LifecycleHook> lifecycleHooksCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<LifecycleHook>(lifecycleHooks.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LifecycleHook> lifecycleHooksCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LifecycleHook>(lifecycleHooks.size());
             lifecycleHooksCopy.addAll(lifecycleHooks);
             this.lifecycleHooks = lifecycleHooksCopy;
         }

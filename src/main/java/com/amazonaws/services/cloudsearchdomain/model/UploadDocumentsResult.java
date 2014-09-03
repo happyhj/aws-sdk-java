@@ -42,7 +42,7 @@ public class UploadDocumentsResult implements Serializable {
      * Any warnings returned by the document service about the documents
      * being uploaded.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<DocumentServiceWarning> warnings;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DocumentServiceWarning> warnings;
 
     /**
      * The status of an <code>UploadDocumentsRequest</code>.
@@ -152,7 +152,7 @@ public class UploadDocumentsResult implements Serializable {
      */
     public java.util.List<DocumentServiceWarning> getWarnings() {
         if (warnings == null) {
-              warnings = new com.amazonaws.internal.ListWithAutoConstructFlag<DocumentServiceWarning>();
+              warnings = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DocumentServiceWarning>();
               warnings.setAutoConstruct(true);
         }
         return warnings;
@@ -170,7 +170,7 @@ public class UploadDocumentsResult implements Serializable {
             this.warnings = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<DocumentServiceWarning> warningsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DocumentServiceWarning>(warnings.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DocumentServiceWarning> warningsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DocumentServiceWarning>(warnings.size());
         warningsCopy.addAll(warnings);
         this.warnings = warningsCopy;
     }
@@ -211,7 +211,7 @@ public class UploadDocumentsResult implements Serializable {
         if (warnings == null) {
             this.warnings = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<DocumentServiceWarning> warningsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DocumentServiceWarning>(warnings.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DocumentServiceWarning> warningsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DocumentServiceWarning>(warnings.size());
             warningsCopy.addAll(warnings);
             this.warnings = warningsCopy;
         }

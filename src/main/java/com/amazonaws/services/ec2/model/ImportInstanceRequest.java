@@ -47,7 +47,7 @@ public class ImportInstanceRequest extends AmazonWebServiceRequest implements Se
     /**
      * 
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<DiskImage> diskImages;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DiskImage> diskImages;
 
     /**
      * The instance operating system.
@@ -130,7 +130,7 @@ public class ImportInstanceRequest extends AmazonWebServiceRequest implements Se
      */
     public java.util.List<DiskImage> getDiskImages() {
         if (diskImages == null) {
-              diskImages = new com.amazonaws.internal.ListWithAutoConstructFlag<DiskImage>();
+              diskImages = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DiskImage>();
               diskImages.setAutoConstruct(true);
         }
         return diskImages;
@@ -146,7 +146,7 @@ public class ImportInstanceRequest extends AmazonWebServiceRequest implements Se
             this.diskImages = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<DiskImage> diskImagesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DiskImage>(diskImages.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DiskImage> diskImagesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DiskImage>(diskImages.size());
         diskImagesCopy.addAll(diskImages);
         this.diskImages = diskImagesCopy;
     }
@@ -183,7 +183,7 @@ public class ImportInstanceRequest extends AmazonWebServiceRequest implements Se
         if (diskImages == null) {
             this.diskImages = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<DiskImage> diskImagesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DiskImage>(diskImages.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DiskImage> diskImagesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DiskImage>(diskImages.size());
             diskImagesCopy.addAll(diskImages);
             this.diskImages = diskImagesCopy;
         }

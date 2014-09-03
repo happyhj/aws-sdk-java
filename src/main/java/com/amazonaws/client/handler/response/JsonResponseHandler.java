@@ -22,15 +22,15 @@ import org.apache.commons.logging.LogFactory;
 
 import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.core.JsonParser;
-import com.amazonaws.ResponseMetadata;
-import com.amazonaws.internal.CRC32MismatchException;
+import com.amazonaws.network.ResponseMetadata;
 import com.amazonaws.network.response.AmazonWebServiceResponse;
 import com.amazonaws.network.response.HttpResponse;
+import com.amazonaws.serviceinternal.CRC32MismatchException;
 import com.amazonaws.transform.JsonUnmarshallerContext;
 import com.amazonaws.transform.JsonUnmarshallerContextImpl;
 import com.amazonaws.transform.Unmarshaller;
 import com.amazonaws.transform.VoidJsonUnmarshaller;
-import com.amazonaws.util.CRC32ChecksumCalculatingInputStream;
+import com.amazonaws.utility.CRC32ChecksumCalculatingInputStream;
 
 /**
  * Default implementation of HttpResponseHandler that handles a successful

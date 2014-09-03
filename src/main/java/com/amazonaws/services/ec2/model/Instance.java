@@ -72,7 +72,7 @@ public class Instance implements Serializable {
     /**
      * The product codes attached to this instance.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ProductCode> productCodes;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ProductCode> productCodes;
 
     /**
      * The instance type.
@@ -166,7 +166,7 @@ public class Instance implements Serializable {
     /**
      * Any block device mapping entries for the instance.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<InstanceBlockDeviceMapping> blockDeviceMappings;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceBlockDeviceMapping> blockDeviceMappings;
 
     /**
      * The virtualization type of the instance.
@@ -197,12 +197,12 @@ public class Instance implements Serializable {
     /**
      * Any tags assigned to the instance.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tags;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tags;
 
     /**
      * One or more security groups for the instance.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<GroupIdentifier> securityGroups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GroupIdentifier> securityGroups;
 
     /**
      * Specifies whether to enable an instance launched in a VPC to perform
@@ -227,7 +227,7 @@ public class Instance implements Serializable {
     /**
      * [EC2-VPC] One or more network interfaces for the instance.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<InstanceNetworkInterface> networkInterfaces;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceNetworkInterface> networkInterfaces;
 
     /**
      * The IAM instance profile associated with the instance.
@@ -555,7 +555,7 @@ public class Instance implements Serializable {
      */
     public java.util.List<ProductCode> getProductCodes() {
         if (productCodes == null) {
-              productCodes = new com.amazonaws.internal.ListWithAutoConstructFlag<ProductCode>();
+              productCodes = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ProductCode>();
               productCodes.setAutoConstruct(true);
         }
         return productCodes;
@@ -571,7 +571,7 @@ public class Instance implements Serializable {
             this.productCodes = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ProductCode> productCodesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ProductCode>(productCodes.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ProductCode> productCodesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ProductCode>(productCodes.size());
         productCodesCopy.addAll(productCodes);
         this.productCodes = productCodesCopy;
     }
@@ -608,7 +608,7 @@ public class Instance implements Serializable {
         if (productCodes == null) {
             this.productCodes = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ProductCode> productCodesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ProductCode>(productCodes.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ProductCode> productCodesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ProductCode>(productCodes.size());
             productCodesCopy.addAll(productCodes);
             this.productCodes = productCodesCopy;
         }
@@ -1334,7 +1334,7 @@ public class Instance implements Serializable {
      */
     public java.util.List<InstanceBlockDeviceMapping> getBlockDeviceMappings() {
         if (blockDeviceMappings == null) {
-              blockDeviceMappings = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceBlockDeviceMapping>();
+              blockDeviceMappings = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceBlockDeviceMapping>();
               blockDeviceMappings.setAutoConstruct(true);
         }
         return blockDeviceMappings;
@@ -1350,7 +1350,7 @@ public class Instance implements Serializable {
             this.blockDeviceMappings = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<InstanceBlockDeviceMapping> blockDeviceMappingsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceBlockDeviceMapping>(blockDeviceMappings.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceBlockDeviceMapping> blockDeviceMappingsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceBlockDeviceMapping>(blockDeviceMappings.size());
         blockDeviceMappingsCopy.addAll(blockDeviceMappings);
         this.blockDeviceMappings = blockDeviceMappingsCopy;
     }
@@ -1387,7 +1387,7 @@ public class Instance implements Serializable {
         if (blockDeviceMappings == null) {
             this.blockDeviceMappings = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<InstanceBlockDeviceMapping> blockDeviceMappingsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceBlockDeviceMapping>(blockDeviceMappings.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceBlockDeviceMapping> blockDeviceMappingsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceBlockDeviceMapping>(blockDeviceMappings.size());
             blockDeviceMappingsCopy.addAll(blockDeviceMappings);
             this.blockDeviceMappings = blockDeviceMappingsCopy;
         }
@@ -1632,7 +1632,7 @@ public class Instance implements Serializable {
      */
     public java.util.List<Tag> getTags() {
         if (tags == null) {
-              tags = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>();
+              tags = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>();
               tags.setAutoConstruct(true);
         }
         return tags;
@@ -1648,7 +1648,7 @@ public class Instance implements Serializable {
             this.tags = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tags.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tags.size());
         tagsCopy.addAll(tags);
         this.tags = tagsCopy;
     }
@@ -1685,7 +1685,7 @@ public class Instance implements Serializable {
         if (tags == null) {
             this.tags = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tags.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tags.size());
             tagsCopy.addAll(tags);
             this.tags = tagsCopy;
         }
@@ -1700,7 +1700,7 @@ public class Instance implements Serializable {
      */
     public java.util.List<GroupIdentifier> getSecurityGroups() {
         if (securityGroups == null) {
-              securityGroups = new com.amazonaws.internal.ListWithAutoConstructFlag<GroupIdentifier>();
+              securityGroups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GroupIdentifier>();
               securityGroups.setAutoConstruct(true);
         }
         return securityGroups;
@@ -1716,7 +1716,7 @@ public class Instance implements Serializable {
             this.securityGroups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<GroupIdentifier> securityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<GroupIdentifier>(securityGroups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GroupIdentifier> securityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GroupIdentifier>(securityGroups.size());
         securityGroupsCopy.addAll(securityGroups);
         this.securityGroups = securityGroupsCopy;
     }
@@ -1753,7 +1753,7 @@ public class Instance implements Serializable {
         if (securityGroups == null) {
             this.securityGroups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<GroupIdentifier> securityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<GroupIdentifier>(securityGroups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GroupIdentifier> securityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GroupIdentifier>(securityGroups.size());
             securityGroupsCopy.addAll(securityGroups);
             this.securityGroups = securityGroupsCopy;
         }
@@ -1948,7 +1948,7 @@ public class Instance implements Serializable {
      */
     public java.util.List<InstanceNetworkInterface> getNetworkInterfaces() {
         if (networkInterfaces == null) {
-              networkInterfaces = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceNetworkInterface>();
+              networkInterfaces = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceNetworkInterface>();
               networkInterfaces.setAutoConstruct(true);
         }
         return networkInterfaces;
@@ -1964,7 +1964,7 @@ public class Instance implements Serializable {
             this.networkInterfaces = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<InstanceNetworkInterface> networkInterfacesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceNetworkInterface>(networkInterfaces.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceNetworkInterface> networkInterfacesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceNetworkInterface>(networkInterfaces.size());
         networkInterfacesCopy.addAll(networkInterfaces);
         this.networkInterfaces = networkInterfacesCopy;
     }
@@ -2001,7 +2001,7 @@ public class Instance implements Serializable {
         if (networkInterfaces == null) {
             this.networkInterfaces = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<InstanceNetworkInterface> networkInterfacesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceNetworkInterface>(networkInterfaces.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceNetworkInterface> networkInterfacesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceNetworkInterface>(networkInterfaces.size());
             networkInterfacesCopy.addAll(networkInterfaces);
             this.networkInterfaces = networkInterfacesCopy;
         }

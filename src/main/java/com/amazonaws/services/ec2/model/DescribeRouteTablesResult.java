@@ -24,7 +24,7 @@ public class DescribeRouteTablesResult implements Serializable {
     /**
      * Information about one or more route tables.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<RouteTable> routeTables;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RouteTable> routeTables;
 
     /**
      * Information about one or more route tables.
@@ -33,7 +33,7 @@ public class DescribeRouteTablesResult implements Serializable {
      */
     public java.util.List<RouteTable> getRouteTables() {
         if (routeTables == null) {
-              routeTables = new com.amazonaws.internal.ListWithAutoConstructFlag<RouteTable>();
+              routeTables = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RouteTable>();
               routeTables.setAutoConstruct(true);
         }
         return routeTables;
@@ -49,7 +49,7 @@ public class DescribeRouteTablesResult implements Serializable {
             this.routeTables = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<RouteTable> routeTablesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<RouteTable>(routeTables.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RouteTable> routeTablesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RouteTable>(routeTables.size());
         routeTablesCopy.addAll(routeTables);
         this.routeTables = routeTablesCopy;
     }
@@ -86,7 +86,7 @@ public class DescribeRouteTablesResult implements Serializable {
         if (routeTables == null) {
             this.routeTables = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<RouteTable> routeTablesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<RouteTable>(routeTables.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RouteTable> routeTablesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RouteTable>(routeTables.size());
             routeTablesCopy.addAll(routeTables);
             this.routeTables = routeTablesCopy;
         }

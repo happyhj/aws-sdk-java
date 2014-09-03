@@ -60,7 +60,7 @@ public class DescribeAlarmsForMetricRequest extends AmazonWebServiceRequest impl
      * <b>Constraints:</b><br/>
      * <b>Length: </b>0 - 10<br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Dimension> dimensions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Dimension> dimensions;
 
     /**
      * The period in seconds over which the statistic is applied.
@@ -257,7 +257,7 @@ public class DescribeAlarmsForMetricRequest extends AmazonWebServiceRequest impl
      */
     public java.util.List<Dimension> getDimensions() {
         if (dimensions == null) {
-              dimensions = new com.amazonaws.internal.ListWithAutoConstructFlag<Dimension>();
+              dimensions = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Dimension>();
               dimensions.setAutoConstruct(true);
         }
         return dimensions;
@@ -276,7 +276,7 @@ public class DescribeAlarmsForMetricRequest extends AmazonWebServiceRequest impl
             this.dimensions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Dimension> dimensionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Dimension>(dimensions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Dimension> dimensionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Dimension>(dimensions.size());
         dimensionsCopy.addAll(dimensions);
         this.dimensions = dimensionsCopy;
     }
@@ -319,7 +319,7 @@ public class DescribeAlarmsForMetricRequest extends AmazonWebServiceRequest impl
         if (dimensions == null) {
             this.dimensions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Dimension> dimensionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Dimension>(dimensions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Dimension> dimensionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Dimension>(dimensions.size());
             dimensionsCopy.addAll(dimensions);
             this.dimensions = dimensionsCopy;
         }

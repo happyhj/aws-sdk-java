@@ -64,12 +64,12 @@ public class ModifySnapshotAttributeRequest extends AmazonWebServiceRequest impl
     /**
      * The account ID to modify for the snapshot.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> userIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> userIds;
 
     /**
      * The group to modify for the snapshot.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> groupNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> groupNames;
 
     /**
      * A JSON representation of the snapshot attribute modification.
@@ -269,7 +269,7 @@ public class ModifySnapshotAttributeRequest extends AmazonWebServiceRequest impl
      */
     public java.util.List<String> getUserIds() {
         if (userIds == null) {
-              userIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              userIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               userIds.setAutoConstruct(true);
         }
         return userIds;
@@ -285,7 +285,7 @@ public class ModifySnapshotAttributeRequest extends AmazonWebServiceRequest impl
             this.userIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> userIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(userIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> userIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(userIds.size());
         userIdsCopy.addAll(userIds);
         this.userIds = userIdsCopy;
     }
@@ -322,7 +322,7 @@ public class ModifySnapshotAttributeRequest extends AmazonWebServiceRequest impl
         if (userIds == null) {
             this.userIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> userIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(userIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> userIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(userIds.size());
             userIdsCopy.addAll(userIds);
             this.userIds = userIdsCopy;
         }
@@ -337,7 +337,7 @@ public class ModifySnapshotAttributeRequest extends AmazonWebServiceRequest impl
      */
     public java.util.List<String> getGroupNames() {
         if (groupNames == null) {
-              groupNames = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              groupNames = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               groupNames.setAutoConstruct(true);
         }
         return groupNames;
@@ -353,7 +353,7 @@ public class ModifySnapshotAttributeRequest extends AmazonWebServiceRequest impl
             this.groupNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> groupNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(groupNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> groupNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(groupNames.size());
         groupNamesCopy.addAll(groupNames);
         this.groupNames = groupNamesCopy;
     }
@@ -390,7 +390,7 @@ public class ModifySnapshotAttributeRequest extends AmazonWebServiceRequest impl
         if (groupNames == null) {
             this.groupNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> groupNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(groupNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> groupNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(groupNames.size());
             groupNamesCopy.addAll(groupNames);
             this.groupNames = groupNamesCopy;
         }

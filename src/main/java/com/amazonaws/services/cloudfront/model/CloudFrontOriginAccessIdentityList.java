@@ -59,7 +59,7 @@ public class CloudFrontOriginAccessIdentityList implements Serializable {
      * element for each origin access identity that was created by the
      * current AWS account.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<CloudFrontOriginAccessIdentitySummary> items;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CloudFrontOriginAccessIdentitySummary> items;
 
     /**
      * Default constructor for a new CloudFrontOriginAccessIdentityList object.  Callers should use the
@@ -294,7 +294,7 @@ public class CloudFrontOriginAccessIdentityList implements Serializable {
      */
     public java.util.List<CloudFrontOriginAccessIdentitySummary> getItems() {
         if (items == null) {
-              items = new com.amazonaws.internal.ListWithAutoConstructFlag<CloudFrontOriginAccessIdentitySummary>();
+              items = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CloudFrontOriginAccessIdentitySummary>();
               items.setAutoConstruct(true);
         }
         return items;
@@ -314,7 +314,7 @@ public class CloudFrontOriginAccessIdentityList implements Serializable {
             this.items = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<CloudFrontOriginAccessIdentitySummary> itemsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CloudFrontOriginAccessIdentitySummary>(items.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CloudFrontOriginAccessIdentitySummary> itemsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CloudFrontOriginAccessIdentitySummary>(items.size());
         itemsCopy.addAll(items);
         this.items = itemsCopy;
     }
@@ -359,7 +359,7 @@ public class CloudFrontOriginAccessIdentityList implements Serializable {
         if (items == null) {
             this.items = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<CloudFrontOriginAccessIdentitySummary> itemsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CloudFrontOriginAccessIdentitySummary>(items.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CloudFrontOriginAccessIdentitySummary> itemsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CloudFrontOriginAccessIdentitySummary>(items.size());
             itemsCopy.addAll(items);
             this.items = itemsCopy;
         }

@@ -32,7 +32,7 @@ public class CacheBehaviors implements Serializable {
      * Optional: A complex type that contains cache behaviors for this
      * distribution. If Quantity is 0, you can omit Items.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<CacheBehavior> items;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheBehavior> items;
 
     /**
      * The number of cache behaviors for this distribution.
@@ -76,7 +76,7 @@ public class CacheBehaviors implements Serializable {
      */
     public java.util.List<CacheBehavior> getItems() {
         if (items == null) {
-              items = new com.amazonaws.internal.ListWithAutoConstructFlag<CacheBehavior>();
+              items = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheBehavior>();
               items.setAutoConstruct(true);
         }
         return items;
@@ -94,7 +94,7 @@ public class CacheBehaviors implements Serializable {
             this.items = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<CacheBehavior> itemsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CacheBehavior>(items.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheBehavior> itemsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheBehavior>(items.size());
         itemsCopy.addAll(items);
         this.items = itemsCopy;
     }
@@ -135,7 +135,7 @@ public class CacheBehaviors implements Serializable {
         if (items == null) {
             this.items = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<CacheBehavior> itemsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CacheBehavior>(items.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheBehavior> itemsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheBehavior>(items.size());
             itemsCopy.addAll(items);
             this.items = itemsCopy;
         }

@@ -67,7 +67,7 @@ public class Permission implements Serializable {
      * <b>Constraints:</b><br/>
      * <b>Length: </b>0 - 30<br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> access;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> access;
 
     /**
      * The type of value that appears in the Grantee object: <ul>
@@ -255,7 +255,7 @@ public class Permission implements Serializable {
      */
     public java.util.List<String> getAccess() {
         if (access == null) {
-              access = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              access = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               access.setAutoConstruct(true);
         }
         return access;
@@ -294,7 +294,7 @@ public class Permission implements Serializable {
             this.access = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> accessCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(access.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> accessCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(access.size());
         accessCopy.addAll(access);
         this.access = accessCopy;
     }
@@ -377,7 +377,7 @@ public class Permission implements Serializable {
         if (access == null) {
             this.access = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> accessCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(access.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> accessCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(access.size());
             accessCopy.addAll(access);
             this.access = accessCopy;
         }

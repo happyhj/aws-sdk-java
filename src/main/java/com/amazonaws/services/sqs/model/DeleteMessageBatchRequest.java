@@ -56,7 +56,7 @@ public class DeleteMessageBatchRequest extends AmazonWebServiceRequest implement
     /**
      * A list of receipt handles for the messages to be deleted.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<DeleteMessageBatchRequestEntry> entries;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DeleteMessageBatchRequestEntry> entries;
 
     /**
      * Default constructor for a new DeleteMessageBatchRequest object.  Callers should use the
@@ -129,7 +129,7 @@ public class DeleteMessageBatchRequest extends AmazonWebServiceRequest implement
      */
     public java.util.List<DeleteMessageBatchRequestEntry> getEntries() {
         if (entries == null) {
-              entries = new com.amazonaws.internal.ListWithAutoConstructFlag<DeleteMessageBatchRequestEntry>();
+              entries = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DeleteMessageBatchRequestEntry>();
               entries.setAutoConstruct(true);
         }
         return entries;
@@ -145,7 +145,7 @@ public class DeleteMessageBatchRequest extends AmazonWebServiceRequest implement
             this.entries = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<DeleteMessageBatchRequestEntry> entriesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DeleteMessageBatchRequestEntry>(entries.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DeleteMessageBatchRequestEntry> entriesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DeleteMessageBatchRequestEntry>(entries.size());
         entriesCopy.addAll(entries);
         this.entries = entriesCopy;
     }
@@ -182,7 +182,7 @@ public class DeleteMessageBatchRequest extends AmazonWebServiceRequest implement
         if (entries == null) {
             this.entries = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<DeleteMessageBatchRequestEntry> entriesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DeleteMessageBatchRequestEntry>(entries.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DeleteMessageBatchRequestEntry> entriesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DeleteMessageBatchRequestEntry>(entries.size());
             entriesCopy.addAll(entries);
             this.entries = entriesCopy;
         }

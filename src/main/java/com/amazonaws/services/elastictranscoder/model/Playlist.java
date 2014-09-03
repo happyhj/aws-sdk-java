@@ -58,7 +58,7 @@ public class Playlist implements Serializable {
      * <b>Constraints:</b><br/>
      * <b>Length: </b>0 - 30<br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> outputKeys;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> outputKeys;
 
     /**
      * The status of the job with which the playlist is associated.
@@ -212,7 +212,7 @@ public class Playlist implements Serializable {
      */
     public java.util.List<String> getOutputKeys() {
         if (outputKeys == null) {
-              outputKeys = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              outputKeys = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               outputKeys.setAutoConstruct(true);
         }
         return outputKeys;
@@ -237,7 +237,7 @@ public class Playlist implements Serializable {
             this.outputKeys = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> outputKeysCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(outputKeys.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> outputKeysCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(outputKeys.size());
         outputKeysCopy.addAll(outputKeys);
         this.outputKeys = outputKeysCopy;
     }
@@ -292,7 +292,7 @@ public class Playlist implements Serializable {
         if (outputKeys == null) {
             this.outputKeys = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> outputKeysCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(outputKeys.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> outputKeysCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(outputKeys.size());
             outputKeysCopy.addAll(outputKeys);
             this.outputKeys = outputKeysCopy;
         }

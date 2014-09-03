@@ -24,7 +24,7 @@ public class DescribeInternetGatewaysResult implements Serializable {
     /**
      * Information about one or more Internet gateways.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<InternetGateway> internetGateways;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InternetGateway> internetGateways;
 
     /**
      * Information about one or more Internet gateways.
@@ -33,7 +33,7 @@ public class DescribeInternetGatewaysResult implements Serializable {
      */
     public java.util.List<InternetGateway> getInternetGateways() {
         if (internetGateways == null) {
-              internetGateways = new com.amazonaws.internal.ListWithAutoConstructFlag<InternetGateway>();
+              internetGateways = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InternetGateway>();
               internetGateways.setAutoConstruct(true);
         }
         return internetGateways;
@@ -49,7 +49,7 @@ public class DescribeInternetGatewaysResult implements Serializable {
             this.internetGateways = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<InternetGateway> internetGatewaysCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InternetGateway>(internetGateways.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InternetGateway> internetGatewaysCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InternetGateway>(internetGateways.size());
         internetGatewaysCopy.addAll(internetGateways);
         this.internetGateways = internetGatewaysCopy;
     }
@@ -86,7 +86,7 @@ public class DescribeInternetGatewaysResult implements Serializable {
         if (internetGateways == null) {
             this.internetGateways = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<InternetGateway> internetGatewaysCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InternetGateway>(internetGateways.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InternetGateway> internetGatewaysCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InternetGateway>(internetGateways.size());
             internetGatewaysCopy.addAll(internetGateways);
             this.internetGateways = internetGatewaysCopy;
         }

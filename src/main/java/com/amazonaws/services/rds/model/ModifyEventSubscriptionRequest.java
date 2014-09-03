@@ -68,7 +68,7 @@ public class ModifyEventSubscriptionRequest extends AmazonWebServiceRequest impl
      * topic in the Amazon RDS User Guide or by using the
      * <b>DescribeEventCategories</b> action.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> eventCategories;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> eventCategories;
 
     /**
      * A Boolean value; set to <b>true</b> to activate the subscription.
@@ -227,7 +227,7 @@ public class ModifyEventSubscriptionRequest extends AmazonWebServiceRequest impl
      */
     public java.util.List<String> getEventCategories() {
         if (eventCategories == null) {
-              eventCategories = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              eventCategories = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               eventCategories.setAutoConstruct(true);
         }
         return eventCategories;
@@ -253,7 +253,7 @@ public class ModifyEventSubscriptionRequest extends AmazonWebServiceRequest impl
             this.eventCategories = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> eventCategoriesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(eventCategories.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> eventCategoriesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(eventCategories.size());
         eventCategoriesCopy.addAll(eventCategories);
         this.eventCategories = eventCategoriesCopy;
     }
@@ -310,7 +310,7 @@ public class ModifyEventSubscriptionRequest extends AmazonWebServiceRequest impl
         if (eventCategories == null) {
             this.eventCategories = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> eventCategoriesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(eventCategories.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> eventCategoriesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(eventCategories.size());
             eventCategoriesCopy.addAll(eventCategories);
             this.eventCategories = eventCategoriesCopy;
         }

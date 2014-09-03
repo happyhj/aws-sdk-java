@@ -24,7 +24,7 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.params.BasicHttpParams;
 import org.apache.http.params.HttpParams;
 
-import com.amazonaws.client.Region;
+import com.amazonaws.client.regions.Region;
 import com.amazonaws.exception.AmazonClientException;
 
 /**

@@ -45,7 +45,7 @@ public class DescribeInstancesRequest extends AmazonWebServiceRequest implements
     /**
      * One or more instance IDs. <p>Default: Describes all your instances.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> instanceIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> instanceIds;
 
     /**
      * One or more filters. <ul> <li> <p><code>architecture</code> - The
@@ -232,7 +232,7 @@ public class DescribeInstancesRequest extends AmazonWebServiceRequest implements
      * association ID returned when the network interface was associated with
      * an IP address. </li> </ul>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filters;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filters;
 
     /**
      * The token for the next set of items to return. (You received this
@@ -255,7 +255,7 @@ public class DescribeInstancesRequest extends AmazonWebServiceRequest implements
      */
     public java.util.List<String> getInstanceIds() {
         if (instanceIds == null) {
-              instanceIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              instanceIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               instanceIds.setAutoConstruct(true);
         }
         return instanceIds;
@@ -271,7 +271,7 @@ public class DescribeInstancesRequest extends AmazonWebServiceRequest implements
             this.instanceIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> instanceIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(instanceIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> instanceIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(instanceIds.size());
         instanceIdsCopy.addAll(instanceIds);
         this.instanceIds = instanceIdsCopy;
     }
@@ -308,7 +308,7 @@ public class DescribeInstancesRequest extends AmazonWebServiceRequest implements
         if (instanceIds == null) {
             this.instanceIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> instanceIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(instanceIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> instanceIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(instanceIds.size());
             instanceIdsCopy.addAll(instanceIds);
             this.instanceIds = instanceIdsCopy;
         }
@@ -687,7 +687,7 @@ public class DescribeInstancesRequest extends AmazonWebServiceRequest implements
      */
     public java.util.List<Filter> getFilters() {
         if (filters == null) {
-              filters = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>();
+              filters = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>();
               filters.setAutoConstruct(true);
         }
         return filters;
@@ -1067,7 +1067,7 @@ public class DescribeInstancesRequest extends AmazonWebServiceRequest implements
             this.filters = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
         filtersCopy.addAll(filters);
         this.filters = filtersCopy;
     }
@@ -1832,7 +1832,7 @@ public class DescribeInstancesRequest extends AmazonWebServiceRequest implements
         if (filters == null) {
             this.filters = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
             filtersCopy.addAll(filters);
             this.filters = filtersCopy;
         }

@@ -162,7 +162,7 @@ public class StartWorkflowExecutionRequest extends AmazonWebServiceRequest imple
      * <b>Constraints:</b><br/>
      * <b>Length: </b>0 - 5<br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> tagList;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> tagList;
 
     /**
      * Specifies the maximum duration of decision tasks for this workflow
@@ -655,7 +655,7 @@ public class StartWorkflowExecutionRequest extends AmazonWebServiceRequest imple
      */
     public java.util.List<String> getTagList() {
         if (tagList == null) {
-              tagList = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              tagList = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               tagList.setAutoConstruct(true);
         }
         return tagList;
@@ -680,7 +680,7 @@ public class StartWorkflowExecutionRequest extends AmazonWebServiceRequest imple
             this.tagList = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> tagListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(tagList.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> tagListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(tagList.size());
         tagListCopy.addAll(tagList);
         this.tagList = tagListCopy;
     }
@@ -735,7 +735,7 @@ public class StartWorkflowExecutionRequest extends AmazonWebServiceRequest imple
         if (tagList == null) {
             this.tagList = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> tagListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(tagList.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> tagListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(tagList.size());
             tagListCopy.addAll(tagList);
             this.tagList = tagListCopy;
         }

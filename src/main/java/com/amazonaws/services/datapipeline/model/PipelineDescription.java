@@ -46,7 +46,7 @@ public class PipelineDescription implements Serializable {
      * A list of read-only fields that contain metadata about the pipeline:
      * @userId, @accountId, and @pipelineState.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Field> fields;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Field> fields;
 
     /**
      * Description of the pipeline.
@@ -162,7 +162,7 @@ public class PipelineDescription implements Serializable {
      */
     public java.util.List<Field> getFields() {
         if (fields == null) {
-              fields = new com.amazonaws.internal.ListWithAutoConstructFlag<Field>();
+              fields = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Field>();
               fields.setAutoConstruct(true);
         }
         return fields;
@@ -180,7 +180,7 @@ public class PipelineDescription implements Serializable {
             this.fields = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Field> fieldsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Field>(fields.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Field> fieldsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Field>(fields.size());
         fieldsCopy.addAll(fields);
         this.fields = fieldsCopy;
     }
@@ -221,7 +221,7 @@ public class PipelineDescription implements Serializable {
         if (fields == null) {
             this.fields = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Field> fieldsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Field>(fields.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Field> fieldsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Field>(fields.size());
             fieldsCopy.addAll(fields);
             this.fields = fieldsCopy;
         }

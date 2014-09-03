@@ -20,14 +20,13 @@ import java.util.List;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import com.amazonaws.ResponseMetadata;
 import com.amazonaws.authprovider.DefaultAWSCredentialsProviderChain;
 import com.amazonaws.client.ClientConfiguration;
-import com.amazonaws.client.Region;
 import com.amazonaws.client.handler.request.HandlerChainFactory;
 import com.amazonaws.client.handler.response.HttpResponseHandler;
 import com.amazonaws.client.handler.response.JsonErrorResponseHandler;
 import com.amazonaws.client.handler.response.JsonResponseHandler;
+import com.amazonaws.client.regions.Region;
 import com.amazonaws.client.service.AmazonWebServiceClient;
 import com.amazonaws.client.service.ExecutionContext;
 import com.amazonaws.client.signer.AWS4Signer;
@@ -36,8 +35,9 @@ import com.amazonaws.credential.AWSCredentialsProvider;
 import com.amazonaws.credential.StaticCredentialsProvider;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
-import com.amazonaws.metricsutil.AWSRequestMetrics;
-import com.amazonaws.metricsutil.AWSRequestMetrics.Field;
+import com.amazonaws.network.ResponseMetadata;
+import com.amazonaws.network.metrics.util.AWSRequestMetrics;
+import com.amazonaws.network.metrics.util.AWSRequestMetrics.Field;
 import com.amazonaws.network.metricscollector.RequestMetricCollector;
 import com.amazonaws.network.request.AmazonWebServiceRequest;
 import com.amazonaws.network.response.AmazonWebServiceResponse;
@@ -337,10 +337,10 @@ public class AmazonDynamoDBClient extends AmazonWebServiceClient implements Amaz
 
     private static ClientConfiguration adjustClientConfiguration(ClientConfiguration orig) {
         ClientConfiguration config = orig;
-        if (config.getRetryPolicy() == com.amazonaws.retry.PredefinedRetryPolicies.DEFAULT) {
+        if (config.getRetryPolicy() == com.amazonaws.client.retry.PredefinedRetryPolicies.DEFAULT) {
             config = new ClientConfiguration(orig);
             config.setRetryPolicy(
-                com.amazonaws.retry.PredefinedRetryPolicies.DYNAMODB_DEFAULT);
+                com.amazonaws.client.retry.PredefinedRetryPolicies.DYNAMODB_DEFAULT);
         }
         return config;
     }

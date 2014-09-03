@@ -26,7 +26,7 @@ public class UpdateRecordsResult implements Serializable {
     /**
      * A list of records that have been updated.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Record> records;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Record> records;
 
     /**
      * A list of records that have been updated.
@@ -35,7 +35,7 @@ public class UpdateRecordsResult implements Serializable {
      */
     public java.util.List<Record> getRecords() {
         if (records == null) {
-              records = new com.amazonaws.internal.ListWithAutoConstructFlag<Record>();
+              records = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Record>();
               records.setAutoConstruct(true);
         }
         return records;
@@ -51,7 +51,7 @@ public class UpdateRecordsResult implements Serializable {
             this.records = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Record> recordsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Record>(records.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Record> recordsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Record>(records.size());
         recordsCopy.addAll(records);
         this.records = recordsCopy;
     }
@@ -88,7 +88,7 @@ public class UpdateRecordsResult implements Serializable {
         if (records == null) {
             this.records = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Record> recordsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Record>(records.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Record> recordsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Record>(records.size());
             recordsCopy.addAll(records);
             this.records = recordsCopy;
         }

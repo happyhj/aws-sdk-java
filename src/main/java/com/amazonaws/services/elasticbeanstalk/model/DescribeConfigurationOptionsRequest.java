@@ -74,7 +74,7 @@ public class DescribeConfigurationOptionsRequest extends AmazonWebServiceRequest
      * If specified, restricts the descriptions to only the specified
      * options.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<OptionSpecification> options;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionSpecification> options;
 
     /**
      * Default constructor for a new DescribeConfigurationOptionsRequest object.  Callers should use the
@@ -295,7 +295,7 @@ public class DescribeConfigurationOptionsRequest extends AmazonWebServiceRequest
      */
     public java.util.List<OptionSpecification> getOptions() {
         if (options == null) {
-              options = new com.amazonaws.internal.ListWithAutoConstructFlag<OptionSpecification>();
+              options = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionSpecification>();
               options.setAutoConstruct(true);
         }
         return options;
@@ -313,7 +313,7 @@ public class DescribeConfigurationOptionsRequest extends AmazonWebServiceRequest
             this.options = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<OptionSpecification> optionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<OptionSpecification>(options.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionSpecification> optionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionSpecification>(options.size());
         optionsCopy.addAll(options);
         this.options = optionsCopy;
     }
@@ -354,7 +354,7 @@ public class DescribeConfigurationOptionsRequest extends AmazonWebServiceRequest
         if (options == null) {
             this.options = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<OptionSpecification> optionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<OptionSpecification>(options.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionSpecification> optionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionSpecification>(options.size());
             optionsCopy.addAll(options);
             this.options = optionsCopy;
         }

@@ -24,7 +24,7 @@ public class DescribeSecurityGroupsResult implements Serializable {
     /**
      * Information about one or more security groups.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<SecurityGroup> securityGroups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SecurityGroup> securityGroups;
 
     /**
      * Information about one or more security groups.
@@ -33,7 +33,7 @@ public class DescribeSecurityGroupsResult implements Serializable {
      */
     public java.util.List<SecurityGroup> getSecurityGroups() {
         if (securityGroups == null) {
-              securityGroups = new com.amazonaws.internal.ListWithAutoConstructFlag<SecurityGroup>();
+              securityGroups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SecurityGroup>();
               securityGroups.setAutoConstruct(true);
         }
         return securityGroups;
@@ -49,7 +49,7 @@ public class DescribeSecurityGroupsResult implements Serializable {
             this.securityGroups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<SecurityGroup> securityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<SecurityGroup>(securityGroups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SecurityGroup> securityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SecurityGroup>(securityGroups.size());
         securityGroupsCopy.addAll(securityGroups);
         this.securityGroups = securityGroupsCopy;
     }
@@ -86,7 +86,7 @@ public class DescribeSecurityGroupsResult implements Serializable {
         if (securityGroups == null) {
             this.securityGroups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<SecurityGroup> securityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<SecurityGroup>(securityGroups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SecurityGroup> securityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SecurityGroup>(securityGroups.size());
             securityGroupsCopy.addAll(securityGroups);
             this.securityGroups = securityGroupsCopy;
         }

@@ -32,7 +32,7 @@ public class DescribeTrailsRequest extends AmazonWebServiceRequest implements Se
     /**
      * The list of <a>Trail</a> object names.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> trailNameList;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> trailNameList;
 
     /**
      * The list of <a>Trail</a> object names.
@@ -41,7 +41,7 @@ public class DescribeTrailsRequest extends AmazonWebServiceRequest implements Se
      */
     public java.util.List<String> getTrailNameList() {
         if (trailNameList == null) {
-              trailNameList = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              trailNameList = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               trailNameList.setAutoConstruct(true);
         }
         return trailNameList;
@@ -57,7 +57,7 @@ public class DescribeTrailsRequest extends AmazonWebServiceRequest implements Se
             this.trailNameList = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> trailNameListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(trailNameList.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> trailNameListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(trailNameList.size());
         trailNameListCopy.addAll(trailNameList);
         this.trailNameList = trailNameListCopy;
     }
@@ -94,7 +94,7 @@ public class DescribeTrailsRequest extends AmazonWebServiceRequest implements Se
         if (trailNameList == null) {
             this.trailNameList = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> trailNameListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(trailNameList.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> trailNameListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(trailNameList.size());
             trailNameListCopy.addAll(trailNameList);
             this.trailNameList = trailNameListCopy;
         }

@@ -76,7 +76,7 @@ public class IndexField implements Serializable {
      * be applied to the source data when populating the index field. You can
      * configure a maximum of 20 sources for an <code>IndexField</code>.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<SourceAttribute> sourceAttributes;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SourceAttribute> sourceAttributes;
 
     /**
      * The name of a field in the search index. Field names must begin with a
@@ -389,7 +389,7 @@ public class IndexField implements Serializable {
      */
     public java.util.List<SourceAttribute> getSourceAttributes() {
         if (sourceAttributes == null) {
-              sourceAttributes = new com.amazonaws.internal.ListWithAutoConstructFlag<SourceAttribute>();
+              sourceAttributes = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SourceAttribute>();
               sourceAttributes.setAutoConstruct(true);
         }
         return sourceAttributes;
@@ -415,7 +415,7 @@ public class IndexField implements Serializable {
             this.sourceAttributes = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<SourceAttribute> sourceAttributesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<SourceAttribute>(sourceAttributes.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SourceAttribute> sourceAttributesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SourceAttribute>(sourceAttributes.size());
         sourceAttributesCopy.addAll(sourceAttributes);
         this.sourceAttributes = sourceAttributesCopy;
     }
@@ -472,7 +472,7 @@ public class IndexField implements Serializable {
         if (sourceAttributes == null) {
             this.sourceAttributes = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<SourceAttribute> sourceAttributesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<SourceAttribute>(sourceAttributes.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SourceAttribute> sourceAttributesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SourceAttribute>(sourceAttributes.size());
             sourceAttributesCopy.addAll(sourceAttributes);
             this.sourceAttributes = sourceAttributesCopy;
         }

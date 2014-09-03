@@ -44,7 +44,7 @@ public class UpdateInstanceRequest extends AmazonWebServiceRequest implements Se
     /**
      * The instance's layer IDs.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> layerIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> layerIds;
 
     /**
      * The instance type. AWS OpsWorks supports all instance types except
@@ -176,7 +176,7 @@ public class UpdateInstanceRequest extends AmazonWebServiceRequest implements Se
      */
     public java.util.List<String> getLayerIds() {
         if (layerIds == null) {
-              layerIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              layerIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               layerIds.setAutoConstruct(true);
         }
         return layerIds;
@@ -192,7 +192,7 @@ public class UpdateInstanceRequest extends AmazonWebServiceRequest implements Se
             this.layerIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> layerIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(layerIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> layerIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(layerIds.size());
         layerIdsCopy.addAll(layerIds);
         this.layerIds = layerIdsCopy;
     }
@@ -229,7 +229,7 @@ public class UpdateInstanceRequest extends AmazonWebServiceRequest implements Se
         if (layerIds == null) {
             this.layerIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> layerIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(layerIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> layerIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(layerIds.size());
             layerIdsCopy.addAll(layerIds);
             this.layerIds = layerIdsCopy;
         }

@@ -26,8 +26,8 @@ import org.apache.commons.logging.LogFactory;
 import org.apache.http.HttpEntityEnclosingRequest;
 import org.apache.http.client.methods.AbortableHttpRequest;
 
-import com.amazonaws.HttpMethod;
-import com.amazonaws.sdkutil.SdkInputStream;
+import com.amazonaws.client.util.sdk.SdkInputStream;
+import com.amazonaws.network.HttpMethod;
 
 /**
  * Utility class to wrap InputStreams obtained from an HttpClient library's

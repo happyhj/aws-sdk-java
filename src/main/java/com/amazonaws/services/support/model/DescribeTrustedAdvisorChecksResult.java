@@ -27,7 +27,7 @@ public class DescribeTrustedAdvisorChecksResult implements Serializable {
     /**
      * Information about all available Trusted Advisor checks.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<TrustedAdvisorCheckDescription> checks;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TrustedAdvisorCheckDescription> checks;
 
     /**
      * Information about all available Trusted Advisor checks.
@@ -36,7 +36,7 @@ public class DescribeTrustedAdvisorChecksResult implements Serializable {
      */
     public java.util.List<TrustedAdvisorCheckDescription> getChecks() {
         if (checks == null) {
-              checks = new com.amazonaws.internal.ListWithAutoConstructFlag<TrustedAdvisorCheckDescription>();
+              checks = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TrustedAdvisorCheckDescription>();
               checks.setAutoConstruct(true);
         }
         return checks;
@@ -52,7 +52,7 @@ public class DescribeTrustedAdvisorChecksResult implements Serializable {
             this.checks = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<TrustedAdvisorCheckDescription> checksCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<TrustedAdvisorCheckDescription>(checks.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TrustedAdvisorCheckDescription> checksCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TrustedAdvisorCheckDescription>(checks.size());
         checksCopy.addAll(checks);
         this.checks = checksCopy;
     }
@@ -89,7 +89,7 @@ public class DescribeTrustedAdvisorChecksResult implements Serializable {
         if (checks == null) {
             this.checks = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<TrustedAdvisorCheckDescription> checksCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<TrustedAdvisorCheckDescription>(checks.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TrustedAdvisorCheckDescription> checksCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TrustedAdvisorCheckDescription>(checks.size());
             checksCopy.addAll(checks);
             this.checks = checksCopy;
         }

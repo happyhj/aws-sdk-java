@@ -34,7 +34,7 @@ public class DescribeReservedDBInstancesOfferingsResult implements Serializable 
     /**
      * A list of reserved DB instance offerings.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ReservedDBInstancesOffering> reservedDBInstancesOfferings;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedDBInstancesOffering> reservedDBInstancesOfferings;
 
     /**
      * An optional pagination token provided by a previous request. If this
@@ -88,7 +88,7 @@ public class DescribeReservedDBInstancesOfferingsResult implements Serializable 
      */
     public java.util.List<ReservedDBInstancesOffering> getReservedDBInstancesOfferings() {
         if (reservedDBInstancesOfferings == null) {
-              reservedDBInstancesOfferings = new com.amazonaws.internal.ListWithAutoConstructFlag<ReservedDBInstancesOffering>();
+              reservedDBInstancesOfferings = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedDBInstancesOffering>();
               reservedDBInstancesOfferings.setAutoConstruct(true);
         }
         return reservedDBInstancesOfferings;
@@ -104,7 +104,7 @@ public class DescribeReservedDBInstancesOfferingsResult implements Serializable 
             this.reservedDBInstancesOfferings = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ReservedDBInstancesOffering> reservedDBInstancesOfferingsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ReservedDBInstancesOffering>(reservedDBInstancesOfferings.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedDBInstancesOffering> reservedDBInstancesOfferingsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedDBInstancesOffering>(reservedDBInstancesOfferings.size());
         reservedDBInstancesOfferingsCopy.addAll(reservedDBInstancesOfferings);
         this.reservedDBInstancesOfferings = reservedDBInstancesOfferingsCopy;
     }
@@ -141,7 +141,7 @@ public class DescribeReservedDBInstancesOfferingsResult implements Serializable 
         if (reservedDBInstancesOfferings == null) {
             this.reservedDBInstancesOfferings = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ReservedDBInstancesOffering> reservedDBInstancesOfferingsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ReservedDBInstancesOffering>(reservedDBInstancesOfferings.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedDBInstancesOffering> reservedDBInstancesOfferingsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedDBInstancesOffering>(reservedDBInstancesOfferings.size());
             reservedDBInstancesOfferingsCopy.addAll(reservedDBInstancesOfferings);
             this.reservedDBInstancesOfferings = reservedDBInstancesOfferingsCopy;
         }

@@ -31,7 +31,7 @@ public class KeysAndAttributes implements Serializable {
      * <b>Constraints:</b><br/>
      * <b>Length: </b>1 - 100<br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<java.util.Map<String,AttributeValue>> keys;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<java.util.Map<String,AttributeValue>> keys;
 
     /**
      * One or more attributes to retrieve from the table or index. If no
@@ -42,7 +42,7 @@ public class KeysAndAttributes implements Serializable {
      * <b>Constraints:</b><br/>
      * <b>Length: </b>1 - <br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> attributesToGet;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> attributesToGet;
 
     /**
      * The consistency of a read operation. If set to <code>true</code>, then
@@ -80,7 +80,7 @@ public class KeysAndAttributes implements Serializable {
             this.keys = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<java.util.Map<String,AttributeValue>> keysCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<java.util.Map<String,AttributeValue>>(keys.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<java.util.Map<String,AttributeValue>> keysCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<java.util.Map<String,AttributeValue>>(keys.size());
         keysCopy.addAll(keys);
         this.keys = keysCopy;
     }
@@ -127,7 +127,7 @@ public class KeysAndAttributes implements Serializable {
         if (keys == null) {
             this.keys = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<java.util.Map<String,AttributeValue>> keysCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<java.util.Map<String,AttributeValue>>(keys.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<java.util.Map<String,AttributeValue>> keysCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<java.util.Map<String,AttributeValue>>(keys.size());
             keysCopy.addAll(keys);
             this.keys = keysCopy;
         }
@@ -172,7 +172,7 @@ public class KeysAndAttributes implements Serializable {
             this.attributesToGet = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> attributesToGetCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(attributesToGet.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> attributesToGetCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(attributesToGet.size());
         attributesToGetCopy.addAll(attributesToGet);
         this.attributesToGet = attributesToGetCopy;
     }
@@ -227,7 +227,7 @@ public class KeysAndAttributes implements Serializable {
         if (attributesToGet == null) {
             this.attributesToGet = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> attributesToGetCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(attributesToGet.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> attributesToGetCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(attributesToGet.size());
             attributesToGetCopy.addAll(attributesToGet);
             this.attributesToGet = attributesToGetCopy;
         }

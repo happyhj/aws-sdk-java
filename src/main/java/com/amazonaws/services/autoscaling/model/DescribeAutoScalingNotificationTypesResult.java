@@ -50,7 +50,7 @@ public class DescribeAutoScalingNotificationTypesResult implements Serializable 
      * </DescribeAutoScalingNotificationTypesResponse></queryresponse>
      * </examples>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> autoScalingNotificationTypes;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> autoScalingNotificationTypes;
 
     /**
      * Returns a list of all notification types supported by Auto Scaling.
@@ -107,7 +107,7 @@ public class DescribeAutoScalingNotificationTypesResult implements Serializable 
      */
     public java.util.List<String> getAutoScalingNotificationTypes() {
         if (autoScalingNotificationTypes == null) {
-              autoScalingNotificationTypes = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              autoScalingNotificationTypes = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               autoScalingNotificationTypes.setAutoConstruct(true);
         }
         return autoScalingNotificationTypes;
@@ -171,7 +171,7 @@ public class DescribeAutoScalingNotificationTypesResult implements Serializable 
             this.autoScalingNotificationTypes = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> autoScalingNotificationTypesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(autoScalingNotificationTypes.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> autoScalingNotificationTypesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(autoScalingNotificationTypes.size());
         autoScalingNotificationTypesCopy.addAll(autoScalingNotificationTypes);
         this.autoScalingNotificationTypes = autoScalingNotificationTypesCopy;
     }
@@ -304,7 +304,7 @@ public class DescribeAutoScalingNotificationTypesResult implements Serializable 
         if (autoScalingNotificationTypes == null) {
             this.autoScalingNotificationTypes = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> autoScalingNotificationTypesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(autoScalingNotificationTypes.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> autoScalingNotificationTypesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(autoScalingNotificationTypes.size());
             autoScalingNotificationTypesCopy.addAll(autoScalingNotificationTypes);
             this.autoScalingNotificationTypes = autoScalingNotificationTypesCopy;
         }

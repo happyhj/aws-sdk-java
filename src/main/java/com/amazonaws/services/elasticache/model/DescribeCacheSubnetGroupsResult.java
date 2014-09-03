@@ -32,7 +32,7 @@ public class DescribeCacheSubnetGroupsResult implements Serializable {
      * A list of cache subnet groups. Each element in the list contains
      * detailed information about one group.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<CacheSubnetGroup> cacheSubnetGroups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheSubnetGroup> cacheSubnetGroups;
 
     /**
      * Provides an identifier to allow retrieval of paginated results.
@@ -76,7 +76,7 @@ public class DescribeCacheSubnetGroupsResult implements Serializable {
      */
     public java.util.List<CacheSubnetGroup> getCacheSubnetGroups() {
         if (cacheSubnetGroups == null) {
-              cacheSubnetGroups = new com.amazonaws.internal.ListWithAutoConstructFlag<CacheSubnetGroup>();
+              cacheSubnetGroups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheSubnetGroup>();
               cacheSubnetGroups.setAutoConstruct(true);
         }
         return cacheSubnetGroups;
@@ -94,7 +94,7 @@ public class DescribeCacheSubnetGroupsResult implements Serializable {
             this.cacheSubnetGroups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<CacheSubnetGroup> cacheSubnetGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CacheSubnetGroup>(cacheSubnetGroups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheSubnetGroup> cacheSubnetGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheSubnetGroup>(cacheSubnetGroups.size());
         cacheSubnetGroupsCopy.addAll(cacheSubnetGroups);
         this.cacheSubnetGroups = cacheSubnetGroupsCopy;
     }
@@ -135,7 +135,7 @@ public class DescribeCacheSubnetGroupsResult implements Serializable {
         if (cacheSubnetGroups == null) {
             this.cacheSubnetGroups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<CacheSubnetGroup> cacheSubnetGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CacheSubnetGroup>(cacheSubnetGroups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheSubnetGroup> cacheSubnetGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheSubnetGroup>(cacheSubnetGroups.size());
             cacheSubnetGroupsCopy.addAll(cacheSubnetGroups);
             this.cacheSubnetGroups = cacheSubnetGroupsCopy;
         }

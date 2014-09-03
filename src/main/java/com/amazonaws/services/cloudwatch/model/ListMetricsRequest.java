@@ -63,7 +63,7 @@ public class ListMetricsRequest extends AmazonWebServiceRequest implements Seria
      * <b>Constraints:</b><br/>
      * <b>Length: </b>0 - 10<br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<DimensionFilter> dimensions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DimensionFilter> dimensions;
 
     /**
      * The token returned by a previous call to indicate that there is more
@@ -168,7 +168,7 @@ public class ListMetricsRequest extends AmazonWebServiceRequest implements Seria
      */
     public java.util.List<DimensionFilter> getDimensions() {
         if (dimensions == null) {
-              dimensions = new com.amazonaws.internal.ListWithAutoConstructFlag<DimensionFilter>();
+              dimensions = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DimensionFilter>();
               dimensions.setAutoConstruct(true);
         }
         return dimensions;
@@ -187,7 +187,7 @@ public class ListMetricsRequest extends AmazonWebServiceRequest implements Seria
             this.dimensions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<DimensionFilter> dimensionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DimensionFilter>(dimensions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DimensionFilter> dimensionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DimensionFilter>(dimensions.size());
         dimensionsCopy.addAll(dimensions);
         this.dimensions = dimensionsCopy;
     }
@@ -230,7 +230,7 @@ public class ListMetricsRequest extends AmazonWebServiceRequest implements Seria
         if (dimensions == null) {
             this.dimensions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<DimensionFilter> dimensionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DimensionFilter>(dimensions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DimensionFilter> dimensionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DimensionFilter>(dimensions.size());
             dimensionsCopy.addAll(dimensions);
             this.dimensions = dimensionsCopy;
         }

@@ -47,7 +47,7 @@ public class DescribeLoadBalancerPoliciesRequest extends AmazonWebServiceRequest
      * The names of load balancer policies you've created or Elastic Load
      * Balancing sample policy names.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> policyNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> policyNames;
 
     /**
      * The mnemonic name associated with the load balancer. If no name is
@@ -109,7 +109,7 @@ public class DescribeLoadBalancerPoliciesRequest extends AmazonWebServiceRequest
      */
     public java.util.List<String> getPolicyNames() {
         if (policyNames == null) {
-              policyNames = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              policyNames = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               policyNames.setAutoConstruct(true);
         }
         return policyNames;
@@ -127,7 +127,7 @@ public class DescribeLoadBalancerPoliciesRequest extends AmazonWebServiceRequest
             this.policyNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> policyNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(policyNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> policyNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(policyNames.size());
         policyNamesCopy.addAll(policyNames);
         this.policyNames = policyNamesCopy;
     }
@@ -168,7 +168,7 @@ public class DescribeLoadBalancerPoliciesRequest extends AmazonWebServiceRequest
         if (policyNames == null) {
             this.policyNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> policyNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(policyNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> policyNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(policyNames.size());
             policyNamesCopy.addAll(policyNames);
             this.policyNames = policyNamesCopy;
         }

@@ -26,7 +26,7 @@ public class ListDatasetsResult implements Serializable {
     /**
      * A set of datasets.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Dataset> datasets;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Dataset> datasets;
 
     /**
      * Number of datasets returned.
@@ -45,7 +45,7 @@ public class ListDatasetsResult implements Serializable {
      */
     public java.util.List<Dataset> getDatasets() {
         if (datasets == null) {
-              datasets = new com.amazonaws.internal.ListWithAutoConstructFlag<Dataset>();
+              datasets = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Dataset>();
               datasets.setAutoConstruct(true);
         }
         return datasets;
@@ -61,7 +61,7 @@ public class ListDatasetsResult implements Serializable {
             this.datasets = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Dataset> datasetsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Dataset>(datasets.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Dataset> datasetsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Dataset>(datasets.size());
         datasetsCopy.addAll(datasets);
         this.datasets = datasetsCopy;
     }
@@ -98,7 +98,7 @@ public class ListDatasetsResult implements Serializable {
         if (datasets == null) {
             this.datasets = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Dataset> datasetsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Dataset>(datasets.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Dataset> datasetsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Dataset>(datasets.size());
             datasetsCopy.addAll(datasets);
             this.datasets = datasetsCopy;
         }

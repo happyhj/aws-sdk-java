@@ -35,7 +35,7 @@ import com.amazonaws.network.request.AmazonWebServiceRequest;
  */
 public class DescribeCachediSCSIVolumesRequest extends AmazonWebServiceRequest implements Serializable {
 
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> volumeARNs;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> volumeARNs;
 
     /**
      * Returns the value of the VolumeARNs property for this object.
@@ -44,7 +44,7 @@ public class DescribeCachediSCSIVolumesRequest extends AmazonWebServiceRequest i
      */
     public java.util.List<String> getVolumeARNs() {
         if (volumeARNs == null) {
-              volumeARNs = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              volumeARNs = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               volumeARNs.setAutoConstruct(true);
         }
         return volumeARNs;
@@ -60,7 +60,7 @@ public class DescribeCachediSCSIVolumesRequest extends AmazonWebServiceRequest i
             this.volumeARNs = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> volumeARNsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(volumeARNs.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> volumeARNsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(volumeARNs.size());
         volumeARNsCopy.addAll(volumeARNs);
         this.volumeARNs = volumeARNsCopy;
     }
@@ -97,7 +97,7 @@ public class DescribeCachediSCSIVolumesRequest extends AmazonWebServiceRequest i
         if (volumeARNs == null) {
             this.volumeARNs = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> volumeARNsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(volumeARNs.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> volumeARNsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(volumeARNs.size());
             volumeARNsCopy.addAll(volumeARNs);
             this.volumeARNs = volumeARNsCopy;
         }

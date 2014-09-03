@@ -26,7 +26,7 @@ public class DescribePoliciesResult implements Serializable {
     /**
      * A list of scaling policies.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ScalingPolicy> scalingPolicies;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ScalingPolicy> scalingPolicies;
 
     /**
      * A string that marks the start of the next batch of returned results.
@@ -43,7 +43,7 @@ public class DescribePoliciesResult implements Serializable {
      */
     public java.util.List<ScalingPolicy> getScalingPolicies() {
         if (scalingPolicies == null) {
-              scalingPolicies = new com.amazonaws.internal.ListWithAutoConstructFlag<ScalingPolicy>();
+              scalingPolicies = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ScalingPolicy>();
               scalingPolicies.setAutoConstruct(true);
         }
         return scalingPolicies;
@@ -59,7 +59,7 @@ public class DescribePoliciesResult implements Serializable {
             this.scalingPolicies = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ScalingPolicy> scalingPoliciesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ScalingPolicy>(scalingPolicies.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ScalingPolicy> scalingPoliciesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ScalingPolicy>(scalingPolicies.size());
         scalingPoliciesCopy.addAll(scalingPolicies);
         this.scalingPolicies = scalingPoliciesCopy;
     }
@@ -96,7 +96,7 @@ public class DescribePoliciesResult implements Serializable {
         if (scalingPolicies == null) {
             this.scalingPolicies = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ScalingPolicy> scalingPoliciesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ScalingPolicy>(scalingPolicies.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ScalingPolicy> scalingPoliciesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ScalingPolicy>(scalingPolicies.size());
             scalingPoliciesCopy.addAll(scalingPolicies);
             this.scalingPolicies = scalingPoliciesCopy;
         }

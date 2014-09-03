@@ -38,7 +38,7 @@ public class CacheParameterGroupStatus implements Serializable {
      * changes to be applied. A node ID is a numeric identifier (0001, 0002,
      * etc.).
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> cacheNodeIdsToReboot;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> cacheNodeIdsToReboot;
 
     /**
      * Default constructor for a new CacheParameterGroupStatus object.  Callers should use the
@@ -123,7 +123,7 @@ public class CacheParameterGroupStatus implements Serializable {
      */
     public java.util.List<String> getCacheNodeIdsToReboot() {
         if (cacheNodeIdsToReboot == null) {
-              cacheNodeIdsToReboot = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              cacheNodeIdsToReboot = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               cacheNodeIdsToReboot.setAutoConstruct(true);
         }
         return cacheNodeIdsToReboot;
@@ -143,7 +143,7 @@ public class CacheParameterGroupStatus implements Serializable {
             this.cacheNodeIdsToReboot = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> cacheNodeIdsToRebootCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(cacheNodeIdsToReboot.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> cacheNodeIdsToRebootCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(cacheNodeIdsToReboot.size());
         cacheNodeIdsToRebootCopy.addAll(cacheNodeIdsToReboot);
         this.cacheNodeIdsToReboot = cacheNodeIdsToRebootCopy;
     }
@@ -188,7 +188,7 @@ public class CacheParameterGroupStatus implements Serializable {
         if (cacheNodeIdsToReboot == null) {
             this.cacheNodeIdsToReboot = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> cacheNodeIdsToRebootCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(cacheNodeIdsToReboot.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> cacheNodeIdsToRebootCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(cacheNodeIdsToReboot.size());
             cacheNodeIdsToRebootCopy.addAll(cacheNodeIdsToReboot);
             this.cacheNodeIdsToReboot = cacheNodeIdsToRebootCopy;
         }

@@ -14,7 +14,7 @@
  */
 package com.amazonaws.services.s3.transfer.internal;
 
-import static com.amazonaws.event.SDKProgressPublisher.publishProgress;
+import static com.amazonaws.network.event.SDKProgressPublisher.publishProgress;
 
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -29,8 +29,8 @@ import java.util.concurrent.Future;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import com.amazonaws.event.ProgressEventType;
-import com.amazonaws.event.ProgressListenerChain;
+import com.amazonaws.network.event.ProgressEventType;
+import com.amazonaws.network.event.ProgressListenerChain;
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.AmazonS3Encryption;
 import com.amazonaws.services.s3.model.AbortMultipartUploadRequest;

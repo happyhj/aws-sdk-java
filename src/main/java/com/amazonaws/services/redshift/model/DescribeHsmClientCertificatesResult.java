@@ -37,7 +37,7 @@ public class DescribeHsmClientCertificatesResult implements Serializable {
      * by Amazon Redshift clusters to store and retrieve database encryption
      * keys in an HSM.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<HsmClientCertificate> hsmClientCertificates;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<HsmClientCertificate> hsmClientCertificates;
 
     /**
      * A value that indicates the starting point for the next set of response
@@ -113,7 +113,7 @@ public class DescribeHsmClientCertificatesResult implements Serializable {
      */
     public java.util.List<HsmClientCertificate> getHsmClientCertificates() {
         if (hsmClientCertificates == null) {
-              hsmClientCertificates = new com.amazonaws.internal.ListWithAutoConstructFlag<HsmClientCertificate>();
+              hsmClientCertificates = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<HsmClientCertificate>();
               hsmClientCertificates.setAutoConstruct(true);
         }
         return hsmClientCertificates;
@@ -133,7 +133,7 @@ public class DescribeHsmClientCertificatesResult implements Serializable {
             this.hsmClientCertificates = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<HsmClientCertificate> hsmClientCertificatesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<HsmClientCertificate>(hsmClientCertificates.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<HsmClientCertificate> hsmClientCertificatesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<HsmClientCertificate>(hsmClientCertificates.size());
         hsmClientCertificatesCopy.addAll(hsmClientCertificates);
         this.hsmClientCertificates = hsmClientCertificatesCopy;
     }
@@ -178,7 +178,7 @@ public class DescribeHsmClientCertificatesResult implements Serializable {
         if (hsmClientCertificates == null) {
             this.hsmClientCertificates = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<HsmClientCertificate> hsmClientCertificatesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<HsmClientCertificate>(hsmClientCertificates.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<HsmClientCertificate> hsmClientCertificatesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<HsmClientCertificate>(hsmClientCertificates.size());
             hsmClientCertificatesCopy.addAll(hsmClientCertificates);
             this.hsmClientCertificates = hsmClientCertificatesCopy;
         }

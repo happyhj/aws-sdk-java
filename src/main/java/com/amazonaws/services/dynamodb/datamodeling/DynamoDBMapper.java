@@ -55,7 +55,7 @@ import com.amazonaws.services.dynamodb.model.ScanRequest;
 import com.amazonaws.services.dynamodb.model.ScanResult;
 import com.amazonaws.services.dynamodb.model.UpdateItemRequest;
 import com.amazonaws.services.dynamodb.model.WriteRequest;
-import com.amazonaws.util.VersionInfoUtils;
+import com.amazonaws.utility.VersionInfoUtils;
 
 /**
  * Object mapper for domain-object interaction with DynamoDB.

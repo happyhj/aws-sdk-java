@@ -59,7 +59,7 @@ public class Image implements Serializable {
     /**
      * Any product codes associated with the AMI.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ProductCode> productCodes;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ProductCode> productCodes;
 
     /**
      * The architecture of the image.
@@ -141,7 +141,7 @@ public class Image implements Serializable {
     /**
      * Any block device mapping entries.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<BlockDeviceMapping> blockDeviceMappings;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BlockDeviceMapping> blockDeviceMappings;
 
     /**
      * The type of virtualization of the AMI.
@@ -154,7 +154,7 @@ public class Image implements Serializable {
     /**
      * Any tags assigned to the image.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tags;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tags;
 
     /**
      * The hypervisor type of the image.
@@ -438,7 +438,7 @@ public class Image implements Serializable {
      */
     public java.util.List<ProductCode> getProductCodes() {
         if (productCodes == null) {
-              productCodes = new com.amazonaws.internal.ListWithAutoConstructFlag<ProductCode>();
+              productCodes = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ProductCode>();
               productCodes.setAutoConstruct(true);
         }
         return productCodes;
@@ -454,7 +454,7 @@ public class Image implements Serializable {
             this.productCodes = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ProductCode> productCodesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ProductCode>(productCodes.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ProductCode> productCodesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ProductCode>(productCodes.size());
         productCodesCopy.addAll(productCodes);
         this.productCodes = productCodesCopy;
     }
@@ -491,7 +491,7 @@ public class Image implements Serializable {
         if (productCodes == null) {
             this.productCodes = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ProductCode> productCodesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ProductCode>(productCodes.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ProductCode> productCodesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ProductCode>(productCodes.size());
             productCodesCopy.addAll(productCodes);
             this.productCodes = productCodesCopy;
         }
@@ -1132,7 +1132,7 @@ public class Image implements Serializable {
      */
     public java.util.List<BlockDeviceMapping> getBlockDeviceMappings() {
         if (blockDeviceMappings == null) {
-              blockDeviceMappings = new com.amazonaws.internal.ListWithAutoConstructFlag<BlockDeviceMapping>();
+              blockDeviceMappings = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BlockDeviceMapping>();
               blockDeviceMappings.setAutoConstruct(true);
         }
         return blockDeviceMappings;
@@ -1148,7 +1148,7 @@ public class Image implements Serializable {
             this.blockDeviceMappings = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<BlockDeviceMapping> blockDeviceMappingsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<BlockDeviceMapping>(blockDeviceMappings.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BlockDeviceMapping> blockDeviceMappingsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BlockDeviceMapping>(blockDeviceMappings.size());
         blockDeviceMappingsCopy.addAll(blockDeviceMappings);
         this.blockDeviceMappings = blockDeviceMappingsCopy;
     }
@@ -1185,7 +1185,7 @@ public class Image implements Serializable {
         if (blockDeviceMappings == null) {
             this.blockDeviceMappings = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<BlockDeviceMapping> blockDeviceMappingsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<BlockDeviceMapping>(blockDeviceMappings.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BlockDeviceMapping> blockDeviceMappingsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BlockDeviceMapping>(blockDeviceMappings.size());
             blockDeviceMappingsCopy.addAll(blockDeviceMappings);
             this.blockDeviceMappings = blockDeviceMappingsCopy;
         }
@@ -1282,7 +1282,7 @@ public class Image implements Serializable {
      */
     public java.util.List<Tag> getTags() {
         if (tags == null) {
-              tags = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>();
+              tags = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>();
               tags.setAutoConstruct(true);
         }
         return tags;
@@ -1298,7 +1298,7 @@ public class Image implements Serializable {
             this.tags = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tags.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tags.size());
         tagsCopy.addAll(tags);
         this.tags = tagsCopy;
     }
@@ -1335,7 +1335,7 @@ public class Image implements Serializable {
         if (tags == null) {
             this.tags = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tags.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tags.size());
             tagsCopy.addAll(tags);
             this.tags = tagsCopy;
         }

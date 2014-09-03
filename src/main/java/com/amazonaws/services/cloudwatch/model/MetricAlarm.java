@@ -69,7 +69,7 @@ public class MetricAlarm implements Serializable {
      * <b>Constraints:</b><br/>
      * <b>Length: </b>0 - 5<br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> oKActions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> oKActions;
 
     /**
      * The list of actions to execute when this alarm transitions into an
@@ -81,7 +81,7 @@ public class MetricAlarm implements Serializable {
      * <b>Constraints:</b><br/>
      * <b>Length: </b>0 - 5<br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> alarmActions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> alarmActions;
 
     /**
      * The list of actions to execute when this alarm transitions into an
@@ -93,7 +93,7 @@ public class MetricAlarm implements Serializable {
      * <b>Constraints:</b><br/>
      * <b>Length: </b>0 - 5<br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> insufficientDataActions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> insufficientDataActions;
 
     /**
      * The state value for the alarm.
@@ -155,7 +155,7 @@ public class MetricAlarm implements Serializable {
      * <b>Constraints:</b><br/>
      * <b>Length: </b>0 - 10<br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Dimension> dimensions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Dimension> dimensions;
 
     /**
      * The period in seconds over which the statistic is applied.
@@ -424,7 +424,7 @@ public class MetricAlarm implements Serializable {
      */
     public java.util.List<String> getOKActions() {
         if (oKActions == null) {
-              oKActions = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              oKActions = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               oKActions.setAutoConstruct(true);
         }
         return oKActions;
@@ -451,7 +451,7 @@ public class MetricAlarm implements Serializable {
             this.oKActions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> oKActionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(oKActions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> oKActionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(oKActions.size());
         oKActionsCopy.addAll(oKActions);
         this.oKActions = oKActionsCopy;
     }
@@ -510,7 +510,7 @@ public class MetricAlarm implements Serializable {
         if (oKActions == null) {
             this.oKActions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> oKActionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(oKActions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> oKActionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(oKActions.size());
             oKActionsCopy.addAll(oKActions);
             this.oKActions = oKActionsCopy;
         }
@@ -536,7 +536,7 @@ public class MetricAlarm implements Serializable {
      */
     public java.util.List<String> getAlarmActions() {
         if (alarmActions == null) {
-              alarmActions = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              alarmActions = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               alarmActions.setAutoConstruct(true);
         }
         return alarmActions;
@@ -563,7 +563,7 @@ public class MetricAlarm implements Serializable {
             this.alarmActions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> alarmActionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(alarmActions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> alarmActionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(alarmActions.size());
         alarmActionsCopy.addAll(alarmActions);
         this.alarmActions = alarmActionsCopy;
     }
@@ -622,7 +622,7 @@ public class MetricAlarm implements Serializable {
         if (alarmActions == null) {
             this.alarmActions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> alarmActionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(alarmActions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> alarmActionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(alarmActions.size());
             alarmActionsCopy.addAll(alarmActions);
             this.alarmActions = alarmActionsCopy;
         }
@@ -648,7 +648,7 @@ public class MetricAlarm implements Serializable {
      */
     public java.util.List<String> getInsufficientDataActions() {
         if (insufficientDataActions == null) {
-              insufficientDataActions = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              insufficientDataActions = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               insufficientDataActions.setAutoConstruct(true);
         }
         return insufficientDataActions;
@@ -675,7 +675,7 @@ public class MetricAlarm implements Serializable {
             this.insufficientDataActions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> insufficientDataActionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(insufficientDataActions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> insufficientDataActionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(insufficientDataActions.size());
         insufficientDataActionsCopy.addAll(insufficientDataActions);
         this.insufficientDataActions = insufficientDataActionsCopy;
     }
@@ -734,7 +734,7 @@ public class MetricAlarm implements Serializable {
         if (insufficientDataActions == null) {
             this.insufficientDataActions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> insufficientDataActionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(insufficientDataActions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> insufficientDataActionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(insufficientDataActions.size());
             insufficientDataActionsCopy.addAll(insufficientDataActions);
             this.insufficientDataActions = insufficientDataActionsCopy;
         }
@@ -1120,7 +1120,7 @@ public class MetricAlarm implements Serializable {
      */
     public java.util.List<Dimension> getDimensions() {
         if (dimensions == null) {
-              dimensions = new com.amazonaws.internal.ListWithAutoConstructFlag<Dimension>();
+              dimensions = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Dimension>();
               dimensions.setAutoConstruct(true);
         }
         return dimensions;
@@ -1139,7 +1139,7 @@ public class MetricAlarm implements Serializable {
             this.dimensions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Dimension> dimensionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Dimension>(dimensions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Dimension> dimensionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Dimension>(dimensions.size());
         dimensionsCopy.addAll(dimensions);
         this.dimensions = dimensionsCopy;
     }
@@ -1182,7 +1182,7 @@ public class MetricAlarm implements Serializable {
         if (dimensions == null) {
             this.dimensions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Dimension> dimensionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Dimension>(dimensions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Dimension> dimensionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Dimension>(dimensions.size());
             dimensionsCopy.addAll(dimensions);
             this.dimensions = dimensionsCopy;
         }

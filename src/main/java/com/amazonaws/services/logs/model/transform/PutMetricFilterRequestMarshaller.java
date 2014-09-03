@@ -20,13 +20,13 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.logs.model.MetricTransformation;
 import com.amazonaws.services.logs.model.PutMetricFilterRequest;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Put Metric Filter Request Marshaller
@@ -61,7 +61,7 @@ public class PutMetricFilterRequestMarshaller implements Marshaller<Request<PutM
                 jsonWriter.key("filterPattern").value(putMetricFilterRequest.getFilterPattern());
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<MetricTransformation> metricTransformationsList = (com.amazonaws.internal.ListWithAutoConstructFlag<MetricTransformation>)(putMetricFilterRequest.getMetricTransformations());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricTransformation> metricTransformationsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricTransformation>)(putMetricFilterRequest.getMetricTransformations());
             if (metricTransformationsList != null && !(metricTransformationsList.isAutoConstruct() && metricTransformationsList.isEmpty())) {
 
                 jsonWriter.key("metricTransformations");

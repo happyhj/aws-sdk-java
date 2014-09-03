@@ -34,7 +34,7 @@ public class DescribeReservedInstancesModificationsRequest extends AmazonWebServ
     /**
      * IDs for the submitted modification request.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> reservedInstancesModificationIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> reservedInstancesModificationIds;
 
     /**
      * The token for the next page of data.
@@ -70,7 +70,7 @@ public class DescribeReservedInstancesModificationsRequest extends AmazonWebServ
      * reason for the status. </li> <li> <p><code>update-date</code> - The
      * time when the modification request was last updated. </li> </ul>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filters;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filters;
 
     /**
      * IDs for the submitted modification request.
@@ -79,7 +79,7 @@ public class DescribeReservedInstancesModificationsRequest extends AmazonWebServ
      */
     public java.util.List<String> getReservedInstancesModificationIds() {
         if (reservedInstancesModificationIds == null) {
-              reservedInstancesModificationIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              reservedInstancesModificationIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               reservedInstancesModificationIds.setAutoConstruct(true);
         }
         return reservedInstancesModificationIds;
@@ -95,7 +95,7 @@ public class DescribeReservedInstancesModificationsRequest extends AmazonWebServ
             this.reservedInstancesModificationIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> reservedInstancesModificationIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(reservedInstancesModificationIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> reservedInstancesModificationIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(reservedInstancesModificationIds.size());
         reservedInstancesModificationIdsCopy.addAll(reservedInstancesModificationIds);
         this.reservedInstancesModificationIds = reservedInstancesModificationIdsCopy;
     }
@@ -132,7 +132,7 @@ public class DescribeReservedInstancesModificationsRequest extends AmazonWebServ
         if (reservedInstancesModificationIds == null) {
             this.reservedInstancesModificationIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> reservedInstancesModificationIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(reservedInstancesModificationIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> reservedInstancesModificationIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(reservedInstancesModificationIds.size());
             reservedInstancesModificationIdsCopy.addAll(reservedInstancesModificationIds);
             this.reservedInstancesModificationIds = reservedInstancesModificationIdsCopy;
         }
@@ -232,7 +232,7 @@ public class DescribeReservedInstancesModificationsRequest extends AmazonWebServ
      */
     public java.util.List<Filter> getFilters() {
         if (filters == null) {
-              filters = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>();
+              filters = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>();
               filters.setAutoConstruct(true);
         }
         return filters;
@@ -300,7 +300,7 @@ public class DescribeReservedInstancesModificationsRequest extends AmazonWebServ
             this.filters = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
         filtersCopy.addAll(filters);
         this.filters = filtersCopy;
     }
@@ -441,7 +441,7 @@ public class DescribeReservedInstancesModificationsRequest extends AmazonWebServ
         if (filters == null) {
             this.filters = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
             filtersCopy.addAll(filters);
             this.filters = filtersCopy;
         }

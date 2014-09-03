@@ -26,7 +26,7 @@ public class ListPipelinesResult implements Serializable {
     /**
      * An array of <code>Pipeline</code> objects.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Pipeline> pipelines;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Pipeline> pipelines;
 
     /**
      * A value that you use to access the second and subsequent pages of
@@ -46,7 +46,7 @@ public class ListPipelinesResult implements Serializable {
      */
     public java.util.List<Pipeline> getPipelines() {
         if (pipelines == null) {
-              pipelines = new com.amazonaws.internal.ListWithAutoConstructFlag<Pipeline>();
+              pipelines = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Pipeline>();
               pipelines.setAutoConstruct(true);
         }
         return pipelines;
@@ -62,7 +62,7 @@ public class ListPipelinesResult implements Serializable {
             this.pipelines = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Pipeline> pipelinesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Pipeline>(pipelines.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Pipeline> pipelinesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Pipeline>(pipelines.size());
         pipelinesCopy.addAll(pipelines);
         this.pipelines = pipelinesCopy;
     }
@@ -99,7 +99,7 @@ public class ListPipelinesResult implements Serializable {
         if (pipelines == null) {
             this.pipelines = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Pipeline> pipelinesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Pipeline>(pipelines.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Pipeline> pipelinesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Pipeline>(pipelines.size());
             pipelinesCopy.addAll(pipelines);
             this.pipelines = pipelinesCopy;
         }

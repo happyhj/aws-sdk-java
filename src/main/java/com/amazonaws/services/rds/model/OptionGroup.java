@@ -46,7 +46,7 @@ public class OptionGroup implements Serializable {
     /**
      * Indicates what options are available in the option group.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Option> options;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Option> options;
 
     /**
      * Indicates whether this option group can be applied to both VPC and
@@ -204,7 +204,7 @@ public class OptionGroup implements Serializable {
      */
     public java.util.List<Option> getOptions() {
         if (options == null) {
-              options = new com.amazonaws.internal.ListWithAutoConstructFlag<Option>();
+              options = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Option>();
               options.setAutoConstruct(true);
         }
         return options;
@@ -220,7 +220,7 @@ public class OptionGroup implements Serializable {
             this.options = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Option> optionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Option>(options.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Option> optionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Option>(options.size());
         optionsCopy.addAll(options);
         this.options = optionsCopy;
     }
@@ -257,7 +257,7 @@ public class OptionGroup implements Serializable {
         if (options == null) {
             this.options = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Option> optionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Option>(options.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Option> optionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Option>(options.size());
             optionsCopy.addAll(options);
             this.options = optionsCopy;
         }

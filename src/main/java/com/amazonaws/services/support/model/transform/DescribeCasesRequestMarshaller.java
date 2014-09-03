@@ -20,12 +20,12 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.support.model.DescribeCasesRequest;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Describe Cases Request Marshaller
@@ -50,7 +50,7 @@ public class DescribeCasesRequestMarshaller implements Marshaller<Request<Descri
 
           jsonWriter.object();
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> caseIdListList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(describeCasesRequest.getCaseIdList());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> caseIdListList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(describeCasesRequest.getCaseIdList());
             if (caseIdListList != null && !(caseIdListList.isAutoConstruct() && caseIdListList.isEmpty())) {
 
                 jsonWriter.key("caseIdList");

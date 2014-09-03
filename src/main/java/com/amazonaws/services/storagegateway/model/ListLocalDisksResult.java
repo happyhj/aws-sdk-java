@@ -31,7 +31,7 @@ public class ListLocalDisksResult implements Serializable {
      */
     private String gatewayARN;
 
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Disk> disks;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Disk> disks;
 
     /**
      * The Amazon Resource Name (ARN) of the gateway. Use the
@@ -94,7 +94,7 @@ public class ListLocalDisksResult implements Serializable {
      */
     public java.util.List<Disk> getDisks() {
         if (disks == null) {
-              disks = new com.amazonaws.internal.ListWithAutoConstructFlag<Disk>();
+              disks = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Disk>();
               disks.setAutoConstruct(true);
         }
         return disks;
@@ -110,7 +110,7 @@ public class ListLocalDisksResult implements Serializable {
             this.disks = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Disk> disksCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Disk>(disks.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Disk> disksCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Disk>(disks.size());
         disksCopy.addAll(disks);
         this.disks = disksCopy;
     }
@@ -147,7 +147,7 @@ public class ListLocalDisksResult implements Serializable {
         if (disks == null) {
             this.disks = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Disk> disksCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Disk>(disks.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Disk> disksCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Disk>(disks.size());
             disksCopy.addAll(disks);
             this.disks = disksCopy;
         }

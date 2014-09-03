@@ -24,7 +24,7 @@ public class DescribeInstancesResult implements Serializable {
     /**
      * One or more reservations.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Reservation> reservations;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Reservation> reservations;
 
     /**
      * The token to use when requesting the next set of items. If there are
@@ -39,7 +39,7 @@ public class DescribeInstancesResult implements Serializable {
      */
     public java.util.List<Reservation> getReservations() {
         if (reservations == null) {
-              reservations = new com.amazonaws.internal.ListWithAutoConstructFlag<Reservation>();
+              reservations = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Reservation>();
               reservations.setAutoConstruct(true);
         }
         return reservations;
@@ -55,7 +55,7 @@ public class DescribeInstancesResult implements Serializable {
             this.reservations = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Reservation> reservationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Reservation>(reservations.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Reservation> reservationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Reservation>(reservations.size());
         reservationsCopy.addAll(reservations);
         this.reservations = reservationsCopy;
     }
@@ -92,7 +92,7 @@ public class DescribeInstancesResult implements Serializable {
         if (reservations == null) {
             this.reservations = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Reservation> reservationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Reservation>(reservations.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Reservation> reservationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Reservation>(reservations.size());
             reservationsCopy.addAll(reservations);
             this.reservations = reservationsCopy;
         }

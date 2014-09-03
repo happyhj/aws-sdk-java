@@ -48,7 +48,7 @@ public class ListStacksRequest extends AmazonWebServiceRequest implements Serial
      * complete list of stack status codes, see the <code>StackStatus</code>
      * parameter of the <a>Stack</a> data type.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> stackStatusFilters;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> stackStatusFilters;
 
     /**
      * String that identifies the start of the next list of stacks, if there
@@ -111,7 +111,7 @@ public class ListStacksRequest extends AmazonWebServiceRequest implements Serial
      */
     public java.util.List<String> getStackStatusFilters() {
         if (stackStatusFilters == null) {
-              stackStatusFilters = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              stackStatusFilters = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               stackStatusFilters.setAutoConstruct(true);
         }
         return stackStatusFilters;
@@ -133,7 +133,7 @@ public class ListStacksRequest extends AmazonWebServiceRequest implements Serial
             this.stackStatusFilters = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> stackStatusFiltersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(stackStatusFilters.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> stackStatusFiltersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(stackStatusFilters.size());
         stackStatusFiltersCopy.addAll(stackStatusFilters);
         this.stackStatusFilters = stackStatusFiltersCopy;
     }
@@ -182,7 +182,7 @@ public class ListStacksRequest extends AmazonWebServiceRequest implements Serial
         if (stackStatusFilters == null) {
             this.stackStatusFilters = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> stackStatusFiltersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(stackStatusFilters.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> stackStatusFiltersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(stackStatusFilters.size());
             stackStatusFiltersCopy.addAll(stackStatusFilters);
             this.stackStatusFilters = stackStatusFiltersCopy;
         }

@@ -27,7 +27,7 @@ public class GetCheckerIpRangesResult implements Serializable {
      * A complex type that contains sorted list of IP ranges in CIDR format
      * for Amazon Route 53 health checkers.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> checkerIpRanges;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> checkerIpRanges;
 
     /**
      * A complex type that contains sorted list of IP ranges in CIDR format
@@ -38,7 +38,7 @@ public class GetCheckerIpRangesResult implements Serializable {
      */
     public java.util.List<String> getCheckerIpRanges() {
         if (checkerIpRanges == null) {
-              checkerIpRanges = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              checkerIpRanges = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               checkerIpRanges.setAutoConstruct(true);
         }
         return checkerIpRanges;
@@ -56,7 +56,7 @@ public class GetCheckerIpRangesResult implements Serializable {
             this.checkerIpRanges = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> checkerIpRangesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(checkerIpRanges.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> checkerIpRangesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(checkerIpRanges.size());
         checkerIpRangesCopy.addAll(checkerIpRanges);
         this.checkerIpRanges = checkerIpRangesCopy;
     }
@@ -97,7 +97,7 @@ public class GetCheckerIpRangesResult implements Serializable {
         if (checkerIpRanges == null) {
             this.checkerIpRanges = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> checkerIpRangesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(checkerIpRanges.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> checkerIpRangesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(checkerIpRanges.size());
             checkerIpRangesCopy.addAll(checkerIpRanges);
             this.checkerIpRanges = checkerIpRangesCopy;
         }

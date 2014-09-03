@@ -27,7 +27,7 @@ public class ListAccessKeysResult implements Serializable {
     /**
      * A list of access key metadata.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<AccessKeyMetadata> accessKeyMetadata;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AccessKeyMetadata> accessKeyMetadata;
 
     /**
      * A flag that indicates whether there are more keys to list. If your
@@ -55,7 +55,7 @@ public class ListAccessKeysResult implements Serializable {
      */
     public java.util.List<AccessKeyMetadata> getAccessKeyMetadata() {
         if (accessKeyMetadata == null) {
-              accessKeyMetadata = new com.amazonaws.internal.ListWithAutoConstructFlag<AccessKeyMetadata>();
+              accessKeyMetadata = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AccessKeyMetadata>();
               accessKeyMetadata.setAutoConstruct(true);
         }
         return accessKeyMetadata;
@@ -71,7 +71,7 @@ public class ListAccessKeysResult implements Serializable {
             this.accessKeyMetadata = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<AccessKeyMetadata> accessKeyMetadataCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<AccessKeyMetadata>(accessKeyMetadata.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AccessKeyMetadata> accessKeyMetadataCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AccessKeyMetadata>(accessKeyMetadata.size());
         accessKeyMetadataCopy.addAll(accessKeyMetadata);
         this.accessKeyMetadata = accessKeyMetadataCopy;
     }
@@ -108,7 +108,7 @@ public class ListAccessKeysResult implements Serializable {
         if (accessKeyMetadata == null) {
             this.accessKeyMetadata = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<AccessKeyMetadata> accessKeyMetadataCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<AccessKeyMetadata>(accessKeyMetadata.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AccessKeyMetadata> accessKeyMetadataCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AccessKeyMetadata>(accessKeyMetadata.size());
             accessKeyMetadataCopy.addAll(accessKeyMetadata);
             this.accessKeyMetadata = accessKeyMetadataCopy;
         }

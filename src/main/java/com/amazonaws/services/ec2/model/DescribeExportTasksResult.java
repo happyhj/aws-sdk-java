@@ -24,7 +24,7 @@ public class DescribeExportTasksResult implements Serializable {
     /**
      * 
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ExportTask> exportTasks;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ExportTask> exportTasks;
 
     /**
      * 
@@ -33,7 +33,7 @@ public class DescribeExportTasksResult implements Serializable {
      */
     public java.util.List<ExportTask> getExportTasks() {
         if (exportTasks == null) {
-              exportTasks = new com.amazonaws.internal.ListWithAutoConstructFlag<ExportTask>();
+              exportTasks = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ExportTask>();
               exportTasks.setAutoConstruct(true);
         }
         return exportTasks;
@@ -49,7 +49,7 @@ public class DescribeExportTasksResult implements Serializable {
             this.exportTasks = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ExportTask> exportTasksCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ExportTask>(exportTasks.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ExportTask> exportTasksCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ExportTask>(exportTasks.size());
         exportTasksCopy.addAll(exportTasks);
         this.exportTasks = exportTasksCopy;
     }
@@ -86,7 +86,7 @@ public class DescribeExportTasksResult implements Serializable {
         if (exportTasks == null) {
             this.exportTasks = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ExportTask> exportTasksCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ExportTask>(exportTasks.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ExportTask> exportTasksCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ExportTask>(exportTasks.size());
             exportTasksCopy.addAll(exportTasks);
             this.exportTasks = exportTasksCopy;
         }

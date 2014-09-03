@@ -31,12 +31,12 @@ public class DhcpOptions implements Serializable {
     /**
      * One or more DHCP options in the set.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<DhcpConfiguration> dhcpConfigurations;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DhcpConfiguration> dhcpConfigurations;
 
     /**
      * Any tags assigned to the DHCP options set.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tags;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tags;
 
     /**
      * The ID of the set of DHCP options.
@@ -78,7 +78,7 @@ public class DhcpOptions implements Serializable {
      */
     public java.util.List<DhcpConfiguration> getDhcpConfigurations() {
         if (dhcpConfigurations == null) {
-              dhcpConfigurations = new com.amazonaws.internal.ListWithAutoConstructFlag<DhcpConfiguration>();
+              dhcpConfigurations = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DhcpConfiguration>();
               dhcpConfigurations.setAutoConstruct(true);
         }
         return dhcpConfigurations;
@@ -94,7 +94,7 @@ public class DhcpOptions implements Serializable {
             this.dhcpConfigurations = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<DhcpConfiguration> dhcpConfigurationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DhcpConfiguration>(dhcpConfigurations.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DhcpConfiguration> dhcpConfigurationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DhcpConfiguration>(dhcpConfigurations.size());
         dhcpConfigurationsCopy.addAll(dhcpConfigurations);
         this.dhcpConfigurations = dhcpConfigurationsCopy;
     }
@@ -131,7 +131,7 @@ public class DhcpOptions implements Serializable {
         if (dhcpConfigurations == null) {
             this.dhcpConfigurations = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<DhcpConfiguration> dhcpConfigurationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DhcpConfiguration>(dhcpConfigurations.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DhcpConfiguration> dhcpConfigurationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DhcpConfiguration>(dhcpConfigurations.size());
             dhcpConfigurationsCopy.addAll(dhcpConfigurations);
             this.dhcpConfigurations = dhcpConfigurationsCopy;
         }
@@ -146,7 +146,7 @@ public class DhcpOptions implements Serializable {
      */
     public java.util.List<Tag> getTags() {
         if (tags == null) {
-              tags = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>();
+              tags = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>();
               tags.setAutoConstruct(true);
         }
         return tags;
@@ -162,7 +162,7 @@ public class DhcpOptions implements Serializable {
             this.tags = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tags.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tags.size());
         tagsCopy.addAll(tags);
         this.tags = tagsCopy;
     }
@@ -199,7 +199,7 @@ public class DhcpOptions implements Serializable {
         if (tags == null) {
             this.tags = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tags.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tags.size());
             tagsCopy.addAll(tags);
             this.tags = tagsCopy;
         }

@@ -34,7 +34,7 @@ public class ModifyInstanceGroupsRequest extends AmazonWebServiceRequest impleme
     /**
      * Instance groups to change.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<InstanceGroupModifyConfig> instanceGroups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceGroupModifyConfig> instanceGroups;
 
     /**
      * Default constructor for a new ModifyInstanceGroupsRequest object.  Callers should use the
@@ -60,7 +60,7 @@ public class ModifyInstanceGroupsRequest extends AmazonWebServiceRequest impleme
      */
     public java.util.List<InstanceGroupModifyConfig> getInstanceGroups() {
         if (instanceGroups == null) {
-              instanceGroups = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceGroupModifyConfig>();
+              instanceGroups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceGroupModifyConfig>();
               instanceGroups.setAutoConstruct(true);
         }
         return instanceGroups;
@@ -76,7 +76,7 @@ public class ModifyInstanceGroupsRequest extends AmazonWebServiceRequest impleme
             this.instanceGroups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<InstanceGroupModifyConfig> instanceGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceGroupModifyConfig>(instanceGroups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceGroupModifyConfig> instanceGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceGroupModifyConfig>(instanceGroups.size());
         instanceGroupsCopy.addAll(instanceGroups);
         this.instanceGroups = instanceGroupsCopy;
     }
@@ -113,7 +113,7 @@ public class ModifyInstanceGroupsRequest extends AmazonWebServiceRequest impleme
         if (instanceGroups == null) {
             this.instanceGroups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<InstanceGroupModifyConfig> instanceGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceGroupModifyConfig>(instanceGroups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceGroupModifyConfig> instanceGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceGroupModifyConfig>(instanceGroups.size());
             instanceGroupsCopy.addAll(instanceGroups);
             this.instanceGroups = instanceGroupsCopy;
         }

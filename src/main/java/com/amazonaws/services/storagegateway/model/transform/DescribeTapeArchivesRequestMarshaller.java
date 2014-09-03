@@ -20,12 +20,12 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.storagegateway.model.DescribeTapeArchivesRequest;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Describe Tape Archives Request Marshaller
@@ -50,7 +50,7 @@ public class DescribeTapeArchivesRequestMarshaller implements Marshaller<Request
 
           jsonWriter.object();
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> tapeARNsList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(describeTapeArchivesRequest.getTapeARNs());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> tapeARNsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(describeTapeArchivesRequest.getTapeARNs());
             if (tapeARNsList != null && !(tapeARNsList.isAutoConstruct() && tapeARNsList.isEmpty())) {
 
                 jsonWriter.key("TapeARNs");

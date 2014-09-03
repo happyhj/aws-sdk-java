@@ -23,8 +23,8 @@ import org.apache.http.HttpResponse;
 import org.apache.http.protocol.HttpContext;
 import org.apache.http.protocol.HttpRequestExecutor;
 
-import com.amazonaws.metricsutil.AWSRequestMetrics;
-import com.amazonaws.metricsutil.AWSRequestMetrics.Field;
+import com.amazonaws.network.metrics.util.AWSRequestMetrics;
+import com.amazonaws.network.metrics.util.AWSRequestMetrics.Field;
 
 /**
  * Used to capture the http send-request and receive-response latency metrics

@@ -26,7 +26,7 @@ public class ValidateTemplateResult implements Serializable {
     /**
      * A list of <code>TemplateParameter</code> structures.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<TemplateParameter> parameters;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TemplateParameter> parameters;
 
     /**
      * The description found within the template.
@@ -41,7 +41,7 @@ public class ValidateTemplateResult implements Serializable {
      * actions with your template; otherwise, those actions return an
      * InsufficientCapabilities error.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> capabilities;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> capabilities;
 
     /**
      * The capabilities reason found within the template.
@@ -55,7 +55,7 @@ public class ValidateTemplateResult implements Serializable {
      */
     public java.util.List<TemplateParameter> getParameters() {
         if (parameters == null) {
-              parameters = new com.amazonaws.internal.ListWithAutoConstructFlag<TemplateParameter>();
+              parameters = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TemplateParameter>();
               parameters.setAutoConstruct(true);
         }
         return parameters;
@@ -71,7 +71,7 @@ public class ValidateTemplateResult implements Serializable {
             this.parameters = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<TemplateParameter> parametersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<TemplateParameter>(parameters.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TemplateParameter> parametersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TemplateParameter>(parameters.size());
         parametersCopy.addAll(parameters);
         this.parameters = parametersCopy;
     }
@@ -108,7 +108,7 @@ public class ValidateTemplateResult implements Serializable {
         if (parameters == null) {
             this.parameters = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<TemplateParameter> parametersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<TemplateParameter>(parameters.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TemplateParameter> parametersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TemplateParameter>(parameters.size());
             parametersCopy.addAll(parameters);
             this.parameters = parametersCopy;
         }
@@ -166,7 +166,7 @@ public class ValidateTemplateResult implements Serializable {
      */
     public java.util.List<String> getCapabilities() {
         if (capabilities == null) {
-              capabilities = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              capabilities = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               capabilities.setAutoConstruct(true);
         }
         return capabilities;
@@ -192,7 +192,7 @@ public class ValidateTemplateResult implements Serializable {
             this.capabilities = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> capabilitiesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(capabilities.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> capabilitiesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(capabilities.size());
         capabilitiesCopy.addAll(capabilities);
         this.capabilities = capabilitiesCopy;
     }
@@ -249,7 +249,7 @@ public class ValidateTemplateResult implements Serializable {
         if (capabilities == null) {
             this.capabilities = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> capabilitiesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(capabilities.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> capabilitiesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(capabilities.size());
             capabilitiesCopy.addAll(capabilities);
             this.capabilities = capabilitiesCopy;
         }

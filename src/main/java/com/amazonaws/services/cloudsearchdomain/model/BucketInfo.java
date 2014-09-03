@@ -26,7 +26,7 @@ public class BucketInfo implements Serializable {
     /**
      * A list of the calculated facet values and counts.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Bucket> buckets;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Bucket> buckets;
 
     /**
      * A list of the calculated facet values and counts.
@@ -35,7 +35,7 @@ public class BucketInfo implements Serializable {
      */
     public java.util.List<Bucket> getBuckets() {
         if (buckets == null) {
-              buckets = new com.amazonaws.internal.ListWithAutoConstructFlag<Bucket>();
+              buckets = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Bucket>();
               buckets.setAutoConstruct(true);
         }
         return buckets;
@@ -51,7 +51,7 @@ public class BucketInfo implements Serializable {
             this.buckets = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Bucket> bucketsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Bucket>(buckets.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Bucket> bucketsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Bucket>(buckets.size());
         bucketsCopy.addAll(buckets);
         this.buckets = bucketsCopy;
     }
@@ -88,7 +88,7 @@ public class BucketInfo implements Serializable {
         if (buckets == null) {
             this.buckets = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Bucket> bucketsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Bucket>(buckets.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Bucket> bucketsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Bucket>(buckets.size());
             bucketsCopy.addAll(buckets);
             this.buckets = bucketsCopy;
         }

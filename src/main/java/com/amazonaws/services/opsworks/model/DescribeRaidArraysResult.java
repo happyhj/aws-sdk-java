@@ -27,7 +27,7 @@ public class DescribeRaidArraysResult implements Serializable {
      * A <code>RaidArrays</code> object that describes the specified RAID
      * arrays.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<RaidArray> raidArrays;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RaidArray> raidArrays;
 
     /**
      * A <code>RaidArrays</code> object that describes the specified RAID
@@ -38,7 +38,7 @@ public class DescribeRaidArraysResult implements Serializable {
      */
     public java.util.List<RaidArray> getRaidArrays() {
         if (raidArrays == null) {
-              raidArrays = new com.amazonaws.internal.ListWithAutoConstructFlag<RaidArray>();
+              raidArrays = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RaidArray>();
               raidArrays.setAutoConstruct(true);
         }
         return raidArrays;
@@ -56,7 +56,7 @@ public class DescribeRaidArraysResult implements Serializable {
             this.raidArrays = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<RaidArray> raidArraysCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<RaidArray>(raidArrays.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RaidArray> raidArraysCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RaidArray>(raidArrays.size());
         raidArraysCopy.addAll(raidArrays);
         this.raidArrays = raidArraysCopy;
     }
@@ -97,7 +97,7 @@ public class DescribeRaidArraysResult implements Serializable {
         if (raidArrays == null) {
             this.raidArrays = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<RaidArray> raidArraysCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<RaidArray>(raidArrays.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RaidArray> raidArraysCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RaidArray>(raidArrays.size());
             raidArraysCopy.addAll(raidArrays);
             this.raidArrays = raidArraysCopy;
         }

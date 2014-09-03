@@ -17,7 +17,7 @@ package com.amazonaws.services.opsworks.model.transform;
 import java.io.ByteArrayInputStream;
 
 import com.amazonaws.exception.AmazonClientException;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.opsworks.model.DescribeMyUserProfileRequest;

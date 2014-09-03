@@ -15,7 +15,7 @@
 package com.amazonaws.services.s3.internal;
 
 
-import com.amazonaws.codec.BinaryUtils;
+import com.amazonaws.json.codec.BinaryUtils;
 import com.amazonaws.network.response.AmazonWebServiceResponse;
 import com.amazonaws.network.response.HttpResponse;
 import com.amazonaws.services.s3.Headers;

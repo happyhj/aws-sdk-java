@@ -22,9 +22,9 @@ import java.util.Date;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import com.amazonaws.codec.Base64;
-import com.amazonaws.dateutil.DateUtils;
 import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.json.codec.Base64;
+import com.amazonaws.utility.date.DateUtils;
 
 /**
  * Collection of StAX unmarshallers for simple data types.

@@ -26,7 +26,7 @@ public class GetPipelineDefinitionResult implements Serializable {
     /**
      * An array of objects defined in the pipeline.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<PipelineObject> pipelineObjects;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PipelineObject> pipelineObjects;
 
     /**
      * An array of objects defined in the pipeline.
@@ -35,7 +35,7 @@ public class GetPipelineDefinitionResult implements Serializable {
      */
     public java.util.List<PipelineObject> getPipelineObjects() {
         if (pipelineObjects == null) {
-              pipelineObjects = new com.amazonaws.internal.ListWithAutoConstructFlag<PipelineObject>();
+              pipelineObjects = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PipelineObject>();
               pipelineObjects.setAutoConstruct(true);
         }
         return pipelineObjects;
@@ -51,7 +51,7 @@ public class GetPipelineDefinitionResult implements Serializable {
             this.pipelineObjects = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<PipelineObject> pipelineObjectsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<PipelineObject>(pipelineObjects.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PipelineObject> pipelineObjectsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PipelineObject>(pipelineObjects.size());
         pipelineObjectsCopy.addAll(pipelineObjects);
         this.pipelineObjects = pipelineObjectsCopy;
     }
@@ -88,7 +88,7 @@ public class GetPipelineDefinitionResult implements Serializable {
         if (pipelineObjects == null) {
             this.pipelineObjects = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<PipelineObject> pipelineObjectsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<PipelineObject>(pipelineObjects.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PipelineObject> pipelineObjectsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PipelineObject>(pipelineObjects.size());
             pipelineObjectsCopy.addAll(pipelineObjects);
             this.pipelineObjects = pipelineObjectsCopy;
         }

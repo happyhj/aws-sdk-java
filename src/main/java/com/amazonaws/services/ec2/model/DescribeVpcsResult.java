@@ -24,7 +24,7 @@ public class DescribeVpcsResult implements Serializable {
     /**
      * Information about one or more VPCs.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Vpc> vpcs;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Vpc> vpcs;
 
     /**
      * Information about one or more VPCs.
@@ -33,7 +33,7 @@ public class DescribeVpcsResult implements Serializable {
      */
     public java.util.List<Vpc> getVpcs() {
         if (vpcs == null) {
-              vpcs = new com.amazonaws.internal.ListWithAutoConstructFlag<Vpc>();
+              vpcs = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Vpc>();
               vpcs.setAutoConstruct(true);
         }
         return vpcs;
@@ -49,7 +49,7 @@ public class DescribeVpcsResult implements Serializable {
             this.vpcs = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Vpc> vpcsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Vpc>(vpcs.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Vpc> vpcsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Vpc>(vpcs.size());
         vpcsCopy.addAll(vpcs);
         this.vpcs = vpcsCopy;
     }
@@ -86,7 +86,7 @@ public class DescribeVpcsResult implements Serializable {
         if (vpcs == null) {
             this.vpcs = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Vpc> vpcsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Vpc>(vpcs.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Vpc> vpcsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Vpc>(vpcs.size());
             vpcsCopy.addAll(vpcs);
             this.vpcs = vpcsCopy;
         }

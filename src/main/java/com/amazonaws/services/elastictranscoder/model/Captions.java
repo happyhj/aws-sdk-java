@@ -54,7 +54,7 @@ public class Captions implements Serializable {
      * <b>Constraints:</b><br/>
      * <b>Length: </b>0 - 20<br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<CaptionSource> captionSources;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CaptionSource> captionSources;
 
     /**
      * The array of file formats for the output captions. If you leave this
@@ -63,7 +63,7 @@ public class Captions implements Serializable {
      * <b>Constraints:</b><br/>
      * <b>Length: </b>0 - 4<br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<CaptionFormat> captionFormats;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CaptionFormat> captionFormats;
 
     /**
      * A policy that determines how Elastic Transcoder handles the existence
@@ -211,7 +211,7 @@ public class Captions implements Serializable {
      */
     public java.util.List<CaptionSource> getCaptionSources() {
         if (captionSources == null) {
-              captionSources = new com.amazonaws.internal.ListWithAutoConstructFlag<CaptionSource>();
+              captionSources = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CaptionSource>();
               captionSources.setAutoConstruct(true);
         }
         return captionSources;
@@ -234,7 +234,7 @@ public class Captions implements Serializable {
             this.captionSources = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<CaptionSource> captionSourcesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CaptionSource>(captionSources.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CaptionSource> captionSourcesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CaptionSource>(captionSources.size());
         captionSourcesCopy.addAll(captionSources);
         this.captionSources = captionSourcesCopy;
     }
@@ -285,7 +285,7 @@ public class Captions implements Serializable {
         if (captionSources == null) {
             this.captionSources = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<CaptionSource> captionSourcesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CaptionSource>(captionSources.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CaptionSource> captionSourcesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CaptionSource>(captionSources.size());
             captionSourcesCopy.addAll(captionSources);
             this.captionSources = captionSourcesCopy;
         }
@@ -305,7 +305,7 @@ public class Captions implements Serializable {
      */
     public java.util.List<CaptionFormat> getCaptionFormats() {
         if (captionFormats == null) {
-              captionFormats = new com.amazonaws.internal.ListWithAutoConstructFlag<CaptionFormat>();
+              captionFormats = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CaptionFormat>();
               captionFormats.setAutoConstruct(true);
         }
         return captionFormats;
@@ -326,7 +326,7 @@ public class Captions implements Serializable {
             this.captionFormats = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<CaptionFormat> captionFormatsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CaptionFormat>(captionFormats.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CaptionFormat> captionFormatsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CaptionFormat>(captionFormats.size());
         captionFormatsCopy.addAll(captionFormats);
         this.captionFormats = captionFormatsCopy;
     }
@@ -373,7 +373,7 @@ public class Captions implements Serializable {
         if (captionFormats == null) {
             this.captionFormats = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<CaptionFormat> captionFormatsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CaptionFormat>(captionFormats.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CaptionFormat> captionFormatsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CaptionFormat>(captionFormats.size());
             captionFormatsCopy.addAll(captionFormats);
             this.captionFormats = captionFormatsCopy;
         }

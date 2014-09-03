@@ -53,7 +53,7 @@ public class ListPartsResult implements Serializable {
     /**
      * A list of the part sizes of the multipart upload.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<PartListElement> parts;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PartListElement> parts;
 
     /**
      * An opaque string that represents where to continue pagination of the
@@ -247,7 +247,7 @@ public class ListPartsResult implements Serializable {
      */
     public java.util.List<PartListElement> getParts() {
         if (parts == null) {
-              parts = new com.amazonaws.internal.ListWithAutoConstructFlag<PartListElement>();
+              parts = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PartListElement>();
               parts.setAutoConstruct(true);
         }
         return parts;
@@ -263,7 +263,7 @@ public class ListPartsResult implements Serializable {
             this.parts = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<PartListElement> partsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<PartListElement>(parts.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PartListElement> partsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PartListElement>(parts.size());
         partsCopy.addAll(parts);
         this.parts = partsCopy;
     }
@@ -300,7 +300,7 @@ public class ListPartsResult implements Serializable {
         if (parts == null) {
             this.parts = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<PartListElement> partsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<PartListElement>(parts.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PartListElement> partsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PartListElement>(parts.size());
             partsCopy.addAll(parts);
             this.parts = partsCopy;
         }

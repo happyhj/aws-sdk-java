@@ -64,7 +64,7 @@ public class CreateDeploymentRequest extends AmazonWebServiceRequest implements 
     /**
      * The instance IDs for the deployment targets.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> instanceIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> instanceIds;
 
     /**
      * A <code>DeploymentCommand</code> object that specifies the deployment
@@ -167,7 +167,7 @@ public class CreateDeploymentRequest extends AmazonWebServiceRequest implements 
      */
     public java.util.List<String> getInstanceIds() {
         if (instanceIds == null) {
-              instanceIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              instanceIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               instanceIds.setAutoConstruct(true);
         }
         return instanceIds;
@@ -183,7 +183,7 @@ public class CreateDeploymentRequest extends AmazonWebServiceRequest implements 
             this.instanceIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> instanceIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(instanceIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> instanceIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(instanceIds.size());
         instanceIdsCopy.addAll(instanceIds);
         this.instanceIds = instanceIdsCopy;
     }
@@ -220,7 +220,7 @@ public class CreateDeploymentRequest extends AmazonWebServiceRequest implements 
         if (instanceIds == null) {
             this.instanceIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> instanceIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(instanceIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> instanceIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(instanceIds.size());
             instanceIdsCopy.addAll(instanceIds);
             this.instanceIds = instanceIdsCopy;
         }

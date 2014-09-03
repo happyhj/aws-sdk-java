@@ -27,7 +27,7 @@ public class DetachInstancesResult implements Serializable {
      * A list describing the activities related to detaching the instances
      * from the Auto Scaling group.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Activity> activities;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Activity> activities;
 
     /**
      * A list describing the activities related to detaching the instances
@@ -38,7 +38,7 @@ public class DetachInstancesResult implements Serializable {
      */
     public java.util.List<Activity> getActivities() {
         if (activities == null) {
-              activities = new com.amazonaws.internal.ListWithAutoConstructFlag<Activity>();
+              activities = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Activity>();
               activities.setAutoConstruct(true);
         }
         return activities;
@@ -56,7 +56,7 @@ public class DetachInstancesResult implements Serializable {
             this.activities = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Activity> activitiesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Activity>(activities.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Activity> activitiesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Activity>(activities.size());
         activitiesCopy.addAll(activities);
         this.activities = activitiesCopy;
     }
@@ -97,7 +97,7 @@ public class DetachInstancesResult implements Serializable {
         if (activities == null) {
             this.activities = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Activity> activitiesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Activity>(activities.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Activity> activitiesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Activity>(activities.size());
             activitiesCopy.addAll(activities);
             this.activities = activitiesCopy;
         }

@@ -15,7 +15,7 @@
 package com.amazonaws.services.simpledb;
 
 import com.amazonaws.client.ClientConfiguration;
-import com.amazonaws.client.Region;
+import com.amazonaws.client.regions.Region;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.services.simpledb.model.AttributeDoesNotExistException;

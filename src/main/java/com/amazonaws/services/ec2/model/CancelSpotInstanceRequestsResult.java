@@ -24,7 +24,7 @@ public class CancelSpotInstanceRequestsResult implements Serializable {
     /**
      * One or more Spot Instance requests.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<CancelledSpotInstanceRequest> cancelledSpotInstanceRequests;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CancelledSpotInstanceRequest> cancelledSpotInstanceRequests;
 
     /**
      * One or more Spot Instance requests.
@@ -33,7 +33,7 @@ public class CancelSpotInstanceRequestsResult implements Serializable {
      */
     public java.util.List<CancelledSpotInstanceRequest> getCancelledSpotInstanceRequests() {
         if (cancelledSpotInstanceRequests == null) {
-              cancelledSpotInstanceRequests = new com.amazonaws.internal.ListWithAutoConstructFlag<CancelledSpotInstanceRequest>();
+              cancelledSpotInstanceRequests = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CancelledSpotInstanceRequest>();
               cancelledSpotInstanceRequests.setAutoConstruct(true);
         }
         return cancelledSpotInstanceRequests;
@@ -49,7 +49,7 @@ public class CancelSpotInstanceRequestsResult implements Serializable {
             this.cancelledSpotInstanceRequests = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<CancelledSpotInstanceRequest> cancelledSpotInstanceRequestsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CancelledSpotInstanceRequest>(cancelledSpotInstanceRequests.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CancelledSpotInstanceRequest> cancelledSpotInstanceRequestsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CancelledSpotInstanceRequest>(cancelledSpotInstanceRequests.size());
         cancelledSpotInstanceRequestsCopy.addAll(cancelledSpotInstanceRequests);
         this.cancelledSpotInstanceRequests = cancelledSpotInstanceRequestsCopy;
     }
@@ -86,7 +86,7 @@ public class CancelSpotInstanceRequestsResult implements Serializable {
         if (cancelledSpotInstanceRequests == null) {
             this.cancelledSpotInstanceRequests = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<CancelledSpotInstanceRequest> cancelledSpotInstanceRequestsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CancelledSpotInstanceRequest>(cancelledSpotInstanceRequests.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CancelledSpotInstanceRequest> cancelledSpotInstanceRequestsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CancelledSpotInstanceRequest>(cancelledSpotInstanceRequests.size());
             cancelledSpotInstanceRequestsCopy.addAll(cancelledSpotInstanceRequests);
             this.cancelledSpotInstanceRequests = cancelledSpotInstanceRequestsCopy;
         }

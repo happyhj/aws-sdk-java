@@ -34,7 +34,7 @@ public class SolutionStackDescription implements Serializable {
     /**
      * The permitted file types allowed for a solution stack.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> permittedFileTypes;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> permittedFileTypes;
 
     /**
      * The name of the solution stack.
@@ -85,7 +85,7 @@ public class SolutionStackDescription implements Serializable {
      */
     public java.util.List<String> getPermittedFileTypes() {
         if (permittedFileTypes == null) {
-              permittedFileTypes = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              permittedFileTypes = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               permittedFileTypes.setAutoConstruct(true);
         }
         return permittedFileTypes;
@@ -101,7 +101,7 @@ public class SolutionStackDescription implements Serializable {
             this.permittedFileTypes = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> permittedFileTypesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(permittedFileTypes.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> permittedFileTypesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(permittedFileTypes.size());
         permittedFileTypesCopy.addAll(permittedFileTypes);
         this.permittedFileTypes = permittedFileTypesCopy;
     }
@@ -138,7 +138,7 @@ public class SolutionStackDescription implements Serializable {
         if (permittedFileTypes == null) {
             this.permittedFileTypes = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> permittedFileTypesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(permittedFileTypes.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> permittedFileTypesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(permittedFileTypes.size());
             permittedFileTypesCopy.addAll(permittedFileTypes);
             this.permittedFileTypes = permittedFileTypesCopy;
         }

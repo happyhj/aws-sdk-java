@@ -39,7 +39,7 @@ public class UnassignPrivateIpAddressesRequest extends AmazonWebServiceRequest i
      * interface. You can specify this option multiple times to unassign more
      * than one IP address.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> privateIpAddresses;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> privateIpAddresses;
 
     /**
      * The ID of the network interface.
@@ -85,7 +85,7 @@ public class UnassignPrivateIpAddressesRequest extends AmazonWebServiceRequest i
      */
     public java.util.List<String> getPrivateIpAddresses() {
         if (privateIpAddresses == null) {
-              privateIpAddresses = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              privateIpAddresses = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               privateIpAddresses.setAutoConstruct(true);
         }
         return privateIpAddresses;
@@ -105,7 +105,7 @@ public class UnassignPrivateIpAddressesRequest extends AmazonWebServiceRequest i
             this.privateIpAddresses = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> privateIpAddressesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(privateIpAddresses.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> privateIpAddressesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(privateIpAddresses.size());
         privateIpAddressesCopy.addAll(privateIpAddresses);
         this.privateIpAddresses = privateIpAddressesCopy;
     }
@@ -150,7 +150,7 @@ public class UnassignPrivateIpAddressesRequest extends AmazonWebServiceRequest i
         if (privateIpAddresses == null) {
             this.privateIpAddresses = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> privateIpAddressesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(privateIpAddresses.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> privateIpAddressesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(privateIpAddresses.size());
             privateIpAddressesCopy.addAll(privateIpAddresses);
             this.privateIpAddresses = privateIpAddressesCopy;
         }

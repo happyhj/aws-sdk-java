@@ -69,7 +69,7 @@ public class ScanRequest extends AmazonWebServiceRequest implements Serializable
      * <b>Constraints:</b><br/>
      * <b>Length: </b>1 - <br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> attributesToGet;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> attributesToGet;
 
     /**
      * The maximum number of items to evaluate (not necessarily the number of
@@ -333,7 +333,7 @@ public class ScanRequest extends AmazonWebServiceRequest implements Serializable
             this.attributesToGet = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> attributesToGetCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(attributesToGet.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> attributesToGetCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(attributesToGet.size());
         attributesToGetCopy.addAll(attributesToGet);
         this.attributesToGet = attributesToGetCopy;
     }
@@ -400,7 +400,7 @@ public class ScanRequest extends AmazonWebServiceRequest implements Serializable
         if (attributesToGet == null) {
             this.attributesToGet = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> attributesToGetCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(attributesToGet.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> attributesToGetCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(attributesToGet.size());
             attributesToGetCopy.addAll(attributesToGet);
             this.attributesToGet = attributesToGetCopy;
         }

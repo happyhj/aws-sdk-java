@@ -37,7 +37,7 @@ public class VerifyDomainDkimResult implements Serializable {
      * href="http://docs.aws.amazon.com/ses/latest/DeveloperGuide/easy-dkim-dns-records.html">Amazon
      * SES Developer Guide</a>.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> dkimTokens;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> dkimTokens;
 
     /**
      * A set of character strings that represent the domain's identity. If
@@ -66,7 +66,7 @@ public class VerifyDomainDkimResult implements Serializable {
      */
     public java.util.List<String> getDkimTokens() {
         if (dkimTokens == null) {
-              dkimTokens = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              dkimTokens = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               dkimTokens.setAutoConstruct(true);
         }
         return dkimTokens;
@@ -102,7 +102,7 @@ public class VerifyDomainDkimResult implements Serializable {
             this.dkimTokens = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> dkimTokensCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(dkimTokens.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> dkimTokensCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(dkimTokens.size());
         dkimTokensCopy.addAll(dkimTokens);
         this.dkimTokens = dkimTokensCopy;
     }
@@ -179,7 +179,7 @@ public class VerifyDomainDkimResult implements Serializable {
         if (dkimTokens == null) {
             this.dkimTokens = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> dkimTokensCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(dkimTokens.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> dkimTokensCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(dkimTokens.size());
             dkimTokensCopy.addAll(dkimTokens);
             this.dkimTokens = dkimTokensCopy;
         }

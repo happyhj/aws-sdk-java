@@ -235,7 +235,7 @@ public class CloneStackRequest extends AmazonWebServiceRequest implements Serial
     /**
      * A list of source stack app IDs to be included in the cloned stack.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> cloneAppIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> cloneAppIds;
 
     /**
      * The default root device type. This value is used by default for all
@@ -1579,7 +1579,7 @@ public class CloneStackRequest extends AmazonWebServiceRequest implements Serial
      */
     public java.util.List<String> getCloneAppIds() {
         if (cloneAppIds == null) {
-              cloneAppIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              cloneAppIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               cloneAppIds.setAutoConstruct(true);
         }
         return cloneAppIds;
@@ -1595,7 +1595,7 @@ public class CloneStackRequest extends AmazonWebServiceRequest implements Serial
             this.cloneAppIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> cloneAppIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(cloneAppIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> cloneAppIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(cloneAppIds.size());
         cloneAppIdsCopy.addAll(cloneAppIds);
         this.cloneAppIds = cloneAppIdsCopy;
     }
@@ -1632,7 +1632,7 @@ public class CloneStackRequest extends AmazonWebServiceRequest implements Serial
         if (cloneAppIds == null) {
             this.cloneAppIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> cloneAppIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(cloneAppIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> cloneAppIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(cloneAppIds.size());
             cloneAppIdsCopy.addAll(cloneAppIds);
             this.cloneAppIds = cloneAppIdsCopy;
         }

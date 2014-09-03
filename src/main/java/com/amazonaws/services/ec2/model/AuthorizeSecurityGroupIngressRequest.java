@@ -106,7 +106,7 @@ public class AuthorizeSecurityGroupIngressRequest extends AmazonWebServiceReques
     /**
      * <p/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<IpPermission> ipPermissions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IpPermission> ipPermissions;
 
     /**
      * Default constructor for a new AuthorizeSecurityGroupIngressRequest object.  Callers should use the
@@ -459,7 +459,7 @@ public class AuthorizeSecurityGroupIngressRequest extends AmazonWebServiceReques
      */
     public java.util.List<IpPermission> getIpPermissions() {
         if (ipPermissions == null) {
-              ipPermissions = new com.amazonaws.internal.ListWithAutoConstructFlag<IpPermission>();
+              ipPermissions = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IpPermission>();
               ipPermissions.setAutoConstruct(true);
         }
         return ipPermissions;
@@ -475,7 +475,7 @@ public class AuthorizeSecurityGroupIngressRequest extends AmazonWebServiceReques
             this.ipPermissions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<IpPermission> ipPermissionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<IpPermission>(ipPermissions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IpPermission> ipPermissionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IpPermission>(ipPermissions.size());
         ipPermissionsCopy.addAll(ipPermissions);
         this.ipPermissions = ipPermissionsCopy;
     }
@@ -512,7 +512,7 @@ public class AuthorizeSecurityGroupIngressRequest extends AmazonWebServiceReques
         if (ipPermissions == null) {
             this.ipPermissions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<IpPermission> ipPermissionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<IpPermission>(ipPermissions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IpPermission> ipPermissionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IpPermission>(ipPermissions.size());
             ipPermissionsCopy.addAll(ipPermissions);
             this.ipPermissions = ipPermissionsCopy;
         }

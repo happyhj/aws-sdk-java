@@ -20,13 +20,13 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.elasticmapreduce.model.AddTagsRequest;
 import com.amazonaws.services.elasticmapreduce.model.Tag;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Add Tags Request Marshaller
@@ -55,7 +55,7 @@ public class AddTagsRequestMarshaller implements Marshaller<Request<AddTagsReque
                 jsonWriter.key("ResourceId").value(addTagsRequest.getResourceId());
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsList = (com.amazonaws.internal.ListWithAutoConstructFlag<Tag>)(addTagsRequest.getTags());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>)(addTagsRequest.getTags());
             if (tagsList != null && !(tagsList.isAutoConstruct() && tagsList.isEmpty())) {
 
                 jsonWriter.key("Tags");

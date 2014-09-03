@@ -206,7 +206,7 @@ public class ExpectedAttributeValue implements Serializable {
      * href="http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DataFormat.html">JSON
      * Data Format</a> in the Amazon DynamoDB Developer Guide.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<AttributeValue> attributeValueList;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AttributeValue> attributeValueList;
 
     /**
      * Default constructor for a new ExpectedAttributeValue object.  Callers should use the
@@ -1541,7 +1541,7 @@ public class ExpectedAttributeValue implements Serializable {
             this.attributeValueList = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<AttributeValue> attributeValueListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<AttributeValue>(attributeValueList.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AttributeValue> attributeValueListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AttributeValue>(attributeValueList.size());
         attributeValueListCopy.addAll(attributeValueList);
         this.attributeValueList = attributeValueListCopy;
     }
@@ -1630,7 +1630,7 @@ public class ExpectedAttributeValue implements Serializable {
         if (attributeValueList == null) {
             this.attributeValueList = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<AttributeValue> attributeValueListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<AttributeValue>(attributeValueList.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AttributeValue> attributeValueListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AttributeValue>(attributeValueList.size());
             attributeValueListCopy.addAll(attributeValueList);
             this.attributeValueList = attributeValueListCopy;
         }

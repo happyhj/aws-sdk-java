@@ -42,7 +42,7 @@ public class Hits implements Serializable {
     /**
      * A document that matches the search request.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Hit> hit;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Hit> hit;
 
     /**
      * The total number of documents that match the search request.
@@ -156,7 +156,7 @@ public class Hits implements Serializable {
      */
     public java.util.List<Hit> getHit() {
         if (hit == null) {
-              hit = new com.amazonaws.internal.ListWithAutoConstructFlag<Hit>();
+              hit = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Hit>();
               hit.setAutoConstruct(true);
         }
         return hit;
@@ -172,7 +172,7 @@ public class Hits implements Serializable {
             this.hit = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Hit> hitCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Hit>(hit.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Hit> hitCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Hit>(hit.size());
         hitCopy.addAll(hit);
         this.hit = hitCopy;
     }
@@ -209,7 +209,7 @@ public class Hits implements Serializable {
         if (hit == null) {
             this.hit = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Hit> hitCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Hit>(hit.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Hit> hitCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Hit>(hit.size());
             hitCopy.addAll(hit);
             this.hit = hitCopy;
         }

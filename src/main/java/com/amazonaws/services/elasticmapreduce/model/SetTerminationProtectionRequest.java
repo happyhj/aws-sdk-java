@@ -57,7 +57,7 @@ public class SetTerminationProtectionRequest extends AmazonWebServiceRequest imp
      * This identifier is returned by <a>RunJobFlow</a> and can also be
      * obtained from <a>DescribeJobFlows</a> .
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> jobFlowIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> jobFlowIds;
 
     /**
      * A Boolean that indicates whether to protect the job flow and prevent
@@ -77,7 +77,7 @@ public class SetTerminationProtectionRequest extends AmazonWebServiceRequest imp
      */
     public java.util.List<String> getJobFlowIds() {
         if (jobFlowIds == null) {
-              jobFlowIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              jobFlowIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               jobFlowIds.setAutoConstruct(true);
         }
         return jobFlowIds;
@@ -97,7 +97,7 @@ public class SetTerminationProtectionRequest extends AmazonWebServiceRequest imp
             this.jobFlowIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> jobFlowIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(jobFlowIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> jobFlowIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(jobFlowIds.size());
         jobFlowIdsCopy.addAll(jobFlowIds);
         this.jobFlowIds = jobFlowIdsCopy;
     }
@@ -142,7 +142,7 @@ public class SetTerminationProtectionRequest extends AmazonWebServiceRequest imp
         if (jobFlowIds == null) {
             this.jobFlowIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> jobFlowIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(jobFlowIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> jobFlowIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(jobFlowIds.size());
             jobFlowIdsCopy.addAll(jobFlowIds);
             this.jobFlowIds = jobFlowIdsCopy;
         }

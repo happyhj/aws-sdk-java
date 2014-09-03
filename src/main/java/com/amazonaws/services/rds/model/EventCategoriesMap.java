@@ -32,7 +32,7 @@ public class EventCategoriesMap implements Serializable {
     /**
      * The event categories for the specified source type
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> eventCategories;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> eventCategories;
 
     /**
      * The source type that the returned categories belong to
@@ -74,7 +74,7 @@ public class EventCategoriesMap implements Serializable {
      */
     public java.util.List<String> getEventCategories() {
         if (eventCategories == null) {
-              eventCategories = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              eventCategories = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               eventCategories.setAutoConstruct(true);
         }
         return eventCategories;
@@ -90,7 +90,7 @@ public class EventCategoriesMap implements Serializable {
             this.eventCategories = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> eventCategoriesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(eventCategories.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> eventCategoriesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(eventCategories.size());
         eventCategoriesCopy.addAll(eventCategories);
         this.eventCategories = eventCategoriesCopy;
     }
@@ -127,7 +127,7 @@ public class EventCategoriesMap implements Serializable {
         if (eventCategories == null) {
             this.eventCategories = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> eventCategoriesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(eventCategories.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> eventCategoriesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(eventCategories.size());
             eventCategoriesCopy.addAll(eventCategories);
             this.eventCategories = eventCategoriesCopy;
         }

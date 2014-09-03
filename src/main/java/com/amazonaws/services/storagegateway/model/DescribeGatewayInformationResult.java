@@ -62,7 +62,7 @@ public class DescribeGatewayInformationResult implements Serializable {
      * A <a>NetworkInterface</a> array that contains descriptions of the
      * gateway network interfaces.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<NetworkInterface> gatewayNetworkInterfaces;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NetworkInterface> gatewayNetworkInterfaces;
 
     /**
      * TBD
@@ -277,7 +277,7 @@ public class DescribeGatewayInformationResult implements Serializable {
      */
     public java.util.List<NetworkInterface> getGatewayNetworkInterfaces() {
         if (gatewayNetworkInterfaces == null) {
-              gatewayNetworkInterfaces = new com.amazonaws.internal.ListWithAutoConstructFlag<NetworkInterface>();
+              gatewayNetworkInterfaces = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NetworkInterface>();
               gatewayNetworkInterfaces.setAutoConstruct(true);
         }
         return gatewayNetworkInterfaces;
@@ -295,7 +295,7 @@ public class DescribeGatewayInformationResult implements Serializable {
             this.gatewayNetworkInterfaces = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<NetworkInterface> gatewayNetworkInterfacesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<NetworkInterface>(gatewayNetworkInterfaces.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NetworkInterface> gatewayNetworkInterfacesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NetworkInterface>(gatewayNetworkInterfaces.size());
         gatewayNetworkInterfacesCopy.addAll(gatewayNetworkInterfaces);
         this.gatewayNetworkInterfaces = gatewayNetworkInterfacesCopy;
     }
@@ -336,7 +336,7 @@ public class DescribeGatewayInformationResult implements Serializable {
         if (gatewayNetworkInterfaces == null) {
             this.gatewayNetworkInterfaces = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<NetworkInterface> gatewayNetworkInterfacesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<NetworkInterface>(gatewayNetworkInterfaces.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NetworkInterface> gatewayNetworkInterfacesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NetworkInterface>(gatewayNetworkInterfaces.size());
             gatewayNetworkInterfacesCopy.addAll(gatewayNetworkInterfaces);
             this.gatewayNetworkInterfaces = gatewayNetworkInterfacesCopy;
         }

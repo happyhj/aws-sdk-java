@@ -27,7 +27,7 @@ public class ListServerCertificatesResult implements Serializable {
     /**
      * A list of server certificates.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ServerCertificateMetadata> serverCertificateMetadataList;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ServerCertificateMetadata> serverCertificateMetadataList;
 
     /**
      * A flag that indicates whether there are more server certificates to
@@ -55,7 +55,7 @@ public class ListServerCertificatesResult implements Serializable {
      */
     public java.util.List<ServerCertificateMetadata> getServerCertificateMetadataList() {
         if (serverCertificateMetadataList == null) {
-              serverCertificateMetadataList = new com.amazonaws.internal.ListWithAutoConstructFlag<ServerCertificateMetadata>();
+              serverCertificateMetadataList = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ServerCertificateMetadata>();
               serverCertificateMetadataList.setAutoConstruct(true);
         }
         return serverCertificateMetadataList;
@@ -71,7 +71,7 @@ public class ListServerCertificatesResult implements Serializable {
             this.serverCertificateMetadataList = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ServerCertificateMetadata> serverCertificateMetadataListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ServerCertificateMetadata>(serverCertificateMetadataList.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ServerCertificateMetadata> serverCertificateMetadataListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ServerCertificateMetadata>(serverCertificateMetadataList.size());
         serverCertificateMetadataListCopy.addAll(serverCertificateMetadataList);
         this.serverCertificateMetadataList = serverCertificateMetadataListCopy;
     }
@@ -108,7 +108,7 @@ public class ListServerCertificatesResult implements Serializable {
         if (serverCertificateMetadataList == null) {
             this.serverCertificateMetadataList = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ServerCertificateMetadata> serverCertificateMetadataListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ServerCertificateMetadata>(serverCertificateMetadataList.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ServerCertificateMetadata> serverCertificateMetadataListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ServerCertificateMetadata>(serverCertificateMetadataList.size());
             serverCertificateMetadataListCopy.addAll(serverCertificateMetadataList);
             this.serverCertificateMetadataList = serverCertificateMetadataListCopy;
         }

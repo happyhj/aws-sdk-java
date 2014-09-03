@@ -117,7 +117,7 @@ public class ReceiveMessageRequest extends AmazonWebServiceRequest implements Se
      * <li><code>SentTimestamp</code> - returns the time when the message was
      * sent (epoch time in milliseconds).</li> </ul>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> attributeNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> attributeNames;
 
     /**
      * The message attribute Name can contain the following characters: A-Z,
@@ -129,7 +129,7 @@ public class ReceiveMessageRequest extends AmazonWebServiceRequest implements Se
      * names cannot start with "AWS." or "Amazon." because these prefixes are
      * reserved for use by Amazon Web Services.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> messageAttributeNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> messageAttributeNames;
 
     /**
      * The maximum number of messages to return. Amazon SQS never returns
@@ -230,7 +230,7 @@ public class ReceiveMessageRequest extends AmazonWebServiceRequest implements Se
      */
     public java.util.List<String> getAttributeNames() {
         if (attributeNames == null) {
-              attributeNames = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              attributeNames = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               attributeNames.setAutoConstruct(true);
         }
         return attributeNames;
@@ -266,7 +266,7 @@ public class ReceiveMessageRequest extends AmazonWebServiceRequest implements Se
             this.attributeNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> attributeNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(attributeNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> attributeNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(attributeNames.size());
         attributeNamesCopy.addAll(attributeNames);
         this.attributeNames = attributeNamesCopy;
     }
@@ -343,7 +343,7 @@ public class ReceiveMessageRequest extends AmazonWebServiceRequest implements Se
         if (attributeNames == null) {
             this.attributeNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> attributeNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(attributeNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> attributeNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(attributeNames.size());
             attributeNamesCopy.addAll(attributeNames);
             this.attributeNames = attributeNamesCopy;
         }
@@ -415,7 +415,7 @@ public class ReceiveMessageRequest extends AmazonWebServiceRequest implements Se
      */
     public java.util.List<String> getMessageAttributeNames() {
         if (messageAttributeNames == null) {
-              messageAttributeNames = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              messageAttributeNames = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               messageAttributeNames.setAutoConstruct(true);
         }
         return messageAttributeNames;
@@ -445,7 +445,7 @@ public class ReceiveMessageRequest extends AmazonWebServiceRequest implements Se
             this.messageAttributeNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> messageAttributeNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(messageAttributeNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> messageAttributeNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(messageAttributeNames.size());
         messageAttributeNamesCopy.addAll(messageAttributeNames);
         this.messageAttributeNames = messageAttributeNamesCopy;
     }
@@ -510,7 +510,7 @@ public class ReceiveMessageRequest extends AmazonWebServiceRequest implements Se
         if (messageAttributeNames == null) {
             this.messageAttributeNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> messageAttributeNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(messageAttributeNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> messageAttributeNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(messageAttributeNames.size());
             messageAttributeNamesCopy.addAll(messageAttributeNames);
             this.messageAttributeNames = messageAttributeNamesCopy;
         }

@@ -34,7 +34,7 @@ public class InstanceStatusSummary implements Serializable {
     /**
      * The system instance health or application instance health.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<InstanceStatusDetails> details;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceStatusDetails> details;
 
     /**
      * The status.
@@ -125,7 +125,7 @@ public class InstanceStatusSummary implements Serializable {
      */
     public java.util.List<InstanceStatusDetails> getDetails() {
         if (details == null) {
-              details = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceStatusDetails>();
+              details = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceStatusDetails>();
               details.setAutoConstruct(true);
         }
         return details;
@@ -141,7 +141,7 @@ public class InstanceStatusSummary implements Serializable {
             this.details = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<InstanceStatusDetails> detailsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceStatusDetails>(details.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceStatusDetails> detailsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceStatusDetails>(details.size());
         detailsCopy.addAll(details);
         this.details = detailsCopy;
     }
@@ -178,7 +178,7 @@ public class InstanceStatusSummary implements Serializable {
         if (details == null) {
             this.details = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<InstanceStatusDetails> detailsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceStatusDetails>(details.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceStatusDetails> detailsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceStatusDetails>(details.size());
             detailsCopy.addAll(details);
             this.details = detailsCopy;
         }

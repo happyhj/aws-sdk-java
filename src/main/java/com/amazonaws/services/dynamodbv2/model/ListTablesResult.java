@@ -31,7 +31,7 @@ public class ListTablesResult implements Serializable {
      * subsequent <i>ListTables</i> request and obtain the next page of
      * results.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> tableNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> tableNames;
 
     /**
      * The name of the last table in the current page of results. Use this
@@ -86,7 +86,7 @@ public class ListTablesResult implements Serializable {
             this.tableNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> tableNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(tableNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> tableNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(tableNames.size());
         tableNamesCopy.addAll(tableNames);
         this.tableNames = tableNamesCopy;
     }
@@ -143,7 +143,7 @@ public class ListTablesResult implements Serializable {
         if (tableNames == null) {
             this.tableNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> tableNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(tableNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> tableNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(tableNames.size());
             tableNamesCopy.addAll(tableNames);
             this.tableNames = tableNamesCopy;
         }

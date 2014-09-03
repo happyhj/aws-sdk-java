@@ -34,7 +34,7 @@ public class DescribeTagsRequest extends AmazonWebServiceRequest implements Seri
      * <b>Constraints:</b><br/>
      * <b>Length: </b>1 - 20<br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> loadBalancerNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> loadBalancerNames;
 
     /**
      * The names of the load balancers.
@@ -46,7 +46,7 @@ public class DescribeTagsRequest extends AmazonWebServiceRequest implements Seri
      */
     public java.util.List<String> getLoadBalancerNames() {
         if (loadBalancerNames == null) {
-              loadBalancerNames = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              loadBalancerNames = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               loadBalancerNames.setAutoConstruct(true);
         }
         return loadBalancerNames;
@@ -65,7 +65,7 @@ public class DescribeTagsRequest extends AmazonWebServiceRequest implements Seri
             this.loadBalancerNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> loadBalancerNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(loadBalancerNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> loadBalancerNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(loadBalancerNames.size());
         loadBalancerNamesCopy.addAll(loadBalancerNames);
         this.loadBalancerNames = loadBalancerNamesCopy;
     }
@@ -108,7 +108,7 @@ public class DescribeTagsRequest extends AmazonWebServiceRequest implements Seri
         if (loadBalancerNames == null) {
             this.loadBalancerNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> loadBalancerNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(loadBalancerNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> loadBalancerNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(loadBalancerNames.size());
             loadBalancerNamesCopy.addAll(loadBalancerNames);
             this.loadBalancerNames = loadBalancerNamesCopy;
         }

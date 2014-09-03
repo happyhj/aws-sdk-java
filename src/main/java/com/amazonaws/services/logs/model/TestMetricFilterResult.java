@@ -21,7 +21,7 @@ import java.io.Serializable;
  */
 public class TestMetricFilterResult implements Serializable {
 
-    private com.amazonaws.internal.ListWithAutoConstructFlag<MetricFilterMatchRecord> matches;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricFilterMatchRecord> matches;
 
     /**
      * Returns the value of the Matches property for this object.
@@ -30,7 +30,7 @@ public class TestMetricFilterResult implements Serializable {
      */
     public java.util.List<MetricFilterMatchRecord> getMatches() {
         if (matches == null) {
-              matches = new com.amazonaws.internal.ListWithAutoConstructFlag<MetricFilterMatchRecord>();
+              matches = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricFilterMatchRecord>();
               matches.setAutoConstruct(true);
         }
         return matches;
@@ -46,7 +46,7 @@ public class TestMetricFilterResult implements Serializable {
             this.matches = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<MetricFilterMatchRecord> matchesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<MetricFilterMatchRecord>(matches.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricFilterMatchRecord> matchesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricFilterMatchRecord>(matches.size());
         matchesCopy.addAll(matches);
         this.matches = matchesCopy;
     }
@@ -83,7 +83,7 @@ public class TestMetricFilterResult implements Serializable {
         if (matches == null) {
             this.matches = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<MetricFilterMatchRecord> matchesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<MetricFilterMatchRecord>(matches.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricFilterMatchRecord> matchesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricFilterMatchRecord>(matches.size());
             matchesCopy.addAll(matches);
             this.matches = matchesCopy;
         }

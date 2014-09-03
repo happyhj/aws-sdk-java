@@ -26,7 +26,7 @@ public class DescribeNotificationConfigurationsResult implements Serializable {
     /**
      * The list of notification configurations.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<NotificationConfiguration> notificationConfigurations;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NotificationConfiguration> notificationConfigurations;
 
     /**
      * A string that is used to mark the start of the next batch of returned
@@ -44,7 +44,7 @@ public class DescribeNotificationConfigurationsResult implements Serializable {
      */
     public java.util.List<NotificationConfiguration> getNotificationConfigurations() {
         if (notificationConfigurations == null) {
-              notificationConfigurations = new com.amazonaws.internal.ListWithAutoConstructFlag<NotificationConfiguration>();
+              notificationConfigurations = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NotificationConfiguration>();
               notificationConfigurations.setAutoConstruct(true);
         }
         return notificationConfigurations;
@@ -60,7 +60,7 @@ public class DescribeNotificationConfigurationsResult implements Serializable {
             this.notificationConfigurations = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<NotificationConfiguration> notificationConfigurationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<NotificationConfiguration>(notificationConfigurations.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NotificationConfiguration> notificationConfigurationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NotificationConfiguration>(notificationConfigurations.size());
         notificationConfigurationsCopy.addAll(notificationConfigurations);
         this.notificationConfigurations = notificationConfigurationsCopy;
     }
@@ -97,7 +97,7 @@ public class DescribeNotificationConfigurationsResult implements Serializable {
         if (notificationConfigurations == null) {
             this.notificationConfigurations = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<NotificationConfiguration> notificationConfigurationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<NotificationConfiguration>(notificationConfigurations.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NotificationConfiguration> notificationConfigurationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NotificationConfiguration>(notificationConfigurations.size());
             notificationConfigurationsCopy.addAll(notificationConfigurations);
             this.notificationConfigurations = notificationConfigurationsCopy;
         }

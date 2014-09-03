@@ -29,7 +29,7 @@ public class ListDomainsResult implements Serializable {
      * <code>DomainName</code>, <code>Expiry</code>,
      * <code>TransferLock</code>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<DomainSummary> domains;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DomainSummary> domains;
 
     /**
      * If there are more domains than you specified for <code>MaxItems</code>
@@ -55,7 +55,7 @@ public class ListDomainsResult implements Serializable {
      */
     public java.util.List<DomainSummary> getDomains() {
         if (domains == null) {
-              domains = new com.amazonaws.internal.ListWithAutoConstructFlag<DomainSummary>();
+              domains = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DomainSummary>();
               domains.setAutoConstruct(true);
         }
         return domains;
@@ -77,7 +77,7 @@ public class ListDomainsResult implements Serializable {
             this.domains = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<DomainSummary> domainsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DomainSummary>(domains.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DomainSummary> domainsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DomainSummary>(domains.size());
         domainsCopy.addAll(domains);
         this.domains = domainsCopy;
     }
@@ -126,7 +126,7 @@ public class ListDomainsResult implements Serializable {
         if (domains == null) {
             this.domains = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<DomainSummary> domainsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DomainSummary>(domains.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DomainSummary> domainsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DomainSummary>(domains.size());
             domainsCopy.addAll(domains);
             this.domains = domainsCopy;
         }

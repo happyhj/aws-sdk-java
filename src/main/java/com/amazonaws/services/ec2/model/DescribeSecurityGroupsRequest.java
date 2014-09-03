@@ -40,13 +40,13 @@ public class DescribeSecurityGroupsRequest extends AmazonWebServiceRequest imple
      * [EC2-Classic, default VPC] One or more security group names.
      * <p>Default: Describes all your security groups.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> groupNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> groupNames;
 
     /**
      * One or more security group IDs. <p>Default: Describes all your
      * security groups.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> groupIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> groupIds;
 
     /**
      * One or more filters. <ul> <li> <p><code>description</code> - The
@@ -73,7 +73,7 @@ public class DescribeSecurityGroupsRequest extends AmazonWebServiceRequest imple
      * <p><code>vpc-id</code> - The ID of the VPC specified when the security
      * group was created. </li> </ul>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filters;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filters;
 
     /**
      * [EC2-Classic, default VPC] One or more security group names.
@@ -84,7 +84,7 @@ public class DescribeSecurityGroupsRequest extends AmazonWebServiceRequest imple
      */
     public java.util.List<String> getGroupNames() {
         if (groupNames == null) {
-              groupNames = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              groupNames = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               groupNames.setAutoConstruct(true);
         }
         return groupNames;
@@ -102,7 +102,7 @@ public class DescribeSecurityGroupsRequest extends AmazonWebServiceRequest imple
             this.groupNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> groupNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(groupNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> groupNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(groupNames.size());
         groupNamesCopy.addAll(groupNames);
         this.groupNames = groupNamesCopy;
     }
@@ -143,7 +143,7 @@ public class DescribeSecurityGroupsRequest extends AmazonWebServiceRequest imple
         if (groupNames == null) {
             this.groupNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> groupNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(groupNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> groupNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(groupNames.size());
             groupNamesCopy.addAll(groupNames);
             this.groupNames = groupNamesCopy;
         }
@@ -160,7 +160,7 @@ public class DescribeSecurityGroupsRequest extends AmazonWebServiceRequest imple
      */
     public java.util.List<String> getGroupIds() {
         if (groupIds == null) {
-              groupIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              groupIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               groupIds.setAutoConstruct(true);
         }
         return groupIds;
@@ -178,7 +178,7 @@ public class DescribeSecurityGroupsRequest extends AmazonWebServiceRequest imple
             this.groupIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> groupIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(groupIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> groupIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(groupIds.size());
         groupIdsCopy.addAll(groupIds);
         this.groupIds = groupIdsCopy;
     }
@@ -219,7 +219,7 @@ public class DescribeSecurityGroupsRequest extends AmazonWebServiceRequest imple
         if (groupIds == null) {
             this.groupIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> groupIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(groupIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> groupIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(groupIds.size());
             groupIdsCopy.addAll(groupIds);
             this.groupIds = groupIdsCopy;
         }
@@ -278,7 +278,7 @@ public class DescribeSecurityGroupsRequest extends AmazonWebServiceRequest imple
      */
     public java.util.List<Filter> getFilters() {
         if (filters == null) {
-              filters = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>();
+              filters = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>();
               filters.setAutoConstruct(true);
         }
         return filters;
@@ -338,7 +338,7 @@ public class DescribeSecurityGroupsRequest extends AmazonWebServiceRequest imple
             this.filters = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
         filtersCopy.addAll(filters);
         this.filters = filtersCopy;
     }
@@ -463,7 +463,7 @@ public class DescribeSecurityGroupsRequest extends AmazonWebServiceRequest imple
         if (filters == null) {
             this.filters = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
             filtersCopy.addAll(filters);
             this.filters = filtersCopy;
         }

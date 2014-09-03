@@ -67,7 +67,7 @@ public class CreateJobRequest extends AmazonWebServiceRequest implements Seriali
      * <b>Constraints:</b><br/>
      * <b>Length: </b>0 - 30<br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<CreateJobOutput> outputs;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CreateJobOutput> outputs;
 
     /**
      * The value, if any, that you want Elastic Transcoder to prepend to the
@@ -89,7 +89,7 @@ public class CreateJobRequest extends AmazonWebServiceRequest implements Seriali
      * <b>Constraints:</b><br/>
      * <b>Length: </b>0 - 30<br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<CreateJobPlaylist> playlists;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CreateJobPlaylist> playlists;
 
     /**
      * The <code>Id</code> of the pipeline that you want Elastic Transcoder
@@ -243,7 +243,7 @@ public class CreateJobRequest extends AmazonWebServiceRequest implements Seriali
      */
     public java.util.List<CreateJobOutput> getOutputs() {
         if (outputs == null) {
-              outputs = new com.amazonaws.internal.ListWithAutoConstructFlag<CreateJobOutput>();
+              outputs = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CreateJobOutput>();
               outputs.setAutoConstruct(true);
         }
         return outputs;
@@ -266,7 +266,7 @@ public class CreateJobRequest extends AmazonWebServiceRequest implements Seriali
             this.outputs = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<CreateJobOutput> outputsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CreateJobOutput>(outputs.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CreateJobOutput> outputsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CreateJobOutput>(outputs.size());
         outputsCopy.addAll(outputs);
         this.outputs = outputsCopy;
     }
@@ -317,7 +317,7 @@ public class CreateJobRequest extends AmazonWebServiceRequest implements Seriali
         if (outputs == null) {
             this.outputs = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<CreateJobOutput> outputsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CreateJobOutput>(outputs.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CreateJobOutput> outputsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CreateJobOutput>(outputs.size());
             outputsCopy.addAll(outputs);
             this.outputs = outputsCopy;
         }
@@ -397,7 +397,7 @@ public class CreateJobRequest extends AmazonWebServiceRequest implements Seriali
      */
     public java.util.List<CreateJobPlaylist> getPlaylists() {
         if (playlists == null) {
-              playlists = new com.amazonaws.internal.ListWithAutoConstructFlag<CreateJobPlaylist>();
+              playlists = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CreateJobPlaylist>();
               playlists.setAutoConstruct(true);
         }
         return playlists;
@@ -424,7 +424,7 @@ public class CreateJobRequest extends AmazonWebServiceRequest implements Seriali
             this.playlists = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<CreateJobPlaylist> playlistsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CreateJobPlaylist>(playlists.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CreateJobPlaylist> playlistsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CreateJobPlaylist>(playlists.size());
         playlistsCopy.addAll(playlists);
         this.playlists = playlistsCopy;
     }
@@ -483,7 +483,7 @@ public class CreateJobRequest extends AmazonWebServiceRequest implements Seriali
         if (playlists == null) {
             this.playlists = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<CreateJobPlaylist> playlistsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CreateJobPlaylist>(playlists.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CreateJobPlaylist> playlistsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CreateJobPlaylist>(playlists.size());
             playlistsCopy.addAll(playlists);
             this.playlists = playlistsCopy;
         }

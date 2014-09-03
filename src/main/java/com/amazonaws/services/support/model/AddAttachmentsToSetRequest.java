@@ -28,7 +28,7 @@ public class AddAttachmentsToSetRequest extends AmazonWebServiceRequest implemen
 
     private String attachmentSetId;
 
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Attachment> attachments;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Attachment> attachments;
 
     /**
      * Returns the value of the AttachmentSetId property for this object.
@@ -70,7 +70,7 @@ public class AddAttachmentsToSetRequest extends AmazonWebServiceRequest implemen
      */
     public java.util.List<Attachment> getAttachments() {
         if (attachments == null) {
-              attachments = new com.amazonaws.internal.ListWithAutoConstructFlag<Attachment>();
+              attachments = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Attachment>();
               attachments.setAutoConstruct(true);
         }
         return attachments;
@@ -86,7 +86,7 @@ public class AddAttachmentsToSetRequest extends AmazonWebServiceRequest implemen
             this.attachments = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Attachment> attachmentsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Attachment>(attachments.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Attachment> attachmentsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Attachment>(attachments.size());
         attachmentsCopy.addAll(attachments);
         this.attachments = attachmentsCopy;
     }
@@ -123,7 +123,7 @@ public class AddAttachmentsToSetRequest extends AmazonWebServiceRequest implemen
         if (attachments == null) {
             this.attachments = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Attachment> attachmentsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Attachment>(attachments.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Attachment> attachmentsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Attachment>(attachments.size());
             attachmentsCopy.addAll(attachments);
             this.attachments = attachmentsCopy;
         }

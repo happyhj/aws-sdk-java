@@ -23,8 +23,8 @@ import java.io.InputStream;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import com.amazonaws.sdkutil.ResettableInputStream;
-import com.amazonaws.sdkutil.SdkInputStream;
+import com.amazonaws.client.util.sdk.ResettableInputStream;
+import com.amazonaws.client.util.sdk.SdkInputStream;
 
 /**
  * A repeatable input stream wrapper for any input stream. This input stream

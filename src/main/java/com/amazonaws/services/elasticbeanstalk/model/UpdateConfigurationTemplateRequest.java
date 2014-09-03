@@ -76,14 +76,14 @@ public class UpdateConfigurationTemplateRequest extends AmazonWebServiceRequest 
      * A list of configuration option settings to update with the new
      * specified option value.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ConfigurationOptionSetting> optionSettings;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ConfigurationOptionSetting> optionSettings;
 
     /**
      * A list of configuration options to remove from the configuration set.
      * <p> Constraint: You can remove only <code>UserDefined</code>
      * configuration options.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<OptionSpecification> optionsToRemove;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionSpecification> optionsToRemove;
 
     /**
      * Default constructor for a new UpdateConfigurationTemplateRequest object.  Callers should use the
@@ -281,7 +281,7 @@ public class UpdateConfigurationTemplateRequest extends AmazonWebServiceRequest 
      */
     public java.util.List<ConfigurationOptionSetting> getOptionSettings() {
         if (optionSettings == null) {
-              optionSettings = new com.amazonaws.internal.ListWithAutoConstructFlag<ConfigurationOptionSetting>();
+              optionSettings = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ConfigurationOptionSetting>();
               optionSettings.setAutoConstruct(true);
         }
         return optionSettings;
@@ -299,7 +299,7 @@ public class UpdateConfigurationTemplateRequest extends AmazonWebServiceRequest 
             this.optionSettings = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ConfigurationOptionSetting> optionSettingsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ConfigurationOptionSetting>(optionSettings.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ConfigurationOptionSetting> optionSettingsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ConfigurationOptionSetting>(optionSettings.size());
         optionSettingsCopy.addAll(optionSettings);
         this.optionSettings = optionSettingsCopy;
     }
@@ -340,7 +340,7 @@ public class UpdateConfigurationTemplateRequest extends AmazonWebServiceRequest 
         if (optionSettings == null) {
             this.optionSettings = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ConfigurationOptionSetting> optionSettingsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ConfigurationOptionSetting>(optionSettings.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ConfigurationOptionSetting> optionSettingsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ConfigurationOptionSetting>(optionSettings.size());
             optionSettingsCopy.addAll(optionSettings);
             this.optionSettings = optionSettingsCopy;
         }
@@ -359,7 +359,7 @@ public class UpdateConfigurationTemplateRequest extends AmazonWebServiceRequest 
      */
     public java.util.List<OptionSpecification> getOptionsToRemove() {
         if (optionsToRemove == null) {
-              optionsToRemove = new com.amazonaws.internal.ListWithAutoConstructFlag<OptionSpecification>();
+              optionsToRemove = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionSpecification>();
               optionsToRemove.setAutoConstruct(true);
         }
         return optionsToRemove;
@@ -379,7 +379,7 @@ public class UpdateConfigurationTemplateRequest extends AmazonWebServiceRequest 
             this.optionsToRemove = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<OptionSpecification> optionsToRemoveCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<OptionSpecification>(optionsToRemove.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionSpecification> optionsToRemoveCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionSpecification>(optionsToRemove.size());
         optionsToRemoveCopy.addAll(optionsToRemove);
         this.optionsToRemove = optionsToRemoveCopy;
     }
@@ -424,7 +424,7 @@ public class UpdateConfigurationTemplateRequest extends AmazonWebServiceRequest 
         if (optionsToRemove == null) {
             this.optionsToRemove = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<OptionSpecification> optionsToRemoveCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<OptionSpecification>(optionsToRemove.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionSpecification> optionsToRemoveCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionSpecification>(optionsToRemove.size());
             optionsToRemoveCopy.addAll(optionsToRemove);
             this.optionsToRemove = optionsToRemoveCopy;
         }

@@ -48,7 +48,7 @@ public class CacheSubnetGroup implements Serializable {
     /**
      * A list of subnets associated with the cache subnet group.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Subnet> subnets;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Subnet> subnets;
 
     /**
      * The name of the cache subnet group.
@@ -162,7 +162,7 @@ public class CacheSubnetGroup implements Serializable {
      */
     public java.util.List<Subnet> getSubnets() {
         if (subnets == null) {
-              subnets = new com.amazonaws.internal.ListWithAutoConstructFlag<Subnet>();
+              subnets = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Subnet>();
               subnets.setAutoConstruct(true);
         }
         return subnets;
@@ -178,7 +178,7 @@ public class CacheSubnetGroup implements Serializable {
             this.subnets = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Subnet> subnetsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Subnet>(subnets.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Subnet> subnetsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Subnet>(subnets.size());
         subnetsCopy.addAll(subnets);
         this.subnets = subnetsCopy;
     }
@@ -215,7 +215,7 @@ public class CacheSubnetGroup implements Serializable {
         if (subnets == null) {
             this.subnets = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Subnet> subnetsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Subnet>(subnets.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Subnet> subnetsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Subnet>(subnets.size());
             subnetsCopy.addAll(subnets);
             this.subnets = subnetsCopy;
         }

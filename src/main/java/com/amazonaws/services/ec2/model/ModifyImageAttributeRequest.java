@@ -54,20 +54,20 @@ public class ModifyImageAttributeRequest extends AmazonWebServiceRequest impleme
      * One or more AWS account IDs. This is only valid when modifying the
      * <code>launchPermission</code> attribute.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> userIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> userIds;
 
     /**
      * One or more user groups. This is only valid when modifying the
      * <code>launchPermission</code> attribute.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> userGroups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> userGroups;
 
     /**
      * One or more product codes. After you add a product code to an AMI, it
      * can't be removed. This is only valid when modifying the
      * <code>productCodes</code> attribute.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> productCodes;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> productCodes;
 
     /**
      * The value of the attribute being modified. This is only valid when
@@ -212,7 +212,7 @@ public class ModifyImageAttributeRequest extends AmazonWebServiceRequest impleme
      */
     public java.util.List<String> getUserIds() {
         if (userIds == null) {
-              userIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              userIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               userIds.setAutoConstruct(true);
         }
         return userIds;
@@ -230,7 +230,7 @@ public class ModifyImageAttributeRequest extends AmazonWebServiceRequest impleme
             this.userIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> userIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(userIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> userIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(userIds.size());
         userIdsCopy.addAll(userIds);
         this.userIds = userIdsCopy;
     }
@@ -271,7 +271,7 @@ public class ModifyImageAttributeRequest extends AmazonWebServiceRequest impleme
         if (userIds == null) {
             this.userIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> userIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(userIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> userIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(userIds.size());
             userIdsCopy.addAll(userIds);
             this.userIds = userIdsCopy;
         }
@@ -288,7 +288,7 @@ public class ModifyImageAttributeRequest extends AmazonWebServiceRequest impleme
      */
     public java.util.List<String> getUserGroups() {
         if (userGroups == null) {
-              userGroups = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              userGroups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               userGroups.setAutoConstruct(true);
         }
         return userGroups;
@@ -306,7 +306,7 @@ public class ModifyImageAttributeRequest extends AmazonWebServiceRequest impleme
             this.userGroups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> userGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(userGroups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> userGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(userGroups.size());
         userGroupsCopy.addAll(userGroups);
         this.userGroups = userGroupsCopy;
     }
@@ -347,7 +347,7 @@ public class ModifyImageAttributeRequest extends AmazonWebServiceRequest impleme
         if (userGroups == null) {
             this.userGroups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> userGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(userGroups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> userGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(userGroups.size());
             userGroupsCopy.addAll(userGroups);
             this.userGroups = userGroupsCopy;
         }
@@ -366,7 +366,7 @@ public class ModifyImageAttributeRequest extends AmazonWebServiceRequest impleme
      */
     public java.util.List<String> getProductCodes() {
         if (productCodes == null) {
-              productCodes = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              productCodes = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               productCodes.setAutoConstruct(true);
         }
         return productCodes;
@@ -386,7 +386,7 @@ public class ModifyImageAttributeRequest extends AmazonWebServiceRequest impleme
             this.productCodes = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> productCodesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(productCodes.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> productCodesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(productCodes.size());
         productCodesCopy.addAll(productCodes);
         this.productCodes = productCodesCopy;
     }
@@ -431,7 +431,7 @@ public class ModifyImageAttributeRequest extends AmazonWebServiceRequest impleme
         if (productCodes == null) {
             this.productCodes = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> productCodesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(productCodes.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> productCodesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(productCodes.size());
             productCodesCopy.addAll(productCodes);
             this.productCodes = productCodesCopy;
         }

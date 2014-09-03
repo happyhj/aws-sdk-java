@@ -29,12 +29,12 @@ public class DescribeSnapshotAttributeResult implements Serializable {
     /**
      * A list of permissions for creating volumes from the snapshot.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<CreateVolumePermission> createVolumePermissions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CreateVolumePermission> createVolumePermissions;
 
     /**
      * A list of product codes.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ProductCode> productCodes;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ProductCode> productCodes;
 
     /**
      * The ID of the Amazon EBS snapshot.
@@ -76,7 +76,7 @@ public class DescribeSnapshotAttributeResult implements Serializable {
      */
     public java.util.List<CreateVolumePermission> getCreateVolumePermissions() {
         if (createVolumePermissions == null) {
-              createVolumePermissions = new com.amazonaws.internal.ListWithAutoConstructFlag<CreateVolumePermission>();
+              createVolumePermissions = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CreateVolumePermission>();
               createVolumePermissions.setAutoConstruct(true);
         }
         return createVolumePermissions;
@@ -92,7 +92,7 @@ public class DescribeSnapshotAttributeResult implements Serializable {
             this.createVolumePermissions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<CreateVolumePermission> createVolumePermissionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CreateVolumePermission>(createVolumePermissions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CreateVolumePermission> createVolumePermissionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CreateVolumePermission>(createVolumePermissions.size());
         createVolumePermissionsCopy.addAll(createVolumePermissions);
         this.createVolumePermissions = createVolumePermissionsCopy;
     }
@@ -129,7 +129,7 @@ public class DescribeSnapshotAttributeResult implements Serializable {
         if (createVolumePermissions == null) {
             this.createVolumePermissions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<CreateVolumePermission> createVolumePermissionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CreateVolumePermission>(createVolumePermissions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CreateVolumePermission> createVolumePermissionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CreateVolumePermission>(createVolumePermissions.size());
             createVolumePermissionsCopy.addAll(createVolumePermissions);
             this.createVolumePermissions = createVolumePermissionsCopy;
         }
@@ -144,7 +144,7 @@ public class DescribeSnapshotAttributeResult implements Serializable {
      */
     public java.util.List<ProductCode> getProductCodes() {
         if (productCodes == null) {
-              productCodes = new com.amazonaws.internal.ListWithAutoConstructFlag<ProductCode>();
+              productCodes = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ProductCode>();
               productCodes.setAutoConstruct(true);
         }
         return productCodes;
@@ -160,7 +160,7 @@ public class DescribeSnapshotAttributeResult implements Serializable {
             this.productCodes = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ProductCode> productCodesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ProductCode>(productCodes.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ProductCode> productCodesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ProductCode>(productCodes.size());
         productCodesCopy.addAll(productCodes);
         this.productCodes = productCodesCopy;
     }
@@ -197,7 +197,7 @@ public class DescribeSnapshotAttributeResult implements Serializable {
         if (productCodes == null) {
             this.productCodes = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ProductCode> productCodesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ProductCode>(productCodes.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ProductCode> productCodesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ProductCode>(productCodes.size());
             productCodesCopy.addAll(productCodes);
             this.productCodes = productCodesCopy;
         }

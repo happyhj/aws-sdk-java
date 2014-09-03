@@ -40,7 +40,7 @@ public class DescribeBundleTasksRequest extends AmazonWebServiceRequest implemen
      * One or more bundle task IDs. <p>Default: Describes all your bundle
      * tasks.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> bundleIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> bundleIds;
 
     /**
      * One or more filters. <ul> <li> <p><code>bundle-id</code> - The ID of
@@ -60,7 +60,7 @@ public class DescribeBundleTasksRequest extends AmazonWebServiceRequest implemen
      * | <code>failed</code>). </li> <li> <p><code>update-time</code> - The
      * time of the most recent update for the task. </li> </ul>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filters;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filters;
 
     /**
      * One or more bundle task IDs. <p>Default: Describes all your bundle
@@ -71,7 +71,7 @@ public class DescribeBundleTasksRequest extends AmazonWebServiceRequest implemen
      */
     public java.util.List<String> getBundleIds() {
         if (bundleIds == null) {
-              bundleIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              bundleIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               bundleIds.setAutoConstruct(true);
         }
         return bundleIds;
@@ -89,7 +89,7 @@ public class DescribeBundleTasksRequest extends AmazonWebServiceRequest implemen
             this.bundleIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> bundleIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(bundleIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> bundleIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(bundleIds.size());
         bundleIdsCopy.addAll(bundleIds);
         this.bundleIds = bundleIdsCopy;
     }
@@ -130,7 +130,7 @@ public class DescribeBundleTasksRequest extends AmazonWebServiceRequest implemen
         if (bundleIds == null) {
             this.bundleIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> bundleIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(bundleIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> bundleIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(bundleIds.size());
             bundleIdsCopy.addAll(bundleIds);
             this.bundleIds = bundleIdsCopy;
         }
@@ -175,7 +175,7 @@ public class DescribeBundleTasksRequest extends AmazonWebServiceRequest implemen
      */
     public java.util.List<Filter> getFilters() {
         if (filters == null) {
-              filters = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>();
+              filters = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>();
               filters.setAutoConstruct(true);
         }
         return filters;
@@ -221,7 +221,7 @@ public class DescribeBundleTasksRequest extends AmazonWebServiceRequest implemen
             this.filters = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
         filtersCopy.addAll(filters);
         this.filters = filtersCopy;
     }
@@ -318,7 +318,7 @@ public class DescribeBundleTasksRequest extends AmazonWebServiceRequest implemen
         if (filters == null) {
             this.filters = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
             filtersCopy.addAll(filters);
             this.filters = filtersCopy;
         }

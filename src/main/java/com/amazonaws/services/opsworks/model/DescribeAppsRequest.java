@@ -50,7 +50,7 @@ public class DescribeAppsRequest extends AmazonWebServiceRequest implements Seri
      * parameter, <code>DescribeApps</code> returns a description of the
      * specified apps. Otherwise, it returns a description of every app.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> appIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> appIds;
 
     /**
      * The app stack ID. If you use this parameter, <code>DescribeApps</code>
@@ -102,7 +102,7 @@ public class DescribeAppsRequest extends AmazonWebServiceRequest implements Seri
      */
     public java.util.List<String> getAppIds() {
         if (appIds == null) {
-              appIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              appIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               appIds.setAutoConstruct(true);
         }
         return appIds;
@@ -122,7 +122,7 @@ public class DescribeAppsRequest extends AmazonWebServiceRequest implements Seri
             this.appIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> appIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(appIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> appIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(appIds.size());
         appIdsCopy.addAll(appIds);
         this.appIds = appIdsCopy;
     }
@@ -167,7 +167,7 @@ public class DescribeAppsRequest extends AmazonWebServiceRequest implements Seri
         if (appIds == null) {
             this.appIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> appIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(appIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> appIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(appIds.size());
             appIdsCopy.addAll(appIds);
             this.appIds = appIdsCopy;
         }

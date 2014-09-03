@@ -47,7 +47,7 @@ public class DescribeIndexFieldsRequest extends AmazonWebServiceRequest implemen
      * Limits the <code>DescribeIndexFields</code> response to the specified
      * fields.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> fieldNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> fieldNames;
 
     /**
      * A string that represents the name of a domain. Domain names must be
@@ -127,7 +127,7 @@ public class DescribeIndexFieldsRequest extends AmazonWebServiceRequest implemen
      */
     public java.util.List<String> getFieldNames() {
         if (fieldNames == null) {
-              fieldNames = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              fieldNames = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               fieldNames.setAutoConstruct(true);
         }
         return fieldNames;
@@ -145,7 +145,7 @@ public class DescribeIndexFieldsRequest extends AmazonWebServiceRequest implemen
             this.fieldNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> fieldNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(fieldNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> fieldNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(fieldNames.size());
         fieldNamesCopy.addAll(fieldNames);
         this.fieldNames = fieldNamesCopy;
     }
@@ -186,7 +186,7 @@ public class DescribeIndexFieldsRequest extends AmazonWebServiceRequest implemen
         if (fieldNames == null) {
             this.fieldNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> fieldNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(fieldNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> fieldNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(fieldNames.size());
             fieldNamesCopy.addAll(fieldNames);
             this.fieldNames = fieldNamesCopy;
         }

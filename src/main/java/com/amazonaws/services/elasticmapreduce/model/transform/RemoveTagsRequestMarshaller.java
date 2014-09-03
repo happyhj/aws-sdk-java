@@ -20,12 +20,12 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.elasticmapreduce.model.RemoveTagsRequest;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Remove Tags Request Marshaller
@@ -54,7 +54,7 @@ public class RemoveTagsRequestMarshaller implements Marshaller<Request<RemoveTag
                 jsonWriter.key("ResourceId").value(removeTagsRequest.getResourceId());
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> tagKeysList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(removeTagsRequest.getTagKeys());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> tagKeysList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(removeTagsRequest.getTagKeys());
             if (tagKeysList != null && !(tagKeysList.isAutoConstruct() && tagKeysList.isEmpty())) {
 
                 jsonWriter.key("TagKeys");

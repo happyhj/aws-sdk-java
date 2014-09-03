@@ -28,7 +28,7 @@ public class ScanResult implements Serializable {
      * in this array consists of an attribute name and the value for that
      * attribute.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<java.util.Map<String,AttributeValue>> items;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<java.util.Map<String,AttributeValue>> items;
 
     /**
      * The number of items in the response. <p>If you used a
@@ -103,7 +103,7 @@ public class ScanResult implements Serializable {
             this.items = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<java.util.Map<String,AttributeValue>> itemsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<java.util.Map<String,AttributeValue>>(items.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<java.util.Map<String,AttributeValue>> itemsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<java.util.Map<String,AttributeValue>>(items.size());
         itemsCopy.addAll(items);
         this.items = itemsCopy;
     }
@@ -148,7 +148,7 @@ public class ScanResult implements Serializable {
         if (items == null) {
             this.items = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<java.util.Map<String,AttributeValue>> itemsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<java.util.Map<String,AttributeValue>>(items.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<java.util.Map<String,AttributeValue>> itemsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<java.util.Map<String,AttributeValue>>(items.size());
             itemsCopy.addAll(items);
             this.items = itemsCopy;
         }

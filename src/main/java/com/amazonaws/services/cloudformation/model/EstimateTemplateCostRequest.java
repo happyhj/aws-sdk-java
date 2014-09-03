@@ -61,7 +61,7 @@ public class EstimateTemplateCostRequest extends AmazonWebServiceRequest impleme
      * A list of <code>Parameter</code> structures that specify input
      * parameters.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Parameter> parameters;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Parameter> parameters;
 
     /**
      * Structure containing the template body with a minimum length of 1 byte
@@ -222,7 +222,7 @@ public class EstimateTemplateCostRequest extends AmazonWebServiceRequest impleme
      */
     public java.util.List<Parameter> getParameters() {
         if (parameters == null) {
-              parameters = new com.amazonaws.internal.ListWithAutoConstructFlag<Parameter>();
+              parameters = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Parameter>();
               parameters.setAutoConstruct(true);
         }
         return parameters;
@@ -240,7 +240,7 @@ public class EstimateTemplateCostRequest extends AmazonWebServiceRequest impleme
             this.parameters = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Parameter> parametersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Parameter>(parameters.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Parameter> parametersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Parameter>(parameters.size());
         parametersCopy.addAll(parameters);
         this.parameters = parametersCopy;
     }
@@ -281,7 +281,7 @@ public class EstimateTemplateCostRequest extends AmazonWebServiceRequest impleme
         if (parameters == null) {
             this.parameters = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Parameter> parametersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Parameter>(parameters.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Parameter> parametersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Parameter>(parameters.size());
             parametersCopy.addAll(parameters);
             this.parameters = parametersCopy;
         }

@@ -21,7 +21,7 @@ import java.io.Serializable;
  */
 public class DescribeMetricFiltersResult implements Serializable {
 
-    private com.amazonaws.internal.ListWithAutoConstructFlag<MetricFilter> metricFilters;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricFilter> metricFilters;
 
     /**
      * A string token used for pagination that points to the next page of
@@ -37,7 +37,7 @@ public class DescribeMetricFiltersResult implements Serializable {
      */
     public java.util.List<MetricFilter> getMetricFilters() {
         if (metricFilters == null) {
-              metricFilters = new com.amazonaws.internal.ListWithAutoConstructFlag<MetricFilter>();
+              metricFilters = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricFilter>();
               metricFilters.setAutoConstruct(true);
         }
         return metricFilters;
@@ -53,7 +53,7 @@ public class DescribeMetricFiltersResult implements Serializable {
             this.metricFilters = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<MetricFilter> metricFiltersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<MetricFilter>(metricFilters.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricFilter> metricFiltersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricFilter>(metricFilters.size());
         metricFiltersCopy.addAll(metricFilters);
         this.metricFilters = metricFiltersCopy;
     }
@@ -90,7 +90,7 @@ public class DescribeMetricFiltersResult implements Serializable {
         if (metricFilters == null) {
             this.metricFilters = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<MetricFilter> metricFiltersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<MetricFilter>(metricFilters.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricFilter> metricFiltersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MetricFilter>(metricFilters.size());
             metricFiltersCopy.addAll(metricFilters);
             this.metricFilters = metricFiltersCopy;
         }

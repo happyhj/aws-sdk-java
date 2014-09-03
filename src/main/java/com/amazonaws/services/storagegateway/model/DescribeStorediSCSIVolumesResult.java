@@ -21,7 +21,7 @@ import java.io.Serializable;
  */
 public class DescribeStorediSCSIVolumesResult implements Serializable {
 
-    private com.amazonaws.internal.ListWithAutoConstructFlag<StorediSCSIVolume> storediSCSIVolumes;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StorediSCSIVolume> storediSCSIVolumes;
 
     /**
      * Returns the value of the StorediSCSIVolumes property for this object.
@@ -30,7 +30,7 @@ public class DescribeStorediSCSIVolumesResult implements Serializable {
      */
     public java.util.List<StorediSCSIVolume> getStorediSCSIVolumes() {
         if (storediSCSIVolumes == null) {
-              storediSCSIVolumes = new com.amazonaws.internal.ListWithAutoConstructFlag<StorediSCSIVolume>();
+              storediSCSIVolumes = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StorediSCSIVolume>();
               storediSCSIVolumes.setAutoConstruct(true);
         }
         return storediSCSIVolumes;
@@ -46,7 +46,7 @@ public class DescribeStorediSCSIVolumesResult implements Serializable {
             this.storediSCSIVolumes = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<StorediSCSIVolume> storediSCSIVolumesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<StorediSCSIVolume>(storediSCSIVolumes.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StorediSCSIVolume> storediSCSIVolumesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StorediSCSIVolume>(storediSCSIVolumes.size());
         storediSCSIVolumesCopy.addAll(storediSCSIVolumes);
         this.storediSCSIVolumes = storediSCSIVolumesCopy;
     }
@@ -83,7 +83,7 @@ public class DescribeStorediSCSIVolumesResult implements Serializable {
         if (storediSCSIVolumes == null) {
             this.storediSCSIVolumes = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<StorediSCSIVolume> storediSCSIVolumesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<StorediSCSIVolume>(storediSCSIVolumes.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StorediSCSIVolume> storediSCSIVolumesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StorediSCSIVolume>(storediSCSIVolumes.size());
             storediSCSIVolumesCopy.addAll(storediSCSIVolumes);
             this.storediSCSIVolumes = storediSCSIVolumesCopy;
         }

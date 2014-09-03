@@ -26,7 +26,7 @@ public class ListStackResourcesResult implements Serializable {
     /**
      * A list of <code>StackResourceSummary</code> structures.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<StackResourceSummary> stackResourceSummaries;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StackResourceSummary> stackResourceSummaries;
 
     /**
      * String that identifies the start of the next list of stack resources,
@@ -44,7 +44,7 @@ public class ListStackResourcesResult implements Serializable {
      */
     public java.util.List<StackResourceSummary> getStackResourceSummaries() {
         if (stackResourceSummaries == null) {
-              stackResourceSummaries = new com.amazonaws.internal.ListWithAutoConstructFlag<StackResourceSummary>();
+              stackResourceSummaries = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StackResourceSummary>();
               stackResourceSummaries.setAutoConstruct(true);
         }
         return stackResourceSummaries;
@@ -60,7 +60,7 @@ public class ListStackResourcesResult implements Serializable {
             this.stackResourceSummaries = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<StackResourceSummary> stackResourceSummariesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<StackResourceSummary>(stackResourceSummaries.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StackResourceSummary> stackResourceSummariesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StackResourceSummary>(stackResourceSummaries.size());
         stackResourceSummariesCopy.addAll(stackResourceSummaries);
         this.stackResourceSummaries = stackResourceSummariesCopy;
     }
@@ -97,7 +97,7 @@ public class ListStackResourcesResult implements Serializable {
         if (stackResourceSummaries == null) {
             this.stackResourceSummaries = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<StackResourceSummary> stackResourceSummariesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<StackResourceSummary>(stackResourceSummaries.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StackResourceSummary> stackResourceSummariesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StackResourceSummary>(stackResourceSummaries.size());
             stackResourceSummariesCopy.addAll(stackResourceSummaries);
             this.stackResourceSummaries = stackResourceSummariesCopy;
         }

@@ -20,14 +20,14 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.datapipeline.model.Field;
 import com.amazonaws.services.datapipeline.model.PipelineObject;
 import com.amazonaws.services.datapipeline.model.ValidatePipelineDefinitionRequest;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Validate Pipeline Definition Request Marshaller
@@ -56,7 +56,7 @@ public class ValidatePipelineDefinitionRequestMarshaller implements Marshaller<R
                 jsonWriter.key("pipelineId").value(validatePipelineDefinitionRequest.getPipelineId());
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<PipelineObject> pipelineObjectsList = (com.amazonaws.internal.ListWithAutoConstructFlag<PipelineObject>)(validatePipelineDefinitionRequest.getPipelineObjects());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PipelineObject> pipelineObjectsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PipelineObject>)(validatePipelineDefinitionRequest.getPipelineObjects());
             if (pipelineObjectsList != null && !(pipelineObjectsList.isAutoConstruct() && pipelineObjectsList.isEmpty())) {
 
                 jsonWriter.key("pipelineObjects");
@@ -72,7 +72,7 @@ public class ValidatePipelineDefinitionRequestMarshaller implements Marshaller<R
                             jsonWriter.key("name").value(pipelineObjectsListValue.getName());
                         }
 
-                        com.amazonaws.internal.ListWithAutoConstructFlag<Field> fieldsList = (com.amazonaws.internal.ListWithAutoConstructFlag<Field>)(pipelineObjectsListValue.getFields());
+                        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Field> fieldsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Field>)(pipelineObjectsListValue.getFields());
                         if (fieldsList != null && !(fieldsList.isAutoConstruct() && fieldsList.isEmpty())) {
 
                             jsonWriter.key("fields");

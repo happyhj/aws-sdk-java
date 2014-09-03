@@ -23,7 +23,7 @@ import java.util.Map;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.elastictranscoder.model.Notifications;
@@ -32,7 +32,7 @@ import com.amazonaws.services.elastictranscoder.model.PipelineOutputConfig;
 import com.amazonaws.services.elastictranscoder.model.UpdatePipelineRequest;
 import com.amazonaws.stringutil.StringUtils;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Update Pipeline Request Marshaller
@@ -149,7 +149,7 @@ public class UpdatePipelineRequestMarshaller implements Marshaller<Request<Updat
                     jsonWriter.key("StorageClass").value(contentConfig.getStorageClass());
                 }
 
-                com.amazonaws.internal.ListWithAutoConstructFlag<Permission> permissionsList = (com.amazonaws.internal.ListWithAutoConstructFlag<Permission>)(contentConfig.getPermissions());
+                com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Permission> permissionsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Permission>)(contentConfig.getPermissions());
                 if (permissionsList != null && !(permissionsList.isAutoConstruct() && permissionsList.isEmpty())) {
 
                     jsonWriter.key("Permissions");
@@ -165,7 +165,7 @@ public class UpdatePipelineRequestMarshaller implements Marshaller<Request<Updat
                                 jsonWriter.key("Grantee").value(permissionsListValue.getGrantee());
                             }
 
-                            com.amazonaws.internal.ListWithAutoConstructFlag<String> accessList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(permissionsListValue.getAccess());
+                            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> accessList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(permissionsListValue.getAccess());
                             if (accessList != null && !(accessList.isAutoConstruct() && accessList.isEmpty())) {
 
                                 jsonWriter.key("Access");
@@ -198,7 +198,7 @@ public class UpdatePipelineRequestMarshaller implements Marshaller<Request<Updat
                     jsonWriter.key("StorageClass").value(thumbnailConfig.getStorageClass());
                 }
 
-                com.amazonaws.internal.ListWithAutoConstructFlag<Permission> permissionsList = (com.amazonaws.internal.ListWithAutoConstructFlag<Permission>)(thumbnailConfig.getPermissions());
+                com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Permission> permissionsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Permission>)(thumbnailConfig.getPermissions());
                 if (permissionsList != null && !(permissionsList.isAutoConstruct() && permissionsList.isEmpty())) {
 
                     jsonWriter.key("Permissions");
@@ -214,7 +214,7 @@ public class UpdatePipelineRequestMarshaller implements Marshaller<Request<Updat
                                 jsonWriter.key("Grantee").value(permissionsListValue.getGrantee());
                             }
 
-                            com.amazonaws.internal.ListWithAutoConstructFlag<String> accessList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(permissionsListValue.getAccess());
+                            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> accessList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(permissionsListValue.getAccess());
                             if (accessList != null && !(accessList.isAutoConstruct() && accessList.isEmpty())) {
 
                                 jsonWriter.key("Access");

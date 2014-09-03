@@ -20,12 +20,12 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.elasticmapreduce.model.ListInstancesRequest;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * List Instances Request Marshaller
@@ -57,7 +57,7 @@ public class ListInstancesRequestMarshaller implements Marshaller<Request<ListIn
                 jsonWriter.key("InstanceGroupId").value(listInstancesRequest.getInstanceGroupId());
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> instanceGroupTypesList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(listInstancesRequest.getInstanceGroupTypes());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> instanceGroupTypesList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(listInstancesRequest.getInstanceGroupTypes());
             if (instanceGroupTypesList != null && !(instanceGroupTypesList.isAutoConstruct() && instanceGroupTypesList.isEmpty())) {
 
                 jsonWriter.key("InstanceGroupTypes");

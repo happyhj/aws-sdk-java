@@ -24,7 +24,7 @@ public class DescribeCustomerGatewaysResult implements Serializable {
     /**
      * Information about one or more customer gateways.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<CustomerGateway> customerGateways;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CustomerGateway> customerGateways;
 
     /**
      * Information about one or more customer gateways.
@@ -33,7 +33,7 @@ public class DescribeCustomerGatewaysResult implements Serializable {
      */
     public java.util.List<CustomerGateway> getCustomerGateways() {
         if (customerGateways == null) {
-              customerGateways = new com.amazonaws.internal.ListWithAutoConstructFlag<CustomerGateway>();
+              customerGateways = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CustomerGateway>();
               customerGateways.setAutoConstruct(true);
         }
         return customerGateways;
@@ -49,7 +49,7 @@ public class DescribeCustomerGatewaysResult implements Serializable {
             this.customerGateways = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<CustomerGateway> customerGatewaysCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CustomerGateway>(customerGateways.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CustomerGateway> customerGatewaysCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CustomerGateway>(customerGateways.size());
         customerGatewaysCopy.addAll(customerGateways);
         this.customerGateways = customerGatewaysCopy;
     }
@@ -86,7 +86,7 @@ public class DescribeCustomerGatewaysResult implements Serializable {
         if (customerGateways == null) {
             this.customerGateways = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<CustomerGateway> customerGatewaysCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CustomerGateway>(customerGateways.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CustomerGateway> customerGatewaysCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CustomerGateway>(customerGateways.size());
             customerGatewaysCopy.addAll(customerGateways);
             this.customerGateways = customerGatewaysCopy;
         }

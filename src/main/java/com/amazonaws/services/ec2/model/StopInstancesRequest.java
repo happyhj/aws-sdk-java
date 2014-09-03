@@ -72,7 +72,7 @@ public class StopInstancesRequest extends AmazonWebServiceRequest implements Ser
     /**
      * One or more instance IDs.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> instanceIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> instanceIds;
 
     /**
      * Forces the instances to stop. The instances do not have an opportunity
@@ -107,7 +107,7 @@ public class StopInstancesRequest extends AmazonWebServiceRequest implements Ser
      */
     public java.util.List<String> getInstanceIds() {
         if (instanceIds == null) {
-              instanceIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              instanceIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               instanceIds.setAutoConstruct(true);
         }
         return instanceIds;
@@ -123,7 +123,7 @@ public class StopInstancesRequest extends AmazonWebServiceRequest implements Ser
             this.instanceIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> instanceIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(instanceIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> instanceIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(instanceIds.size());
         instanceIdsCopy.addAll(instanceIds);
         this.instanceIds = instanceIdsCopy;
     }
@@ -160,7 +160,7 @@ public class StopInstancesRequest extends AmazonWebServiceRequest implements Ser
         if (instanceIds == null) {
             this.instanceIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> instanceIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(instanceIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> instanceIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(instanceIds.size());
             instanceIdsCopy.addAll(instanceIds);
             this.instanceIds = instanceIdsCopy;
         }

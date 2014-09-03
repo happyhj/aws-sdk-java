@@ -26,7 +26,7 @@ public class DescribeVirtualGatewaysResult implements Serializable {
     /**
      * A list of virtual private gateways.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<VirtualGateway> virtualGateways;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VirtualGateway> virtualGateways;
 
     /**
      * A list of virtual private gateways.
@@ -35,7 +35,7 @@ public class DescribeVirtualGatewaysResult implements Serializable {
      */
     public java.util.List<VirtualGateway> getVirtualGateways() {
         if (virtualGateways == null) {
-              virtualGateways = new com.amazonaws.internal.ListWithAutoConstructFlag<VirtualGateway>();
+              virtualGateways = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VirtualGateway>();
               virtualGateways.setAutoConstruct(true);
         }
         return virtualGateways;
@@ -51,7 +51,7 @@ public class DescribeVirtualGatewaysResult implements Serializable {
             this.virtualGateways = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<VirtualGateway> virtualGatewaysCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<VirtualGateway>(virtualGateways.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VirtualGateway> virtualGatewaysCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VirtualGateway>(virtualGateways.size());
         virtualGatewaysCopy.addAll(virtualGateways);
         this.virtualGateways = virtualGatewaysCopy;
     }
@@ -88,7 +88,7 @@ public class DescribeVirtualGatewaysResult implements Serializable {
         if (virtualGateways == null) {
             this.virtualGateways = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<VirtualGateway> virtualGatewaysCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<VirtualGateway>(virtualGateways.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VirtualGateway> virtualGatewaysCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VirtualGateway>(virtualGateways.size());
             virtualGatewaysCopy.addAll(virtualGateways);
             this.virtualGateways = virtualGatewaysCopy;
         }

@@ -33,7 +33,7 @@ public class DescribeReservedCacheNodesResult implements Serializable {
      * A list of reserved cache nodes. Each element in the list contains
      * detailed information about one node.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ReservedCacheNode> reservedCacheNodes;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedCacheNode> reservedCacheNodes;
 
     /**
      * Provides an identifier to allow retrieval of paginated results.
@@ -77,7 +77,7 @@ public class DescribeReservedCacheNodesResult implements Serializable {
      */
     public java.util.List<ReservedCacheNode> getReservedCacheNodes() {
         if (reservedCacheNodes == null) {
-              reservedCacheNodes = new com.amazonaws.internal.ListWithAutoConstructFlag<ReservedCacheNode>();
+              reservedCacheNodes = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedCacheNode>();
               reservedCacheNodes.setAutoConstruct(true);
         }
         return reservedCacheNodes;
@@ -95,7 +95,7 @@ public class DescribeReservedCacheNodesResult implements Serializable {
             this.reservedCacheNodes = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ReservedCacheNode> reservedCacheNodesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ReservedCacheNode>(reservedCacheNodes.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedCacheNode> reservedCacheNodesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedCacheNode>(reservedCacheNodes.size());
         reservedCacheNodesCopy.addAll(reservedCacheNodes);
         this.reservedCacheNodes = reservedCacheNodesCopy;
     }
@@ -136,7 +136,7 @@ public class DescribeReservedCacheNodesResult implements Serializable {
         if (reservedCacheNodes == null) {
             this.reservedCacheNodes = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ReservedCacheNode> reservedCacheNodesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ReservedCacheNode>(reservedCacheNodes.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedCacheNode> reservedCacheNodesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedCacheNode>(reservedCacheNodes.size());
             reservedCacheNodesCopy.addAll(reservedCacheNodes);
             this.reservedCacheNodes = reservedCacheNodesCopy;
         }

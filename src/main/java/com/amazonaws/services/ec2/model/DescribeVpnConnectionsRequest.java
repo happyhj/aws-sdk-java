@@ -39,7 +39,7 @@ public class DescribeVpnConnectionsRequest extends AmazonWebServiceRequest imple
      * One or more VPN connection IDs. <p>Default: Describes your VPN
      * connections.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> vpnConnectionIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> vpnConnectionIds;
 
     /**
      * One or more filters. <ul> <li>
@@ -75,7 +75,7 @@ public class DescribeVpnConnectionsRequest extends AmazonWebServiceRequest imple
      * </li> <li> <p><code>vpn-gateway-id</code> - The ID of a virtual
      * private gateway associated with the VPN connection. </li> </ul>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filters;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filters;
 
     /**
      * One or more VPN connection IDs. <p>Default: Describes your VPN
@@ -86,7 +86,7 @@ public class DescribeVpnConnectionsRequest extends AmazonWebServiceRequest imple
      */
     public java.util.List<String> getVpnConnectionIds() {
         if (vpnConnectionIds == null) {
-              vpnConnectionIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              vpnConnectionIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               vpnConnectionIds.setAutoConstruct(true);
         }
         return vpnConnectionIds;
@@ -104,7 +104,7 @@ public class DescribeVpnConnectionsRequest extends AmazonWebServiceRequest imple
             this.vpnConnectionIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> vpnConnectionIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(vpnConnectionIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> vpnConnectionIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(vpnConnectionIds.size());
         vpnConnectionIdsCopy.addAll(vpnConnectionIds);
         this.vpnConnectionIds = vpnConnectionIdsCopy;
     }
@@ -145,7 +145,7 @@ public class DescribeVpnConnectionsRequest extends AmazonWebServiceRequest imple
         if (vpnConnectionIds == null) {
             this.vpnConnectionIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> vpnConnectionIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(vpnConnectionIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> vpnConnectionIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(vpnConnectionIds.size());
             vpnConnectionIdsCopy.addAll(vpnConnectionIds);
             this.vpnConnectionIds = vpnConnectionIdsCopy;
         }
@@ -222,7 +222,7 @@ public class DescribeVpnConnectionsRequest extends AmazonWebServiceRequest imple
      */
     public java.util.List<Filter> getFilters() {
         if (filters == null) {
-              filters = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>();
+              filters = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>();
               filters.setAutoConstruct(true);
         }
         return filters;
@@ -300,7 +300,7 @@ public class DescribeVpnConnectionsRequest extends AmazonWebServiceRequest imple
             this.filters = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
         filtersCopy.addAll(filters);
         this.filters = filtersCopy;
     }
@@ -461,7 +461,7 @@ public class DescribeVpnConnectionsRequest extends AmazonWebServiceRequest imple
         if (filters == null) {
             this.filters = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
             filtersCopy.addAll(filters);
             this.filters = filtersCopy;
         }

@@ -51,7 +51,7 @@ public class DescribeVTLDevicesRequest extends AmazonWebServiceRequest implement
      * are specified, the result will contain all devices on the specified
      * gateway.</note>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> vTLDeviceARNs;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> vTLDeviceARNs;
 
     /**
      * An opaque string that indicates the position at which to begin
@@ -140,7 +140,7 @@ public class DescribeVTLDevicesRequest extends AmazonWebServiceRequest implement
      */
     public java.util.List<String> getVTLDeviceARNs() {
         if (vTLDeviceARNs == null) {
-              vTLDeviceARNs = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              vTLDeviceARNs = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               vTLDeviceARNs.setAutoConstruct(true);
         }
         return vTLDeviceARNs;
@@ -164,7 +164,7 @@ public class DescribeVTLDevicesRequest extends AmazonWebServiceRequest implement
             this.vTLDeviceARNs = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> vTLDeviceARNsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(vTLDeviceARNs.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> vTLDeviceARNsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(vTLDeviceARNs.size());
         vTLDeviceARNsCopy.addAll(vTLDeviceARNs);
         this.vTLDeviceARNs = vTLDeviceARNsCopy;
     }
@@ -217,7 +217,7 @@ public class DescribeVTLDevicesRequest extends AmazonWebServiceRequest implement
         if (vTLDeviceARNs == null) {
             this.vTLDeviceARNs = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> vTLDeviceARNsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(vTLDeviceARNs.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> vTLDeviceARNsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(vTLDeviceARNs.size());
             vTLDeviceARNsCopy.addAll(vTLDeviceARNs);
             this.vTLDeviceARNs = vTLDeviceARNsCopy;
         }

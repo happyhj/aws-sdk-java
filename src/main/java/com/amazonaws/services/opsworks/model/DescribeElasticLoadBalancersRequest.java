@@ -49,7 +49,7 @@ public class DescribeElasticLoadBalancersRequest extends AmazonWebServiceRequest
      * A list of layer IDs. The action describes the Elastic Load Balancing
      * instances for the specified layers.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> layerIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> layerIds;
 
     /**
      * A stack ID. The action describes the stack's Elastic Load Balancing
@@ -99,7 +99,7 @@ public class DescribeElasticLoadBalancersRequest extends AmazonWebServiceRequest
      */
     public java.util.List<String> getLayerIds() {
         if (layerIds == null) {
-              layerIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              layerIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               layerIds.setAutoConstruct(true);
         }
         return layerIds;
@@ -117,7 +117,7 @@ public class DescribeElasticLoadBalancersRequest extends AmazonWebServiceRequest
             this.layerIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> layerIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(layerIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> layerIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(layerIds.size());
         layerIdsCopy.addAll(layerIds);
         this.layerIds = layerIdsCopy;
     }
@@ -158,7 +158,7 @@ public class DescribeElasticLoadBalancersRequest extends AmazonWebServiceRequest
         if (layerIds == null) {
             this.layerIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> layerIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(layerIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> layerIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(layerIds.size());
             layerIdsCopy.addAll(layerIds);
             this.layerIds = layerIdsCopy;
         }

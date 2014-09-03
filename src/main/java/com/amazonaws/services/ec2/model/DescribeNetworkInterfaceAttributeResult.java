@@ -39,7 +39,7 @@ public class DescribeNetworkInterfaceAttributeResult implements Serializable {
     /**
      * The security groups associated with the network interface.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<GroupIdentifier> groups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GroupIdentifier> groups;
 
     /**
      * The attachment (if any) of the network interface.
@@ -161,7 +161,7 @@ public class DescribeNetworkInterfaceAttributeResult implements Serializable {
      */
     public java.util.List<GroupIdentifier> getGroups() {
         if (groups == null) {
-              groups = new com.amazonaws.internal.ListWithAutoConstructFlag<GroupIdentifier>();
+              groups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GroupIdentifier>();
               groups.setAutoConstruct(true);
         }
         return groups;
@@ -177,7 +177,7 @@ public class DescribeNetworkInterfaceAttributeResult implements Serializable {
             this.groups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<GroupIdentifier> groupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<GroupIdentifier>(groups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GroupIdentifier> groupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GroupIdentifier>(groups.size());
         groupsCopy.addAll(groups);
         this.groups = groupsCopy;
     }
@@ -214,7 +214,7 @@ public class DescribeNetworkInterfaceAttributeResult implements Serializable {
         if (groups == null) {
             this.groups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<GroupIdentifier> groupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<GroupIdentifier>(groups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GroupIdentifier> groupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GroupIdentifier>(groups.size());
             groupsCopy.addAll(groups);
             this.groups = groupsCopy;
         }

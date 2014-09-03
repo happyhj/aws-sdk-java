@@ -20,12 +20,12 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.elasticmapreduce.model.SetVisibleToAllUsersRequest;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Set Visible To All Users Request Marshaller
@@ -50,7 +50,7 @@ public class SetVisibleToAllUsersRequestMarshaller implements Marshaller<Request
 
           jsonWriter.object();
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> jobFlowIdsList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(setVisibleToAllUsersRequest.getJobFlowIds());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> jobFlowIdsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(setVisibleToAllUsersRequest.getJobFlowIds());
             if (jobFlowIdsList != null && !(jobFlowIdsList.isAutoConstruct() && jobFlowIdsList.isEmpty())) {
 
                 jsonWriter.key("JobFlowIds");

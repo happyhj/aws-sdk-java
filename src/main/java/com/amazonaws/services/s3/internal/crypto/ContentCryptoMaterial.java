@@ -32,9 +32,9 @@ import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
 
-import com.amazonaws.codec.Base64;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.Jackson;
+import com.amazonaws.json.codec.Base64;
 import com.amazonaws.services.s3.Headers;
 import com.amazonaws.services.s3.KeyWrapException;
 import com.amazonaws.services.s3.model.CryptoMode;

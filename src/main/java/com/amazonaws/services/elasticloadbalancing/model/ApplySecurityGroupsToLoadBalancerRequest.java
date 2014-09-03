@@ -46,7 +46,7 @@ public class ApplySecurityGroupsToLoadBalancerRequest extends AmazonWebServiceRe
      * VPC. The security group IDs must be provided as the ID and not the
      * security group name (For example, sg-1234).
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> securityGroups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> securityGroups;
 
     /**
      * The name associated with the load balancer. The name must be unique
@@ -98,7 +98,7 @@ public class ApplySecurityGroupsToLoadBalancerRequest extends AmazonWebServiceRe
      */
     public java.util.List<String> getSecurityGroups() {
         if (securityGroups == null) {
-              securityGroups = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              securityGroups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               securityGroups.setAutoConstruct(true);
         }
         return securityGroups;
@@ -118,7 +118,7 @@ public class ApplySecurityGroupsToLoadBalancerRequest extends AmazonWebServiceRe
             this.securityGroups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> securityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(securityGroups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> securityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(securityGroups.size());
         securityGroupsCopy.addAll(securityGroups);
         this.securityGroups = securityGroupsCopy;
     }
@@ -163,7 +163,7 @@ public class ApplySecurityGroupsToLoadBalancerRequest extends AmazonWebServiceRe
         if (securityGroups == null) {
             this.securityGroups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> securityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(securityGroups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> securityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(securityGroups.size());
             securityGroupsCopy.addAll(securityGroups);
             this.securityGroups = securityGroupsCopy;
         }

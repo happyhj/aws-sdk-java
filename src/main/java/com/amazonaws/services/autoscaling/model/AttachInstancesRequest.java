@@ -39,7 +39,7 @@ public class AttachInstancesRequest extends AmazonWebServiceRequest implements S
      * One or more IDs of the Amazon EC2 instances to attach to the specified
      * Auto Scaling group. You must specify at least one instance ID.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> instanceIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> instanceIds;
 
     /**
      * The name of the Auto Scaling group to which to attach the specified
@@ -60,7 +60,7 @@ public class AttachInstancesRequest extends AmazonWebServiceRequest implements S
      */
     public java.util.List<String> getInstanceIds() {
         if (instanceIds == null) {
-              instanceIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              instanceIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               instanceIds.setAutoConstruct(true);
         }
         return instanceIds;
@@ -78,7 +78,7 @@ public class AttachInstancesRequest extends AmazonWebServiceRequest implements S
             this.instanceIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> instanceIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(instanceIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> instanceIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(instanceIds.size());
         instanceIdsCopy.addAll(instanceIds);
         this.instanceIds = instanceIdsCopy;
     }
@@ -119,7 +119,7 @@ public class AttachInstancesRequest extends AmazonWebServiceRequest implements S
         if (instanceIds == null) {
             this.instanceIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> instanceIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(instanceIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> instanceIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(instanceIds.size());
             instanceIdsCopy.addAll(instanceIds);
             this.instanceIds = instanceIdsCopy;
         }

@@ -24,7 +24,7 @@ public class DescribeTagsResult implements Serializable {
     /**
      * A list of tags.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<TagDescription> tags;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TagDescription> tags;
 
     /**
      * The token to use when requesting the next set of items. If there are
@@ -39,7 +39,7 @@ public class DescribeTagsResult implements Serializable {
      */
     public java.util.List<TagDescription> getTags() {
         if (tags == null) {
-              tags = new com.amazonaws.internal.ListWithAutoConstructFlag<TagDescription>();
+              tags = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TagDescription>();
               tags.setAutoConstruct(true);
         }
         return tags;
@@ -55,7 +55,7 @@ public class DescribeTagsResult implements Serializable {
             this.tags = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<TagDescription> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<TagDescription>(tags.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TagDescription> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TagDescription>(tags.size());
         tagsCopy.addAll(tags);
         this.tags = tagsCopy;
     }
@@ -92,7 +92,7 @@ public class DescribeTagsResult implements Serializable {
         if (tags == null) {
             this.tags = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<TagDescription> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<TagDescription>(tags.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TagDescription> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TagDescription>(tags.size());
             tagsCopy.addAll(tags);
             this.tags = tagsCopy;
         }

@@ -27,7 +27,7 @@ public class ListDeadLetterSourceQueuesResult implements Serializable {
      * A list of source queue URLs that have the RedrivePolicy queue
      * attribute configured with a dead letter queue.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> queueUrls;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> queueUrls;
 
     /**
      * A list of source queue URLs that have the RedrivePolicy queue
@@ -38,7 +38,7 @@ public class ListDeadLetterSourceQueuesResult implements Serializable {
      */
     public java.util.List<String> getQueueUrls() {
         if (queueUrls == null) {
-              queueUrls = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              queueUrls = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               queueUrls.setAutoConstruct(true);
         }
         return queueUrls;
@@ -56,7 +56,7 @@ public class ListDeadLetterSourceQueuesResult implements Serializable {
             this.queueUrls = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> queueUrlsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(queueUrls.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> queueUrlsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(queueUrls.size());
         queueUrlsCopy.addAll(queueUrls);
         this.queueUrls = queueUrlsCopy;
     }
@@ -97,7 +97,7 @@ public class ListDeadLetterSourceQueuesResult implements Serializable {
         if (queueUrls == null) {
             this.queueUrls = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> queueUrlsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(queueUrls.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> queueUrlsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(queueUrls.size());
             queueUrlsCopy.addAll(queueUrls);
             this.queueUrls = queueUrlsCopy;
         }

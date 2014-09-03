@@ -37,7 +37,7 @@ public class DescribeClustersResult implements Serializable {
      * A list of <a>Cluster</a> objects, where each object describes one
      * cluster.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Cluster> clusters;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Cluster> clusters;
 
     /**
      * A value that indicates the starting point for the next set of response
@@ -111,7 +111,7 @@ public class DescribeClustersResult implements Serializable {
      */
     public java.util.List<Cluster> getClusters() {
         if (clusters == null) {
-              clusters = new com.amazonaws.internal.ListWithAutoConstructFlag<Cluster>();
+              clusters = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Cluster>();
               clusters.setAutoConstruct(true);
         }
         return clusters;
@@ -129,7 +129,7 @@ public class DescribeClustersResult implements Serializable {
             this.clusters = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Cluster> clustersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Cluster>(clusters.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Cluster> clustersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Cluster>(clusters.size());
         clustersCopy.addAll(clusters);
         this.clusters = clustersCopy;
     }
@@ -170,7 +170,7 @@ public class DescribeClustersResult implements Serializable {
         if (clusters == null) {
             this.clusters = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Cluster> clustersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Cluster>(clusters.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Cluster> clustersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Cluster>(clusters.size());
             clustersCopy.addAll(clusters);
             this.clusters = clustersCopy;
         }

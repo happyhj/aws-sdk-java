@@ -24,7 +24,7 @@ public class DescribeConversionTasksResult implements Serializable {
     /**
      * 
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ConversionTask> conversionTasks;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ConversionTask> conversionTasks;
 
     /**
      * 
@@ -33,7 +33,7 @@ public class DescribeConversionTasksResult implements Serializable {
      */
     public java.util.List<ConversionTask> getConversionTasks() {
         if (conversionTasks == null) {
-              conversionTasks = new com.amazonaws.internal.ListWithAutoConstructFlag<ConversionTask>();
+              conversionTasks = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ConversionTask>();
               conversionTasks.setAutoConstruct(true);
         }
         return conversionTasks;
@@ -49,7 +49,7 @@ public class DescribeConversionTasksResult implements Serializable {
             this.conversionTasks = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ConversionTask> conversionTasksCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ConversionTask>(conversionTasks.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ConversionTask> conversionTasksCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ConversionTask>(conversionTasks.size());
         conversionTasksCopy.addAll(conversionTasks);
         this.conversionTasks = conversionTasksCopy;
     }
@@ -86,7 +86,7 @@ public class DescribeConversionTasksResult implements Serializable {
         if (conversionTasks == null) {
             this.conversionTasks = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ConversionTask> conversionTasksCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ConversionTask>(conversionTasks.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ConversionTask> conversionTasksCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ConversionTask>(conversionTasks.size());
             conversionTasksCopy.addAll(conversionTasks);
             this.conversionTasks = conversionTasksCopy;
         }

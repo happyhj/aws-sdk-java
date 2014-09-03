@@ -55,7 +55,7 @@ public class DescribeServiceErrorsRequest extends AmazonWebServiceRequest implem
      * <code>DescribeServiceErrors</code> returns descriptions of the
      * specified errors. Otherwise, it returns a description of every error.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> serviceErrorIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> serviceErrorIds;
 
     /**
      * The stack ID. If you use this parameter,
@@ -158,7 +158,7 @@ public class DescribeServiceErrorsRequest extends AmazonWebServiceRequest implem
      */
     public java.util.List<String> getServiceErrorIds() {
         if (serviceErrorIds == null) {
-              serviceErrorIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              serviceErrorIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               serviceErrorIds.setAutoConstruct(true);
         }
         return serviceErrorIds;
@@ -178,7 +178,7 @@ public class DescribeServiceErrorsRequest extends AmazonWebServiceRequest implem
             this.serviceErrorIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> serviceErrorIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(serviceErrorIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> serviceErrorIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(serviceErrorIds.size());
         serviceErrorIdsCopy.addAll(serviceErrorIds);
         this.serviceErrorIds = serviceErrorIdsCopy;
     }
@@ -223,7 +223,7 @@ public class DescribeServiceErrorsRequest extends AmazonWebServiceRequest implem
         if (serviceErrorIds == null) {
             this.serviceErrorIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> serviceErrorIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(serviceErrorIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> serviceErrorIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(serviceErrorIds.size());
             serviceErrorIdsCopy.addAll(serviceErrorIds);
             this.serviceErrorIds = serviceErrorIdsCopy;
         }

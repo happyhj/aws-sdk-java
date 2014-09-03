@@ -14,8 +14,8 @@
  */
 package com.amazonaws.services.s3.transfer.internal;
 
-import com.amazonaws.event.ProgressListener;
-import com.amazonaws.event.ProgressListener.ExceptionReporter;
+import com.amazonaws.network.event.ProgressListener;
+import com.amazonaws.network.event.ProgressListener.ExceptionReporter;
 import com.amazonaws.services.s3.transfer.PersistableTransfer;
 
 /**

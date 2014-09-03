@@ -21,7 +21,6 @@ import java.util.List;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import com.amazonaws.ResponseMetadata;
 import com.amazonaws.authprovider.DefaultAWSCredentialsProviderChain;
 import com.amazonaws.client.ClientConfiguration;
 import com.amazonaws.client.handler.request.HandlerChainFactory;
@@ -36,8 +35,9 @@ import com.amazonaws.credential.AWSCredentialsProvider;
 import com.amazonaws.credential.StaticCredentialsProvider;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
-import com.amazonaws.metricsutil.AWSRequestMetrics;
-import com.amazonaws.metricsutil.AWSRequestMetrics.Field;
+import com.amazonaws.network.ResponseMetadata;
+import com.amazonaws.network.metrics.util.AWSRequestMetrics;
+import com.amazonaws.network.metrics.util.AWSRequestMetrics.Field;
 import com.amazonaws.network.metricscollector.RequestMetricCollector;
 import com.amazonaws.network.request.AmazonWebServiceRequest;
 import com.amazonaws.network.response.AmazonWebServiceResponse;
@@ -481,8 +481,8 @@ public class AmazonDynamoDBClient extends AmazonWebServiceClient implements Amaz
         ClientConfiguration config = orig;
         
         config = new ClientConfiguration(orig);
-        if (config.getRetryPolicy() == com.amazonaws.retry.PredefinedRetryPolicies.DEFAULT) {
-            config.setRetryPolicy(com.amazonaws.retry.PredefinedRetryPolicies.DYNAMODB_DEFAULT);
+        if (config.getRetryPolicy() == com.amazonaws.client.retry.PredefinedRetryPolicies.DEFAULT) {
+            config.setRetryPolicy(com.amazonaws.client.retry.PredefinedRetryPolicies.DYNAMODB_DEFAULT);
         }
         return config;
     }

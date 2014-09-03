@@ -20,12 +20,12 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.opsworks.model.CreateInstanceRequest;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Create Instance Request Marshaller
@@ -54,7 +54,7 @@ public class CreateInstanceRequestMarshaller implements Marshaller<Request<Creat
                 jsonWriter.key("StackId").value(createInstanceRequest.getStackId());
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> layerIdsList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(createInstanceRequest.getLayerIds());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> layerIdsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(createInstanceRequest.getLayerIds());
             if (layerIdsList != null && !(layerIdsList.isAutoConstruct() && layerIdsList.isEmpty())) {
 
                 jsonWriter.key("LayerIds");

@@ -46,7 +46,7 @@ public class CreateLoadBalancerListenersRequest extends AmazonWebServiceRequest 
      * <code>Protocol</code>, <code>InstanceProtocol</code>, and
      * <code>SSLCertificateId</code> items.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Listener> listeners;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Listener> listeners;
 
     /**
      * Default constructor for a new CreateLoadBalancerListenersRequest object.  Callers should use the
@@ -114,7 +114,7 @@ public class CreateLoadBalancerListenersRequest extends AmazonWebServiceRequest 
      */
     public java.util.List<Listener> getListeners() {
         if (listeners == null) {
-              listeners = new com.amazonaws.internal.ListWithAutoConstructFlag<Listener>();
+              listeners = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Listener>();
               listeners.setAutoConstruct(true);
         }
         return listeners;
@@ -134,7 +134,7 @@ public class CreateLoadBalancerListenersRequest extends AmazonWebServiceRequest 
             this.listeners = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Listener> listenersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Listener>(listeners.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Listener> listenersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Listener>(listeners.size());
         listenersCopy.addAll(listeners);
         this.listeners = listenersCopy;
     }
@@ -179,7 +179,7 @@ public class CreateLoadBalancerListenersRequest extends AmazonWebServiceRequest 
         if (listeners == null) {
             this.listeners = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Listener> listenersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Listener>(listeners.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Listener> listenersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Listener>(listeners.size());
             listenersCopy.addAll(listeners);
             this.listeners = listenersCopy;
         }

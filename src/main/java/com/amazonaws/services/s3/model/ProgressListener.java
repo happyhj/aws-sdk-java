@@ -17,7 +17,7 @@ package com.amazonaws.services.s3.model;
 /**
  * Listener interface for transfer progress events.
  * 
- * @deprecated Replaced by {@link com.amazonaws.event.ProgressListener}.
+ * @deprecated Replaced by {@link com.amazonaws.network.event.ProgressListener}.
  *
  * @see ProgressEvent
  * @see PutObjectRequest#setProgressListener(ProgressListener)

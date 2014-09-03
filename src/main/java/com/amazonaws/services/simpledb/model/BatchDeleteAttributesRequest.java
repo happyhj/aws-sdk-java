@@ -62,7 +62,7 @@ public class BatchDeleteAttributesRequest extends AmazonWebServiceRequest implem
     /**
      * A list of items on which to perform the operation.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<DeletableItem> items;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DeletableItem> items;
 
     /**
      * Default constructor for a new BatchDeleteAttributesRequest object.  Callers should use the
@@ -124,7 +124,7 @@ public class BatchDeleteAttributesRequest extends AmazonWebServiceRequest implem
      */
     public java.util.List<DeletableItem> getItems() {
         if (items == null) {
-              items = new com.amazonaws.internal.ListWithAutoConstructFlag<DeletableItem>();
+              items = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DeletableItem>();
               items.setAutoConstruct(true);
         }
         return items;
@@ -140,7 +140,7 @@ public class BatchDeleteAttributesRequest extends AmazonWebServiceRequest implem
             this.items = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<DeletableItem> itemsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DeletableItem>(items.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DeletableItem> itemsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DeletableItem>(items.size());
         itemsCopy.addAll(items);
         this.items = itemsCopy;
     }
@@ -177,7 +177,7 @@ public class BatchDeleteAttributesRequest extends AmazonWebServiceRequest implem
         if (items == null) {
             this.items = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<DeletableItem> itemsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DeletableItem>(items.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DeletableItem> itemsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DeletableItem>(items.size());
             itemsCopy.addAll(items);
             this.items = itemsCopy;
         }

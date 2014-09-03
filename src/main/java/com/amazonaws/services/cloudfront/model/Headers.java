@@ -47,7 +47,7 @@ public class Headers implements Serializable {
      * that you want CloudFront to forward to the origin and to vary on for
      * this cache behavior. If Quantity is 0, omit Items.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> items;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> items;
 
     /**
      * The number of different headers that you want CloudFront to forward to
@@ -129,7 +129,7 @@ public class Headers implements Serializable {
      */
     public java.util.List<String> getItems() {
         if (items == null) {
-              items = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              items = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               items.setAutoConstruct(true);
         }
         return items;
@@ -149,7 +149,7 @@ public class Headers implements Serializable {
             this.items = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> itemsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(items.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> itemsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(items.size());
         itemsCopy.addAll(items);
         this.items = itemsCopy;
     }
@@ -194,7 +194,7 @@ public class Headers implements Serializable {
         if (items == null) {
             this.items = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> itemsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(items.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> itemsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(items.size());
             itemsCopy.addAll(items);
             this.items = itemsCopy;
         }

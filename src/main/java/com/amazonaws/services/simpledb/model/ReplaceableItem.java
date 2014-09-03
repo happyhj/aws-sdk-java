@@ -30,7 +30,7 @@ public class ReplaceableItem implements Serializable {
     /**
      * The list of attributes for a replaceable item.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ReplaceableAttribute> attributes;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReplaceableAttribute> attributes;
 
     /**
      * Default constructor for a new ReplaceableItem object.  Callers should use the
@@ -102,7 +102,7 @@ public class ReplaceableItem implements Serializable {
      */
     public java.util.List<ReplaceableAttribute> getAttributes() {
         if (attributes == null) {
-              attributes = new com.amazonaws.internal.ListWithAutoConstructFlag<ReplaceableAttribute>();
+              attributes = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReplaceableAttribute>();
               attributes.setAutoConstruct(true);
         }
         return attributes;
@@ -118,7 +118,7 @@ public class ReplaceableItem implements Serializable {
             this.attributes = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ReplaceableAttribute> attributesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ReplaceableAttribute>(attributes.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReplaceableAttribute> attributesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReplaceableAttribute>(attributes.size());
         attributesCopy.addAll(attributes);
         this.attributes = attributesCopy;
     }
@@ -155,7 +155,7 @@ public class ReplaceableItem implements Serializable {
         if (attributes == null) {
             this.attributes = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ReplaceableAttribute> attributesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ReplaceableAttribute>(attributes.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReplaceableAttribute> attributesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReplaceableAttribute>(attributes.size());
             attributesCopy.addAll(attributes);
             this.attributes = attributesCopy;
         }

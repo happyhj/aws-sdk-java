@@ -80,7 +80,7 @@ public class BatchWriteItemResult implements Serializable {
      * provisioned throughput. </li> <li> <p><i>CapacityUnits</i> - The total
      * number of capacity units consumed. </li> </ul>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ConsumedCapacity> consumedCapacity;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ConsumedCapacity> consumedCapacity;
 
     /**
      * A map of tables and requests against those tables that were not
@@ -519,7 +519,7 @@ public class BatchWriteItemResult implements Serializable {
             this.consumedCapacity = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ConsumedCapacity> consumedCapacityCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ConsumedCapacity>(consumedCapacity.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ConsumedCapacity> consumedCapacityCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ConsumedCapacity>(consumedCapacity.size());
         consumedCapacityCopy.addAll(consumedCapacity);
         this.consumedCapacity = consumedCapacityCopy;
     }
@@ -568,7 +568,7 @@ public class BatchWriteItemResult implements Serializable {
         if (consumedCapacity == null) {
             this.consumedCapacity = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ConsumedCapacity> consumedCapacityCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ConsumedCapacity>(consumedCapacity.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ConsumedCapacity> consumedCapacityCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ConsumedCapacity>(consumedCapacity.size());
             consumedCapacityCopy.addAll(consumedCapacity);
             this.consumedCapacity = consumedCapacityCopy;
         }

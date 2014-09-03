@@ -45,7 +45,7 @@ public class ListInstancesRequest extends AmazonWebServiceRequest implements Ser
     /**
      * The type of instance group for which to list the instances.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> instanceGroupTypes;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> instanceGroupTypes;
 
     /**
      * The pagination token that indicates the next set of results to
@@ -126,7 +126,7 @@ public class ListInstancesRequest extends AmazonWebServiceRequest implements Ser
      */
     public java.util.List<String> getInstanceGroupTypes() {
         if (instanceGroupTypes == null) {
-              instanceGroupTypes = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              instanceGroupTypes = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               instanceGroupTypes.setAutoConstruct(true);
         }
         return instanceGroupTypes;
@@ -142,7 +142,7 @@ public class ListInstancesRequest extends AmazonWebServiceRequest implements Ser
             this.instanceGroupTypes = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> instanceGroupTypesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(instanceGroupTypes.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> instanceGroupTypesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(instanceGroupTypes.size());
         instanceGroupTypesCopy.addAll(instanceGroupTypes);
         this.instanceGroupTypes = instanceGroupTypesCopy;
     }
@@ -179,7 +179,7 @@ public class ListInstancesRequest extends AmazonWebServiceRequest implements Ser
         if (instanceGroupTypes == null) {
             this.instanceGroupTypes = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> instanceGroupTypesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(instanceGroupTypes.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> instanceGroupTypesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(instanceGroupTypes.size());
             instanceGroupTypesCopy.addAll(instanceGroupTypes);
             this.instanceGroupTypes = instanceGroupTypesCopy;
         }

@@ -23,14 +23,14 @@ import java.util.Map;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.glacier.model.SetVaultNotificationsRequest;
 import com.amazonaws.services.glacier.model.VaultNotificationConfig;
 import com.amazonaws.stringutil.StringUtils;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Set Vault Notifications Request Marshaller
@@ -123,7 +123,7 @@ public class SetVaultNotificationsRequestMarshaller implements Marshaller<Reques
                     jsonWriter.key("SNSTopic").value(vaultNotificationConfig.getSNSTopic());
                 }
 
-                com.amazonaws.internal.ListWithAutoConstructFlag<String> eventsList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(vaultNotificationConfig.getEvents());
+                com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> eventsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(vaultNotificationConfig.getEvents());
                 if (eventsList != null && !(eventsList.isAutoConstruct() && eventsList.isEmpty())) {
 
                     jsonWriter.key("Events");

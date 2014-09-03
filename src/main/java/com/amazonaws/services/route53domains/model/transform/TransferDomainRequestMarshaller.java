@@ -20,7 +20,7 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.route53domains.model.ContactDetail;
@@ -28,7 +28,7 @@ import com.amazonaws.services.route53domains.model.ExtraParam;
 import com.amazonaws.services.route53domains.model.Nameserver;
 import com.amazonaws.services.route53domains.model.TransferDomainRequest;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Transfer Domain Request Marshaller
@@ -63,7 +63,7 @@ public class TransferDomainRequestMarshaller implements Marshaller<Request<Trans
                 jsonWriter.key("DurationInYears").value(transferDomainRequest.getDurationInYears());
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<Nameserver> nameserversList = (com.amazonaws.internal.ListWithAutoConstructFlag<Nameserver>)(transferDomainRequest.getNameservers());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Nameserver> nameserversList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Nameserver>)(transferDomainRequest.getNameservers());
             if (nameserversList != null && !(nameserversList.isAutoConstruct() && nameserversList.isEmpty())) {
 
                 jsonWriter.key("Nameservers");
@@ -76,7 +76,7 @@ public class TransferDomainRequestMarshaller implements Marshaller<Request<Trans
                             jsonWriter.key("Name").value(nameserversListValue.getName());
                         }
 
-                        com.amazonaws.internal.ListWithAutoConstructFlag<String> glueIpsList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(nameserversListValue.getGlueIps());
+                        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> glueIpsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(nameserversListValue.getGlueIps());
                         if (glueIpsList != null && !(glueIpsList.isAutoConstruct() && glueIpsList.isEmpty())) {
 
                             jsonWriter.key("GlueIps");
@@ -146,7 +146,7 @@ public class TransferDomainRequestMarshaller implements Marshaller<Request<Trans
                     jsonWriter.key("Fax").value(adminContact.getFax());
                 }
 
-                com.amazonaws.internal.ListWithAutoConstructFlag<ExtraParam> extraParamsList = (com.amazonaws.internal.ListWithAutoConstructFlag<ExtraParam>)(adminContact.getExtraParams());
+                com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ExtraParam> extraParamsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ExtraParam>)(adminContact.getExtraParams());
                 if (extraParamsList != null && !(extraParamsList.isAutoConstruct() && extraParamsList.isEmpty())) {
 
                     jsonWriter.key("ExtraParams");
@@ -214,7 +214,7 @@ public class TransferDomainRequestMarshaller implements Marshaller<Request<Trans
                     jsonWriter.key("Fax").value(registrantContact.getFax());
                 }
 
-                com.amazonaws.internal.ListWithAutoConstructFlag<ExtraParam> extraParamsList = (com.amazonaws.internal.ListWithAutoConstructFlag<ExtraParam>)(registrantContact.getExtraParams());
+                com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ExtraParam> extraParamsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ExtraParam>)(registrantContact.getExtraParams());
                 if (extraParamsList != null && !(extraParamsList.isAutoConstruct() && extraParamsList.isEmpty())) {
 
                     jsonWriter.key("ExtraParams");
@@ -282,7 +282,7 @@ public class TransferDomainRequestMarshaller implements Marshaller<Request<Trans
                     jsonWriter.key("Fax").value(techContact.getFax());
                 }
 
-                com.amazonaws.internal.ListWithAutoConstructFlag<ExtraParam> extraParamsList = (com.amazonaws.internal.ListWithAutoConstructFlag<ExtraParam>)(techContact.getExtraParams());
+                com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ExtraParam> extraParamsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ExtraParam>)(techContact.getExtraParams());
                 if (extraParamsList != null && !(extraParamsList.isAutoConstruct() && extraParamsList.isEmpty())) {
 
                     jsonWriter.key("ExtraParams");

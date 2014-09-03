@@ -62,7 +62,7 @@ public class NewPublicVirtualInterface implements Serializable {
      * A list of routes to be advertised to the AWS network in this region
      * (public virtual interface) or your VPC (private virtual interface).
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<RouteFilterPrefix> routeFilterPrefixes;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RouteFilterPrefix> routeFilterPrefixes;
 
     /**
      * The name of the virtual interface assigned by the customer.
@@ -295,7 +295,7 @@ public class NewPublicVirtualInterface implements Serializable {
      */
     public java.util.List<RouteFilterPrefix> getRouteFilterPrefixes() {
         if (routeFilterPrefixes == null) {
-              routeFilterPrefixes = new com.amazonaws.internal.ListWithAutoConstructFlag<RouteFilterPrefix>();
+              routeFilterPrefixes = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RouteFilterPrefix>();
               routeFilterPrefixes.setAutoConstruct(true);
         }
         return routeFilterPrefixes;
@@ -313,7 +313,7 @@ public class NewPublicVirtualInterface implements Serializable {
             this.routeFilterPrefixes = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<RouteFilterPrefix> routeFilterPrefixesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<RouteFilterPrefix>(routeFilterPrefixes.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RouteFilterPrefix> routeFilterPrefixesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RouteFilterPrefix>(routeFilterPrefixes.size());
         routeFilterPrefixesCopy.addAll(routeFilterPrefixes);
         this.routeFilterPrefixes = routeFilterPrefixesCopy;
     }
@@ -354,7 +354,7 @@ public class NewPublicVirtualInterface implements Serializable {
         if (routeFilterPrefixes == null) {
             this.routeFilterPrefixes = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<RouteFilterPrefix> routeFilterPrefixesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<RouteFilterPrefix>(routeFilterPrefixes.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RouteFilterPrefix> routeFilterPrefixesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RouteFilterPrefix>(routeFilterPrefixes.size());
             routeFilterPrefixesCopy.addAll(routeFilterPrefixes);
             this.routeFilterPrefixes = routeFilterPrefixesCopy;
         }

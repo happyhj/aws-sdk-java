@@ -72,12 +72,12 @@ public class DescribeJobFlowsRequest extends AmazonWebServiceRequest implements 
     /**
      * Return only job flows whose job flow ID is contained in this list.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> jobFlowIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> jobFlowIds;
 
     /**
      * Return only job flows whose state is contained in this list.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> jobFlowStates;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> jobFlowStates;
 
     /**
      * Default constructor for a new DescribeJobFlowsRequest object.  Callers should use the
@@ -170,7 +170,7 @@ public class DescribeJobFlowsRequest extends AmazonWebServiceRequest implements 
      */
     public java.util.List<String> getJobFlowIds() {
         if (jobFlowIds == null) {
-              jobFlowIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              jobFlowIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               jobFlowIds.setAutoConstruct(true);
         }
         return jobFlowIds;
@@ -186,7 +186,7 @@ public class DescribeJobFlowsRequest extends AmazonWebServiceRequest implements 
             this.jobFlowIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> jobFlowIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(jobFlowIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> jobFlowIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(jobFlowIds.size());
         jobFlowIdsCopy.addAll(jobFlowIds);
         this.jobFlowIds = jobFlowIdsCopy;
     }
@@ -223,7 +223,7 @@ public class DescribeJobFlowsRequest extends AmazonWebServiceRequest implements 
         if (jobFlowIds == null) {
             this.jobFlowIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> jobFlowIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(jobFlowIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> jobFlowIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(jobFlowIds.size());
             jobFlowIdsCopy.addAll(jobFlowIds);
             this.jobFlowIds = jobFlowIdsCopy;
         }
@@ -238,7 +238,7 @@ public class DescribeJobFlowsRequest extends AmazonWebServiceRequest implements 
      */
     public java.util.List<String> getJobFlowStates() {
         if (jobFlowStates == null) {
-              jobFlowStates = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              jobFlowStates = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               jobFlowStates.setAutoConstruct(true);
         }
         return jobFlowStates;
@@ -254,7 +254,7 @@ public class DescribeJobFlowsRequest extends AmazonWebServiceRequest implements 
             this.jobFlowStates = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> jobFlowStatesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(jobFlowStates.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> jobFlowStatesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(jobFlowStates.size());
         jobFlowStatesCopy.addAll(jobFlowStates);
         this.jobFlowStates = jobFlowStatesCopy;
     }
@@ -291,7 +291,7 @@ public class DescribeJobFlowsRequest extends AmazonWebServiceRequest implements 
         if (jobFlowStates == null) {
             this.jobFlowStates = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> jobFlowStatesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(jobFlowStates.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> jobFlowStatesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(jobFlowStates.size());
             jobFlowStatesCopy.addAll(jobFlowStates);
             this.jobFlowStates = jobFlowStatesCopy;
         }

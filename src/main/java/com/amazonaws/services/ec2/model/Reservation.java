@@ -42,17 +42,17 @@ public class Reservation implements Serializable {
     /**
      * One or more security groups.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<GroupIdentifier> groups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GroupIdentifier> groups;
 
     /**
      * One or more security groups.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> groupNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> groupNames;
 
     /**
      * One or more instances.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Instance> instances;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Instance> instances;
 
     /**
      * The ID of the reservation.
@@ -166,7 +166,7 @@ public class Reservation implements Serializable {
      */
     public java.util.List<GroupIdentifier> getGroups() {
         if (groups == null) {
-              groups = new com.amazonaws.internal.ListWithAutoConstructFlag<GroupIdentifier>();
+              groups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GroupIdentifier>();
               groups.setAutoConstruct(true);
         }
         return groups;
@@ -182,7 +182,7 @@ public class Reservation implements Serializable {
             this.groups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<GroupIdentifier> groupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<GroupIdentifier>(groups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GroupIdentifier> groupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GroupIdentifier>(groups.size());
         groupsCopy.addAll(groups);
         this.groups = groupsCopy;
     }
@@ -219,7 +219,7 @@ public class Reservation implements Serializable {
         if (groups == null) {
             this.groups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<GroupIdentifier> groupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<GroupIdentifier>(groups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GroupIdentifier> groupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GroupIdentifier>(groups.size());
             groupsCopy.addAll(groups);
             this.groups = groupsCopy;
         }
@@ -234,7 +234,7 @@ public class Reservation implements Serializable {
      */
     public java.util.List<String> getGroupNames() {
         if (groupNames == null) {
-              groupNames = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              groupNames = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               groupNames.setAutoConstruct(true);
         }
         return groupNames;
@@ -250,7 +250,7 @@ public class Reservation implements Serializable {
             this.groupNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> groupNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(groupNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> groupNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(groupNames.size());
         groupNamesCopy.addAll(groupNames);
         this.groupNames = groupNamesCopy;
     }
@@ -287,7 +287,7 @@ public class Reservation implements Serializable {
         if (groupNames == null) {
             this.groupNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> groupNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(groupNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> groupNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(groupNames.size());
             groupNamesCopy.addAll(groupNames);
             this.groupNames = groupNamesCopy;
         }
@@ -302,7 +302,7 @@ public class Reservation implements Serializable {
      */
     public java.util.List<Instance> getInstances() {
         if (instances == null) {
-              instances = new com.amazonaws.internal.ListWithAutoConstructFlag<Instance>();
+              instances = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Instance>();
               instances.setAutoConstruct(true);
         }
         return instances;
@@ -318,7 +318,7 @@ public class Reservation implements Serializable {
             this.instances = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Instance> instancesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Instance>(instances.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Instance> instancesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Instance>(instances.size());
         instancesCopy.addAll(instances);
         this.instances = instancesCopy;
     }
@@ -355,7 +355,7 @@ public class Reservation implements Serializable {
         if (instances == null) {
             this.instances = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Instance> instancesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Instance>(instances.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Instance> instancesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Instance>(instances.size());
             instancesCopy.addAll(instances);
             this.instances = instancesCopy;
         }

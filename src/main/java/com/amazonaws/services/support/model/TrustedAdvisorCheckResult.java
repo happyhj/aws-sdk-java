@@ -55,7 +55,7 @@ public class TrustedAdvisorCheckResult implements Serializable {
     /**
      * The details about each resource listed in the check result.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<TrustedAdvisorResourceDetail> flaggedResources;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TrustedAdvisorResourceDetail> flaggedResources;
 
     /**
      * The unique identifier for the Trusted Advisor check.
@@ -247,7 +247,7 @@ public class TrustedAdvisorCheckResult implements Serializable {
      */
     public java.util.List<TrustedAdvisorResourceDetail> getFlaggedResources() {
         if (flaggedResources == null) {
-              flaggedResources = new com.amazonaws.internal.ListWithAutoConstructFlag<TrustedAdvisorResourceDetail>();
+              flaggedResources = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TrustedAdvisorResourceDetail>();
               flaggedResources.setAutoConstruct(true);
         }
         return flaggedResources;
@@ -263,7 +263,7 @@ public class TrustedAdvisorCheckResult implements Serializable {
             this.flaggedResources = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<TrustedAdvisorResourceDetail> flaggedResourcesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<TrustedAdvisorResourceDetail>(flaggedResources.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TrustedAdvisorResourceDetail> flaggedResourcesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TrustedAdvisorResourceDetail>(flaggedResources.size());
         flaggedResourcesCopy.addAll(flaggedResources);
         this.flaggedResources = flaggedResourcesCopy;
     }
@@ -300,7 +300,7 @@ public class TrustedAdvisorCheckResult implements Serializable {
         if (flaggedResources == null) {
             this.flaggedResources = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<TrustedAdvisorResourceDetail> flaggedResourcesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<TrustedAdvisorResourceDetail>(flaggedResources.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TrustedAdvisorResourceDetail> flaggedResourcesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TrustedAdvisorResourceDetail>(flaggedResources.size());
             flaggedResourcesCopy.addAll(flaggedResources);
             this.flaggedResources = flaggedResourcesCopy;
         }

@@ -42,7 +42,7 @@ public class ItemCollectionMetrics implements Serializable {
      * is subject to change over time; therefore, do not rely on the
      * precision or accuracy of the estimate.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Double> sizeEstimateRangeGB;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Double> sizeEstimateRangeGB;
 
     /**
      * The hash key value of the item collection. This is the same as the
@@ -162,7 +162,7 @@ public class ItemCollectionMetrics implements Serializable {
             this.sizeEstimateRangeGB = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Double> sizeEstimateRangeGBCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Double>(sizeEstimateRangeGB.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Double> sizeEstimateRangeGBCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Double>(sizeEstimateRangeGB.size());
         sizeEstimateRangeGBCopy.addAll(sizeEstimateRangeGB);
         this.sizeEstimateRangeGB = sizeEstimateRangeGBCopy;
     }
@@ -227,7 +227,7 @@ public class ItemCollectionMetrics implements Serializable {
         if (sizeEstimateRangeGB == null) {
             this.sizeEstimateRangeGB = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Double> sizeEstimateRangeGBCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Double>(sizeEstimateRangeGB.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Double> sizeEstimateRangeGBCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Double>(sizeEstimateRangeGB.size());
             sizeEstimateRangeGBCopy.addAll(sizeEstimateRangeGB);
             this.sizeEstimateRangeGB = sizeEstimateRangeGBCopy;
         }

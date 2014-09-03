@@ -58,7 +58,7 @@ public class PutPipelineDefinitionRequest extends AmazonWebServiceRequest implem
      * The objects that define the pipeline. These will overwrite the
      * existing pipeline definition.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<PipelineObject> pipelineObjects;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PipelineObject> pipelineObjects;
 
     /**
      * The identifier of the pipeline to be configured.
@@ -114,7 +114,7 @@ public class PutPipelineDefinitionRequest extends AmazonWebServiceRequest implem
      */
     public java.util.List<PipelineObject> getPipelineObjects() {
         if (pipelineObjects == null) {
-              pipelineObjects = new com.amazonaws.internal.ListWithAutoConstructFlag<PipelineObject>();
+              pipelineObjects = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PipelineObject>();
               pipelineObjects.setAutoConstruct(true);
         }
         return pipelineObjects;
@@ -132,7 +132,7 @@ public class PutPipelineDefinitionRequest extends AmazonWebServiceRequest implem
             this.pipelineObjects = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<PipelineObject> pipelineObjectsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<PipelineObject>(pipelineObjects.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PipelineObject> pipelineObjectsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PipelineObject>(pipelineObjects.size());
         pipelineObjectsCopy.addAll(pipelineObjects);
         this.pipelineObjects = pipelineObjectsCopy;
     }
@@ -173,7 +173,7 @@ public class PutPipelineDefinitionRequest extends AmazonWebServiceRequest implem
         if (pipelineObjects == null) {
             this.pipelineObjects = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<PipelineObject> pipelineObjectsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<PipelineObject>(pipelineObjects.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PipelineObject> pipelineObjectsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PipelineObject>(pipelineObjects.size());
             pipelineObjectsCopy.addAll(pipelineObjects);
             this.pipelineObjects = pipelineObjectsCopy;
         }

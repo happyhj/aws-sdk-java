@@ -41,14 +41,14 @@ public class CreateTagsRequest extends AmazonWebServiceRequest implements Serial
     /**
      * The IDs of one or more resources to tag. For example, ami-1a2b3c4d.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> resources;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> resources;
 
     /**
      * One or more tags. The <code>value</code> parameter is required, but if
      * you don't want the tag to have a value, specify the parameter with no
      * value, and we set the value to an empty string.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tags;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tags;
 
     /**
      * Default constructor for a new CreateTagsRequest object.  Callers should use the
@@ -79,7 +79,7 @@ public class CreateTagsRequest extends AmazonWebServiceRequest implements Serial
      */
     public java.util.List<String> getResources() {
         if (resources == null) {
-              resources = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              resources = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               resources.setAutoConstruct(true);
         }
         return resources;
@@ -95,7 +95,7 @@ public class CreateTagsRequest extends AmazonWebServiceRequest implements Serial
             this.resources = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> resourcesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(resources.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> resourcesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(resources.size());
         resourcesCopy.addAll(resources);
         this.resources = resourcesCopy;
     }
@@ -132,7 +132,7 @@ public class CreateTagsRequest extends AmazonWebServiceRequest implements Serial
         if (resources == null) {
             this.resources = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> resourcesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(resources.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> resourcesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(resources.size());
             resourcesCopy.addAll(resources);
             this.resources = resourcesCopy;
         }
@@ -151,7 +151,7 @@ public class CreateTagsRequest extends AmazonWebServiceRequest implements Serial
      */
     public java.util.List<Tag> getTags() {
         if (tags == null) {
-              tags = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>();
+              tags = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>();
               tags.setAutoConstruct(true);
         }
         return tags;
@@ -171,7 +171,7 @@ public class CreateTagsRequest extends AmazonWebServiceRequest implements Serial
             this.tags = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tags.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tags.size());
         tagsCopy.addAll(tags);
         this.tags = tagsCopy;
     }
@@ -216,7 +216,7 @@ public class CreateTagsRequest extends AmazonWebServiceRequest implements Serial
         if (tags == null) {
             this.tags = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tags.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tags.size());
             tagsCopy.addAll(tags);
             this.tags = tagsCopy;
         }

@@ -22,9 +22,9 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 import com.amazonaws.auth.SigningAlgorithm;
-import com.amazonaws.codec.BinaryUtils;
+import com.amazonaws.client.util.sdk.SdkInputStream;
 import com.amazonaws.exception.AmazonClientException;
-import com.amazonaws.sdkutil.SdkInputStream;
+import com.amazonaws.json.codec.BinaryUtils;
 
 /**
  * A wrapper class of InputStream that implements chunked-encoding.

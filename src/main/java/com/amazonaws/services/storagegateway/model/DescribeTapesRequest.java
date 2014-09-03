@@ -47,7 +47,7 @@ public class DescribeTapesRequest extends AmazonWebServiceRequest implements Ser
      * not specified, AWS Storage Gateway returns a description of all
      * virtual tapes associated with the specified gateway.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> tapeARNs;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> tapeARNs;
 
     /**
      * A marker value, obtained in a previous call to
@@ -137,7 +137,7 @@ public class DescribeTapesRequest extends AmazonWebServiceRequest implements Ser
      */
     public java.util.List<String> getTapeARNs() {
         if (tapeARNs == null) {
-              tapeARNs = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              tapeARNs = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               tapeARNs.setAutoConstruct(true);
         }
         return tapeARNs;
@@ -159,7 +159,7 @@ public class DescribeTapesRequest extends AmazonWebServiceRequest implements Ser
             this.tapeARNs = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> tapeARNsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(tapeARNs.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> tapeARNsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(tapeARNs.size());
         tapeARNsCopy.addAll(tapeARNs);
         this.tapeARNs = tapeARNsCopy;
     }
@@ -208,7 +208,7 @@ public class DescribeTapesRequest extends AmazonWebServiceRequest implements Ser
         if (tapeARNs == null) {
             this.tapeARNs = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> tapeARNsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(tapeARNs.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> tapeARNsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(tapeARNs.size());
             tapeARNsCopy.addAll(tapeARNs);
             this.tapeARNs = tapeARNsCopy;
         }

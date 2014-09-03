@@ -35,7 +35,7 @@ public class Origins implements Serializable {
      * <b>Constraints:</b><br/>
      * <b>Length: </b>1 - <br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Origin> items;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Origin> items;
 
     /**
      * The number of origins for this distribution.
@@ -80,7 +80,7 @@ public class Origins implements Serializable {
      */
     public java.util.List<Origin> getItems() {
         if (items == null) {
-              items = new com.amazonaws.internal.ListWithAutoConstructFlag<Origin>();
+              items = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Origin>();
               items.setAutoConstruct(true);
         }
         return items;
@@ -99,7 +99,7 @@ public class Origins implements Serializable {
             this.items = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Origin> itemsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Origin>(items.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Origin> itemsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Origin>(items.size());
         itemsCopy.addAll(items);
         this.items = itemsCopy;
     }
@@ -142,7 +142,7 @@ public class Origins implements Serializable {
         if (items == null) {
             this.items = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Origin> itemsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Origin>(items.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Origin> itemsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Origin>(items.size());
             itemsCopy.addAll(items);
             this.items = itemsCopy;
         }

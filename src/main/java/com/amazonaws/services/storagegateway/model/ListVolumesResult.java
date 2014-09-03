@@ -33,7 +33,7 @@ public class ListVolumesResult implements Serializable {
 
     private String marker;
 
-    private com.amazonaws.internal.ListWithAutoConstructFlag<VolumeInfo> volumeInfos;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeInfo> volumeInfos;
 
     /**
      * The Amazon Resource Name (ARN) of the gateway. Use the
@@ -138,7 +138,7 @@ public class ListVolumesResult implements Serializable {
      */
     public java.util.List<VolumeInfo> getVolumeInfos() {
         if (volumeInfos == null) {
-              volumeInfos = new com.amazonaws.internal.ListWithAutoConstructFlag<VolumeInfo>();
+              volumeInfos = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeInfo>();
               volumeInfos.setAutoConstruct(true);
         }
         return volumeInfos;
@@ -154,7 +154,7 @@ public class ListVolumesResult implements Serializable {
             this.volumeInfos = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<VolumeInfo> volumeInfosCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<VolumeInfo>(volumeInfos.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeInfo> volumeInfosCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeInfo>(volumeInfos.size());
         volumeInfosCopy.addAll(volumeInfos);
         this.volumeInfos = volumeInfosCopy;
     }
@@ -191,7 +191,7 @@ public class ListVolumesResult implements Serializable {
         if (volumeInfos == null) {
             this.volumeInfos = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<VolumeInfo> volumeInfosCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<VolumeInfo>(volumeInfos.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeInfo> volumeInfosCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeInfo>(volumeInfos.size());
             volumeInfosCopy.addAll(volumeInfos);
             this.volumeInfos = volumeInfosCopy;
         }

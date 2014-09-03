@@ -37,7 +37,7 @@ public class EnterStandbyRequest extends AmazonWebServiceRequest implements Seri
      * The instances to move into Standby mode. You must specify at least one
      * instance ID.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> instanceIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> instanceIds;
 
     /**
      * The name of the Auto Scaling group from which to move instances into
@@ -66,7 +66,7 @@ public class EnterStandbyRequest extends AmazonWebServiceRequest implements Seri
      */
     public java.util.List<String> getInstanceIds() {
         if (instanceIds == null) {
-              instanceIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              instanceIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               instanceIds.setAutoConstruct(true);
         }
         return instanceIds;
@@ -84,7 +84,7 @@ public class EnterStandbyRequest extends AmazonWebServiceRequest implements Seri
             this.instanceIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> instanceIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(instanceIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> instanceIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(instanceIds.size());
         instanceIdsCopy.addAll(instanceIds);
         this.instanceIds = instanceIdsCopy;
     }
@@ -125,7 +125,7 @@ public class EnterStandbyRequest extends AmazonWebServiceRequest implements Seri
         if (instanceIds == null) {
             this.instanceIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> instanceIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(instanceIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> instanceIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(instanceIds.size());
             instanceIdsCopy.addAll(instanceIds);
             this.instanceIds = instanceIdsCopy;
         }

@@ -36,7 +36,7 @@ public class DescribeReservedNodesResult implements Serializable {
     /**
      * The list of reserved nodes.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ReservedNode> reservedNodes;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedNode> reservedNodes;
 
     /**
      * A value that indicates the starting point for the next set of response
@@ -108,7 +108,7 @@ public class DescribeReservedNodesResult implements Serializable {
      */
     public java.util.List<ReservedNode> getReservedNodes() {
         if (reservedNodes == null) {
-              reservedNodes = new com.amazonaws.internal.ListWithAutoConstructFlag<ReservedNode>();
+              reservedNodes = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedNode>();
               reservedNodes.setAutoConstruct(true);
         }
         return reservedNodes;
@@ -124,7 +124,7 @@ public class DescribeReservedNodesResult implements Serializable {
             this.reservedNodes = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ReservedNode> reservedNodesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ReservedNode>(reservedNodes.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedNode> reservedNodesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedNode>(reservedNodes.size());
         reservedNodesCopy.addAll(reservedNodes);
         this.reservedNodes = reservedNodesCopy;
     }
@@ -161,7 +161,7 @@ public class DescribeReservedNodesResult implements Serializable {
         if (reservedNodes == null) {
             this.reservedNodes = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ReservedNode> reservedNodesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ReservedNode>(reservedNodes.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedNode> reservedNodesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedNode>(reservedNodes.size());
             reservedNodesCopy.addAll(reservedNodes);
             this.reservedNodes = reservedNodesCopy;
         }

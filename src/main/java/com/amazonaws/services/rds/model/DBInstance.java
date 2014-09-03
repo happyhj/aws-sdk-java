@@ -110,18 +110,18 @@ public class DBInstance implements Serializable {
      * <code>DBSecurityGroup.Name</code> and
      * <code>DBSecurityGroup.Status</code> subelements.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<DBSecurityGroupMembership> dBSecurityGroups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBSecurityGroupMembership> dBSecurityGroups;
 
     /**
      * Provides List of VPC security group elements that the DB instance
      * belongs to.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<VpcSecurityGroupMembership> vpcSecurityGroups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VpcSecurityGroupMembership> vpcSecurityGroups;
 
     /**
      * Provides the list of DB parameter groups applied to this DB instance.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<DBParameterGroupStatus> dBParameterGroups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBParameterGroupStatus> dBParameterGroups;
 
     /**
      * Specifies the name of the Availability Zone the DB instance is located
@@ -180,7 +180,7 @@ public class DBInstance implements Serializable {
      * Contains one or more identifiers of the read replicas associated with
      * this DB instance.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> readReplicaDBInstanceIdentifiers;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> readReplicaDBInstanceIdentifiers;
 
     /**
      * License model information for this DB instance.
@@ -195,7 +195,7 @@ public class DBInstance implements Serializable {
     /**
      * Provides the list of option group memberships for this DB instance.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<OptionGroupMembership> optionGroupMemberships;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionGroupMembership> optionGroupMemberships;
 
     /**
      * If present, specifies the name of the character set that this instance
@@ -230,7 +230,7 @@ public class DBInstance implements Serializable {
      * The status of a read replica. If the instance is not a read replica,
      * this will be blank.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<DBInstanceStatusInfo> statusInfos;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBInstanceStatusInfo> statusInfos;
 
     /**
      * Contains a user-supplied database identifier. This is the unique key
@@ -696,7 +696,7 @@ public class DBInstance implements Serializable {
      */
     public java.util.List<DBSecurityGroupMembership> getDBSecurityGroups() {
         if (dBSecurityGroups == null) {
-              dBSecurityGroups = new com.amazonaws.internal.ListWithAutoConstructFlag<DBSecurityGroupMembership>();
+              dBSecurityGroups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBSecurityGroupMembership>();
               dBSecurityGroups.setAutoConstruct(true);
         }
         return dBSecurityGroups;
@@ -716,7 +716,7 @@ public class DBInstance implements Serializable {
             this.dBSecurityGroups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<DBSecurityGroupMembership> dBSecurityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DBSecurityGroupMembership>(dBSecurityGroups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBSecurityGroupMembership> dBSecurityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBSecurityGroupMembership>(dBSecurityGroups.size());
         dBSecurityGroupsCopy.addAll(dBSecurityGroups);
         this.dBSecurityGroups = dBSecurityGroupsCopy;
     }
@@ -761,7 +761,7 @@ public class DBInstance implements Serializable {
         if (dBSecurityGroups == null) {
             this.dBSecurityGroups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<DBSecurityGroupMembership> dBSecurityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DBSecurityGroupMembership>(dBSecurityGroups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBSecurityGroupMembership> dBSecurityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBSecurityGroupMembership>(dBSecurityGroups.size());
             dBSecurityGroupsCopy.addAll(dBSecurityGroups);
             this.dBSecurityGroups = dBSecurityGroupsCopy;
         }
@@ -778,7 +778,7 @@ public class DBInstance implements Serializable {
      */
     public java.util.List<VpcSecurityGroupMembership> getVpcSecurityGroups() {
         if (vpcSecurityGroups == null) {
-              vpcSecurityGroups = new com.amazonaws.internal.ListWithAutoConstructFlag<VpcSecurityGroupMembership>();
+              vpcSecurityGroups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VpcSecurityGroupMembership>();
               vpcSecurityGroups.setAutoConstruct(true);
         }
         return vpcSecurityGroups;
@@ -796,7 +796,7 @@ public class DBInstance implements Serializable {
             this.vpcSecurityGroups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<VpcSecurityGroupMembership> vpcSecurityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<VpcSecurityGroupMembership>(vpcSecurityGroups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VpcSecurityGroupMembership> vpcSecurityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VpcSecurityGroupMembership>(vpcSecurityGroups.size());
         vpcSecurityGroupsCopy.addAll(vpcSecurityGroups);
         this.vpcSecurityGroups = vpcSecurityGroupsCopy;
     }
@@ -837,7 +837,7 @@ public class DBInstance implements Serializable {
         if (vpcSecurityGroups == null) {
             this.vpcSecurityGroups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<VpcSecurityGroupMembership> vpcSecurityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<VpcSecurityGroupMembership>(vpcSecurityGroups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VpcSecurityGroupMembership> vpcSecurityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VpcSecurityGroupMembership>(vpcSecurityGroups.size());
             vpcSecurityGroupsCopy.addAll(vpcSecurityGroups);
             this.vpcSecurityGroups = vpcSecurityGroupsCopy;
         }
@@ -852,7 +852,7 @@ public class DBInstance implements Serializable {
      */
     public java.util.List<DBParameterGroupStatus> getDBParameterGroups() {
         if (dBParameterGroups == null) {
-              dBParameterGroups = new com.amazonaws.internal.ListWithAutoConstructFlag<DBParameterGroupStatus>();
+              dBParameterGroups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBParameterGroupStatus>();
               dBParameterGroups.setAutoConstruct(true);
         }
         return dBParameterGroups;
@@ -868,7 +868,7 @@ public class DBInstance implements Serializable {
             this.dBParameterGroups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<DBParameterGroupStatus> dBParameterGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DBParameterGroupStatus>(dBParameterGroups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBParameterGroupStatus> dBParameterGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBParameterGroupStatus>(dBParameterGroups.size());
         dBParameterGroupsCopy.addAll(dBParameterGroups);
         this.dBParameterGroups = dBParameterGroupsCopy;
     }
@@ -905,7 +905,7 @@ public class DBInstance implements Serializable {
         if (dBParameterGroups == null) {
             this.dBParameterGroups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<DBParameterGroupStatus> dBParameterGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DBParameterGroupStatus>(dBParameterGroups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBParameterGroupStatus> dBParameterGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBParameterGroupStatus>(dBParameterGroups.size());
             dBParameterGroupsCopy.addAll(dBParameterGroups);
             this.dBParameterGroups = dBParameterGroupsCopy;
         }
@@ -1285,7 +1285,7 @@ public class DBInstance implements Serializable {
      */
     public java.util.List<String> getReadReplicaDBInstanceIdentifiers() {
         if (readReplicaDBInstanceIdentifiers == null) {
-              readReplicaDBInstanceIdentifiers = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              readReplicaDBInstanceIdentifiers = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               readReplicaDBInstanceIdentifiers.setAutoConstruct(true);
         }
         return readReplicaDBInstanceIdentifiers;
@@ -1303,7 +1303,7 @@ public class DBInstance implements Serializable {
             this.readReplicaDBInstanceIdentifiers = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> readReplicaDBInstanceIdentifiersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(readReplicaDBInstanceIdentifiers.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> readReplicaDBInstanceIdentifiersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(readReplicaDBInstanceIdentifiers.size());
         readReplicaDBInstanceIdentifiersCopy.addAll(readReplicaDBInstanceIdentifiers);
         this.readReplicaDBInstanceIdentifiers = readReplicaDBInstanceIdentifiersCopy;
     }
@@ -1344,7 +1344,7 @@ public class DBInstance implements Serializable {
         if (readReplicaDBInstanceIdentifiers == null) {
             this.readReplicaDBInstanceIdentifiers = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> readReplicaDBInstanceIdentifiersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(readReplicaDBInstanceIdentifiers.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> readReplicaDBInstanceIdentifiersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(readReplicaDBInstanceIdentifiers.size());
             readReplicaDBInstanceIdentifiersCopy.addAll(readReplicaDBInstanceIdentifiers);
             this.readReplicaDBInstanceIdentifiers = readReplicaDBInstanceIdentifiersCopy;
         }
@@ -1425,7 +1425,7 @@ public class DBInstance implements Serializable {
      */
     public java.util.List<OptionGroupMembership> getOptionGroupMemberships() {
         if (optionGroupMemberships == null) {
-              optionGroupMemberships = new com.amazonaws.internal.ListWithAutoConstructFlag<OptionGroupMembership>();
+              optionGroupMemberships = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionGroupMembership>();
               optionGroupMemberships.setAutoConstruct(true);
         }
         return optionGroupMemberships;
@@ -1441,7 +1441,7 @@ public class DBInstance implements Serializable {
             this.optionGroupMemberships = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<OptionGroupMembership> optionGroupMembershipsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<OptionGroupMembership>(optionGroupMemberships.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionGroupMembership> optionGroupMembershipsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionGroupMembership>(optionGroupMemberships.size());
         optionGroupMembershipsCopy.addAll(optionGroupMemberships);
         this.optionGroupMemberships = optionGroupMembershipsCopy;
     }
@@ -1478,7 +1478,7 @@ public class DBInstance implements Serializable {
         if (optionGroupMemberships == null) {
             this.optionGroupMemberships = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<OptionGroupMembership> optionGroupMembershipsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<OptionGroupMembership>(optionGroupMemberships.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionGroupMembership> optionGroupMembershipsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionGroupMembership>(optionGroupMemberships.size());
             optionGroupMembershipsCopy.addAll(optionGroupMemberships);
             this.optionGroupMemberships = optionGroupMembershipsCopy;
         }
@@ -1711,7 +1711,7 @@ public class DBInstance implements Serializable {
      */
     public java.util.List<DBInstanceStatusInfo> getStatusInfos() {
         if (statusInfos == null) {
-              statusInfos = new com.amazonaws.internal.ListWithAutoConstructFlag<DBInstanceStatusInfo>();
+              statusInfos = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBInstanceStatusInfo>();
               statusInfos.setAutoConstruct(true);
         }
         return statusInfos;
@@ -1729,7 +1729,7 @@ public class DBInstance implements Serializable {
             this.statusInfos = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<DBInstanceStatusInfo> statusInfosCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DBInstanceStatusInfo>(statusInfos.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBInstanceStatusInfo> statusInfosCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBInstanceStatusInfo>(statusInfos.size());
         statusInfosCopy.addAll(statusInfos);
         this.statusInfos = statusInfosCopy;
     }
@@ -1770,7 +1770,7 @@ public class DBInstance implements Serializable {
         if (statusInfos == null) {
             this.statusInfos = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<DBInstanceStatusInfo> statusInfosCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DBInstanceStatusInfo>(statusInfos.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBInstanceStatusInfo> statusInfosCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBInstanceStatusInfo>(statusInfos.size());
             statusInfosCopy.addAll(statusInfos);
             this.statusInfos = statusInfosCopy;
         }

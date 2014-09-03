@@ -43,7 +43,7 @@ public class DescribePipelinesRequest extends AmazonWebServiceRequest implements
      * identifiers in a single call to <a>DescribePipelines</a>. You can
      * obtain pipeline identifiers by calling <a>ListPipelines</a>.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> pipelineIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> pipelineIds;
 
     /**
      * Identifiers of the pipelines to describe. You can pass as many as 25
@@ -56,7 +56,7 @@ public class DescribePipelinesRequest extends AmazonWebServiceRequest implements
      */
     public java.util.List<String> getPipelineIds() {
         if (pipelineIds == null) {
-              pipelineIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              pipelineIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               pipelineIds.setAutoConstruct(true);
         }
         return pipelineIds;
@@ -76,7 +76,7 @@ public class DescribePipelinesRequest extends AmazonWebServiceRequest implements
             this.pipelineIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> pipelineIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(pipelineIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> pipelineIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(pipelineIds.size());
         pipelineIdsCopy.addAll(pipelineIds);
         this.pipelineIds = pipelineIdsCopy;
     }
@@ -121,7 +121,7 @@ public class DescribePipelinesRequest extends AmazonWebServiceRequest implements
         if (pipelineIds == null) {
             this.pipelineIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> pipelineIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(pipelineIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> pipelineIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(pipelineIds.size());
             pipelineIdsCopy.addAll(pipelineIds);
             this.pipelineIds = pipelineIdsCopy;
         }

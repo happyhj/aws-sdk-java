@@ -24,7 +24,7 @@ public class DescribeBundleTasksResult implements Serializable {
     /**
      * Information about one or more bundle tasks.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<BundleTask> bundleTasks;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BundleTask> bundleTasks;
 
     /**
      * Information about one or more bundle tasks.
@@ -33,7 +33,7 @@ public class DescribeBundleTasksResult implements Serializable {
      */
     public java.util.List<BundleTask> getBundleTasks() {
         if (bundleTasks == null) {
-              bundleTasks = new com.amazonaws.internal.ListWithAutoConstructFlag<BundleTask>();
+              bundleTasks = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BundleTask>();
               bundleTasks.setAutoConstruct(true);
         }
         return bundleTasks;
@@ -49,7 +49,7 @@ public class DescribeBundleTasksResult implements Serializable {
             this.bundleTasks = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<BundleTask> bundleTasksCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<BundleTask>(bundleTasks.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BundleTask> bundleTasksCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BundleTask>(bundleTasks.size());
         bundleTasksCopy.addAll(bundleTasks);
         this.bundleTasks = bundleTasksCopy;
     }
@@ -86,7 +86,7 @@ public class DescribeBundleTasksResult implements Serializable {
         if (bundleTasks == null) {
             this.bundleTasks = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<BundleTask> bundleTasksCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<BundleTask>(bundleTasks.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BundleTask> bundleTasksCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BundleTask>(bundleTasks.size());
             bundleTasksCopy.addAll(bundleTasks);
             this.bundleTasks = bundleTasksCopy;
         }

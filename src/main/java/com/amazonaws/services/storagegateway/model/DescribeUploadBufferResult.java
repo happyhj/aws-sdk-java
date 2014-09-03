@@ -31,7 +31,7 @@ public class DescribeUploadBufferResult implements Serializable {
      */
     private String gatewayARN;
 
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> diskIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> diskIds;
 
     private Long uploadBufferUsedInBytes;
 
@@ -98,7 +98,7 @@ public class DescribeUploadBufferResult implements Serializable {
      */
     public java.util.List<String> getDiskIds() {
         if (diskIds == null) {
-              diskIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              diskIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               diskIds.setAutoConstruct(true);
         }
         return diskIds;
@@ -114,7 +114,7 @@ public class DescribeUploadBufferResult implements Serializable {
             this.diskIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> diskIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(diskIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> diskIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(diskIds.size());
         diskIdsCopy.addAll(diskIds);
         this.diskIds = diskIdsCopy;
     }
@@ -151,7 +151,7 @@ public class DescribeUploadBufferResult implements Serializable {
         if (diskIds == null) {
             this.diskIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> diskIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(diskIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> diskIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(diskIds.size());
             diskIdsCopy.addAll(diskIds);
             this.diskIds = diskIdsCopy;
         }

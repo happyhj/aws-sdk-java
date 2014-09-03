@@ -14,10 +14,10 @@
  */
 package com.amazonaws.client.handler.request;
 
-import com.amazonaws.metricsutil.AWSRequestMetrics;
+import com.amazonaws.network.metrics.util.AWSRequestMetrics;
 import com.amazonaws.network.response.Response;
 import com.amazonaws.network.type.Request;
-import com.amazonaws.util.TimingInfo;
+import com.amazonaws.utility.TimingInfo;
 
 /**
  * Internal class used to adapt a request handler that implements the

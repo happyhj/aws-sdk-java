@@ -20,12 +20,12 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.opsworks.model.DescribeServiceErrorsRequest;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Describe Service Errors Request Marshaller
@@ -57,7 +57,7 @@ public class DescribeServiceErrorsRequestMarshaller implements Marshaller<Reques
                 jsonWriter.key("InstanceId").value(describeServiceErrorsRequest.getInstanceId());
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> serviceErrorIdsList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(describeServiceErrorsRequest.getServiceErrorIds());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> serviceErrorIdsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(describeServiceErrorsRequest.getServiceErrorIds());
             if (serviceErrorIdsList != null && !(serviceErrorIdsList.isAutoConstruct() && serviceErrorIdsList.isEmpty())) {
 
                 jsonWriter.key("ServiceErrorIds");

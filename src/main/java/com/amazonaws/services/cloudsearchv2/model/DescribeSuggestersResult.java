@@ -26,7 +26,7 @@ public class DescribeSuggestersResult implements Serializable {
     /**
      * The suggesters configured for the domain specified in the request.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<SuggesterStatus> suggesters;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SuggesterStatus> suggesters;
 
     /**
      * The suggesters configured for the domain specified in the request.
@@ -35,7 +35,7 @@ public class DescribeSuggestersResult implements Serializable {
      */
     public java.util.List<SuggesterStatus> getSuggesters() {
         if (suggesters == null) {
-              suggesters = new com.amazonaws.internal.ListWithAutoConstructFlag<SuggesterStatus>();
+              suggesters = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SuggesterStatus>();
               suggesters.setAutoConstruct(true);
         }
         return suggesters;
@@ -51,7 +51,7 @@ public class DescribeSuggestersResult implements Serializable {
             this.suggesters = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<SuggesterStatus> suggestersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<SuggesterStatus>(suggesters.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SuggesterStatus> suggestersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SuggesterStatus>(suggesters.size());
         suggestersCopy.addAll(suggesters);
         this.suggesters = suggestersCopy;
     }
@@ -88,7 +88,7 @@ public class DescribeSuggestersResult implements Serializable {
         if (suggesters == null) {
             this.suggesters = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<SuggesterStatus> suggestersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<SuggesterStatus>(suggesters.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SuggesterStatus> suggestersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SuggesterStatus>(suggesters.size());
             suggestersCopy.addAll(suggesters);
             this.suggesters = suggestersCopy;
         }

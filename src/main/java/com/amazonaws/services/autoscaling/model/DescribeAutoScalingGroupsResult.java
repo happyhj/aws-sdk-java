@@ -26,7 +26,7 @@ public class DescribeAutoScalingGroupsResult implements Serializable {
     /**
      * A list of Auto Scaling groups.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<AutoScalingGroup> autoScalingGroups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AutoScalingGroup> autoScalingGroups;
 
     /**
      * A string that marks the start of the next batch of returned results.
@@ -43,7 +43,7 @@ public class DescribeAutoScalingGroupsResult implements Serializable {
      */
     public java.util.List<AutoScalingGroup> getAutoScalingGroups() {
         if (autoScalingGroups == null) {
-              autoScalingGroups = new com.amazonaws.internal.ListWithAutoConstructFlag<AutoScalingGroup>();
+              autoScalingGroups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AutoScalingGroup>();
               autoScalingGroups.setAutoConstruct(true);
         }
         return autoScalingGroups;
@@ -59,7 +59,7 @@ public class DescribeAutoScalingGroupsResult implements Serializable {
             this.autoScalingGroups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<AutoScalingGroup> autoScalingGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<AutoScalingGroup>(autoScalingGroups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AutoScalingGroup> autoScalingGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AutoScalingGroup>(autoScalingGroups.size());
         autoScalingGroupsCopy.addAll(autoScalingGroups);
         this.autoScalingGroups = autoScalingGroupsCopy;
     }
@@ -96,7 +96,7 @@ public class DescribeAutoScalingGroupsResult implements Serializable {
         if (autoScalingGroups == null) {
             this.autoScalingGroups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<AutoScalingGroup> autoScalingGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<AutoScalingGroup>(autoScalingGroups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AutoScalingGroup> autoScalingGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AutoScalingGroup>(autoScalingGroups.size());
             autoScalingGroupsCopy.addAll(autoScalingGroups);
             this.autoScalingGroups = autoScalingGroupsCopy;
         }

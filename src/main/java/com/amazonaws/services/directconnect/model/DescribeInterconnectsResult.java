@@ -26,7 +26,7 @@ public class DescribeInterconnectsResult implements Serializable {
     /**
      * A list of interconnects.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Interconnect> interconnects;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Interconnect> interconnects;
 
     /**
      * A list of interconnects.
@@ -35,7 +35,7 @@ public class DescribeInterconnectsResult implements Serializable {
      */
     public java.util.List<Interconnect> getInterconnects() {
         if (interconnects == null) {
-              interconnects = new com.amazonaws.internal.ListWithAutoConstructFlag<Interconnect>();
+              interconnects = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Interconnect>();
               interconnects.setAutoConstruct(true);
         }
         return interconnects;
@@ -51,7 +51,7 @@ public class DescribeInterconnectsResult implements Serializable {
             this.interconnects = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Interconnect> interconnectsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Interconnect>(interconnects.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Interconnect> interconnectsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Interconnect>(interconnects.size());
         interconnectsCopy.addAll(interconnects);
         this.interconnects = interconnectsCopy;
     }
@@ -88,7 +88,7 @@ public class DescribeInterconnectsResult implements Serializable {
         if (interconnects == null) {
             this.interconnects = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Interconnect> interconnectsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Interconnect>(interconnects.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Interconnect> interconnectsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Interconnect>(interconnects.size());
             interconnectsCopy.addAll(interconnects);
             this.interconnects = interconnectsCopy;
         }

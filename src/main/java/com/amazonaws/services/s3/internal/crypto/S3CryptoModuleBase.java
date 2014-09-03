@@ -14,7 +14,7 @@
  */
 package com.amazonaws.services.s3.internal.crypto;
 
-import static com.amazonaws.sdkutil.IOUtils.closeQuietly;
+import static com.amazonaws.client.util.sdk.IOUtils.closeQuietly;
 import static com.amazonaws.services.s3.AmazonS3EncryptionClient.USER_AGENT;
 import static com.amazonaws.services.s3.model.CryptoStorageMode.InstructionFile;
 import static com.amazonaws.services.s3.model.CryptoStorageMode.ObjectMetadata;
@@ -22,8 +22,8 @@ import static com.amazonaws.services.s3.model.InstructionFileId.DEFAULT_INSTRUCT
 import static com.amazonaws.services.s3.model.InstructionFileId.DOT;
 import static com.amazonaws.services.s3.model.S3DataSource.Utils.cleanupDataSource;
 import static com.amazonaws.stringutil.StringUtils.UTF8;
-import static com.amazonaws.util.LengthCheckInputStream.EXCLUDE_SKIPPED_BYTES;
-import static com.amazonaws.util.Throwables.failure;
+import static com.amazonaws.utility.LengthCheckInputStream.EXCLUDE_SKIPPED_BYTES;
+import static com.amazonaws.utility.Throwables.failure;
 
 import java.io.ByteArrayInputStream;
 import java.io.File;
@@ -40,14 +40,14 @@ import javax.crypto.SecretKey;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
+import com.amazonaws.client.util.sdk.ReleasableInputStream;
+import com.amazonaws.client.util.sdk.ResettableInputStream;
+import com.amazonaws.client.util.sdk.SdkFilterInputStream;
 import com.amazonaws.credential.AWSCredentialsProvider;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.json.Jackson;
 import com.amazonaws.network.request.AmazonWebServiceRequest;
-import com.amazonaws.sdkutil.ReleasableInputStream;
-import com.amazonaws.sdkutil.ResettableInputStream;
-import com.amazonaws.sdkutil.SdkFilterInputStream;
 import com.amazonaws.services.s3.Headers;
 import com.amazonaws.services.s3.internal.InputSubstream;
 import com.amazonaws.services.s3.internal.Mimetypes;
@@ -75,7 +75,7 @@ import com.amazonaws.services.s3.model.S3Object;
 import com.amazonaws.services.s3.model.S3ObjectId;
 import com.amazonaws.services.s3.model.UploadPartRequest;
 import com.amazonaws.services.s3.model.UploadPartResult;
-import com.amazonaws.util.LengthCheckInputStream;
+import com.amazonaws.utility.LengthCheckInputStream;
 
 /**
  * Common implementation for different S3 cryptographic modules.

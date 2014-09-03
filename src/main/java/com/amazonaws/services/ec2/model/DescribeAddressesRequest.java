@@ -40,7 +40,7 @@ public class DescribeAddressesRequest extends AmazonWebServiceRequest implements
      * [EC2-Classic] One or more Elastic IP addresses. <p>Default: Describes
      * all your Elastic IP addresses.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> publicIps;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> publicIps;
 
     /**
      * One or more filters. <ul> <li> <p><code>allocation-id</code> -
@@ -57,13 +57,13 @@ public class DescribeAddressesRequest extends AmazonWebServiceRequest implements
      * private IP address associated with the Elastic IP address. </li> <li>
      * <p><code>public-ip</code> - The Elastic IP address. </li> </ul>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filters;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filters;
 
     /**
      * [EC2-VPC] One or more allocation IDs. <p>Default: Describes all your
      * Elastic IP addresses.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> allocationIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> allocationIds;
 
     /**
      * [EC2-Classic] One or more Elastic IP addresses. <p>Default: Describes
@@ -74,7 +74,7 @@ public class DescribeAddressesRequest extends AmazonWebServiceRequest implements
      */
     public java.util.List<String> getPublicIps() {
         if (publicIps == null) {
-              publicIps = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              publicIps = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               publicIps.setAutoConstruct(true);
         }
         return publicIps;
@@ -92,7 +92,7 @@ public class DescribeAddressesRequest extends AmazonWebServiceRequest implements
             this.publicIps = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> publicIpsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(publicIps.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> publicIpsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(publicIps.size());
         publicIpsCopy.addAll(publicIps);
         this.publicIps = publicIpsCopy;
     }
@@ -133,7 +133,7 @@ public class DescribeAddressesRequest extends AmazonWebServiceRequest implements
         if (publicIps == null) {
             this.publicIps = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> publicIpsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(publicIps.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> publicIpsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(publicIps.size());
             publicIpsCopy.addAll(publicIps);
             this.publicIps = publicIpsCopy;
         }
@@ -172,7 +172,7 @@ public class DescribeAddressesRequest extends AmazonWebServiceRequest implements
      */
     public java.util.List<Filter> getFilters() {
         if (filters == null) {
-              filters = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>();
+              filters = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>();
               filters.setAutoConstruct(true);
         }
         return filters;
@@ -212,7 +212,7 @@ public class DescribeAddressesRequest extends AmazonWebServiceRequest implements
             this.filters = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
         filtersCopy.addAll(filters);
         this.filters = filtersCopy;
     }
@@ -297,7 +297,7 @@ public class DescribeAddressesRequest extends AmazonWebServiceRequest implements
         if (filters == null) {
             this.filters = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
             filtersCopy.addAll(filters);
             this.filters = filtersCopy;
         }
@@ -314,7 +314,7 @@ public class DescribeAddressesRequest extends AmazonWebServiceRequest implements
      */
     public java.util.List<String> getAllocationIds() {
         if (allocationIds == null) {
-              allocationIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              allocationIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               allocationIds.setAutoConstruct(true);
         }
         return allocationIds;
@@ -332,7 +332,7 @@ public class DescribeAddressesRequest extends AmazonWebServiceRequest implements
             this.allocationIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> allocationIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(allocationIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> allocationIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(allocationIds.size());
         allocationIdsCopy.addAll(allocationIds);
         this.allocationIds = allocationIdsCopy;
     }
@@ -373,7 +373,7 @@ public class DescribeAddressesRequest extends AmazonWebServiceRequest implements
         if (allocationIds == null) {
             this.allocationIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> allocationIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(allocationIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> allocationIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(allocationIds.size());
             allocationIdsCopy.addAll(allocationIds);
             this.allocationIds = allocationIdsCopy;
         }

@@ -101,7 +101,7 @@ public class UpdateAutoScalingGroupRequest extends AmazonWebServiceRequest imple
      * <b>Constraints:</b><br/>
      * <b>Length: </b>1 - <br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> availabilityZones;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> availabilityZones;
 
     /**
      * The type of health check for the instances in the Auto Scaling group.
@@ -162,7 +162,7 @@ public class UpdateAutoScalingGroupRequest extends AmazonWebServiceRequest imple
      * Termination Policy for Your Auto Scaling Group</a> in the the <i>Auto
      * Scaling Developer Guide</i>.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> terminationPolicies;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> terminationPolicies;
 
     /**
      * The name of the Auto Scaling group.
@@ -420,7 +420,7 @@ public class UpdateAutoScalingGroupRequest extends AmazonWebServiceRequest imple
      */
     public java.util.List<String> getAvailabilityZones() {
         if (availabilityZones == null) {
-              availabilityZones = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              availabilityZones = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               availabilityZones.setAutoConstruct(true);
         }
         return availabilityZones;
@@ -439,7 +439,7 @@ public class UpdateAutoScalingGroupRequest extends AmazonWebServiceRequest imple
             this.availabilityZones = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> availabilityZonesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(availabilityZones.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> availabilityZonesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(availabilityZones.size());
         availabilityZonesCopy.addAll(availabilityZones);
         this.availabilityZones = availabilityZonesCopy;
     }
@@ -482,7 +482,7 @@ public class UpdateAutoScalingGroupRequest extends AmazonWebServiceRequest imple
         if (availabilityZones == null) {
             this.availabilityZones = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> availabilityZonesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(availabilityZones.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> availabilityZonesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(availabilityZones.size());
             availabilityZonesCopy.addAll(availabilityZones);
             this.availabilityZones = availabilityZonesCopy;
         }
@@ -785,7 +785,7 @@ public class UpdateAutoScalingGroupRequest extends AmazonWebServiceRequest imple
      */
     public java.util.List<String> getTerminationPolicies() {
         if (terminationPolicies == null) {
-              terminationPolicies = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              terminationPolicies = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               terminationPolicies.setAutoConstruct(true);
         }
         return terminationPolicies;
@@ -813,7 +813,7 @@ public class UpdateAutoScalingGroupRequest extends AmazonWebServiceRequest imple
             this.terminationPolicies = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> terminationPoliciesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(terminationPolicies.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> terminationPoliciesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(terminationPolicies.size());
         terminationPoliciesCopy.addAll(terminationPolicies);
         this.terminationPolicies = terminationPoliciesCopy;
     }
@@ -874,7 +874,7 @@ public class UpdateAutoScalingGroupRequest extends AmazonWebServiceRequest imple
         if (terminationPolicies == null) {
             this.terminationPolicies = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> terminationPoliciesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(terminationPolicies.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> terminationPoliciesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(terminationPolicies.size());
             terminationPoliciesCopy.addAll(terminationPolicies);
             this.terminationPolicies = terminationPoliciesCopy;
         }

@@ -24,7 +24,7 @@ public class DescribeImagesResult implements Serializable {
     /**
      * Information about one or more images.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Image> images;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Image> images;
 
     /**
      * Information about one or more images.
@@ -33,7 +33,7 @@ public class DescribeImagesResult implements Serializable {
      */
     public java.util.List<Image> getImages() {
         if (images == null) {
-              images = new com.amazonaws.internal.ListWithAutoConstructFlag<Image>();
+              images = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Image>();
               images.setAutoConstruct(true);
         }
         return images;
@@ -49,7 +49,7 @@ public class DescribeImagesResult implements Serializable {
             this.images = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Image> imagesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Image>(images.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Image> imagesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Image>(images.size());
         imagesCopy.addAll(images);
         this.images = imagesCopy;
     }
@@ -86,7 +86,7 @@ public class DescribeImagesResult implements Serializable {
         if (images == null) {
             this.images = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Image> imagesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Image>(images.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Image> imagesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Image>(images.size());
             imagesCopy.addAll(images);
             this.images = imagesCopy;
         }

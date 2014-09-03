@@ -35,7 +35,7 @@ public class DeleteAlarmsRequest extends AmazonWebServiceRequest implements Seri
      * <b>Constraints:</b><br/>
      * <b>Length: </b>0 - 100<br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> alarmNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> alarmNames;
 
     /**
      * A list of alarms to be deleted.
@@ -47,7 +47,7 @@ public class DeleteAlarmsRequest extends AmazonWebServiceRequest implements Seri
      */
     public java.util.List<String> getAlarmNames() {
         if (alarmNames == null) {
-              alarmNames = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              alarmNames = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               alarmNames.setAutoConstruct(true);
         }
         return alarmNames;
@@ -66,7 +66,7 @@ public class DeleteAlarmsRequest extends AmazonWebServiceRequest implements Seri
             this.alarmNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> alarmNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(alarmNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> alarmNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(alarmNames.size());
         alarmNamesCopy.addAll(alarmNames);
         this.alarmNames = alarmNamesCopy;
     }
@@ -109,7 +109,7 @@ public class DeleteAlarmsRequest extends AmazonWebServiceRequest implements Seri
         if (alarmNames == null) {
             this.alarmNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> alarmNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(alarmNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> alarmNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(alarmNames.size());
             alarmNamesCopy.addAll(alarmNames);
             this.alarmNames = alarmNamesCopy;
         }

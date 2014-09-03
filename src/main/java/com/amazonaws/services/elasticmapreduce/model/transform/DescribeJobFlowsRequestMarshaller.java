@@ -20,12 +20,12 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.elasticmapreduce.model.DescribeJobFlowsRequest;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Describe Job Flows Request Marshaller
@@ -57,7 +57,7 @@ public class DescribeJobFlowsRequestMarshaller implements Marshaller<Request<Des
                 jsonWriter.key("CreatedBefore").value(describeJobFlowsRequest.getCreatedBefore());
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> jobFlowIdsList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(describeJobFlowsRequest.getJobFlowIds());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> jobFlowIdsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(describeJobFlowsRequest.getJobFlowIds());
             if (jobFlowIdsList != null && !(jobFlowIdsList.isAutoConstruct() && jobFlowIdsList.isEmpty())) {
 
                 jsonWriter.key("JobFlowIds");
@@ -71,7 +71,7 @@ public class DescribeJobFlowsRequestMarshaller implements Marshaller<Request<Des
                 jsonWriter.endArray();
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> jobFlowStatesList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(describeJobFlowsRequest.getJobFlowStates());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> jobFlowStatesList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(describeJobFlowsRequest.getJobFlowStates());
             if (jobFlowStatesList != null && !(jobFlowStatesList.isAutoConstruct() && jobFlowStatesList.isEmpty())) {
 
                 jsonWriter.key("JobFlowStates");

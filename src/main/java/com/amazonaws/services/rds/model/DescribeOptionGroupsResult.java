@@ -26,7 +26,7 @@ public class DescribeOptionGroupsResult implements Serializable {
     /**
      * List of option groups.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<OptionGroup> optionGroupsList;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionGroup> optionGroupsList;
 
     /**
      * An optional pagination token provided by a previous request. If this
@@ -42,7 +42,7 @@ public class DescribeOptionGroupsResult implements Serializable {
      */
     public java.util.List<OptionGroup> getOptionGroupsList() {
         if (optionGroupsList == null) {
-              optionGroupsList = new com.amazonaws.internal.ListWithAutoConstructFlag<OptionGroup>();
+              optionGroupsList = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionGroup>();
               optionGroupsList.setAutoConstruct(true);
         }
         return optionGroupsList;
@@ -58,7 +58,7 @@ public class DescribeOptionGroupsResult implements Serializable {
             this.optionGroupsList = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<OptionGroup> optionGroupsListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<OptionGroup>(optionGroupsList.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionGroup> optionGroupsListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionGroup>(optionGroupsList.size());
         optionGroupsListCopy.addAll(optionGroupsList);
         this.optionGroupsList = optionGroupsListCopy;
     }
@@ -95,7 +95,7 @@ public class DescribeOptionGroupsResult implements Serializable {
         if (optionGroupsList == null) {
             this.optionGroupsList = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<OptionGroup> optionGroupsListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<OptionGroup>(optionGroupsList.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionGroup> optionGroupsListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionGroup>(optionGroupsList.size());
             optionGroupsListCopy.addAll(optionGroupsList);
             this.optionGroupsList = optionGroupsListCopy;
         }

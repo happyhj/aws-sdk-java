@@ -73,7 +73,7 @@ public class SendMessageBatchRequest extends AmazonWebServiceRequest implements 
     /**
      * A list of <a>SendMessageBatchRequestEntry</a> items.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<SendMessageBatchRequestEntry> entries;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SendMessageBatchRequestEntry> entries;
 
     /**
      * Default constructor for a new SendMessageBatchRequest object.  Callers should use the
@@ -145,7 +145,7 @@ public class SendMessageBatchRequest extends AmazonWebServiceRequest implements 
      */
     public java.util.List<SendMessageBatchRequestEntry> getEntries() {
         if (entries == null) {
-              entries = new com.amazonaws.internal.ListWithAutoConstructFlag<SendMessageBatchRequestEntry>();
+              entries = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SendMessageBatchRequestEntry>();
               entries.setAutoConstruct(true);
         }
         return entries;
@@ -161,7 +161,7 @@ public class SendMessageBatchRequest extends AmazonWebServiceRequest implements 
             this.entries = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<SendMessageBatchRequestEntry> entriesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<SendMessageBatchRequestEntry>(entries.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SendMessageBatchRequestEntry> entriesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SendMessageBatchRequestEntry>(entries.size());
         entriesCopy.addAll(entries);
         this.entries = entriesCopy;
     }
@@ -198,7 +198,7 @@ public class SendMessageBatchRequest extends AmazonWebServiceRequest implements 
         if (entries == null) {
             this.entries = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<SendMessageBatchRequestEntry> entriesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<SendMessageBatchRequestEntry>(entries.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SendMessageBatchRequestEntry> entriesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SendMessageBatchRequestEntry>(entries.size());
             entriesCopy.addAll(entries);
             this.entries = entriesCopy;
         }

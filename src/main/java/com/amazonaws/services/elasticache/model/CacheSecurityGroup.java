@@ -49,7 +49,7 @@ public class CacheSecurityGroup implements Serializable {
      * A list of Amazon EC2 security groups that are associated with this
      * cache security group.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<EC2SecurityGroup> eC2SecurityGroups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EC2SecurityGroup> eC2SecurityGroups;
 
     /**
      * The AWS account ID of the cache security group owner.
@@ -159,7 +159,7 @@ public class CacheSecurityGroup implements Serializable {
      */
     public java.util.List<EC2SecurityGroup> getEC2SecurityGroups() {
         if (eC2SecurityGroups == null) {
-              eC2SecurityGroups = new com.amazonaws.internal.ListWithAutoConstructFlag<EC2SecurityGroup>();
+              eC2SecurityGroups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EC2SecurityGroup>();
               eC2SecurityGroups.setAutoConstruct(true);
         }
         return eC2SecurityGroups;
@@ -177,7 +177,7 @@ public class CacheSecurityGroup implements Serializable {
             this.eC2SecurityGroups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<EC2SecurityGroup> eC2SecurityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<EC2SecurityGroup>(eC2SecurityGroups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EC2SecurityGroup> eC2SecurityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EC2SecurityGroup>(eC2SecurityGroups.size());
         eC2SecurityGroupsCopy.addAll(eC2SecurityGroups);
         this.eC2SecurityGroups = eC2SecurityGroupsCopy;
     }
@@ -218,7 +218,7 @@ public class CacheSecurityGroup implements Serializable {
         if (eC2SecurityGroups == null) {
             this.eC2SecurityGroups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<EC2SecurityGroup> eC2SecurityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<EC2SecurityGroup>(eC2SecurityGroups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EC2SecurityGroup> eC2SecurityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EC2SecurityGroup>(eC2SecurityGroups.size());
             eC2SecurityGroupsCopy.addAll(eC2SecurityGroups);
             this.eC2SecurityGroups = eC2SecurityGroupsCopy;
         }

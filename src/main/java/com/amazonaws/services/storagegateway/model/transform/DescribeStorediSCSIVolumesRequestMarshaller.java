@@ -20,12 +20,12 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.storagegateway.model.DescribeStorediSCSIVolumesRequest;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Describe Storedi S C S I Volumes Request Marshaller
@@ -50,7 +50,7 @@ public class DescribeStorediSCSIVolumesRequestMarshaller implements Marshaller<R
 
           jsonWriter.object();
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> volumeARNsList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(describeStorediSCSIVolumesRequest.getVolumeARNs());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> volumeARNsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(describeStorediSCSIVolumesRequest.getVolumeARNs());
             if (volumeARNsList != null && !(volumeARNsList.isAutoConstruct() && volumeARNsList.isEmpty())) {
 
                 jsonWriter.key("VolumeARNs");

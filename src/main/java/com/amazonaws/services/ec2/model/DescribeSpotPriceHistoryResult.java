@@ -24,7 +24,7 @@ public class DescribeSpotPriceHistoryResult implements Serializable {
     /**
      * The historical Spot Prices.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<SpotPrice> spotPriceHistory;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SpotPrice> spotPriceHistory;
 
     /**
      * The string marking the next set of results. This is empty if there are
@@ -39,7 +39,7 @@ public class DescribeSpotPriceHistoryResult implements Serializable {
      */
     public java.util.List<SpotPrice> getSpotPriceHistory() {
         if (spotPriceHistory == null) {
-              spotPriceHistory = new com.amazonaws.internal.ListWithAutoConstructFlag<SpotPrice>();
+              spotPriceHistory = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SpotPrice>();
               spotPriceHistory.setAutoConstruct(true);
         }
         return spotPriceHistory;
@@ -55,7 +55,7 @@ public class DescribeSpotPriceHistoryResult implements Serializable {
             this.spotPriceHistory = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<SpotPrice> spotPriceHistoryCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<SpotPrice>(spotPriceHistory.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SpotPrice> spotPriceHistoryCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SpotPrice>(spotPriceHistory.size());
         spotPriceHistoryCopy.addAll(spotPriceHistory);
         this.spotPriceHistory = spotPriceHistoryCopy;
     }
@@ -92,7 +92,7 @@ public class DescribeSpotPriceHistoryResult implements Serializable {
         if (spotPriceHistory == null) {
             this.spotPriceHistory = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<SpotPrice> spotPriceHistoryCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<SpotPrice>(spotPriceHistory.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SpotPrice> spotPriceHistoryCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SpotPrice>(spotPriceHistory.size());
             spotPriceHistoryCopy.addAll(spotPriceHistory);
             this.spotPriceHistory = spotPriceHistoryCopy;
         }

@@ -40,7 +40,7 @@ public class DeleteTagsRequest extends AmazonWebServiceRequest implements Serial
      * The ID of the resource. For example, ami-1a2b3c4d. You can specify
      * more than one resource ID.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> resources;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> resources;
 
     /**
      * One or more tags to delete. If you omit the <code>value</code>
@@ -48,7 +48,7 @@ public class DeleteTagsRequest extends AmazonWebServiceRequest implements Serial
      * this parameter with an empty string as the value, we delete the key
      * only if its value is an empty string.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tags;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tags;
 
     /**
      * Default constructor for a new DeleteTagsRequest object.  Callers should use the
@@ -77,7 +77,7 @@ public class DeleteTagsRequest extends AmazonWebServiceRequest implements Serial
      */
     public java.util.List<String> getResources() {
         if (resources == null) {
-              resources = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              resources = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               resources.setAutoConstruct(true);
         }
         return resources;
@@ -95,7 +95,7 @@ public class DeleteTagsRequest extends AmazonWebServiceRequest implements Serial
             this.resources = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> resourcesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(resources.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> resourcesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(resources.size());
         resourcesCopy.addAll(resources);
         this.resources = resourcesCopy;
     }
@@ -136,7 +136,7 @@ public class DeleteTagsRequest extends AmazonWebServiceRequest implements Serial
         if (resources == null) {
             this.resources = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> resourcesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(resources.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> resourcesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(resources.size());
             resourcesCopy.addAll(resources);
             this.resources = resourcesCopy;
         }
@@ -157,7 +157,7 @@ public class DeleteTagsRequest extends AmazonWebServiceRequest implements Serial
      */
     public java.util.List<Tag> getTags() {
         if (tags == null) {
-              tags = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>();
+              tags = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>();
               tags.setAutoConstruct(true);
         }
         return tags;
@@ -179,7 +179,7 @@ public class DeleteTagsRequest extends AmazonWebServiceRequest implements Serial
             this.tags = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tags.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tags.size());
         tagsCopy.addAll(tags);
         this.tags = tagsCopy;
     }
@@ -228,7 +228,7 @@ public class DeleteTagsRequest extends AmazonWebServiceRequest implements Serial
         if (tags == null) {
             this.tags = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tags.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tags.size());
             tagsCopy.addAll(tags);
             this.tags = tagsCopy;
         }

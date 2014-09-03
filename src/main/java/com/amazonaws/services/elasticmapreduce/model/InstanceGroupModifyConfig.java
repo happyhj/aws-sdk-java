@@ -42,7 +42,7 @@ public class InstanceGroupModifyConfig implements Serializable {
      * terminate the instances, the instance group will not return to its
      * original requested size.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> eC2InstanceIdsToTerminate;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> eC2InstanceIdsToTerminate;
 
     /**
      * Default constructor for a new InstanceGroupModifyConfig object.  Callers should use the
@@ -153,7 +153,7 @@ public class InstanceGroupModifyConfig implements Serializable {
      */
     public java.util.List<String> getEC2InstanceIdsToTerminate() {
         if (eC2InstanceIdsToTerminate == null) {
-              eC2InstanceIdsToTerminate = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              eC2InstanceIdsToTerminate = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               eC2InstanceIdsToTerminate.setAutoConstruct(true);
         }
         return eC2InstanceIdsToTerminate;
@@ -173,7 +173,7 @@ public class InstanceGroupModifyConfig implements Serializable {
             this.eC2InstanceIdsToTerminate = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> eC2InstanceIdsToTerminateCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(eC2InstanceIdsToTerminate.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> eC2InstanceIdsToTerminateCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(eC2InstanceIdsToTerminate.size());
         eC2InstanceIdsToTerminateCopy.addAll(eC2InstanceIdsToTerminate);
         this.eC2InstanceIdsToTerminate = eC2InstanceIdsToTerminateCopy;
     }
@@ -218,7 +218,7 @@ public class InstanceGroupModifyConfig implements Serializable {
         if (eC2InstanceIdsToTerminate == null) {
             this.eC2InstanceIdsToTerminate = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> eC2InstanceIdsToTerminateCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(eC2InstanceIdsToTerminate.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> eC2InstanceIdsToTerminateCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(eC2InstanceIdsToTerminate.size());
             eC2InstanceIdsToTerminateCopy.addAll(eC2InstanceIdsToTerminate);
             this.eC2InstanceIdsToTerminate = eC2InstanceIdsToTerminateCopy;
         }

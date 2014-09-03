@@ -27,7 +27,7 @@ public class ListVerifiedEmailAddressesResult implements Serializable {
     /**
      * A list of email addresses that have been verified.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> verifiedEmailAddresses;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> verifiedEmailAddresses;
 
     /**
      * A list of email addresses that have been verified.
@@ -36,7 +36,7 @@ public class ListVerifiedEmailAddressesResult implements Serializable {
      */
     public java.util.List<String> getVerifiedEmailAddresses() {
         if (verifiedEmailAddresses == null) {
-              verifiedEmailAddresses = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              verifiedEmailAddresses = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               verifiedEmailAddresses.setAutoConstruct(true);
         }
         return verifiedEmailAddresses;
@@ -52,7 +52,7 @@ public class ListVerifiedEmailAddressesResult implements Serializable {
             this.verifiedEmailAddresses = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> verifiedEmailAddressesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(verifiedEmailAddresses.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> verifiedEmailAddressesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(verifiedEmailAddresses.size());
         verifiedEmailAddressesCopy.addAll(verifiedEmailAddresses);
         this.verifiedEmailAddresses = verifiedEmailAddressesCopy;
     }
@@ -89,7 +89,7 @@ public class ListVerifiedEmailAddressesResult implements Serializable {
         if (verifiedEmailAddresses == null) {
             this.verifiedEmailAddresses = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> verifiedEmailAddressesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(verifiedEmailAddresses.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> verifiedEmailAddressesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(verifiedEmailAddresses.size());
             verifiedEmailAddressesCopy.addAll(verifiedEmailAddresses);
             this.verifiedEmailAddresses = verifiedEmailAddressesCopy;
         }

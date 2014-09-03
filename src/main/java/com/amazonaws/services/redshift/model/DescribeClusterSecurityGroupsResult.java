@@ -36,7 +36,7 @@ public class DescribeClusterSecurityGroupsResult implements Serializable {
     /**
      * A list of <a>ClusterSecurityGroup</a> instances.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ClusterSecurityGroup> clusterSecurityGroups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterSecurityGroup> clusterSecurityGroups;
 
     /**
      * A value that indicates the starting point for the next set of response
@@ -108,7 +108,7 @@ public class DescribeClusterSecurityGroupsResult implements Serializable {
      */
     public java.util.List<ClusterSecurityGroup> getClusterSecurityGroups() {
         if (clusterSecurityGroups == null) {
-              clusterSecurityGroups = new com.amazonaws.internal.ListWithAutoConstructFlag<ClusterSecurityGroup>();
+              clusterSecurityGroups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterSecurityGroup>();
               clusterSecurityGroups.setAutoConstruct(true);
         }
         return clusterSecurityGroups;
@@ -124,7 +124,7 @@ public class DescribeClusterSecurityGroupsResult implements Serializable {
             this.clusterSecurityGroups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ClusterSecurityGroup> clusterSecurityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ClusterSecurityGroup>(clusterSecurityGroups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterSecurityGroup> clusterSecurityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterSecurityGroup>(clusterSecurityGroups.size());
         clusterSecurityGroupsCopy.addAll(clusterSecurityGroups);
         this.clusterSecurityGroups = clusterSecurityGroupsCopy;
     }
@@ -161,7 +161,7 @@ public class DescribeClusterSecurityGroupsResult implements Serializable {
         if (clusterSecurityGroups == null) {
             this.clusterSecurityGroups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ClusterSecurityGroup> clusterSecurityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ClusterSecurityGroup>(clusterSecurityGroups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterSecurityGroup> clusterSecurityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterSecurityGroup>(clusterSecurityGroups.size());
             clusterSecurityGroupsCopy.addAll(clusterSecurityGroups);
             this.clusterSecurityGroups = clusterSecurityGroupsCopy;
         }

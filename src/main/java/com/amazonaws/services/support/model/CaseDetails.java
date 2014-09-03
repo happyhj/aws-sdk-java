@@ -119,7 +119,7 @@ public class CaseDetails implements Serializable {
      * The email addresses that receive copies of communication about the
      * case.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> ccEmailAddresses;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> ccEmailAddresses;
 
     /**
      * The ISO 639-1 code for the language in which AWS provides support. AWS
@@ -510,7 +510,7 @@ public class CaseDetails implements Serializable {
      */
     public java.util.List<String> getCcEmailAddresses() {
         if (ccEmailAddresses == null) {
-              ccEmailAddresses = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              ccEmailAddresses = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               ccEmailAddresses.setAutoConstruct(true);
         }
         return ccEmailAddresses;
@@ -528,7 +528,7 @@ public class CaseDetails implements Serializable {
             this.ccEmailAddresses = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> ccEmailAddressesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(ccEmailAddresses.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> ccEmailAddressesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(ccEmailAddresses.size());
         ccEmailAddressesCopy.addAll(ccEmailAddresses);
         this.ccEmailAddresses = ccEmailAddressesCopy;
     }
@@ -569,7 +569,7 @@ public class CaseDetails implements Serializable {
         if (ccEmailAddresses == null) {
             this.ccEmailAddresses = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> ccEmailAddressesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(ccEmailAddresses.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> ccEmailAddressesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(ccEmailAddresses.size());
             ccEmailAddressesCopy.addAll(ccEmailAddresses);
             this.ccEmailAddresses = ccEmailAddressesCopy;
         }

@@ -34,7 +34,7 @@ public class DescribeReservedDBInstancesResult implements Serializable {
     /**
      * A list of reserved DB instances.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ReservedDBInstance> reservedDBInstances;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedDBInstance> reservedDBInstances;
 
     /**
      * An optional pagination token provided by a previous request. If this
@@ -88,7 +88,7 @@ public class DescribeReservedDBInstancesResult implements Serializable {
      */
     public java.util.List<ReservedDBInstance> getReservedDBInstances() {
         if (reservedDBInstances == null) {
-              reservedDBInstances = new com.amazonaws.internal.ListWithAutoConstructFlag<ReservedDBInstance>();
+              reservedDBInstances = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedDBInstance>();
               reservedDBInstances.setAutoConstruct(true);
         }
         return reservedDBInstances;
@@ -104,7 +104,7 @@ public class DescribeReservedDBInstancesResult implements Serializable {
             this.reservedDBInstances = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ReservedDBInstance> reservedDBInstancesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ReservedDBInstance>(reservedDBInstances.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedDBInstance> reservedDBInstancesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedDBInstance>(reservedDBInstances.size());
         reservedDBInstancesCopy.addAll(reservedDBInstances);
         this.reservedDBInstances = reservedDBInstancesCopy;
     }
@@ -141,7 +141,7 @@ public class DescribeReservedDBInstancesResult implements Serializable {
         if (reservedDBInstances == null) {
             this.reservedDBInstances = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ReservedDBInstance> reservedDBInstancesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ReservedDBInstance>(reservedDBInstances.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedDBInstance> reservedDBInstancesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedDBInstance>(reservedDBInstances.size());
             reservedDBInstancesCopy.addAll(reservedDBInstances);
             this.reservedDBInstances = reservedDBInstancesCopy;
         }

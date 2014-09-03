@@ -27,7 +27,7 @@ public class ListAccountAliasesResult implements Serializable {
     /**
      * A list of aliases associated with the account.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> accountAliases;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> accountAliases;
 
     /**
      * A flag that indicates whether there are more account aliases to list.
@@ -56,7 +56,7 @@ public class ListAccountAliasesResult implements Serializable {
      */
     public java.util.List<String> getAccountAliases() {
         if (accountAliases == null) {
-              accountAliases = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              accountAliases = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               accountAliases.setAutoConstruct(true);
         }
         return accountAliases;
@@ -72,7 +72,7 @@ public class ListAccountAliasesResult implements Serializable {
             this.accountAliases = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> accountAliasesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(accountAliases.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> accountAliasesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(accountAliases.size());
         accountAliasesCopy.addAll(accountAliases);
         this.accountAliases = accountAliasesCopy;
     }
@@ -109,7 +109,7 @@ public class ListAccountAliasesResult implements Serializable {
         if (accountAliases == null) {
             this.accountAliases = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> accountAliasesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(accountAliases.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> accountAliasesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(accountAliases.size());
             accountAliasesCopy.addAll(accountAliases);
             this.accountAliases = accountAliasesCopy;
         }

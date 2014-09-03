@@ -20,12 +20,12 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.opsworks.model.DescribeStacksRequest;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Describe Stacks Request Marshaller
@@ -50,7 +50,7 @@ public class DescribeStacksRequestMarshaller implements Marshaller<Request<Descr
 
           jsonWriter.object();
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> stackIdsList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(describeStacksRequest.getStackIds());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> stackIdsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(describeStacksRequest.getStackIds());
             if (stackIdsList != null && !(stackIdsList.isAutoConstruct() && stackIdsList.isEmpty())) {
 
                 jsonWriter.key("StackIds");

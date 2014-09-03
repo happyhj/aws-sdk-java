@@ -20,7 +20,7 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.dynamodbv2.model.AttributeDefinition;
@@ -31,7 +31,7 @@ import com.amazonaws.services.dynamodbv2.model.LocalSecondaryIndex;
 import com.amazonaws.services.dynamodbv2.model.Projection;
 import com.amazonaws.services.dynamodbv2.model.ProvisionedThroughput;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Create Table Request Marshaller
@@ -56,7 +56,7 @@ public class CreateTableRequestMarshaller implements Marshaller<Request<CreateTa
 
           jsonWriter.object();
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<AttributeDefinition> attributeDefinitionsList = (com.amazonaws.internal.ListWithAutoConstructFlag<AttributeDefinition>)(createTableRequest.getAttributeDefinitions());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AttributeDefinition> attributeDefinitionsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AttributeDefinition>)(createTableRequest.getAttributeDefinitions());
             if (attributeDefinitionsList != null && !(attributeDefinitionsList.isAutoConstruct() && attributeDefinitionsList.isEmpty())) {
 
                 jsonWriter.key("AttributeDefinitions");
@@ -80,7 +80,7 @@ public class CreateTableRequestMarshaller implements Marshaller<Request<CreateTa
                 jsonWriter.key("TableName").value(createTableRequest.getTableName());
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<KeySchemaElement> keySchemaList = (com.amazonaws.internal.ListWithAutoConstructFlag<KeySchemaElement>)(createTableRequest.getKeySchema());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<KeySchemaElement> keySchemaList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<KeySchemaElement>)(createTableRequest.getKeySchema());
             if (keySchemaList != null && !(keySchemaList.isAutoConstruct() && keySchemaList.isEmpty())) {
 
                 jsonWriter.key("KeySchema");
@@ -101,7 +101,7 @@ public class CreateTableRequestMarshaller implements Marshaller<Request<CreateTa
                 jsonWriter.endArray();
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<LocalSecondaryIndex> localSecondaryIndexesList = (com.amazonaws.internal.ListWithAutoConstructFlag<LocalSecondaryIndex>)(createTableRequest.getLocalSecondaryIndexes());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LocalSecondaryIndex> localSecondaryIndexesList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LocalSecondaryIndex>)(createTableRequest.getLocalSecondaryIndexes());
             if (localSecondaryIndexesList != null && !(localSecondaryIndexesList.isAutoConstruct() && localSecondaryIndexesList.isEmpty())) {
 
                 jsonWriter.key("LocalSecondaryIndexes");
@@ -114,7 +114,7 @@ public class CreateTableRequestMarshaller implements Marshaller<Request<CreateTa
                             jsonWriter.key("IndexName").value(localSecondaryIndexesListValue.getIndexName());
                         }
 
-                        com.amazonaws.internal.ListWithAutoConstructFlag<KeySchemaElement> keySchema2List = (com.amazonaws.internal.ListWithAutoConstructFlag<KeySchemaElement>)(localSecondaryIndexesListValue.getKeySchema());
+                        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<KeySchemaElement> keySchema2List = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<KeySchemaElement>)(localSecondaryIndexesListValue.getKeySchema());
                         if (keySchema2List != null && !(keySchema2List.isAutoConstruct() && keySchema2List.isEmpty())) {
 
                             jsonWriter.key("KeySchema");
@@ -144,7 +144,7 @@ public class CreateTableRequestMarshaller implements Marshaller<Request<CreateTa
                                 jsonWriter.key("ProjectionType").value(projection.getProjectionType());
                             }
 
-                            com.amazonaws.internal.ListWithAutoConstructFlag<String> nonKeyAttributesList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(projection.getNonKeyAttributes());
+                            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> nonKeyAttributesList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(projection.getNonKeyAttributes());
                             if (nonKeyAttributesList != null && !(nonKeyAttributesList.isAutoConstruct() && nonKeyAttributesList.isEmpty())) {
 
                                 jsonWriter.key("NonKeyAttributes");
@@ -165,7 +165,7 @@ public class CreateTableRequestMarshaller implements Marshaller<Request<CreateTa
                 jsonWriter.endArray();
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<GlobalSecondaryIndex> globalSecondaryIndexesList = (com.amazonaws.internal.ListWithAutoConstructFlag<GlobalSecondaryIndex>)(createTableRequest.getGlobalSecondaryIndexes());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GlobalSecondaryIndex> globalSecondaryIndexesList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GlobalSecondaryIndex>)(createTableRequest.getGlobalSecondaryIndexes());
             if (globalSecondaryIndexesList != null && !(globalSecondaryIndexesList.isAutoConstruct() && globalSecondaryIndexesList.isEmpty())) {
 
                 jsonWriter.key("GlobalSecondaryIndexes");
@@ -178,7 +178,7 @@ public class CreateTableRequestMarshaller implements Marshaller<Request<CreateTa
                             jsonWriter.key("IndexName").value(globalSecondaryIndexesListValue.getIndexName());
                         }
 
-                        com.amazonaws.internal.ListWithAutoConstructFlag<KeySchemaElement> keySchema2List = (com.amazonaws.internal.ListWithAutoConstructFlag<KeySchemaElement>)(globalSecondaryIndexesListValue.getKeySchema());
+                        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<KeySchemaElement> keySchema2List = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<KeySchemaElement>)(globalSecondaryIndexesListValue.getKeySchema());
                         if (keySchema2List != null && !(keySchema2List.isAutoConstruct() && keySchema2List.isEmpty())) {
 
                             jsonWriter.key("KeySchema");
@@ -208,7 +208,7 @@ public class CreateTableRequestMarshaller implements Marshaller<Request<CreateTa
                                 jsonWriter.key("ProjectionType").value(projection.getProjectionType());
                             }
 
-                            com.amazonaws.internal.ListWithAutoConstructFlag<String> nonKeyAttributesList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(projection.getNonKeyAttributes());
+                            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> nonKeyAttributesList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(projection.getNonKeyAttributes());
                             if (nonKeyAttributesList != null && !(nonKeyAttributesList.isAutoConstruct() && nonKeyAttributesList.isEmpty())) {
 
                                 jsonWriter.key("NonKeyAttributes");

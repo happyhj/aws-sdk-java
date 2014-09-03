@@ -21,7 +21,7 @@ import java.util.Map;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.dynamodbv2.model.AttributeValue;
@@ -29,7 +29,7 @@ import com.amazonaws.services.dynamodbv2.model.AttributeValueUpdate;
 import com.amazonaws.services.dynamodbv2.model.ExpectedAttributeValue;
 import com.amazonaws.services.dynamodbv2.model.UpdateItemRequest;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Update Item Request Marshaller
@@ -75,7 +75,7 @@ public class UpdateItemRequestMarshaller implements Marshaller<Request<UpdateIte
                             jsonWriter.key("B").value(keyListValue.getValue().getB());
                         }
 
-                        com.amazonaws.internal.ListWithAutoConstructFlag<String> sSList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(keyListValue.getValue().getSS());
+                        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> sSList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(keyListValue.getValue().getSS());
                         if (sSList != null && !(sSList.isAutoConstruct() && sSList.isEmpty())) {
 
                             jsonWriter.key("SS");
@@ -89,7 +89,7 @@ public class UpdateItemRequestMarshaller implements Marshaller<Request<UpdateIte
                             jsonWriter.endArray();
                         }
 
-                        com.amazonaws.internal.ListWithAutoConstructFlag<String> nSList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(keyListValue.getValue().getNS());
+                        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> nSList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(keyListValue.getValue().getNS());
                         if (nSList != null && !(nSList.isAutoConstruct() && nSList.isEmpty())) {
 
                             jsonWriter.key("NS");
@@ -103,7 +103,7 @@ public class UpdateItemRequestMarshaller implements Marshaller<Request<UpdateIte
                             jsonWriter.endArray();
                         }
 
-                        com.amazonaws.internal.ListWithAutoConstructFlag<java.nio.ByteBuffer> bSList = (com.amazonaws.internal.ListWithAutoConstructFlag<java.nio.ByteBuffer>)(keyListValue.getValue().getBS());
+                        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<java.nio.ByteBuffer> bSList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<java.nio.ByteBuffer>)(keyListValue.getValue().getBS());
                         if (bSList != null && !(bSList.isAutoConstruct() && bSList.isEmpty())) {
 
                             jsonWriter.key("BS");
@@ -145,7 +145,7 @@ public class UpdateItemRequestMarshaller implements Marshaller<Request<UpdateIte
                                 jsonWriter.key("B").value(value.getB());
                             }
 
-                            com.amazonaws.internal.ListWithAutoConstructFlag<String> sSList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(value.getSS());
+                            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> sSList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(value.getSS());
                             if (sSList != null && !(sSList.isAutoConstruct() && sSList.isEmpty())) {
 
                                 jsonWriter.key("SS");
@@ -159,7 +159,7 @@ public class UpdateItemRequestMarshaller implements Marshaller<Request<UpdateIte
                                 jsonWriter.endArray();
                             }
 
-                            com.amazonaws.internal.ListWithAutoConstructFlag<String> nSList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(value.getNS());
+                            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> nSList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(value.getNS());
                             if (nSList != null && !(nSList.isAutoConstruct() && nSList.isEmpty())) {
 
                                 jsonWriter.key("NS");
@@ -173,7 +173,7 @@ public class UpdateItemRequestMarshaller implements Marshaller<Request<UpdateIte
                                 jsonWriter.endArray();
                             }
 
-                            com.amazonaws.internal.ListWithAutoConstructFlag<java.nio.ByteBuffer> bSList = (com.amazonaws.internal.ListWithAutoConstructFlag<java.nio.ByteBuffer>)(value.getBS());
+                            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<java.nio.ByteBuffer> bSList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<java.nio.ByteBuffer>)(value.getBS());
                             if (bSList != null && !(bSList.isAutoConstruct() && bSList.isEmpty())) {
 
                                 jsonWriter.key("BS");
@@ -220,7 +220,7 @@ public class UpdateItemRequestMarshaller implements Marshaller<Request<UpdateIte
                                 jsonWriter.key("B").value(value.getB());
                             }
 
-                            com.amazonaws.internal.ListWithAutoConstructFlag<String> sSList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(value.getSS());
+                            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> sSList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(value.getSS());
                             if (sSList != null && !(sSList.isAutoConstruct() && sSList.isEmpty())) {
 
                                 jsonWriter.key("SS");
@@ -234,7 +234,7 @@ public class UpdateItemRequestMarshaller implements Marshaller<Request<UpdateIte
                                 jsonWriter.endArray();
                             }
 
-                            com.amazonaws.internal.ListWithAutoConstructFlag<String> nSList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(value.getNS());
+                            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> nSList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(value.getNS());
                             if (nSList != null && !(nSList.isAutoConstruct() && nSList.isEmpty())) {
 
                                 jsonWriter.key("NS");
@@ -248,7 +248,7 @@ public class UpdateItemRequestMarshaller implements Marshaller<Request<UpdateIte
                                 jsonWriter.endArray();
                             }
 
-                            com.amazonaws.internal.ListWithAutoConstructFlag<java.nio.ByteBuffer> bSList = (com.amazonaws.internal.ListWithAutoConstructFlag<java.nio.ByteBuffer>)(value.getBS());
+                            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<java.nio.ByteBuffer> bSList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<java.nio.ByteBuffer>)(value.getBS());
                             if (bSList != null && !(bSList.isAutoConstruct() && bSList.isEmpty())) {
 
                                 jsonWriter.key("BS");
@@ -270,7 +270,7 @@ public class UpdateItemRequestMarshaller implements Marshaller<Request<UpdateIte
                             jsonWriter.key("ComparisonOperator").value(expectedListValue.getValue().getComparisonOperator());
                         }
 
-                        com.amazonaws.internal.ListWithAutoConstructFlag<AttributeValue> attributeValueListList = (com.amazonaws.internal.ListWithAutoConstructFlag<AttributeValue>)(expectedListValue.getValue().getAttributeValueList());
+                        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AttributeValue> attributeValueListList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AttributeValue>)(expectedListValue.getValue().getAttributeValueList());
                         if (attributeValueListList != null && !(attributeValueListList.isAutoConstruct() && attributeValueListList.isEmpty())) {
 
                             jsonWriter.key("AttributeValueList");
@@ -289,7 +289,7 @@ public class UpdateItemRequestMarshaller implements Marshaller<Request<UpdateIte
                                         jsonWriter.key("B").value(attributeValueListListValue.getB());
                                     }
 
-                                    com.amazonaws.internal.ListWithAutoConstructFlag<String> sSList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(attributeValueListListValue.getSS());
+                                    com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> sSList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(attributeValueListListValue.getSS());
                                     if (sSList != null && !(sSList.isAutoConstruct() && sSList.isEmpty())) {
 
                                         jsonWriter.key("SS");
@@ -303,7 +303,7 @@ public class UpdateItemRequestMarshaller implements Marshaller<Request<UpdateIte
                                         jsonWriter.endArray();
                                     }
 
-                                    com.amazonaws.internal.ListWithAutoConstructFlag<String> nSList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(attributeValueListListValue.getNS());
+                                    com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> nSList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(attributeValueListListValue.getNS());
                                     if (nSList != null && !(nSList.isAutoConstruct() && nSList.isEmpty())) {
 
                                         jsonWriter.key("NS");
@@ -317,7 +317,7 @@ public class UpdateItemRequestMarshaller implements Marshaller<Request<UpdateIte
                                         jsonWriter.endArray();
                                     }
 
-                                    com.amazonaws.internal.ListWithAutoConstructFlag<java.nio.ByteBuffer> bSList = (com.amazonaws.internal.ListWithAutoConstructFlag<java.nio.ByteBuffer>)(attributeValueListListValue.getBS());
+                                    com.amazonaws.serviceinternal.ListWithAutoConstructFlag<java.nio.ByteBuffer> bSList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<java.nio.ByteBuffer>)(attributeValueListListValue.getBS());
                                     if (bSList != null && !(bSList.isAutoConstruct() && bSList.isEmpty())) {
 
                                         jsonWriter.key("BS");

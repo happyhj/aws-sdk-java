@@ -24,7 +24,7 @@ public class DescribeAddressesResult implements Serializable {
     /**
      * Information about one or more Elastic IP addresses.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Address> addresses;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Address> addresses;
 
     /**
      * Information about one or more Elastic IP addresses.
@@ -33,7 +33,7 @@ public class DescribeAddressesResult implements Serializable {
      */
     public java.util.List<Address> getAddresses() {
         if (addresses == null) {
-              addresses = new com.amazonaws.internal.ListWithAutoConstructFlag<Address>();
+              addresses = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Address>();
               addresses.setAutoConstruct(true);
         }
         return addresses;
@@ -49,7 +49,7 @@ public class DescribeAddressesResult implements Serializable {
             this.addresses = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Address> addressesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Address>(addresses.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Address> addressesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Address>(addresses.size());
         addressesCopy.addAll(addresses);
         this.addresses = addressesCopy;
     }
@@ -86,7 +86,7 @@ public class DescribeAddressesResult implements Serializable {
         if (addresses == null) {
             this.addresses = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Address> addressesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Address>(addresses.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Address> addressesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Address>(addresses.size());
             addressesCopy.addAll(addresses);
             this.addresses = addressesCopy;
         }

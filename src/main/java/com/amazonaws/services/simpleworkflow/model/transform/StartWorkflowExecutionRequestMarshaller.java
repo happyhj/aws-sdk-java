@@ -20,14 +20,14 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.simpleworkflow.model.StartWorkflowExecutionRequest;
 import com.amazonaws.services.simpleworkflow.model.TaskList;
 import com.amazonaws.services.simpleworkflow.model.WorkflowType;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Start Workflow Execution Request Marshaller
@@ -90,7 +90,7 @@ public class StartWorkflowExecutionRequestMarshaller implements Marshaller<Reque
                 jsonWriter.key("executionStartToCloseTimeout").value(startWorkflowExecutionRequest.getExecutionStartToCloseTimeout());
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> tagListList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(startWorkflowExecutionRequest.getTagList());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> tagListList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(startWorkflowExecutionRequest.getTagList());
             if (tagListList != null && !(tagListList.isAutoConstruct() && tagListList.isEmpty())) {
 
                 jsonWriter.key("tagList");

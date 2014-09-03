@@ -25,7 +25,7 @@ import java.util.SimpleTimeZone;
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
 
-import com.amazonaws.codec.Base64;
+import com.amazonaws.json.codec.Base64;
 
 /**
  * This class represents S3 upload policy. Policy string representation and

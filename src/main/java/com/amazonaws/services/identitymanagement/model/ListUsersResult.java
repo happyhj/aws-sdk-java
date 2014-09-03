@@ -27,7 +27,7 @@ public class ListUsersResult implements Serializable {
     /**
      * A list of users.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<User> users;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<User> users;
 
     /**
      * A flag that indicates whether there are more user names to list. If
@@ -55,7 +55,7 @@ public class ListUsersResult implements Serializable {
      */
     public java.util.List<User> getUsers() {
         if (users == null) {
-              users = new com.amazonaws.internal.ListWithAutoConstructFlag<User>();
+              users = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<User>();
               users.setAutoConstruct(true);
         }
         return users;
@@ -71,7 +71,7 @@ public class ListUsersResult implements Serializable {
             this.users = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<User> usersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<User>(users.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<User> usersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<User>(users.size());
         usersCopy.addAll(users);
         this.users = usersCopy;
     }
@@ -108,7 +108,7 @@ public class ListUsersResult implements Serializable {
         if (users == null) {
             this.users = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<User> usersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<User>(users.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<User> usersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<User>(users.size());
             usersCopy.addAll(users);
             this.users = usersCopy;
         }

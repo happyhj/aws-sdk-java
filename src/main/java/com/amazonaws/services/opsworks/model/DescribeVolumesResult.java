@@ -26,7 +26,7 @@ public class DescribeVolumesResult implements Serializable {
     /**
      * An array of volume IDs.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Volume> volumes;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Volume> volumes;
 
     /**
      * An array of volume IDs.
@@ -35,7 +35,7 @@ public class DescribeVolumesResult implements Serializable {
      */
     public java.util.List<Volume> getVolumes() {
         if (volumes == null) {
-              volumes = new com.amazonaws.internal.ListWithAutoConstructFlag<Volume>();
+              volumes = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Volume>();
               volumes.setAutoConstruct(true);
         }
         return volumes;
@@ -51,7 +51,7 @@ public class DescribeVolumesResult implements Serializable {
             this.volumes = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Volume> volumesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Volume>(volumes.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Volume> volumesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Volume>(volumes.size());
         volumesCopy.addAll(volumes);
         this.volumes = volumesCopy;
     }
@@ -88,7 +88,7 @@ public class DescribeVolumesResult implements Serializable {
         if (volumes == null) {
             this.volumes = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Volume> volumesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Volume>(volumes.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Volume> volumesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Volume>(volumes.size());
             volumesCopy.addAll(volumes);
             this.volumes = volumesCopy;
         }

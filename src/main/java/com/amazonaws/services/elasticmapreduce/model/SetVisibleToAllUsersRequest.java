@@ -37,7 +37,7 @@ public class SetVisibleToAllUsersRequest extends AmazonWebServiceRequest impleme
     /**
      * Identifiers of the job flows to receive the new visibility setting.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> jobFlowIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> jobFlowIds;
 
     /**
      * Whether the specified job flows are visible to all IAM users of the
@@ -56,7 +56,7 @@ public class SetVisibleToAllUsersRequest extends AmazonWebServiceRequest impleme
      */
     public java.util.List<String> getJobFlowIds() {
         if (jobFlowIds == null) {
-              jobFlowIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              jobFlowIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               jobFlowIds.setAutoConstruct(true);
         }
         return jobFlowIds;
@@ -72,7 +72,7 @@ public class SetVisibleToAllUsersRequest extends AmazonWebServiceRequest impleme
             this.jobFlowIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> jobFlowIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(jobFlowIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> jobFlowIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(jobFlowIds.size());
         jobFlowIdsCopy.addAll(jobFlowIds);
         this.jobFlowIds = jobFlowIdsCopy;
     }
@@ -109,7 +109,7 @@ public class SetVisibleToAllUsersRequest extends AmazonWebServiceRequest impleme
         if (jobFlowIds == null) {
             this.jobFlowIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> jobFlowIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(jobFlowIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> jobFlowIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(jobFlowIds.size());
             jobFlowIdsCopy.addAll(jobFlowIds);
             this.jobFlowIds = jobFlowIdsCopy;
         }

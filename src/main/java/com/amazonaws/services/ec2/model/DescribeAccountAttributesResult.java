@@ -24,7 +24,7 @@ public class DescribeAccountAttributesResult implements Serializable {
     /**
      * Information about one or more account attributes.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<AccountAttribute> accountAttributes;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AccountAttribute> accountAttributes;
 
     /**
      * Information about one or more account attributes.
@@ -33,7 +33,7 @@ public class DescribeAccountAttributesResult implements Serializable {
      */
     public java.util.List<AccountAttribute> getAccountAttributes() {
         if (accountAttributes == null) {
-              accountAttributes = new com.amazonaws.internal.ListWithAutoConstructFlag<AccountAttribute>();
+              accountAttributes = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AccountAttribute>();
               accountAttributes.setAutoConstruct(true);
         }
         return accountAttributes;
@@ -49,7 +49,7 @@ public class DescribeAccountAttributesResult implements Serializable {
             this.accountAttributes = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<AccountAttribute> accountAttributesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<AccountAttribute>(accountAttributes.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AccountAttribute> accountAttributesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AccountAttribute>(accountAttributes.size());
         accountAttributesCopy.addAll(accountAttributes);
         this.accountAttributes = accountAttributesCopy;
     }
@@ -86,7 +86,7 @@ public class DescribeAccountAttributesResult implements Serializable {
         if (accountAttributes == null) {
             this.accountAttributes = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<AccountAttribute> accountAttributesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<AccountAttribute>(accountAttributes.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AccountAttribute> accountAttributesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AccountAttribute>(accountAttributes.size());
             accountAttributesCopy.addAll(accountAttributes);
             this.accountAttributes = accountAttributesCopy;
         }

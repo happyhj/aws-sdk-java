@@ -27,7 +27,7 @@ public class CreateTapesResult implements Serializable {
      * A list of unique Amazon Resource Named (ARN) the represents the
      * virtual tapes that were created.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> tapeARNs;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> tapeARNs;
 
     /**
      * A list of unique Amazon Resource Named (ARN) the represents the
@@ -38,7 +38,7 @@ public class CreateTapesResult implements Serializable {
      */
     public java.util.List<String> getTapeARNs() {
         if (tapeARNs == null) {
-              tapeARNs = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              tapeARNs = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               tapeARNs.setAutoConstruct(true);
         }
         return tapeARNs;
@@ -56,7 +56,7 @@ public class CreateTapesResult implements Serializable {
             this.tapeARNs = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> tapeARNsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(tapeARNs.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> tapeARNsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(tapeARNs.size());
         tapeARNsCopy.addAll(tapeARNs);
         this.tapeARNs = tapeARNsCopy;
     }
@@ -97,7 +97,7 @@ public class CreateTapesResult implements Serializable {
         if (tapeARNs == null) {
             this.tapeARNs = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> tapeARNsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(tapeARNs.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> tapeARNsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(tapeARNs.size());
             tapeARNsCopy.addAll(tapeARNs);
             this.tapeARNs = tapeARNsCopy;
         }

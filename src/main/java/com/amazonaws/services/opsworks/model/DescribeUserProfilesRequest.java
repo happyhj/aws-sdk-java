@@ -38,7 +38,7 @@ public class DescribeUserProfilesRequest extends AmazonWebServiceRequest impleme
     /**
      * An array of IAM user ARNs that identify the users to be described.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> iamUserArns;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> iamUserArns;
 
     /**
      * An array of IAM user ARNs that identify the users to be described.
@@ -47,7 +47,7 @@ public class DescribeUserProfilesRequest extends AmazonWebServiceRequest impleme
      */
     public java.util.List<String> getIamUserArns() {
         if (iamUserArns == null) {
-              iamUserArns = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              iamUserArns = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               iamUserArns.setAutoConstruct(true);
         }
         return iamUserArns;
@@ -63,7 +63,7 @@ public class DescribeUserProfilesRequest extends AmazonWebServiceRequest impleme
             this.iamUserArns = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> iamUserArnsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(iamUserArns.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> iamUserArnsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(iamUserArns.size());
         iamUserArnsCopy.addAll(iamUserArns);
         this.iamUserArns = iamUserArnsCopy;
     }
@@ -100,7 +100,7 @@ public class DescribeUserProfilesRequest extends AmazonWebServiceRequest impleme
         if (iamUserArns == null) {
             this.iamUserArns = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> iamUserArnsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(iamUserArns.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> iamUserArnsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(iamUserArns.size());
             iamUserArnsCopy.addAll(iamUserArns);
             this.iamUserArns = iamUserArnsCopy;
         }

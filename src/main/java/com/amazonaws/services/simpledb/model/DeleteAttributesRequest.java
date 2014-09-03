@@ -62,7 +62,7 @@ public class DeleteAttributesRequest extends AmazonWebServiceRequest implements 
      * A list of Attributes. Similar to columns on a spreadsheet, attributes
      * represent categories of data that can be assigned to items.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Attribute> attributes;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Attribute> attributes;
 
     /**
      * The update condition which, if specified, determines whether the
@@ -226,7 +226,7 @@ public class DeleteAttributesRequest extends AmazonWebServiceRequest implements 
      */
     public java.util.List<Attribute> getAttributes() {
         if (attributes == null) {
-              attributes = new com.amazonaws.internal.ListWithAutoConstructFlag<Attribute>();
+              attributes = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Attribute>();
               attributes.setAutoConstruct(true);
         }
         return attributes;
@@ -244,7 +244,7 @@ public class DeleteAttributesRequest extends AmazonWebServiceRequest implements 
             this.attributes = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Attribute> attributesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Attribute>(attributes.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Attribute> attributesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Attribute>(attributes.size());
         attributesCopy.addAll(attributes);
         this.attributes = attributesCopy;
     }
@@ -285,7 +285,7 @@ public class DeleteAttributesRequest extends AmazonWebServiceRequest implements 
         if (attributes == null) {
             this.attributes = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Attribute> attributesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Attribute>(attributes.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Attribute> attributesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Attribute>(attributes.size());
             attributesCopy.addAll(attributes);
             this.attributes = attributesCopy;
         }

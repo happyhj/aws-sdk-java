@@ -24,7 +24,7 @@ public class DescribeSubnetsResult implements Serializable {
     /**
      * Information about one or more subnets.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Subnet> subnets;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Subnet> subnets;
 
     /**
      * Information about one or more subnets.
@@ -33,7 +33,7 @@ public class DescribeSubnetsResult implements Serializable {
      */
     public java.util.List<Subnet> getSubnets() {
         if (subnets == null) {
-              subnets = new com.amazonaws.internal.ListWithAutoConstructFlag<Subnet>();
+              subnets = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Subnet>();
               subnets.setAutoConstruct(true);
         }
         return subnets;
@@ -49,7 +49,7 @@ public class DescribeSubnetsResult implements Serializable {
             this.subnets = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Subnet> subnetsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Subnet>(subnets.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Subnet> subnetsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Subnet>(subnets.size());
         subnetsCopy.addAll(subnets);
         this.subnets = subnetsCopy;
     }
@@ -86,7 +86,7 @@ public class DescribeSubnetsResult implements Serializable {
         if (subnets == null) {
             this.subnets = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Subnet> subnetsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Subnet>(subnets.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Subnet> subnetsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Subnet>(subnets.size());
             subnetsCopy.addAll(subnets);
             this.subnets = subnetsCopy;
         }

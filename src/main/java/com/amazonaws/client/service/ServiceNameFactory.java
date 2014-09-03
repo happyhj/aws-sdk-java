@@ -14,8 +14,8 @@
  */
 package com.amazonaws.client.service;
 
-import com.amazonaws.internal.config.HttpClientConfig;
-import com.amazonaws.internal.config.InternalConfig;
+import com.amazonaws.serviceinternal.config.HttpClientConfig;
+import com.amazonaws.serviceinternal.config.InternalConfig;
 
 /**
  * An internal service name factory. 

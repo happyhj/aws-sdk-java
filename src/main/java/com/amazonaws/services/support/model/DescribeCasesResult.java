@@ -27,7 +27,7 @@ public class DescribeCasesResult implements Serializable {
     /**
      * The details for the cases that match the request.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<CaseDetails> cases;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CaseDetails> cases;
 
     /**
      * A resumption point for pagination.
@@ -41,7 +41,7 @@ public class DescribeCasesResult implements Serializable {
      */
     public java.util.List<CaseDetails> getCases() {
         if (cases == null) {
-              cases = new com.amazonaws.internal.ListWithAutoConstructFlag<CaseDetails>();
+              cases = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CaseDetails>();
               cases.setAutoConstruct(true);
         }
         return cases;
@@ -57,7 +57,7 @@ public class DescribeCasesResult implements Serializable {
             this.cases = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<CaseDetails> casesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CaseDetails>(cases.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CaseDetails> casesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CaseDetails>(cases.size());
         casesCopy.addAll(cases);
         this.cases = casesCopy;
     }
@@ -94,7 +94,7 @@ public class DescribeCasesResult implements Serializable {
         if (cases == null) {
             this.cases = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<CaseDetails> casesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CaseDetails>(cases.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CaseDetails> casesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CaseDetails>(cases.size());
             casesCopy.addAll(cases);
             this.cases = casesCopy;
         }

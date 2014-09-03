@@ -53,7 +53,7 @@ public class GetAttributesRequest extends AmazonWebServiceRequest implements Ser
     /**
      * The names of the attributes.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> attributeNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> attributeNames;
 
     /**
      * Determines whether or not strong consistency should be enforced when
@@ -157,7 +157,7 @@ public class GetAttributesRequest extends AmazonWebServiceRequest implements Ser
      */
     public java.util.List<String> getAttributeNames() {
         if (attributeNames == null) {
-              attributeNames = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              attributeNames = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               attributeNames.setAutoConstruct(true);
         }
         return attributeNames;
@@ -173,7 +173,7 @@ public class GetAttributesRequest extends AmazonWebServiceRequest implements Ser
             this.attributeNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> attributeNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(attributeNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> attributeNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(attributeNames.size());
         attributeNamesCopy.addAll(attributeNames);
         this.attributeNames = attributeNamesCopy;
     }
@@ -210,7 +210,7 @@ public class GetAttributesRequest extends AmazonWebServiceRequest implements Ser
         if (attributeNames == null) {
             this.attributeNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> attributeNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(attributeNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> attributeNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(attributeNames.size());
             attributeNamesCopy.addAll(attributeNames);
             this.attributeNames = attributeNamesCopy;
         }

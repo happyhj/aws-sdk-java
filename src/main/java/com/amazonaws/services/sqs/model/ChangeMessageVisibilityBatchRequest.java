@@ -58,7 +58,7 @@ public class ChangeMessageVisibilityBatchRequest extends AmazonWebServiceRequest
      * A list of receipt handles of the messages for which the visibility
      * timeout must be changed.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ChangeMessageVisibilityBatchRequestEntry> entries;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ChangeMessageVisibilityBatchRequestEntry> entries;
 
     /**
      * Default constructor for a new ChangeMessageVisibilityBatchRequest object.  Callers should use the
@@ -122,7 +122,7 @@ public class ChangeMessageVisibilityBatchRequest extends AmazonWebServiceRequest
      */
     public java.util.List<ChangeMessageVisibilityBatchRequestEntry> getEntries() {
         if (entries == null) {
-              entries = new com.amazonaws.internal.ListWithAutoConstructFlag<ChangeMessageVisibilityBatchRequestEntry>();
+              entries = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ChangeMessageVisibilityBatchRequestEntry>();
               entries.setAutoConstruct(true);
         }
         return entries;
@@ -140,7 +140,7 @@ public class ChangeMessageVisibilityBatchRequest extends AmazonWebServiceRequest
             this.entries = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ChangeMessageVisibilityBatchRequestEntry> entriesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ChangeMessageVisibilityBatchRequestEntry>(entries.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ChangeMessageVisibilityBatchRequestEntry> entriesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ChangeMessageVisibilityBatchRequestEntry>(entries.size());
         entriesCopy.addAll(entries);
         this.entries = entriesCopy;
     }
@@ -181,7 +181,7 @@ public class ChangeMessageVisibilityBatchRequest extends AmazonWebServiceRequest
         if (entries == null) {
             this.entries = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ChangeMessageVisibilityBatchRequestEntry> entriesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ChangeMessageVisibilityBatchRequestEntry>(entries.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ChangeMessageVisibilityBatchRequestEntry> entriesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ChangeMessageVisibilityBatchRequestEntry>(entries.size());
             entriesCopy.addAll(entries);
             this.entries = entriesCopy;
         }

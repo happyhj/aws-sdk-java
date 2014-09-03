@@ -24,7 +24,7 @@ public class DescribeLogStreamsResult implements Serializable {
     /**
      * A list of log streams.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<LogStream> logStreams;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LogStream> logStreams;
 
     /**
      * A string token used for pagination that points to the next page of
@@ -40,7 +40,7 @@ public class DescribeLogStreamsResult implements Serializable {
      */
     public java.util.List<LogStream> getLogStreams() {
         if (logStreams == null) {
-              logStreams = new com.amazonaws.internal.ListWithAutoConstructFlag<LogStream>();
+              logStreams = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LogStream>();
               logStreams.setAutoConstruct(true);
         }
         return logStreams;
@@ -56,7 +56,7 @@ public class DescribeLogStreamsResult implements Serializable {
             this.logStreams = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<LogStream> logStreamsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<LogStream>(logStreams.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LogStream> logStreamsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LogStream>(logStreams.size());
         logStreamsCopy.addAll(logStreams);
         this.logStreams = logStreamsCopy;
     }
@@ -93,7 +93,7 @@ public class DescribeLogStreamsResult implements Serializable {
         if (logStreams == null) {
             this.logStreams = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<LogStream> logStreamsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<LogStream>(logStreams.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LogStream> logStreamsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LogStream>(logStreams.size());
             logStreamsCopy.addAll(logStreams);
             this.logStreams = logStreamsCopy;
         }

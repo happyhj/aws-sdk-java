@@ -27,7 +27,7 @@ public class ListJobsResult implements Serializable {
      * A list of job objects. Each job object contains metadata describing
      * the job.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<GlacierJobDescription> jobList;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GlacierJobDescription> jobList;
 
     /**
      * An opaque string that represents where to continue pagination of the
@@ -46,7 +46,7 @@ public class ListJobsResult implements Serializable {
      */
     public java.util.List<GlacierJobDescription> getJobList() {
         if (jobList == null) {
-              jobList = new com.amazonaws.internal.ListWithAutoConstructFlag<GlacierJobDescription>();
+              jobList = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GlacierJobDescription>();
               jobList.setAutoConstruct(true);
         }
         return jobList;
@@ -64,7 +64,7 @@ public class ListJobsResult implements Serializable {
             this.jobList = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<GlacierJobDescription> jobListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<GlacierJobDescription>(jobList.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GlacierJobDescription> jobListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GlacierJobDescription>(jobList.size());
         jobListCopy.addAll(jobList);
         this.jobList = jobListCopy;
     }
@@ -105,7 +105,7 @@ public class ListJobsResult implements Serializable {
         if (jobList == null) {
             this.jobList = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<GlacierJobDescription> jobListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<GlacierJobDescription>(jobList.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GlacierJobDescription> jobListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GlacierJobDescription>(jobList.size());
             jobListCopy.addAll(jobList);
             this.jobList = jobListCopy;
         }

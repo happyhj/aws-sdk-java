@@ -27,7 +27,7 @@ public class DescribeExpressionsResult implements Serializable {
     /**
      * The expressions configured for the domain.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ExpressionStatus> expressions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ExpressionStatus> expressions;
 
     /**
      * The expressions configured for the domain.
@@ -36,7 +36,7 @@ public class DescribeExpressionsResult implements Serializable {
      */
     public java.util.List<ExpressionStatus> getExpressions() {
         if (expressions == null) {
-              expressions = new com.amazonaws.internal.ListWithAutoConstructFlag<ExpressionStatus>();
+              expressions = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ExpressionStatus>();
               expressions.setAutoConstruct(true);
         }
         return expressions;
@@ -52,7 +52,7 @@ public class DescribeExpressionsResult implements Serializable {
             this.expressions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ExpressionStatus> expressionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ExpressionStatus>(expressions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ExpressionStatus> expressionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ExpressionStatus>(expressions.size());
         expressionsCopy.addAll(expressions);
         this.expressions = expressionsCopy;
     }
@@ -89,7 +89,7 @@ public class DescribeExpressionsResult implements Serializable {
         if (expressions == null) {
             this.expressions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ExpressionStatus> expressionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ExpressionStatus>(expressions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ExpressionStatus> expressionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ExpressionStatus>(expressions.size());
             expressionsCopy.addAll(expressions);
             this.expressions = expressionsCopy;
         }

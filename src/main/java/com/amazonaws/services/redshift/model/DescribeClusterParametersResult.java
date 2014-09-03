@@ -27,7 +27,7 @@ public class DescribeClusterParametersResult implements Serializable {
      * A list of <a>Parameter</a> instances. Each instance lists the
      * parameters of one cluster parameter group.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Parameter> parameters;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Parameter> parameters;
 
     /**
      * A value that indicates the starting point for the next set of response
@@ -48,7 +48,7 @@ public class DescribeClusterParametersResult implements Serializable {
      */
     public java.util.List<Parameter> getParameters() {
         if (parameters == null) {
-              parameters = new com.amazonaws.internal.ListWithAutoConstructFlag<Parameter>();
+              parameters = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Parameter>();
               parameters.setAutoConstruct(true);
         }
         return parameters;
@@ -66,7 +66,7 @@ public class DescribeClusterParametersResult implements Serializable {
             this.parameters = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Parameter> parametersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Parameter>(parameters.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Parameter> parametersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Parameter>(parameters.size());
         parametersCopy.addAll(parameters);
         this.parameters = parametersCopy;
     }
@@ -107,7 +107,7 @@ public class DescribeClusterParametersResult implements Serializable {
         if (parameters == null) {
             this.parameters = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Parameter> parametersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Parameter>(parameters.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Parameter> parametersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Parameter>(parameters.size());
             parametersCopy.addAll(parameters);
             this.parameters = parametersCopy;
         }

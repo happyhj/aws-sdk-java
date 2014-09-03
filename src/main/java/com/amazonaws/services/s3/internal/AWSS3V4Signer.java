@@ -19,8 +19,8 @@ import java.io.InputStream;
 
 import com.amazonaws.client.signer.AWS4Signer;
 import com.amazonaws.client.signer.AwsChunkedEncodingInputStream;
-import com.amazonaws.codec.BinaryUtils;
 import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.json.codec.BinaryUtils;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.s3.Headers;
 import com.amazonaws.services.s3.model.PutObjectRequest;

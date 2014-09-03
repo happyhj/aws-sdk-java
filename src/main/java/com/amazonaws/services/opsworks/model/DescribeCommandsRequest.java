@@ -58,7 +58,7 @@ public class DescribeCommandsRequest extends AmazonWebServiceRequest implements 
      * <code>DescribeCommands</code> returns a description of the specified
      * commands. Otherwise, it returns a description of every command.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> commandIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> commandIds;
 
     /**
      * The deployment ID. If you include this parameter,
@@ -161,7 +161,7 @@ public class DescribeCommandsRequest extends AmazonWebServiceRequest implements 
      */
     public java.util.List<String> getCommandIds() {
         if (commandIds == null) {
-              commandIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              commandIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               commandIds.setAutoConstruct(true);
         }
         return commandIds;
@@ -181,7 +181,7 @@ public class DescribeCommandsRequest extends AmazonWebServiceRequest implements 
             this.commandIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> commandIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(commandIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> commandIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(commandIds.size());
         commandIdsCopy.addAll(commandIds);
         this.commandIds = commandIdsCopy;
     }
@@ -226,7 +226,7 @@ public class DescribeCommandsRequest extends AmazonWebServiceRequest implements 
         if (commandIds == null) {
             this.commandIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> commandIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(commandIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> commandIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(commandIds.size());
             commandIdsCopy.addAll(commandIds);
             this.commandIds = commandIdsCopy;
         }

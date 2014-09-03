@@ -80,7 +80,7 @@ public class CreateEventSubscriptionRequest extends AmazonWebServiceRequest impl
      * topic in the Amazon RDS User Guide or by using the
      * <b>DescribeEventCategories</b> action.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> eventCategories;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> eventCategories;
 
     /**
      * The list of identifiers of the event sources for which events will be
@@ -97,7 +97,7 @@ public class CreateEventSubscriptionRequest extends AmazonWebServiceRequest impl
      * source type is a DB snapshot, a <code>DBSnapshotIdentifier</code> must
      * be supplied.</li> </ul>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> sourceIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> sourceIds;
 
     /**
      * A Boolean value; set to <b>true</b> to activate the subscription, set
@@ -108,7 +108,7 @@ public class CreateEventSubscriptionRequest extends AmazonWebServiceRequest impl
     /**
      * A list of tags.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tags;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tags;
 
     /**
      * The name of the subscription. <p>Constraints: The name must be less
@@ -268,7 +268,7 @@ public class CreateEventSubscriptionRequest extends AmazonWebServiceRequest impl
      */
     public java.util.List<String> getEventCategories() {
         if (eventCategories == null) {
-              eventCategories = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              eventCategories = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               eventCategories.setAutoConstruct(true);
         }
         return eventCategories;
@@ -294,7 +294,7 @@ public class CreateEventSubscriptionRequest extends AmazonWebServiceRequest impl
             this.eventCategories = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> eventCategoriesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(eventCategories.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> eventCategoriesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(eventCategories.size());
         eventCategoriesCopy.addAll(eventCategories);
         this.eventCategories = eventCategoriesCopy;
     }
@@ -351,7 +351,7 @@ public class CreateEventSubscriptionRequest extends AmazonWebServiceRequest impl
         if (eventCategories == null) {
             this.eventCategories = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> eventCategoriesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(eventCategories.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> eventCategoriesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(eventCategories.size());
             eventCategoriesCopy.addAll(eventCategories);
             this.eventCategories = eventCategoriesCopy;
         }
@@ -390,7 +390,7 @@ public class CreateEventSubscriptionRequest extends AmazonWebServiceRequest impl
      */
     public java.util.List<String> getSourceIds() {
         if (sourceIds == null) {
-              sourceIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              sourceIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               sourceIds.setAutoConstruct(true);
         }
         return sourceIds;
@@ -430,7 +430,7 @@ public class CreateEventSubscriptionRequest extends AmazonWebServiceRequest impl
             this.sourceIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> sourceIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(sourceIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> sourceIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(sourceIds.size());
         sourceIdsCopy.addAll(sourceIds);
         this.sourceIds = sourceIdsCopy;
     }
@@ -515,7 +515,7 @@ public class CreateEventSubscriptionRequest extends AmazonWebServiceRequest impl
         if (sourceIds == null) {
             this.sourceIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> sourceIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(sourceIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> sourceIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(sourceIds.size());
             sourceIdsCopy.addAll(sourceIds);
             this.sourceIds = sourceIdsCopy;
         }
@@ -580,7 +580,7 @@ public class CreateEventSubscriptionRequest extends AmazonWebServiceRequest impl
      */
     public java.util.List<Tag> getTags() {
         if (tags == null) {
-              tags = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>();
+              tags = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>();
               tags.setAutoConstruct(true);
         }
         return tags;
@@ -596,7 +596,7 @@ public class CreateEventSubscriptionRequest extends AmazonWebServiceRequest impl
             this.tags = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tags.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tags.size());
         tagsCopy.addAll(tags);
         this.tags = tagsCopy;
     }
@@ -633,7 +633,7 @@ public class CreateEventSubscriptionRequest extends AmazonWebServiceRequest impl
         if (tags == null) {
             this.tags = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tags.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tags.size());
             tagsCopy.addAll(tags);
             this.tags = tagsCopy;
         }

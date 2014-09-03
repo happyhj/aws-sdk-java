@@ -26,7 +26,7 @@ public class DescribeLayersResult implements Serializable {
     /**
      * An array of <code>Layer</code> objects that describe the layers.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Layer> layers;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Layer> layers;
 
     /**
      * An array of <code>Layer</code> objects that describe the layers.
@@ -35,7 +35,7 @@ public class DescribeLayersResult implements Serializable {
      */
     public java.util.List<Layer> getLayers() {
         if (layers == null) {
-              layers = new com.amazonaws.internal.ListWithAutoConstructFlag<Layer>();
+              layers = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Layer>();
               layers.setAutoConstruct(true);
         }
         return layers;
@@ -51,7 +51,7 @@ public class DescribeLayersResult implements Serializable {
             this.layers = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Layer> layersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Layer>(layers.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Layer> layersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Layer>(layers.size());
         layersCopy.addAll(layers);
         this.layers = layersCopy;
     }
@@ -88,7 +88,7 @@ public class DescribeLayersResult implements Serializable {
         if (layers == null) {
             this.layers = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Layer> layersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Layer>(layers.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Layer> layersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Layer>(layers.size());
             layersCopy.addAll(layers);
             this.layers = layersCopy;
         }

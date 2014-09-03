@@ -26,7 +26,7 @@ public class ListMetricsResult implements Serializable {
     /**
      * A list of metrics used to generate statistics for an AWS account.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Metric> metrics;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Metric> metrics;
 
     /**
      * A string that marks the start of the next batch of returned results.
@@ -40,7 +40,7 @@ public class ListMetricsResult implements Serializable {
      */
     public java.util.List<Metric> getMetrics() {
         if (metrics == null) {
-              metrics = new com.amazonaws.internal.ListWithAutoConstructFlag<Metric>();
+              metrics = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Metric>();
               metrics.setAutoConstruct(true);
         }
         return metrics;
@@ -56,7 +56,7 @@ public class ListMetricsResult implements Serializable {
             this.metrics = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Metric> metricsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Metric>(metrics.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Metric> metricsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Metric>(metrics.size());
         metricsCopy.addAll(metrics);
         this.metrics = metricsCopy;
     }
@@ -93,7 +93,7 @@ public class ListMetricsResult implements Serializable {
         if (metrics == null) {
             this.metrics = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Metric> metricsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Metric>(metrics.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Metric> metricsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Metric>(metrics.size());
             metricsCopy.addAll(metrics);
             this.metrics = metricsCopy;
         }

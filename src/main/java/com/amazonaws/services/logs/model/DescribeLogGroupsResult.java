@@ -24,7 +24,7 @@ public class DescribeLogGroupsResult implements Serializable {
     /**
      * A list of log groups.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<LogGroup> logGroups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LogGroup> logGroups;
 
     /**
      * A string token used for pagination that points to the next page of
@@ -40,7 +40,7 @@ public class DescribeLogGroupsResult implements Serializable {
      */
     public java.util.List<LogGroup> getLogGroups() {
         if (logGroups == null) {
-              logGroups = new com.amazonaws.internal.ListWithAutoConstructFlag<LogGroup>();
+              logGroups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LogGroup>();
               logGroups.setAutoConstruct(true);
         }
         return logGroups;
@@ -56,7 +56,7 @@ public class DescribeLogGroupsResult implements Serializable {
             this.logGroups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<LogGroup> logGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<LogGroup>(logGroups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LogGroup> logGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LogGroup>(logGroups.size());
         logGroupsCopy.addAll(logGroups);
         this.logGroups = logGroupsCopy;
     }
@@ -93,7 +93,7 @@ public class DescribeLogGroupsResult implements Serializable {
         if (logGroups == null) {
             this.logGroups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<LogGroup> logGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<LogGroup>(logGroups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LogGroup> logGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LogGroup>(logGroups.size());
             logGroupsCopy.addAll(logGroups);
             this.logGroups = logGroupsCopy;
         }

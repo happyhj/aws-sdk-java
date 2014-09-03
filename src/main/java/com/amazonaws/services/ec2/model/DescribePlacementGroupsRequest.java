@@ -37,7 +37,7 @@ public class DescribePlacementGroupsRequest extends AmazonWebServiceRequest impl
      * One or more placement group names. <p>Default: Describes all your
      * placement groups, or only those otherwise specified.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> groupNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> groupNames;
 
     /**
      * One or more filters. <ul> <li> <p><code>group-name</code> - The name
@@ -47,7 +47,7 @@ public class DescribePlacementGroupsRequest extends AmazonWebServiceRequest impl
      * <p><code>strategy</code> - The strategy of the placement group
      * (<code>cluster</code>). </li> </ul>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filters;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filters;
 
     /**
      * One or more placement group names. <p>Default: Describes all your
@@ -58,7 +58,7 @@ public class DescribePlacementGroupsRequest extends AmazonWebServiceRequest impl
      */
     public java.util.List<String> getGroupNames() {
         if (groupNames == null) {
-              groupNames = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              groupNames = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               groupNames.setAutoConstruct(true);
         }
         return groupNames;
@@ -76,7 +76,7 @@ public class DescribePlacementGroupsRequest extends AmazonWebServiceRequest impl
             this.groupNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> groupNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(groupNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> groupNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(groupNames.size());
         groupNamesCopy.addAll(groupNames);
         this.groupNames = groupNamesCopy;
     }
@@ -117,7 +117,7 @@ public class DescribePlacementGroupsRequest extends AmazonWebServiceRequest impl
         if (groupNames == null) {
             this.groupNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> groupNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(groupNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> groupNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(groupNames.size());
             groupNamesCopy.addAll(groupNames);
             this.groupNames = groupNamesCopy;
         }
@@ -142,7 +142,7 @@ public class DescribePlacementGroupsRequest extends AmazonWebServiceRequest impl
      */
     public java.util.List<Filter> getFilters() {
         if (filters == null) {
-              filters = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>();
+              filters = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>();
               filters.setAutoConstruct(true);
         }
         return filters;
@@ -168,7 +168,7 @@ public class DescribePlacementGroupsRequest extends AmazonWebServiceRequest impl
             this.filters = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
         filtersCopy.addAll(filters);
         this.filters = filtersCopy;
     }
@@ -225,7 +225,7 @@ public class DescribePlacementGroupsRequest extends AmazonWebServiceRequest impl
         if (filters == null) {
             this.filters = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
             filtersCopy.addAll(filters);
             this.filters = filtersCopy;
         }

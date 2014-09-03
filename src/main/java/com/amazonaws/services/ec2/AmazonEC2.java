@@ -14,11 +14,11 @@
  */
 package com.amazonaws.services.ec2;
 
-import com.amazonaws.ResponseMetadata;
 import com.amazonaws.client.ClientConfiguration;
-import com.amazonaws.client.Region;
+import com.amazonaws.client.regions.Region;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
+import com.amazonaws.network.ResponseMetadata;
 import com.amazonaws.network.request.AmazonWebServiceRequest;
 import com.amazonaws.services.ec2.model.*;
 
@@ -79,16 +79,16 @@ public interface AmazonEC2 {
      *
      * @param region
      *            The region this client will communicate with. See
-     *            {@link com.amazonaws.client.Region#getRegion(com.amazonaws.client.regions.Regions)} for
+     *            {@link com.amazonaws.client.regions.Region#getRegion(com.amazonaws.client.regions.Regions)} for
      *            accessing a given region.
      * @throws java.lang.IllegalArgumentException
      *             If the given region is null, or if this service isn't
      *             available in the given region. See
-     *             {@link com.amazonaws.client.Region#isServiceSupported(String)}
+     *             {@link com.amazonaws.client.regions.Region#isServiceSupported(String)}
      * @see Region#getRegion(com.amazonaws.client.regions.Regions)
      * @see Region#createClient(Class, com.amazonaws.auth.AWSCredentialsProvider, ClientConfiguration)
      */
-    public void setRegion(com.amazonaws.client.Region region) throws java.lang.IllegalArgumentException;
+    public void setRegion(com.amazonaws.client.regions.Region region) throws java.lang.IllegalArgumentException;
     
     /**
      * <p>

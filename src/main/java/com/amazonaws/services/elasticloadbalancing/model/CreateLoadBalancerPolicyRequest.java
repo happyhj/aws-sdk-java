@@ -53,7 +53,7 @@ public class CreateLoadBalancerPolicyRequest extends AmazonWebServiceRequest imp
     /**
      * A list of attributes associated with the policy being created.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<PolicyAttribute> policyAttributes;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PolicyAttribute> policyAttributes;
 
     /**
      * The name associated with the LoadBalancer for which the policy is
@@ -185,7 +185,7 @@ public class CreateLoadBalancerPolicyRequest extends AmazonWebServiceRequest imp
      */
     public java.util.List<PolicyAttribute> getPolicyAttributes() {
         if (policyAttributes == null) {
-              policyAttributes = new com.amazonaws.internal.ListWithAutoConstructFlag<PolicyAttribute>();
+              policyAttributes = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PolicyAttribute>();
               policyAttributes.setAutoConstruct(true);
         }
         return policyAttributes;
@@ -201,7 +201,7 @@ public class CreateLoadBalancerPolicyRequest extends AmazonWebServiceRequest imp
             this.policyAttributes = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<PolicyAttribute> policyAttributesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<PolicyAttribute>(policyAttributes.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PolicyAttribute> policyAttributesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PolicyAttribute>(policyAttributes.size());
         policyAttributesCopy.addAll(policyAttributes);
         this.policyAttributes = policyAttributesCopy;
     }
@@ -238,7 +238,7 @@ public class CreateLoadBalancerPolicyRequest extends AmazonWebServiceRequest imp
         if (policyAttributes == null) {
             this.policyAttributes = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<PolicyAttribute> policyAttributesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<PolicyAttribute>(policyAttributes.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PolicyAttribute> policyAttributesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PolicyAttribute>(policyAttributes.size());
             policyAttributesCopy.addAll(policyAttributes);
             this.policyAttributes = policyAttributesCopy;
         }

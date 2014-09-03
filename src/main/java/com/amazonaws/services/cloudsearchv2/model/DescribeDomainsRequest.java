@@ -38,7 +38,7 @@ public class DescribeDomainsRequest extends AmazonWebServiceRequest implements S
     /**
      * The names of the domains you want to include in the response.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> domainNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> domainNames;
 
     /**
      * The names of the domains you want to include in the response.
@@ -47,7 +47,7 @@ public class DescribeDomainsRequest extends AmazonWebServiceRequest implements S
      */
     public java.util.List<String> getDomainNames() {
         if (domainNames == null) {
-              domainNames = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              domainNames = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               domainNames.setAutoConstruct(true);
         }
         return domainNames;
@@ -63,7 +63,7 @@ public class DescribeDomainsRequest extends AmazonWebServiceRequest implements S
             this.domainNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> domainNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(domainNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> domainNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(domainNames.size());
         domainNamesCopy.addAll(domainNames);
         this.domainNames = domainNamesCopy;
     }
@@ -100,7 +100,7 @@ public class DescribeDomainsRequest extends AmazonWebServiceRequest implements S
         if (domainNames == null) {
             this.domainNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> domainNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(domainNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> domainNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(domainNames.size());
             domainNamesCopy.addAll(domainNames);
             this.domainNames = domainNamesCopy;
         }

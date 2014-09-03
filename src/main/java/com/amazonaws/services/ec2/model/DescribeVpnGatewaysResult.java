@@ -24,7 +24,7 @@ public class DescribeVpnGatewaysResult implements Serializable {
     /**
      * Information about one or more virtual private gateways.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<VpnGateway> vpnGateways;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VpnGateway> vpnGateways;
 
     /**
      * Information about one or more virtual private gateways.
@@ -33,7 +33,7 @@ public class DescribeVpnGatewaysResult implements Serializable {
      */
     public java.util.List<VpnGateway> getVpnGateways() {
         if (vpnGateways == null) {
-              vpnGateways = new com.amazonaws.internal.ListWithAutoConstructFlag<VpnGateway>();
+              vpnGateways = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VpnGateway>();
               vpnGateways.setAutoConstruct(true);
         }
         return vpnGateways;
@@ -49,7 +49,7 @@ public class DescribeVpnGatewaysResult implements Serializable {
             this.vpnGateways = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<VpnGateway> vpnGatewaysCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<VpnGateway>(vpnGateways.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VpnGateway> vpnGatewaysCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VpnGateway>(vpnGateways.size());
         vpnGatewaysCopy.addAll(vpnGateways);
         this.vpnGateways = vpnGatewaysCopy;
     }
@@ -86,7 +86,7 @@ public class DescribeVpnGatewaysResult implements Serializable {
         if (vpnGateways == null) {
             this.vpnGateways = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<VpnGateway> vpnGatewaysCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<VpnGateway>(vpnGateways.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VpnGateway> vpnGatewaysCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VpnGateway>(vpnGateways.size());
             vpnGatewaysCopy.addAll(vpnGateways);
             this.vpnGateways = vpnGatewaysCopy;
         }

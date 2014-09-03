@@ -52,13 +52,13 @@ public class DescribeEnvironmentsRequest extends AmazonWebServiceRequest impleme
      * If specified, AWS Elastic Beanstalk restricts the returned
      * descriptions to include only those that have the specified IDs.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> environmentIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> environmentIds;
 
     /**
      * If specified, AWS Elastic Beanstalk restricts the returned
      * descriptions to include only those that have the specified names.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> environmentNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> environmentNames;
 
     /**
      * Indicates whether to include deleted environments: <p>
@@ -198,7 +198,7 @@ public class DescribeEnvironmentsRequest extends AmazonWebServiceRequest impleme
      */
     public java.util.List<String> getEnvironmentIds() {
         if (environmentIds == null) {
-              environmentIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              environmentIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               environmentIds.setAutoConstruct(true);
         }
         return environmentIds;
@@ -216,7 +216,7 @@ public class DescribeEnvironmentsRequest extends AmazonWebServiceRequest impleme
             this.environmentIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> environmentIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(environmentIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> environmentIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(environmentIds.size());
         environmentIdsCopy.addAll(environmentIds);
         this.environmentIds = environmentIdsCopy;
     }
@@ -257,7 +257,7 @@ public class DescribeEnvironmentsRequest extends AmazonWebServiceRequest impleme
         if (environmentIds == null) {
             this.environmentIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> environmentIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(environmentIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> environmentIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(environmentIds.size());
             environmentIdsCopy.addAll(environmentIds);
             this.environmentIds = environmentIdsCopy;
         }
@@ -274,7 +274,7 @@ public class DescribeEnvironmentsRequest extends AmazonWebServiceRequest impleme
      */
     public java.util.List<String> getEnvironmentNames() {
         if (environmentNames == null) {
-              environmentNames = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              environmentNames = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               environmentNames.setAutoConstruct(true);
         }
         return environmentNames;
@@ -292,7 +292,7 @@ public class DescribeEnvironmentsRequest extends AmazonWebServiceRequest impleme
             this.environmentNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> environmentNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(environmentNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> environmentNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(environmentNames.size());
         environmentNamesCopy.addAll(environmentNames);
         this.environmentNames = environmentNamesCopy;
     }
@@ -333,7 +333,7 @@ public class DescribeEnvironmentsRequest extends AmazonWebServiceRequest impleme
         if (environmentNames == null) {
             this.environmentNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> environmentNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(environmentNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> environmentNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(environmentNames.size());
             environmentNamesCopy.addAll(environmentNames);
             this.environmentNames = environmentNamesCopy;
         }

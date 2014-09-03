@@ -19,9 +19,9 @@ import java.util.List;
 import java.util.Map;
 
 import com.amazonaws.exception.AmazonClientException;
-import com.amazonaws.internal.ListWithAutoConstructFlag;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
+import com.amazonaws.serviceinternal.ListWithAutoConstructFlag;
 import com.amazonaws.services.sqs.model.*;
 import com.amazonaws.stringutil.StringUtils;
 import com.amazonaws.transform.Marshaller;

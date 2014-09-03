@@ -18,7 +18,7 @@ import java.util.Arrays;
 import java.util.Date;
 
 import com.amazonaws.auth.policy.Condition;
-import com.amazonaws.dateutil.DateUtils;
+import com.amazonaws.utility.date.DateUtils;
 
 /**
  * AWS access control policy condition that allows an access control statement

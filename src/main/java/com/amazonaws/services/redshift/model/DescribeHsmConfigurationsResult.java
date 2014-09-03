@@ -35,7 +35,7 @@ public class DescribeHsmConfigurationsResult implements Serializable {
     /**
      * A list of Amazon Redshift HSM configurations.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<HsmConfiguration> hsmConfigurations;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<HsmConfiguration> hsmConfigurations;
 
     /**
      * A value that indicates the starting point for the next set of response
@@ -107,7 +107,7 @@ public class DescribeHsmConfigurationsResult implements Serializable {
      */
     public java.util.List<HsmConfiguration> getHsmConfigurations() {
         if (hsmConfigurations == null) {
-              hsmConfigurations = new com.amazonaws.internal.ListWithAutoConstructFlag<HsmConfiguration>();
+              hsmConfigurations = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<HsmConfiguration>();
               hsmConfigurations.setAutoConstruct(true);
         }
         return hsmConfigurations;
@@ -123,7 +123,7 @@ public class DescribeHsmConfigurationsResult implements Serializable {
             this.hsmConfigurations = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<HsmConfiguration> hsmConfigurationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<HsmConfiguration>(hsmConfigurations.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<HsmConfiguration> hsmConfigurationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<HsmConfiguration>(hsmConfigurations.size());
         hsmConfigurationsCopy.addAll(hsmConfigurations);
         this.hsmConfigurations = hsmConfigurationsCopy;
     }
@@ -160,7 +160,7 @@ public class DescribeHsmConfigurationsResult implements Serializable {
         if (hsmConfigurations == null) {
             this.hsmConfigurations = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<HsmConfiguration> hsmConfigurationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<HsmConfiguration>(hsmConfigurations.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<HsmConfiguration> hsmConfigurationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<HsmConfiguration>(hsmConfigurations.size());
             hsmConfigurationsCopy.addAll(hsmConfigurations);
             this.hsmConfigurations = hsmConfigurationsCopy;
         }

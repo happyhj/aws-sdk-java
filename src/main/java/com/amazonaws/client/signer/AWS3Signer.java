@@ -34,9 +34,9 @@ import com.amazonaws.auth.AnonymousAWSCredentials;
 import com.amazonaws.auth.SigningAlgorithm;
 import com.amazonaws.client.HttpUtils;
 import com.amazonaws.credential.AWSCredentials;
-import com.amazonaws.dateutil.DateUtils;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.network.type.Request;
+import com.amazonaws.utility.date.DateUtils;
 
 /**
  * Signer implementation that signs requests with the AWS3 signing protocol.

@@ -21,7 +21,7 @@ import java.io.Serializable;
  */
 public class ListGatewaysResult implements Serializable {
 
-    private com.amazonaws.internal.ListWithAutoConstructFlag<GatewayInfo> gateways;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GatewayInfo> gateways;
 
     private String marker;
 
@@ -32,7 +32,7 @@ public class ListGatewaysResult implements Serializable {
      */
     public java.util.List<GatewayInfo> getGateways() {
         if (gateways == null) {
-              gateways = new com.amazonaws.internal.ListWithAutoConstructFlag<GatewayInfo>();
+              gateways = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GatewayInfo>();
               gateways.setAutoConstruct(true);
         }
         return gateways;
@@ -48,7 +48,7 @@ public class ListGatewaysResult implements Serializable {
             this.gateways = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<GatewayInfo> gatewaysCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<GatewayInfo>(gateways.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GatewayInfo> gatewaysCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GatewayInfo>(gateways.size());
         gatewaysCopy.addAll(gateways);
         this.gateways = gatewaysCopy;
     }
@@ -85,7 +85,7 @@ public class ListGatewaysResult implements Serializable {
         if (gateways == null) {
             this.gateways = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<GatewayInfo> gatewaysCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<GatewayInfo>(gateways.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GatewayInfo> gatewaysCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GatewayInfo>(gateways.size());
             gatewaysCopy.addAll(gateways);
             this.gateways = gatewaysCopy;
         }

@@ -42,7 +42,7 @@ public class ListTagsForResourcesRequest extends AmazonWebServiceRequest impleme
      * <b>Constraints:</b><br/>
      * <b>Length: </b>1 - 10<br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> resourceIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> resourceIds;
 
     /**
      * The type of the resources. The resource type for health checks is
@@ -148,7 +148,7 @@ public class ListTagsForResourcesRequest extends AmazonWebServiceRequest impleme
      */
     public java.util.List<String> getResourceIds() {
         if (resourceIds == null) {
-              resourceIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              resourceIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               resourceIds.setAutoConstruct(true);
         }
         return resourceIds;
@@ -169,7 +169,7 @@ public class ListTagsForResourcesRequest extends AmazonWebServiceRequest impleme
             this.resourceIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> resourceIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(resourceIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> resourceIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(resourceIds.size());
         resourceIdsCopy.addAll(resourceIds);
         this.resourceIds = resourceIdsCopy;
     }
@@ -216,7 +216,7 @@ public class ListTagsForResourcesRequest extends AmazonWebServiceRequest impleme
         if (resourceIds == null) {
             this.resourceIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> resourceIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(resourceIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> resourceIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(resourceIds.size());
             resourceIdsCopy.addAll(resourceIds);
             this.resourceIds = resourceIdsCopy;
         }

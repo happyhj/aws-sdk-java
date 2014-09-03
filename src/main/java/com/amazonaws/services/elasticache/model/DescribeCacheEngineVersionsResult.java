@@ -32,7 +32,7 @@ public class DescribeCacheEngineVersionsResult implements Serializable {
      * A list of cache engine version details. Each element in the list
      * contains detailed information about once cache engine version.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<CacheEngineVersion> cacheEngineVersions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheEngineVersion> cacheEngineVersions;
 
     /**
      * Provides an identifier to allow retrieval of paginated results.
@@ -76,7 +76,7 @@ public class DescribeCacheEngineVersionsResult implements Serializable {
      */
     public java.util.List<CacheEngineVersion> getCacheEngineVersions() {
         if (cacheEngineVersions == null) {
-              cacheEngineVersions = new com.amazonaws.internal.ListWithAutoConstructFlag<CacheEngineVersion>();
+              cacheEngineVersions = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheEngineVersion>();
               cacheEngineVersions.setAutoConstruct(true);
         }
         return cacheEngineVersions;
@@ -94,7 +94,7 @@ public class DescribeCacheEngineVersionsResult implements Serializable {
             this.cacheEngineVersions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<CacheEngineVersion> cacheEngineVersionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CacheEngineVersion>(cacheEngineVersions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheEngineVersion> cacheEngineVersionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheEngineVersion>(cacheEngineVersions.size());
         cacheEngineVersionsCopy.addAll(cacheEngineVersions);
         this.cacheEngineVersions = cacheEngineVersionsCopy;
     }
@@ -135,7 +135,7 @@ public class DescribeCacheEngineVersionsResult implements Serializable {
         if (cacheEngineVersions == null) {
             this.cacheEngineVersions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<CacheEngineVersion> cacheEngineVersionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CacheEngineVersion>(cacheEngineVersions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheEngineVersion> cacheEngineVersionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheEngineVersion>(cacheEngineVersions.size());
             cacheEngineVersionsCopy.addAll(cacheEngineVersions);
             this.cacheEngineVersions = cacheEngineVersionsCopy;
         }

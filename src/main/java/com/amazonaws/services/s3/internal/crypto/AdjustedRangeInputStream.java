@@ -17,7 +17,7 @@ package com.amazonaws.services.s3.internal.crypto;
 import java.io.IOException;
 import java.io.InputStream;
 
-import com.amazonaws.sdkutil.SdkInputStream;
+import com.amazonaws.client.util.sdk.SdkInputStream;
 
 /**
  * Reads only a specific range of bytes from the underlying input stream.

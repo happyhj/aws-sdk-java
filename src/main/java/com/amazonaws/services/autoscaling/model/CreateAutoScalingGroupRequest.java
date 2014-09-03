@@ -111,7 +111,7 @@ public class CreateAutoScalingGroupRequest extends AmazonWebServiceRequest imple
      * <b>Constraints:</b><br/>
      * <b>Length: </b>1 - <br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> availabilityZones;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> availabilityZones;
 
     /**
      * A list of existing Elastic Load Balancing load balancers to use. The
@@ -121,7 +121,7 @@ public class CreateAutoScalingGroupRequest extends AmazonWebServiceRequest imple
      * Balance Your Auto Scaling Group</a> in the <i>Auto Scaling Developer
      * Guide</i>.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> loadBalancerNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> loadBalancerNames;
 
     /**
      * The service you want the health checks from, Amazon EC2 or Elastic
@@ -190,7 +190,7 @@ public class CreateAutoScalingGroupRequest extends AmazonWebServiceRequest imple
      * Termination Policy for Your Auto Scaling Group</a> in the <i>Auto
      * Scaling Developer Guide</i>.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> terminationPolicies;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> terminationPolicies;
 
     /**
      * The tag to be created or updated. Each tag should be defined by its
@@ -202,7 +202,7 @@ public class CreateAutoScalingGroupRequest extends AmazonWebServiceRequest imple
      * Your Auto Scaling Groups and Amazon EC2 Instances</a> in the <i>Auto
      * Scaling Developer Guide</i>.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tags;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tags;
 
     /**
      * The name of the Auto Scaling group.
@@ -621,7 +621,7 @@ public class CreateAutoScalingGroupRequest extends AmazonWebServiceRequest imple
      */
     public java.util.List<String> getAvailabilityZones() {
         if (availabilityZones == null) {
-              availabilityZones = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              availabilityZones = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               availabilityZones.setAutoConstruct(true);
         }
         return availabilityZones;
@@ -642,7 +642,7 @@ public class CreateAutoScalingGroupRequest extends AmazonWebServiceRequest imple
             this.availabilityZones = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> availabilityZonesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(availabilityZones.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> availabilityZonesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(availabilityZones.size());
         availabilityZonesCopy.addAll(availabilityZones);
         this.availabilityZones = availabilityZonesCopy;
     }
@@ -689,7 +689,7 @@ public class CreateAutoScalingGroupRequest extends AmazonWebServiceRequest imple
         if (availabilityZones == null) {
             this.availabilityZones = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> availabilityZonesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(availabilityZones.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> availabilityZonesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(availabilityZones.size());
             availabilityZonesCopy.addAll(availabilityZones);
             this.availabilityZones = availabilityZonesCopy;
         }
@@ -714,7 +714,7 @@ public class CreateAutoScalingGroupRequest extends AmazonWebServiceRequest imple
      */
     public java.util.List<String> getLoadBalancerNames() {
         if (loadBalancerNames == null) {
-              loadBalancerNames = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              loadBalancerNames = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               loadBalancerNames.setAutoConstruct(true);
         }
         return loadBalancerNames;
@@ -740,7 +740,7 @@ public class CreateAutoScalingGroupRequest extends AmazonWebServiceRequest imple
             this.loadBalancerNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> loadBalancerNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(loadBalancerNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> loadBalancerNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(loadBalancerNames.size());
         loadBalancerNamesCopy.addAll(loadBalancerNames);
         this.loadBalancerNames = loadBalancerNamesCopy;
     }
@@ -797,7 +797,7 @@ public class CreateAutoScalingGroupRequest extends AmazonWebServiceRequest imple
         if (loadBalancerNames == null) {
             this.loadBalancerNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> loadBalancerNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(loadBalancerNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> loadBalancerNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(loadBalancerNames.size());
             loadBalancerNamesCopy.addAll(loadBalancerNames);
             this.loadBalancerNames = loadBalancerNamesCopy;
         }
@@ -1148,7 +1148,7 @@ public class CreateAutoScalingGroupRequest extends AmazonWebServiceRequest imple
      */
     public java.util.List<String> getTerminationPolicies() {
         if (terminationPolicies == null) {
-              terminationPolicies = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              terminationPolicies = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               terminationPolicies.setAutoConstruct(true);
         }
         return terminationPolicies;
@@ -1176,7 +1176,7 @@ public class CreateAutoScalingGroupRequest extends AmazonWebServiceRequest imple
             this.terminationPolicies = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> terminationPoliciesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(terminationPolicies.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> terminationPoliciesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(terminationPolicies.size());
         terminationPoliciesCopy.addAll(terminationPolicies);
         this.terminationPolicies = terminationPoliciesCopy;
     }
@@ -1237,7 +1237,7 @@ public class CreateAutoScalingGroupRequest extends AmazonWebServiceRequest imple
         if (terminationPolicies == null) {
             this.terminationPolicies = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> terminationPoliciesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(terminationPolicies.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> terminationPoliciesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(terminationPolicies.size());
             terminationPoliciesCopy.addAll(terminationPolicies);
             this.terminationPolicies = terminationPoliciesCopy;
         }
@@ -1266,7 +1266,7 @@ public class CreateAutoScalingGroupRequest extends AmazonWebServiceRequest imple
      */
     public java.util.List<Tag> getTags() {
         if (tags == null) {
-              tags = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>();
+              tags = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>();
               tags.setAutoConstruct(true);
         }
         return tags;
@@ -1296,7 +1296,7 @@ public class CreateAutoScalingGroupRequest extends AmazonWebServiceRequest imple
             this.tags = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tags.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tags.size());
         tagsCopy.addAll(tags);
         this.tags = tagsCopy;
     }
@@ -1361,7 +1361,7 @@ public class CreateAutoScalingGroupRequest extends AmazonWebServiceRequest imple
         if (tags == null) {
             this.tags = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tags.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tags.size());
             tagsCopy.addAll(tags);
             this.tags = tagsCopy;
         }

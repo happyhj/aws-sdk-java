@@ -27,7 +27,7 @@ public class DescribeCommandsResult implements Serializable {
      * An array of <code>Command</code> objects that describe each of the
      * specified commands.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Command> commands;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Command> commands;
 
     /**
      * An array of <code>Command</code> objects that describe each of the
@@ -38,7 +38,7 @@ public class DescribeCommandsResult implements Serializable {
      */
     public java.util.List<Command> getCommands() {
         if (commands == null) {
-              commands = new com.amazonaws.internal.ListWithAutoConstructFlag<Command>();
+              commands = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Command>();
               commands.setAutoConstruct(true);
         }
         return commands;
@@ -56,7 +56,7 @@ public class DescribeCommandsResult implements Serializable {
             this.commands = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Command> commandsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Command>(commands.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Command> commandsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Command>(commands.size());
         commandsCopy.addAll(commands);
         this.commands = commandsCopy;
     }
@@ -97,7 +97,7 @@ public class DescribeCommandsResult implements Serializable {
         if (commands == null) {
             this.commands = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Command> commandsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Command>(commands.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Command> commandsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Command>(commands.size());
             commandsCopy.addAll(commands);
             this.commands = commandsCopy;
         }

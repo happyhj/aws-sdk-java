@@ -35,7 +35,7 @@ public class AddInstanceGroupsResult implements Serializable {
     /**
      * Instance group IDs of the newly created instance groups.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> instanceGroupIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> instanceGroupIds;
 
     /**
      * The job flow ID in which the instance groups are added.
@@ -89,7 +89,7 @@ public class AddInstanceGroupsResult implements Serializable {
      */
     public java.util.List<String> getInstanceGroupIds() {
         if (instanceGroupIds == null) {
-              instanceGroupIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              instanceGroupIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               instanceGroupIds.setAutoConstruct(true);
         }
         return instanceGroupIds;
@@ -105,7 +105,7 @@ public class AddInstanceGroupsResult implements Serializable {
             this.instanceGroupIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> instanceGroupIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(instanceGroupIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> instanceGroupIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(instanceGroupIds.size());
         instanceGroupIdsCopy.addAll(instanceGroupIds);
         this.instanceGroupIds = instanceGroupIdsCopy;
     }
@@ -142,7 +142,7 @@ public class AddInstanceGroupsResult implements Serializable {
         if (instanceGroupIds == null) {
             this.instanceGroupIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> instanceGroupIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(instanceGroupIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> instanceGroupIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(instanceGroupIds.size());
             instanceGroupIdsCopy.addAll(instanceGroupIds);
             this.instanceGroupIds = instanceGroupIdsCopy;
         }

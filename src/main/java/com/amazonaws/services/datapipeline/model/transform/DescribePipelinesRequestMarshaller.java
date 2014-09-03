@@ -20,12 +20,12 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.datapipeline.model.DescribePipelinesRequest;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Describe Pipelines Request Marshaller
@@ -50,7 +50,7 @@ public class DescribePipelinesRequestMarshaller implements Marshaller<Request<De
 
           jsonWriter.object();
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> pipelineIdsList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(describePipelinesRequest.getPipelineIds());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> pipelineIdsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(describePipelinesRequest.getPipelineIds());
             if (pipelineIdsList != null && !(pipelineIdsList.isAutoConstruct() && pipelineIdsList.isEmpty())) {
 
                 jsonWriter.key("pipelineIds");

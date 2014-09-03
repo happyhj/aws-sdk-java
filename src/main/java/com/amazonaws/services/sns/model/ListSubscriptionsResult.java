@@ -26,7 +26,7 @@ public class ListSubscriptionsResult implements Serializable {
     /**
      * A list of subscriptions.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Subscription> subscriptions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Subscription> subscriptions;
 
     /**
      * Token to pass along to the next <code>ListSubscriptions</code>
@@ -42,7 +42,7 @@ public class ListSubscriptionsResult implements Serializable {
      */
     public java.util.List<Subscription> getSubscriptions() {
         if (subscriptions == null) {
-              subscriptions = new com.amazonaws.internal.ListWithAutoConstructFlag<Subscription>();
+              subscriptions = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Subscription>();
               subscriptions.setAutoConstruct(true);
         }
         return subscriptions;
@@ -58,7 +58,7 @@ public class ListSubscriptionsResult implements Serializable {
             this.subscriptions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Subscription> subscriptionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Subscription>(subscriptions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Subscription> subscriptionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Subscription>(subscriptions.size());
         subscriptionsCopy.addAll(subscriptions);
         this.subscriptions = subscriptionsCopy;
     }
@@ -95,7 +95,7 @@ public class ListSubscriptionsResult implements Serializable {
         if (subscriptions == null) {
             this.subscriptions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Subscription> subscriptionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Subscription>(subscriptions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Subscription> subscriptionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Subscription>(subscriptions.size());
             subscriptionsCopy.addAll(subscriptions);
             this.subscriptions = subscriptionsCopy;
         }

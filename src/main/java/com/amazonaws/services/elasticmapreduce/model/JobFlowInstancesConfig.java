@@ -53,7 +53,7 @@ public class JobFlowInstancesConfig implements Serializable {
     /**
      * Configuration for the job flow's instance groups.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<InstanceGroupConfig> instanceGroups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceGroupConfig> instanceGroups;
 
     /**
      * The name of the Amazon EC2 key pair that can be used to ssh to the
@@ -248,7 +248,7 @@ public class JobFlowInstancesConfig implements Serializable {
      */
     public java.util.List<InstanceGroupConfig> getInstanceGroups() {
         if (instanceGroups == null) {
-              instanceGroups = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceGroupConfig>();
+              instanceGroups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceGroupConfig>();
               instanceGroups.setAutoConstruct(true);
         }
         return instanceGroups;
@@ -264,7 +264,7 @@ public class JobFlowInstancesConfig implements Serializable {
             this.instanceGroups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<InstanceGroupConfig> instanceGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceGroupConfig>(instanceGroups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceGroupConfig> instanceGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceGroupConfig>(instanceGroups.size());
         instanceGroupsCopy.addAll(instanceGroups);
         this.instanceGroups = instanceGroupsCopy;
     }
@@ -301,7 +301,7 @@ public class JobFlowInstancesConfig implements Serializable {
         if (instanceGroups == null) {
             this.instanceGroups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<InstanceGroupConfig> instanceGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceGroupConfig>(instanceGroups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceGroupConfig> instanceGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceGroupConfig>(instanceGroups.size());
             instanceGroupsCopy.addAll(instanceGroups);
             this.instanceGroups = instanceGroupsCopy;
         }

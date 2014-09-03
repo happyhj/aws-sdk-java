@@ -28,7 +28,7 @@ public class DescribeSeverityLevelsResult implements Serializable {
      * The available severity levels for the support case. Available severity
      * levels are defined by your service level agreement with AWS.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<SeverityLevel> severityLevels;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SeverityLevel> severityLevels;
 
     /**
      * The available severity levels for the support case. Available severity
@@ -39,7 +39,7 @@ public class DescribeSeverityLevelsResult implements Serializable {
      */
     public java.util.List<SeverityLevel> getSeverityLevels() {
         if (severityLevels == null) {
-              severityLevels = new com.amazonaws.internal.ListWithAutoConstructFlag<SeverityLevel>();
+              severityLevels = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SeverityLevel>();
               severityLevels.setAutoConstruct(true);
         }
         return severityLevels;
@@ -57,7 +57,7 @@ public class DescribeSeverityLevelsResult implements Serializable {
             this.severityLevels = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<SeverityLevel> severityLevelsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<SeverityLevel>(severityLevels.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SeverityLevel> severityLevelsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SeverityLevel>(severityLevels.size());
         severityLevelsCopy.addAll(severityLevels);
         this.severityLevels = severityLevelsCopy;
     }
@@ -98,7 +98,7 @@ public class DescribeSeverityLevelsResult implements Serializable {
         if (severityLevels == null) {
             this.severityLevels = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<SeverityLevel> severityLevelsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<SeverityLevel>(severityLevels.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SeverityLevel> severityLevelsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SeverityLevel>(severityLevels.size());
             severityLevelsCopy.addAll(severityLevels);
             this.severityLevels = severityLevelsCopy;
         }

@@ -27,7 +27,7 @@ public class ListStacksResult implements Serializable {
      * A list of <code>StackSummary</code> structures containing information
      * about the specified stacks.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<StackSummary> stackSummaries;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StackSummary> stackSummaries;
 
     /**
      * String that identifies the start of the next list of stacks, if there
@@ -47,7 +47,7 @@ public class ListStacksResult implements Serializable {
      */
     public java.util.List<StackSummary> getStackSummaries() {
         if (stackSummaries == null) {
-              stackSummaries = new com.amazonaws.internal.ListWithAutoConstructFlag<StackSummary>();
+              stackSummaries = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StackSummary>();
               stackSummaries.setAutoConstruct(true);
         }
         return stackSummaries;
@@ -65,7 +65,7 @@ public class ListStacksResult implements Serializable {
             this.stackSummaries = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<StackSummary> stackSummariesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<StackSummary>(stackSummaries.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StackSummary> stackSummariesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StackSummary>(stackSummaries.size());
         stackSummariesCopy.addAll(stackSummaries);
         this.stackSummaries = stackSummariesCopy;
     }
@@ -106,7 +106,7 @@ public class ListStacksResult implements Serializable {
         if (stackSummaries == null) {
             this.stackSummaries = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<StackSummary> stackSummariesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<StackSummary>(stackSummaries.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StackSummary> stackSummariesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StackSummary>(stackSummaries.size());
             stackSummariesCopy.addAll(stackSummaries);
             this.stackSummaries = stackSummariesCopy;
         }

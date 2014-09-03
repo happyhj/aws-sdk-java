@@ -59,14 +59,14 @@ public class ModifyEventSubscriptionRequest extends AmazonWebServiceRequest impl
      * returned for all objects within the source type specified. <p>Example:
      * my-cluster-1, my-cluster-2 <p>Example: my-snapshot-20131010
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> sourceIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> sourceIds;
 
     /**
      * Specifies the Amazon Redshift event categories to be published by the
      * event notification subscription. <p>Values: Configuration, Management,
      * Monitoring, Security
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> eventCategories;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> eventCategories;
 
     /**
      * Specifies the Amazon Redshift event severity to be published by the
@@ -244,7 +244,7 @@ public class ModifyEventSubscriptionRequest extends AmazonWebServiceRequest impl
      */
     public java.util.List<String> getSourceIds() {
         if (sourceIds == null) {
-              sourceIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              sourceIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               sourceIds.setAutoConstruct(true);
         }
         return sourceIds;
@@ -270,7 +270,7 @@ public class ModifyEventSubscriptionRequest extends AmazonWebServiceRequest impl
             this.sourceIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> sourceIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(sourceIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> sourceIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(sourceIds.size());
         sourceIdsCopy.addAll(sourceIds);
         this.sourceIds = sourceIdsCopy;
     }
@@ -327,7 +327,7 @@ public class ModifyEventSubscriptionRequest extends AmazonWebServiceRequest impl
         if (sourceIds == null) {
             this.sourceIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> sourceIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(sourceIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> sourceIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(sourceIds.size());
             sourceIdsCopy.addAll(sourceIds);
             this.sourceIds = sourceIdsCopy;
         }
@@ -346,7 +346,7 @@ public class ModifyEventSubscriptionRequest extends AmazonWebServiceRequest impl
      */
     public java.util.List<String> getEventCategories() {
         if (eventCategories == null) {
-              eventCategories = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              eventCategories = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               eventCategories.setAutoConstruct(true);
         }
         return eventCategories;
@@ -366,7 +366,7 @@ public class ModifyEventSubscriptionRequest extends AmazonWebServiceRequest impl
             this.eventCategories = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> eventCategoriesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(eventCategories.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> eventCategoriesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(eventCategories.size());
         eventCategoriesCopy.addAll(eventCategories);
         this.eventCategories = eventCategoriesCopy;
     }
@@ -411,7 +411,7 @@ public class ModifyEventSubscriptionRequest extends AmazonWebServiceRequest impl
         if (eventCategories == null) {
             this.eventCategories = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> eventCategoriesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(eventCategories.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> eventCategoriesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(eventCategories.size());
             eventCategoriesCopy.addAll(eventCategories);
             this.eventCategories = eventCategoriesCopy;
         }

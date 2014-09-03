@@ -20,12 +20,12 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.elasticmapreduce.model.ListClustersRequest;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * List Clusters Request Marshaller
@@ -57,7 +57,7 @@ public class ListClustersRequestMarshaller implements Marshaller<Request<ListClu
                 jsonWriter.key("CreatedBefore").value(listClustersRequest.getCreatedBefore());
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> clusterStatesList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(listClustersRequest.getClusterStates());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> clusterStatesList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(listClustersRequest.getClusterStates());
             if (clusterStatesList != null && !(clusterStatesList.isAutoConstruct() && clusterStatesList.isEmpty())) {
 
                 jsonWriter.key("ClusterStates");

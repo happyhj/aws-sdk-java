@@ -26,7 +26,7 @@ public class GetRecordsResult implements Serializable {
     /**
      * <P>The data records retrieved from the shard.</P>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Record> records;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Record> records;
 
     /**
      * The next position in the shard from which to start sequentially
@@ -45,7 +45,7 @@ public class GetRecordsResult implements Serializable {
      */
     public java.util.List<Record> getRecords() {
         if (records == null) {
-              records = new com.amazonaws.internal.ListWithAutoConstructFlag<Record>();
+              records = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Record>();
               records.setAutoConstruct(true);
         }
         return records;
@@ -61,7 +61,7 @@ public class GetRecordsResult implements Serializable {
             this.records = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Record> recordsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Record>(records.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Record> recordsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Record>(records.size());
         recordsCopy.addAll(records);
         this.records = recordsCopy;
     }
@@ -98,7 +98,7 @@ public class GetRecordsResult implements Serializable {
         if (records == null) {
             this.records = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Record> recordsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Record>(records.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Record> recordsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Record>(records.size());
             recordsCopy.addAll(records);
             this.records = recordsCopy;
         }

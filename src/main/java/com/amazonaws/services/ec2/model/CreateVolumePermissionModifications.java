@@ -25,13 +25,13 @@ public class CreateVolumePermissionModifications implements Serializable {
      * Adds a specific AWS account ID or group to a volume's list of create
      * volume permissions.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<CreateVolumePermission> add;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CreateVolumePermission> add;
 
     /**
      * Removes a specific AWS account ID or group from a volume's list of
      * create volume permissions.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<CreateVolumePermission> remove;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CreateVolumePermission> remove;
 
     /**
      * Adds a specific AWS account ID or group to a volume's list of create
@@ -42,7 +42,7 @@ public class CreateVolumePermissionModifications implements Serializable {
      */
     public java.util.List<CreateVolumePermission> getAdd() {
         if (add == null) {
-              add = new com.amazonaws.internal.ListWithAutoConstructFlag<CreateVolumePermission>();
+              add = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CreateVolumePermission>();
               add.setAutoConstruct(true);
         }
         return add;
@@ -60,7 +60,7 @@ public class CreateVolumePermissionModifications implements Serializable {
             this.add = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<CreateVolumePermission> addCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CreateVolumePermission>(add.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CreateVolumePermission> addCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CreateVolumePermission>(add.size());
         addCopy.addAll(add);
         this.add = addCopy;
     }
@@ -101,7 +101,7 @@ public class CreateVolumePermissionModifications implements Serializable {
         if (add == null) {
             this.add = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<CreateVolumePermission> addCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CreateVolumePermission>(add.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CreateVolumePermission> addCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CreateVolumePermission>(add.size());
             addCopy.addAll(add);
             this.add = addCopy;
         }
@@ -118,7 +118,7 @@ public class CreateVolumePermissionModifications implements Serializable {
      */
     public java.util.List<CreateVolumePermission> getRemove() {
         if (remove == null) {
-              remove = new com.amazonaws.internal.ListWithAutoConstructFlag<CreateVolumePermission>();
+              remove = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CreateVolumePermission>();
               remove.setAutoConstruct(true);
         }
         return remove;
@@ -136,7 +136,7 @@ public class CreateVolumePermissionModifications implements Serializable {
             this.remove = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<CreateVolumePermission> removeCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CreateVolumePermission>(remove.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CreateVolumePermission> removeCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CreateVolumePermission>(remove.size());
         removeCopy.addAll(remove);
         this.remove = removeCopy;
     }
@@ -177,7 +177,7 @@ public class CreateVolumePermissionModifications implements Serializable {
         if (remove == null) {
             this.remove = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<CreateVolumePermission> removeCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CreateVolumePermission>(remove.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CreateVolumePermission> removeCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CreateVolumePermission>(remove.size());
             removeCopy.addAll(remove);
             this.remove = removeCopy;
         }

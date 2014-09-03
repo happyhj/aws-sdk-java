@@ -51,7 +51,7 @@ public class UnlinkIdentityRequest extends AmazonWebServiceRequest implements Se
     /**
      * Provider names to unlink from this identity.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> loginsToRemove;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> loginsToRemove;
 
     /**
      * A unique identifier in the format REGION:GUID.
@@ -200,7 +200,7 @@ public class UnlinkIdentityRequest extends AmazonWebServiceRequest implements Se
             this.loginsToRemove = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> loginsToRemoveCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(loginsToRemove.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> loginsToRemoveCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(loginsToRemove.size());
         loginsToRemoveCopy.addAll(loginsToRemove);
         this.loginsToRemove = loginsToRemoveCopy;
     }
@@ -237,7 +237,7 @@ public class UnlinkIdentityRequest extends AmazonWebServiceRequest implements Se
         if (loginsToRemove == null) {
             this.loginsToRemove = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> loginsToRemoveCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(loginsToRemove.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> loginsToRemoveCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(loginsToRemove.size());
             loginsToRemoveCopy.addAll(loginsToRemove);
             this.loginsToRemove = loginsToRemoveCopy;
         }

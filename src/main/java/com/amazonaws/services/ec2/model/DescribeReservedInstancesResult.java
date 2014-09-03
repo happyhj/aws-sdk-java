@@ -24,7 +24,7 @@ public class DescribeReservedInstancesResult implements Serializable {
     /**
      * A list of Reserved Instances.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ReservedInstances> reservedInstances;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedInstances> reservedInstances;
 
     /**
      * A list of Reserved Instances.
@@ -33,7 +33,7 @@ public class DescribeReservedInstancesResult implements Serializable {
      */
     public java.util.List<ReservedInstances> getReservedInstances() {
         if (reservedInstances == null) {
-              reservedInstances = new com.amazonaws.internal.ListWithAutoConstructFlag<ReservedInstances>();
+              reservedInstances = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedInstances>();
               reservedInstances.setAutoConstruct(true);
         }
         return reservedInstances;
@@ -49,7 +49,7 @@ public class DescribeReservedInstancesResult implements Serializable {
             this.reservedInstances = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ReservedInstances> reservedInstancesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ReservedInstances>(reservedInstances.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedInstances> reservedInstancesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedInstances>(reservedInstances.size());
         reservedInstancesCopy.addAll(reservedInstances);
         this.reservedInstances = reservedInstancesCopy;
     }
@@ -86,7 +86,7 @@ public class DescribeReservedInstancesResult implements Serializable {
         if (reservedInstances == null) {
             this.reservedInstances = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ReservedInstances> reservedInstancesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ReservedInstances>(reservedInstances.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedInstances> reservedInstancesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedInstances>(reservedInstances.size());
             reservedInstancesCopy.addAll(reservedInstances);
             this.reservedInstances = reservedInstancesCopy;
         }

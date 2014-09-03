@@ -34,7 +34,7 @@ public class DescribeDBInstancesResult implements Serializable {
     /**
      * A list of <a>DBInstance</a> instances.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<DBInstance> dBInstances;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBInstance> dBInstances;
 
     /**
      * An optional pagination token provided by a previous request. If this
@@ -88,7 +88,7 @@ public class DescribeDBInstancesResult implements Serializable {
      */
     public java.util.List<DBInstance> getDBInstances() {
         if (dBInstances == null) {
-              dBInstances = new com.amazonaws.internal.ListWithAutoConstructFlag<DBInstance>();
+              dBInstances = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBInstance>();
               dBInstances.setAutoConstruct(true);
         }
         return dBInstances;
@@ -104,7 +104,7 @@ public class DescribeDBInstancesResult implements Serializable {
             this.dBInstances = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<DBInstance> dBInstancesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DBInstance>(dBInstances.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBInstance> dBInstancesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBInstance>(dBInstances.size());
         dBInstancesCopy.addAll(dBInstances);
         this.dBInstances = dBInstancesCopy;
     }
@@ -141,7 +141,7 @@ public class DescribeDBInstancesResult implements Serializable {
         if (dBInstances == null) {
             this.dBInstances = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<DBInstance> dBInstancesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DBInstance>(dBInstances.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBInstance> dBInstancesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBInstance>(dBInstances.size());
             dBInstancesCopy.addAll(dBInstances);
             this.dBInstances = dBInstancesCopy;
         }

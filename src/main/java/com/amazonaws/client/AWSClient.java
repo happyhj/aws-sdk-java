@@ -4,6 +4,7 @@ import java.net.URI;
 
 import com.amazonaws.client.handler.request.RequestHandler;
 import com.amazonaws.client.handler.request.RequestHandler2;
+import com.amazonaws.client.regions.Region;
 import com.amazonaws.client.service.AmazonWebServiceClient;
 import com.amazonaws.network.metricscollector.RequestMetricCollector;
 

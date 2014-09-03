@@ -20,12 +20,12 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.opsworks.model.DescribeVolumesRequest;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Describe Volumes Request Marshaller
@@ -60,7 +60,7 @@ public class DescribeVolumesRequestMarshaller implements Marshaller<Request<Desc
                 jsonWriter.key("RaidArrayId").value(describeVolumesRequest.getRaidArrayId());
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> volumeIdsList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(describeVolumesRequest.getVolumeIds());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> volumeIdsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(describeVolumesRequest.getVolumeIds());
             if (volumeIdsList != null && !(volumeIdsList.isAutoConstruct() && volumeIdsList.isEmpty())) {
 
                 jsonWriter.key("VolumeIds");

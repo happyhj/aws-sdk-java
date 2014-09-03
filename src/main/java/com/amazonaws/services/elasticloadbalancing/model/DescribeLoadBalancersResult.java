@@ -26,7 +26,7 @@ public class DescribeLoadBalancersResult implements Serializable {
     /**
      * A list of load balancer description structures.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<LoadBalancerDescription> loadBalancerDescriptions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LoadBalancerDescription> loadBalancerDescriptions;
 
     /**
      * Specifies the value of next marker if the request returned more than
@@ -41,7 +41,7 @@ public class DescribeLoadBalancersResult implements Serializable {
      */
     public java.util.List<LoadBalancerDescription> getLoadBalancerDescriptions() {
         if (loadBalancerDescriptions == null) {
-              loadBalancerDescriptions = new com.amazonaws.internal.ListWithAutoConstructFlag<LoadBalancerDescription>();
+              loadBalancerDescriptions = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LoadBalancerDescription>();
               loadBalancerDescriptions.setAutoConstruct(true);
         }
         return loadBalancerDescriptions;
@@ -57,7 +57,7 @@ public class DescribeLoadBalancersResult implements Serializable {
             this.loadBalancerDescriptions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<LoadBalancerDescription> loadBalancerDescriptionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<LoadBalancerDescription>(loadBalancerDescriptions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LoadBalancerDescription> loadBalancerDescriptionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LoadBalancerDescription>(loadBalancerDescriptions.size());
         loadBalancerDescriptionsCopy.addAll(loadBalancerDescriptions);
         this.loadBalancerDescriptions = loadBalancerDescriptionsCopy;
     }
@@ -94,7 +94,7 @@ public class DescribeLoadBalancersResult implements Serializable {
         if (loadBalancerDescriptions == null) {
             this.loadBalancerDescriptions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<LoadBalancerDescription> loadBalancerDescriptionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<LoadBalancerDescription>(loadBalancerDescriptions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LoadBalancerDescription> loadBalancerDescriptionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LoadBalancerDescription>(loadBalancerDescriptions.size());
             loadBalancerDescriptionsCopy.addAll(loadBalancerDescriptions);
             this.loadBalancerDescriptions = loadBalancerDescriptionsCopy;
         }

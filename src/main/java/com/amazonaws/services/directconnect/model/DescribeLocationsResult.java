@@ -21,7 +21,7 @@ import java.io.Serializable;
  */
 public class DescribeLocationsResult implements Serializable {
 
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Location> locations;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Location> locations;
 
     /**
      * Returns the value of the Locations property for this object.
@@ -30,7 +30,7 @@ public class DescribeLocationsResult implements Serializable {
      */
     public java.util.List<Location> getLocations() {
         if (locations == null) {
-              locations = new com.amazonaws.internal.ListWithAutoConstructFlag<Location>();
+              locations = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Location>();
               locations.setAutoConstruct(true);
         }
         return locations;
@@ -46,7 +46,7 @@ public class DescribeLocationsResult implements Serializable {
             this.locations = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Location> locationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Location>(locations.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Location> locationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Location>(locations.size());
         locationsCopy.addAll(locations);
         this.locations = locationsCopy;
     }
@@ -83,7 +83,7 @@ public class DescribeLocationsResult implements Serializable {
         if (locations == null) {
             this.locations = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Location> locationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Location>(locations.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Location> locationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Location>(locations.size());
             locationsCopy.addAll(locations);
             this.locations = locationsCopy;
         }

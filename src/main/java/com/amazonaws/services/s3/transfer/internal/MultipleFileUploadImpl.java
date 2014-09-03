@@ -19,9 +19,9 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
-import com.amazonaws.event.ProgressListenerChain;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
+import com.amazonaws.network.event.ProgressListenerChain;
 import com.amazonaws.services.s3.transfer.MultipleFileUpload;
 import com.amazonaws.services.s3.transfer.TransferProgress;
 import com.amazonaws.services.s3.transfer.Upload;

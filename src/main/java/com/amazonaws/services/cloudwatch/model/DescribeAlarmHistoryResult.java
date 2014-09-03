@@ -26,7 +26,7 @@ public class DescribeAlarmHistoryResult implements Serializable {
     /**
      * A list of alarm histories in JSON format.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<AlarmHistoryItem> alarmHistoryItems;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AlarmHistoryItem> alarmHistoryItems;
 
     /**
      * A string that marks the start of the next batch of returned results.
@@ -40,7 +40,7 @@ public class DescribeAlarmHistoryResult implements Serializable {
      */
     public java.util.List<AlarmHistoryItem> getAlarmHistoryItems() {
         if (alarmHistoryItems == null) {
-              alarmHistoryItems = new com.amazonaws.internal.ListWithAutoConstructFlag<AlarmHistoryItem>();
+              alarmHistoryItems = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AlarmHistoryItem>();
               alarmHistoryItems.setAutoConstruct(true);
         }
         return alarmHistoryItems;
@@ -56,7 +56,7 @@ public class DescribeAlarmHistoryResult implements Serializable {
             this.alarmHistoryItems = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<AlarmHistoryItem> alarmHistoryItemsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<AlarmHistoryItem>(alarmHistoryItems.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AlarmHistoryItem> alarmHistoryItemsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AlarmHistoryItem>(alarmHistoryItems.size());
         alarmHistoryItemsCopy.addAll(alarmHistoryItems);
         this.alarmHistoryItems = alarmHistoryItemsCopy;
     }
@@ -93,7 +93,7 @@ public class DescribeAlarmHistoryResult implements Serializable {
         if (alarmHistoryItems == null) {
             this.alarmHistoryItems = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<AlarmHistoryItem> alarmHistoryItemsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<AlarmHistoryItem>(alarmHistoryItems.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AlarmHistoryItem> alarmHistoryItemsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AlarmHistoryItem>(alarmHistoryItems.size());
             alarmHistoryItemsCopy.addAll(alarmHistoryItems);
             this.alarmHistoryItems = alarmHistoryItemsCopy;
         }

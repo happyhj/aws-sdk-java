@@ -20,12 +20,12 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.storagegateway.model.DescribeVTLDevicesRequest;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Describe V T L Devices Request Marshaller
@@ -54,7 +54,7 @@ public class DescribeVTLDevicesRequestMarshaller implements Marshaller<Request<D
                 jsonWriter.key("GatewayARN").value(describeVTLDevicesRequest.getGatewayARN());
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> vTLDeviceARNsList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(describeVTLDevicesRequest.getVTLDeviceARNs());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> vTLDeviceARNsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(describeVTLDevicesRequest.getVTLDeviceARNs());
             if (vTLDeviceARNsList != null && !(vTLDeviceARNsList.isAutoConstruct() && vTLDeviceARNsList.isEmpty())) {
 
                 jsonWriter.key("VTLDeviceARNs");

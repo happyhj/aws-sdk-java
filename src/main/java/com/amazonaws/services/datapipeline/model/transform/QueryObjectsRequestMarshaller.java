@@ -20,7 +20,7 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.datapipeline.model.Operator;
@@ -28,7 +28,7 @@ import com.amazonaws.services.datapipeline.model.Query;
 import com.amazonaws.services.datapipeline.model.QueryObjectsRequest;
 import com.amazonaws.services.datapipeline.model.Selector;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Query Objects Request Marshaller
@@ -62,7 +62,7 @@ public class QueryObjectsRequestMarshaller implements Marshaller<Request<QueryOb
                 jsonWriter.key("query");
                 jsonWriter.object();
 
-                com.amazonaws.internal.ListWithAutoConstructFlag<Selector> selectorsList = (com.amazonaws.internal.ListWithAutoConstructFlag<Selector>)(query.getSelectors());
+                com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Selector> selectorsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Selector>)(query.getSelectors());
                 if (selectorsList != null && !(selectorsList.isAutoConstruct() && selectorsList.isEmpty())) {
 
                     jsonWriter.key("selectors");
@@ -84,7 +84,7 @@ public class QueryObjectsRequestMarshaller implements Marshaller<Request<QueryOb
                                     jsonWriter.key("type").value(operator.getType());
                                 }
 
-                                com.amazonaws.internal.ListWithAutoConstructFlag<String> valuesList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(operator.getValues());
+                                com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> valuesList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(operator.getValues());
                                 if (valuesList != null && !(valuesList.isAutoConstruct() && valuesList.isEmpty())) {
 
                                     jsonWriter.key("values");

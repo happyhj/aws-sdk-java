@@ -26,7 +26,7 @@ public class DetachLoadBalancerFromSubnetsResult implements Serializable {
     /**
      * A list of subnet IDs the load balancer is now attached to.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> subnets;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> subnets;
 
     /**
      * A list of subnet IDs the load balancer is now attached to.
@@ -35,7 +35,7 @@ public class DetachLoadBalancerFromSubnetsResult implements Serializable {
      */
     public java.util.List<String> getSubnets() {
         if (subnets == null) {
-              subnets = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              subnets = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               subnets.setAutoConstruct(true);
         }
         return subnets;
@@ -51,7 +51,7 @@ public class DetachLoadBalancerFromSubnetsResult implements Serializable {
             this.subnets = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> subnetsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(subnets.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> subnetsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(subnets.size());
         subnetsCopy.addAll(subnets);
         this.subnets = subnetsCopy;
     }
@@ -88,7 +88,7 @@ public class DetachLoadBalancerFromSubnetsResult implements Serializable {
         if (subnets == null) {
             this.subnets = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> subnetsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(subnets.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> subnetsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(subnets.size());
             subnetsCopy.addAll(subnets);
             this.subnets = subnetsCopy;
         }

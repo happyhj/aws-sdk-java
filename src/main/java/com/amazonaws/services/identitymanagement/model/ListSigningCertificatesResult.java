@@ -27,7 +27,7 @@ public class ListSigningCertificatesResult implements Serializable {
     /**
      * A list of the user's signing certificate information.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<SigningCertificate> certificates;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SigningCertificate> certificates;
 
     /**
      * A flag that indicates whether there are more certificate IDs to list.
@@ -55,7 +55,7 @@ public class ListSigningCertificatesResult implements Serializable {
      */
     public java.util.List<SigningCertificate> getCertificates() {
         if (certificates == null) {
-              certificates = new com.amazonaws.internal.ListWithAutoConstructFlag<SigningCertificate>();
+              certificates = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SigningCertificate>();
               certificates.setAutoConstruct(true);
         }
         return certificates;
@@ -71,7 +71,7 @@ public class ListSigningCertificatesResult implements Serializable {
             this.certificates = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<SigningCertificate> certificatesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<SigningCertificate>(certificates.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SigningCertificate> certificatesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SigningCertificate>(certificates.size());
         certificatesCopy.addAll(certificates);
         this.certificates = certificatesCopy;
     }
@@ -108,7 +108,7 @@ public class ListSigningCertificatesResult implements Serializable {
         if (certificates == null) {
             this.certificates = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<SigningCertificate> certificatesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<SigningCertificate>(certificates.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SigningCertificate> certificatesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SigningCertificate>(certificates.size());
             certificatesCopy.addAll(certificates);
             this.certificates = certificatesCopy;
         }

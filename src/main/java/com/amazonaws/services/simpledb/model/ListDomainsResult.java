@@ -24,7 +24,7 @@ public class ListDomainsResult implements Serializable {
     /**
      * A list of domain names that match the expression.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> domainNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> domainNames;
 
     /**
      * An opaque token indicating that there are more domains than the
@@ -39,7 +39,7 @@ public class ListDomainsResult implements Serializable {
      */
     public java.util.List<String> getDomainNames() {
         if (domainNames == null) {
-              domainNames = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              domainNames = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               domainNames.setAutoConstruct(true);
         }
         return domainNames;
@@ -55,7 +55,7 @@ public class ListDomainsResult implements Serializable {
             this.domainNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> domainNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(domainNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> domainNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(domainNames.size());
         domainNamesCopy.addAll(domainNames);
         this.domainNames = domainNamesCopy;
     }
@@ -92,7 +92,7 @@ public class ListDomainsResult implements Serializable {
         if (domainNames == null) {
             this.domainNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> domainNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(domainNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> domainNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(domainNames.size());
             domainNamesCopy.addAll(domainNames);
             this.domainNames = domainNamesCopy;
         }

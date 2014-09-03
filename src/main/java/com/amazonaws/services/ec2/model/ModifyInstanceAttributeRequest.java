@@ -70,7 +70,7 @@ public class ModifyInstanceAttributeRequest extends AmazonWebServiceRequest impl
      * the Block Device Mapping when Launching an Instance</a> in the
      * <i>Amazon Elastic Compute Cloud User Guide</i>.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<InstanceBlockDeviceMappingSpecification> blockDeviceMappings;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceBlockDeviceMappingSpecification> blockDeviceMappings;
 
     /**
      * Specifies whether source/destination checking is enabled. A value of
@@ -126,7 +126,7 @@ public class ModifyInstanceAttributeRequest extends AmazonWebServiceRequest impl
      * <code>GroupId.1=sg-1a1a1a1a</code> and
      * <code>GroupId.2=sg-9b9b9b9b</code>.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> groups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> groups;
 
     /**
      * Specifies whether the instance is optimized for EBS I/O. This
@@ -368,7 +368,7 @@ public class ModifyInstanceAttributeRequest extends AmazonWebServiceRequest impl
      */
     public java.util.List<InstanceBlockDeviceMappingSpecification> getBlockDeviceMappings() {
         if (blockDeviceMappings == null) {
-              blockDeviceMappings = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceBlockDeviceMappingSpecification>();
+              blockDeviceMappings = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceBlockDeviceMappingSpecification>();
               blockDeviceMappings.setAutoConstruct(true);
         }
         return blockDeviceMappings;
@@ -402,7 +402,7 @@ public class ModifyInstanceAttributeRequest extends AmazonWebServiceRequest impl
             this.blockDeviceMappings = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<InstanceBlockDeviceMappingSpecification> blockDeviceMappingsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceBlockDeviceMappingSpecification>(blockDeviceMappings.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceBlockDeviceMappingSpecification> blockDeviceMappingsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceBlockDeviceMappingSpecification>(blockDeviceMappings.size());
         blockDeviceMappingsCopy.addAll(blockDeviceMappings);
         this.blockDeviceMappings = blockDeviceMappingsCopy;
     }
@@ -475,7 +475,7 @@ public class ModifyInstanceAttributeRequest extends AmazonWebServiceRequest impl
         if (blockDeviceMappings == null) {
             this.blockDeviceMappings = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<InstanceBlockDeviceMappingSpecification> blockDeviceMappingsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceBlockDeviceMappingSpecification>(blockDeviceMappings.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceBlockDeviceMappingSpecification> blockDeviceMappingsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceBlockDeviceMappingSpecification>(blockDeviceMappings.size());
             blockDeviceMappingsCopy.addAll(blockDeviceMappings);
             this.blockDeviceMappings = blockDeviceMappingsCopy;
         }
@@ -819,7 +819,7 @@ public class ModifyInstanceAttributeRequest extends AmazonWebServiceRequest impl
      */
     public java.util.List<String> getGroups() {
         if (groups == null) {
-              groups = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              groups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               groups.setAutoConstruct(true);
         }
         return groups;
@@ -847,7 +847,7 @@ public class ModifyInstanceAttributeRequest extends AmazonWebServiceRequest impl
             this.groups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> groupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(groups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> groupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(groups.size());
         groupsCopy.addAll(groups);
         this.groups = groupsCopy;
     }
@@ -908,7 +908,7 @@ public class ModifyInstanceAttributeRequest extends AmazonWebServiceRequest impl
         if (groups == null) {
             this.groups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> groupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(groups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> groupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(groups.size());
             groupsCopy.addAll(groups);
             this.groups = groupsCopy;
         }

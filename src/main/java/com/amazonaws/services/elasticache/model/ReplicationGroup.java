@@ -49,13 +49,13 @@ public class ReplicationGroup implements Serializable {
      * The names of all the cache clusters that are part of this replication
      * group.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> memberClusters;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> memberClusters;
 
     /**
      * A single element list with information about the nodes in the
      * replication group.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<NodeGroup> nodeGroups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NodeGroup> nodeGroups;
 
     /**
      * The cache cluster ID that is used as the daily snapshot source for the
@@ -216,7 +216,7 @@ public class ReplicationGroup implements Serializable {
      */
     public java.util.List<String> getMemberClusters() {
         if (memberClusters == null) {
-              memberClusters = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              memberClusters = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               memberClusters.setAutoConstruct(true);
         }
         return memberClusters;
@@ -234,7 +234,7 @@ public class ReplicationGroup implements Serializable {
             this.memberClusters = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> memberClustersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(memberClusters.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> memberClustersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(memberClusters.size());
         memberClustersCopy.addAll(memberClusters);
         this.memberClusters = memberClustersCopy;
     }
@@ -275,7 +275,7 @@ public class ReplicationGroup implements Serializable {
         if (memberClusters == null) {
             this.memberClusters = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> memberClustersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(memberClusters.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> memberClustersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(memberClusters.size());
             memberClustersCopy.addAll(memberClusters);
             this.memberClusters = memberClustersCopy;
         }
@@ -292,7 +292,7 @@ public class ReplicationGroup implements Serializable {
      */
     public java.util.List<NodeGroup> getNodeGroups() {
         if (nodeGroups == null) {
-              nodeGroups = new com.amazonaws.internal.ListWithAutoConstructFlag<NodeGroup>();
+              nodeGroups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NodeGroup>();
               nodeGroups.setAutoConstruct(true);
         }
         return nodeGroups;
@@ -310,7 +310,7 @@ public class ReplicationGroup implements Serializable {
             this.nodeGroups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<NodeGroup> nodeGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<NodeGroup>(nodeGroups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NodeGroup> nodeGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NodeGroup>(nodeGroups.size());
         nodeGroupsCopy.addAll(nodeGroups);
         this.nodeGroups = nodeGroupsCopy;
     }
@@ -351,7 +351,7 @@ public class ReplicationGroup implements Serializable {
         if (nodeGroups == null) {
             this.nodeGroups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<NodeGroup> nodeGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<NodeGroup>(nodeGroups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NodeGroup> nodeGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NodeGroup>(nodeGroups.size());
             nodeGroupsCopy.addAll(nodeGroups);
             this.nodeGroups = nodeGroupsCopy;
         }

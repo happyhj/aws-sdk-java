@@ -24,7 +24,7 @@ public class DescribeVpnConnectionsResult implements Serializable {
     /**
      * Information about one or more VPN connections.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<VpnConnection> vpnConnections;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VpnConnection> vpnConnections;
 
     /**
      * Information about one or more VPN connections.
@@ -33,7 +33,7 @@ public class DescribeVpnConnectionsResult implements Serializable {
      */
     public java.util.List<VpnConnection> getVpnConnections() {
         if (vpnConnections == null) {
-              vpnConnections = new com.amazonaws.internal.ListWithAutoConstructFlag<VpnConnection>();
+              vpnConnections = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VpnConnection>();
               vpnConnections.setAutoConstruct(true);
         }
         return vpnConnections;
@@ -49,7 +49,7 @@ public class DescribeVpnConnectionsResult implements Serializable {
             this.vpnConnections = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<VpnConnection> vpnConnectionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<VpnConnection>(vpnConnections.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VpnConnection> vpnConnectionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VpnConnection>(vpnConnections.size());
         vpnConnectionsCopy.addAll(vpnConnections);
         this.vpnConnections = vpnConnectionsCopy;
     }
@@ -86,7 +86,7 @@ public class DescribeVpnConnectionsResult implements Serializable {
         if (vpnConnections == null) {
             this.vpnConnections = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<VpnConnection> vpnConnectionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<VpnConnection>(vpnConnections.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VpnConnection> vpnConnectionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VpnConnection>(vpnConnections.size());
             vpnConnectionsCopy.addAll(vpnConnections);
             this.vpnConnections = vpnConnectionsCopy;
         }

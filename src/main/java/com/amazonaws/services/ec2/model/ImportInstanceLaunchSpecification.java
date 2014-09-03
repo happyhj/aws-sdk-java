@@ -32,7 +32,7 @@ public class ImportInstanceLaunchSpecification implements Serializable {
     /**
      * One or more security group names.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> groupNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> groupNames;
 
     /**
      * 
@@ -175,7 +175,7 @@ public class ImportInstanceLaunchSpecification implements Serializable {
      */
     public java.util.List<String> getGroupNames() {
         if (groupNames == null) {
-              groupNames = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              groupNames = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               groupNames.setAutoConstruct(true);
         }
         return groupNames;
@@ -191,7 +191,7 @@ public class ImportInstanceLaunchSpecification implements Serializable {
             this.groupNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> groupNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(groupNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> groupNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(groupNames.size());
         groupNamesCopy.addAll(groupNames);
         this.groupNames = groupNamesCopy;
     }
@@ -228,7 +228,7 @@ public class ImportInstanceLaunchSpecification implements Serializable {
         if (groupNames == null) {
             this.groupNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> groupNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(groupNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> groupNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(groupNames.size());
             groupNamesCopy.addAll(groupNames);
             this.groupNames = groupNamesCopy;
         }

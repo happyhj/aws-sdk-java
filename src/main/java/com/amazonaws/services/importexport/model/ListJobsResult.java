@@ -26,7 +26,7 @@ public class ListJobsResult implements Serializable {
     /**
      * A list container for Jobs returned by the ListJobs operation.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Job> jobs;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Job> jobs;
 
     /**
      * Indicates whether the list of jobs was truncated. If true, then call
@@ -41,7 +41,7 @@ public class ListJobsResult implements Serializable {
      */
     public java.util.List<Job> getJobs() {
         if (jobs == null) {
-              jobs = new com.amazonaws.internal.ListWithAutoConstructFlag<Job>();
+              jobs = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Job>();
               jobs.setAutoConstruct(true);
         }
         return jobs;
@@ -57,7 +57,7 @@ public class ListJobsResult implements Serializable {
             this.jobs = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Job> jobsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Job>(jobs.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Job> jobsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Job>(jobs.size());
         jobsCopy.addAll(jobs);
         this.jobs = jobsCopy;
     }
@@ -94,7 +94,7 @@ public class ListJobsResult implements Serializable {
         if (jobs == null) {
             this.jobs = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Job> jobsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Job>(jobs.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Job> jobsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Job>(jobs.size());
             jobsCopy.addAll(jobs);
             this.jobs = jobsCopy;
         }

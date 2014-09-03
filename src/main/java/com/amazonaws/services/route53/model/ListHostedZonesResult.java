@@ -27,7 +27,7 @@ public class ListHostedZonesResult implements Serializable {
      * A complex type that contains information about the hosted zones
      * associated with the current AWS account.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<HostedZone> hostedZones;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<HostedZone> hostedZones;
 
     /**
      * If the request returned more than one page of results, submit another
@@ -81,7 +81,7 @@ public class ListHostedZonesResult implements Serializable {
      */
     public java.util.List<HostedZone> getHostedZones() {
         if (hostedZones == null) {
-              hostedZones = new com.amazonaws.internal.ListWithAutoConstructFlag<HostedZone>();
+              hostedZones = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<HostedZone>();
               hostedZones.setAutoConstruct(true);
         }
         return hostedZones;
@@ -99,7 +99,7 @@ public class ListHostedZonesResult implements Serializable {
             this.hostedZones = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<HostedZone> hostedZonesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<HostedZone>(hostedZones.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<HostedZone> hostedZonesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<HostedZone>(hostedZones.size());
         hostedZonesCopy.addAll(hostedZones);
         this.hostedZones = hostedZonesCopy;
     }
@@ -140,7 +140,7 @@ public class ListHostedZonesResult implements Serializable {
         if (hostedZones == null) {
             this.hostedZones = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<HostedZone> hostedZonesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<HostedZone>(hostedZones.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<HostedZone> hostedZonesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<HostedZone>(hostedZones.size());
             hostedZonesCopy.addAll(hostedZones);
             this.hostedZones = hostedZonesCopy;
         }

@@ -41,7 +41,7 @@ public class OrderableClusterOption implements Serializable {
     /**
      * A list of availability zones for the orderable cluster.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<AvailabilityZone> availabilityZones;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AvailabilityZone> availabilityZones;
 
     /**
      * The version of the orderable cluster.
@@ -149,7 +149,7 @@ public class OrderableClusterOption implements Serializable {
      */
     public java.util.List<AvailabilityZone> getAvailabilityZones() {
         if (availabilityZones == null) {
-              availabilityZones = new com.amazonaws.internal.ListWithAutoConstructFlag<AvailabilityZone>();
+              availabilityZones = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AvailabilityZone>();
               availabilityZones.setAutoConstruct(true);
         }
         return availabilityZones;
@@ -165,7 +165,7 @@ public class OrderableClusterOption implements Serializable {
             this.availabilityZones = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<AvailabilityZone> availabilityZonesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<AvailabilityZone>(availabilityZones.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AvailabilityZone> availabilityZonesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AvailabilityZone>(availabilityZones.size());
         availabilityZonesCopy.addAll(availabilityZones);
         this.availabilityZones = availabilityZonesCopy;
     }
@@ -202,7 +202,7 @@ public class OrderableClusterOption implements Serializable {
         if (availabilityZones == null) {
             this.availabilityZones = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<AvailabilityZone> availabilityZonesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<AvailabilityZone>(availabilityZones.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AvailabilityZone> availabilityZonesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AvailabilityZone>(availabilityZones.size());
             availabilityZonesCopy.addAll(availabilityZones);
             this.availabilityZones = availabilityZonesCopy;
         }

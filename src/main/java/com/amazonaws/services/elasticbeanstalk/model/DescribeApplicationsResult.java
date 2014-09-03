@@ -26,7 +26,7 @@ public class DescribeApplicationsResult implements Serializable {
     /**
      * This parameter contains a list of <a>ApplicationDescription</a>.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ApplicationDescription> applications;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ApplicationDescription> applications;
 
     /**
      * This parameter contains a list of <a>ApplicationDescription</a>.
@@ -35,7 +35,7 @@ public class DescribeApplicationsResult implements Serializable {
      */
     public java.util.List<ApplicationDescription> getApplications() {
         if (applications == null) {
-              applications = new com.amazonaws.internal.ListWithAutoConstructFlag<ApplicationDescription>();
+              applications = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ApplicationDescription>();
               applications.setAutoConstruct(true);
         }
         return applications;
@@ -51,7 +51,7 @@ public class DescribeApplicationsResult implements Serializable {
             this.applications = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ApplicationDescription> applicationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ApplicationDescription>(applications.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ApplicationDescription> applicationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ApplicationDescription>(applications.size());
         applicationsCopy.addAll(applications);
         this.applications = applicationsCopy;
     }
@@ -88,7 +88,7 @@ public class DescribeApplicationsResult implements Serializable {
         if (applications == null) {
             this.applications = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ApplicationDescription> applicationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ApplicationDescription>(applications.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ApplicationDescription> applicationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ApplicationDescription>(applications.size());
             applicationsCopy.addAll(applications);
             this.applications = applicationsCopy;
         }

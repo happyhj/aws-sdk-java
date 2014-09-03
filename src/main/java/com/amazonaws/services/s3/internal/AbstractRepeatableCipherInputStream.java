@@ -21,7 +21,7 @@ import java.io.FilterInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-import com.amazonaws.sdkutil.SdkFilterInputStream;
+import com.amazonaws.client.util.sdk.SdkFilterInputStream;
 
 /**
  * @deprecated this class is no longer used and will be removed in the future

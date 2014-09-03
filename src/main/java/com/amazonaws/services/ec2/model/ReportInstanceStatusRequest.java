@@ -38,7 +38,7 @@ public class ReportInstanceStatusRequest extends AmazonWebServiceRequest impleme
     /**
      * One or more instances.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> instances;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> instances;
 
     /**
      * The status of all instances listed.
@@ -78,7 +78,7 @@ public class ReportInstanceStatusRequest extends AmazonWebServiceRequest impleme
      * <li><p><code>other</code>: [explain using the description
      * parameter]</li> </ul>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> reasonCodes;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> reasonCodes;
 
     /**
      * Descriptive text about the health state of your instance.
@@ -92,7 +92,7 @@ public class ReportInstanceStatusRequest extends AmazonWebServiceRequest impleme
      */
     public java.util.List<String> getInstances() {
         if (instances == null) {
-              instances = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              instances = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               instances.setAutoConstruct(true);
         }
         return instances;
@@ -108,7 +108,7 @@ public class ReportInstanceStatusRequest extends AmazonWebServiceRequest impleme
             this.instances = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> instancesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(instances.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> instancesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(instances.size());
         instancesCopy.addAll(instances);
         this.instances = instancesCopy;
     }
@@ -145,7 +145,7 @@ public class ReportInstanceStatusRequest extends AmazonWebServiceRequest impleme
         if (instances == null) {
             this.instances = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> instancesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(instances.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> instancesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(instances.size());
             instancesCopy.addAll(instances);
             this.instances = instancesCopy;
         }
@@ -342,7 +342,7 @@ public class ReportInstanceStatusRequest extends AmazonWebServiceRequest impleme
      */
     public java.util.List<String> getReasonCodes() {
         if (reasonCodes == null) {
-              reasonCodes = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              reasonCodes = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               reasonCodes.setAutoConstruct(true);
         }
         return reasonCodes;
@@ -392,7 +392,7 @@ public class ReportInstanceStatusRequest extends AmazonWebServiceRequest impleme
             this.reasonCodes = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> reasonCodesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(reasonCodes.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> reasonCodesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(reasonCodes.size());
         reasonCodesCopy.addAll(reasonCodes);
         this.reasonCodes = reasonCodesCopy;
     }
@@ -497,7 +497,7 @@ public class ReportInstanceStatusRequest extends AmazonWebServiceRequest impleme
         if (reasonCodes == null) {
             this.reasonCodes = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> reasonCodesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(reasonCodes.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> reasonCodesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(reasonCodes.size());
             reasonCodesCopy.addAll(reasonCodes);
             this.reasonCodes = reasonCodesCopy;
         }

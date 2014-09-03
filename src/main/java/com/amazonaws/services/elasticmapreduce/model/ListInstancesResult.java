@@ -26,7 +26,7 @@ public class ListInstancesResult implements Serializable {
     /**
      * The list of instances for the cluster and given filters.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Instance> instances;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Instance> instances;
 
     /**
      * The pagination token that indicates the next set of results to
@@ -41,7 +41,7 @@ public class ListInstancesResult implements Serializable {
      */
     public java.util.List<Instance> getInstances() {
         if (instances == null) {
-              instances = new com.amazonaws.internal.ListWithAutoConstructFlag<Instance>();
+              instances = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Instance>();
               instances.setAutoConstruct(true);
         }
         return instances;
@@ -57,7 +57,7 @@ public class ListInstancesResult implements Serializable {
             this.instances = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Instance> instancesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Instance>(instances.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Instance> instancesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Instance>(instances.size());
         instancesCopy.addAll(instances);
         this.instances = instancesCopy;
     }
@@ -94,7 +94,7 @@ public class ListInstancesResult implements Serializable {
         if (instances == null) {
             this.instances = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Instance> instancesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Instance>(instances.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Instance> instancesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Instance>(instances.size());
             instancesCopy.addAll(instances);
             this.instances = instancesCopy;
         }

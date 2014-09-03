@@ -19,7 +19,7 @@ import java.net.URI;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 
 public class HttpRequest {
 

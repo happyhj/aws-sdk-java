@@ -32,7 +32,7 @@ public class DescribeReplicationGroupsResult implements Serializable {
      * A list of replication groups. Each item in the list contains detailed
      * information about one replication group.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ReplicationGroup> replicationGroups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReplicationGroup> replicationGroups;
 
     /**
      * Provides an identifier to allow retrieval of paginated results.
@@ -76,7 +76,7 @@ public class DescribeReplicationGroupsResult implements Serializable {
      */
     public java.util.List<ReplicationGroup> getReplicationGroups() {
         if (replicationGroups == null) {
-              replicationGroups = new com.amazonaws.internal.ListWithAutoConstructFlag<ReplicationGroup>();
+              replicationGroups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReplicationGroup>();
               replicationGroups.setAutoConstruct(true);
         }
         return replicationGroups;
@@ -94,7 +94,7 @@ public class DescribeReplicationGroupsResult implements Serializable {
             this.replicationGroups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ReplicationGroup> replicationGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ReplicationGroup>(replicationGroups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReplicationGroup> replicationGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReplicationGroup>(replicationGroups.size());
         replicationGroupsCopy.addAll(replicationGroups);
         this.replicationGroups = replicationGroupsCopy;
     }
@@ -135,7 +135,7 @@ public class DescribeReplicationGroupsResult implements Serializable {
         if (replicationGroups == null) {
             this.replicationGroups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ReplicationGroup> replicationGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ReplicationGroup>(replicationGroups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReplicationGroup> replicationGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReplicationGroup>(replicationGroups.size());
             replicationGroupsCopy.addAll(replicationGroups);
             this.replicationGroups = replicationGroupsCopy;
         }

@@ -21,7 +21,7 @@ import java.io.Serializable;
  */
 public class GetLogEventsResult implements Serializable {
 
-    private com.amazonaws.internal.ListWithAutoConstructFlag<OutputLogEvent> events;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OutputLogEvent> events;
 
     /**
      * A string token used for pagination that points to the next page of
@@ -44,7 +44,7 @@ public class GetLogEventsResult implements Serializable {
      */
     public java.util.List<OutputLogEvent> getEvents() {
         if (events == null) {
-              events = new com.amazonaws.internal.ListWithAutoConstructFlag<OutputLogEvent>();
+              events = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OutputLogEvent>();
               events.setAutoConstruct(true);
         }
         return events;
@@ -60,7 +60,7 @@ public class GetLogEventsResult implements Serializable {
             this.events = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<OutputLogEvent> eventsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<OutputLogEvent>(events.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OutputLogEvent> eventsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OutputLogEvent>(events.size());
         eventsCopy.addAll(events);
         this.events = eventsCopy;
     }
@@ -97,7 +97,7 @@ public class GetLogEventsResult implements Serializable {
         if (events == null) {
             this.events = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<OutputLogEvent> eventsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<OutputLogEvent>(events.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OutputLogEvent> eventsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OutputLogEvent>(events.size());
             eventsCopy.addAll(events);
             this.events = eventsCopy;
         }

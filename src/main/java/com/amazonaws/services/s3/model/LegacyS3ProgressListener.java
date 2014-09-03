@@ -14,18 +14,18 @@
  */
 package com.amazonaws.services.s3.model;
 
-import com.amazonaws.event.DeliveryMode;
+import com.amazonaws.network.event.DeliveryMode;
 
 /**
  * A proxy class that wraps the deprecated S3 progress listener and implements
- * the new {@link com.amazonaws.event.ProgressListener} interface.
+ * the new {@link com.amazonaws.network.event.ProgressListener} interface.
  *
  * @see ProgressListener
- * @see com.amazonaws.event.ProgressListener
+ * @see com.amazonaws.network.event.ProgressListener
  */
 @Deprecated
 public class LegacyS3ProgressListener implements
-        com.amazonaws.event.ProgressListener, DeliveryMode {
+        com.amazonaws.network.event.ProgressListener, DeliveryMode {
     private final ProgressListener listener;
     private final boolean syncCallSafe;
 
@@ -42,12 +42,12 @@ public class LegacyS3ProgressListener implements
         return listener;
     }
 
-    public void progressChanged(com.amazonaws.event.ProgressEvent progressEvent) {
+    public void progressChanged(com.amazonaws.network.event.ProgressEvent progressEvent) {
         if (listener == null) return;
         listener.progressChanged(adaptToLegacyEvent(progressEvent));
     }
 
-    private ProgressEvent adaptToLegacyEvent(com.amazonaws.event.ProgressEvent event) {
+    private ProgressEvent adaptToLegacyEvent(com.amazonaws.network.event.ProgressEvent event) {
         long bytes = event.getBytesTransferred();
         if (bytes != 0) {
             return new ProgressEvent((int)bytes);

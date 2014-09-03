@@ -122,7 +122,7 @@ public class Snapshot implements Serializable {
      * snapshot. Returns <code>null</code> if no accounts are authorized.
      * Visible only to the snapshot owner.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<AccountWithRestoreAccess> accountsWithRestoreAccess;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AccountWithRestoreAccess> accountsWithRestoreAccess;
 
     /**
      * For manual snapshots, the AWS customer account used to create or copy
@@ -817,7 +817,7 @@ public class Snapshot implements Serializable {
      */
     public java.util.List<AccountWithRestoreAccess> getAccountsWithRestoreAccess() {
         if (accountsWithRestoreAccess == null) {
-              accountsWithRestoreAccess = new com.amazonaws.internal.ListWithAutoConstructFlag<AccountWithRestoreAccess>();
+              accountsWithRestoreAccess = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AccountWithRestoreAccess>();
               accountsWithRestoreAccess.setAutoConstruct(true);
         }
         return accountsWithRestoreAccess;
@@ -837,7 +837,7 @@ public class Snapshot implements Serializable {
             this.accountsWithRestoreAccess = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<AccountWithRestoreAccess> accountsWithRestoreAccessCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<AccountWithRestoreAccess>(accountsWithRestoreAccess.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AccountWithRestoreAccess> accountsWithRestoreAccessCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AccountWithRestoreAccess>(accountsWithRestoreAccess.size());
         accountsWithRestoreAccessCopy.addAll(accountsWithRestoreAccess);
         this.accountsWithRestoreAccess = accountsWithRestoreAccessCopy;
     }
@@ -882,7 +882,7 @@ public class Snapshot implements Serializable {
         if (accountsWithRestoreAccess == null) {
             this.accountsWithRestoreAccess = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<AccountWithRestoreAccess> accountsWithRestoreAccessCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<AccountWithRestoreAccess>(accountsWithRestoreAccess.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AccountWithRestoreAccess> accountsWithRestoreAccessCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AccountWithRestoreAccess>(accountsWithRestoreAccess.size());
             accountsWithRestoreAccessCopy.addAll(accountsWithRestoreAccess);
             this.accountsWithRestoreAccess = accountsWithRestoreAccessCopy;
         }

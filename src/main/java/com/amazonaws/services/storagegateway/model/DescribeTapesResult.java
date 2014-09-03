@@ -26,7 +26,7 @@ public class DescribeTapesResult implements Serializable {
     /**
      * An array of virtual tape descriptions.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Tape> tapes;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tape> tapes;
 
     /**
      * An opaque string which can be used as part of a subsequent
@@ -46,7 +46,7 @@ public class DescribeTapesResult implements Serializable {
      */
     public java.util.List<Tape> getTapes() {
         if (tapes == null) {
-              tapes = new com.amazonaws.internal.ListWithAutoConstructFlag<Tape>();
+              tapes = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tape>();
               tapes.setAutoConstruct(true);
         }
         return tapes;
@@ -62,7 +62,7 @@ public class DescribeTapesResult implements Serializable {
             this.tapes = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Tape> tapesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tape>(tapes.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tape> tapesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tape>(tapes.size());
         tapesCopy.addAll(tapes);
         this.tapes = tapesCopy;
     }
@@ -99,7 +99,7 @@ public class DescribeTapesResult implements Serializable {
         if (tapes == null) {
             this.tapes = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Tape> tapesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tape>(tapes.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tape> tapesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tape>(tapes.size());
             tapesCopy.addAll(tapes);
             this.tapes = tapesCopy;
         }

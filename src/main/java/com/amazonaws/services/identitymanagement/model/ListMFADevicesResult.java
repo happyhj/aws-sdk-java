@@ -27,7 +27,7 @@ public class ListMFADevicesResult implements Serializable {
     /**
      * A list of MFA devices.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<MFADevice> mFADevices;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MFADevice> mFADevices;
 
     /**
      * A flag that indicates whether there are more MFA devices to list. If
@@ -55,7 +55,7 @@ public class ListMFADevicesResult implements Serializable {
      */
     public java.util.List<MFADevice> getMFADevices() {
         if (mFADevices == null) {
-              mFADevices = new com.amazonaws.internal.ListWithAutoConstructFlag<MFADevice>();
+              mFADevices = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MFADevice>();
               mFADevices.setAutoConstruct(true);
         }
         return mFADevices;
@@ -71,7 +71,7 @@ public class ListMFADevicesResult implements Serializable {
             this.mFADevices = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<MFADevice> mFADevicesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<MFADevice>(mFADevices.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MFADevice> mFADevicesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MFADevice>(mFADevices.size());
         mFADevicesCopy.addAll(mFADevices);
         this.mFADevices = mFADevicesCopy;
     }
@@ -108,7 +108,7 @@ public class ListMFADevicesResult implements Serializable {
         if (mFADevices == null) {
             this.mFADevices = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<MFADevice> mFADevicesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<MFADevice>(mFADevices.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MFADevice> mFADevicesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<MFADevice>(mFADevices.size());
             mFADevicesCopy.addAll(mFADevices);
             this.mFADevices = mFADevicesCopy;
         }

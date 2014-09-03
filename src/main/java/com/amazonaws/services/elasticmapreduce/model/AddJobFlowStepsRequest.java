@@ -70,7 +70,7 @@ public class AddJobFlowStepsRequest extends AmazonWebServiceRequest implements S
     /**
      * A list of <a>StepConfig</a> to be executed by the job flow.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<StepConfig> steps;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StepConfig> steps;
 
     /**
      * Default constructor for a new AddJobFlowStepsRequest object.  Callers should use the
@@ -171,7 +171,7 @@ public class AddJobFlowStepsRequest extends AmazonWebServiceRequest implements S
      */
     public java.util.List<StepConfig> getSteps() {
         if (steps == null) {
-              steps = new com.amazonaws.internal.ListWithAutoConstructFlag<StepConfig>();
+              steps = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StepConfig>();
               steps.setAutoConstruct(true);
         }
         return steps;
@@ -187,7 +187,7 @@ public class AddJobFlowStepsRequest extends AmazonWebServiceRequest implements S
             this.steps = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<StepConfig> stepsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<StepConfig>(steps.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StepConfig> stepsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StepConfig>(steps.size());
         stepsCopy.addAll(steps);
         this.steps = stepsCopy;
     }
@@ -224,7 +224,7 @@ public class AddJobFlowStepsRequest extends AmazonWebServiceRequest implements S
         if (steps == null) {
             this.steps = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<StepConfig> stepsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<StepConfig>(steps.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StepConfig> stepsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StepConfig>(steps.size());
             stepsCopy.addAll(steps);
             this.steps = stepsCopy;
         }

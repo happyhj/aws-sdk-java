@@ -118,7 +118,7 @@ public class StartChildWorkflowExecutionInitiatedEventAttributes implements Seri
      * <b>Constraints:</b><br/>
      * <b>Length: </b>0 - 5<br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> tagList;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> tagList;
 
     /**
      * The <code>workflowId</code> of the child workflow execution.
@@ -711,7 +711,7 @@ public class StartChildWorkflowExecutionInitiatedEventAttributes implements Seri
      */
     public java.util.List<String> getTagList() {
         if (tagList == null) {
-              tagList = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              tagList = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               tagList.setAutoConstruct(true);
         }
         return tagList;
@@ -730,7 +730,7 @@ public class StartChildWorkflowExecutionInitiatedEventAttributes implements Seri
             this.tagList = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> tagListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(tagList.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> tagListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(tagList.size());
         tagListCopy.addAll(tagList);
         this.tagList = tagListCopy;
     }
@@ -773,7 +773,7 @@ public class StartChildWorkflowExecutionInitiatedEventAttributes implements Seri
         if (tagList == null) {
             this.tagList = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> tagListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(tagList.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> tagListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(tagList.size());
             tagListCopy.addAll(tagList);
             this.tagList = tagListCopy;
         }

@@ -16,7 +16,7 @@ package com.amazonaws.services.simpledb;
 
 import java.util.Map;
 
-import com.amazonaws.ResponseMetadata;
+import com.amazonaws.network.ResponseMetadata;
 
 /**
  * Extension of {@link ResponseMetadata} with Amazon SimpleDB specific data. In

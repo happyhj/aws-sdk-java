@@ -142,7 +142,7 @@ public class ContinueAsNewWorkflowExecutionDecisionAttributes implements Seriali
      * <b>Constraints:</b><br/>
      * <b>Length: </b>0 - 5<br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> tagList;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> tagList;
 
     private String workflowTypeVersion;
 
@@ -689,7 +689,7 @@ public class ContinueAsNewWorkflowExecutionDecisionAttributes implements Seriali
      */
     public java.util.List<String> getTagList() {
         if (tagList == null) {
-              tagList = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              tagList = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               tagList.setAutoConstruct(true);
         }
         return tagList;
@@ -714,7 +714,7 @@ public class ContinueAsNewWorkflowExecutionDecisionAttributes implements Seriali
             this.tagList = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> tagListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(tagList.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> tagListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(tagList.size());
         tagListCopy.addAll(tagList);
         this.tagList = tagListCopy;
     }
@@ -769,7 +769,7 @@ public class ContinueAsNewWorkflowExecutionDecisionAttributes implements Seriali
         if (tagList == null) {
             this.tagList = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> tagListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(tagList.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> tagListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(tagList.size());
             tagListCopy.addAll(tagList);
             this.tagList = tagListCopy;
         }

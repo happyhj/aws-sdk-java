@@ -85,7 +85,7 @@ public class CreateLoadBalancerRequest extends AmazonWebServiceRequest implement
      * A list of the following tuples: Protocol, LoadBalancerPort,
      * InstanceProtocol, InstancePort, and SSLCertificateId.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Listener> listeners;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Listener> listeners;
 
     /**
      * A list of Availability Zones. <p> At least one Availability Zone must
@@ -95,18 +95,18 @@ public class CreateLoadBalancerRequest extends AmazonWebServiceRequest implement
      * the creation of the load balancer by calling
      * <a>EnableAvailabilityZonesForLoadBalancer</a> action.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> availabilityZones;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> availabilityZones;
 
     /**
      * A list of subnet IDs in your VPC to attach to your load balancer.
      * Specify one subnet per Availability Zone.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> subnets;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> subnets;
 
     /**
      * The security groups to assign to your load balancer within your VPC.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> securityGroups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> securityGroups;
 
     /**
      * The type of a load balancer. <p>By default, Elastic Load Balancing
@@ -130,7 +130,7 @@ public class CreateLoadBalancerRequest extends AmazonWebServiceRequest implement
      * <b>Constraints:</b><br/>
      * <b>Length: </b>1 - <br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tags;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tags;
 
     /**
      * Default constructor for a new CreateLoadBalancerRequest object.  Callers should use the
@@ -231,7 +231,7 @@ public class CreateLoadBalancerRequest extends AmazonWebServiceRequest implement
      */
     public java.util.List<Listener> getListeners() {
         if (listeners == null) {
-              listeners = new com.amazonaws.internal.ListWithAutoConstructFlag<Listener>();
+              listeners = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Listener>();
               listeners.setAutoConstruct(true);
         }
         return listeners;
@@ -249,7 +249,7 @@ public class CreateLoadBalancerRequest extends AmazonWebServiceRequest implement
             this.listeners = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Listener> listenersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Listener>(listeners.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Listener> listenersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Listener>(listeners.size());
         listenersCopy.addAll(listeners);
         this.listeners = listenersCopy;
     }
@@ -290,7 +290,7 @@ public class CreateLoadBalancerRequest extends AmazonWebServiceRequest implement
         if (listeners == null) {
             this.listeners = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Listener> listenersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Listener>(listeners.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Listener> listenersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Listener>(listeners.size());
             listenersCopy.addAll(listeners);
             this.listeners = listenersCopy;
         }
@@ -315,7 +315,7 @@ public class CreateLoadBalancerRequest extends AmazonWebServiceRequest implement
      */
     public java.util.List<String> getAvailabilityZones() {
         if (availabilityZones == null) {
-              availabilityZones = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              availabilityZones = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               availabilityZones.setAutoConstruct(true);
         }
         return availabilityZones;
@@ -341,7 +341,7 @@ public class CreateLoadBalancerRequest extends AmazonWebServiceRequest implement
             this.availabilityZones = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> availabilityZonesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(availabilityZones.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> availabilityZonesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(availabilityZones.size());
         availabilityZonesCopy.addAll(availabilityZones);
         this.availabilityZones = availabilityZonesCopy;
     }
@@ -398,7 +398,7 @@ public class CreateLoadBalancerRequest extends AmazonWebServiceRequest implement
         if (availabilityZones == null) {
             this.availabilityZones = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> availabilityZonesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(availabilityZones.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> availabilityZonesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(availabilityZones.size());
             availabilityZonesCopy.addAll(availabilityZones);
             this.availabilityZones = availabilityZonesCopy;
         }
@@ -415,7 +415,7 @@ public class CreateLoadBalancerRequest extends AmazonWebServiceRequest implement
      */
     public java.util.List<String> getSubnets() {
         if (subnets == null) {
-              subnets = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              subnets = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               subnets.setAutoConstruct(true);
         }
         return subnets;
@@ -433,7 +433,7 @@ public class CreateLoadBalancerRequest extends AmazonWebServiceRequest implement
             this.subnets = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> subnetsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(subnets.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> subnetsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(subnets.size());
         subnetsCopy.addAll(subnets);
         this.subnets = subnetsCopy;
     }
@@ -474,7 +474,7 @@ public class CreateLoadBalancerRequest extends AmazonWebServiceRequest implement
         if (subnets == null) {
             this.subnets = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> subnetsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(subnets.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> subnetsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(subnets.size());
             subnetsCopy.addAll(subnets);
             this.subnets = subnetsCopy;
         }
@@ -489,7 +489,7 @@ public class CreateLoadBalancerRequest extends AmazonWebServiceRequest implement
      */
     public java.util.List<String> getSecurityGroups() {
         if (securityGroups == null) {
-              securityGroups = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              securityGroups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               securityGroups.setAutoConstruct(true);
         }
         return securityGroups;
@@ -505,7 +505,7 @@ public class CreateLoadBalancerRequest extends AmazonWebServiceRequest implement
             this.securityGroups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> securityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(securityGroups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> securityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(securityGroups.size());
         securityGroupsCopy.addAll(securityGroups);
         this.securityGroups = securityGroupsCopy;
     }
@@ -542,7 +542,7 @@ public class CreateLoadBalancerRequest extends AmazonWebServiceRequest implement
         if (securityGroups == null) {
             this.securityGroups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> securityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(securityGroups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> securityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(securityGroups.size());
             securityGroupsCopy.addAll(securityGroups);
             this.securityGroups = securityGroupsCopy;
         }
@@ -651,7 +651,7 @@ public class CreateLoadBalancerRequest extends AmazonWebServiceRequest implement
      */
     public java.util.List<Tag> getTags() {
         if (tags == null) {
-              tags = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>();
+              tags = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>();
               tags.setAutoConstruct(true);
         }
         return tags;
@@ -674,7 +674,7 @@ public class CreateLoadBalancerRequest extends AmazonWebServiceRequest implement
             this.tags = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tags.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tags.size());
         tagsCopy.addAll(tags);
         this.tags = tagsCopy;
     }
@@ -725,7 +725,7 @@ public class CreateLoadBalancerRequest extends AmazonWebServiceRequest implement
         if (tags == null) {
             this.tags = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tags.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tags.size());
             tagsCopy.addAll(tags);
             this.tags = tagsCopy;
         }

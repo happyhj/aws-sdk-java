@@ -26,7 +26,7 @@ public class DescribeLoadBalancerPoliciesResult implements Serializable {
     /**
      * A list of policy description structures.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<PolicyDescription> policyDescriptions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PolicyDescription> policyDescriptions;
 
     /**
      * A list of policy description structures.
@@ -35,7 +35,7 @@ public class DescribeLoadBalancerPoliciesResult implements Serializable {
      */
     public java.util.List<PolicyDescription> getPolicyDescriptions() {
         if (policyDescriptions == null) {
-              policyDescriptions = new com.amazonaws.internal.ListWithAutoConstructFlag<PolicyDescription>();
+              policyDescriptions = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PolicyDescription>();
               policyDescriptions.setAutoConstruct(true);
         }
         return policyDescriptions;
@@ -51,7 +51,7 @@ public class DescribeLoadBalancerPoliciesResult implements Serializable {
             this.policyDescriptions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<PolicyDescription> policyDescriptionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<PolicyDescription>(policyDescriptions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PolicyDescription> policyDescriptionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PolicyDescription>(policyDescriptions.size());
         policyDescriptionsCopy.addAll(policyDescriptions);
         this.policyDescriptions = policyDescriptionsCopy;
     }
@@ -88,7 +88,7 @@ public class DescribeLoadBalancerPoliciesResult implements Serializable {
         if (policyDescriptions == null) {
             this.policyDescriptions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<PolicyDescription> policyDescriptionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<PolicyDescription>(policyDescriptions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PolicyDescription> policyDescriptionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PolicyDescription>(policyDescriptions.size());
             policyDescriptionsCopy.addAll(policyDescriptions);
             this.policyDescriptions = policyDescriptionsCopy;
         }

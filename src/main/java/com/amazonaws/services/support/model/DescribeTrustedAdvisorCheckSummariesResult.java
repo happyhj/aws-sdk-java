@@ -27,7 +27,7 @@ public class DescribeTrustedAdvisorCheckSummariesResult implements Serializable 
     /**
      * The summary information for the requested Trusted Advisor checks.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<TrustedAdvisorCheckSummary> summaries;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TrustedAdvisorCheckSummary> summaries;
 
     /**
      * The summary information for the requested Trusted Advisor checks.
@@ -36,7 +36,7 @@ public class DescribeTrustedAdvisorCheckSummariesResult implements Serializable 
      */
     public java.util.List<TrustedAdvisorCheckSummary> getSummaries() {
         if (summaries == null) {
-              summaries = new com.amazonaws.internal.ListWithAutoConstructFlag<TrustedAdvisorCheckSummary>();
+              summaries = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TrustedAdvisorCheckSummary>();
               summaries.setAutoConstruct(true);
         }
         return summaries;
@@ -52,7 +52,7 @@ public class DescribeTrustedAdvisorCheckSummariesResult implements Serializable 
             this.summaries = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<TrustedAdvisorCheckSummary> summariesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<TrustedAdvisorCheckSummary>(summaries.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TrustedAdvisorCheckSummary> summariesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TrustedAdvisorCheckSummary>(summaries.size());
         summariesCopy.addAll(summaries);
         this.summaries = summariesCopy;
     }
@@ -89,7 +89,7 @@ public class DescribeTrustedAdvisorCheckSummariesResult implements Serializable 
         if (summaries == null) {
             this.summaries = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<TrustedAdvisorCheckSummary> summariesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<TrustedAdvisorCheckSummary>(summaries.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TrustedAdvisorCheckSummary> summariesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TrustedAdvisorCheckSummary>(summaries.size());
             summariesCopy.addAll(summaries);
             this.summaries = summariesCopy;
         }

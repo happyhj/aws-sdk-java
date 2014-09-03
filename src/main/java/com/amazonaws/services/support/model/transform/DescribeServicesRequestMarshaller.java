@@ -20,12 +20,12 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.support.model.DescribeServicesRequest;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Describe Services Request Marshaller
@@ -50,7 +50,7 @@ public class DescribeServicesRequestMarshaller implements Marshaller<Request<Des
 
           jsonWriter.object();
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> serviceCodeListList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(describeServicesRequest.getServiceCodeList());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> serviceCodeListList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(describeServicesRequest.getServiceCodeList());
             if (serviceCodeListList != null && !(serviceCodeListList.isAutoConstruct() && serviceCodeListList.isEmpty())) {
 
                 jsonWriter.key("serviceCodeList");

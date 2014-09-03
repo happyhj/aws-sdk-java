@@ -67,7 +67,7 @@ public class RespondDecisionTaskCompletedRequest extends AmazonWebServiceRequest
      * processing this decision task. See the docs for the <a>Decision</a>
      * structure for details.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Decision> decisions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Decision> decisions;
 
     /**
      * User defined context to add to workflow execution.
@@ -154,7 +154,7 @@ public class RespondDecisionTaskCompletedRequest extends AmazonWebServiceRequest
      */
     public java.util.List<Decision> getDecisions() {
         if (decisions == null) {
-              decisions = new com.amazonaws.internal.ListWithAutoConstructFlag<Decision>();
+              decisions = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Decision>();
               decisions.setAutoConstruct(true);
         }
         return decisions;
@@ -174,7 +174,7 @@ public class RespondDecisionTaskCompletedRequest extends AmazonWebServiceRequest
             this.decisions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Decision> decisionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Decision>(decisions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Decision> decisionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Decision>(decisions.size());
         decisionsCopy.addAll(decisions);
         this.decisions = decisionsCopy;
     }
@@ -219,7 +219,7 @@ public class RespondDecisionTaskCompletedRequest extends AmazonWebServiceRequest
         if (decisions == null) {
             this.decisions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Decision> decisionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Decision>(decisions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Decision> decisionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Decision>(decisions.size());
             decisionsCopy.addAll(decisions);
             this.decisions = decisionsCopy;
         }

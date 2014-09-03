@@ -29,7 +29,7 @@ public class HadoopJarStepConfig implements Serializable {
      * A list of Java properties that are set when the step runs. You can use
      * these properties to pass key value pairs to your main function.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<KeyValue> properties;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<KeyValue> properties;
 
     /**
      * A path to a JAR file run during the step.
@@ -55,7 +55,7 @@ public class HadoopJarStepConfig implements Serializable {
      * A list of command line arguments passed to the JAR file's main
      * function when executed.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> args;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> args;
 
     /**
      * Default constructor for a new HadoopJarStepConfig object.  Callers should use the
@@ -83,7 +83,7 @@ public class HadoopJarStepConfig implements Serializable {
      */
     public java.util.List<KeyValue> getProperties() {
         if (properties == null) {
-              properties = new com.amazonaws.internal.ListWithAutoConstructFlag<KeyValue>();
+              properties = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<KeyValue>();
               properties.setAutoConstruct(true);
         }
         return properties;
@@ -101,7 +101,7 @@ public class HadoopJarStepConfig implements Serializable {
             this.properties = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<KeyValue> propertiesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<KeyValue>(properties.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<KeyValue> propertiesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<KeyValue>(properties.size());
         propertiesCopy.addAll(properties);
         this.properties = propertiesCopy;
     }
@@ -142,7 +142,7 @@ public class HadoopJarStepConfig implements Serializable {
         if (properties == null) {
             this.properties = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<KeyValue> propertiesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<KeyValue>(properties.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<KeyValue> propertiesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<KeyValue>(properties.size());
             propertiesCopy.addAll(properties);
             this.properties = propertiesCopy;
         }
@@ -261,7 +261,7 @@ public class HadoopJarStepConfig implements Serializable {
      */
     public java.util.List<String> getArgs() {
         if (args == null) {
-              args = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              args = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               args.setAutoConstruct(true);
         }
         return args;
@@ -279,7 +279,7 @@ public class HadoopJarStepConfig implements Serializable {
             this.args = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> argsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(args.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> argsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(args.size());
         argsCopy.addAll(args);
         this.args = argsCopy;
     }
@@ -320,7 +320,7 @@ public class HadoopJarStepConfig implements Serializable {
         if (args == null) {
             this.args = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> argsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(args.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> argsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(args.size());
             argsCopy.addAll(args);
             this.args = argsCopy;
         }

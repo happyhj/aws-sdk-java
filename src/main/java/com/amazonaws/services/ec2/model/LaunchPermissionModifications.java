@@ -27,13 +27,13 @@ public class LaunchPermissionModifications implements Serializable {
      * The AWS account ID to add to the list of launch permissions for the
      * AMI.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<LaunchPermission> add;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LaunchPermission> add;
 
     /**
      * The AWS account ID to remove from the list of launch permissions for
      * the AMI.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<LaunchPermission> remove;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LaunchPermission> remove;
 
     /**
      * The AWS account ID to add to the list of launch permissions for the
@@ -44,7 +44,7 @@ public class LaunchPermissionModifications implements Serializable {
      */
     public java.util.List<LaunchPermission> getAdd() {
         if (add == null) {
-              add = new com.amazonaws.internal.ListWithAutoConstructFlag<LaunchPermission>();
+              add = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LaunchPermission>();
               add.setAutoConstruct(true);
         }
         return add;
@@ -62,7 +62,7 @@ public class LaunchPermissionModifications implements Serializable {
             this.add = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<LaunchPermission> addCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<LaunchPermission>(add.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LaunchPermission> addCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LaunchPermission>(add.size());
         addCopy.addAll(add);
         this.add = addCopy;
     }
@@ -103,7 +103,7 @@ public class LaunchPermissionModifications implements Serializable {
         if (add == null) {
             this.add = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<LaunchPermission> addCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<LaunchPermission>(add.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LaunchPermission> addCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LaunchPermission>(add.size());
             addCopy.addAll(add);
             this.add = addCopy;
         }
@@ -120,7 +120,7 @@ public class LaunchPermissionModifications implements Serializable {
      */
     public java.util.List<LaunchPermission> getRemove() {
         if (remove == null) {
-              remove = new com.amazonaws.internal.ListWithAutoConstructFlag<LaunchPermission>();
+              remove = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LaunchPermission>();
               remove.setAutoConstruct(true);
         }
         return remove;
@@ -138,7 +138,7 @@ public class LaunchPermissionModifications implements Serializable {
             this.remove = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<LaunchPermission> removeCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<LaunchPermission>(remove.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LaunchPermission> removeCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LaunchPermission>(remove.size());
         removeCopy.addAll(remove);
         this.remove = removeCopy;
     }
@@ -179,7 +179,7 @@ public class LaunchPermissionModifications implements Serializable {
         if (remove == null) {
             this.remove = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<LaunchPermission> removeCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<LaunchPermission>(remove.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LaunchPermission> removeCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LaunchPermission>(remove.size());
             removeCopy.addAll(remove);
             this.remove = removeCopy;
         }

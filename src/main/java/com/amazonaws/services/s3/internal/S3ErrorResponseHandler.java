@@ -14,8 +14,8 @@
  */
 package com.amazonaws.services.s3.internal;
 
-import static com.amazonaws.util.XpathUtils.asString;
-import static com.amazonaws.util.XpathUtils.xpath;
+import static com.amazonaws.utility.XpathUtils.asString;
+import static com.amazonaws.utility.XpathUtils.xpath;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -27,14 +27,14 @@ import org.apache.commons.logging.LogFactory;
 import org.w3c.dom.Document;
 
 import com.amazonaws.client.handler.response.HttpResponseHandler;
+import com.amazonaws.client.util.sdk.IOUtils;
 import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.exception.AmazonServiceException.ErrorType;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.response.HttpResponse;
-import com.amazonaws.sdkutil.IOUtils;
 import com.amazonaws.services.s3.Headers;
 import com.amazonaws.services.s3.model.AmazonS3Exception;
-import com.amazonaws.util.XpathUtils;
+import com.amazonaws.utility.XpathUtils;
 
 /**
  * Response handler for S3 error responses. S3 error responses are different

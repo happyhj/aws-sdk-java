@@ -24,7 +24,7 @@ public class DescribeVpcPeeringConnectionsResult implements Serializable {
     /**
      * Information about the VPC peering connections
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<VpcPeeringConnection> vpcPeeringConnections;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VpcPeeringConnection> vpcPeeringConnections;
 
     /**
      * Information about the VPC peering connections
@@ -33,7 +33,7 @@ public class DescribeVpcPeeringConnectionsResult implements Serializable {
      */
     public java.util.List<VpcPeeringConnection> getVpcPeeringConnections() {
         if (vpcPeeringConnections == null) {
-              vpcPeeringConnections = new com.amazonaws.internal.ListWithAutoConstructFlag<VpcPeeringConnection>();
+              vpcPeeringConnections = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VpcPeeringConnection>();
               vpcPeeringConnections.setAutoConstruct(true);
         }
         return vpcPeeringConnections;
@@ -49,7 +49,7 @@ public class DescribeVpcPeeringConnectionsResult implements Serializable {
             this.vpcPeeringConnections = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<VpcPeeringConnection> vpcPeeringConnectionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<VpcPeeringConnection>(vpcPeeringConnections.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VpcPeeringConnection> vpcPeeringConnectionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VpcPeeringConnection>(vpcPeeringConnections.size());
         vpcPeeringConnectionsCopy.addAll(vpcPeeringConnections);
         this.vpcPeeringConnections = vpcPeeringConnectionsCopy;
     }
@@ -86,7 +86,7 @@ public class DescribeVpcPeeringConnectionsResult implements Serializable {
         if (vpcPeeringConnections == null) {
             this.vpcPeeringConnections = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<VpcPeeringConnection> vpcPeeringConnectionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<VpcPeeringConnection>(vpcPeeringConnections.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VpcPeeringConnection> vpcPeeringConnectionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VpcPeeringConnection>(vpcPeeringConnections.size());
             vpcPeeringConnectionsCopy.addAll(vpcPeeringConnections);
             this.vpcPeeringConnections = vpcPeeringConnectionsCopy;
         }

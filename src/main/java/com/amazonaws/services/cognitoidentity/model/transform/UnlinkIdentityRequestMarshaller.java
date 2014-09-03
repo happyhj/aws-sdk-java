@@ -21,12 +21,12 @@ import java.util.Map;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.cognitoidentity.model.UnlinkIdentityRequest;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Unlink Identity Request Marshaller
@@ -67,7 +67,7 @@ public class UnlinkIdentityRequestMarshaller implements Marshaller<Request<Unlin
                 jsonWriter.endObject();
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> loginsToRemoveList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(unlinkIdentityRequest.getLoginsToRemove());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> loginsToRemoveList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(unlinkIdentityRequest.getLoginsToRemove());
             if (loginsToRemoveList != null && !(loginsToRemoveList.isAutoConstruct() && loginsToRemoveList.isEmpty())) {
 
                 jsonWriter.key("LoginsToRemove");

@@ -78,7 +78,7 @@ public class SendEmailRequest extends AmazonWebServiceRequest implements Seriali
      * The reply-to email address(es) for the message. If the recipient
      * replies to the message, each reply-to address will receive the reply.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> replyToAddresses;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> replyToAddresses;
 
     /**
      * The email address to which bounces and complaints are to be forwarded
@@ -254,7 +254,7 @@ public class SendEmailRequest extends AmazonWebServiceRequest implements Seriali
      */
     public java.util.List<String> getReplyToAddresses() {
         if (replyToAddresses == null) {
-              replyToAddresses = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              replyToAddresses = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               replyToAddresses.setAutoConstruct(true);
         }
         return replyToAddresses;
@@ -272,7 +272,7 @@ public class SendEmailRequest extends AmazonWebServiceRequest implements Seriali
             this.replyToAddresses = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> replyToAddressesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(replyToAddresses.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> replyToAddressesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(replyToAddresses.size());
         replyToAddressesCopy.addAll(replyToAddresses);
         this.replyToAddresses = replyToAddressesCopy;
     }
@@ -313,7 +313,7 @@ public class SendEmailRequest extends AmazonWebServiceRequest implements Seriali
         if (replyToAddresses == null) {
             this.replyToAddresses = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> replyToAddressesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(replyToAddresses.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> replyToAddressesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(replyToAddresses.size());
             replyToAddressesCopy.addAll(replyToAddresses);
             this.replyToAddresses = replyToAddressesCopy;
         }

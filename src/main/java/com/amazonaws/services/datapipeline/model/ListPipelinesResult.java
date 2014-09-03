@@ -29,7 +29,7 @@ public class ListPipelinesResult implements Serializable {
      * pipelines, you can use these identifiers to call
      * <a>DescribePipelines</a> and <a>GetPipelineDefinition</a>.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<PipelineIdName> pipelineIdList;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PipelineIdName> pipelineIdList;
 
     /**
      * If not null, indicates the starting point for the set of pipeline
@@ -61,7 +61,7 @@ public class ListPipelinesResult implements Serializable {
      */
     public java.util.List<PipelineIdName> getPipelineIdList() {
         if (pipelineIdList == null) {
-              pipelineIdList = new com.amazonaws.internal.ListWithAutoConstructFlag<PipelineIdName>();
+              pipelineIdList = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PipelineIdName>();
               pipelineIdList.setAutoConstruct(true);
         }
         return pipelineIdList;
@@ -83,7 +83,7 @@ public class ListPipelinesResult implements Serializable {
             this.pipelineIdList = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<PipelineIdName> pipelineIdListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<PipelineIdName>(pipelineIdList.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PipelineIdName> pipelineIdListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PipelineIdName>(pipelineIdList.size());
         pipelineIdListCopy.addAll(pipelineIdList);
         this.pipelineIdList = pipelineIdListCopy;
     }
@@ -132,7 +132,7 @@ public class ListPipelinesResult implements Serializable {
         if (pipelineIdList == null) {
             this.pipelineIdList = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<PipelineIdName> pipelineIdListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<PipelineIdName>(pipelineIdList.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PipelineIdName> pipelineIdListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PipelineIdName>(pipelineIdList.size());
             pipelineIdListCopy.addAll(pipelineIdList);
             this.pipelineIdList = pipelineIdListCopy;
         }

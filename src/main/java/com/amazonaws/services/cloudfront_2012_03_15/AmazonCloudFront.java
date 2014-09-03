@@ -14,10 +14,10 @@
  */
 package com.amazonaws.services.cloudfront_2012_03_15;
 
-import com.amazonaws.ResponseMetadata;
 import com.amazonaws.client.ClientConfiguration;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
+import com.amazonaws.network.ResponseMetadata;
 import com.amazonaws.network.request.AmazonWebServiceRequest;
 import com.amazonaws.services.cloudfront_2012_03_15.model.AccessDeniedException;
 import com.amazonaws.services.cloudfront_2012_03_15.model.BatchTooLargeException;

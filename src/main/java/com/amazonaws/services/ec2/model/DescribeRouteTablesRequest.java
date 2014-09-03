@@ -39,7 +39,7 @@ public class DescribeRouteTablesRequest extends AmazonWebServiceRequest implemen
      * One or more route table IDs. <p>Default: Describes all your route
      * tables.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> routeTableIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> routeTableIds;
 
     /**
      * One or more filters. <ul> <li>
@@ -81,7 +81,7 @@ public class DescribeRouteTablesRequest extends AmazonWebServiceRequest implemen
      * filter. </li> <li> <p><code>vpc-id</code> - The ID of the VPC for the
      * route table. </li> </ul>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filters;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filters;
 
     /**
      * One or more route table IDs. <p>Default: Describes all your route
@@ -92,7 +92,7 @@ public class DescribeRouteTablesRequest extends AmazonWebServiceRequest implemen
      */
     public java.util.List<String> getRouteTableIds() {
         if (routeTableIds == null) {
-              routeTableIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              routeTableIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               routeTableIds.setAutoConstruct(true);
         }
         return routeTableIds;
@@ -110,7 +110,7 @@ public class DescribeRouteTablesRequest extends AmazonWebServiceRequest implemen
             this.routeTableIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> routeTableIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(routeTableIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> routeTableIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(routeTableIds.size());
         routeTableIdsCopy.addAll(routeTableIds);
         this.routeTableIds = routeTableIdsCopy;
     }
@@ -151,7 +151,7 @@ public class DescribeRouteTablesRequest extends AmazonWebServiceRequest implemen
         if (routeTableIds == null) {
             this.routeTableIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> routeTableIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(routeTableIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> routeTableIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(routeTableIds.size());
             routeTableIdsCopy.addAll(routeTableIds);
             this.routeTableIds = routeTableIdsCopy;
         }
@@ -240,7 +240,7 @@ public class DescribeRouteTablesRequest extends AmazonWebServiceRequest implemen
      */
     public java.util.List<Filter> getFilters() {
         if (filters == null) {
-              filters = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>();
+              filters = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>();
               filters.setAutoConstruct(true);
         }
         return filters;
@@ -330,7 +330,7 @@ public class DescribeRouteTablesRequest extends AmazonWebServiceRequest implemen
             this.filters = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
         filtersCopy.addAll(filters);
         this.filters = filtersCopy;
     }
@@ -515,7 +515,7 @@ public class DescribeRouteTablesRequest extends AmazonWebServiceRequest implemen
         if (filters == null) {
             this.filters = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
             filtersCopy.addAll(filters);
             this.filters = filtersCopy;
         }

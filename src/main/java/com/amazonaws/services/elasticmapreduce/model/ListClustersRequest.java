@@ -47,7 +47,7 @@ public class ListClustersRequest extends AmazonWebServiceRequest implements Seri
     /**
      * The cluster state filters to apply when listing clusters.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> clusterStates;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> clusterStates;
 
     /**
      * The pagination token that indicates the next set of results to
@@ -134,7 +134,7 @@ public class ListClustersRequest extends AmazonWebServiceRequest implements Seri
      */
     public java.util.List<String> getClusterStates() {
         if (clusterStates == null) {
-              clusterStates = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              clusterStates = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               clusterStates.setAutoConstruct(true);
         }
         return clusterStates;
@@ -150,7 +150,7 @@ public class ListClustersRequest extends AmazonWebServiceRequest implements Seri
             this.clusterStates = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> clusterStatesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(clusterStates.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> clusterStatesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(clusterStates.size());
         clusterStatesCopy.addAll(clusterStates);
         this.clusterStates = clusterStatesCopy;
     }
@@ -187,7 +187,7 @@ public class ListClustersRequest extends AmazonWebServiceRequest implements Seri
         if (clusterStates == null) {
             this.clusterStates = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> clusterStatesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(clusterStates.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> clusterStatesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(clusterStates.size());
             clusterStatesCopy.addAll(clusterStates);
             this.clusterStates = clusterStatesCopy;
         }

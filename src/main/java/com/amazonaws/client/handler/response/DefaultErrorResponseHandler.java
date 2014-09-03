@@ -22,12 +22,12 @@ import org.apache.commons.logging.LogFactory;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 
+import com.amazonaws.client.util.sdk.IOUtils;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
 import com.amazonaws.network.response.HttpResponse;
-import com.amazonaws.sdkutil.IOUtils;
 import com.amazonaws.transform.Unmarshaller;
-import com.amazonaws.util.XpathUtils;
+import com.amazonaws.utility.XpathUtils;
 
 /**
  * Implementation of HttpResponseHandler that handles only error responses from

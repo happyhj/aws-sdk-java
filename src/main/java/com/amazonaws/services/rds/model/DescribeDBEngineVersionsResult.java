@@ -34,7 +34,7 @@ public class DescribeDBEngineVersionsResult implements Serializable {
     /**
      * A list of <code>DBEngineVersion</code> elements.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<DBEngineVersion> dBEngineVersions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBEngineVersion> dBEngineVersions;
 
     /**
      * An optional pagination token provided by a previous request. If this
@@ -88,7 +88,7 @@ public class DescribeDBEngineVersionsResult implements Serializable {
      */
     public java.util.List<DBEngineVersion> getDBEngineVersions() {
         if (dBEngineVersions == null) {
-              dBEngineVersions = new com.amazonaws.internal.ListWithAutoConstructFlag<DBEngineVersion>();
+              dBEngineVersions = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBEngineVersion>();
               dBEngineVersions.setAutoConstruct(true);
         }
         return dBEngineVersions;
@@ -104,7 +104,7 @@ public class DescribeDBEngineVersionsResult implements Serializable {
             this.dBEngineVersions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<DBEngineVersion> dBEngineVersionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DBEngineVersion>(dBEngineVersions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBEngineVersion> dBEngineVersionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBEngineVersion>(dBEngineVersions.size());
         dBEngineVersionsCopy.addAll(dBEngineVersions);
         this.dBEngineVersions = dBEngineVersionsCopy;
     }
@@ -141,7 +141,7 @@ public class DescribeDBEngineVersionsResult implements Serializable {
         if (dBEngineVersions == null) {
             this.dBEngineVersions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<DBEngineVersion> dBEngineVersionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DBEngineVersion>(dBEngineVersions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBEngineVersion> dBEngineVersionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBEngineVersion>(dBEngineVersions.size());
             dBEngineVersionsCopy.addAll(dBEngineVersions);
             this.dBEngineVersions = dBEngineVersionsCopy;
         }

@@ -38,7 +38,7 @@ public class ValidationError implements Serializable {
     /**
      * A description of the validation error.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> errors;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> errors;
 
     /**
      * The identifier of the object that contains the validation error.
@@ -92,7 +92,7 @@ public class ValidationError implements Serializable {
      */
     public java.util.List<String> getErrors() {
         if (errors == null) {
-              errors = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              errors = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               errors.setAutoConstruct(true);
         }
         return errors;
@@ -108,7 +108,7 @@ public class ValidationError implements Serializable {
             this.errors = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> errorsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(errors.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> errorsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(errors.size());
         errorsCopy.addAll(errors);
         this.errors = errorsCopy;
     }
@@ -145,7 +145,7 @@ public class ValidationError implements Serializable {
         if (errors == null) {
             this.errors = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> errorsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(errors.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> errorsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(errors.size());
             errorsCopy.addAll(errors);
             this.errors = errorsCopy;
         }

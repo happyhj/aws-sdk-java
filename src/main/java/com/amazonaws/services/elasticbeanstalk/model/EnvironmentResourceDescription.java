@@ -35,32 +35,32 @@ public class EnvironmentResourceDescription implements Serializable {
     /**
      * The <code>AutoScalingGroups</code> used by this environment.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<AutoScalingGroup> autoScalingGroups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AutoScalingGroup> autoScalingGroups;
 
     /**
      * The Amazon EC2 instances used by this environment.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Instance> instances;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Instance> instances;
 
     /**
      * The Auto Scaling launch configurations in use by this environment.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<LaunchConfiguration> launchConfigurations;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LaunchConfiguration> launchConfigurations;
 
     /**
      * The LoadBalancers in use by this environment.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<LoadBalancer> loadBalancers;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LoadBalancer> loadBalancers;
 
     /**
      * The <code>AutoScaling</code> triggers in use by this environment.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Trigger> triggers;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Trigger> triggers;
 
     /**
      * The queues used by this environment.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Queue> queues;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Queue> queues;
 
     /**
      * Default constructor for a new EnvironmentResourceDescription object.  Callers should use the
@@ -117,7 +117,7 @@ public class EnvironmentResourceDescription implements Serializable {
      */
     public java.util.List<AutoScalingGroup> getAutoScalingGroups() {
         if (autoScalingGroups == null) {
-              autoScalingGroups = new com.amazonaws.internal.ListWithAutoConstructFlag<AutoScalingGroup>();
+              autoScalingGroups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AutoScalingGroup>();
               autoScalingGroups.setAutoConstruct(true);
         }
         return autoScalingGroups;
@@ -133,7 +133,7 @@ public class EnvironmentResourceDescription implements Serializable {
             this.autoScalingGroups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<AutoScalingGroup> autoScalingGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<AutoScalingGroup>(autoScalingGroups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AutoScalingGroup> autoScalingGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AutoScalingGroup>(autoScalingGroups.size());
         autoScalingGroupsCopy.addAll(autoScalingGroups);
         this.autoScalingGroups = autoScalingGroupsCopy;
     }
@@ -170,7 +170,7 @@ public class EnvironmentResourceDescription implements Serializable {
         if (autoScalingGroups == null) {
             this.autoScalingGroups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<AutoScalingGroup> autoScalingGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<AutoScalingGroup>(autoScalingGroups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AutoScalingGroup> autoScalingGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AutoScalingGroup>(autoScalingGroups.size());
             autoScalingGroupsCopy.addAll(autoScalingGroups);
             this.autoScalingGroups = autoScalingGroupsCopy;
         }
@@ -185,7 +185,7 @@ public class EnvironmentResourceDescription implements Serializable {
      */
     public java.util.List<Instance> getInstances() {
         if (instances == null) {
-              instances = new com.amazonaws.internal.ListWithAutoConstructFlag<Instance>();
+              instances = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Instance>();
               instances.setAutoConstruct(true);
         }
         return instances;
@@ -201,7 +201,7 @@ public class EnvironmentResourceDescription implements Serializable {
             this.instances = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Instance> instancesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Instance>(instances.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Instance> instancesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Instance>(instances.size());
         instancesCopy.addAll(instances);
         this.instances = instancesCopy;
     }
@@ -238,7 +238,7 @@ public class EnvironmentResourceDescription implements Serializable {
         if (instances == null) {
             this.instances = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Instance> instancesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Instance>(instances.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Instance> instancesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Instance>(instances.size());
             instancesCopy.addAll(instances);
             this.instances = instancesCopy;
         }
@@ -253,7 +253,7 @@ public class EnvironmentResourceDescription implements Serializable {
      */
     public java.util.List<LaunchConfiguration> getLaunchConfigurations() {
         if (launchConfigurations == null) {
-              launchConfigurations = new com.amazonaws.internal.ListWithAutoConstructFlag<LaunchConfiguration>();
+              launchConfigurations = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LaunchConfiguration>();
               launchConfigurations.setAutoConstruct(true);
         }
         return launchConfigurations;
@@ -269,7 +269,7 @@ public class EnvironmentResourceDescription implements Serializable {
             this.launchConfigurations = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<LaunchConfiguration> launchConfigurationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<LaunchConfiguration>(launchConfigurations.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LaunchConfiguration> launchConfigurationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LaunchConfiguration>(launchConfigurations.size());
         launchConfigurationsCopy.addAll(launchConfigurations);
         this.launchConfigurations = launchConfigurationsCopy;
     }
@@ -306,7 +306,7 @@ public class EnvironmentResourceDescription implements Serializable {
         if (launchConfigurations == null) {
             this.launchConfigurations = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<LaunchConfiguration> launchConfigurationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<LaunchConfiguration>(launchConfigurations.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LaunchConfiguration> launchConfigurationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LaunchConfiguration>(launchConfigurations.size());
             launchConfigurationsCopy.addAll(launchConfigurations);
             this.launchConfigurations = launchConfigurationsCopy;
         }
@@ -321,7 +321,7 @@ public class EnvironmentResourceDescription implements Serializable {
      */
     public java.util.List<LoadBalancer> getLoadBalancers() {
         if (loadBalancers == null) {
-              loadBalancers = new com.amazonaws.internal.ListWithAutoConstructFlag<LoadBalancer>();
+              loadBalancers = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LoadBalancer>();
               loadBalancers.setAutoConstruct(true);
         }
         return loadBalancers;
@@ -337,7 +337,7 @@ public class EnvironmentResourceDescription implements Serializable {
             this.loadBalancers = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<LoadBalancer> loadBalancersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<LoadBalancer>(loadBalancers.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LoadBalancer> loadBalancersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LoadBalancer>(loadBalancers.size());
         loadBalancersCopy.addAll(loadBalancers);
         this.loadBalancers = loadBalancersCopy;
     }
@@ -374,7 +374,7 @@ public class EnvironmentResourceDescription implements Serializable {
         if (loadBalancers == null) {
             this.loadBalancers = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<LoadBalancer> loadBalancersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<LoadBalancer>(loadBalancers.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LoadBalancer> loadBalancersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LoadBalancer>(loadBalancers.size());
             loadBalancersCopy.addAll(loadBalancers);
             this.loadBalancers = loadBalancersCopy;
         }
@@ -389,7 +389,7 @@ public class EnvironmentResourceDescription implements Serializable {
      */
     public java.util.List<Trigger> getTriggers() {
         if (triggers == null) {
-              triggers = new com.amazonaws.internal.ListWithAutoConstructFlag<Trigger>();
+              triggers = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Trigger>();
               triggers.setAutoConstruct(true);
         }
         return triggers;
@@ -405,7 +405,7 @@ public class EnvironmentResourceDescription implements Serializable {
             this.triggers = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Trigger> triggersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Trigger>(triggers.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Trigger> triggersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Trigger>(triggers.size());
         triggersCopy.addAll(triggers);
         this.triggers = triggersCopy;
     }
@@ -442,7 +442,7 @@ public class EnvironmentResourceDescription implements Serializable {
         if (triggers == null) {
             this.triggers = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Trigger> triggersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Trigger>(triggers.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Trigger> triggersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Trigger>(triggers.size());
             triggersCopy.addAll(triggers);
             this.triggers = triggersCopy;
         }
@@ -457,7 +457,7 @@ public class EnvironmentResourceDescription implements Serializable {
      */
     public java.util.List<Queue> getQueues() {
         if (queues == null) {
-              queues = new com.amazonaws.internal.ListWithAutoConstructFlag<Queue>();
+              queues = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Queue>();
               queues.setAutoConstruct(true);
         }
         return queues;
@@ -473,7 +473,7 @@ public class EnvironmentResourceDescription implements Serializable {
             this.queues = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Queue> queuesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Queue>(queues.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Queue> queuesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Queue>(queues.size());
         queuesCopy.addAll(queues);
         this.queues = queuesCopy;
     }
@@ -510,7 +510,7 @@ public class EnvironmentResourceDescription implements Serializable {
         if (queues == null) {
             this.queues = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Queue> queuesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Queue>(queues.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Queue> queuesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Queue>(queues.size());
             queuesCopy.addAll(queues);
             this.queues = queuesCopy;
         }

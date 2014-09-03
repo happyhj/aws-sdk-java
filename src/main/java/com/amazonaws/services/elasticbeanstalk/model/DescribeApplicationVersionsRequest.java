@@ -42,7 +42,7 @@ public class DescribeApplicationVersionsRequest extends AmazonWebServiceRequest 
      * If specified, restricts the returned descriptions to only include ones
      * that have the specified version labels.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> versionLabels;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> versionLabels;
 
     /**
      * Default constructor for a new DescribeApplicationVersionsRequest object.  Callers should use the
@@ -113,7 +113,7 @@ public class DescribeApplicationVersionsRequest extends AmazonWebServiceRequest 
      */
     public java.util.List<String> getVersionLabels() {
         if (versionLabels == null) {
-              versionLabels = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              versionLabels = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               versionLabels.setAutoConstruct(true);
         }
         return versionLabels;
@@ -131,7 +131,7 @@ public class DescribeApplicationVersionsRequest extends AmazonWebServiceRequest 
             this.versionLabels = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> versionLabelsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(versionLabels.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> versionLabelsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(versionLabels.size());
         versionLabelsCopy.addAll(versionLabels);
         this.versionLabels = versionLabelsCopy;
     }
@@ -172,7 +172,7 @@ public class DescribeApplicationVersionsRequest extends AmazonWebServiceRequest 
         if (versionLabels == null) {
             this.versionLabels = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> versionLabelsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(versionLabels.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> versionLabelsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(versionLabels.size());
             versionLabelsCopy.addAll(versionLabels);
             this.versionLabels = versionLabelsCopy;
         }

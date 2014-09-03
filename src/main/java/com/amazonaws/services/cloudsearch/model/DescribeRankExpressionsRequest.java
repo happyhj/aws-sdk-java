@@ -47,7 +47,7 @@ public class DescribeRankExpressionsRequest extends AmazonWebServiceRequest impl
      * Limits the <code>DescribeRankExpressions</code> response to the
      * specified fields.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> rankNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> rankNames;
 
     /**
      * A string that represents the name of a domain. Domain names must be
@@ -127,7 +127,7 @@ public class DescribeRankExpressionsRequest extends AmazonWebServiceRequest impl
      */
     public java.util.List<String> getRankNames() {
         if (rankNames == null) {
-              rankNames = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              rankNames = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               rankNames.setAutoConstruct(true);
         }
         return rankNames;
@@ -145,7 +145,7 @@ public class DescribeRankExpressionsRequest extends AmazonWebServiceRequest impl
             this.rankNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> rankNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(rankNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> rankNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(rankNames.size());
         rankNamesCopy.addAll(rankNames);
         this.rankNames = rankNamesCopy;
     }
@@ -186,7 +186,7 @@ public class DescribeRankExpressionsRequest extends AmazonWebServiceRequest impl
         if (rankNames == null) {
             this.rankNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> rankNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(rankNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> rankNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(rankNames.size());
             rankNamesCopy.addAll(rankNames);
             this.rankNames = rankNamesCopy;
         }

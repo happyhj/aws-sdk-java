@@ -67,12 +67,12 @@ public class VpnConnection implements Serializable {
     /**
      * Any tags assigned to the VPN connection.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tags;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tags;
 
     /**
      * Information about the VPN tunnel.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<VgwTelemetry> vgwTelemetry;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VgwTelemetry> vgwTelemetry;
 
     /**
      * The VPN connection options.
@@ -82,7 +82,7 @@ public class VpnConnection implements Serializable {
     /**
      * The static routes associated with the VPN connection.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<VpnStaticRoute> routes;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VpnStaticRoute> routes;
 
     /**
      * The ID of the VPN connection.
@@ -417,7 +417,7 @@ public class VpnConnection implements Serializable {
      */
     public java.util.List<Tag> getTags() {
         if (tags == null) {
-              tags = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>();
+              tags = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>();
               tags.setAutoConstruct(true);
         }
         return tags;
@@ -433,7 +433,7 @@ public class VpnConnection implements Serializable {
             this.tags = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tags.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tags.size());
         tagsCopy.addAll(tags);
         this.tags = tagsCopy;
     }
@@ -470,7 +470,7 @@ public class VpnConnection implements Serializable {
         if (tags == null) {
             this.tags = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tags.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tags.size());
             tagsCopy.addAll(tags);
             this.tags = tagsCopy;
         }
@@ -485,7 +485,7 @@ public class VpnConnection implements Serializable {
      */
     public java.util.List<VgwTelemetry> getVgwTelemetry() {
         if (vgwTelemetry == null) {
-              vgwTelemetry = new com.amazonaws.internal.ListWithAutoConstructFlag<VgwTelemetry>();
+              vgwTelemetry = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VgwTelemetry>();
               vgwTelemetry.setAutoConstruct(true);
         }
         return vgwTelemetry;
@@ -501,7 +501,7 @@ public class VpnConnection implements Serializable {
             this.vgwTelemetry = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<VgwTelemetry> vgwTelemetryCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<VgwTelemetry>(vgwTelemetry.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VgwTelemetry> vgwTelemetryCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VgwTelemetry>(vgwTelemetry.size());
         vgwTelemetryCopy.addAll(vgwTelemetry);
         this.vgwTelemetry = vgwTelemetryCopy;
     }
@@ -538,7 +538,7 @@ public class VpnConnection implements Serializable {
         if (vgwTelemetry == null) {
             this.vgwTelemetry = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<VgwTelemetry> vgwTelemetryCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<VgwTelemetry>(vgwTelemetry.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VgwTelemetry> vgwTelemetryCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VgwTelemetry>(vgwTelemetry.size());
             vgwTelemetryCopy.addAll(vgwTelemetry);
             this.vgwTelemetry = vgwTelemetryCopy;
         }
@@ -586,7 +586,7 @@ public class VpnConnection implements Serializable {
      */
     public java.util.List<VpnStaticRoute> getRoutes() {
         if (routes == null) {
-              routes = new com.amazonaws.internal.ListWithAutoConstructFlag<VpnStaticRoute>();
+              routes = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VpnStaticRoute>();
               routes.setAutoConstruct(true);
         }
         return routes;
@@ -602,7 +602,7 @@ public class VpnConnection implements Serializable {
             this.routes = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<VpnStaticRoute> routesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<VpnStaticRoute>(routes.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VpnStaticRoute> routesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VpnStaticRoute>(routes.size());
         routesCopy.addAll(routes);
         this.routes = routesCopy;
     }
@@ -639,7 +639,7 @@ public class VpnConnection implements Serializable {
         if (routes == null) {
             this.routes = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<VpnStaticRoute> routesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<VpnStaticRoute>(routes.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VpnStaticRoute> routesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VpnStaticRoute>(routes.size());
             routesCopy.addAll(routes);
             this.routes = routesCopy;
         }

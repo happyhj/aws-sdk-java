@@ -113,7 +113,7 @@ public class CreateCaseRequest extends AmazonWebServiceRequest implements Serial
      * <b>Constraints:</b><br/>
      * <b>Length: </b>0 - 10<br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> ccEmailAddresses;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> ccEmailAddresses;
 
     /**
      * The ISO 639-1 code for the language in which AWS provides support. AWS
@@ -363,7 +363,7 @@ public class CreateCaseRequest extends AmazonWebServiceRequest implements Serial
      */
     public java.util.List<String> getCcEmailAddresses() {
         if (ccEmailAddresses == null) {
-              ccEmailAddresses = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              ccEmailAddresses = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               ccEmailAddresses.setAutoConstruct(true);
         }
         return ccEmailAddresses;
@@ -384,7 +384,7 @@ public class CreateCaseRequest extends AmazonWebServiceRequest implements Serial
             this.ccEmailAddresses = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> ccEmailAddressesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(ccEmailAddresses.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> ccEmailAddressesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(ccEmailAddresses.size());
         ccEmailAddressesCopy.addAll(ccEmailAddresses);
         this.ccEmailAddresses = ccEmailAddressesCopy;
     }
@@ -431,7 +431,7 @@ public class CreateCaseRequest extends AmazonWebServiceRequest implements Serial
         if (ccEmailAddresses == null) {
             this.ccEmailAddresses = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> ccEmailAddressesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(ccEmailAddresses.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> ccEmailAddressesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(ccEmailAddresses.size());
             ccEmailAddressesCopy.addAll(ccEmailAddresses);
             this.ccEmailAddresses = ccEmailAddressesCopy;
         }

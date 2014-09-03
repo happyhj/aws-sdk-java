@@ -31,13 +31,13 @@ public class ReservedInstancesModification implements Serializable {
     /**
      * The IDs of one or more Reserved Instances.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ReservedInstancesId> reservedInstancesIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedInstancesId> reservedInstancesIds;
 
     /**
      * Contains target configurations along with their corresponding new
      * Reserved Instance IDs.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ReservedInstancesModificationResult> modificationResults;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedInstancesModificationResult> modificationResults;
 
     /**
      * The time when the modification request was created.
@@ -110,7 +110,7 @@ public class ReservedInstancesModification implements Serializable {
      */
     public java.util.List<ReservedInstancesId> getReservedInstancesIds() {
         if (reservedInstancesIds == null) {
-              reservedInstancesIds = new com.amazonaws.internal.ListWithAutoConstructFlag<ReservedInstancesId>();
+              reservedInstancesIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedInstancesId>();
               reservedInstancesIds.setAutoConstruct(true);
         }
         return reservedInstancesIds;
@@ -126,7 +126,7 @@ public class ReservedInstancesModification implements Serializable {
             this.reservedInstancesIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ReservedInstancesId> reservedInstancesIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ReservedInstancesId>(reservedInstancesIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedInstancesId> reservedInstancesIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedInstancesId>(reservedInstancesIds.size());
         reservedInstancesIdsCopy.addAll(reservedInstancesIds);
         this.reservedInstancesIds = reservedInstancesIdsCopy;
     }
@@ -163,7 +163,7 @@ public class ReservedInstancesModification implements Serializable {
         if (reservedInstancesIds == null) {
             this.reservedInstancesIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ReservedInstancesId> reservedInstancesIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ReservedInstancesId>(reservedInstancesIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedInstancesId> reservedInstancesIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedInstancesId>(reservedInstancesIds.size());
             reservedInstancesIdsCopy.addAll(reservedInstancesIds);
             this.reservedInstancesIds = reservedInstancesIdsCopy;
         }
@@ -180,7 +180,7 @@ public class ReservedInstancesModification implements Serializable {
      */
     public java.util.List<ReservedInstancesModificationResult> getModificationResults() {
         if (modificationResults == null) {
-              modificationResults = new com.amazonaws.internal.ListWithAutoConstructFlag<ReservedInstancesModificationResult>();
+              modificationResults = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedInstancesModificationResult>();
               modificationResults.setAutoConstruct(true);
         }
         return modificationResults;
@@ -198,7 +198,7 @@ public class ReservedInstancesModification implements Serializable {
             this.modificationResults = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ReservedInstancesModificationResult> modificationResultsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ReservedInstancesModificationResult>(modificationResults.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedInstancesModificationResult> modificationResultsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedInstancesModificationResult>(modificationResults.size());
         modificationResultsCopy.addAll(modificationResults);
         this.modificationResults = modificationResultsCopy;
     }
@@ -239,7 +239,7 @@ public class ReservedInstancesModification implements Serializable {
         if (modificationResults == null) {
             this.modificationResults = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ReservedInstancesModificationResult> modificationResultsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ReservedInstancesModificationResult>(modificationResults.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedInstancesModificationResult> modificationResultsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedInstancesModificationResult>(modificationResults.size());
             modificationResultsCopy.addAll(modificationResults);
             this.modificationResults = modificationResultsCopy;
         }

@@ -20,12 +20,12 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.opsworks.model.DescribeLoadBasedAutoScalingRequest;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Describe Load Based Auto Scaling Request Marshaller
@@ -50,7 +50,7 @@ public class DescribeLoadBasedAutoScalingRequestMarshaller implements Marshaller
 
           jsonWriter.object();
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> layerIdsList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(describeLoadBasedAutoScalingRequest.getLayerIds());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> layerIdsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(describeLoadBasedAutoScalingRequest.getLayerIds());
             if (layerIdsList != null && !(layerIdsList.isAutoConstruct() && layerIdsList.isEmpty())) {
 
                 jsonWriter.key("LayerIds");

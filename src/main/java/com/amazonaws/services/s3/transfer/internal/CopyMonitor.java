@@ -14,7 +14,7 @@
  */
 package com.amazonaws.services.s3.transfer.internal;
 
-import static com.amazonaws.event.SDKProgressPublisher.publishProgress;
+import static com.amazonaws.network.event.SDKProgressPublisher.publishProgress;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,9 +25,9 @@ import java.util.concurrent.Future;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-import com.amazonaws.event.ProgressEventType;
-import com.amazonaws.event.ProgressListenerChain;
 import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.network.event.ProgressEventType;
+import com.amazonaws.network.event.ProgressListenerChain;
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.model.CompleteMultipartUploadRequest;
 import com.amazonaws.services.s3.model.CompleteMultipartUploadResult;

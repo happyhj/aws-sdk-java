@@ -60,17 +60,17 @@ public class ReservedInstancesListing implements Serializable {
     /**
      * The number of instances in this state.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<InstanceCount> instanceCounts;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceCount> instanceCounts;
 
     /**
      * The price of the Reserved Instance listing.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<PriceSchedule> priceSchedules;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PriceSchedule> priceSchedules;
 
     /**
      * Any tags assigned to the resource.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tags;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tags;
 
     /**
      * The idempotency token you provided when you created the listing.
@@ -337,7 +337,7 @@ public class ReservedInstancesListing implements Serializable {
      */
     public java.util.List<InstanceCount> getInstanceCounts() {
         if (instanceCounts == null) {
-              instanceCounts = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceCount>();
+              instanceCounts = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceCount>();
               instanceCounts.setAutoConstruct(true);
         }
         return instanceCounts;
@@ -353,7 +353,7 @@ public class ReservedInstancesListing implements Serializable {
             this.instanceCounts = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<InstanceCount> instanceCountsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceCount>(instanceCounts.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceCount> instanceCountsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceCount>(instanceCounts.size());
         instanceCountsCopy.addAll(instanceCounts);
         this.instanceCounts = instanceCountsCopy;
     }
@@ -390,7 +390,7 @@ public class ReservedInstancesListing implements Serializable {
         if (instanceCounts == null) {
             this.instanceCounts = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<InstanceCount> instanceCountsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceCount>(instanceCounts.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceCount> instanceCountsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceCount>(instanceCounts.size());
             instanceCountsCopy.addAll(instanceCounts);
             this.instanceCounts = instanceCountsCopy;
         }
@@ -405,7 +405,7 @@ public class ReservedInstancesListing implements Serializable {
      */
     public java.util.List<PriceSchedule> getPriceSchedules() {
         if (priceSchedules == null) {
-              priceSchedules = new com.amazonaws.internal.ListWithAutoConstructFlag<PriceSchedule>();
+              priceSchedules = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PriceSchedule>();
               priceSchedules.setAutoConstruct(true);
         }
         return priceSchedules;
@@ -421,7 +421,7 @@ public class ReservedInstancesListing implements Serializable {
             this.priceSchedules = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<PriceSchedule> priceSchedulesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<PriceSchedule>(priceSchedules.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PriceSchedule> priceSchedulesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PriceSchedule>(priceSchedules.size());
         priceSchedulesCopy.addAll(priceSchedules);
         this.priceSchedules = priceSchedulesCopy;
     }
@@ -458,7 +458,7 @@ public class ReservedInstancesListing implements Serializable {
         if (priceSchedules == null) {
             this.priceSchedules = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<PriceSchedule> priceSchedulesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<PriceSchedule>(priceSchedules.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PriceSchedule> priceSchedulesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PriceSchedule>(priceSchedules.size());
             priceSchedulesCopy.addAll(priceSchedules);
             this.priceSchedules = priceSchedulesCopy;
         }
@@ -473,7 +473,7 @@ public class ReservedInstancesListing implements Serializable {
      */
     public java.util.List<Tag> getTags() {
         if (tags == null) {
-              tags = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>();
+              tags = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>();
               tags.setAutoConstruct(true);
         }
         return tags;
@@ -489,7 +489,7 @@ public class ReservedInstancesListing implements Serializable {
             this.tags = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tags.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tags.size());
         tagsCopy.addAll(tags);
         this.tags = tagsCopy;
     }
@@ -526,7 +526,7 @@ public class ReservedInstancesListing implements Serializable {
         if (tags == null) {
             this.tags = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tags.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tags.size());
             tagsCopy.addAll(tags);
             this.tags = tagsCopy;
         }

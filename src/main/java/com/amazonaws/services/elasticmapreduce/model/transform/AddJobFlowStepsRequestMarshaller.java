@@ -20,7 +20,7 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.elasticmapreduce.model.AddJobFlowStepsRequest;
@@ -28,7 +28,7 @@ import com.amazonaws.services.elasticmapreduce.model.HadoopJarStepConfig;
 import com.amazonaws.services.elasticmapreduce.model.KeyValue;
 import com.amazonaws.services.elasticmapreduce.model.StepConfig;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Add Job Flow Steps Request Marshaller
@@ -57,7 +57,7 @@ public class AddJobFlowStepsRequestMarshaller implements Marshaller<Request<AddJ
                 jsonWriter.key("JobFlowId").value(addJobFlowStepsRequest.getJobFlowId());
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<StepConfig> stepsList = (com.amazonaws.internal.ListWithAutoConstructFlag<StepConfig>)(addJobFlowStepsRequest.getSteps());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StepConfig> stepsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StepConfig>)(addJobFlowStepsRequest.getSteps());
             if (stepsList != null && !(stepsList.isAutoConstruct() && stepsList.isEmpty())) {
 
                 jsonWriter.key("Steps");
@@ -78,7 +78,7 @@ public class AddJobFlowStepsRequestMarshaller implements Marshaller<Request<AddJ
                             jsonWriter.key("HadoopJarStep");
                             jsonWriter.object();
 
-                            com.amazonaws.internal.ListWithAutoConstructFlag<KeyValue> propertiesList = (com.amazonaws.internal.ListWithAutoConstructFlag<KeyValue>)(hadoopJarStep.getProperties());
+                            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<KeyValue> propertiesList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<KeyValue>)(hadoopJarStep.getProperties());
                             if (propertiesList != null && !(propertiesList.isAutoConstruct() && propertiesList.isEmpty())) {
 
                                 jsonWriter.key("Properties");
@@ -105,7 +105,7 @@ public class AddJobFlowStepsRequestMarshaller implements Marshaller<Request<AddJ
                                 jsonWriter.key("MainClass").value(hadoopJarStep.getMainClass());
                             }
 
-                            com.amazonaws.internal.ListWithAutoConstructFlag<String> argsList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(hadoopJarStep.getArgs());
+                            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> argsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(hadoopJarStep.getArgs());
                             if (argsList != null && !(argsList.isAutoConstruct() && argsList.isEmpty())) {
 
                                 jsonWriter.key("Args");

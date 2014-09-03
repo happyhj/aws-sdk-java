@@ -42,7 +42,7 @@ public class DescribeAvailabilityZonesRequest extends AmazonWebServiceRequest im
     /**
      * The names of one or more Availability Zones.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> zoneNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> zoneNames;
 
     /**
      * One or more filters. <ul> <li> <p><code>message</code> - Information
@@ -54,7 +54,7 @@ public class DescribeAvailabilityZonesRequest extends AmazonWebServiceRequest im
      * <p><code>zone-name</code> - The name of the Availability Zone (for
      * example, <code>us-east-1a</code>). </li> </ul>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filters;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filters;
 
     /**
      * The names of one or more Availability Zones.
@@ -63,7 +63,7 @@ public class DescribeAvailabilityZonesRequest extends AmazonWebServiceRequest im
      */
     public java.util.List<String> getZoneNames() {
         if (zoneNames == null) {
-              zoneNames = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              zoneNames = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               zoneNames.setAutoConstruct(true);
         }
         return zoneNames;
@@ -79,7 +79,7 @@ public class DescribeAvailabilityZonesRequest extends AmazonWebServiceRequest im
             this.zoneNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> zoneNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(zoneNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> zoneNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(zoneNames.size());
         zoneNamesCopy.addAll(zoneNames);
         this.zoneNames = zoneNamesCopy;
     }
@@ -116,7 +116,7 @@ public class DescribeAvailabilityZonesRequest extends AmazonWebServiceRequest im
         if (zoneNames == null) {
             this.zoneNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> zoneNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(zoneNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> zoneNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(zoneNames.size());
             zoneNamesCopy.addAll(zoneNames);
             this.zoneNames = zoneNamesCopy;
         }
@@ -145,7 +145,7 @@ public class DescribeAvailabilityZonesRequest extends AmazonWebServiceRequest im
      */
     public java.util.List<Filter> getFilters() {
         if (filters == null) {
-              filters = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>();
+              filters = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>();
               filters.setAutoConstruct(true);
         }
         return filters;
@@ -175,7 +175,7 @@ public class DescribeAvailabilityZonesRequest extends AmazonWebServiceRequest im
             this.filters = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
         filtersCopy.addAll(filters);
         this.filters = filtersCopy;
     }
@@ -240,7 +240,7 @@ public class DescribeAvailabilityZonesRequest extends AmazonWebServiceRequest im
         if (filters == null) {
             this.filters = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
             filtersCopy.addAll(filters);
             this.filters = filtersCopy;
         }

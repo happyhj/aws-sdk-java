@@ -27,7 +27,7 @@ public class ListClustersResult implements Serializable {
     /**
      * The list of clusters for the account based on the given filters.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ClusterSummary> clusters;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterSummary> clusters;
 
     /**
      * The pagination token that indicates the next set of results to
@@ -42,7 +42,7 @@ public class ListClustersResult implements Serializable {
      */
     public java.util.List<ClusterSummary> getClusters() {
         if (clusters == null) {
-              clusters = new com.amazonaws.internal.ListWithAutoConstructFlag<ClusterSummary>();
+              clusters = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterSummary>();
               clusters.setAutoConstruct(true);
         }
         return clusters;
@@ -58,7 +58,7 @@ public class ListClustersResult implements Serializable {
             this.clusters = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ClusterSummary> clustersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ClusterSummary>(clusters.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterSummary> clustersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterSummary>(clusters.size());
         clustersCopy.addAll(clusters);
         this.clusters = clustersCopy;
     }
@@ -95,7 +95,7 @@ public class ListClustersResult implements Serializable {
         if (clusters == null) {
             this.clusters = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ClusterSummary> clustersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ClusterSummary>(clusters.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterSummary> clustersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterSummary>(clusters.size());
             clustersCopy.addAll(clusters);
             this.clusters = clustersCopy;
         }

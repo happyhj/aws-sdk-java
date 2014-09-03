@@ -48,7 +48,7 @@ public class ModifyReplicationGroupRequest extends AmazonWebServiceRequest imple
      * Private Cloud (VPC). <p>Constraints: Must contain no more than 255
      * alphanumeric characters. Must not be "Default".
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> cacheSecurityGroupNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> cacheSecurityGroupNames;
 
     /**
      * Specifies the VPC Security Groups associated with the cache clusters
@@ -56,7 +56,7 @@ public class ModifyReplicationGroupRequest extends AmazonWebServiceRequest imple
      * replication groups containing cache clusters running in an Amazon
      * Virtual Private Cloud (VPC).
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> securityGroupIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> securityGroupIds;
 
     /**
      * The weekly time range (in UTC) during which replication group system
@@ -237,7 +237,7 @@ public class ModifyReplicationGroupRequest extends AmazonWebServiceRequest imple
      */
     public java.util.List<String> getCacheSecurityGroupNames() {
         if (cacheSecurityGroupNames == null) {
-              cacheSecurityGroupNames = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              cacheSecurityGroupNames = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               cacheSecurityGroupNames.setAutoConstruct(true);
         }
         return cacheSecurityGroupNames;
@@ -263,7 +263,7 @@ public class ModifyReplicationGroupRequest extends AmazonWebServiceRequest imple
             this.cacheSecurityGroupNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> cacheSecurityGroupNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(cacheSecurityGroupNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> cacheSecurityGroupNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(cacheSecurityGroupNames.size());
         cacheSecurityGroupNamesCopy.addAll(cacheSecurityGroupNames);
         this.cacheSecurityGroupNames = cacheSecurityGroupNamesCopy;
     }
@@ -320,7 +320,7 @@ public class ModifyReplicationGroupRequest extends AmazonWebServiceRequest imple
         if (cacheSecurityGroupNames == null) {
             this.cacheSecurityGroupNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> cacheSecurityGroupNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(cacheSecurityGroupNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> cacheSecurityGroupNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(cacheSecurityGroupNames.size());
             cacheSecurityGroupNamesCopy.addAll(cacheSecurityGroupNames);
             this.cacheSecurityGroupNames = cacheSecurityGroupNamesCopy;
         }
@@ -341,7 +341,7 @@ public class ModifyReplicationGroupRequest extends AmazonWebServiceRequest imple
      */
     public java.util.List<String> getSecurityGroupIds() {
         if (securityGroupIds == null) {
-              securityGroupIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              securityGroupIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               securityGroupIds.setAutoConstruct(true);
         }
         return securityGroupIds;
@@ -363,7 +363,7 @@ public class ModifyReplicationGroupRequest extends AmazonWebServiceRequest imple
             this.securityGroupIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> securityGroupIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(securityGroupIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> securityGroupIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(securityGroupIds.size());
         securityGroupIdsCopy.addAll(securityGroupIds);
         this.securityGroupIds = securityGroupIdsCopy;
     }
@@ -412,7 +412,7 @@ public class ModifyReplicationGroupRequest extends AmazonWebServiceRequest imple
         if (securityGroupIds == null) {
             this.securityGroupIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> securityGroupIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(securityGroupIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> securityGroupIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(securityGroupIds.size());
             securityGroupIdsCopy.addAll(securityGroupIds);
             this.securityGroupIds = securityGroupIdsCopy;
         }

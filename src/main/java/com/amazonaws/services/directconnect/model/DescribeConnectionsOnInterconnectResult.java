@@ -26,7 +26,7 @@ public class DescribeConnectionsOnInterconnectResult implements Serializable {
     /**
      * A list of connections.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Connection> connections;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Connection> connections;
 
     /**
      * A list of connections.
@@ -35,7 +35,7 @@ public class DescribeConnectionsOnInterconnectResult implements Serializable {
      */
     public java.util.List<Connection> getConnections() {
         if (connections == null) {
-              connections = new com.amazonaws.internal.ListWithAutoConstructFlag<Connection>();
+              connections = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Connection>();
               connections.setAutoConstruct(true);
         }
         return connections;
@@ -51,7 +51,7 @@ public class DescribeConnectionsOnInterconnectResult implements Serializable {
             this.connections = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Connection> connectionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Connection>(connections.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Connection> connectionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Connection>(connections.size());
         connectionsCopy.addAll(connections);
         this.connections = connectionsCopy;
     }
@@ -88,7 +88,7 @@ public class DescribeConnectionsOnInterconnectResult implements Serializable {
         if (connections == null) {
             this.connections = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Connection> connectionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Connection>(connections.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Connection> connectionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Connection>(connections.size());
             connectionsCopy.addAll(connections);
             this.connections = connectionsCopy;
         }

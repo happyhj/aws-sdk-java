@@ -64,7 +64,7 @@ public class DescribeVolumesRequest extends AmazonWebServiceRequest implements S
      * <code>DescribeVolumes</code> returns descriptions of the specified
      * volumes. Otherwise, it returns a description of every volume.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> volumeIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> volumeIds;
 
     /**
      * The instance ID. If you use this parameter,
@@ -206,7 +206,7 @@ public class DescribeVolumesRequest extends AmazonWebServiceRequest implements S
      */
     public java.util.List<String> getVolumeIds() {
         if (volumeIds == null) {
-              volumeIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              volumeIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               volumeIds.setAutoConstruct(true);
         }
         return volumeIds;
@@ -226,7 +226,7 @@ public class DescribeVolumesRequest extends AmazonWebServiceRequest implements S
             this.volumeIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> volumeIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(volumeIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> volumeIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(volumeIds.size());
         volumeIdsCopy.addAll(volumeIds);
         this.volumeIds = volumeIdsCopy;
     }
@@ -271,7 +271,7 @@ public class DescribeVolumesRequest extends AmazonWebServiceRequest implements S
         if (volumeIds == null) {
             this.volumeIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> volumeIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(volumeIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> volumeIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(volumeIds.size());
             volumeIdsCopy.addAll(volumeIds);
             this.volumeIds = volumeIdsCopy;
         }

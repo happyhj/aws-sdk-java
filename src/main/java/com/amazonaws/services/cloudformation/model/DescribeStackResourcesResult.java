@@ -26,7 +26,7 @@ public class DescribeStackResourcesResult implements Serializable {
     /**
      * A list of <code>StackResource</code> structures.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<StackResource> stackResources;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StackResource> stackResources;
 
     /**
      * A list of <code>StackResource</code> structures.
@@ -35,7 +35,7 @@ public class DescribeStackResourcesResult implements Serializable {
      */
     public java.util.List<StackResource> getStackResources() {
         if (stackResources == null) {
-              stackResources = new com.amazonaws.internal.ListWithAutoConstructFlag<StackResource>();
+              stackResources = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StackResource>();
               stackResources.setAutoConstruct(true);
         }
         return stackResources;
@@ -51,7 +51,7 @@ public class DescribeStackResourcesResult implements Serializable {
             this.stackResources = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<StackResource> stackResourcesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<StackResource>(stackResources.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StackResource> stackResourcesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StackResource>(stackResources.size());
         stackResourcesCopy.addAll(stackResources);
         this.stackResources = stackResourcesCopy;
     }
@@ -88,7 +88,7 @@ public class DescribeStackResourcesResult implements Serializable {
         if (stackResources == null) {
             this.stackResources = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<StackResource> stackResourcesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<StackResource>(stackResources.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StackResource> stackResourcesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StackResource>(stackResources.size());
             stackResourcesCopy.addAll(stackResources);
             this.stackResources = stackResourcesCopy;
         }

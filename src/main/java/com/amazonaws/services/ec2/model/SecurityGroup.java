@@ -46,13 +46,13 @@ public class SecurityGroup implements Serializable {
     /**
      * One or more inbound rules associated with the security group.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<IpPermission> ipPermissions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IpPermission> ipPermissions;
 
     /**
      * [EC2-VPC] One or more outbound rules associated with the security
      * group.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<IpPermission> ipPermissionsEgress;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IpPermission> ipPermissionsEgress;
 
     /**
      * [EC2-VPC] The ID of the VPC for the security group.
@@ -62,7 +62,7 @@ public class SecurityGroup implements Serializable {
     /**
      * Any tags assigned to the security group.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tags;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tags;
 
     /**
      * The AWS account ID of the owner of the security group.
@@ -203,7 +203,7 @@ public class SecurityGroup implements Serializable {
      */
     public java.util.List<IpPermission> getIpPermissions() {
         if (ipPermissions == null) {
-              ipPermissions = new com.amazonaws.internal.ListWithAutoConstructFlag<IpPermission>();
+              ipPermissions = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IpPermission>();
               ipPermissions.setAutoConstruct(true);
         }
         return ipPermissions;
@@ -219,7 +219,7 @@ public class SecurityGroup implements Serializable {
             this.ipPermissions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<IpPermission> ipPermissionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<IpPermission>(ipPermissions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IpPermission> ipPermissionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IpPermission>(ipPermissions.size());
         ipPermissionsCopy.addAll(ipPermissions);
         this.ipPermissions = ipPermissionsCopy;
     }
@@ -256,7 +256,7 @@ public class SecurityGroup implements Serializable {
         if (ipPermissions == null) {
             this.ipPermissions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<IpPermission> ipPermissionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<IpPermission>(ipPermissions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IpPermission> ipPermissionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IpPermission>(ipPermissions.size());
             ipPermissionsCopy.addAll(ipPermissions);
             this.ipPermissions = ipPermissionsCopy;
         }
@@ -273,7 +273,7 @@ public class SecurityGroup implements Serializable {
      */
     public java.util.List<IpPermission> getIpPermissionsEgress() {
         if (ipPermissionsEgress == null) {
-              ipPermissionsEgress = new com.amazonaws.internal.ListWithAutoConstructFlag<IpPermission>();
+              ipPermissionsEgress = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IpPermission>();
               ipPermissionsEgress.setAutoConstruct(true);
         }
         return ipPermissionsEgress;
@@ -291,7 +291,7 @@ public class SecurityGroup implements Serializable {
             this.ipPermissionsEgress = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<IpPermission> ipPermissionsEgressCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<IpPermission>(ipPermissionsEgress.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IpPermission> ipPermissionsEgressCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IpPermission>(ipPermissionsEgress.size());
         ipPermissionsEgressCopy.addAll(ipPermissionsEgress);
         this.ipPermissionsEgress = ipPermissionsEgressCopy;
     }
@@ -332,7 +332,7 @@ public class SecurityGroup implements Serializable {
         if (ipPermissionsEgress == null) {
             this.ipPermissionsEgress = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<IpPermission> ipPermissionsEgressCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<IpPermission>(ipPermissionsEgress.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IpPermission> ipPermissionsEgressCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IpPermission>(ipPermissionsEgress.size());
             ipPermissionsEgressCopy.addAll(ipPermissionsEgress);
             this.ipPermissionsEgress = ipPermissionsEgressCopy;
         }
@@ -380,7 +380,7 @@ public class SecurityGroup implements Serializable {
      */
     public java.util.List<Tag> getTags() {
         if (tags == null) {
-              tags = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>();
+              tags = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>();
               tags.setAutoConstruct(true);
         }
         return tags;
@@ -396,7 +396,7 @@ public class SecurityGroup implements Serializable {
             this.tags = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tags.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tags.size());
         tagsCopy.addAll(tags);
         this.tags = tagsCopy;
     }
@@ -433,7 +433,7 @@ public class SecurityGroup implements Serializable {
         if (tags == null) {
             this.tags = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tags.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tags.size());
             tagsCopy.addAll(tags);
             this.tags = tagsCopy;
         }

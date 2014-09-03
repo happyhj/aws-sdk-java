@@ -46,7 +46,7 @@ public class JobAlbumArt implements Serializable {
      * associated with an audio file, to a maximum of 20. Valid formats are
      * <code>.jpg</code> and <code>.png</code>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Artwork> artwork;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Artwork> artwork;
 
     /**
      * A policy that determines how Elastic Transcoder will handle the
@@ -161,7 +161,7 @@ public class JobAlbumArt implements Serializable {
      */
     public java.util.List<Artwork> getArtwork() {
         if (artwork == null) {
-              artwork = new com.amazonaws.internal.ListWithAutoConstructFlag<Artwork>();
+              artwork = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Artwork>();
               artwork.setAutoConstruct(true);
         }
         return artwork;
@@ -181,7 +181,7 @@ public class JobAlbumArt implements Serializable {
             this.artwork = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Artwork> artworkCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Artwork>(artwork.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Artwork> artworkCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Artwork>(artwork.size());
         artworkCopy.addAll(artwork);
         this.artwork = artworkCopy;
     }
@@ -226,7 +226,7 @@ public class JobAlbumArt implements Serializable {
         if (artwork == null) {
             this.artwork = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Artwork> artworkCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Artwork>(artwork.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Artwork> artworkCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Artwork>(artwork.size());
             artworkCopy.addAll(artwork);
             this.artwork = artworkCopy;
         }

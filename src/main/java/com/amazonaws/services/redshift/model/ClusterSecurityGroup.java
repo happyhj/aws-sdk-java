@@ -38,13 +38,13 @@ public class ClusterSecurityGroup implements Serializable {
      * A list of EC2 security groups that are permitted to access clusters
      * associated with this cluster security group.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<EC2SecurityGroup> eC2SecurityGroups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EC2SecurityGroup> eC2SecurityGroups;
 
     /**
      * A list of IP ranges (CIDR blocks) that are permitted to access
      * clusters associated with this cluster security group.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<IPRange> iPRanges;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IPRange> iPRanges;
 
     /**
      * The name of the cluster security group to which the operation was
@@ -127,7 +127,7 @@ public class ClusterSecurityGroup implements Serializable {
      */
     public java.util.List<EC2SecurityGroup> getEC2SecurityGroups() {
         if (eC2SecurityGroups == null) {
-              eC2SecurityGroups = new com.amazonaws.internal.ListWithAutoConstructFlag<EC2SecurityGroup>();
+              eC2SecurityGroups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EC2SecurityGroup>();
               eC2SecurityGroups.setAutoConstruct(true);
         }
         return eC2SecurityGroups;
@@ -145,7 +145,7 @@ public class ClusterSecurityGroup implements Serializable {
             this.eC2SecurityGroups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<EC2SecurityGroup> eC2SecurityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<EC2SecurityGroup>(eC2SecurityGroups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EC2SecurityGroup> eC2SecurityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EC2SecurityGroup>(eC2SecurityGroups.size());
         eC2SecurityGroupsCopy.addAll(eC2SecurityGroups);
         this.eC2SecurityGroups = eC2SecurityGroupsCopy;
     }
@@ -186,7 +186,7 @@ public class ClusterSecurityGroup implements Serializable {
         if (eC2SecurityGroups == null) {
             this.eC2SecurityGroups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<EC2SecurityGroup> eC2SecurityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<EC2SecurityGroup>(eC2SecurityGroups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EC2SecurityGroup> eC2SecurityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EC2SecurityGroup>(eC2SecurityGroups.size());
             eC2SecurityGroupsCopy.addAll(eC2SecurityGroups);
             this.eC2SecurityGroups = eC2SecurityGroupsCopy;
         }
@@ -203,7 +203,7 @@ public class ClusterSecurityGroup implements Serializable {
      */
     public java.util.List<IPRange> getIPRanges() {
         if (iPRanges == null) {
-              iPRanges = new com.amazonaws.internal.ListWithAutoConstructFlag<IPRange>();
+              iPRanges = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IPRange>();
               iPRanges.setAutoConstruct(true);
         }
         return iPRanges;
@@ -221,7 +221,7 @@ public class ClusterSecurityGroup implements Serializable {
             this.iPRanges = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<IPRange> iPRangesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<IPRange>(iPRanges.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IPRange> iPRangesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IPRange>(iPRanges.size());
         iPRangesCopy.addAll(iPRanges);
         this.iPRanges = iPRangesCopy;
     }
@@ -262,7 +262,7 @@ public class ClusterSecurityGroup implements Serializable {
         if (iPRanges == null) {
             this.iPRanges = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<IPRange> iPRangesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<IPRange>(iPRanges.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IPRange> iPRangesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IPRange>(iPRanges.size());
             iPRangesCopy.addAll(iPRanges);
             this.iPRanges = iPRangesCopy;
         }

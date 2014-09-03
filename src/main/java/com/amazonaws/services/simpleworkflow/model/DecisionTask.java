@@ -55,7 +55,7 @@ public class DecisionTask implements Serializable {
      * A paginated list of history events of the workflow execution. The
      * decider uses this during the processing of the decision task.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<HistoryEvent> events;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<HistoryEvent> events;
 
     /**
      * Returns a value if the results are paginated. To get the next page of
@@ -249,7 +249,7 @@ public class DecisionTask implements Serializable {
      */
     public java.util.List<HistoryEvent> getEvents() {
         if (events == null) {
-              events = new com.amazonaws.internal.ListWithAutoConstructFlag<HistoryEvent>();
+              events = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<HistoryEvent>();
               events.setAutoConstruct(true);
         }
         return events;
@@ -267,7 +267,7 @@ public class DecisionTask implements Serializable {
             this.events = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<HistoryEvent> eventsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<HistoryEvent>(events.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<HistoryEvent> eventsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<HistoryEvent>(events.size());
         eventsCopy.addAll(events);
         this.events = eventsCopy;
     }
@@ -308,7 +308,7 @@ public class DecisionTask implements Serializable {
         if (events == null) {
             this.events = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<HistoryEvent> eventsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<HistoryEvent>(events.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<HistoryEvent> eventsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<HistoryEvent>(events.size());
             eventsCopy.addAll(events);
             this.events = eventsCopy;
         }

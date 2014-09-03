@@ -14,9 +14,9 @@
  */
 package com.amazonaws.services.s3.transfer;
 
-import com.amazonaws.event.DeliveryMode;
-import com.amazonaws.event.ProgressEvent;
-import com.amazonaws.event.ProgressListenerChain;
+import com.amazonaws.network.event.DeliveryMode;
+import com.amazonaws.network.event.ProgressEvent;
+import com.amazonaws.network.event.ProgressListenerChain;
 import com.amazonaws.services.s3.transfer.internal.TransferProgressUpdatingListener;
 
 /**

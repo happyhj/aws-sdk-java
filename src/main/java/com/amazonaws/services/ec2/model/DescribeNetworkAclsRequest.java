@@ -39,7 +39,7 @@ public class DescribeNetworkAclsRequest extends AmazonWebServiceRequest implemen
      * One or more network ACL IDs. <p>Default: Describes all your network
      * ACLs.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> networkAclIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> networkAclIds;
 
     /**
      * One or more filters. <ul> <li>
@@ -80,7 +80,7 @@ public class DescribeNetworkAclsRequest extends AmazonWebServiceRequest implemen
      * filter. </li> <li> <p><code>vpc-id</code> - The ID of the VPC for the
      * network ACL. </li> </ul>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filters;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filters;
 
     /**
      * One or more network ACL IDs. <p>Default: Describes all your network
@@ -91,7 +91,7 @@ public class DescribeNetworkAclsRequest extends AmazonWebServiceRequest implemen
      */
     public java.util.List<String> getNetworkAclIds() {
         if (networkAclIds == null) {
-              networkAclIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              networkAclIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               networkAclIds.setAutoConstruct(true);
         }
         return networkAclIds;
@@ -109,7 +109,7 @@ public class DescribeNetworkAclsRequest extends AmazonWebServiceRequest implemen
             this.networkAclIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> networkAclIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(networkAclIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> networkAclIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(networkAclIds.size());
         networkAclIdsCopy.addAll(networkAclIds);
         this.networkAclIds = networkAclIdsCopy;
     }
@@ -150,7 +150,7 @@ public class DescribeNetworkAclsRequest extends AmazonWebServiceRequest implemen
         if (networkAclIds == null) {
             this.networkAclIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> networkAclIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(networkAclIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> networkAclIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(networkAclIds.size());
             networkAclIdsCopy.addAll(networkAclIds);
             this.networkAclIds = networkAclIdsCopy;
         }
@@ -237,7 +237,7 @@ public class DescribeNetworkAclsRequest extends AmazonWebServiceRequest implemen
      */
     public java.util.List<Filter> getFilters() {
         if (filters == null) {
-              filters = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>();
+              filters = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>();
               filters.setAutoConstruct(true);
         }
         return filters;
@@ -325,7 +325,7 @@ public class DescribeNetworkAclsRequest extends AmazonWebServiceRequest implemen
             this.filters = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
         filtersCopy.addAll(filters);
         this.filters = filtersCopy;
     }
@@ -506,7 +506,7 @@ public class DescribeNetworkAclsRequest extends AmazonWebServiceRequest implemen
         if (filters == null) {
             this.filters = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
             filtersCopy.addAll(filters);
             this.filters = filtersCopy;
         }

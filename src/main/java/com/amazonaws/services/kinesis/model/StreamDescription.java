@@ -59,7 +59,7 @@ public class StreamDescription implements Serializable {
     /**
      * The shards that comprise the stream.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Shard> shards;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Shard> shards;
 
     /**
      * If set to <code>true</code> there are more shards in the stream
@@ -344,7 +344,7 @@ public class StreamDescription implements Serializable {
      */
     public java.util.List<Shard> getShards() {
         if (shards == null) {
-              shards = new com.amazonaws.internal.ListWithAutoConstructFlag<Shard>();
+              shards = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Shard>();
               shards.setAutoConstruct(true);
         }
         return shards;
@@ -360,7 +360,7 @@ public class StreamDescription implements Serializable {
             this.shards = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Shard> shardsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Shard>(shards.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Shard> shardsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Shard>(shards.size());
         shardsCopy.addAll(shards);
         this.shards = shardsCopy;
     }
@@ -397,7 +397,7 @@ public class StreamDescription implements Serializable {
         if (shards == null) {
             this.shards = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Shard> shardsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Shard>(shards.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Shard> shardsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Shard>(shards.size());
             shardsCopy.addAll(shards);
             this.shards = shardsCopy;
         }

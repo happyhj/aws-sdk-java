@@ -21,8 +21,8 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.amazonaws.classutil.ClassLoaderHelper;
 import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.utility.clazz.ClassLoaderHelper;
 
 /**
  * Factory for creating request/response handler chains.

@@ -26,7 +26,7 @@ public class ListInstanceGroupsResult implements Serializable {
     /**
      * The list of instance groups for the cluster and given filters.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<InstanceGroup> instanceGroups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceGroup> instanceGroups;
 
     /**
      * The pagination token that indicates the next set of results to
@@ -41,7 +41,7 @@ public class ListInstanceGroupsResult implements Serializable {
      */
     public java.util.List<InstanceGroup> getInstanceGroups() {
         if (instanceGroups == null) {
-              instanceGroups = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceGroup>();
+              instanceGroups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceGroup>();
               instanceGroups.setAutoConstruct(true);
         }
         return instanceGroups;
@@ -57,7 +57,7 @@ public class ListInstanceGroupsResult implements Serializable {
             this.instanceGroups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<InstanceGroup> instanceGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceGroup>(instanceGroups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceGroup> instanceGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceGroup>(instanceGroups.size());
         instanceGroupsCopy.addAll(instanceGroups);
         this.instanceGroups = instanceGroupsCopy;
     }
@@ -94,7 +94,7 @@ public class ListInstanceGroupsResult implements Serializable {
         if (instanceGroups == null) {
             this.instanceGroups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<InstanceGroup> instanceGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceGroup>(instanceGroups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceGroup> instanceGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceGroup>(instanceGroups.size());
             instanceGroupsCopy.addAll(instanceGroups);
             this.instanceGroups = instanceGroupsCopy;
         }

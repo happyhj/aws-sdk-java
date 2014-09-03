@@ -26,7 +26,7 @@ public class ListMultipartUploadsResult implements Serializable {
     /**
      * A list of in-progress multipart uploads.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<UploadListElement> uploadsList;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<UploadListElement> uploadsList;
 
     /**
      * An opaque string that represents where to continue pagination of the
@@ -43,7 +43,7 @@ public class ListMultipartUploadsResult implements Serializable {
      */
     public java.util.List<UploadListElement> getUploadsList() {
         if (uploadsList == null) {
-              uploadsList = new com.amazonaws.internal.ListWithAutoConstructFlag<UploadListElement>();
+              uploadsList = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<UploadListElement>();
               uploadsList.setAutoConstruct(true);
         }
         return uploadsList;
@@ -59,7 +59,7 @@ public class ListMultipartUploadsResult implements Serializable {
             this.uploadsList = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<UploadListElement> uploadsListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<UploadListElement>(uploadsList.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<UploadListElement> uploadsListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<UploadListElement>(uploadsList.size());
         uploadsListCopy.addAll(uploadsList);
         this.uploadsList = uploadsListCopy;
     }
@@ -96,7 +96,7 @@ public class ListMultipartUploadsResult implements Serializable {
         if (uploadsList == null) {
             this.uploadsList = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<UploadListElement> uploadsListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<UploadListElement>(uploadsList.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<UploadListElement> uploadsListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<UploadListElement>(uploadsList.size());
             uploadsListCopy.addAll(uploadsList);
             this.uploadsList = uploadsListCopy;
         }

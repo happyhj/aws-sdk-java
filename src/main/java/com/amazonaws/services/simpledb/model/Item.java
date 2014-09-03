@@ -35,7 +35,7 @@ public class Item implements Serializable {
     /**
      * A list of attributes.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Attribute> attributes;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Attribute> attributes;
 
     /**
      * Default constructor for a new Item object.  Callers should use the
@@ -129,7 +129,7 @@ public class Item implements Serializable {
      */
     public java.util.List<Attribute> getAttributes() {
         if (attributes == null) {
-              attributes = new com.amazonaws.internal.ListWithAutoConstructFlag<Attribute>();
+              attributes = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Attribute>();
               attributes.setAutoConstruct(true);
         }
         return attributes;
@@ -145,7 +145,7 @@ public class Item implements Serializable {
             this.attributes = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Attribute> attributesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Attribute>(attributes.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Attribute> attributesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Attribute>(attributes.size());
         attributesCopy.addAll(attributes);
         this.attributes = attributesCopy;
     }
@@ -182,7 +182,7 @@ public class Item implements Serializable {
         if (attributes == null) {
             this.attributes = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Attribute> attributesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Attribute>(attributes.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Attribute> attributesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Attribute>(attributes.size());
             attributesCopy.addAll(attributes);
             this.attributes = attributesCopy;
         }

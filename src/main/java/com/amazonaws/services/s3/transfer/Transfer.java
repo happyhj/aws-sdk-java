@@ -14,9 +14,9 @@
  */
 package com.amazonaws.services.s3.transfer;
 
-import com.amazonaws.event.ProgressListener;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
+import com.amazonaws.network.event.ProgressListener;
 
 /**
  * Represents an asynchronous upload to or download from Amazon S3.

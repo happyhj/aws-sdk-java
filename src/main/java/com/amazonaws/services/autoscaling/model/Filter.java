@@ -36,7 +36,7 @@ public class Filter implements Serializable {
     /**
      * The value of the filter.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> values;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> values;
 
     /**
      * The name of the filter. Valid Name values are:
@@ -99,7 +99,7 @@ public class Filter implements Serializable {
      */
     public java.util.List<String> getValues() {
         if (values == null) {
-              values = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              values = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               values.setAutoConstruct(true);
         }
         return values;
@@ -115,7 +115,7 @@ public class Filter implements Serializable {
             this.values = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> valuesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(values.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> valuesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(values.size());
         valuesCopy.addAll(values);
         this.values = valuesCopy;
     }
@@ -152,7 +152,7 @@ public class Filter implements Serializable {
         if (values == null) {
             this.values = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> valuesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(values.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> valuesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(values.size());
             valuesCopy.addAll(values);
             this.values = valuesCopy;
         }

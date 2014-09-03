@@ -18,9 +18,9 @@ import java.math.BigInteger;
 import java.nio.ByteBuffer;
 import java.util.Date;
 
-import com.amazonaws.codec.Base64;
-import com.amazonaws.dateutil.DateUtils;
 import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.json.codec.Base64;
+import com.amazonaws.utility.date.DateUtils;
 
 public class SimpleTypeJsonUnmarshallers {
     /**

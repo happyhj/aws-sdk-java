@@ -24,7 +24,7 @@ public class MonitorInstancesResult implements Serializable {
     /**
      * Monitoring information for one or more instances.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<InstanceMonitoring> instanceMonitorings;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceMonitoring> instanceMonitorings;
 
     /**
      * Monitoring information for one or more instances.
@@ -33,7 +33,7 @@ public class MonitorInstancesResult implements Serializable {
      */
     public java.util.List<InstanceMonitoring> getInstanceMonitorings() {
         if (instanceMonitorings == null) {
-              instanceMonitorings = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceMonitoring>();
+              instanceMonitorings = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceMonitoring>();
               instanceMonitorings.setAutoConstruct(true);
         }
         return instanceMonitorings;
@@ -49,7 +49,7 @@ public class MonitorInstancesResult implements Serializable {
             this.instanceMonitorings = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<InstanceMonitoring> instanceMonitoringsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceMonitoring>(instanceMonitorings.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceMonitoring> instanceMonitoringsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceMonitoring>(instanceMonitorings.size());
         instanceMonitoringsCopy.addAll(instanceMonitorings);
         this.instanceMonitorings = instanceMonitoringsCopy;
     }
@@ -86,7 +86,7 @@ public class MonitorInstancesResult implements Serializable {
         if (instanceMonitorings == null) {
             this.instanceMonitorings = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<InstanceMonitoring> instanceMonitoringsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceMonitoring>(instanceMonitorings.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceMonitoring> instanceMonitoringsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceMonitoring>(instanceMonitorings.size());
             instanceMonitoringsCopy.addAll(instanceMonitorings);
             this.instanceMonitorings = instanceMonitoringsCopy;
         }

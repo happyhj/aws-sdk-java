@@ -16,7 +16,7 @@ package com.amazonaws.client.service;
 
 import java.io.InputStream;
 
-import com.amazonaws.sdkutil.SdkFilterInputStream;
+import com.amazonaws.client.util.sdk.SdkFilterInputStream;
 
 /**
  * This wrapper input stream holds a reference to the service client. This is

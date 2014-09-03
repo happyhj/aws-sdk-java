@@ -97,7 +97,7 @@ public class GetQueueAttributesRequest extends AmazonWebServiceRequest implement
     /**
      * A list of attributes to retrieve information for.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> attributeNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> attributeNames;
 
     /**
      * Default constructor for a new GetQueueAttributesRequest object.  Callers should use the
@@ -170,7 +170,7 @@ public class GetQueueAttributesRequest extends AmazonWebServiceRequest implement
      */
     public java.util.List<String> getAttributeNames() {
         if (attributeNames == null) {
-              attributeNames = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              attributeNames = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               attributeNames.setAutoConstruct(true);
         }
         return attributeNames;
@@ -186,7 +186,7 @@ public class GetQueueAttributesRequest extends AmazonWebServiceRequest implement
             this.attributeNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> attributeNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(attributeNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> attributeNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(attributeNames.size());
         attributeNamesCopy.addAll(attributeNames);
         this.attributeNames = attributeNamesCopy;
     }
@@ -223,7 +223,7 @@ public class GetQueueAttributesRequest extends AmazonWebServiceRequest implement
         if (attributeNames == null) {
             this.attributeNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> attributeNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(attributeNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> attributeNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(attributeNames.size());
             attributeNamesCopy.addAll(attributeNames);
             this.attributeNames = attributeNamesCopy;
         }

@@ -26,7 +26,7 @@ public class RecentCaseCommunications implements Serializable {
     /**
      * The five most recent communications associated with the case.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Communication> communications;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Communication> communications;
 
     /**
      * A resumption point for pagination.
@@ -40,7 +40,7 @@ public class RecentCaseCommunications implements Serializable {
      */
     public java.util.List<Communication> getCommunications() {
         if (communications == null) {
-              communications = new com.amazonaws.internal.ListWithAutoConstructFlag<Communication>();
+              communications = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Communication>();
               communications.setAutoConstruct(true);
         }
         return communications;
@@ -56,7 +56,7 @@ public class RecentCaseCommunications implements Serializable {
             this.communications = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Communication> communicationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Communication>(communications.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Communication> communicationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Communication>(communications.size());
         communicationsCopy.addAll(communications);
         this.communications = communicationsCopy;
     }
@@ -93,7 +93,7 @@ public class RecentCaseCommunications implements Serializable {
         if (communications == null) {
             this.communications = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Communication> communicationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Communication>(communications.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Communication> communicationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Communication>(communications.size());
             communicationsCopy.addAll(communications);
             this.communications = communicationsCopy;
         }

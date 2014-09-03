@@ -18,8 +18,8 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 import com.amazonaws.client.Signer;
-import com.amazonaws.internal.config.InternalConfig;
-import com.amazonaws.internal.config.SignerConfig;
+import com.amazonaws.serviceinternal.config.InternalConfig;
+import com.amazonaws.serviceinternal.config.SignerConfig;
 
 /** Signer factory. */
 public final class SignerFactory {

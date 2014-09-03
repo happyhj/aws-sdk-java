@@ -51,7 +51,7 @@ public class RebootCacheClusterRequest extends AmazonWebServiceRequest implement
      * (0001, 0002, etc.). To reboot an entire cache cluster, specify all of
      * the cache node IDs.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> cacheNodeIdsToReboot;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> cacheNodeIdsToReboot;
 
     /**
      * Default constructor for a new RebootCacheClusterRequest object.  Callers should use the
@@ -125,7 +125,7 @@ public class RebootCacheClusterRequest extends AmazonWebServiceRequest implement
      */
     public java.util.List<String> getCacheNodeIdsToReboot() {
         if (cacheNodeIdsToReboot == null) {
-              cacheNodeIdsToReboot = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              cacheNodeIdsToReboot = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               cacheNodeIdsToReboot.setAutoConstruct(true);
         }
         return cacheNodeIdsToReboot;
@@ -145,7 +145,7 @@ public class RebootCacheClusterRequest extends AmazonWebServiceRequest implement
             this.cacheNodeIdsToReboot = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> cacheNodeIdsToRebootCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(cacheNodeIdsToReboot.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> cacheNodeIdsToRebootCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(cacheNodeIdsToReboot.size());
         cacheNodeIdsToRebootCopy.addAll(cacheNodeIdsToReboot);
         this.cacheNodeIdsToReboot = cacheNodeIdsToRebootCopy;
     }
@@ -190,7 +190,7 @@ public class RebootCacheClusterRequest extends AmazonWebServiceRequest implement
         if (cacheNodeIdsToReboot == null) {
             this.cacheNodeIdsToReboot = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> cacheNodeIdsToRebootCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(cacheNodeIdsToReboot.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> cacheNodeIdsToRebootCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(cacheNodeIdsToReboot.size());
             cacheNodeIdsToRebootCopy.addAll(cacheNodeIdsToReboot);
             this.cacheNodeIdsToReboot = cacheNodeIdsToRebootCopy;
         }

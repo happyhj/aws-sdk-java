@@ -21,14 +21,14 @@ import java.util.Map;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.dynamodbv2.model.AttributeValue;
 import com.amazonaws.services.dynamodbv2.model.BatchGetItemRequest;
 import com.amazonaws.services.dynamodbv2.model.KeysAndAttributes;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Batch Get Item Request Marshaller
@@ -62,7 +62,7 @@ public class BatchGetItemRequestMarshaller implements Marshaller<Request<BatchGe
 
                         jsonWriter.object();
 
-                        com.amazonaws.internal.ListWithAutoConstructFlag<java.util.Map<String,AttributeValue>> keysList = (com.amazonaws.internal.ListWithAutoConstructFlag<java.util.Map<String,AttributeValue>>)(requestItemsListValue.getValue().getKeys());
+                        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<java.util.Map<String,AttributeValue>> keysList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<java.util.Map<String,AttributeValue>>)(requestItemsListValue.getValue().getKeys());
                         if (keysList != null && !(keysList.isAutoConstruct() && keysList.isEmpty())) {
 
                             jsonWriter.key("Keys");
@@ -86,7 +86,7 @@ public class BatchGetItemRequestMarshaller implements Marshaller<Request<BatchGe
                                                     jsonWriter.key("B").value(memberListValue.getValue().getB());
                                                 }
 
-                                                com.amazonaws.internal.ListWithAutoConstructFlag<String> sSList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(memberListValue.getValue().getSS());
+                                                com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> sSList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(memberListValue.getValue().getSS());
                                                 if (sSList != null && !(sSList.isAutoConstruct() && sSList.isEmpty())) {
 
                                                     jsonWriter.key("SS");
@@ -100,7 +100,7 @@ public class BatchGetItemRequestMarshaller implements Marshaller<Request<BatchGe
                                                     jsonWriter.endArray();
                                                 }
 
-                                                com.amazonaws.internal.ListWithAutoConstructFlag<String> nSList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(memberListValue.getValue().getNS());
+                                                com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> nSList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(memberListValue.getValue().getNS());
                                                 if (nSList != null && !(nSList.isAutoConstruct() && nSList.isEmpty())) {
 
                                                     jsonWriter.key("NS");
@@ -114,7 +114,7 @@ public class BatchGetItemRequestMarshaller implements Marshaller<Request<BatchGe
                                                     jsonWriter.endArray();
                                                 }
 
-                                                com.amazonaws.internal.ListWithAutoConstructFlag<java.nio.ByteBuffer> bSList = (com.amazonaws.internal.ListWithAutoConstructFlag<java.nio.ByteBuffer>)(memberListValue.getValue().getBS());
+                                                com.amazonaws.serviceinternal.ListWithAutoConstructFlag<java.nio.ByteBuffer> bSList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<java.nio.ByteBuffer>)(memberListValue.getValue().getBS());
                                                 if (bSList != null && !(bSList.isAutoConstruct() && bSList.isEmpty())) {
 
                                                     jsonWriter.key("BS");
@@ -136,7 +136,7 @@ public class BatchGetItemRequestMarshaller implements Marshaller<Request<BatchGe
                             jsonWriter.endArray();
                         }
 
-                        com.amazonaws.internal.ListWithAutoConstructFlag<String> attributesToGetList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(requestItemsListValue.getValue().getAttributesToGet());
+                        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> attributesToGetList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(requestItemsListValue.getValue().getAttributesToGet());
                         if (attributesToGetList != null && !(attributesToGetList.isAutoConstruct() && attributesToGetList.isEmpty())) {
 
                             jsonWriter.key("AttributesToGet");

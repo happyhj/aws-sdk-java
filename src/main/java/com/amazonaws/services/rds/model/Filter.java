@@ -29,7 +29,7 @@ public class Filter implements Serializable {
     /**
      * This parameter is not currently supported.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> filterValue;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> filterValue;
 
     /**
      * This parameter is not currently supported.
@@ -71,7 +71,7 @@ public class Filter implements Serializable {
      */
     public java.util.List<String> getFilterValue() {
         if (filterValue == null) {
-              filterValue = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              filterValue = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               filterValue.setAutoConstruct(true);
         }
         return filterValue;
@@ -87,7 +87,7 @@ public class Filter implements Serializable {
             this.filterValue = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> filterValueCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(filterValue.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> filterValueCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(filterValue.size());
         filterValueCopy.addAll(filterValue);
         this.filterValue = filterValueCopy;
     }
@@ -124,7 +124,7 @@ public class Filter implements Serializable {
         if (filterValue == null) {
             this.filterValue = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> filterValueCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(filterValue.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> filterValueCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(filterValue.size());
             filterValueCopy.addAll(filterValue);
             this.filterValue = filterValueCopy;
         }

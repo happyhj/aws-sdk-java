@@ -28,7 +28,7 @@ public class ListGeoLocationsResult implements Serializable {
      * A complex type that contains information about the geo locations that
      * are returned by the request.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<GeoLocationDetails> geoLocationDetailsList;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GeoLocationDetails> geoLocationDetailsList;
 
     /**
      * A flag that indicates whether there are more geo locations to be
@@ -89,7 +89,7 @@ public class ListGeoLocationsResult implements Serializable {
      */
     public java.util.List<GeoLocationDetails> getGeoLocationDetailsList() {
         if (geoLocationDetailsList == null) {
-              geoLocationDetailsList = new com.amazonaws.internal.ListWithAutoConstructFlag<GeoLocationDetails>();
+              geoLocationDetailsList = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GeoLocationDetails>();
               geoLocationDetailsList.setAutoConstruct(true);
         }
         return geoLocationDetailsList;
@@ -107,7 +107,7 @@ public class ListGeoLocationsResult implements Serializable {
             this.geoLocationDetailsList = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<GeoLocationDetails> geoLocationDetailsListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<GeoLocationDetails>(geoLocationDetailsList.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GeoLocationDetails> geoLocationDetailsListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GeoLocationDetails>(geoLocationDetailsList.size());
         geoLocationDetailsListCopy.addAll(geoLocationDetailsList);
         this.geoLocationDetailsList = geoLocationDetailsListCopy;
     }
@@ -148,7 +148,7 @@ public class ListGeoLocationsResult implements Serializable {
         if (geoLocationDetailsList == null) {
             this.geoLocationDetailsList = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<GeoLocationDetails> geoLocationDetailsListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<GeoLocationDetails>(geoLocationDetailsList.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GeoLocationDetails> geoLocationDetailsListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GeoLocationDetails>(geoLocationDetailsList.size());
             geoLocationDetailsListCopy.addAll(geoLocationDetailsList);
             this.geoLocationDetailsList = geoLocationDetailsListCopy;
         }

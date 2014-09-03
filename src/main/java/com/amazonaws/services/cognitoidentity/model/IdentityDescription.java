@@ -36,7 +36,7 @@ public class IdentityDescription implements Serializable {
      * A set of optional name/value pairs that map provider names to provider
      * tokens.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> logins;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> logins;
 
     /**
      * A unique identifier in the format REGION:GUID.
@@ -106,7 +106,7 @@ public class IdentityDescription implements Serializable {
             this.logins = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> loginsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(logins.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> loginsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(logins.size());
         loginsCopy.addAll(logins);
         this.logins = loginsCopy;
     }
@@ -147,7 +147,7 @@ public class IdentityDescription implements Serializable {
         if (logins == null) {
             this.logins = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> loginsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(logins.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> loginsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(logins.size());
             loginsCopy.addAll(logins);
             this.logins = loginsCopy;
         }

@@ -27,7 +27,7 @@ public class DescribeRankExpressionsResult implements Serializable {
     /**
      * The rank expressions configured for the domain.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<RankExpressionStatus> rankExpressions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RankExpressionStatus> rankExpressions;
 
     /**
      * The rank expressions configured for the domain.
@@ -36,7 +36,7 @@ public class DescribeRankExpressionsResult implements Serializable {
      */
     public java.util.List<RankExpressionStatus> getRankExpressions() {
         if (rankExpressions == null) {
-              rankExpressions = new com.amazonaws.internal.ListWithAutoConstructFlag<RankExpressionStatus>();
+              rankExpressions = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RankExpressionStatus>();
               rankExpressions.setAutoConstruct(true);
         }
         return rankExpressions;
@@ -52,7 +52,7 @@ public class DescribeRankExpressionsResult implements Serializable {
             this.rankExpressions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<RankExpressionStatus> rankExpressionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<RankExpressionStatus>(rankExpressions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RankExpressionStatus> rankExpressionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RankExpressionStatus>(rankExpressions.size());
         rankExpressionsCopy.addAll(rankExpressions);
         this.rankExpressions = rankExpressionsCopy;
     }
@@ -89,7 +89,7 @@ public class DescribeRankExpressionsResult implements Serializable {
         if (rankExpressions == null) {
             this.rankExpressions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<RankExpressionStatus> rankExpressionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<RankExpressionStatus>(rankExpressions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RankExpressionStatus> rankExpressionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RankExpressionStatus>(rankExpressions.size());
             rankExpressionsCopy.addAll(rankExpressions);
             this.rankExpressions = rankExpressionsCopy;
         }

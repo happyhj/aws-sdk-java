@@ -63,7 +63,7 @@ public class PutNotificationConfigurationRequest extends AmazonWebServiceRequest
      * details about notification types supported by Auto Scaling, see
      * <a>DescribeAutoScalingNotificationTypes</a>.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> notificationTypes;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> notificationTypes;
 
     /**
      * The name of the Auto Scaling group.
@@ -172,7 +172,7 @@ public class PutNotificationConfigurationRequest extends AmazonWebServiceRequest
      */
     public java.util.List<String> getNotificationTypes() {
         if (notificationTypes == null) {
-              notificationTypes = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              notificationTypes = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               notificationTypes.setAutoConstruct(true);
         }
         return notificationTypes;
@@ -192,7 +192,7 @@ public class PutNotificationConfigurationRequest extends AmazonWebServiceRequest
             this.notificationTypes = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> notificationTypesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(notificationTypes.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> notificationTypesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(notificationTypes.size());
         notificationTypesCopy.addAll(notificationTypes);
         this.notificationTypes = notificationTypesCopy;
     }
@@ -237,7 +237,7 @@ public class PutNotificationConfigurationRequest extends AmazonWebServiceRequest
         if (notificationTypes == null) {
             this.notificationTypes = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> notificationTypesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(notificationTypes.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> notificationTypesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(notificationTypes.size());
             notificationTypesCopy.addAll(notificationTypes);
             this.notificationTypes = notificationTypesCopy;
         }

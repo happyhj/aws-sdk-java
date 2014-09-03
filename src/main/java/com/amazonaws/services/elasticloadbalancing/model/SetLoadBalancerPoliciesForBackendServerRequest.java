@@ -59,7 +59,7 @@ public class SetLoadBalancerPoliciesForBackendServerRequest extends AmazonWebSer
      * List of policy names to be set. If the list is empty, then all current
      * polices are removed from the back-end server.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> policyNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> policyNames;
 
     /**
      * The mnemonic name associated with the load balancer. This name must be
@@ -142,7 +142,7 @@ public class SetLoadBalancerPoliciesForBackendServerRequest extends AmazonWebSer
      */
     public java.util.List<String> getPolicyNames() {
         if (policyNames == null) {
-              policyNames = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              policyNames = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               policyNames.setAutoConstruct(true);
         }
         return policyNames;
@@ -160,7 +160,7 @@ public class SetLoadBalancerPoliciesForBackendServerRequest extends AmazonWebSer
             this.policyNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> policyNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(policyNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> policyNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(policyNames.size());
         policyNamesCopy.addAll(policyNames);
         this.policyNames = policyNamesCopy;
     }
@@ -201,7 +201,7 @@ public class SetLoadBalancerPoliciesForBackendServerRequest extends AmazonWebSer
         if (policyNames == null) {
             this.policyNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> policyNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(policyNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> policyNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(policyNames.size());
             policyNamesCopy.addAll(policyNames);
             this.policyNames = policyNamesCopy;
         }

@@ -20,13 +20,13 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.support.model.AddAttachmentsToSetRequest;
 import com.amazonaws.services.support.model.Attachment;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Add Attachments To Set Request Marshaller
@@ -55,7 +55,7 @@ public class AddAttachmentsToSetRequestMarshaller implements Marshaller<Request<
                 jsonWriter.key("attachmentSetId").value(addAttachmentsToSetRequest.getAttachmentSetId());
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<Attachment> attachmentsList = (com.amazonaws.internal.ListWithAutoConstructFlag<Attachment>)(addAttachmentsToSetRequest.getAttachments());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Attachment> attachmentsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Attachment>)(addAttachmentsToSetRequest.getAttachments());
             if (attachmentsList != null && !(attachmentsList.isAutoConstruct() && attachmentsList.isEmpty())) {
 
                 jsonWriter.key("attachments");

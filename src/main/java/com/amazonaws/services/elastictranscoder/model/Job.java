@@ -77,7 +77,7 @@ public class Job implements Serializable {
      * files for each output in the order in which you specify them in the
      * job.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<JobOutput> outputs;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<JobOutput> outputs;
 
     /**
      * The value, if any, that you want Elastic Transcoder to prepend to the
@@ -98,7 +98,7 @@ public class Job implements Serializable {
      * Transcoder to create. <p>We recommend that you create only one master
      * playlist. The maximum number of master playlists in a job is 30.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Playlist> playlists;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Playlist> playlists;
 
     /**
      * The status of the job: <code>Submitted</code>,
@@ -386,7 +386,7 @@ public class Job implements Serializable {
      */
     public java.util.List<JobOutput> getOutputs() {
         if (outputs == null) {
-              outputs = new com.amazonaws.internal.ListWithAutoConstructFlag<JobOutput>();
+              outputs = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<JobOutput>();
               outputs.setAutoConstruct(true);
         }
         return outputs;
@@ -416,7 +416,7 @@ public class Job implements Serializable {
             this.outputs = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<JobOutput> outputsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<JobOutput>(outputs.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<JobOutput> outputsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<JobOutput>(outputs.size());
         outputsCopy.addAll(outputs);
         this.outputs = outputsCopy;
     }
@@ -481,7 +481,7 @@ public class Job implements Serializable {
         if (outputs == null) {
             this.outputs = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<JobOutput> outputsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<JobOutput>(outputs.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<JobOutput> outputsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<JobOutput>(outputs.size());
             outputsCopy.addAll(outputs);
             this.outputs = outputsCopy;
         }
@@ -566,7 +566,7 @@ public class Job implements Serializable {
      */
     public java.util.List<Playlist> getPlaylists() {
         if (playlists == null) {
-              playlists = new com.amazonaws.internal.ListWithAutoConstructFlag<Playlist>();
+              playlists = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Playlist>();
               playlists.setAutoConstruct(true);
         }
         return playlists;
@@ -592,7 +592,7 @@ public class Job implements Serializable {
             this.playlists = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Playlist> playlistsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Playlist>(playlists.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Playlist> playlistsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Playlist>(playlists.size());
         playlistsCopy.addAll(playlists);
         this.playlists = playlistsCopy;
     }
@@ -649,7 +649,7 @@ public class Job implements Serializable {
         if (playlists == null) {
             this.playlists = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Playlist> playlistsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Playlist>(playlists.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Playlist> playlistsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Playlist>(playlists.size());
             playlistsCopy.addAll(playlists);
             this.playlists = playlistsCopy;
         }

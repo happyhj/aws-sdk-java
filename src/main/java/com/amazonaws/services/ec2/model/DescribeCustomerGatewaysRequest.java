@@ -39,7 +39,7 @@ public class DescribeCustomerGatewaysRequest extends AmazonWebServiceRequest imp
      * One or more customer gateway IDs. <p>Default: Describes all your
      * customer gateways.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> customerGatewayIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> customerGatewayIds;
 
     /**
      * One or more filters. <ul> <li> <p><code>bgp-asn</code> - The customer
@@ -66,7 +66,7 @@ public class DescribeCustomerGatewaysRequest extends AmazonWebServiceRequest imp
      * resource. This filter is independent of the <code>tag-key</code>
      * filter. </li> </ul>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filters;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filters;
 
     /**
      * One or more customer gateway IDs. <p>Default: Describes all your
@@ -77,7 +77,7 @@ public class DescribeCustomerGatewaysRequest extends AmazonWebServiceRequest imp
      */
     public java.util.List<String> getCustomerGatewayIds() {
         if (customerGatewayIds == null) {
-              customerGatewayIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              customerGatewayIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               customerGatewayIds.setAutoConstruct(true);
         }
         return customerGatewayIds;
@@ -95,7 +95,7 @@ public class DescribeCustomerGatewaysRequest extends AmazonWebServiceRequest imp
             this.customerGatewayIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> customerGatewayIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(customerGatewayIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> customerGatewayIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(customerGatewayIds.size());
         customerGatewayIdsCopy.addAll(customerGatewayIds);
         this.customerGatewayIds = customerGatewayIdsCopy;
     }
@@ -136,7 +136,7 @@ public class DescribeCustomerGatewaysRequest extends AmazonWebServiceRequest imp
         if (customerGatewayIds == null) {
             this.customerGatewayIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> customerGatewayIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(customerGatewayIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> customerGatewayIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(customerGatewayIds.size());
             customerGatewayIdsCopy.addAll(customerGatewayIds);
             this.customerGatewayIds = customerGatewayIdsCopy;
         }
@@ -195,7 +195,7 @@ public class DescribeCustomerGatewaysRequest extends AmazonWebServiceRequest imp
      */
     public java.util.List<Filter> getFilters() {
         if (filters == null) {
-              filters = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>();
+              filters = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>();
               filters.setAutoConstruct(true);
         }
         return filters;
@@ -255,7 +255,7 @@ public class DescribeCustomerGatewaysRequest extends AmazonWebServiceRequest imp
             this.filters = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
         filtersCopy.addAll(filters);
         this.filters = filtersCopy;
     }
@@ -380,7 +380,7 @@ public class DescribeCustomerGatewaysRequest extends AmazonWebServiceRequest imp
         if (filters == null) {
             this.filters = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
             filtersCopy.addAll(filters);
             this.filters = filtersCopy;
         }

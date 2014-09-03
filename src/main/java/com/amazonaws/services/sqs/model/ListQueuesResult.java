@@ -26,7 +26,7 @@ public class ListQueuesResult implements Serializable {
     /**
      * A list of queue URLs, up to 1000 entries.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> queueUrls;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> queueUrls;
 
     /**
      * A list of queue URLs, up to 1000 entries.
@@ -35,7 +35,7 @@ public class ListQueuesResult implements Serializable {
      */
     public java.util.List<String> getQueueUrls() {
         if (queueUrls == null) {
-              queueUrls = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              queueUrls = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               queueUrls.setAutoConstruct(true);
         }
         return queueUrls;
@@ -51,7 +51,7 @@ public class ListQueuesResult implements Serializable {
             this.queueUrls = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> queueUrlsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(queueUrls.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> queueUrlsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(queueUrls.size());
         queueUrlsCopy.addAll(queueUrls);
         this.queueUrls = queueUrlsCopy;
     }
@@ -88,7 +88,7 @@ public class ListQueuesResult implements Serializable {
         if (queueUrls == null) {
             this.queueUrls = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> queueUrlsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(queueUrls.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> queueUrlsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(queueUrls.size());
             queueUrlsCopy.addAll(queueUrls);
             this.queueUrls = queueUrlsCopy;
         }

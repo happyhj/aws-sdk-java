@@ -26,7 +26,7 @@ public class DescribeJobFlowsResult implements Serializable {
     /**
      * A list of job flows matching the parameters supplied.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<JobFlowDetail> jobFlows;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<JobFlowDetail> jobFlows;
 
     /**
      * A list of job flows matching the parameters supplied.
@@ -35,7 +35,7 @@ public class DescribeJobFlowsResult implements Serializable {
      */
     public java.util.List<JobFlowDetail> getJobFlows() {
         if (jobFlows == null) {
-              jobFlows = new com.amazonaws.internal.ListWithAutoConstructFlag<JobFlowDetail>();
+              jobFlows = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<JobFlowDetail>();
               jobFlows.setAutoConstruct(true);
         }
         return jobFlows;
@@ -51,7 +51,7 @@ public class DescribeJobFlowsResult implements Serializable {
             this.jobFlows = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<JobFlowDetail> jobFlowsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<JobFlowDetail>(jobFlows.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<JobFlowDetail> jobFlowsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<JobFlowDetail>(jobFlows.size());
         jobFlowsCopy.addAll(jobFlows);
         this.jobFlows = jobFlowsCopy;
     }
@@ -88,7 +88,7 @@ public class DescribeJobFlowsResult implements Serializable {
         if (jobFlows == null) {
             this.jobFlows = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<JobFlowDetail> jobFlowsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<JobFlowDetail>(jobFlows.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<JobFlowDetail> jobFlowsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<JobFlowDetail>(jobFlows.size());
             jobFlowsCopy.addAll(jobFlows);
             this.jobFlows = jobFlowsCopy;
         }

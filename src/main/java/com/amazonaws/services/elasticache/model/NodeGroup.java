@@ -45,7 +45,7 @@ public class NodeGroup implements Serializable {
      * A list containing information about individual nodes within the node
      * group.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<NodeGroupMember> nodeGroupMembers;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NodeGroupMember> nodeGroupMembers;
 
     /**
      * The identifier for the node group. A replication group contains only
@@ -173,7 +173,7 @@ public class NodeGroup implements Serializable {
      */
     public java.util.List<NodeGroupMember> getNodeGroupMembers() {
         if (nodeGroupMembers == null) {
-              nodeGroupMembers = new com.amazonaws.internal.ListWithAutoConstructFlag<NodeGroupMember>();
+              nodeGroupMembers = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NodeGroupMember>();
               nodeGroupMembers.setAutoConstruct(true);
         }
         return nodeGroupMembers;
@@ -191,7 +191,7 @@ public class NodeGroup implements Serializable {
             this.nodeGroupMembers = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<NodeGroupMember> nodeGroupMembersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<NodeGroupMember>(nodeGroupMembers.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NodeGroupMember> nodeGroupMembersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NodeGroupMember>(nodeGroupMembers.size());
         nodeGroupMembersCopy.addAll(nodeGroupMembers);
         this.nodeGroupMembers = nodeGroupMembersCopy;
     }
@@ -232,7 +232,7 @@ public class NodeGroup implements Serializable {
         if (nodeGroupMembers == null) {
             this.nodeGroupMembers = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<NodeGroupMember> nodeGroupMembersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<NodeGroupMember>(nodeGroupMembers.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NodeGroupMember> nodeGroupMembersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NodeGroupMember>(nodeGroupMembers.size());
             nodeGroupMembersCopy.addAll(nodeGroupMembers);
             this.nodeGroupMembers = nodeGroupMembersCopy;
         }

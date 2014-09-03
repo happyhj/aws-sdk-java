@@ -26,7 +26,7 @@ public class DescribeLaunchConfigurationsResult implements Serializable {
     /**
      * A list of launch configurations.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<LaunchConfiguration> launchConfigurations;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LaunchConfiguration> launchConfigurations;
 
     /**
      * A string that marks the start of the next batch of returned results.
@@ -43,7 +43,7 @@ public class DescribeLaunchConfigurationsResult implements Serializable {
      */
     public java.util.List<LaunchConfiguration> getLaunchConfigurations() {
         if (launchConfigurations == null) {
-              launchConfigurations = new com.amazonaws.internal.ListWithAutoConstructFlag<LaunchConfiguration>();
+              launchConfigurations = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LaunchConfiguration>();
               launchConfigurations.setAutoConstruct(true);
         }
         return launchConfigurations;
@@ -59,7 +59,7 @@ public class DescribeLaunchConfigurationsResult implements Serializable {
             this.launchConfigurations = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<LaunchConfiguration> launchConfigurationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<LaunchConfiguration>(launchConfigurations.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LaunchConfiguration> launchConfigurationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LaunchConfiguration>(launchConfigurations.size());
         launchConfigurationsCopy.addAll(launchConfigurations);
         this.launchConfigurations = launchConfigurationsCopy;
     }
@@ -96,7 +96,7 @@ public class DescribeLaunchConfigurationsResult implements Serializable {
         if (launchConfigurations == null) {
             this.launchConfigurations = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<LaunchConfiguration> launchConfigurationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<LaunchConfiguration>(launchConfigurations.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LaunchConfiguration> launchConfigurationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LaunchConfiguration>(launchConfigurations.size());
             launchConfigurationsCopy.addAll(launchConfigurations);
             this.launchConfigurations = launchConfigurationsCopy;
         }

@@ -19,9 +19,9 @@ import java.util.Map;
 
 import org.apache.http.annotation.NotThreadSafe;
 
-import com.amazonaws.RequestClientOptions;
 import com.amazonaws.credential.AWSCredentials;
-import com.amazonaws.event.ProgressListener;
+import com.amazonaws.network.RequestClientOptions;
+import com.amazonaws.network.event.ProgressListener;
 import com.amazonaws.network.metricscollector.RequestMetricCollector;
 
 /**

@@ -115,13 +115,13 @@ public class RunJobFlowRequest extends AmazonWebServiceRequest implements Serial
     /**
      * A list of steps to be executed by the job flow.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<StepConfig> steps;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StepConfig> steps;
 
     /**
      * A list of bootstrap actions that will be run before Hadoop is started
      * on the cluster nodes.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<BootstrapActionConfig> bootstrapActions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BootstrapActionConfig> bootstrapActions;
 
     /**
      * A list of strings that indicates third-party software to use with the
@@ -132,7 +132,7 @@ public class RunJobFlowRequest extends AmazonWebServiceRequest implements Serial
      * Edition.</li> <li>"mapr-m5" - launch the job flow using MapR M5
      * Edition.</li> </ul>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> supportedProducts;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> supportedProducts;
 
     /**
      * A list of strings that indicates third-party software to use with the
@@ -147,7 +147,7 @@ public class RunJobFlowRequest extends AmazonWebServiceRequest implements Serial
      * "--edition,m3" or "--edition,m5" - launch the job flow using MapR M3
      * or M5 Edition respectively.</li> </ul>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<SupportedProductConfig> newSupportedProducts;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SupportedProductConfig> newSupportedProducts;
 
     /**
      * Whether the job flow is visible to all IAM users of the AWS account
@@ -185,7 +185,7 @@ public class RunJobFlowRequest extends AmazonWebServiceRequest implements Serial
      * A list of tags to associate with a cluster and propagate to Amazon EC2
      * instances.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tags;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tags;
 
     /**
      * Default constructor for a new RunJobFlowRequest object.  Callers should use the
@@ -505,7 +505,7 @@ public class RunJobFlowRequest extends AmazonWebServiceRequest implements Serial
      */
     public java.util.List<StepConfig> getSteps() {
         if (steps == null) {
-              steps = new com.amazonaws.internal.ListWithAutoConstructFlag<StepConfig>();
+              steps = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StepConfig>();
               steps.setAutoConstruct(true);
         }
         return steps;
@@ -521,7 +521,7 @@ public class RunJobFlowRequest extends AmazonWebServiceRequest implements Serial
             this.steps = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<StepConfig> stepsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<StepConfig>(steps.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StepConfig> stepsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StepConfig>(steps.size());
         stepsCopy.addAll(steps);
         this.steps = stepsCopy;
     }
@@ -558,7 +558,7 @@ public class RunJobFlowRequest extends AmazonWebServiceRequest implements Serial
         if (steps == null) {
             this.steps = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<StepConfig> stepsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<StepConfig>(steps.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StepConfig> stepsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StepConfig>(steps.size());
             stepsCopy.addAll(steps);
             this.steps = stepsCopy;
         }
@@ -575,7 +575,7 @@ public class RunJobFlowRequest extends AmazonWebServiceRequest implements Serial
      */
     public java.util.List<BootstrapActionConfig> getBootstrapActions() {
         if (bootstrapActions == null) {
-              bootstrapActions = new com.amazonaws.internal.ListWithAutoConstructFlag<BootstrapActionConfig>();
+              bootstrapActions = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BootstrapActionConfig>();
               bootstrapActions.setAutoConstruct(true);
         }
         return bootstrapActions;
@@ -593,7 +593,7 @@ public class RunJobFlowRequest extends AmazonWebServiceRequest implements Serial
             this.bootstrapActions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<BootstrapActionConfig> bootstrapActionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<BootstrapActionConfig>(bootstrapActions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BootstrapActionConfig> bootstrapActionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BootstrapActionConfig>(bootstrapActions.size());
         bootstrapActionsCopy.addAll(bootstrapActions);
         this.bootstrapActions = bootstrapActionsCopy;
     }
@@ -634,7 +634,7 @@ public class RunJobFlowRequest extends AmazonWebServiceRequest implements Serial
         if (bootstrapActions == null) {
             this.bootstrapActions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<BootstrapActionConfig> bootstrapActionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<BootstrapActionConfig>(bootstrapActions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BootstrapActionConfig> bootstrapActionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BootstrapActionConfig>(bootstrapActions.size());
             bootstrapActionsCopy.addAll(bootstrapActions);
             this.bootstrapActions = bootstrapActionsCopy;
         }
@@ -661,7 +661,7 @@ public class RunJobFlowRequest extends AmazonWebServiceRequest implements Serial
      */
     public java.util.List<String> getSupportedProducts() {
         if (supportedProducts == null) {
-              supportedProducts = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              supportedProducts = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               supportedProducts.setAutoConstruct(true);
         }
         return supportedProducts;
@@ -689,7 +689,7 @@ public class RunJobFlowRequest extends AmazonWebServiceRequest implements Serial
             this.supportedProducts = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> supportedProductsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(supportedProducts.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> supportedProductsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(supportedProducts.size());
         supportedProductsCopy.addAll(supportedProducts);
         this.supportedProducts = supportedProductsCopy;
     }
@@ -750,7 +750,7 @@ public class RunJobFlowRequest extends AmazonWebServiceRequest implements Serial
         if (supportedProducts == null) {
             this.supportedProducts = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> supportedProductsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(supportedProducts.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> supportedProductsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(supportedProducts.size());
             supportedProductsCopy.addAll(supportedProducts);
             this.supportedProducts = supportedProductsCopy;
         }
@@ -785,7 +785,7 @@ public class RunJobFlowRequest extends AmazonWebServiceRequest implements Serial
      */
     public java.util.List<SupportedProductConfig> getNewSupportedProducts() {
         if (newSupportedProducts == null) {
-              newSupportedProducts = new com.amazonaws.internal.ListWithAutoConstructFlag<SupportedProductConfig>();
+              newSupportedProducts = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SupportedProductConfig>();
               newSupportedProducts.setAutoConstruct(true);
         }
         return newSupportedProducts;
@@ -821,7 +821,7 @@ public class RunJobFlowRequest extends AmazonWebServiceRequest implements Serial
             this.newSupportedProducts = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<SupportedProductConfig> newSupportedProductsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<SupportedProductConfig>(newSupportedProducts.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SupportedProductConfig> newSupportedProductsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SupportedProductConfig>(newSupportedProducts.size());
         newSupportedProductsCopy.addAll(newSupportedProducts);
         this.newSupportedProducts = newSupportedProductsCopy;
     }
@@ -898,7 +898,7 @@ public class RunJobFlowRequest extends AmazonWebServiceRequest implements Serial
         if (newSupportedProducts == null) {
             this.newSupportedProducts = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<SupportedProductConfig> newSupportedProductsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<SupportedProductConfig>(newSupportedProducts.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SupportedProductConfig> newSupportedProductsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SupportedProductConfig>(newSupportedProducts.size());
             newSupportedProductsCopy.addAll(newSupportedProducts);
             this.newSupportedProducts = newSupportedProductsCopy;
         }
@@ -1111,7 +1111,7 @@ public class RunJobFlowRequest extends AmazonWebServiceRequest implements Serial
      */
     public java.util.List<Tag> getTags() {
         if (tags == null) {
-              tags = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>();
+              tags = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>();
               tags.setAutoConstruct(true);
         }
         return tags;
@@ -1129,7 +1129,7 @@ public class RunJobFlowRequest extends AmazonWebServiceRequest implements Serial
             this.tags = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tags.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tags.size());
         tagsCopy.addAll(tags);
         this.tags = tagsCopy;
     }
@@ -1170,7 +1170,7 @@ public class RunJobFlowRequest extends AmazonWebServiceRequest implements Serial
         if (tags == null) {
             this.tags = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tags.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tags.size());
             tagsCopy.addAll(tags);
             this.tags = tagsCopy;
         }

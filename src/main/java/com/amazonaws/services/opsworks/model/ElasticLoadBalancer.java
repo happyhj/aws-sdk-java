@@ -56,18 +56,18 @@ public class ElasticLoadBalancer implements Serializable {
     /**
      * A list of Availability Zones.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> availabilityZones;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> availabilityZones;
 
     /**
      * A list of subnet IDs, if the stack is running in a VPC.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> subnetIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> subnetIds;
 
     /**
      * A list of the EC2 instances that the Elastic Load Balancing instance
      * is managing traffic for.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> ec2InstanceIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> ec2InstanceIds;
 
     /**
      * The Elastic Load Balancing instance's name.
@@ -274,7 +274,7 @@ public class ElasticLoadBalancer implements Serializable {
      */
     public java.util.List<String> getAvailabilityZones() {
         if (availabilityZones == null) {
-              availabilityZones = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              availabilityZones = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               availabilityZones.setAutoConstruct(true);
         }
         return availabilityZones;
@@ -290,7 +290,7 @@ public class ElasticLoadBalancer implements Serializable {
             this.availabilityZones = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> availabilityZonesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(availabilityZones.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> availabilityZonesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(availabilityZones.size());
         availabilityZonesCopy.addAll(availabilityZones);
         this.availabilityZones = availabilityZonesCopy;
     }
@@ -327,7 +327,7 @@ public class ElasticLoadBalancer implements Serializable {
         if (availabilityZones == null) {
             this.availabilityZones = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> availabilityZonesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(availabilityZones.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> availabilityZonesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(availabilityZones.size());
             availabilityZonesCopy.addAll(availabilityZones);
             this.availabilityZones = availabilityZonesCopy;
         }
@@ -342,7 +342,7 @@ public class ElasticLoadBalancer implements Serializable {
      */
     public java.util.List<String> getSubnetIds() {
         if (subnetIds == null) {
-              subnetIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              subnetIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               subnetIds.setAutoConstruct(true);
         }
         return subnetIds;
@@ -358,7 +358,7 @@ public class ElasticLoadBalancer implements Serializable {
             this.subnetIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> subnetIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(subnetIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> subnetIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(subnetIds.size());
         subnetIdsCopy.addAll(subnetIds);
         this.subnetIds = subnetIdsCopy;
     }
@@ -395,7 +395,7 @@ public class ElasticLoadBalancer implements Serializable {
         if (subnetIds == null) {
             this.subnetIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> subnetIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(subnetIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> subnetIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(subnetIds.size());
             subnetIdsCopy.addAll(subnetIds);
             this.subnetIds = subnetIdsCopy;
         }
@@ -412,7 +412,7 @@ public class ElasticLoadBalancer implements Serializable {
      */
     public java.util.List<String> getEc2InstanceIds() {
         if (ec2InstanceIds == null) {
-              ec2InstanceIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              ec2InstanceIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               ec2InstanceIds.setAutoConstruct(true);
         }
         return ec2InstanceIds;
@@ -430,7 +430,7 @@ public class ElasticLoadBalancer implements Serializable {
             this.ec2InstanceIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> ec2InstanceIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(ec2InstanceIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> ec2InstanceIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(ec2InstanceIds.size());
         ec2InstanceIdsCopy.addAll(ec2InstanceIds);
         this.ec2InstanceIds = ec2InstanceIdsCopy;
     }
@@ -471,7 +471,7 @@ public class ElasticLoadBalancer implements Serializable {
         if (ec2InstanceIds == null) {
             this.ec2InstanceIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> ec2InstanceIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(ec2InstanceIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> ec2InstanceIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(ec2InstanceIds.size());
             ec2InstanceIdsCopy.addAll(ec2InstanceIds);
             this.ec2InstanceIds = ec2InstanceIdsCopy;
         }

@@ -52,12 +52,12 @@ public class Instance implements Serializable {
     /**
      * An array containing the instance layer IDs.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> layerIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> layerIds;
 
     /**
      * An array containing the instance security group IDs.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> securityGroupIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> securityGroupIds;
 
     /**
      * The instance type. AWS OpsWorks supports all instance types except
@@ -399,7 +399,7 @@ public class Instance implements Serializable {
      */
     public java.util.List<String> getLayerIds() {
         if (layerIds == null) {
-              layerIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              layerIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               layerIds.setAutoConstruct(true);
         }
         return layerIds;
@@ -415,7 +415,7 @@ public class Instance implements Serializable {
             this.layerIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> layerIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(layerIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> layerIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(layerIds.size());
         layerIdsCopy.addAll(layerIds);
         this.layerIds = layerIdsCopy;
     }
@@ -452,7 +452,7 @@ public class Instance implements Serializable {
         if (layerIds == null) {
             this.layerIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> layerIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(layerIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> layerIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(layerIds.size());
             layerIdsCopy.addAll(layerIds);
             this.layerIds = layerIdsCopy;
         }
@@ -467,7 +467,7 @@ public class Instance implements Serializable {
      */
     public java.util.List<String> getSecurityGroupIds() {
         if (securityGroupIds == null) {
-              securityGroupIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              securityGroupIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               securityGroupIds.setAutoConstruct(true);
         }
         return securityGroupIds;
@@ -483,7 +483,7 @@ public class Instance implements Serializable {
             this.securityGroupIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> securityGroupIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(securityGroupIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> securityGroupIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(securityGroupIds.size());
         securityGroupIdsCopy.addAll(securityGroupIds);
         this.securityGroupIds = securityGroupIdsCopy;
     }
@@ -520,7 +520,7 @@ public class Instance implements Serializable {
         if (securityGroupIds == null) {
             this.securityGroupIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> securityGroupIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(securityGroupIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> securityGroupIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(securityGroupIds.size());
             securityGroupIdsCopy.addAll(securityGroupIds);
             this.securityGroupIds = securityGroupIdsCopy;
         }

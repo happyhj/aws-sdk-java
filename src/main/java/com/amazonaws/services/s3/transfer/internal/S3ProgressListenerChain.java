@@ -14,14 +14,14 @@
  */
 package com.amazonaws.services.s3.transfer.internal;
 
-import com.amazonaws.event.ProgressListener;
+import com.amazonaws.network.event.ProgressListener;
 import com.amazonaws.services.s3.transfer.PersistableTransfer;
 
 /**
  * S3 specific progress listener chain.
  */
 public class S3ProgressListenerChain extends
-        com.amazonaws.event.ProgressListenerChain implements S3ProgressListener
+        com.amazonaws.network.event.ProgressListenerChain implements S3ProgressListener
 {
     /**
      * Create a listener chain that directly passes all the progress events to

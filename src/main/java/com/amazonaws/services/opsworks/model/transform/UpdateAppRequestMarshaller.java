@@ -21,7 +21,7 @@ import java.util.Map;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.opsworks.model.DataSource;
@@ -29,7 +29,7 @@ import com.amazonaws.services.opsworks.model.Source;
 import com.amazonaws.services.opsworks.model.SslConfiguration;
 import com.amazonaws.services.opsworks.model.UpdateAppRequest;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Update App Request Marshaller
@@ -64,7 +64,7 @@ public class UpdateAppRequestMarshaller implements Marshaller<Request<UpdateAppR
                 jsonWriter.key("Description").value(updateAppRequest.getDescription());
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<DataSource> dataSourcesList = (com.amazonaws.internal.ListWithAutoConstructFlag<DataSource>)(updateAppRequest.getDataSources());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DataSource> dataSourcesList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DataSource>)(updateAppRequest.getDataSources());
             if (dataSourcesList != null && !(dataSourcesList.isAutoConstruct() && dataSourcesList.isEmpty())) {
 
                 jsonWriter.key("DataSources");
@@ -117,7 +117,7 @@ public class UpdateAppRequestMarshaller implements Marshaller<Request<UpdateAppR
                 jsonWriter.endObject();
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> domainsList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(updateAppRequest.getDomains());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> domainsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(updateAppRequest.getDomains());
             if (domainsList != null && !(domainsList.isAutoConstruct() && domainsList.isEmpty())) {
 
                 jsonWriter.key("Domains");

@@ -28,12 +28,12 @@ public class DeleteMessageBatchResult implements Serializable {
     /**
      * A list of <a>DeleteMessageBatchResultEntry</a> items.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<DeleteMessageBatchResultEntry> successful;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DeleteMessageBatchResultEntry> successful;
 
     /**
      * A list of <a>BatchResultErrorEntry</a> items.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<BatchResultErrorEntry> failed;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BatchResultErrorEntry> failed;
 
     /**
      * A list of <a>DeleteMessageBatchResultEntry</a> items.
@@ -42,7 +42,7 @@ public class DeleteMessageBatchResult implements Serializable {
      */
     public java.util.List<DeleteMessageBatchResultEntry> getSuccessful() {
         if (successful == null) {
-              successful = new com.amazonaws.internal.ListWithAutoConstructFlag<DeleteMessageBatchResultEntry>();
+              successful = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DeleteMessageBatchResultEntry>();
               successful.setAutoConstruct(true);
         }
         return successful;
@@ -58,7 +58,7 @@ public class DeleteMessageBatchResult implements Serializable {
             this.successful = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<DeleteMessageBatchResultEntry> successfulCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DeleteMessageBatchResultEntry>(successful.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DeleteMessageBatchResultEntry> successfulCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DeleteMessageBatchResultEntry>(successful.size());
         successfulCopy.addAll(successful);
         this.successful = successfulCopy;
     }
@@ -95,7 +95,7 @@ public class DeleteMessageBatchResult implements Serializable {
         if (successful == null) {
             this.successful = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<DeleteMessageBatchResultEntry> successfulCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DeleteMessageBatchResultEntry>(successful.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DeleteMessageBatchResultEntry> successfulCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DeleteMessageBatchResultEntry>(successful.size());
             successfulCopy.addAll(successful);
             this.successful = successfulCopy;
         }
@@ -110,7 +110,7 @@ public class DeleteMessageBatchResult implements Serializable {
      */
     public java.util.List<BatchResultErrorEntry> getFailed() {
         if (failed == null) {
-              failed = new com.amazonaws.internal.ListWithAutoConstructFlag<BatchResultErrorEntry>();
+              failed = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BatchResultErrorEntry>();
               failed.setAutoConstruct(true);
         }
         return failed;
@@ -126,7 +126,7 @@ public class DeleteMessageBatchResult implements Serializable {
             this.failed = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<BatchResultErrorEntry> failedCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<BatchResultErrorEntry>(failed.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BatchResultErrorEntry> failedCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BatchResultErrorEntry>(failed.size());
         failedCopy.addAll(failed);
         this.failed = failedCopy;
     }
@@ -163,7 +163,7 @@ public class DeleteMessageBatchResult implements Serializable {
         if (failed == null) {
             this.failed = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<BatchResultErrorEntry> failedCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<BatchResultErrorEntry>(failed.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BatchResultErrorEntry> failedCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BatchResultErrorEntry>(failed.size());
             failedCopy.addAll(failed);
             this.failed = failedCopy;
         }

@@ -42,7 +42,7 @@ public class AllowedMethods implements Serializable {
      * A complex type that contains the HTTP methods that you want CloudFront
      * to process and forward to your origin.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> items;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> items;
 
     /**
      * The number of HTTP methods that you want CloudFront to forward to your
@@ -98,7 +98,7 @@ public class AllowedMethods implements Serializable {
      */
     public java.util.List<String> getItems() {
         if (items == null) {
-              items = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              items = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               items.setAutoConstruct(true);
         }
         return items;
@@ -116,7 +116,7 @@ public class AllowedMethods implements Serializable {
             this.items = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> itemsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(items.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> itemsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(items.size());
         itemsCopy.addAll(items);
         this.items = itemsCopy;
     }
@@ -157,7 +157,7 @@ public class AllowedMethods implements Serializable {
         if (items == null) {
             this.items = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> itemsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(items.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> itemsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(items.size());
             itemsCopy.addAll(items);
             this.items = itemsCopy;
         }

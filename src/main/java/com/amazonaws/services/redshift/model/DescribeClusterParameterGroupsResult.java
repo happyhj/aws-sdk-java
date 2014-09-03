@@ -37,7 +37,7 @@ public class DescribeClusterParameterGroupsResult implements Serializable {
      * A list of <a>ClusterParameterGroup</a> instances. Each instance
      * describes one cluster parameter group.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ClusterParameterGroup> parameterGroups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterParameterGroup> parameterGroups;
 
     /**
      * A value that indicates the starting point for the next set of response
@@ -111,7 +111,7 @@ public class DescribeClusterParameterGroupsResult implements Serializable {
      */
     public java.util.List<ClusterParameterGroup> getParameterGroups() {
         if (parameterGroups == null) {
-              parameterGroups = new com.amazonaws.internal.ListWithAutoConstructFlag<ClusterParameterGroup>();
+              parameterGroups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterParameterGroup>();
               parameterGroups.setAutoConstruct(true);
         }
         return parameterGroups;
@@ -129,7 +129,7 @@ public class DescribeClusterParameterGroupsResult implements Serializable {
             this.parameterGroups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ClusterParameterGroup> parameterGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ClusterParameterGroup>(parameterGroups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterParameterGroup> parameterGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterParameterGroup>(parameterGroups.size());
         parameterGroupsCopy.addAll(parameterGroups);
         this.parameterGroups = parameterGroupsCopy;
     }
@@ -170,7 +170,7 @@ public class DescribeClusterParameterGroupsResult implements Serializable {
         if (parameterGroups == null) {
             this.parameterGroups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ClusterParameterGroup> parameterGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ClusterParameterGroup>(parameterGroups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterParameterGroup> parameterGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterParameterGroup>(parameterGroups.size());
             parameterGroupsCopy.addAll(parameterGroups);
             this.parameterGroups = parameterGroupsCopy;
         }

@@ -37,7 +37,7 @@ public class DescribeVTLDevicesResult implements Serializable {
      * An array of VTL device objects composed of the Amazon Resource
      * Name(ARN) of the VTL devices.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<VTLDevice> vTLDevices;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VTLDevice> vTLDevices;
 
     /**
      * An opaque string that indicates the position at which the VTL devices
@@ -114,7 +114,7 @@ public class DescribeVTLDevicesResult implements Serializable {
      */
     public java.util.List<VTLDevice> getVTLDevices() {
         if (vTLDevices == null) {
-              vTLDevices = new com.amazonaws.internal.ListWithAutoConstructFlag<VTLDevice>();
+              vTLDevices = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VTLDevice>();
               vTLDevices.setAutoConstruct(true);
         }
         return vTLDevices;
@@ -132,7 +132,7 @@ public class DescribeVTLDevicesResult implements Serializable {
             this.vTLDevices = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<VTLDevice> vTLDevicesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<VTLDevice>(vTLDevices.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VTLDevice> vTLDevicesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VTLDevice>(vTLDevices.size());
         vTLDevicesCopy.addAll(vTLDevices);
         this.vTLDevices = vTLDevicesCopy;
     }
@@ -173,7 +173,7 @@ public class DescribeVTLDevicesResult implements Serializable {
         if (vTLDevices == null) {
             this.vTLDevices = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<VTLDevice> vTLDevicesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<VTLDevice>(vTLDevices.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VTLDevice> vTLDevicesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VTLDevice>(vTLDevices.size());
             vTLDevicesCopy.addAll(vTLDevices);
             this.vTLDevices = vTLDevicesCopy;
         }

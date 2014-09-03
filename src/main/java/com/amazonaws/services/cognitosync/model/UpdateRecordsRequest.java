@@ -64,7 +64,7 @@ public class UpdateRecordsRequest extends AmazonWebServiceRequest implements Ser
     /**
      * 
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<RecordPatch> recordPatches;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RecordPatch> recordPatches;
 
     /**
      * The SyncSessionToken returned by a previous call to ListRecords for
@@ -246,7 +246,7 @@ public class UpdateRecordsRequest extends AmazonWebServiceRequest implements Ser
      */
     public java.util.List<RecordPatch> getRecordPatches() {
         if (recordPatches == null) {
-              recordPatches = new com.amazonaws.internal.ListWithAutoConstructFlag<RecordPatch>();
+              recordPatches = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RecordPatch>();
               recordPatches.setAutoConstruct(true);
         }
         return recordPatches;
@@ -262,7 +262,7 @@ public class UpdateRecordsRequest extends AmazonWebServiceRequest implements Ser
             this.recordPatches = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<RecordPatch> recordPatchesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<RecordPatch>(recordPatches.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RecordPatch> recordPatchesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RecordPatch>(recordPatches.size());
         recordPatchesCopy.addAll(recordPatches);
         this.recordPatches = recordPatchesCopy;
     }
@@ -299,7 +299,7 @@ public class UpdateRecordsRequest extends AmazonWebServiceRequest implements Ser
         if (recordPatches == null) {
             this.recordPatches = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<RecordPatch> recordPatchesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<RecordPatch>(recordPatches.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RecordPatch> recordPatchesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RecordPatch>(recordPatches.size());
             recordPatchesCopy.addAll(recordPatches);
             this.recordPatches = recordPatchesCopy;
         }

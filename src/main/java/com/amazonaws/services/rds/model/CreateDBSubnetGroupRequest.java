@@ -45,12 +45,12 @@ public class CreateDBSubnetGroupRequest extends AmazonWebServiceRequest implemen
     /**
      * The EC2 Subnet IDs for the DB subnet group.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> subnetIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> subnetIds;
 
     /**
      * A list of tags.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tags;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tags;
 
     /**
      * The name for the DB subnet group. This value is stored as a lowercase
@@ -143,7 +143,7 @@ public class CreateDBSubnetGroupRequest extends AmazonWebServiceRequest implemen
      */
     public java.util.List<String> getSubnetIds() {
         if (subnetIds == null) {
-              subnetIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              subnetIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               subnetIds.setAutoConstruct(true);
         }
         return subnetIds;
@@ -159,7 +159,7 @@ public class CreateDBSubnetGroupRequest extends AmazonWebServiceRequest implemen
             this.subnetIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> subnetIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(subnetIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> subnetIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(subnetIds.size());
         subnetIdsCopy.addAll(subnetIds);
         this.subnetIds = subnetIdsCopy;
     }
@@ -196,7 +196,7 @@ public class CreateDBSubnetGroupRequest extends AmazonWebServiceRequest implemen
         if (subnetIds == null) {
             this.subnetIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> subnetIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(subnetIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> subnetIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(subnetIds.size());
             subnetIdsCopy.addAll(subnetIds);
             this.subnetIds = subnetIdsCopy;
         }
@@ -211,7 +211,7 @@ public class CreateDBSubnetGroupRequest extends AmazonWebServiceRequest implemen
      */
     public java.util.List<Tag> getTags() {
         if (tags == null) {
-              tags = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>();
+              tags = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>();
               tags.setAutoConstruct(true);
         }
         return tags;
@@ -227,7 +227,7 @@ public class CreateDBSubnetGroupRequest extends AmazonWebServiceRequest implemen
             this.tags = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tags.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tags.size());
         tagsCopy.addAll(tags);
         this.tags = tagsCopy;
     }
@@ -264,7 +264,7 @@ public class CreateDBSubnetGroupRequest extends AmazonWebServiceRequest implemen
         if (tags == null) {
             this.tags = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tags.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tags.size());
             tagsCopy.addAll(tags);
             this.tags = tagsCopy;
         }

@@ -28,7 +28,7 @@ public class DescribeDomainsResult implements Serializable {
     /**
      * The current status of all of your search domains.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<DomainStatus> domainStatusList;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DomainStatus> domainStatusList;
 
     /**
      * The current status of all of your search domains.
@@ -37,7 +37,7 @@ public class DescribeDomainsResult implements Serializable {
      */
     public java.util.List<DomainStatus> getDomainStatusList() {
         if (domainStatusList == null) {
-              domainStatusList = new com.amazonaws.internal.ListWithAutoConstructFlag<DomainStatus>();
+              domainStatusList = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DomainStatus>();
               domainStatusList.setAutoConstruct(true);
         }
         return domainStatusList;
@@ -53,7 +53,7 @@ public class DescribeDomainsResult implements Serializable {
             this.domainStatusList = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<DomainStatus> domainStatusListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DomainStatus>(domainStatusList.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DomainStatus> domainStatusListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DomainStatus>(domainStatusList.size());
         domainStatusListCopy.addAll(domainStatusList);
         this.domainStatusList = domainStatusListCopy;
     }
@@ -90,7 +90,7 @@ public class DescribeDomainsResult implements Serializable {
         if (domainStatusList == null) {
             this.domainStatusList = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<DomainStatus> domainStatusListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DomainStatus>(domainStatusList.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DomainStatus> domainStatusListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DomainStatus>(domainStatusList.size());
             domainStatusListCopy.addAll(domainStatusList);
             this.domainStatusList = domainStatusListCopy;
         }

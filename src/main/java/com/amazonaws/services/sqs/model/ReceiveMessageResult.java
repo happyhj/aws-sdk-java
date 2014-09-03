@@ -26,7 +26,7 @@ public class ReceiveMessageResult implements Serializable {
     /**
      * A list of messages.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Message> messages;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Message> messages;
 
     /**
      * A list of messages.
@@ -35,7 +35,7 @@ public class ReceiveMessageResult implements Serializable {
      */
     public java.util.List<Message> getMessages() {
         if (messages == null) {
-              messages = new com.amazonaws.internal.ListWithAutoConstructFlag<Message>();
+              messages = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Message>();
               messages.setAutoConstruct(true);
         }
         return messages;
@@ -51,7 +51,7 @@ public class ReceiveMessageResult implements Serializable {
             this.messages = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Message> messagesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Message>(messages.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Message> messagesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Message>(messages.size());
         messagesCopy.addAll(messages);
         this.messages = messagesCopy;
     }
@@ -88,7 +88,7 @@ public class ReceiveMessageResult implements Serializable {
         if (messages == null) {
             this.messages = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Message> messagesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Message>(messages.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Message> messagesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Message>(messages.size());
             messagesCopy.addAll(messages);
             this.messages = messagesCopy;
         }

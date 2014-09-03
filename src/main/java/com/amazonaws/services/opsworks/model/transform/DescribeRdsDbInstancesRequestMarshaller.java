@@ -20,12 +20,12 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.opsworks.model.DescribeRdsDbInstancesRequest;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Describe Rds Db Instances Request Marshaller
@@ -54,7 +54,7 @@ public class DescribeRdsDbInstancesRequestMarshaller implements Marshaller<Reque
                 jsonWriter.key("StackId").value(describeRdsDbInstancesRequest.getStackId());
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> rdsDbInstanceArnsList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(describeRdsDbInstancesRequest.getRdsDbInstanceArns());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> rdsDbInstanceArnsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(describeRdsDbInstancesRequest.getRdsDbInstanceArns());
             if (rdsDbInstanceArnsList != null && !(rdsDbInstanceArnsList.isAutoConstruct() && rdsDbInstanceArnsList.isEmpty())) {
 
                 jsonWriter.key("RdsDbInstanceArns");

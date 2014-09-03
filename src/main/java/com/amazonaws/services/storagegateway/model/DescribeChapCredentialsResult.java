@@ -38,7 +38,7 @@ public class DescribeChapCredentialsResult implements Serializable {
      * <p><b>TargetARN</b>: The Amazon Resource Name (ARN) of the storage
      * volume. </li> </ul>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ChapInfo> chapCredentials;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ChapInfo> chapCredentials;
 
     /**
      * An array of <a>ChapInfo</a> objects that represent CHAP credentials.
@@ -71,7 +71,7 @@ public class DescribeChapCredentialsResult implements Serializable {
      */
     public java.util.List<ChapInfo> getChapCredentials() {
         if (chapCredentials == null) {
-              chapCredentials = new com.amazonaws.internal.ListWithAutoConstructFlag<ChapInfo>();
+              chapCredentials = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ChapInfo>();
               chapCredentials.setAutoConstruct(true);
         }
         return chapCredentials;
@@ -111,7 +111,7 @@ public class DescribeChapCredentialsResult implements Serializable {
             this.chapCredentials = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ChapInfo> chapCredentialsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ChapInfo>(chapCredentials.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ChapInfo> chapCredentialsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ChapInfo>(chapCredentials.size());
         chapCredentialsCopy.addAll(chapCredentials);
         this.chapCredentials = chapCredentialsCopy;
     }
@@ -196,7 +196,7 @@ public class DescribeChapCredentialsResult implements Serializable {
         if (chapCredentials == null) {
             this.chapCredentials = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ChapInfo> chapCredentialsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ChapInfo>(chapCredentials.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ChapInfo> chapCredentialsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ChapInfo>(chapCredentials.size());
             chapCredentialsCopy.addAll(chapCredentials);
             this.chapCredentials = chapCredentialsCopy;
         }

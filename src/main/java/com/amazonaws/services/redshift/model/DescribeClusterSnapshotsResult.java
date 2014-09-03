@@ -36,7 +36,7 @@ public class DescribeClusterSnapshotsResult implements Serializable {
     /**
      * A list of <a>Snapshot</a> instances.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Snapshot> snapshots;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Snapshot> snapshots;
 
     /**
      * A value that indicates the starting point for the next set of response
@@ -108,7 +108,7 @@ public class DescribeClusterSnapshotsResult implements Serializable {
      */
     public java.util.List<Snapshot> getSnapshots() {
         if (snapshots == null) {
-              snapshots = new com.amazonaws.internal.ListWithAutoConstructFlag<Snapshot>();
+              snapshots = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Snapshot>();
               snapshots.setAutoConstruct(true);
         }
         return snapshots;
@@ -124,7 +124,7 @@ public class DescribeClusterSnapshotsResult implements Serializable {
             this.snapshots = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Snapshot> snapshotsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Snapshot>(snapshots.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Snapshot> snapshotsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Snapshot>(snapshots.size());
         snapshotsCopy.addAll(snapshots);
         this.snapshots = snapshotsCopy;
     }
@@ -161,7 +161,7 @@ public class DescribeClusterSnapshotsResult implements Serializable {
         if (snapshots == null) {
             this.snapshots = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Snapshot> snapshotsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Snapshot>(snapshots.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Snapshot> snapshotsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Snapshot>(snapshots.size());
             snapshotsCopy.addAll(snapshots);
             this.snapshots = snapshotsCopy;
         }

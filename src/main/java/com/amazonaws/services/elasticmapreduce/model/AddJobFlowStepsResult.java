@@ -26,7 +26,7 @@ public class AddJobFlowStepsResult implements Serializable {
     /**
      * The identifiers of the list of steps added to the job flow.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> stepIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> stepIds;
 
     /**
      * The identifiers of the list of steps added to the job flow.
@@ -35,7 +35,7 @@ public class AddJobFlowStepsResult implements Serializable {
      */
     public java.util.List<String> getStepIds() {
         if (stepIds == null) {
-              stepIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              stepIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               stepIds.setAutoConstruct(true);
         }
         return stepIds;
@@ -51,7 +51,7 @@ public class AddJobFlowStepsResult implements Serializable {
             this.stepIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> stepIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(stepIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> stepIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(stepIds.size());
         stepIdsCopy.addAll(stepIds);
         this.stepIds = stepIdsCopy;
     }
@@ -88,7 +88,7 @@ public class AddJobFlowStepsResult implements Serializable {
         if (stepIds == null) {
             this.stepIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> stepIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(stepIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> stepIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(stepIds.size());
             stepIdsCopy.addAll(stepIds);
             this.stepIds = stepIdsCopy;
         }

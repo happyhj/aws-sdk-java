@@ -59,12 +59,12 @@ public class Volume implements Serializable {
     /**
      * 
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<VolumeAttachment> attachments;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeAttachment> attachments;
 
     /**
      * Any tags assigned to the volume.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tags;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tags;
 
     /**
      * The volume type. This can be <code>gp2</code> for General Purpose
@@ -341,7 +341,7 @@ public class Volume implements Serializable {
      */
     public java.util.List<VolumeAttachment> getAttachments() {
         if (attachments == null) {
-              attachments = new com.amazonaws.internal.ListWithAutoConstructFlag<VolumeAttachment>();
+              attachments = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeAttachment>();
               attachments.setAutoConstruct(true);
         }
         return attachments;
@@ -357,7 +357,7 @@ public class Volume implements Serializable {
             this.attachments = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<VolumeAttachment> attachmentsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<VolumeAttachment>(attachments.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeAttachment> attachmentsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeAttachment>(attachments.size());
         attachmentsCopy.addAll(attachments);
         this.attachments = attachmentsCopy;
     }
@@ -394,7 +394,7 @@ public class Volume implements Serializable {
         if (attachments == null) {
             this.attachments = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<VolumeAttachment> attachmentsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<VolumeAttachment>(attachments.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeAttachment> attachmentsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeAttachment>(attachments.size());
             attachmentsCopy.addAll(attachments);
             this.attachments = attachmentsCopy;
         }
@@ -409,7 +409,7 @@ public class Volume implements Serializable {
      */
     public java.util.List<Tag> getTags() {
         if (tags == null) {
-              tags = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>();
+              tags = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>();
               tags.setAutoConstruct(true);
         }
         return tags;
@@ -425,7 +425,7 @@ public class Volume implements Serializable {
             this.tags = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tags.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tags.size());
         tagsCopy.addAll(tags);
         this.tags = tagsCopy;
     }
@@ -462,7 +462,7 @@ public class Volume implements Serializable {
         if (tags == null) {
             this.tags = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tags.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tags.size());
             tagsCopy.addAll(tags);
             this.tags = tagsCopy;
         }

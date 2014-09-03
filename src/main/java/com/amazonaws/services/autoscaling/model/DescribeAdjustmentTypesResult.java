@@ -26,7 +26,7 @@ public class DescribeAdjustmentTypesResult implements Serializable {
     /**
      * A list of specific policy adjustment types.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<AdjustmentType> adjustmentTypes;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AdjustmentType> adjustmentTypes;
 
     /**
      * A list of specific policy adjustment types.
@@ -35,7 +35,7 @@ public class DescribeAdjustmentTypesResult implements Serializable {
      */
     public java.util.List<AdjustmentType> getAdjustmentTypes() {
         if (adjustmentTypes == null) {
-              adjustmentTypes = new com.amazonaws.internal.ListWithAutoConstructFlag<AdjustmentType>();
+              adjustmentTypes = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AdjustmentType>();
               adjustmentTypes.setAutoConstruct(true);
         }
         return adjustmentTypes;
@@ -51,7 +51,7 @@ public class DescribeAdjustmentTypesResult implements Serializable {
             this.adjustmentTypes = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<AdjustmentType> adjustmentTypesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<AdjustmentType>(adjustmentTypes.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AdjustmentType> adjustmentTypesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AdjustmentType>(adjustmentTypes.size());
         adjustmentTypesCopy.addAll(adjustmentTypes);
         this.adjustmentTypes = adjustmentTypesCopy;
     }
@@ -88,7 +88,7 @@ public class DescribeAdjustmentTypesResult implements Serializable {
         if (adjustmentTypes == null) {
             this.adjustmentTypes = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<AdjustmentType> adjustmentTypesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<AdjustmentType>(adjustmentTypes.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AdjustmentType> adjustmentTypesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AdjustmentType>(adjustmentTypes.size());
             adjustmentTypesCopy.addAll(adjustmentTypes);
             this.adjustmentTypes = adjustmentTypesCopy;
         }

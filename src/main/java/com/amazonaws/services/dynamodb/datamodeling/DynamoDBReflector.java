@@ -34,8 +34,8 @@ import java.util.Map;
 import java.util.Set;
 import java.util.UUID;
 
-import com.amazonaws.dateutil.DateUtils;
 import com.amazonaws.services.dynamodb.model.AttributeValue;
+import com.amazonaws.utility.date.DateUtils;
 
 /**
  * Reflection assistant for {@link DynamoDBMapper}

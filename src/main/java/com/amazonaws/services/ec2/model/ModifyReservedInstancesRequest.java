@@ -40,12 +40,12 @@ public class ModifyReservedInstancesRequest extends AmazonWebServiceRequest impl
     /**
      * The IDs of the Reserved Instances to modify.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> reservedInstancesIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> reservedInstancesIds;
 
     /**
      * The configuration settings for the Reserved Instances to modify.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ReservedInstancesConfiguration> targetConfigurations;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedInstancesConfiguration> targetConfigurations;
 
     /**
      * A unique, case-sensitive token you provide to ensure idempotency of
@@ -93,7 +93,7 @@ public class ModifyReservedInstancesRequest extends AmazonWebServiceRequest impl
      */
     public java.util.List<String> getReservedInstancesIds() {
         if (reservedInstancesIds == null) {
-              reservedInstancesIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              reservedInstancesIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               reservedInstancesIds.setAutoConstruct(true);
         }
         return reservedInstancesIds;
@@ -109,7 +109,7 @@ public class ModifyReservedInstancesRequest extends AmazonWebServiceRequest impl
             this.reservedInstancesIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> reservedInstancesIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(reservedInstancesIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> reservedInstancesIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(reservedInstancesIds.size());
         reservedInstancesIdsCopy.addAll(reservedInstancesIds);
         this.reservedInstancesIds = reservedInstancesIdsCopy;
     }
@@ -146,7 +146,7 @@ public class ModifyReservedInstancesRequest extends AmazonWebServiceRequest impl
         if (reservedInstancesIds == null) {
             this.reservedInstancesIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> reservedInstancesIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(reservedInstancesIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> reservedInstancesIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(reservedInstancesIds.size());
             reservedInstancesIdsCopy.addAll(reservedInstancesIds);
             this.reservedInstancesIds = reservedInstancesIdsCopy;
         }
@@ -161,7 +161,7 @@ public class ModifyReservedInstancesRequest extends AmazonWebServiceRequest impl
      */
     public java.util.List<ReservedInstancesConfiguration> getTargetConfigurations() {
         if (targetConfigurations == null) {
-              targetConfigurations = new com.amazonaws.internal.ListWithAutoConstructFlag<ReservedInstancesConfiguration>();
+              targetConfigurations = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedInstancesConfiguration>();
               targetConfigurations.setAutoConstruct(true);
         }
         return targetConfigurations;
@@ -177,7 +177,7 @@ public class ModifyReservedInstancesRequest extends AmazonWebServiceRequest impl
             this.targetConfigurations = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ReservedInstancesConfiguration> targetConfigurationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ReservedInstancesConfiguration>(targetConfigurations.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedInstancesConfiguration> targetConfigurationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedInstancesConfiguration>(targetConfigurations.size());
         targetConfigurationsCopy.addAll(targetConfigurations);
         this.targetConfigurations = targetConfigurationsCopy;
     }
@@ -214,7 +214,7 @@ public class ModifyReservedInstancesRequest extends AmazonWebServiceRequest impl
         if (targetConfigurations == null) {
             this.targetConfigurations = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ReservedInstancesConfiguration> targetConfigurationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ReservedInstancesConfiguration>(targetConfigurations.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedInstancesConfiguration> targetConfigurationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedInstancesConfiguration>(targetConfigurations.size());
             targetConfigurationsCopy.addAll(targetConfigurations);
             this.targetConfigurations = targetConfigurationsCopy;
         }

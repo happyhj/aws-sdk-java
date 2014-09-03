@@ -26,7 +26,7 @@ public class ListIdentityPoolUsageResult implements Serializable {
     /**
      * Usage information for the identity pools.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<IdentityPoolUsage> identityPoolUsages;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IdentityPoolUsage> identityPoolUsages;
 
     /**
      * The maximum number of results to be returned.
@@ -50,7 +50,7 @@ public class ListIdentityPoolUsageResult implements Serializable {
      */
     public java.util.List<IdentityPoolUsage> getIdentityPoolUsages() {
         if (identityPoolUsages == null) {
-              identityPoolUsages = new com.amazonaws.internal.ListWithAutoConstructFlag<IdentityPoolUsage>();
+              identityPoolUsages = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IdentityPoolUsage>();
               identityPoolUsages.setAutoConstruct(true);
         }
         return identityPoolUsages;
@@ -66,7 +66,7 @@ public class ListIdentityPoolUsageResult implements Serializable {
             this.identityPoolUsages = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<IdentityPoolUsage> identityPoolUsagesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<IdentityPoolUsage>(identityPoolUsages.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IdentityPoolUsage> identityPoolUsagesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IdentityPoolUsage>(identityPoolUsages.size());
         identityPoolUsagesCopy.addAll(identityPoolUsages);
         this.identityPoolUsages = identityPoolUsagesCopy;
     }
@@ -103,7 +103,7 @@ public class ListIdentityPoolUsageResult implements Serializable {
         if (identityPoolUsages == null) {
             this.identityPoolUsages = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<IdentityPoolUsage> identityPoolUsagesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<IdentityPoolUsage>(identityPoolUsages.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IdentityPoolUsage> identityPoolUsagesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IdentityPoolUsage>(identityPoolUsages.size());
             identityPoolUsagesCopy.addAll(identityPoolUsages);
             this.identityPoolUsages = identityPoolUsagesCopy;
         }

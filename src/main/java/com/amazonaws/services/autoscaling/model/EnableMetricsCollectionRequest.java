@@ -57,7 +57,7 @@ public class EnableMetricsCollectionRequest extends AmazonWebServiceRequest impl
      * returned by default. You must explicitly request it when calling
      * <a>EnableMetricsCollection</a>. </note>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> metrics;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> metrics;
 
     /**
      * The granularity to associate with the metrics to collect. Currently,
@@ -137,7 +137,7 @@ public class EnableMetricsCollectionRequest extends AmazonWebServiceRequest impl
      */
     public java.util.List<String> getMetrics() {
         if (metrics == null) {
-              metrics = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              metrics = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               metrics.setAutoConstruct(true);
         }
         return metrics;
@@ -169,7 +169,7 @@ public class EnableMetricsCollectionRequest extends AmazonWebServiceRequest impl
             this.metrics = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> metricsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(metrics.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> metricsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(metrics.size());
         metricsCopy.addAll(metrics);
         this.metrics = metricsCopy;
     }
@@ -238,7 +238,7 @@ public class EnableMetricsCollectionRequest extends AmazonWebServiceRequest impl
         if (metrics == null) {
             this.metrics = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> metricsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(metrics.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> metricsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(metrics.size());
             metricsCopy.addAll(metrics);
             this.metrics = metricsCopy;
         }

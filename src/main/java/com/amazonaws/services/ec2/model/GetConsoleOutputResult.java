@@ -16,8 +16,8 @@ package com.amazonaws.services.ec2.model;
 
 import java.io.Serializable;
 
-import com.amazonaws.codec.BinaryUtils;
 import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.json.codec.BinaryUtils;
 
 import java.io.UnsupportedEncodingException;
 

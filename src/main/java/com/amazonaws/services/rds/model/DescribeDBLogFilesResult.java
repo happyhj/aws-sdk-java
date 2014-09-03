@@ -26,7 +26,7 @@ public class DescribeDBLogFilesResult implements Serializable {
     /**
      * The DB log files returned.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<DescribeDBLogFilesDetails> describeDBLogFiles;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DescribeDBLogFilesDetails> describeDBLogFiles;
 
     /**
      * An optional paging token.
@@ -40,7 +40,7 @@ public class DescribeDBLogFilesResult implements Serializable {
      */
     public java.util.List<DescribeDBLogFilesDetails> getDescribeDBLogFiles() {
         if (describeDBLogFiles == null) {
-              describeDBLogFiles = new com.amazonaws.internal.ListWithAutoConstructFlag<DescribeDBLogFilesDetails>();
+              describeDBLogFiles = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DescribeDBLogFilesDetails>();
               describeDBLogFiles.setAutoConstruct(true);
         }
         return describeDBLogFiles;
@@ -56,7 +56,7 @@ public class DescribeDBLogFilesResult implements Serializable {
             this.describeDBLogFiles = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<DescribeDBLogFilesDetails> describeDBLogFilesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DescribeDBLogFilesDetails>(describeDBLogFiles.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DescribeDBLogFilesDetails> describeDBLogFilesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DescribeDBLogFilesDetails>(describeDBLogFiles.size());
         describeDBLogFilesCopy.addAll(describeDBLogFiles);
         this.describeDBLogFiles = describeDBLogFilesCopy;
     }
@@ -93,7 +93,7 @@ public class DescribeDBLogFilesResult implements Serializable {
         if (describeDBLogFiles == null) {
             this.describeDBLogFiles = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<DescribeDBLogFilesDetails> describeDBLogFilesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DescribeDBLogFilesDetails>(describeDBLogFiles.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DescribeDBLogFilesDetails> describeDBLogFilesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DescribeDBLogFilesDetails>(describeDBLogFiles.size());
             describeDBLogFilesCopy.addAll(describeDBLogFiles);
             this.describeDBLogFiles = describeDBLogFilesCopy;
         }

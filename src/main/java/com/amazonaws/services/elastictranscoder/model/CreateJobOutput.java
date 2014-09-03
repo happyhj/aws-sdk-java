@@ -110,7 +110,7 @@ public class CreateJobOutput implements Serializable {
      * watermarks for each output. Settings for each watermark must be
      * defined in the preset for the current output.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<JobWatermark> watermarks;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<JobWatermark> watermarks;
 
     /**
      * Information about the album art that you want Elastic Transcoder to
@@ -128,7 +128,7 @@ public class CreateJobOutput implements Serializable {
      * you can only specify settings for a single clip per output file. The
      * Composition object cannot be null.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Clip> composition;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Clip> composition;
 
     /**
      * You can configure Elastic Transcoder to transcode captions, or
@@ -638,7 +638,7 @@ public class CreateJobOutput implements Serializable {
      */
     public java.util.List<JobWatermark> getWatermarks() {
         if (watermarks == null) {
-              watermarks = new com.amazonaws.internal.ListWithAutoConstructFlag<JobWatermark>();
+              watermarks = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<JobWatermark>();
               watermarks.setAutoConstruct(true);
         }
         return watermarks;
@@ -660,7 +660,7 @@ public class CreateJobOutput implements Serializable {
             this.watermarks = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<JobWatermark> watermarksCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<JobWatermark>(watermarks.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<JobWatermark> watermarksCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<JobWatermark>(watermarks.size());
         watermarksCopy.addAll(watermarks);
         this.watermarks = watermarksCopy;
     }
@@ -709,7 +709,7 @@ public class CreateJobOutput implements Serializable {
         if (watermarks == null) {
             this.watermarks = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<JobWatermark> watermarksCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<JobWatermark>(watermarks.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<JobWatermark> watermarksCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<JobWatermark>(watermarks.size());
             watermarksCopy.addAll(watermarks);
             this.watermarks = watermarksCopy;
         }
@@ -785,7 +785,7 @@ public class CreateJobOutput implements Serializable {
      */
     public java.util.List<Clip> getComposition() {
         if (composition == null) {
-              composition = new com.amazonaws.internal.ListWithAutoConstructFlag<Clip>();
+              composition = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Clip>();
               composition.setAutoConstruct(true);
         }
         return composition;
@@ -811,7 +811,7 @@ public class CreateJobOutput implements Serializable {
             this.composition = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Clip> compositionCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Clip>(composition.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Clip> compositionCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Clip>(composition.size());
         compositionCopy.addAll(composition);
         this.composition = compositionCopy;
     }
@@ -868,7 +868,7 @@ public class CreateJobOutput implements Serializable {
         if (composition == null) {
             this.composition = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Clip> compositionCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Clip>(composition.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Clip> compositionCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Clip>(composition.size());
             compositionCopy.addAll(composition);
             this.composition = compositionCopy;
         }

@@ -24,7 +24,7 @@ public class DescribeNetworkAclsResult implements Serializable {
     /**
      * Information about one or more network ACLs.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<NetworkAcl> networkAcls;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NetworkAcl> networkAcls;
 
     /**
      * Information about one or more network ACLs.
@@ -33,7 +33,7 @@ public class DescribeNetworkAclsResult implements Serializable {
      */
     public java.util.List<NetworkAcl> getNetworkAcls() {
         if (networkAcls == null) {
-              networkAcls = new com.amazonaws.internal.ListWithAutoConstructFlag<NetworkAcl>();
+              networkAcls = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NetworkAcl>();
               networkAcls.setAutoConstruct(true);
         }
         return networkAcls;
@@ -49,7 +49,7 @@ public class DescribeNetworkAclsResult implements Serializable {
             this.networkAcls = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<NetworkAcl> networkAclsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<NetworkAcl>(networkAcls.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NetworkAcl> networkAclsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NetworkAcl>(networkAcls.size());
         networkAclsCopy.addAll(networkAcls);
         this.networkAcls = networkAclsCopy;
     }
@@ -86,7 +86,7 @@ public class DescribeNetworkAclsResult implements Serializable {
         if (networkAcls == null) {
             this.networkAcls = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<NetworkAcl> networkAclsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<NetworkAcl>(networkAcls.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NetworkAcl> networkAclsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NetworkAcl>(networkAcls.size());
             networkAclsCopy.addAll(networkAcls);
             this.networkAcls = networkAclsCopy;
         }

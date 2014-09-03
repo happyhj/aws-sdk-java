@@ -59,7 +59,7 @@ public class GetIdentityDkimAttributesRequest extends AmazonWebServiceRequest im
      * A list of one or more verified identities - email addresses, domains,
      * or both.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> identities;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> identities;
 
     /**
      * A list of one or more verified identities - email addresses, domains,
@@ -70,7 +70,7 @@ public class GetIdentityDkimAttributesRequest extends AmazonWebServiceRequest im
      */
     public java.util.List<String> getIdentities() {
         if (identities == null) {
-              identities = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              identities = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               identities.setAutoConstruct(true);
         }
         return identities;
@@ -88,7 +88,7 @@ public class GetIdentityDkimAttributesRequest extends AmazonWebServiceRequest im
             this.identities = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> identitiesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(identities.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> identitiesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(identities.size());
         identitiesCopy.addAll(identities);
         this.identities = identitiesCopy;
     }
@@ -129,7 +129,7 @@ public class GetIdentityDkimAttributesRequest extends AmazonWebServiceRequest im
         if (identities == null) {
             this.identities = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> identitiesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(identities.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> identitiesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(identities.size());
             identitiesCopy.addAll(identities);
             this.identities = identitiesCopy;
         }

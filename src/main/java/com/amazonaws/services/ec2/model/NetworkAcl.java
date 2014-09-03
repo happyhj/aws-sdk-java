@@ -41,17 +41,17 @@ public class NetworkAcl implements Serializable {
     /**
      * One or more entries (rules) in the network ACL.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<NetworkAclEntry> entries;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NetworkAclEntry> entries;
 
     /**
      * Any associations between the network ACL and one or more subnets
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<NetworkAclAssociation> associations;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NetworkAclAssociation> associations;
 
     /**
      * Any tags assigned to the network ACL.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tags;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tags;
 
     /**
      * The ID of the network ACL.
@@ -168,7 +168,7 @@ public class NetworkAcl implements Serializable {
      */
     public java.util.List<NetworkAclEntry> getEntries() {
         if (entries == null) {
-              entries = new com.amazonaws.internal.ListWithAutoConstructFlag<NetworkAclEntry>();
+              entries = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NetworkAclEntry>();
               entries.setAutoConstruct(true);
         }
         return entries;
@@ -184,7 +184,7 @@ public class NetworkAcl implements Serializable {
             this.entries = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<NetworkAclEntry> entriesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<NetworkAclEntry>(entries.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NetworkAclEntry> entriesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NetworkAclEntry>(entries.size());
         entriesCopy.addAll(entries);
         this.entries = entriesCopy;
     }
@@ -221,7 +221,7 @@ public class NetworkAcl implements Serializable {
         if (entries == null) {
             this.entries = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<NetworkAclEntry> entriesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<NetworkAclEntry>(entries.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NetworkAclEntry> entriesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NetworkAclEntry>(entries.size());
             entriesCopy.addAll(entries);
             this.entries = entriesCopy;
         }
@@ -236,7 +236,7 @@ public class NetworkAcl implements Serializable {
      */
     public java.util.List<NetworkAclAssociation> getAssociations() {
         if (associations == null) {
-              associations = new com.amazonaws.internal.ListWithAutoConstructFlag<NetworkAclAssociation>();
+              associations = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NetworkAclAssociation>();
               associations.setAutoConstruct(true);
         }
         return associations;
@@ -252,7 +252,7 @@ public class NetworkAcl implements Serializable {
             this.associations = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<NetworkAclAssociation> associationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<NetworkAclAssociation>(associations.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NetworkAclAssociation> associationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NetworkAclAssociation>(associations.size());
         associationsCopy.addAll(associations);
         this.associations = associationsCopy;
     }
@@ -289,7 +289,7 @@ public class NetworkAcl implements Serializable {
         if (associations == null) {
             this.associations = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<NetworkAclAssociation> associationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<NetworkAclAssociation>(associations.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NetworkAclAssociation> associationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NetworkAclAssociation>(associations.size());
             associationsCopy.addAll(associations);
             this.associations = associationsCopy;
         }
@@ -304,7 +304,7 @@ public class NetworkAcl implements Serializable {
      */
     public java.util.List<Tag> getTags() {
         if (tags == null) {
-              tags = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>();
+              tags = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>();
               tags.setAutoConstruct(true);
         }
         return tags;
@@ -320,7 +320,7 @@ public class NetworkAcl implements Serializable {
             this.tags = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tags.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tags.size());
         tagsCopy.addAll(tags);
         this.tags = tagsCopy;
     }
@@ -357,7 +357,7 @@ public class NetworkAcl implements Serializable {
         if (tags == null) {
             this.tags = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tags.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tags.size());
             tagsCopy.addAll(tags);
             this.tags = tagsCopy;
         }

@@ -27,7 +27,7 @@ public class DescribeTrustedAdvisorCheckRefreshStatusesResult implements Seriali
     /**
      * The refresh status of the specified Trusted Advisor checks.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<TrustedAdvisorCheckRefreshStatus> statuses;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TrustedAdvisorCheckRefreshStatus> statuses;
 
     /**
      * The refresh status of the specified Trusted Advisor checks.
@@ -36,7 +36,7 @@ public class DescribeTrustedAdvisorCheckRefreshStatusesResult implements Seriali
      */
     public java.util.List<TrustedAdvisorCheckRefreshStatus> getStatuses() {
         if (statuses == null) {
-              statuses = new com.amazonaws.internal.ListWithAutoConstructFlag<TrustedAdvisorCheckRefreshStatus>();
+              statuses = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TrustedAdvisorCheckRefreshStatus>();
               statuses.setAutoConstruct(true);
         }
         return statuses;
@@ -52,7 +52,7 @@ public class DescribeTrustedAdvisorCheckRefreshStatusesResult implements Seriali
             this.statuses = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<TrustedAdvisorCheckRefreshStatus> statusesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<TrustedAdvisorCheckRefreshStatus>(statuses.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TrustedAdvisorCheckRefreshStatus> statusesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TrustedAdvisorCheckRefreshStatus>(statuses.size());
         statusesCopy.addAll(statuses);
         this.statuses = statusesCopy;
     }
@@ -89,7 +89,7 @@ public class DescribeTrustedAdvisorCheckRefreshStatusesResult implements Seriali
         if (statuses == null) {
             this.statuses = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<TrustedAdvisorCheckRefreshStatus> statusesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<TrustedAdvisorCheckRefreshStatus>(statuses.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TrustedAdvisorCheckRefreshStatus> statusesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TrustedAdvisorCheckRefreshStatus>(statuses.size());
             statusesCopy.addAll(statuses);
             this.statuses = statusesCopy;
         }

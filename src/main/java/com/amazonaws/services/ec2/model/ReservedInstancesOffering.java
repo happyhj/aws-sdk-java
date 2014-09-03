@@ -93,7 +93,7 @@ public class ReservedInstancesOffering implements Serializable {
     /**
      * The recurring charge tag assigned to the resource.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<RecurringCharge> recurringCharges;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RecurringCharge> recurringCharges;
 
     /**
      * Indicates whether the offering is available through the Reserved
@@ -105,7 +105,7 @@ public class ReservedInstancesOffering implements Serializable {
     /**
      * The pricing details of the Reserved Instance offering.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<PricingDetail> pricingDetails;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PricingDetail> pricingDetails;
 
     /**
      * The ID of the Reserved Instance offering.
@@ -709,7 +709,7 @@ public class ReservedInstancesOffering implements Serializable {
      */
     public java.util.List<RecurringCharge> getRecurringCharges() {
         if (recurringCharges == null) {
-              recurringCharges = new com.amazonaws.internal.ListWithAutoConstructFlag<RecurringCharge>();
+              recurringCharges = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RecurringCharge>();
               recurringCharges.setAutoConstruct(true);
         }
         return recurringCharges;
@@ -725,7 +725,7 @@ public class ReservedInstancesOffering implements Serializable {
             this.recurringCharges = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<RecurringCharge> recurringChargesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<RecurringCharge>(recurringCharges.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RecurringCharge> recurringChargesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RecurringCharge>(recurringCharges.size());
         recurringChargesCopy.addAll(recurringCharges);
         this.recurringCharges = recurringChargesCopy;
     }
@@ -762,7 +762,7 @@ public class ReservedInstancesOffering implements Serializable {
         if (recurringCharges == null) {
             this.recurringCharges = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<RecurringCharge> recurringChargesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<RecurringCharge>(recurringCharges.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RecurringCharge> recurringChargesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RecurringCharge>(recurringCharges.size());
             recurringChargesCopy.addAll(recurringCharges);
             this.recurringCharges = recurringChargesCopy;
         }
@@ -835,7 +835,7 @@ public class ReservedInstancesOffering implements Serializable {
      */
     public java.util.List<PricingDetail> getPricingDetails() {
         if (pricingDetails == null) {
-              pricingDetails = new com.amazonaws.internal.ListWithAutoConstructFlag<PricingDetail>();
+              pricingDetails = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PricingDetail>();
               pricingDetails.setAutoConstruct(true);
         }
         return pricingDetails;
@@ -851,7 +851,7 @@ public class ReservedInstancesOffering implements Serializable {
             this.pricingDetails = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<PricingDetail> pricingDetailsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<PricingDetail>(pricingDetails.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PricingDetail> pricingDetailsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PricingDetail>(pricingDetails.size());
         pricingDetailsCopy.addAll(pricingDetails);
         this.pricingDetails = pricingDetailsCopy;
     }
@@ -888,7 +888,7 @@ public class ReservedInstancesOffering implements Serializable {
         if (pricingDetails == null) {
             this.pricingDetails = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<PricingDetail> pricingDetailsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<PricingDetail>(pricingDetails.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PricingDetail> pricingDetailsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PricingDetail>(pricingDetails.size());
             pricingDetailsCopy.addAll(pricingDetails);
             this.pricingDetails = pricingDetailsCopy;
         }

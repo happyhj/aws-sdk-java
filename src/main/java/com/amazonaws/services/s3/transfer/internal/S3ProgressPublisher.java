@@ -18,9 +18,9 @@ import java.util.concurrent.Future;
 
 import org.apache.commons.logging.LogFactory;
 
-import com.amazonaws.event.DeliveryMode;
-import com.amazonaws.event.ProgressListener;
-import com.amazonaws.event.SDKProgressPublisher;
+import com.amazonaws.network.event.DeliveryMode;
+import com.amazonaws.network.event.ProgressListener;
+import com.amazonaws.network.event.SDKProgressPublisher;
 import com.amazonaws.services.s3.transfer.PersistableTransfer;
 
 /**

@@ -60,7 +60,7 @@ public class SuspendProcessesRequest extends AmazonWebServiceRequest implements 
      * <li>AddToLoadBalancer</li> </ul> <p> To suspend all process types,
      * omit this parameter.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> scalingProcesses;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> scalingProcesses;
 
     /**
      * The name or Amazon Resource Name (ARN) of the Auto Scaling group.
@@ -124,7 +124,7 @@ public class SuspendProcessesRequest extends AmazonWebServiceRequest implements 
      */
     public java.util.List<String> getScalingProcesses() {
         if (scalingProcesses == null) {
-              scalingProcesses = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              scalingProcesses = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               scalingProcesses.setAutoConstruct(true);
         }
         return scalingProcesses;
@@ -150,7 +150,7 @@ public class SuspendProcessesRequest extends AmazonWebServiceRequest implements 
             this.scalingProcesses = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> scalingProcessesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(scalingProcesses.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> scalingProcessesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(scalingProcesses.size());
         scalingProcessesCopy.addAll(scalingProcesses);
         this.scalingProcesses = scalingProcessesCopy;
     }
@@ -207,7 +207,7 @@ public class SuspendProcessesRequest extends AmazonWebServiceRequest implements 
         if (scalingProcesses == null) {
             this.scalingProcesses = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> scalingProcessesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(scalingProcesses.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> scalingProcessesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(scalingProcesses.size());
             scalingProcessesCopy.addAll(scalingProcesses);
             this.scalingProcesses = scalingProcessesCopy;
         }

@@ -25,25 +25,25 @@ import java.util.concurrent.CopyOnWriteArrayList;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import com.amazonaws.classutil.Classes;
 import com.amazonaws.client.AWSClient;
 import com.amazonaws.client.ClientConfiguration;
-import com.amazonaws.client.Region;
 import com.amazonaws.client.Signer;
 import com.amazonaws.client.handler.request.RequestHandler;
 import com.amazonaws.client.handler.request.RequestHandler2;
 import com.amazonaws.client.metrics.AwsSdkMetrics;
+import com.amazonaws.client.regions.Region;
 import com.amazonaws.client.signer.RegionAwareSigner;
 import com.amazonaws.client.signer.SignerFactory;
-import com.amazonaws.method.HttpMethodName;
-import com.amazonaws.metricsutil.AWSRequestMetrics;
-import com.amazonaws.metricsutil.AWSRequestMetrics.Field;
+import com.amazonaws.network.HttpMethodName;
+import com.amazonaws.network.metrics.util.AWSRequestMetrics;
+import com.amazonaws.network.metrics.util.AWSRequestMetrics.Field;
 import com.amazonaws.network.metricscollector.RequestMetricCollector;
 import com.amazonaws.network.request.AmazonWebServiceRequest;
 import com.amazonaws.network.request.HttpRequest;
 import com.amazonaws.network.response.Response;
 import com.amazonaws.network.type.Request;
-import com.amazonaws.util.AwsHostNameUtils;
+import com.amazonaws.utility.AwsHostNameUtils;
+import com.amazonaws.utility.clazz.Classes;
 
 /**
  * Abstract base class for Amazon Web Service Java clients.

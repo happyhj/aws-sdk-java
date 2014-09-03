@@ -46,7 +46,7 @@ public class DescribeCasesRequest extends AmazonWebServiceRequest implements Ser
      * <b>Constraints:</b><br/>
      * <b>Length: </b>0 - 100<br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> caseIdList;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> caseIdList;
 
     /**
      * The ID displayed for a case in the AWS Support Center user interface.
@@ -106,7 +106,7 @@ public class DescribeCasesRequest extends AmazonWebServiceRequest implements Ser
      */
     public java.util.List<String> getCaseIdList() {
         if (caseIdList == null) {
-              caseIdList = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              caseIdList = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               caseIdList.setAutoConstruct(true);
         }
         return caseIdList;
@@ -127,7 +127,7 @@ public class DescribeCasesRequest extends AmazonWebServiceRequest implements Ser
             this.caseIdList = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> caseIdListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(caseIdList.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> caseIdListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(caseIdList.size());
         caseIdListCopy.addAll(caseIdList);
         this.caseIdList = caseIdListCopy;
     }
@@ -174,7 +174,7 @@ public class DescribeCasesRequest extends AmazonWebServiceRequest implements Ser
         if (caseIdList == null) {
             this.caseIdList = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> caseIdListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(caseIdList.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> caseIdListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(caseIdList.size());
             caseIdListCopy.addAll(caseIdList);
             this.caseIdList = caseIdListCopy;
         }

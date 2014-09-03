@@ -26,7 +26,7 @@ public class ListStepsResult implements Serializable {
     /**
      * The filtered list of steps for the cluster.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<StepSummary> steps;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StepSummary> steps;
 
     /**
      * The pagination token that indicates the next set of results to
@@ -41,7 +41,7 @@ public class ListStepsResult implements Serializable {
      */
     public java.util.List<StepSummary> getSteps() {
         if (steps == null) {
-              steps = new com.amazonaws.internal.ListWithAutoConstructFlag<StepSummary>();
+              steps = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StepSummary>();
               steps.setAutoConstruct(true);
         }
         return steps;
@@ -57,7 +57,7 @@ public class ListStepsResult implements Serializable {
             this.steps = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<StepSummary> stepsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<StepSummary>(steps.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StepSummary> stepsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StepSummary>(steps.size());
         stepsCopy.addAll(steps);
         this.steps = stepsCopy;
     }
@@ -94,7 +94,7 @@ public class ListStepsResult implements Serializable {
         if (steps == null) {
             this.steps = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<StepSummary> stepsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<StepSummary>(steps.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StepSummary> stepsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StepSummary>(steps.size());
             stepsCopy.addAll(steps);
             this.steps = stepsCopy;
         }

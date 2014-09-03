@@ -30,7 +30,7 @@ public class EventCategoriesMap implements Serializable {
     /**
      * The events in the event category.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<EventInfoMap> events;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EventInfoMap> events;
 
     /**
      * The Amazon Redshift source type, such as cluster or cluster-snapshot,
@@ -78,7 +78,7 @@ public class EventCategoriesMap implements Serializable {
      */
     public java.util.List<EventInfoMap> getEvents() {
         if (events == null) {
-              events = new com.amazonaws.internal.ListWithAutoConstructFlag<EventInfoMap>();
+              events = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EventInfoMap>();
               events.setAutoConstruct(true);
         }
         return events;
@@ -94,7 +94,7 @@ public class EventCategoriesMap implements Serializable {
             this.events = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<EventInfoMap> eventsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<EventInfoMap>(events.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EventInfoMap> eventsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EventInfoMap>(events.size());
         eventsCopy.addAll(events);
         this.events = eventsCopy;
     }
@@ -131,7 +131,7 @@ public class EventCategoriesMap implements Serializable {
         if (events == null) {
             this.events = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<EventInfoMap> eventsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<EventInfoMap>(events.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EventInfoMap> eventsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EventInfoMap>(events.size());
             eventsCopy.addAll(events);
             this.events = eventsCopy;
         }

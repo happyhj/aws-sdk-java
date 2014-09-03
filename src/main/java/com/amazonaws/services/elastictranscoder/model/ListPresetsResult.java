@@ -26,7 +26,7 @@ public class ListPresetsResult implements Serializable {
     /**
      * An array of <code>Preset</code> objects.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Preset> presets;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Preset> presets;
 
     /**
      * A value that you use to access the second and subsequent pages of
@@ -46,7 +46,7 @@ public class ListPresetsResult implements Serializable {
      */
     public java.util.List<Preset> getPresets() {
         if (presets == null) {
-              presets = new com.amazonaws.internal.ListWithAutoConstructFlag<Preset>();
+              presets = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Preset>();
               presets.setAutoConstruct(true);
         }
         return presets;
@@ -62,7 +62,7 @@ public class ListPresetsResult implements Serializable {
             this.presets = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Preset> presetsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Preset>(presets.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Preset> presetsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Preset>(presets.size());
         presetsCopy.addAll(presets);
         this.presets = presetsCopy;
     }
@@ -99,7 +99,7 @@ public class ListPresetsResult implements Serializable {
         if (presets == null) {
             this.presets = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Preset> presetsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Preset>(presets.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Preset> presetsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Preset>(presets.size());
             presetsCopy.addAll(presets);
             this.presets = presetsCopy;
         }

@@ -116,14 +116,14 @@ public class RunInstancesRequest extends AmazonWebServiceRequest implements Seri
      * nondefault VPC, you must use security group IDs instead. <p>Default:
      * Amazon EC2 uses the default security group.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> securityGroups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> securityGroups;
 
     /**
      * One or more security group IDs. You can create a security group using
      * <a>CreateSecurityGroup</a>. <p>Default: Amazon EC2 uses the default
      * security group.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> securityGroupIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> securityGroupIds;
 
     /**
      * The Base64-encoded MIME user data for the instances.
@@ -163,7 +163,7 @@ public class RunInstancesRequest extends AmazonWebServiceRequest implements Seri
     /**
      * The block device mapping.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<BlockDeviceMapping> blockDeviceMappings;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BlockDeviceMapping> blockDeviceMappings;
 
     /**
      * The monitoring for the instance.
@@ -227,7 +227,7 @@ public class RunInstancesRequest extends AmazonWebServiceRequest implements Seri
     /**
      * One or more network interfaces.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<InstanceNetworkInterfaceSpecification> networkInterfaces;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceNetworkInterfaceSpecification> networkInterfaces;
 
     /**
      * The IAM instance profile.
@@ -546,7 +546,7 @@ public class RunInstancesRequest extends AmazonWebServiceRequest implements Seri
      */
     public java.util.List<String> getSecurityGroups() {
         if (securityGroups == null) {
-              securityGroups = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              securityGroups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               securityGroups.setAutoConstruct(true);
         }
         return securityGroups;
@@ -566,7 +566,7 @@ public class RunInstancesRequest extends AmazonWebServiceRequest implements Seri
             this.securityGroups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> securityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(securityGroups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> securityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(securityGroups.size());
         securityGroupsCopy.addAll(securityGroups);
         this.securityGroups = securityGroupsCopy;
     }
@@ -611,7 +611,7 @@ public class RunInstancesRequest extends AmazonWebServiceRequest implements Seri
         if (securityGroups == null) {
             this.securityGroups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> securityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(securityGroups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> securityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(securityGroups.size());
             securityGroupsCopy.addAll(securityGroups);
             this.securityGroups = securityGroupsCopy;
         }
@@ -630,7 +630,7 @@ public class RunInstancesRequest extends AmazonWebServiceRequest implements Seri
      */
     public java.util.List<String> getSecurityGroupIds() {
         if (securityGroupIds == null) {
-              securityGroupIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              securityGroupIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               securityGroupIds.setAutoConstruct(true);
         }
         return securityGroupIds;
@@ -650,7 +650,7 @@ public class RunInstancesRequest extends AmazonWebServiceRequest implements Seri
             this.securityGroupIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> securityGroupIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(securityGroupIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> securityGroupIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(securityGroupIds.size());
         securityGroupIdsCopy.addAll(securityGroupIds);
         this.securityGroupIds = securityGroupIdsCopy;
     }
@@ -695,7 +695,7 @@ public class RunInstancesRequest extends AmazonWebServiceRequest implements Seri
         if (securityGroupIds == null) {
             this.securityGroupIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> securityGroupIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(securityGroupIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> securityGroupIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(securityGroupIds.size());
             securityGroupIdsCopy.addAll(securityGroupIds);
             this.securityGroupIds = securityGroupIdsCopy;
         }
@@ -978,7 +978,7 @@ public class RunInstancesRequest extends AmazonWebServiceRequest implements Seri
      */
     public java.util.List<BlockDeviceMapping> getBlockDeviceMappings() {
         if (blockDeviceMappings == null) {
-              blockDeviceMappings = new com.amazonaws.internal.ListWithAutoConstructFlag<BlockDeviceMapping>();
+              blockDeviceMappings = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BlockDeviceMapping>();
               blockDeviceMappings.setAutoConstruct(true);
         }
         return blockDeviceMappings;
@@ -994,7 +994,7 @@ public class RunInstancesRequest extends AmazonWebServiceRequest implements Seri
             this.blockDeviceMappings = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<BlockDeviceMapping> blockDeviceMappingsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<BlockDeviceMapping>(blockDeviceMappings.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BlockDeviceMapping> blockDeviceMappingsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BlockDeviceMapping>(blockDeviceMappings.size());
         blockDeviceMappingsCopy.addAll(blockDeviceMappings);
         this.blockDeviceMappings = blockDeviceMappingsCopy;
     }
@@ -1031,7 +1031,7 @@ public class RunInstancesRequest extends AmazonWebServiceRequest implements Seri
         if (blockDeviceMappings == null) {
             this.blockDeviceMappings = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<BlockDeviceMapping> blockDeviceMappingsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<BlockDeviceMapping>(blockDeviceMappings.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BlockDeviceMapping> blockDeviceMappingsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BlockDeviceMapping>(blockDeviceMappings.size());
             blockDeviceMappingsCopy.addAll(blockDeviceMappings);
             this.blockDeviceMappings = blockDeviceMappingsCopy;
         }
@@ -1496,7 +1496,7 @@ public class RunInstancesRequest extends AmazonWebServiceRequest implements Seri
      */
     public java.util.List<InstanceNetworkInterfaceSpecification> getNetworkInterfaces() {
         if (networkInterfaces == null) {
-              networkInterfaces = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceNetworkInterfaceSpecification>();
+              networkInterfaces = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceNetworkInterfaceSpecification>();
               networkInterfaces.setAutoConstruct(true);
         }
         return networkInterfaces;
@@ -1512,7 +1512,7 @@ public class RunInstancesRequest extends AmazonWebServiceRequest implements Seri
             this.networkInterfaces = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<InstanceNetworkInterfaceSpecification> networkInterfacesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceNetworkInterfaceSpecification>(networkInterfaces.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceNetworkInterfaceSpecification> networkInterfacesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceNetworkInterfaceSpecification>(networkInterfaces.size());
         networkInterfacesCopy.addAll(networkInterfaces);
         this.networkInterfaces = networkInterfacesCopy;
     }
@@ -1549,7 +1549,7 @@ public class RunInstancesRequest extends AmazonWebServiceRequest implements Seri
         if (networkInterfaces == null) {
             this.networkInterfaces = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<InstanceNetworkInterfaceSpecification> networkInterfacesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceNetworkInterfaceSpecification>(networkInterfaces.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceNetworkInterfaceSpecification> networkInterfacesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceNetworkInterfaceSpecification>(networkInterfaces.size());
             networkInterfacesCopy.addAll(networkInterfaces);
             this.networkInterfaces = networkInterfacesCopy;
         }

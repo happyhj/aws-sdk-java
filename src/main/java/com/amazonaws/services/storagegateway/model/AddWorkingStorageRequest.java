@@ -56,7 +56,7 @@ public class AddWorkingStorageRequest extends AmazonWebServiceRequest implements
      * length of 300. You can get the disk IDs from the <a>ListLocalDisks</a>
      * API.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> diskIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> diskIds;
 
     /**
      * The Amazon Resource Name (ARN) of the gateway. Use the
@@ -125,7 +125,7 @@ public class AddWorkingStorageRequest extends AmazonWebServiceRequest implements
      */
     public java.util.List<String> getDiskIds() {
         if (diskIds == null) {
-              diskIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              diskIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               diskIds.setAutoConstruct(true);
         }
         return diskIds;
@@ -147,7 +147,7 @@ public class AddWorkingStorageRequest extends AmazonWebServiceRequest implements
             this.diskIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> diskIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(diskIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> diskIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(diskIds.size());
         diskIdsCopy.addAll(diskIds);
         this.diskIds = diskIdsCopy;
     }
@@ -196,7 +196,7 @@ public class AddWorkingStorageRequest extends AmazonWebServiceRequest implements
         if (diskIds == null) {
             this.diskIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> diskIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(diskIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> diskIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(diskIds.size());
             diskIdsCopy.addAll(diskIds);
             this.diskIds = diskIdsCopy;
         }

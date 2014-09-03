@@ -47,7 +47,7 @@ public class DescribePoliciesRequest extends AmazonWebServiceRequest implements 
      * requested policy names cannot contain more than 50 items. If unknown
      * policy names are requested, they are ignored with no error.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> policyNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> policyNames;
 
     /**
      * A string that is used to mark the start of the next batch of returned
@@ -123,7 +123,7 @@ public class DescribePoliciesRequest extends AmazonWebServiceRequest implements 
      */
     public java.util.List<String> getPolicyNames() {
         if (policyNames == null) {
-              policyNames = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              policyNames = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               policyNames.setAutoConstruct(true);
         }
         return policyNames;
@@ -147,7 +147,7 @@ public class DescribePoliciesRequest extends AmazonWebServiceRequest implements 
             this.policyNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> policyNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(policyNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> policyNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(policyNames.size());
         policyNamesCopy.addAll(policyNames);
         this.policyNames = policyNamesCopy;
     }
@@ -200,7 +200,7 @@ public class DescribePoliciesRequest extends AmazonWebServiceRequest implements 
         if (policyNames == null) {
             this.policyNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> policyNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(policyNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> policyNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(policyNames.size());
             policyNamesCopy.addAll(policyNames);
             this.policyNames = policyNamesCopy;
         }

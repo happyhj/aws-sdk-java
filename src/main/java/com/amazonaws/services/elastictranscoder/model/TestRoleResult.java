@@ -37,7 +37,7 @@ public class TestRoleResult implements Serializable {
      * value is an array of one or more error messages that were generated
      * during the test process.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> messages;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> messages;
 
     /**
      * If the operation is successful, this value is <code>true</code>;
@@ -98,7 +98,7 @@ public class TestRoleResult implements Serializable {
      */
     public java.util.List<String> getMessages() {
         if (messages == null) {
-              messages = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              messages = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               messages.setAutoConstruct(true);
         }
         return messages;
@@ -118,7 +118,7 @@ public class TestRoleResult implements Serializable {
             this.messages = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> messagesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(messages.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> messagesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(messages.size());
         messagesCopy.addAll(messages);
         this.messages = messagesCopy;
     }
@@ -163,7 +163,7 @@ public class TestRoleResult implements Serializable {
         if (messages == null) {
             this.messages = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> messagesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(messages.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> messagesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(messages.size());
             messagesCopy.addAll(messages);
             this.messages = messagesCopy;
         }

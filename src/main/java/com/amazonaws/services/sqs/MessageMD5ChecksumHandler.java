@@ -28,8 +28,8 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 import com.amazonaws.client.handler.request.AbstractRequestHandler;
-import com.amazonaws.codec.BinaryUtils;
 import com.amazonaws.exception.AmazonClientException;
+import com.amazonaws.json.codec.BinaryUtils;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.sqs.model.Message;
 import com.amazonaws.services.sqs.model.MessageAttributeValue;
@@ -41,8 +41,8 @@ import com.amazonaws.services.sqs.model.SendMessageBatchResult;
 import com.amazonaws.services.sqs.model.SendMessageBatchResultEntry;
 import com.amazonaws.services.sqs.model.SendMessageRequest;
 import com.amazonaws.services.sqs.model.SendMessageResult;
-import com.amazonaws.util.Md5Utils;
-import com.amazonaws.util.TimingInfo;
+import com.amazonaws.utility.Md5Utils;
+import com.amazonaws.utility.TimingInfo;
 
 /**
  * SQS operations on sending and receiving messages will return the MD5 digest

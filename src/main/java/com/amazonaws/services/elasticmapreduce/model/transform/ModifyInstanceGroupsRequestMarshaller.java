@@ -20,13 +20,13 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.elasticmapreduce.model.InstanceGroupModifyConfig;
 import com.amazonaws.services.elasticmapreduce.model.ModifyInstanceGroupsRequest;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Modify Instance Groups Request Marshaller
@@ -51,7 +51,7 @@ public class ModifyInstanceGroupsRequestMarshaller implements Marshaller<Request
 
           jsonWriter.object();
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<InstanceGroupModifyConfig> instanceGroupsList = (com.amazonaws.internal.ListWithAutoConstructFlag<InstanceGroupModifyConfig>)(modifyInstanceGroupsRequest.getInstanceGroups());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceGroupModifyConfig> instanceGroupsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceGroupModifyConfig>)(modifyInstanceGroupsRequest.getInstanceGroups());
             if (instanceGroupsList != null && !(instanceGroupsList.isAutoConstruct() && instanceGroupsList.isEmpty())) {
 
                 jsonWriter.key("InstanceGroups");
@@ -67,7 +67,7 @@ public class ModifyInstanceGroupsRequestMarshaller implements Marshaller<Request
                             jsonWriter.key("InstanceCount").value(instanceGroupsListValue.getInstanceCount());
                         }
 
-                        com.amazonaws.internal.ListWithAutoConstructFlag<String> eC2InstanceIdsToTerminateList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(instanceGroupsListValue.getEC2InstanceIdsToTerminate());
+                        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> eC2InstanceIdsToTerminateList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(instanceGroupsListValue.getEC2InstanceIdsToTerminate());
                         if (eC2InstanceIdsToTerminateList != null && !(eC2InstanceIdsToTerminateList.isAutoConstruct() && eC2InstanceIdsToTerminateList.isEmpty())) {
 
                             jsonWriter.key("EC2InstanceIdsToTerminate");

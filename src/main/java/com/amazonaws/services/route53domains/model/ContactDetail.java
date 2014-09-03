@@ -184,7 +184,7 @@ public class ContactDetail implements Serializable {
      * <code>TechContact</code> <p>Children: <code>Name</code>,
      * <code>Value</code> <p>Required: No
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ExtraParam> extraParams;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ExtraParam> extraParams;
 
     /**
      * First name of contact. <p>Type: String <p>Default: None
@@ -1171,7 +1171,7 @@ public class ContactDetail implements Serializable {
      */
     public java.util.List<ExtraParam> getExtraParams() {
         if (extraParams == null) {
-              extraParams = new com.amazonaws.internal.ListWithAutoConstructFlag<ExtraParam>();
+              extraParams = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ExtraParam>();
               extraParams.setAutoConstruct(true);
         }
         return extraParams;
@@ -1195,7 +1195,7 @@ public class ContactDetail implements Serializable {
             this.extraParams = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ExtraParam> extraParamsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ExtraParam>(extraParams.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ExtraParam> extraParamsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ExtraParam>(extraParams.size());
         extraParamsCopy.addAll(extraParams);
         this.extraParams = extraParamsCopy;
     }
@@ -1248,7 +1248,7 @@ public class ContactDetail implements Serializable {
         if (extraParams == null) {
             this.extraParams = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ExtraParam> extraParamsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ExtraParam>(extraParams.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ExtraParam> extraParamsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ExtraParam>(extraParams.size());
             extraParamsCopy.addAll(extraParams);
             this.extraParams = extraParamsCopy;
         }

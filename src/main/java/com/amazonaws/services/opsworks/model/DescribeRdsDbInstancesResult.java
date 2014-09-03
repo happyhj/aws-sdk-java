@@ -28,7 +28,7 @@ public class DescribeRdsDbInstancesResult implements Serializable {
      * An a array of <code>RdsDbInstance</code> objects that describe the
      * instances.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<RdsDbInstance> rdsDbInstances;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RdsDbInstance> rdsDbInstances;
 
     /**
      * An a array of <code>RdsDbInstance</code> objects that describe the
@@ -39,7 +39,7 @@ public class DescribeRdsDbInstancesResult implements Serializable {
      */
     public java.util.List<RdsDbInstance> getRdsDbInstances() {
         if (rdsDbInstances == null) {
-              rdsDbInstances = new com.amazonaws.internal.ListWithAutoConstructFlag<RdsDbInstance>();
+              rdsDbInstances = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RdsDbInstance>();
               rdsDbInstances.setAutoConstruct(true);
         }
         return rdsDbInstances;
@@ -57,7 +57,7 @@ public class DescribeRdsDbInstancesResult implements Serializable {
             this.rdsDbInstances = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<RdsDbInstance> rdsDbInstancesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<RdsDbInstance>(rdsDbInstances.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RdsDbInstance> rdsDbInstancesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RdsDbInstance>(rdsDbInstances.size());
         rdsDbInstancesCopy.addAll(rdsDbInstances);
         this.rdsDbInstances = rdsDbInstancesCopy;
     }
@@ -98,7 +98,7 @@ public class DescribeRdsDbInstancesResult implements Serializable {
         if (rdsDbInstances == null) {
             this.rdsDbInstances = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<RdsDbInstance> rdsDbInstancesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<RdsDbInstance>(rdsDbInstances.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RdsDbInstance> rdsDbInstancesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RdsDbInstance>(rdsDbInstances.size());
             rdsDbInstancesCopy.addAll(rdsDbInstances);
             this.rdsDbInstances = rdsDbInstancesCopy;
         }

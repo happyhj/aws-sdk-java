@@ -46,7 +46,7 @@ public class DescribeScheduledActionsRequest extends AmazonWebServiceRequest imp
      * name is provided, the results are limited to that group. If unknown
      * scheduled actions are requested, they are ignored with no error.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> scheduledActionNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> scheduledActionNames;
 
     /**
      * The earliest scheduled start time to return. If scheduled action names
@@ -133,7 +133,7 @@ public class DescribeScheduledActionsRequest extends AmazonWebServiceRequest imp
      */
     public java.util.List<String> getScheduledActionNames() {
         if (scheduledActionNames == null) {
-              scheduledActionNames = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              scheduledActionNames = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               scheduledActionNames.setAutoConstruct(true);
         }
         return scheduledActionNames;
@@ -157,7 +157,7 @@ public class DescribeScheduledActionsRequest extends AmazonWebServiceRequest imp
             this.scheduledActionNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> scheduledActionNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(scheduledActionNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> scheduledActionNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(scheduledActionNames.size());
         scheduledActionNamesCopy.addAll(scheduledActionNames);
         this.scheduledActionNames = scheduledActionNamesCopy;
     }
@@ -210,7 +210,7 @@ public class DescribeScheduledActionsRequest extends AmazonWebServiceRequest imp
         if (scheduledActionNames == null) {
             this.scheduledActionNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> scheduledActionNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(scheduledActionNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> scheduledActionNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(scheduledActionNames.size());
             scheduledActionNamesCopy.addAll(scheduledActionNames);
             this.scheduledActionNames = scheduledActionNamesCopy;
         }

@@ -37,7 +37,7 @@ public class DescribeTapeRecoveryPointsResult implements Serializable {
      * An array of TapeRecoveryPointInfos that are available for the
      * specified gateway.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<TapeRecoveryPointInfo> tapeRecoveryPointInfos;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TapeRecoveryPointInfo> tapeRecoveryPointInfos;
 
     /**
      * An opaque string that indicates the position at which the virtual tape
@@ -114,7 +114,7 @@ public class DescribeTapeRecoveryPointsResult implements Serializable {
      */
     public java.util.List<TapeRecoveryPointInfo> getTapeRecoveryPointInfos() {
         if (tapeRecoveryPointInfos == null) {
-              tapeRecoveryPointInfos = new com.amazonaws.internal.ListWithAutoConstructFlag<TapeRecoveryPointInfo>();
+              tapeRecoveryPointInfos = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TapeRecoveryPointInfo>();
               tapeRecoveryPointInfos.setAutoConstruct(true);
         }
         return tapeRecoveryPointInfos;
@@ -132,7 +132,7 @@ public class DescribeTapeRecoveryPointsResult implements Serializable {
             this.tapeRecoveryPointInfos = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<TapeRecoveryPointInfo> tapeRecoveryPointInfosCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<TapeRecoveryPointInfo>(tapeRecoveryPointInfos.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TapeRecoveryPointInfo> tapeRecoveryPointInfosCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TapeRecoveryPointInfo>(tapeRecoveryPointInfos.size());
         tapeRecoveryPointInfosCopy.addAll(tapeRecoveryPointInfos);
         this.tapeRecoveryPointInfos = tapeRecoveryPointInfosCopy;
     }
@@ -173,7 +173,7 @@ public class DescribeTapeRecoveryPointsResult implements Serializable {
         if (tapeRecoveryPointInfos == null) {
             this.tapeRecoveryPointInfos = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<TapeRecoveryPointInfo> tapeRecoveryPointInfosCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<TapeRecoveryPointInfo>(tapeRecoveryPointInfos.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TapeRecoveryPointInfo> tapeRecoveryPointInfosCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TapeRecoveryPointInfo>(tapeRecoveryPointInfos.size());
             tapeRecoveryPointInfosCopy.addAll(tapeRecoveryPointInfos);
             this.tapeRecoveryPointInfos = tapeRecoveryPointInfosCopy;
         }

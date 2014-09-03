@@ -27,7 +27,7 @@ public class Query implements Serializable {
      * List of selectors that define the query. An object must satisfy all of
      * the selectors to match the query.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Selector> selectors;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Selector> selectors;
 
     /**
      * List of selectors that define the query. An object must satisfy all of
@@ -38,7 +38,7 @@ public class Query implements Serializable {
      */
     public java.util.List<Selector> getSelectors() {
         if (selectors == null) {
-              selectors = new com.amazonaws.internal.ListWithAutoConstructFlag<Selector>();
+              selectors = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Selector>();
               selectors.setAutoConstruct(true);
         }
         return selectors;
@@ -56,7 +56,7 @@ public class Query implements Serializable {
             this.selectors = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Selector> selectorsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Selector>(selectors.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Selector> selectorsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Selector>(selectors.size());
         selectorsCopy.addAll(selectors);
         this.selectors = selectorsCopy;
     }
@@ -97,7 +97,7 @@ public class Query implements Serializable {
         if (selectors == null) {
             this.selectors = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Selector> selectorsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Selector>(selectors.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Selector> selectorsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Selector>(selectors.size());
             selectorsCopy.addAll(selectors);
             this.selectors = selectorsCopy;
         }

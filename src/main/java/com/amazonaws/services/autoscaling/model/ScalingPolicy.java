@@ -79,7 +79,7 @@ public class ScalingPolicy implements Serializable {
     /**
      * A list of CloudWatch Alarms related to the policy.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Alarm> alarms;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Alarm> alarms;
 
     /**
      * Changes the <code>DesiredCapacity</code> of the Auto Scaling group by
@@ -382,7 +382,7 @@ public class ScalingPolicy implements Serializable {
      */
     public java.util.List<Alarm> getAlarms() {
         if (alarms == null) {
-              alarms = new com.amazonaws.internal.ListWithAutoConstructFlag<Alarm>();
+              alarms = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Alarm>();
               alarms.setAutoConstruct(true);
         }
         return alarms;
@@ -398,7 +398,7 @@ public class ScalingPolicy implements Serializable {
             this.alarms = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Alarm> alarmsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Alarm>(alarms.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Alarm> alarmsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Alarm>(alarms.size());
         alarmsCopy.addAll(alarms);
         this.alarms = alarmsCopy;
     }
@@ -435,7 +435,7 @@ public class ScalingPolicy implements Serializable {
         if (alarms == null) {
             this.alarms = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Alarm> alarmsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Alarm>(alarms.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Alarm> alarmsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Alarm>(alarms.size());
             alarmsCopy.addAll(alarms);
             this.alarms = alarmsCopy;
         }

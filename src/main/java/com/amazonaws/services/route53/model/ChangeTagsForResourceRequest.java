@@ -52,7 +52,7 @@ public class ChangeTagsForResourceRequest extends AmazonWebServiceRequest implem
      * <b>Constraints:</b><br/>
      * <b>Length: </b>1 - 10<br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Tag> addTags;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> addTags;
 
     /**
      * A list of <code>Tag</code> keys that you want to remove from the
@@ -61,7 +61,7 @@ public class ChangeTagsForResourceRequest extends AmazonWebServiceRequest implem
      * <b>Constraints:</b><br/>
      * <b>Length: </b>1 - 10<br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> removeTagKeys;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> removeTagKeys;
 
     /**
      * The type of the resource. The resource type for health checks is
@@ -217,7 +217,7 @@ public class ChangeTagsForResourceRequest extends AmazonWebServiceRequest implem
      */
     public java.util.List<Tag> getAddTags() {
         if (addTags == null) {
-              addTags = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>();
+              addTags = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>();
               addTags.setAutoConstruct(true);
         }
         return addTags;
@@ -240,7 +240,7 @@ public class ChangeTagsForResourceRequest extends AmazonWebServiceRequest implem
             this.addTags = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Tag> addTagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(addTags.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> addTagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(addTags.size());
         addTagsCopy.addAll(addTags);
         this.addTags = addTagsCopy;
     }
@@ -291,7 +291,7 @@ public class ChangeTagsForResourceRequest extends AmazonWebServiceRequest implem
         if (addTags == null) {
             this.addTags = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Tag> addTagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(addTags.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> addTagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(addTags.size());
             addTagsCopy.addAll(addTags);
             this.addTags = addTagsCopy;
         }
@@ -311,7 +311,7 @@ public class ChangeTagsForResourceRequest extends AmazonWebServiceRequest implem
      */
     public java.util.List<String> getRemoveTagKeys() {
         if (removeTagKeys == null) {
-              removeTagKeys = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              removeTagKeys = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               removeTagKeys.setAutoConstruct(true);
         }
         return removeTagKeys;
@@ -332,7 +332,7 @@ public class ChangeTagsForResourceRequest extends AmazonWebServiceRequest implem
             this.removeTagKeys = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> removeTagKeysCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(removeTagKeys.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> removeTagKeysCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(removeTagKeys.size());
         removeTagKeysCopy.addAll(removeTagKeys);
         this.removeTagKeys = removeTagKeysCopy;
     }
@@ -379,7 +379,7 @@ public class ChangeTagsForResourceRequest extends AmazonWebServiceRequest implem
         if (removeTagKeys == null) {
             this.removeTagKeys = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> removeTagKeysCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(removeTagKeys.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> removeTagKeysCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(removeTagKeys.size());
             removeTagKeysCopy.addAll(removeTagKeys);
             this.removeTagKeys = removeTagKeysCopy;
         }

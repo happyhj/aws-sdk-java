@@ -20,12 +20,12 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.support.model.DescribeTrustedAdvisorCheckRefreshStatusesRequest;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Describe Trusted Advisor Check Refresh Statuses Request Marshaller
@@ -50,7 +50,7 @@ public class DescribeTrustedAdvisorCheckRefreshStatusesRequestMarshaller impleme
 
           jsonWriter.object();
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> checkIdsList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(describeTrustedAdvisorCheckRefreshStatusesRequest.getCheckIds());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> checkIdsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(describeTrustedAdvisorCheckRefreshStatusesRequest.getCheckIds());
             if (checkIdsList != null && !(checkIdsList.isAutoConstruct() && checkIdsList.isEmpty())) {
 
                 jsonWriter.key("checkIds");

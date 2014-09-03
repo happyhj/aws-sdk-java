@@ -26,7 +26,7 @@ public class ListIdentityPoolsResult implements Serializable {
     /**
      * The identity pools returned by the ListIdentityPools action.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<IdentityPoolShortDescription> identityPools;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IdentityPoolShortDescription> identityPools;
 
     /**
      * A pagination token.
@@ -55,7 +55,7 @@ public class ListIdentityPoolsResult implements Serializable {
             this.identityPools = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<IdentityPoolShortDescription> identityPoolsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<IdentityPoolShortDescription>(identityPools.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IdentityPoolShortDescription> identityPoolsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IdentityPoolShortDescription>(identityPools.size());
         identityPoolsCopy.addAll(identityPools);
         this.identityPools = identityPoolsCopy;
     }
@@ -92,7 +92,7 @@ public class ListIdentityPoolsResult implements Serializable {
         if (identityPools == null) {
             this.identityPools = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<IdentityPoolShortDescription> identityPoolsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<IdentityPoolShortDescription>(identityPools.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IdentityPoolShortDescription> identityPoolsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IdentityPoolShortDescription>(identityPools.size());
             identityPoolsCopy.addAll(identityPools);
             this.identityPools = identityPoolsCopy;
         }

@@ -24,7 +24,7 @@ public class ImportInstanceTaskDetails implements Serializable {
     /**
      * 
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ImportInstanceVolumeDetailItem> volumes;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ImportInstanceVolumeDetailItem> volumes;
 
     /**
      * 
@@ -51,7 +51,7 @@ public class ImportInstanceTaskDetails implements Serializable {
      */
     public java.util.List<ImportInstanceVolumeDetailItem> getVolumes() {
         if (volumes == null) {
-              volumes = new com.amazonaws.internal.ListWithAutoConstructFlag<ImportInstanceVolumeDetailItem>();
+              volumes = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ImportInstanceVolumeDetailItem>();
               volumes.setAutoConstruct(true);
         }
         return volumes;
@@ -67,7 +67,7 @@ public class ImportInstanceTaskDetails implements Serializable {
             this.volumes = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ImportInstanceVolumeDetailItem> volumesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ImportInstanceVolumeDetailItem>(volumes.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ImportInstanceVolumeDetailItem> volumesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ImportInstanceVolumeDetailItem>(volumes.size());
         volumesCopy.addAll(volumes);
         this.volumes = volumesCopy;
     }
@@ -104,7 +104,7 @@ public class ImportInstanceTaskDetails implements Serializable {
         if (volumes == null) {
             this.volumes = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ImportInstanceVolumeDetailItem> volumesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ImportInstanceVolumeDetailItem>(volumes.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ImportInstanceVolumeDetailItem> volumesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ImportInstanceVolumeDetailItem>(volumes.size());
             volumesCopy.addAll(volumes);
             this.volumes = volumesCopy;
         }

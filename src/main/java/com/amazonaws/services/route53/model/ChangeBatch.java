@@ -40,7 +40,7 @@ public class ChangeBatch implements Serializable {
      * <b>Constraints:</b><br/>
      * <b>Length: </b>1 - <br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Change> changes;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Change> changes;
 
     /**
      * Default constructor for a new ChangeBatch object.  Callers should use the
@@ -121,7 +121,7 @@ public class ChangeBatch implements Serializable {
      */
     public java.util.List<Change> getChanges() {
         if (changes == null) {
-              changes = new com.amazonaws.internal.ListWithAutoConstructFlag<Change>();
+              changes = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Change>();
               changes.setAutoConstruct(true);
         }
         return changes;
@@ -142,7 +142,7 @@ public class ChangeBatch implements Serializable {
             this.changes = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Change> changesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Change>(changes.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Change> changesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Change>(changes.size());
         changesCopy.addAll(changes);
         this.changes = changesCopy;
     }
@@ -189,7 +189,7 @@ public class ChangeBatch implements Serializable {
         if (changes == null) {
             this.changes = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Change> changesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Change>(changes.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Change> changesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Change>(changes.size());
             changesCopy.addAll(changes);
             this.changes = changesCopy;
         }

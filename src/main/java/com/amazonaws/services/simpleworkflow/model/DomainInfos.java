@@ -26,7 +26,7 @@ public class DomainInfos implements Serializable {
     /**
      * A list of DomainInfo structures.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<DomainInfo> domainInfos;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DomainInfo> domainInfos;
 
     /**
      * Returns a value if the results are paginated. To get the next page of
@@ -45,7 +45,7 @@ public class DomainInfos implements Serializable {
      */
     public java.util.List<DomainInfo> getDomainInfos() {
         if (domainInfos == null) {
-              domainInfos = new com.amazonaws.internal.ListWithAutoConstructFlag<DomainInfo>();
+              domainInfos = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DomainInfo>();
               domainInfos.setAutoConstruct(true);
         }
         return domainInfos;
@@ -61,7 +61,7 @@ public class DomainInfos implements Serializable {
             this.domainInfos = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<DomainInfo> domainInfosCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DomainInfo>(domainInfos.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DomainInfo> domainInfosCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DomainInfo>(domainInfos.size());
         domainInfosCopy.addAll(domainInfos);
         this.domainInfos = domainInfosCopy;
     }
@@ -98,7 +98,7 @@ public class DomainInfos implements Serializable {
         if (domainInfos == null) {
             this.domainInfos = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<DomainInfo> domainInfosCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DomainInfo>(domainInfos.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DomainInfo> domainInfosCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DomainInfo>(domainInfos.size());
             domainInfosCopy.addAll(domainInfos);
             this.domainInfos = domainInfosCopy;
         }

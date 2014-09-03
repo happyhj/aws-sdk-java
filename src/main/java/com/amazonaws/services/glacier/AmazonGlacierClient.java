@@ -14,7 +14,7 @@
  */
 package com.amazonaws.services.glacier;
 
-import static com.amazonaws.sdkutil.IOUtils.closeQuietly;
+import static com.amazonaws.client.util.sdk.IOUtils.closeQuietly;
 
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -23,7 +23,6 @@ import java.util.List;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import com.amazonaws.ResponseMetadata;
 import com.amazonaws.authprovider.DefaultAWSCredentialsProviderChain;
 import com.amazonaws.client.ClientConfiguration;
 import com.amazonaws.client.handler.request.HandlerChainFactory;
@@ -33,19 +32,20 @@ import com.amazonaws.client.handler.response.JsonResponseHandler;
 import com.amazonaws.client.service.AmazonWebServiceClient;
 import com.amazonaws.client.service.ExecutionContext;
 import com.amazonaws.client.service.ServiceClientHolderInputStream;
+import com.amazonaws.client.util.sdk.ReleasableInputStream;
 import com.amazonaws.credential.AWSCredentials;
 import com.amazonaws.credential.AWSCredentialsProvider;
 import com.amazonaws.credential.StaticCredentialsProvider;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
-import com.amazonaws.metricsutil.AWSRequestMetrics;
-import com.amazonaws.metricsutil.AWSRequestMetrics.Field;
+import com.amazonaws.network.ResponseMetadata;
+import com.amazonaws.network.metrics.util.AWSRequestMetrics;
+import com.amazonaws.network.metrics.util.AWSRequestMetrics.Field;
 import com.amazonaws.network.metricscollector.RequestMetricCollector;
 import com.amazonaws.network.request.AmazonWebServiceRequest;
 import com.amazonaws.network.response.AmazonWebServiceResponse;
 import com.amazonaws.network.response.Response;
 import com.amazonaws.network.type.Request;
-import com.amazonaws.sdkutil.ReleasableInputStream;
 import com.amazonaws.services.glacier.model.AbortMultipartUploadRequest;
 import com.amazonaws.services.glacier.model.CompleteMultipartUploadRequest;
 import com.amazonaws.services.glacier.model.CompleteMultipartUploadResult;

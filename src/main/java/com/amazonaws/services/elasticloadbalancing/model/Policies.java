@@ -27,18 +27,18 @@ public class Policies implements Serializable {
      * A list of the <a>AppCookieStickinessPolicy</a> objects created with
      * <a>CreateAppCookieStickinessPolicy</a>.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<AppCookieStickinessPolicy> appCookieStickinessPolicies;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AppCookieStickinessPolicy> appCookieStickinessPolicies;
 
     /**
      * A list of <a>LBCookieStickinessPolicy</a> objects created with
      * <a>CreateAppCookieStickinessPolicy</a>.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<LBCookieStickinessPolicy> lBCookieStickinessPolicies;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LBCookieStickinessPolicy> lBCookieStickinessPolicies;
 
     /**
      * A list of policy names other than the stickiness policies.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> otherPolicies;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> otherPolicies;
 
     /**
      * Default constructor for a new Policies object.  Callers should use the
@@ -55,7 +55,7 @@ public class Policies implements Serializable {
      */
     public java.util.List<AppCookieStickinessPolicy> getAppCookieStickinessPolicies() {
         if (appCookieStickinessPolicies == null) {
-              appCookieStickinessPolicies = new com.amazonaws.internal.ListWithAutoConstructFlag<AppCookieStickinessPolicy>();
+              appCookieStickinessPolicies = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AppCookieStickinessPolicy>();
               appCookieStickinessPolicies.setAutoConstruct(true);
         }
         return appCookieStickinessPolicies;
@@ -73,7 +73,7 @@ public class Policies implements Serializable {
             this.appCookieStickinessPolicies = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<AppCookieStickinessPolicy> appCookieStickinessPoliciesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<AppCookieStickinessPolicy>(appCookieStickinessPolicies.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AppCookieStickinessPolicy> appCookieStickinessPoliciesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AppCookieStickinessPolicy>(appCookieStickinessPolicies.size());
         appCookieStickinessPoliciesCopy.addAll(appCookieStickinessPolicies);
         this.appCookieStickinessPolicies = appCookieStickinessPoliciesCopy;
     }
@@ -114,7 +114,7 @@ public class Policies implements Serializable {
         if (appCookieStickinessPolicies == null) {
             this.appCookieStickinessPolicies = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<AppCookieStickinessPolicy> appCookieStickinessPoliciesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<AppCookieStickinessPolicy>(appCookieStickinessPolicies.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AppCookieStickinessPolicy> appCookieStickinessPoliciesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AppCookieStickinessPolicy>(appCookieStickinessPolicies.size());
             appCookieStickinessPoliciesCopy.addAll(appCookieStickinessPolicies);
             this.appCookieStickinessPolicies = appCookieStickinessPoliciesCopy;
         }
@@ -131,7 +131,7 @@ public class Policies implements Serializable {
      */
     public java.util.List<LBCookieStickinessPolicy> getLBCookieStickinessPolicies() {
         if (lBCookieStickinessPolicies == null) {
-              lBCookieStickinessPolicies = new com.amazonaws.internal.ListWithAutoConstructFlag<LBCookieStickinessPolicy>();
+              lBCookieStickinessPolicies = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LBCookieStickinessPolicy>();
               lBCookieStickinessPolicies.setAutoConstruct(true);
         }
         return lBCookieStickinessPolicies;
@@ -149,7 +149,7 @@ public class Policies implements Serializable {
             this.lBCookieStickinessPolicies = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<LBCookieStickinessPolicy> lBCookieStickinessPoliciesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<LBCookieStickinessPolicy>(lBCookieStickinessPolicies.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LBCookieStickinessPolicy> lBCookieStickinessPoliciesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LBCookieStickinessPolicy>(lBCookieStickinessPolicies.size());
         lBCookieStickinessPoliciesCopy.addAll(lBCookieStickinessPolicies);
         this.lBCookieStickinessPolicies = lBCookieStickinessPoliciesCopy;
     }
@@ -190,7 +190,7 @@ public class Policies implements Serializable {
         if (lBCookieStickinessPolicies == null) {
             this.lBCookieStickinessPolicies = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<LBCookieStickinessPolicy> lBCookieStickinessPoliciesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<LBCookieStickinessPolicy>(lBCookieStickinessPolicies.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LBCookieStickinessPolicy> lBCookieStickinessPoliciesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LBCookieStickinessPolicy>(lBCookieStickinessPolicies.size());
             lBCookieStickinessPoliciesCopy.addAll(lBCookieStickinessPolicies);
             this.lBCookieStickinessPolicies = lBCookieStickinessPoliciesCopy;
         }
@@ -205,7 +205,7 @@ public class Policies implements Serializable {
      */
     public java.util.List<String> getOtherPolicies() {
         if (otherPolicies == null) {
-              otherPolicies = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              otherPolicies = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               otherPolicies.setAutoConstruct(true);
         }
         return otherPolicies;
@@ -221,7 +221,7 @@ public class Policies implements Serializable {
             this.otherPolicies = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> otherPoliciesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(otherPolicies.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> otherPoliciesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(otherPolicies.size());
         otherPoliciesCopy.addAll(otherPolicies);
         this.otherPolicies = otherPoliciesCopy;
     }
@@ -258,7 +258,7 @@ public class Policies implements Serializable {
         if (otherPolicies == null) {
             this.otherPolicies = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> otherPoliciesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(otherPolicies.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> otherPoliciesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(otherPolicies.size());
             otherPoliciesCopy.addAll(otherPolicies);
             this.otherPolicies = otherPoliciesCopy;
         }

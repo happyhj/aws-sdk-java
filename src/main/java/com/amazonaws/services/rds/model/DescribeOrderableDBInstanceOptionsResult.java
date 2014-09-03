@@ -28,7 +28,7 @@ public class DescribeOrderableDBInstanceOptionsResult implements Serializable {
      * An <a>OrderableDBInstanceOption</a> structure containing information
      * about orderable options for the DB instance.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<OrderableDBInstanceOption> orderableDBInstanceOptions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OrderableDBInstanceOption> orderableDBInstanceOptions;
 
     /**
      * An optional pagination token provided by a previous
@@ -47,7 +47,7 @@ public class DescribeOrderableDBInstanceOptionsResult implements Serializable {
      */
     public java.util.List<OrderableDBInstanceOption> getOrderableDBInstanceOptions() {
         if (orderableDBInstanceOptions == null) {
-              orderableDBInstanceOptions = new com.amazonaws.internal.ListWithAutoConstructFlag<OrderableDBInstanceOption>();
+              orderableDBInstanceOptions = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OrderableDBInstanceOption>();
               orderableDBInstanceOptions.setAutoConstruct(true);
         }
         return orderableDBInstanceOptions;
@@ -65,7 +65,7 @@ public class DescribeOrderableDBInstanceOptionsResult implements Serializable {
             this.orderableDBInstanceOptions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<OrderableDBInstanceOption> orderableDBInstanceOptionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<OrderableDBInstanceOption>(orderableDBInstanceOptions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OrderableDBInstanceOption> orderableDBInstanceOptionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OrderableDBInstanceOption>(orderableDBInstanceOptions.size());
         orderableDBInstanceOptionsCopy.addAll(orderableDBInstanceOptions);
         this.orderableDBInstanceOptions = orderableDBInstanceOptionsCopy;
     }
@@ -106,7 +106,7 @@ public class DescribeOrderableDBInstanceOptionsResult implements Serializable {
         if (orderableDBInstanceOptions == null) {
             this.orderableDBInstanceOptions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<OrderableDBInstanceOption> orderableDBInstanceOptionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<OrderableDBInstanceOption>(orderableDBInstanceOptions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OrderableDBInstanceOption> orderableDBInstanceOptionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OrderableDBInstanceOption>(orderableDBInstanceOptions.size());
             orderableDBInstanceOptionsCopy.addAll(orderableDBInstanceOptions);
             this.orderableDBInstanceOptions = orderableDBInstanceOptionsCopy;
         }

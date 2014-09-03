@@ -44,7 +44,7 @@ public class CancelSpotInstanceRequestsRequest extends AmazonWebServiceRequest i
     /**
      * One or more Spot Instance request IDs.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> spotInstanceRequestIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> spotInstanceRequestIds;
 
     /**
      * Default constructor for a new CancelSpotInstanceRequestsRequest object.  Callers should use the
@@ -70,7 +70,7 @@ public class CancelSpotInstanceRequestsRequest extends AmazonWebServiceRequest i
      */
     public java.util.List<String> getSpotInstanceRequestIds() {
         if (spotInstanceRequestIds == null) {
-              spotInstanceRequestIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              spotInstanceRequestIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               spotInstanceRequestIds.setAutoConstruct(true);
         }
         return spotInstanceRequestIds;
@@ -86,7 +86,7 @@ public class CancelSpotInstanceRequestsRequest extends AmazonWebServiceRequest i
             this.spotInstanceRequestIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> spotInstanceRequestIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(spotInstanceRequestIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> spotInstanceRequestIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(spotInstanceRequestIds.size());
         spotInstanceRequestIdsCopy.addAll(spotInstanceRequestIds);
         this.spotInstanceRequestIds = spotInstanceRequestIdsCopy;
     }
@@ -123,7 +123,7 @@ public class CancelSpotInstanceRequestsRequest extends AmazonWebServiceRequest i
         if (spotInstanceRequestIds == null) {
             this.spotInstanceRequestIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> spotInstanceRequestIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(spotInstanceRequestIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> spotInstanceRequestIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(spotInstanceRequestIds.size());
             spotInstanceRequestIdsCopy.addAll(spotInstanceRequestIds);
             this.spotInstanceRequestIds = spotInstanceRequestIdsCopy;
         }

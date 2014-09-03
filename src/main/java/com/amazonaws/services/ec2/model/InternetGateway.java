@@ -31,12 +31,12 @@ public class InternetGateway implements Serializable {
     /**
      * Any VPCs attached to the Internet gateway.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<InternetGatewayAttachment> attachments;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InternetGatewayAttachment> attachments;
 
     /**
      * Any tags assigned to the Internet gateway.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tags;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tags;
 
     /**
      * The ID of the Internet gateway.
@@ -78,7 +78,7 @@ public class InternetGateway implements Serializable {
      */
     public java.util.List<InternetGatewayAttachment> getAttachments() {
         if (attachments == null) {
-              attachments = new com.amazonaws.internal.ListWithAutoConstructFlag<InternetGatewayAttachment>();
+              attachments = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InternetGatewayAttachment>();
               attachments.setAutoConstruct(true);
         }
         return attachments;
@@ -94,7 +94,7 @@ public class InternetGateway implements Serializable {
             this.attachments = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<InternetGatewayAttachment> attachmentsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InternetGatewayAttachment>(attachments.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InternetGatewayAttachment> attachmentsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InternetGatewayAttachment>(attachments.size());
         attachmentsCopy.addAll(attachments);
         this.attachments = attachmentsCopy;
     }
@@ -131,7 +131,7 @@ public class InternetGateway implements Serializable {
         if (attachments == null) {
             this.attachments = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<InternetGatewayAttachment> attachmentsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InternetGatewayAttachment>(attachments.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InternetGatewayAttachment> attachmentsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InternetGatewayAttachment>(attachments.size());
             attachmentsCopy.addAll(attachments);
             this.attachments = attachmentsCopy;
         }
@@ -146,7 +146,7 @@ public class InternetGateway implements Serializable {
      */
     public java.util.List<Tag> getTags() {
         if (tags == null) {
-              tags = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>();
+              tags = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>();
               tags.setAutoConstruct(true);
         }
         return tags;
@@ -162,7 +162,7 @@ public class InternetGateway implements Serializable {
             this.tags = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tags.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tags.size());
         tagsCopy.addAll(tags);
         this.tags = tagsCopy;
     }
@@ -199,7 +199,7 @@ public class InternetGateway implements Serializable {
         if (tags == null) {
             this.tags = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tags.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tags.size());
             tagsCopy.addAll(tags);
             this.tags = tagsCopy;
         }

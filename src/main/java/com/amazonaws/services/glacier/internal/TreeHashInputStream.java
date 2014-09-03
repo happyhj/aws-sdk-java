@@ -23,8 +23,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import com.amazonaws.sdkutil.SdkDigestInputStream;
-import com.amazonaws.sdkutil.SdkFilterInputStream;
+import com.amazonaws.client.util.sdk.SdkDigestInputStream;
+import com.amazonaws.client.util.sdk.SdkFilterInputStream;
 import com.amazonaws.services.glacier.TreeHashGenerator;
 
 /**

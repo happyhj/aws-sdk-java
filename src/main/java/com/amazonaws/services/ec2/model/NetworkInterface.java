@@ -95,7 +95,7 @@ public class NetworkInterface implements Serializable {
     /**
      * Any security groups for the network interface.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<GroupIdentifier> groups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GroupIdentifier> groups;
 
     /**
      * The network interface attachment.
@@ -111,12 +111,12 @@ public class NetworkInterface implements Serializable {
     /**
      * Any tags assigned to the network interface.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagSet;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagSet;
 
     /**
      * The private IP addresses associated with the network interface.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<NetworkInterfacePrivateIpAddress> privateIpAddresses;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NetworkInterfacePrivateIpAddress> privateIpAddresses;
 
     /**
      * The ID of the network interface.
@@ -627,7 +627,7 @@ public class NetworkInterface implements Serializable {
      */
     public java.util.List<GroupIdentifier> getGroups() {
         if (groups == null) {
-              groups = new com.amazonaws.internal.ListWithAutoConstructFlag<GroupIdentifier>();
+              groups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GroupIdentifier>();
               groups.setAutoConstruct(true);
         }
         return groups;
@@ -643,7 +643,7 @@ public class NetworkInterface implements Serializable {
             this.groups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<GroupIdentifier> groupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<GroupIdentifier>(groups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GroupIdentifier> groupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GroupIdentifier>(groups.size());
         groupsCopy.addAll(groups);
         this.groups = groupsCopy;
     }
@@ -680,7 +680,7 @@ public class NetworkInterface implements Serializable {
         if (groups == null) {
             this.groups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<GroupIdentifier> groupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<GroupIdentifier>(groups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GroupIdentifier> groupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GroupIdentifier>(groups.size());
             groupsCopy.addAll(groups);
             this.groups = groupsCopy;
         }
@@ -767,7 +767,7 @@ public class NetworkInterface implements Serializable {
      */
     public java.util.List<Tag> getTagSet() {
         if (tagSet == null) {
-              tagSet = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>();
+              tagSet = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>();
               tagSet.setAutoConstruct(true);
         }
         return tagSet;
@@ -783,7 +783,7 @@ public class NetworkInterface implements Serializable {
             this.tagSet = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagSetCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tagSet.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagSetCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tagSet.size());
         tagSetCopy.addAll(tagSet);
         this.tagSet = tagSetCopy;
     }
@@ -820,7 +820,7 @@ public class NetworkInterface implements Serializable {
         if (tagSet == null) {
             this.tagSet = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagSetCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tagSet.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagSetCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tagSet.size());
             tagSetCopy.addAll(tagSet);
             this.tagSet = tagSetCopy;
         }
@@ -835,7 +835,7 @@ public class NetworkInterface implements Serializable {
      */
     public java.util.List<NetworkInterfacePrivateIpAddress> getPrivateIpAddresses() {
         if (privateIpAddresses == null) {
-              privateIpAddresses = new com.amazonaws.internal.ListWithAutoConstructFlag<NetworkInterfacePrivateIpAddress>();
+              privateIpAddresses = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NetworkInterfacePrivateIpAddress>();
               privateIpAddresses.setAutoConstruct(true);
         }
         return privateIpAddresses;
@@ -851,7 +851,7 @@ public class NetworkInterface implements Serializable {
             this.privateIpAddresses = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<NetworkInterfacePrivateIpAddress> privateIpAddressesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<NetworkInterfacePrivateIpAddress>(privateIpAddresses.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NetworkInterfacePrivateIpAddress> privateIpAddressesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NetworkInterfacePrivateIpAddress>(privateIpAddresses.size());
         privateIpAddressesCopy.addAll(privateIpAddresses);
         this.privateIpAddresses = privateIpAddressesCopy;
     }
@@ -888,7 +888,7 @@ public class NetworkInterface implements Serializable {
         if (privateIpAddresses == null) {
             this.privateIpAddresses = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<NetworkInterfacePrivateIpAddress> privateIpAddressesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<NetworkInterfacePrivateIpAddress>(privateIpAddresses.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NetworkInterfacePrivateIpAddress> privateIpAddressesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NetworkInterfacePrivateIpAddress>(privateIpAddresses.size());
             privateIpAddressesCopy.addAll(privateIpAddresses);
             this.privateIpAddresses = privateIpAddressesCopy;
         }

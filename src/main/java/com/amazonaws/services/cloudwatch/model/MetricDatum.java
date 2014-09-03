@@ -39,7 +39,7 @@ public class MetricDatum implements Serializable {
      * <b>Constraints:</b><br/>
      * <b>Length: </b>0 - 10<br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Dimension> dimensions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Dimension> dimensions;
 
     /**
      * The time stamp used for the metric. If not specified, the default
@@ -122,7 +122,7 @@ public class MetricDatum implements Serializable {
      */
     public java.util.List<Dimension> getDimensions() {
         if (dimensions == null) {
-              dimensions = new com.amazonaws.internal.ListWithAutoConstructFlag<Dimension>();
+              dimensions = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Dimension>();
               dimensions.setAutoConstruct(true);
         }
         return dimensions;
@@ -141,7 +141,7 @@ public class MetricDatum implements Serializable {
             this.dimensions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Dimension> dimensionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Dimension>(dimensions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Dimension> dimensionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Dimension>(dimensions.size());
         dimensionsCopy.addAll(dimensions);
         this.dimensions = dimensionsCopy;
     }
@@ -184,7 +184,7 @@ public class MetricDatum implements Serializable {
         if (dimensions == null) {
             this.dimensions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Dimension> dimensionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Dimension>(dimensions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Dimension> dimensionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Dimension>(dimensions.size());
             dimensionsCopy.addAll(dimensions);
             this.dimensions = dimensionsCopy;
         }

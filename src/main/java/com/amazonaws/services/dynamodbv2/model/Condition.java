@@ -61,7 +61,7 @@ public class Condition implements Serializable {
      * unsigned when it compares binary values, for example when evaluating
      * query expressions.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<AttributeValue> attributeValueList;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AttributeValue> attributeValueList;
 
     /**
      * A comparator for evaluating attributes. For example, equals, greater
@@ -228,7 +228,7 @@ public class Condition implements Serializable {
             this.attributeValueList = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<AttributeValue> attributeValueListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<AttributeValue>(attributeValueList.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AttributeValue> attributeValueListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AttributeValue>(attributeValueList.size());
         attributeValueListCopy.addAll(attributeValueList);
         this.attributeValueList = attributeValueListCopy;
     }
@@ -305,7 +305,7 @@ public class Condition implements Serializable {
         if (attributeValueList == null) {
             this.attributeValueList = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<AttributeValue> attributeValueListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<AttributeValue>(attributeValueList.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AttributeValue> attributeValueListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AttributeValue>(attributeValueList.size());
             attributeValueListCopy.addAll(attributeValueList);
             this.attributeValueList = attributeValueListCopy;
         }

@@ -39,7 +39,7 @@ public class DescribeReservedInstancesRequest extends AmazonWebServiceRequest im
      * One or more Reserved Instance IDs. <p>Default: Describes all your
      * Reserved Instances, or only those otherwise specified.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> reservedInstancesIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> reservedInstancesIds;
 
     /**
      * One or more filters. <ul> <li> <p><code>availability-zone</code> - The
@@ -75,7 +75,7 @@ public class DescribeReservedInstancesRequest extends AmazonWebServiceRequest im
      * filter. </li> <li> <p><code>usage-price</code> - The usage price of
      * the Reserved Instance, per hour (for example, 0.84). </li> </ul>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filters;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filters;
 
     /**
      * The Reserved Instance offering type.
@@ -94,7 +94,7 @@ public class DescribeReservedInstancesRequest extends AmazonWebServiceRequest im
      */
     public java.util.List<String> getReservedInstancesIds() {
         if (reservedInstancesIds == null) {
-              reservedInstancesIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              reservedInstancesIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               reservedInstancesIds.setAutoConstruct(true);
         }
         return reservedInstancesIds;
@@ -112,7 +112,7 @@ public class DescribeReservedInstancesRequest extends AmazonWebServiceRequest im
             this.reservedInstancesIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> reservedInstancesIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(reservedInstancesIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> reservedInstancesIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(reservedInstancesIds.size());
         reservedInstancesIdsCopy.addAll(reservedInstancesIds);
         this.reservedInstancesIds = reservedInstancesIdsCopy;
     }
@@ -153,7 +153,7 @@ public class DescribeReservedInstancesRequest extends AmazonWebServiceRequest im
         if (reservedInstancesIds == null) {
             this.reservedInstancesIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> reservedInstancesIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(reservedInstancesIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> reservedInstancesIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(reservedInstancesIds.size());
             reservedInstancesIdsCopy.addAll(reservedInstancesIds);
             this.reservedInstancesIds = reservedInstancesIdsCopy;
         }
@@ -230,7 +230,7 @@ public class DescribeReservedInstancesRequest extends AmazonWebServiceRequest im
      */
     public java.util.List<Filter> getFilters() {
         if (filters == null) {
-              filters = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>();
+              filters = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>();
               filters.setAutoConstruct(true);
         }
         return filters;
@@ -308,7 +308,7 @@ public class DescribeReservedInstancesRequest extends AmazonWebServiceRequest im
             this.filters = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
         filtersCopy.addAll(filters);
         this.filters = filtersCopy;
     }
@@ -469,7 +469,7 @@ public class DescribeReservedInstancesRequest extends AmazonWebServiceRequest im
         if (filters == null) {
             this.filters = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
             filtersCopy.addAll(filters);
             this.filters = filtersCopy;
         }

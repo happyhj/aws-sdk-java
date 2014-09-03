@@ -51,7 +51,7 @@ public class App implements Serializable {
     /**
      * The app's data sources.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<DataSource> dataSources;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DataSource> dataSources;
 
     /**
      * The app type.
@@ -70,7 +70,7 @@ public class App implements Serializable {
      * The app vhost settings with multiple domains separated by commas. For
      * example: <code>'www.example.com, example.com'</code>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> domains;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> domains;
 
     /**
      * Whether to enable SSL for the app.
@@ -264,7 +264,7 @@ public class App implements Serializable {
      */
     public java.util.List<DataSource> getDataSources() {
         if (dataSources == null) {
-              dataSources = new com.amazonaws.internal.ListWithAutoConstructFlag<DataSource>();
+              dataSources = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DataSource>();
               dataSources.setAutoConstruct(true);
         }
         return dataSources;
@@ -280,7 +280,7 @@ public class App implements Serializable {
             this.dataSources = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<DataSource> dataSourcesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DataSource>(dataSources.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DataSource> dataSourcesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DataSource>(dataSources.size());
         dataSourcesCopy.addAll(dataSources);
         this.dataSources = dataSourcesCopy;
     }
@@ -317,7 +317,7 @@ public class App implements Serializable {
         if (dataSources == null) {
             this.dataSources = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<DataSource> dataSourcesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DataSource>(dataSources.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DataSource> dataSourcesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DataSource>(dataSources.size());
             dataSourcesCopy.addAll(dataSources);
             this.dataSources = dataSourcesCopy;
         }
@@ -449,7 +449,7 @@ public class App implements Serializable {
      */
     public java.util.List<String> getDomains() {
         if (domains == null) {
-              domains = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              domains = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               domains.setAutoConstruct(true);
         }
         return domains;
@@ -467,7 +467,7 @@ public class App implements Serializable {
             this.domains = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> domainsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(domains.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> domainsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(domains.size());
         domainsCopy.addAll(domains);
         this.domains = domainsCopy;
     }
@@ -508,7 +508,7 @@ public class App implements Serializable {
         if (domains == null) {
             this.domains = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> domainsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(domains.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> domainsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(domains.size());
             domainsCopy.addAll(domains);
             this.domains = domainsCopy;
         }

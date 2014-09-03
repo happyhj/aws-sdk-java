@@ -19,7 +19,7 @@ import java.util.Date;
 
 import org.w3c.dom.Node;
 
-import com.amazonaws.util.XpathUtils;
+import com.amazonaws.utility.XpathUtils;
 
 /**
  * Collection of unmarshallers for simple data types.

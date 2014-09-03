@@ -20,8 +20,8 @@ import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
 import java.util.Date;
 
-import com.amazonaws.codec.Base64;
-import com.amazonaws.dateutil.DateUtils;
+import com.amazonaws.json.codec.Base64;
+import com.amazonaws.utility.date.DateUtils;
 
 /**
  * Utilities for converting objects to strings.

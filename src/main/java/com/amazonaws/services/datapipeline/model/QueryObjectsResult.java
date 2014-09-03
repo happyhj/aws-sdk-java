@@ -26,7 +26,7 @@ public class QueryObjectsResult implements Serializable {
     /**
      * A list of identifiers that match the query selectors.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> ids;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> ids;
 
     /**
      * The starting point for the results to be returned. As long as the
@@ -53,7 +53,7 @@ public class QueryObjectsResult implements Serializable {
      */
     public java.util.List<String> getIds() {
         if (ids == null) {
-              ids = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              ids = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               ids.setAutoConstruct(true);
         }
         return ids;
@@ -69,7 +69,7 @@ public class QueryObjectsResult implements Serializable {
             this.ids = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> idsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(ids.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> idsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(ids.size());
         idsCopy.addAll(ids);
         this.ids = idsCopy;
     }
@@ -106,7 +106,7 @@ public class QueryObjectsResult implements Serializable {
         if (ids == null) {
             this.ids = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> idsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(ids.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> idsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(ids.size());
             idsCopy.addAll(ids);
             this.ids = idsCopy;
         }

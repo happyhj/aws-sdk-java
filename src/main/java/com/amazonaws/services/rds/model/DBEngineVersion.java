@@ -60,7 +60,7 @@ public class DBEngineVersion implements Serializable {
      * A list of the character sets supported by this engine for the
      * <code>CharacterSetName</code> parameter of the CreateDBInstance API.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<CharacterSet> supportedCharacterSets;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CharacterSet> supportedCharacterSets;
 
     /**
      * Default constructor for a new DBEngineVersion object.  Callers should use the
@@ -287,7 +287,7 @@ public class DBEngineVersion implements Serializable {
      */
     public java.util.List<CharacterSet> getSupportedCharacterSets() {
         if (supportedCharacterSets == null) {
-              supportedCharacterSets = new com.amazonaws.internal.ListWithAutoConstructFlag<CharacterSet>();
+              supportedCharacterSets = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CharacterSet>();
               supportedCharacterSets.setAutoConstruct(true);
         }
         return supportedCharacterSets;
@@ -305,7 +305,7 @@ public class DBEngineVersion implements Serializable {
             this.supportedCharacterSets = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<CharacterSet> supportedCharacterSetsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CharacterSet>(supportedCharacterSets.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CharacterSet> supportedCharacterSetsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CharacterSet>(supportedCharacterSets.size());
         supportedCharacterSetsCopy.addAll(supportedCharacterSets);
         this.supportedCharacterSets = supportedCharacterSetsCopy;
     }
@@ -346,7 +346,7 @@ public class DBEngineVersion implements Serializable {
         if (supportedCharacterSets == null) {
             this.supportedCharacterSets = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<CharacterSet> supportedCharacterSetsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CharacterSet>(supportedCharacterSets.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CharacterSet> supportedCharacterSetsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CharacterSet>(supportedCharacterSets.size());
             supportedCharacterSetsCopy.addAll(supportedCharacterSets);
             this.supportedCharacterSets = supportedCharacterSetsCopy;
         }

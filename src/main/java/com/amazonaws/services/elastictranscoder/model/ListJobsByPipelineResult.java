@@ -27,7 +27,7 @@ public class ListJobsByPipelineResult implements Serializable {
      * An array of <code>Job</code> objects that are in the specified
      * pipeline.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Job> jobs;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Job> jobs;
 
     /**
      * A value that you use to access the second and subsequent pages of
@@ -49,7 +49,7 @@ public class ListJobsByPipelineResult implements Serializable {
      */
     public java.util.List<Job> getJobs() {
         if (jobs == null) {
-              jobs = new com.amazonaws.internal.ListWithAutoConstructFlag<Job>();
+              jobs = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Job>();
               jobs.setAutoConstruct(true);
         }
         return jobs;
@@ -67,7 +67,7 @@ public class ListJobsByPipelineResult implements Serializable {
             this.jobs = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Job> jobsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Job>(jobs.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Job> jobsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Job>(jobs.size());
         jobsCopy.addAll(jobs);
         this.jobs = jobsCopy;
     }
@@ -108,7 +108,7 @@ public class ListJobsByPipelineResult implements Serializable {
         if (jobs == null) {
             this.jobs = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Job> jobsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Job>(jobs.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Job> jobsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Job>(jobs.size());
             jobsCopy.addAll(jobs);
             this.jobs = jobsCopy;
         }

@@ -47,7 +47,7 @@ public class HadoopStepConfig implements Serializable {
      * The list of command line arguments to pass to the JAR file's main
      * function for execution.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> args;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> args;
 
     /**
      * The path to the JAR file that runs during the step.
@@ -210,7 +210,7 @@ public class HadoopStepConfig implements Serializable {
      */
     public java.util.List<String> getArgs() {
         if (args == null) {
-              args = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              args = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               args.setAutoConstruct(true);
         }
         return args;
@@ -228,7 +228,7 @@ public class HadoopStepConfig implements Serializable {
             this.args = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> argsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(args.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> argsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(args.size());
         argsCopy.addAll(args);
         this.args = argsCopy;
     }
@@ -269,7 +269,7 @@ public class HadoopStepConfig implements Serializable {
         if (args == null) {
             this.args = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> argsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(args.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> argsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(args.size());
             argsCopy.addAll(args);
             this.args = argsCopy;
         }

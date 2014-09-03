@@ -31,7 +31,7 @@ public class ListVolumeRecoveryPointsResult implements Serializable {
      */
     private String gatewayARN;
 
-    private com.amazonaws.internal.ListWithAutoConstructFlag<VolumeRecoveryPointInfo> volumeRecoveryPointInfos;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeRecoveryPointInfo> volumeRecoveryPointInfos;
 
     /**
      * The Amazon Resource Name (ARN) of the gateway. Use the
@@ -95,7 +95,7 @@ public class ListVolumeRecoveryPointsResult implements Serializable {
      */
     public java.util.List<VolumeRecoveryPointInfo> getVolumeRecoveryPointInfos() {
         if (volumeRecoveryPointInfos == null) {
-              volumeRecoveryPointInfos = new com.amazonaws.internal.ListWithAutoConstructFlag<VolumeRecoveryPointInfo>();
+              volumeRecoveryPointInfos = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeRecoveryPointInfo>();
               volumeRecoveryPointInfos.setAutoConstruct(true);
         }
         return volumeRecoveryPointInfos;
@@ -113,7 +113,7 @@ public class ListVolumeRecoveryPointsResult implements Serializable {
             this.volumeRecoveryPointInfos = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<VolumeRecoveryPointInfo> volumeRecoveryPointInfosCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<VolumeRecoveryPointInfo>(volumeRecoveryPointInfos.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeRecoveryPointInfo> volumeRecoveryPointInfosCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeRecoveryPointInfo>(volumeRecoveryPointInfos.size());
         volumeRecoveryPointInfosCopy.addAll(volumeRecoveryPointInfos);
         this.volumeRecoveryPointInfos = volumeRecoveryPointInfosCopy;
     }
@@ -154,7 +154,7 @@ public class ListVolumeRecoveryPointsResult implements Serializable {
         if (volumeRecoveryPointInfos == null) {
             this.volumeRecoveryPointInfos = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<VolumeRecoveryPointInfo> volumeRecoveryPointInfosCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<VolumeRecoveryPointInfo>(volumeRecoveryPointInfos.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeRecoveryPointInfo> volumeRecoveryPointInfosCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeRecoveryPointInfo>(volumeRecoveryPointInfos.size());
             volumeRecoveryPointInfosCopy.addAll(volumeRecoveryPointInfos);
             this.volumeRecoveryPointInfos = volumeRecoveryPointInfosCopy;
         }

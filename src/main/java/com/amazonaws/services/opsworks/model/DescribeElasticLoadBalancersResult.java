@@ -28,7 +28,7 @@ public class DescribeElasticLoadBalancersResult implements Serializable {
      * A list of <code>ElasticLoadBalancer</code> objects that describe the
      * specified Elastic Load Balancing instances.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ElasticLoadBalancer> elasticLoadBalancers;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ElasticLoadBalancer> elasticLoadBalancers;
 
     /**
      * A list of <code>ElasticLoadBalancer</code> objects that describe the
@@ -39,7 +39,7 @@ public class DescribeElasticLoadBalancersResult implements Serializable {
      */
     public java.util.List<ElasticLoadBalancer> getElasticLoadBalancers() {
         if (elasticLoadBalancers == null) {
-              elasticLoadBalancers = new com.amazonaws.internal.ListWithAutoConstructFlag<ElasticLoadBalancer>();
+              elasticLoadBalancers = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ElasticLoadBalancer>();
               elasticLoadBalancers.setAutoConstruct(true);
         }
         return elasticLoadBalancers;
@@ -57,7 +57,7 @@ public class DescribeElasticLoadBalancersResult implements Serializable {
             this.elasticLoadBalancers = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ElasticLoadBalancer> elasticLoadBalancersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ElasticLoadBalancer>(elasticLoadBalancers.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ElasticLoadBalancer> elasticLoadBalancersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ElasticLoadBalancer>(elasticLoadBalancers.size());
         elasticLoadBalancersCopy.addAll(elasticLoadBalancers);
         this.elasticLoadBalancers = elasticLoadBalancersCopy;
     }
@@ -98,7 +98,7 @@ public class DescribeElasticLoadBalancersResult implements Serializable {
         if (elasticLoadBalancers == null) {
             this.elasticLoadBalancers = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ElasticLoadBalancer> elasticLoadBalancersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ElasticLoadBalancer>(elasticLoadBalancers.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ElasticLoadBalancer> elasticLoadBalancersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ElasticLoadBalancer>(elasticLoadBalancers.size());
             elasticLoadBalancersCopy.addAll(elasticLoadBalancers);
             this.elasticLoadBalancers = elasticLoadBalancersCopy;
         }

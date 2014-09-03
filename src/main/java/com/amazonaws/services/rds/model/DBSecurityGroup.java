@@ -59,12 +59,12 @@ public class DBSecurityGroup implements Serializable {
     /**
      * Contains a list of <a>EC2SecurityGroup</a> elements.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<EC2SecurityGroup> eC2SecurityGroups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EC2SecurityGroup> eC2SecurityGroups;
 
     /**
      * Contains a list of <a>IPRange</a> elements.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<IPRange> iPRanges;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IPRange> iPRanges;
 
     /**
      * Provides the AWS ID of the owner of a specific DB security group.
@@ -205,7 +205,7 @@ public class DBSecurityGroup implements Serializable {
      */
     public java.util.List<EC2SecurityGroup> getEC2SecurityGroups() {
         if (eC2SecurityGroups == null) {
-              eC2SecurityGroups = new com.amazonaws.internal.ListWithAutoConstructFlag<EC2SecurityGroup>();
+              eC2SecurityGroups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EC2SecurityGroup>();
               eC2SecurityGroups.setAutoConstruct(true);
         }
         return eC2SecurityGroups;
@@ -221,7 +221,7 @@ public class DBSecurityGroup implements Serializable {
             this.eC2SecurityGroups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<EC2SecurityGroup> eC2SecurityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<EC2SecurityGroup>(eC2SecurityGroups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EC2SecurityGroup> eC2SecurityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EC2SecurityGroup>(eC2SecurityGroups.size());
         eC2SecurityGroupsCopy.addAll(eC2SecurityGroups);
         this.eC2SecurityGroups = eC2SecurityGroupsCopy;
     }
@@ -258,7 +258,7 @@ public class DBSecurityGroup implements Serializable {
         if (eC2SecurityGroups == null) {
             this.eC2SecurityGroups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<EC2SecurityGroup> eC2SecurityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<EC2SecurityGroup>(eC2SecurityGroups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EC2SecurityGroup> eC2SecurityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EC2SecurityGroup>(eC2SecurityGroups.size());
             eC2SecurityGroupsCopy.addAll(eC2SecurityGroups);
             this.eC2SecurityGroups = eC2SecurityGroupsCopy;
         }
@@ -273,7 +273,7 @@ public class DBSecurityGroup implements Serializable {
      */
     public java.util.List<IPRange> getIPRanges() {
         if (iPRanges == null) {
-              iPRanges = new com.amazonaws.internal.ListWithAutoConstructFlag<IPRange>();
+              iPRanges = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IPRange>();
               iPRanges.setAutoConstruct(true);
         }
         return iPRanges;
@@ -289,7 +289,7 @@ public class DBSecurityGroup implements Serializable {
             this.iPRanges = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<IPRange> iPRangesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<IPRange>(iPRanges.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IPRange> iPRangesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IPRange>(iPRanges.size());
         iPRangesCopy.addAll(iPRanges);
         this.iPRanges = iPRangesCopy;
     }
@@ -326,7 +326,7 @@ public class DBSecurityGroup implements Serializable {
         if (iPRanges == null) {
             this.iPRanges = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<IPRange> iPRangesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<IPRange>(iPRanges.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IPRange> iPRangesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IPRange>(iPRanges.size());
             iPRangesCopy.addAll(iPRanges);
             this.iPRanges = iPRangesCopy;
         }

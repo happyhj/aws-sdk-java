@@ -24,7 +24,7 @@ public class DescribeDhcpOptionsResult implements Serializable {
     /**
      * Information about one or more DHCP options sets.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<DhcpOptions> dhcpOptions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DhcpOptions> dhcpOptions;
 
     /**
      * Information about one or more DHCP options sets.
@@ -33,7 +33,7 @@ public class DescribeDhcpOptionsResult implements Serializable {
      */
     public java.util.List<DhcpOptions> getDhcpOptions() {
         if (dhcpOptions == null) {
-              dhcpOptions = new com.amazonaws.internal.ListWithAutoConstructFlag<DhcpOptions>();
+              dhcpOptions = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DhcpOptions>();
               dhcpOptions.setAutoConstruct(true);
         }
         return dhcpOptions;
@@ -49,7 +49,7 @@ public class DescribeDhcpOptionsResult implements Serializable {
             this.dhcpOptions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<DhcpOptions> dhcpOptionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DhcpOptions>(dhcpOptions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DhcpOptions> dhcpOptionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DhcpOptions>(dhcpOptions.size());
         dhcpOptionsCopy.addAll(dhcpOptions);
         this.dhcpOptions = dhcpOptionsCopy;
     }
@@ -86,7 +86,7 @@ public class DescribeDhcpOptionsResult implements Serializable {
         if (dhcpOptions == null) {
             this.dhcpOptions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<DhcpOptions> dhcpOptionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DhcpOptions>(dhcpOptions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DhcpOptions> dhcpOptionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DhcpOptions>(dhcpOptions.size());
             dhcpOptionsCopy.addAll(dhcpOptions);
             this.dhcpOptions = dhcpOptionsCopy;
         }

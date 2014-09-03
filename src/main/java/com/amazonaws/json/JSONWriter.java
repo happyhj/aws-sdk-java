@@ -28,8 +28,8 @@ import java.io.Writer;
 import java.nio.ByteBuffer;
 import java.util.Date;
 
-import com.amazonaws.codec.BinaryUtils;
-import com.amazonaws.dateutil.DateUtils;
+import com.amazonaws.json.codec.BinaryUtils;
+import com.amazonaws.utility.date.DateUtils;
 
 /**
  * JSONWriter provides a quick and convenient way of producing JSON text.

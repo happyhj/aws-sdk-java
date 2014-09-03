@@ -27,7 +27,7 @@ public class ListHealthChecksResult implements Serializable {
      * A complex type that contains information about the health checks
      * associated with the current AWS account.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<HealthCheck> healthChecks;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<HealthCheck> healthChecks;
 
     /**
      * If the request returned more than one page of results, submit another
@@ -81,7 +81,7 @@ public class ListHealthChecksResult implements Serializable {
      */
     public java.util.List<HealthCheck> getHealthChecks() {
         if (healthChecks == null) {
-              healthChecks = new com.amazonaws.internal.ListWithAutoConstructFlag<HealthCheck>();
+              healthChecks = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<HealthCheck>();
               healthChecks.setAutoConstruct(true);
         }
         return healthChecks;
@@ -99,7 +99,7 @@ public class ListHealthChecksResult implements Serializable {
             this.healthChecks = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<HealthCheck> healthChecksCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<HealthCheck>(healthChecks.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<HealthCheck> healthChecksCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<HealthCheck>(healthChecks.size());
         healthChecksCopy.addAll(healthChecks);
         this.healthChecks = healthChecksCopy;
     }
@@ -140,7 +140,7 @@ public class ListHealthChecksResult implements Serializable {
         if (healthChecks == null) {
             this.healthChecks = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<HealthCheck> healthChecksCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<HealthCheck>(healthChecks.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<HealthCheck> healthChecksCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<HealthCheck>(healthChecks.size());
             healthChecksCopy.addAll(healthChecks);
             this.healthChecks = healthChecksCopy;
         }

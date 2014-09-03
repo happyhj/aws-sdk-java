@@ -22,9 +22,9 @@ import org.apache.commons.logging.LogFactory;
 import com.amazonaws.auth.AWSSessionCredentials;
 import com.amazonaws.auth.SigningAlgorithm;
 import com.amazonaws.credential.AWSCredentials;
-import com.amazonaws.dateutil.DateUtils;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.network.type.Request;
+import com.amazonaws.utility.date.DateUtils;
 
 /**
  * Implementation of AbstractAWSSigner for Amazon CloudFront's authentication

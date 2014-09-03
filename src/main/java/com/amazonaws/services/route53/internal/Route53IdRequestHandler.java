@@ -31,7 +31,7 @@ import com.amazonaws.services.route53.model.CreateHealthCheckResult;
 import com.amazonaws.services.route53.model.GetHealthCheckResult;
 import com.amazonaws.services.route53.model.ListHealthChecksResult;
 import com.amazonaws.services.route53.model.HealthCheck;
-import com.amazonaws.util.TimingInfo;
+import com.amazonaws.utility.TimingInfo;
 
 /**
  * Route 53 returns a portion of the URL resource path as the ID for a few

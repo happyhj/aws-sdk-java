@@ -117,7 +117,7 @@ public class UpdateStackRequest extends AmazonWebServiceRequest implements Seria
      * A list of <code>Parameter</code> structures that specify input
      * parameters for the stack.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Parameter> parameters;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Parameter> parameters;
 
     /**
      * The list of capabilities that you want to allow in the stack. If your
@@ -134,7 +134,7 @@ public class UpdateStackRequest extends AmazonWebServiceRequest implements Seria
      * and <a
      * href="http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-addusertogroup.html">AWS::IAM::UserToGroupAddition</a>.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> capabilities;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> capabilities;
 
     /**
      * Structure containing a new stack policy body. You can specify either
@@ -171,7 +171,7 @@ public class UpdateStackRequest extends AmazonWebServiceRequest implements Seria
      * <b>Constraints:</b><br/>
      * <b>Length: </b>0 - 5<br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> notificationARNs;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> notificationARNs;
 
     /**
      * The name or stack ID of the stack to update. <note> Must contain only
@@ -583,7 +583,7 @@ public class UpdateStackRequest extends AmazonWebServiceRequest implements Seria
      */
     public java.util.List<Parameter> getParameters() {
         if (parameters == null) {
-              parameters = new com.amazonaws.internal.ListWithAutoConstructFlag<Parameter>();
+              parameters = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Parameter>();
               parameters.setAutoConstruct(true);
         }
         return parameters;
@@ -601,7 +601,7 @@ public class UpdateStackRequest extends AmazonWebServiceRequest implements Seria
             this.parameters = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Parameter> parametersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Parameter>(parameters.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Parameter> parametersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Parameter>(parameters.size());
         parametersCopy.addAll(parameters);
         this.parameters = parametersCopy;
     }
@@ -642,7 +642,7 @@ public class UpdateStackRequest extends AmazonWebServiceRequest implements Seria
         if (parameters == null) {
             this.parameters = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Parameter> parametersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Parameter>(parameters.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Parameter> parametersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Parameter>(parameters.size());
             parametersCopy.addAll(parameters);
             this.parameters = parametersCopy;
         }
@@ -681,7 +681,7 @@ public class UpdateStackRequest extends AmazonWebServiceRequest implements Seria
      */
     public java.util.List<String> getCapabilities() {
         if (capabilities == null) {
-              capabilities = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              capabilities = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               capabilities.setAutoConstruct(true);
         }
         return capabilities;
@@ -721,7 +721,7 @@ public class UpdateStackRequest extends AmazonWebServiceRequest implements Seria
             this.capabilities = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> capabilitiesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(capabilities.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> capabilitiesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(capabilities.size());
         capabilitiesCopy.addAll(capabilities);
         this.capabilities = capabilitiesCopy;
     }
@@ -806,7 +806,7 @@ public class UpdateStackRequest extends AmazonWebServiceRequest implements Seria
         if (capabilities == null) {
             this.capabilities = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> capabilitiesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(capabilities.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> capabilitiesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(capabilities.size());
             capabilitiesCopy.addAll(capabilities);
             this.capabilities = capabilitiesCopy;
         }
@@ -1029,7 +1029,7 @@ public class UpdateStackRequest extends AmazonWebServiceRequest implements Seria
      */
     public java.util.List<String> getNotificationARNs() {
         if (notificationARNs == null) {
-              notificationARNs = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              notificationARNs = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               notificationARNs.setAutoConstruct(true);
         }
         return notificationARNs;
@@ -1050,7 +1050,7 @@ public class UpdateStackRequest extends AmazonWebServiceRequest implements Seria
             this.notificationARNs = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> notificationARNsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(notificationARNs.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> notificationARNsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(notificationARNs.size());
         notificationARNsCopy.addAll(notificationARNs);
         this.notificationARNs = notificationARNsCopy;
     }
@@ -1097,7 +1097,7 @@ public class UpdateStackRequest extends AmazonWebServiceRequest implements Seria
         if (notificationARNs == null) {
             this.notificationARNs = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> notificationARNsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(notificationARNs.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> notificationARNsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(notificationARNs.size());
             notificationARNsCopy.addAll(notificationARNs);
             this.notificationARNs = notificationARNsCopy;
         }

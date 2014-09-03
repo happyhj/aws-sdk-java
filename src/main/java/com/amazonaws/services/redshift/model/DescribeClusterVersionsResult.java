@@ -36,7 +36,7 @@ public class DescribeClusterVersionsResult implements Serializable {
     /**
      * A list of <code>Version</code> elements.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ClusterVersion> clusterVersions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterVersion> clusterVersions;
 
     /**
      * A value that indicates the starting point for the next set of response
@@ -108,7 +108,7 @@ public class DescribeClusterVersionsResult implements Serializable {
      */
     public java.util.List<ClusterVersion> getClusterVersions() {
         if (clusterVersions == null) {
-              clusterVersions = new com.amazonaws.internal.ListWithAutoConstructFlag<ClusterVersion>();
+              clusterVersions = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterVersion>();
               clusterVersions.setAutoConstruct(true);
         }
         return clusterVersions;
@@ -124,7 +124,7 @@ public class DescribeClusterVersionsResult implements Serializable {
             this.clusterVersions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ClusterVersion> clusterVersionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ClusterVersion>(clusterVersions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterVersion> clusterVersionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterVersion>(clusterVersions.size());
         clusterVersionsCopy.addAll(clusterVersions);
         this.clusterVersions = clusterVersionsCopy;
     }
@@ -161,7 +161,7 @@ public class DescribeClusterVersionsResult implements Serializable {
         if (clusterVersions == null) {
             this.clusterVersions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ClusterVersion> clusterVersionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ClusterVersion>(clusterVersions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterVersion> clusterVersionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterVersion>(clusterVersions.size());
             clusterVersionsCopy.addAll(clusterVersions);
             this.clusterVersions = clusterVersionsCopy;
         }

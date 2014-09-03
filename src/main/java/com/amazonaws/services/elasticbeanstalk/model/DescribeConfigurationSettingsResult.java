@@ -27,7 +27,7 @@ public class DescribeConfigurationSettingsResult implements Serializable {
     /**
      * A list of <a>ConfigurationSettingsDescription</a>.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ConfigurationSettingsDescription> configurationSettings;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ConfigurationSettingsDescription> configurationSettings;
 
     /**
      * A list of <a>ConfigurationSettingsDescription</a>.
@@ -36,7 +36,7 @@ public class DescribeConfigurationSettingsResult implements Serializable {
      */
     public java.util.List<ConfigurationSettingsDescription> getConfigurationSettings() {
         if (configurationSettings == null) {
-              configurationSettings = new com.amazonaws.internal.ListWithAutoConstructFlag<ConfigurationSettingsDescription>();
+              configurationSettings = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ConfigurationSettingsDescription>();
               configurationSettings.setAutoConstruct(true);
         }
         return configurationSettings;
@@ -52,7 +52,7 @@ public class DescribeConfigurationSettingsResult implements Serializable {
             this.configurationSettings = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ConfigurationSettingsDescription> configurationSettingsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ConfigurationSettingsDescription>(configurationSettings.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ConfigurationSettingsDescription> configurationSettingsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ConfigurationSettingsDescription>(configurationSettings.size());
         configurationSettingsCopy.addAll(configurationSettings);
         this.configurationSettings = configurationSettingsCopy;
     }
@@ -89,7 +89,7 @@ public class DescribeConfigurationSettingsResult implements Serializable {
         if (configurationSettings == null) {
             this.configurationSettings = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ConfigurationSettingsDescription> configurationSettingsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ConfigurationSettingsDescription>(configurationSettings.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ConfigurationSettingsDescription> configurationSettingsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ConfigurationSettingsDescription>(configurationSettings.size());
             configurationSettingsCopy.addAll(configurationSettings);
             this.configurationSettings = configurationSettingsCopy;
         }

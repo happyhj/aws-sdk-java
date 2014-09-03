@@ -33,7 +33,7 @@ public class DescribeTrustedAdvisorCheckRefreshStatusesRequest extends AmazonWeb
     /**
      * The IDs of the Trusted Advisor checks.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> checkIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> checkIds;
 
     /**
      * The IDs of the Trusted Advisor checks.
@@ -42,7 +42,7 @@ public class DescribeTrustedAdvisorCheckRefreshStatusesRequest extends AmazonWeb
      */
     public java.util.List<String> getCheckIds() {
         if (checkIds == null) {
-              checkIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              checkIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               checkIds.setAutoConstruct(true);
         }
         return checkIds;
@@ -58,7 +58,7 @@ public class DescribeTrustedAdvisorCheckRefreshStatusesRequest extends AmazonWeb
             this.checkIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> checkIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(checkIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> checkIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(checkIds.size());
         checkIdsCopy.addAll(checkIds);
         this.checkIds = checkIdsCopy;
     }
@@ -95,7 +95,7 @@ public class DescribeTrustedAdvisorCheckRefreshStatusesRequest extends AmazonWeb
         if (checkIds == null) {
             this.checkIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> checkIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(checkIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> checkIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(checkIds.size());
             checkIdsCopy.addAll(checkIds);
             this.checkIds = checkIdsCopy;
         }

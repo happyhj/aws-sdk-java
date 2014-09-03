@@ -24,7 +24,7 @@ public class StartInstancesResult implements Serializable {
     /**
      * Information about one or more started instances.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<InstanceStateChange> startingInstances;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceStateChange> startingInstances;
 
     /**
      * Information about one or more started instances.
@@ -33,7 +33,7 @@ public class StartInstancesResult implements Serializable {
      */
     public java.util.List<InstanceStateChange> getStartingInstances() {
         if (startingInstances == null) {
-              startingInstances = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceStateChange>();
+              startingInstances = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceStateChange>();
               startingInstances.setAutoConstruct(true);
         }
         return startingInstances;
@@ -49,7 +49,7 @@ public class StartInstancesResult implements Serializable {
             this.startingInstances = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<InstanceStateChange> startingInstancesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceStateChange>(startingInstances.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceStateChange> startingInstancesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceStateChange>(startingInstances.size());
         startingInstancesCopy.addAll(startingInstances);
         this.startingInstances = startingInstancesCopy;
     }
@@ -86,7 +86,7 @@ public class StartInstancesResult implements Serializable {
         if (startingInstances == null) {
             this.startingInstances = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<InstanceStateChange> startingInstancesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceStateChange>(startingInstances.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceStateChange> startingInstancesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceStateChange>(startingInstances.size());
             startingInstancesCopy.addAll(startingInstances);
             this.startingInstances = startingInstancesCopy;
         }

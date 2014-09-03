@@ -61,7 +61,7 @@ public class DescribeElasticIpsRequest extends AmazonWebServiceRequest implement
      * the specified Elastic IP addresses. Otherwise, it returns a
      * description of every Elastic IP address.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> ips;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> ips;
 
     /**
      * The instance ID. If you include this parameter,
@@ -166,7 +166,7 @@ public class DescribeElasticIpsRequest extends AmazonWebServiceRequest implement
      */
     public java.util.List<String> getIps() {
         if (ips == null) {
-              ips = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              ips = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               ips.setAutoConstruct(true);
         }
         return ips;
@@ -188,7 +188,7 @@ public class DescribeElasticIpsRequest extends AmazonWebServiceRequest implement
             this.ips = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> ipsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(ips.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> ipsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(ips.size());
         ipsCopy.addAll(ips);
         this.ips = ipsCopy;
     }
@@ -237,7 +237,7 @@ public class DescribeElasticIpsRequest extends AmazonWebServiceRequest implement
         if (ips == null) {
             this.ips = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> ipsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(ips.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> ipsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(ips.size());
             ipsCopy.addAll(ips);
             this.ips = ipsCopy;
         }

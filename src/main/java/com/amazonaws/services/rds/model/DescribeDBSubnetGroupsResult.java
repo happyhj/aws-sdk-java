@@ -34,7 +34,7 @@ public class DescribeDBSubnetGroupsResult implements Serializable {
     /**
      * A list of <a>DBSubnetGroup</a> instances.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<DBSubnetGroup> dBSubnetGroups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBSubnetGroup> dBSubnetGroups;
 
     /**
      * An optional pagination token provided by a previous request. If this
@@ -88,7 +88,7 @@ public class DescribeDBSubnetGroupsResult implements Serializable {
      */
     public java.util.List<DBSubnetGroup> getDBSubnetGroups() {
         if (dBSubnetGroups == null) {
-              dBSubnetGroups = new com.amazonaws.internal.ListWithAutoConstructFlag<DBSubnetGroup>();
+              dBSubnetGroups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBSubnetGroup>();
               dBSubnetGroups.setAutoConstruct(true);
         }
         return dBSubnetGroups;
@@ -104,7 +104,7 @@ public class DescribeDBSubnetGroupsResult implements Serializable {
             this.dBSubnetGroups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<DBSubnetGroup> dBSubnetGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DBSubnetGroup>(dBSubnetGroups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBSubnetGroup> dBSubnetGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBSubnetGroup>(dBSubnetGroups.size());
         dBSubnetGroupsCopy.addAll(dBSubnetGroups);
         this.dBSubnetGroups = dBSubnetGroupsCopy;
     }
@@ -141,7 +141,7 @@ public class DescribeDBSubnetGroupsResult implements Serializable {
         if (dBSubnetGroups == null) {
             this.dBSubnetGroups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<DBSubnetGroup> dBSubnetGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DBSubnetGroup>(dBSubnetGroups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBSubnetGroup> dBSubnetGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DBSubnetGroup>(dBSubnetGroups.size());
             dBSubnetGroupsCopy.addAll(dBSubnetGroups);
             this.dBSubnetGroups = dBSubnetGroupsCopy;
         }

@@ -17,8 +17,8 @@ package com.amazonaws.services.s3.transfer.internal;
 import java.io.File;
 import java.io.IOException;
 
-import com.amazonaws.event.ProgressEventType;
-import com.amazonaws.event.ProgressListenerChain;
+import com.amazonaws.network.event.ProgressEventType;
+import com.amazonaws.network.event.ProgressListenerChain;
 import com.amazonaws.services.s3.model.GetObjectRequest;
 import com.amazonaws.services.s3.model.ObjectMetadata;
 import com.amazonaws.services.s3.model.S3Object;

@@ -32,7 +32,7 @@ public class DescribeApplicationsRequest extends AmazonWebServiceRequest impleme
      * If specified, AWS Elastic Beanstalk restricts the returned
      * descriptions to only include those with the specified names.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> applicationNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> applicationNames;
 
     /**
      * Default constructor for a new DescribeApplicationsRequest object.  Callers should use the
@@ -49,7 +49,7 @@ public class DescribeApplicationsRequest extends AmazonWebServiceRequest impleme
      */
     public java.util.List<String> getApplicationNames() {
         if (applicationNames == null) {
-              applicationNames = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              applicationNames = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               applicationNames.setAutoConstruct(true);
         }
         return applicationNames;
@@ -67,7 +67,7 @@ public class DescribeApplicationsRequest extends AmazonWebServiceRequest impleme
             this.applicationNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> applicationNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(applicationNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> applicationNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(applicationNames.size());
         applicationNamesCopy.addAll(applicationNames);
         this.applicationNames = applicationNamesCopy;
     }
@@ -108,7 +108,7 @@ public class DescribeApplicationsRequest extends AmazonWebServiceRequest impleme
         if (applicationNames == null) {
             this.applicationNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> applicationNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(applicationNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> applicationNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(applicationNames.size());
             applicationNamesCopy.addAll(applicationNames);
             this.applicationNames = applicationNamesCopy;
         }

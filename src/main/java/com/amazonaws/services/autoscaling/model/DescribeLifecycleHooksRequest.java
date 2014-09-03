@@ -41,7 +41,7 @@ public class DescribeLifecycleHooksRequest extends AmazonWebServiceRequest imple
     /**
      * The name of one or more lifecycle hooks.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> lifecycleHookNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> lifecycleHookNames;
 
     /**
      * The name of one or more Auto Scaling groups.
@@ -95,7 +95,7 @@ public class DescribeLifecycleHooksRequest extends AmazonWebServiceRequest imple
      */
     public java.util.List<String> getLifecycleHookNames() {
         if (lifecycleHookNames == null) {
-              lifecycleHookNames = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              lifecycleHookNames = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               lifecycleHookNames.setAutoConstruct(true);
         }
         return lifecycleHookNames;
@@ -111,7 +111,7 @@ public class DescribeLifecycleHooksRequest extends AmazonWebServiceRequest imple
             this.lifecycleHookNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> lifecycleHookNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(lifecycleHookNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> lifecycleHookNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(lifecycleHookNames.size());
         lifecycleHookNamesCopy.addAll(lifecycleHookNames);
         this.lifecycleHookNames = lifecycleHookNamesCopy;
     }
@@ -148,7 +148,7 @@ public class DescribeLifecycleHooksRequest extends AmazonWebServiceRequest imple
         if (lifecycleHookNames == null) {
             this.lifecycleHookNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> lifecycleHookNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(lifecycleHookNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> lifecycleHookNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(lifecycleHookNames.size());
             lifecycleHookNamesCopy.addAll(lifecycleHookNames);
             this.lifecycleHookNames = lifecycleHookNamesCopy;
         }

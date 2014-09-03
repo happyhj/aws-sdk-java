@@ -33,7 +33,7 @@ public class DescribeCacheSecurityGroupsResult implements Serializable {
      * A list of cache security groups. Each element in the list contains
      * detailed information about one group.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<CacheSecurityGroup> cacheSecurityGroups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheSecurityGroup> cacheSecurityGroups;
 
     /**
      * Provides an identifier to allow retrieval of paginated results.
@@ -77,7 +77,7 @@ public class DescribeCacheSecurityGroupsResult implements Serializable {
      */
     public java.util.List<CacheSecurityGroup> getCacheSecurityGroups() {
         if (cacheSecurityGroups == null) {
-              cacheSecurityGroups = new com.amazonaws.internal.ListWithAutoConstructFlag<CacheSecurityGroup>();
+              cacheSecurityGroups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheSecurityGroup>();
               cacheSecurityGroups.setAutoConstruct(true);
         }
         return cacheSecurityGroups;
@@ -95,7 +95,7 @@ public class DescribeCacheSecurityGroupsResult implements Serializable {
             this.cacheSecurityGroups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<CacheSecurityGroup> cacheSecurityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CacheSecurityGroup>(cacheSecurityGroups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheSecurityGroup> cacheSecurityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheSecurityGroup>(cacheSecurityGroups.size());
         cacheSecurityGroupsCopy.addAll(cacheSecurityGroups);
         this.cacheSecurityGroups = cacheSecurityGroupsCopy;
     }
@@ -136,7 +136,7 @@ public class DescribeCacheSecurityGroupsResult implements Serializable {
         if (cacheSecurityGroups == null) {
             this.cacheSecurityGroups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<CacheSecurityGroup> cacheSecurityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CacheSecurityGroup>(cacheSecurityGroups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheSecurityGroup> cacheSecurityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheSecurityGroup>(cacheSecurityGroups.size());
             cacheSecurityGroupsCopy.addAll(cacheSecurityGroups);
             this.cacheSecurityGroups = cacheSecurityGroupsCopy;
         }

@@ -38,7 +38,7 @@ public class DescribeTapeArchivesRequest extends AmazonWebServiceRequest impleme
      * Specifies one or more unique Amazon Resource Names (ARNs) that
      * represent the virtual tapes you want to describe.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> tapeARNs;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> tapeARNs;
 
     /**
      * An opaque string that indicates the position at which to begin
@@ -67,7 +67,7 @@ public class DescribeTapeArchivesRequest extends AmazonWebServiceRequest impleme
      */
     public java.util.List<String> getTapeARNs() {
         if (tapeARNs == null) {
-              tapeARNs = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              tapeARNs = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               tapeARNs.setAutoConstruct(true);
         }
         return tapeARNs;
@@ -85,7 +85,7 @@ public class DescribeTapeArchivesRequest extends AmazonWebServiceRequest impleme
             this.tapeARNs = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> tapeARNsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(tapeARNs.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> tapeARNsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(tapeARNs.size());
         tapeARNsCopy.addAll(tapeARNs);
         this.tapeARNs = tapeARNsCopy;
     }
@@ -126,7 +126,7 @@ public class DescribeTapeArchivesRequest extends AmazonWebServiceRequest impleme
         if (tapeARNs == null) {
             this.tapeARNs = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> tapeARNsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(tapeARNs.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> tapeARNsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(tapeARNs.size());
             tapeARNsCopy.addAll(tapeARNs);
             this.tapeARNs = tapeARNsCopy;
         }

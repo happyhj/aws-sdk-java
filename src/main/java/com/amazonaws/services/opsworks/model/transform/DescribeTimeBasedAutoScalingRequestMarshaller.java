@@ -20,12 +20,12 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.opsworks.model.DescribeTimeBasedAutoScalingRequest;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Describe Time Based Auto Scaling Request Marshaller
@@ -50,7 +50,7 @@ public class DescribeTimeBasedAutoScalingRequestMarshaller implements Marshaller
 
           jsonWriter.object();
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> instanceIdsList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(describeTimeBasedAutoScalingRequest.getInstanceIds());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> instanceIdsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(describeTimeBasedAutoScalingRequest.getInstanceIds());
             if (instanceIdsList != null && !(instanceIdsList.isAutoConstruct() && instanceIdsList.isEmpty())) {
 
                 jsonWriter.key("InstanceIds");

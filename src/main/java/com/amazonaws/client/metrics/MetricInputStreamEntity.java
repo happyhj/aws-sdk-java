@@ -21,8 +21,8 @@ import java.io.OutputStream;
 import org.apache.http.entity.ContentType;
 import org.apache.http.entity.InputStreamEntity;
 
-import com.amazonaws.internal.MetricAware;
-import com.amazonaws.metricstype.ThroughputMetricType;
+import com.amazonaws.network.metrics.util.type.ThroughputMetricType;
+import com.amazonaws.serviceinternal.MetricAware;
 
 /**
  * Used to help capture the throughput metrics.

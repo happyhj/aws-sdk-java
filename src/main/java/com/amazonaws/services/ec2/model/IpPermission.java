@@ -50,12 +50,12 @@ public class IpPermission implements Serializable {
     /**
      * One or more security group and AWS account ID pairs.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<UserIdGroupPair> userIdGroupPairs;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<UserIdGroupPair> userIdGroupPairs;
 
     /**
      * One or more IP ranges.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> ipRanges;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> ipRanges;
 
     /**
      * The protocol. <p>When you call <a>DescribeSecurityGroups</a>, the
@@ -217,7 +217,7 @@ public class IpPermission implements Serializable {
      */
     public java.util.List<UserIdGroupPair> getUserIdGroupPairs() {
         if (userIdGroupPairs == null) {
-              userIdGroupPairs = new com.amazonaws.internal.ListWithAutoConstructFlag<UserIdGroupPair>();
+              userIdGroupPairs = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<UserIdGroupPair>();
               userIdGroupPairs.setAutoConstruct(true);
         }
         return userIdGroupPairs;
@@ -233,7 +233,7 @@ public class IpPermission implements Serializable {
             this.userIdGroupPairs = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<UserIdGroupPair> userIdGroupPairsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<UserIdGroupPair>(userIdGroupPairs.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<UserIdGroupPair> userIdGroupPairsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<UserIdGroupPair>(userIdGroupPairs.size());
         userIdGroupPairsCopy.addAll(userIdGroupPairs);
         this.userIdGroupPairs = userIdGroupPairsCopy;
     }
@@ -270,7 +270,7 @@ public class IpPermission implements Serializable {
         if (userIdGroupPairs == null) {
             this.userIdGroupPairs = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<UserIdGroupPair> userIdGroupPairsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<UserIdGroupPair>(userIdGroupPairs.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<UserIdGroupPair> userIdGroupPairsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<UserIdGroupPair>(userIdGroupPairs.size());
             userIdGroupPairsCopy.addAll(userIdGroupPairs);
             this.userIdGroupPairs = userIdGroupPairsCopy;
         }
@@ -285,7 +285,7 @@ public class IpPermission implements Serializable {
      */
     public java.util.List<String> getIpRanges() {
         if (ipRanges == null) {
-              ipRanges = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              ipRanges = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               ipRanges.setAutoConstruct(true);
         }
         return ipRanges;
@@ -301,7 +301,7 @@ public class IpPermission implements Serializable {
             this.ipRanges = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> ipRangesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(ipRanges.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> ipRangesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(ipRanges.size());
         ipRangesCopy.addAll(ipRanges);
         this.ipRanges = ipRangesCopy;
     }
@@ -338,7 +338,7 @@ public class IpPermission implements Serializable {
         if (ipRanges == null) {
             this.ipRanges = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> ipRangesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(ipRanges.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> ipRangesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(ipRanges.size());
             ipRangesCopy.addAll(ipRanges);
             this.ipRanges = ipRangesCopy;
         }

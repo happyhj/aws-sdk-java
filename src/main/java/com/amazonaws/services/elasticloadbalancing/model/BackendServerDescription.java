@@ -36,7 +36,7 @@ public class BackendServerDescription implements Serializable {
     /**
      * Provides a list of policy names enabled for the back-end server.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> policyNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> policyNames;
 
     /**
      * Provides the port on which the back-end server is listening.
@@ -87,7 +87,7 @@ public class BackendServerDescription implements Serializable {
      */
     public java.util.List<String> getPolicyNames() {
         if (policyNames == null) {
-              policyNames = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              policyNames = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               policyNames.setAutoConstruct(true);
         }
         return policyNames;
@@ -103,7 +103,7 @@ public class BackendServerDescription implements Serializable {
             this.policyNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> policyNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(policyNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> policyNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(policyNames.size());
         policyNamesCopy.addAll(policyNames);
         this.policyNames = policyNamesCopy;
     }
@@ -140,7 +140,7 @@ public class BackendServerDescription implements Serializable {
         if (policyNames == null) {
             this.policyNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> policyNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(policyNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> policyNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(policyNames.size());
             policyNamesCopy.addAll(policyNames);
             this.policyNames = policyNamesCopy;
         }

@@ -14,6 +14,9 @@
  */
 package com.amazonaws.client;
 
+import com.amazonaws.client.regions.Region;
+
+
 
 
 /**

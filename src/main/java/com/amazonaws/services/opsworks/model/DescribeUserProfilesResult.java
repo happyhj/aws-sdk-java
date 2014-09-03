@@ -26,7 +26,7 @@ public class DescribeUserProfilesResult implements Serializable {
     /**
      * A <code>Users</code> object that describes the specified users.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<UserProfile> userProfiles;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<UserProfile> userProfiles;
 
     /**
      * A <code>Users</code> object that describes the specified users.
@@ -35,7 +35,7 @@ public class DescribeUserProfilesResult implements Serializable {
      */
     public java.util.List<UserProfile> getUserProfiles() {
         if (userProfiles == null) {
-              userProfiles = new com.amazonaws.internal.ListWithAutoConstructFlag<UserProfile>();
+              userProfiles = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<UserProfile>();
               userProfiles.setAutoConstruct(true);
         }
         return userProfiles;
@@ -51,7 +51,7 @@ public class DescribeUserProfilesResult implements Serializable {
             this.userProfiles = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<UserProfile> userProfilesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<UserProfile>(userProfiles.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<UserProfile> userProfilesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<UserProfile>(userProfiles.size());
         userProfilesCopy.addAll(userProfiles);
         this.userProfiles = userProfilesCopy;
     }
@@ -88,7 +88,7 @@ public class DescribeUserProfilesResult implements Serializable {
         if (userProfiles == null) {
             this.userProfiles = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<UserProfile> userProfilesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<UserProfile>(userProfiles.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<UserProfile> userProfilesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<UserProfile>(userProfiles.size());
             userProfilesCopy.addAll(userProfiles);
             this.userProfiles = userProfilesCopy;
         }

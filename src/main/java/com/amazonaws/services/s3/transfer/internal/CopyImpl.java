@@ -30,7 +30,7 @@ import com.amazonaws.services.s3.transfer.model.CopyResult;
 public class CopyImpl extends AbstractTransfer implements Copy {
 
     public CopyImpl(String description, TransferProgress transferProgress,
-            com.amazonaws.event.ProgressListenerChain progressListenerChain,
+            com.amazonaws.network.event.ProgressListenerChain progressListenerChain,
             TransferStateChangeListener stateChangeListener) {
         super(description, transferProgress, progressListenerChain,
                 stateChangeListener);

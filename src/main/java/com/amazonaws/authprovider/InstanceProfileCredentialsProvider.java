@@ -24,10 +24,10 @@ import com.amazonaws.auth.BasicAWSCredentials;
 import com.amazonaws.auth.BasicSessionCredentials;
 import com.amazonaws.credential.AWSCredentials;
 import com.amazonaws.credential.AWSCredentialsProvider;
-import com.amazonaws.dateutil.DateUtils;
 import com.amazonaws.exception.AmazonClientException;
-import com.amazonaws.internal.EC2MetadataClient;
 import com.amazonaws.json.Jackson;
+import com.amazonaws.serviceinternal.EC2MetadataClient;
+import com.amazonaws.utility.date.DateUtils;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.JsonNode;
 

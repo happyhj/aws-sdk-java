@@ -23,7 +23,7 @@ import java.util.Map;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.elastictranscoder.model.Artwork;
@@ -39,7 +39,7 @@ import com.amazonaws.services.elastictranscoder.model.JobInput;
 import com.amazonaws.services.elastictranscoder.model.JobWatermark;
 import com.amazonaws.services.elastictranscoder.model.TimeSpan;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Create Job Request Marshaller
@@ -154,7 +154,7 @@ public class CreateJobRequestMarshaller implements Marshaller<Request<CreateJobR
                     jsonWriter.key("SegmentDuration").value(output.getSegmentDuration());
                 }
 
-                com.amazonaws.internal.ListWithAutoConstructFlag<JobWatermark> watermarksList = (com.amazonaws.internal.ListWithAutoConstructFlag<JobWatermark>)(output.getWatermarks());
+                com.amazonaws.serviceinternal.ListWithAutoConstructFlag<JobWatermark> watermarksList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<JobWatermark>)(output.getWatermarks());
                 if (watermarksList != null && !(watermarksList.isAutoConstruct() && watermarksList.isEmpty())) {
 
                     jsonWriter.key("Watermarks");
@@ -184,7 +184,7 @@ public class CreateJobRequestMarshaller implements Marshaller<Request<CreateJobR
                         jsonWriter.key("MergePolicy").value(albumArt.getMergePolicy());
                     }
 
-                    com.amazonaws.internal.ListWithAutoConstructFlag<Artwork> artworkList = (com.amazonaws.internal.ListWithAutoConstructFlag<Artwork>)(albumArt.getArtwork());
+                    com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Artwork> artworkList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Artwork>)(albumArt.getArtwork());
                     if (artworkList != null && !(artworkList.isAutoConstruct() && artworkList.isEmpty())) {
 
                         jsonWriter.key("Artwork");
@@ -219,7 +219,7 @@ public class CreateJobRequestMarshaller implements Marshaller<Request<CreateJobR
                     jsonWriter.endObject();
                 }
 
-                com.amazonaws.internal.ListWithAutoConstructFlag<Clip> compositionList = (com.amazonaws.internal.ListWithAutoConstructFlag<Clip>)(output.getComposition());
+                com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Clip> compositionList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Clip>)(output.getComposition());
                 if (compositionList != null && !(compositionList.isAutoConstruct() && compositionList.isEmpty())) {
 
                     jsonWriter.key("Composition");
@@ -257,7 +257,7 @@ public class CreateJobRequestMarshaller implements Marshaller<Request<CreateJobR
                         jsonWriter.key("MergePolicy").value(captions.getMergePolicy());
                     }
 
-                    com.amazonaws.internal.ListWithAutoConstructFlag<CaptionSource> captionSourcesList = (com.amazonaws.internal.ListWithAutoConstructFlag<CaptionSource>)(captions.getCaptionSources());
+                    com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CaptionSource> captionSourcesList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CaptionSource>)(captions.getCaptionSources());
                     if (captionSourcesList != null && !(captionSourcesList.isAutoConstruct() && captionSourcesList.isEmpty())) {
 
                         jsonWriter.key("CaptionSources");
@@ -284,7 +284,7 @@ public class CreateJobRequestMarshaller implements Marshaller<Request<CreateJobR
                         jsonWriter.endArray();
                     }
 
-                    com.amazonaws.internal.ListWithAutoConstructFlag<CaptionFormat> captionFormatsList = (com.amazonaws.internal.ListWithAutoConstructFlag<CaptionFormat>)(captions.getCaptionFormats());
+                    com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CaptionFormat> captionFormatsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CaptionFormat>)(captions.getCaptionFormats());
                     if (captionFormatsList != null && !(captionFormatsList.isAutoConstruct() && captionFormatsList.isEmpty())) {
 
                         jsonWriter.key("CaptionFormats");
@@ -309,7 +309,7 @@ public class CreateJobRequestMarshaller implements Marshaller<Request<CreateJobR
                 jsonWriter.endObject();
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<CreateJobOutput> outputsList = (com.amazonaws.internal.ListWithAutoConstructFlag<CreateJobOutput>)(createJobRequest.getOutputs());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CreateJobOutput> outputsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CreateJobOutput>)(createJobRequest.getOutputs());
             if (outputsList != null && !(outputsList.isAutoConstruct() && outputsList.isEmpty())) {
 
                 jsonWriter.key("Outputs");
@@ -334,7 +334,7 @@ public class CreateJobRequestMarshaller implements Marshaller<Request<CreateJobR
                             jsonWriter.key("SegmentDuration").value(outputsListValue.getSegmentDuration());
                         }
 
-                        com.amazonaws.internal.ListWithAutoConstructFlag<JobWatermark> watermarksList = (com.amazonaws.internal.ListWithAutoConstructFlag<JobWatermark>)(outputsListValue.getWatermarks());
+                        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<JobWatermark> watermarksList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<JobWatermark>)(outputsListValue.getWatermarks());
                         if (watermarksList != null && !(watermarksList.isAutoConstruct() && watermarksList.isEmpty())) {
 
                             jsonWriter.key("Watermarks");
@@ -364,7 +364,7 @@ public class CreateJobRequestMarshaller implements Marshaller<Request<CreateJobR
                                 jsonWriter.key("MergePolicy").value(albumArt.getMergePolicy());
                             }
 
-                            com.amazonaws.internal.ListWithAutoConstructFlag<Artwork> artworkList = (com.amazonaws.internal.ListWithAutoConstructFlag<Artwork>)(albumArt.getArtwork());
+                            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Artwork> artworkList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Artwork>)(albumArt.getArtwork());
                             if (artworkList != null && !(artworkList.isAutoConstruct() && artworkList.isEmpty())) {
 
                                 jsonWriter.key("Artwork");
@@ -399,7 +399,7 @@ public class CreateJobRequestMarshaller implements Marshaller<Request<CreateJobR
                             jsonWriter.endObject();
                         }
 
-                        com.amazonaws.internal.ListWithAutoConstructFlag<Clip> compositionList = (com.amazonaws.internal.ListWithAutoConstructFlag<Clip>)(outputsListValue.getComposition());
+                        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Clip> compositionList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Clip>)(outputsListValue.getComposition());
                         if (compositionList != null && !(compositionList.isAutoConstruct() && compositionList.isEmpty())) {
 
                             jsonWriter.key("Composition");
@@ -437,7 +437,7 @@ public class CreateJobRequestMarshaller implements Marshaller<Request<CreateJobR
                                 jsonWriter.key("MergePolicy").value(captions.getMergePolicy());
                             }
 
-                            com.amazonaws.internal.ListWithAutoConstructFlag<CaptionSource> captionSourcesList = (com.amazonaws.internal.ListWithAutoConstructFlag<CaptionSource>)(captions.getCaptionSources());
+                            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CaptionSource> captionSourcesList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CaptionSource>)(captions.getCaptionSources());
                             if (captionSourcesList != null && !(captionSourcesList.isAutoConstruct() && captionSourcesList.isEmpty())) {
 
                                 jsonWriter.key("CaptionSources");
@@ -464,7 +464,7 @@ public class CreateJobRequestMarshaller implements Marshaller<Request<CreateJobR
                                 jsonWriter.endArray();
                             }
 
-                            com.amazonaws.internal.ListWithAutoConstructFlag<CaptionFormat> captionFormatsList = (com.amazonaws.internal.ListWithAutoConstructFlag<CaptionFormat>)(captions.getCaptionFormats());
+                            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CaptionFormat> captionFormatsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CaptionFormat>)(captions.getCaptionFormats());
                             if (captionFormatsList != null && !(captionFormatsList.isAutoConstruct() && captionFormatsList.isEmpty())) {
 
                                 jsonWriter.key("CaptionFormats");
@@ -495,7 +495,7 @@ public class CreateJobRequestMarshaller implements Marshaller<Request<CreateJobR
                 jsonWriter.key("OutputKeyPrefix").value(createJobRequest.getOutputKeyPrefix());
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<CreateJobPlaylist> playlistsList = (com.amazonaws.internal.ListWithAutoConstructFlag<CreateJobPlaylist>)(createJobRequest.getPlaylists());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CreateJobPlaylist> playlistsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CreateJobPlaylist>)(createJobRequest.getPlaylists());
             if (playlistsList != null && !(playlistsList.isAutoConstruct() && playlistsList.isEmpty())) {
 
                 jsonWriter.key("Playlists");
@@ -511,7 +511,7 @@ public class CreateJobRequestMarshaller implements Marshaller<Request<CreateJobR
                             jsonWriter.key("Format").value(playlistsListValue.getFormat());
                         }
 
-                        com.amazonaws.internal.ListWithAutoConstructFlag<String> outputKeysList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(playlistsListValue.getOutputKeys());
+                        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> outputKeysList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(playlistsListValue.getOutputKeys());
                         if (outputKeysList != null && !(outputKeysList.isAutoConstruct() && outputKeysList.isEmpty())) {
 
                             jsonWriter.key("OutputKeys");

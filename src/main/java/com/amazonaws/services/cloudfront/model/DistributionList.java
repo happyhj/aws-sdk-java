@@ -58,7 +58,7 @@ public class DistributionList implements Serializable {
      * A complex type that contains one DistributionSummary element for each
      * distribution that was created by the current AWS account.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<DistributionSummary> items;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DistributionSummary> items;
 
     /**
      * Default constructor for a new DistributionList object.  Callers should use the
@@ -291,7 +291,7 @@ public class DistributionList implements Serializable {
      */
     public java.util.List<DistributionSummary> getItems() {
         if (items == null) {
-              items = new com.amazonaws.internal.ListWithAutoConstructFlag<DistributionSummary>();
+              items = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DistributionSummary>();
               items.setAutoConstruct(true);
         }
         return items;
@@ -309,7 +309,7 @@ public class DistributionList implements Serializable {
             this.items = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<DistributionSummary> itemsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DistributionSummary>(items.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DistributionSummary> itemsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DistributionSummary>(items.size());
         itemsCopy.addAll(items);
         this.items = itemsCopy;
     }
@@ -350,7 +350,7 @@ public class DistributionList implements Serializable {
         if (items == null) {
             this.items = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<DistributionSummary> itemsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DistributionSummary>(items.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DistributionSummary> itemsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DistributionSummary>(items.size());
             itemsCopy.addAll(items);
             this.items = itemsCopy;
         }

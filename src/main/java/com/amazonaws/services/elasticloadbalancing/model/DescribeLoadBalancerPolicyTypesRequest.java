@@ -37,7 +37,7 @@ public class DescribeLoadBalancerPolicyTypesRequest extends AmazonWebServiceRequ
      * returns the description of all the policy types defined by Elastic
      * Load Balancing service.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> policyTypeNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> policyTypeNames;
 
     /**
      * Specifies the name of the policy types. If no names are specified,
@@ -50,7 +50,7 @@ public class DescribeLoadBalancerPolicyTypesRequest extends AmazonWebServiceRequ
      */
     public java.util.List<String> getPolicyTypeNames() {
         if (policyTypeNames == null) {
-              policyTypeNames = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              policyTypeNames = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               policyTypeNames.setAutoConstruct(true);
         }
         return policyTypeNames;
@@ -70,7 +70,7 @@ public class DescribeLoadBalancerPolicyTypesRequest extends AmazonWebServiceRequ
             this.policyTypeNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> policyTypeNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(policyTypeNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> policyTypeNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(policyTypeNames.size());
         policyTypeNamesCopy.addAll(policyTypeNames);
         this.policyTypeNames = policyTypeNamesCopy;
     }
@@ -115,7 +115,7 @@ public class DescribeLoadBalancerPolicyTypesRequest extends AmazonWebServiceRequ
         if (policyTypeNames == null) {
             this.policyTypeNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> policyTypeNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(policyTypeNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> policyTypeNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(policyTypeNames.size());
             policyTypeNamesCopy.addAll(policyTypeNames);
             this.policyTypeNames = policyTypeNamesCopy;
         }

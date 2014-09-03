@@ -45,7 +45,7 @@ public class RemoveTagsFromResourceRequest extends AmazonWebServiceRequest imple
     /**
      * The tag key (name) of the tag to be removed.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> tagKeys;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> tagKeys;
 
     /**
      * The Amazon RDS resource the tags will be removed from. This value is
@@ -111,7 +111,7 @@ public class RemoveTagsFromResourceRequest extends AmazonWebServiceRequest imple
      */
     public java.util.List<String> getTagKeys() {
         if (tagKeys == null) {
-              tagKeys = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              tagKeys = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               tagKeys.setAutoConstruct(true);
         }
         return tagKeys;
@@ -127,7 +127,7 @@ public class RemoveTagsFromResourceRequest extends AmazonWebServiceRequest imple
             this.tagKeys = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> tagKeysCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(tagKeys.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> tagKeysCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(tagKeys.size());
         tagKeysCopy.addAll(tagKeys);
         this.tagKeys = tagKeysCopy;
     }
@@ -164,7 +164,7 @@ public class RemoveTagsFromResourceRequest extends AmazonWebServiceRequest imple
         if (tagKeys == null) {
             this.tagKeys = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> tagKeysCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(tagKeys.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> tagKeysCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(tagKeys.size());
             tagKeysCopy.addAll(tagKeys);
             this.tagKeys = tagKeysCopy;
         }

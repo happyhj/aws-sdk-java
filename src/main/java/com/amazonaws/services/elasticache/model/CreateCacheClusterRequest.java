@@ -115,14 +115,14 @@ public class CreateCacheClusterRequest extends AmazonWebServiceRequest implement
      * cluster. <p>Use this parameter only when you are creating a cluster
      * outside of an Amazon Virtual Private Cloud (VPC).
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> cacheSecurityGroupNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> cacheSecurityGroupNames;
 
     /**
      * One or more VPC security groups associated with the cache cluster.
      * <p>Use this parameter only when you are creating a cluster in an
      * Amazon Virtual Private Cloud (VPC).
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> securityGroupIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> securityGroupIds;
 
     /**
      * A single-element string list containing an Amazon Resource Name (ARN)
@@ -134,7 +134,7 @@ public class CreateCacheClusterRequest extends AmazonWebServiceRequest implement
      * parameter is only valid if the <code>Engine</code> parameter is
      * <code>redis</code>.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> snapshotArns;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> snapshotArns;
 
     /**
      * The name of a snapshot from which to restore data into the new cache
@@ -181,7 +181,7 @@ public class CreateCacheClusterRequest extends AmazonWebServiceRequest implement
      * <p>Example: All three Memcached nodes in one Availability Zone:
      * <code>PreferredAvailabilityZones.member.1=us-east-1a&PreferredAvailabilityZones.member.2=us-east-1a&PreferredAvailabilityZones.member.3=us-east-1a</code>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> preferredAvailabilityZones;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> preferredAvailabilityZones;
 
     /**
      * The weekly time range (in UTC) during which system maintenance can
@@ -804,7 +804,7 @@ public class CreateCacheClusterRequest extends AmazonWebServiceRequest implement
      */
     public java.util.List<String> getCacheSecurityGroupNames() {
         if (cacheSecurityGroupNames == null) {
-              cacheSecurityGroupNames = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              cacheSecurityGroupNames = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               cacheSecurityGroupNames.setAutoConstruct(true);
         }
         return cacheSecurityGroupNames;
@@ -824,7 +824,7 @@ public class CreateCacheClusterRequest extends AmazonWebServiceRequest implement
             this.cacheSecurityGroupNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> cacheSecurityGroupNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(cacheSecurityGroupNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> cacheSecurityGroupNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(cacheSecurityGroupNames.size());
         cacheSecurityGroupNamesCopy.addAll(cacheSecurityGroupNames);
         this.cacheSecurityGroupNames = cacheSecurityGroupNamesCopy;
     }
@@ -869,7 +869,7 @@ public class CreateCacheClusterRequest extends AmazonWebServiceRequest implement
         if (cacheSecurityGroupNames == null) {
             this.cacheSecurityGroupNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> cacheSecurityGroupNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(cacheSecurityGroupNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> cacheSecurityGroupNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(cacheSecurityGroupNames.size());
             cacheSecurityGroupNamesCopy.addAll(cacheSecurityGroupNames);
             this.cacheSecurityGroupNames = cacheSecurityGroupNamesCopy;
         }
@@ -888,7 +888,7 @@ public class CreateCacheClusterRequest extends AmazonWebServiceRequest implement
      */
     public java.util.List<String> getSecurityGroupIds() {
         if (securityGroupIds == null) {
-              securityGroupIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              securityGroupIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               securityGroupIds.setAutoConstruct(true);
         }
         return securityGroupIds;
@@ -908,7 +908,7 @@ public class CreateCacheClusterRequest extends AmazonWebServiceRequest implement
             this.securityGroupIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> securityGroupIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(securityGroupIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> securityGroupIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(securityGroupIds.size());
         securityGroupIdsCopy.addAll(securityGroupIds);
         this.securityGroupIds = securityGroupIdsCopy;
     }
@@ -953,7 +953,7 @@ public class CreateCacheClusterRequest extends AmazonWebServiceRequest implement
         if (securityGroupIds == null) {
             this.securityGroupIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> securityGroupIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(securityGroupIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> securityGroupIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(securityGroupIds.size());
             securityGroupIdsCopy.addAll(securityGroupIds);
             this.securityGroupIds = securityGroupIdsCopy;
         }
@@ -982,7 +982,7 @@ public class CreateCacheClusterRequest extends AmazonWebServiceRequest implement
      */
     public java.util.List<String> getSnapshotArns() {
         if (snapshotArns == null) {
-              snapshotArns = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              snapshotArns = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               snapshotArns.setAutoConstruct(true);
         }
         return snapshotArns;
@@ -1012,7 +1012,7 @@ public class CreateCacheClusterRequest extends AmazonWebServiceRequest implement
             this.snapshotArns = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> snapshotArnsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(snapshotArns.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> snapshotArnsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(snapshotArns.size());
         snapshotArnsCopy.addAll(snapshotArns);
         this.snapshotArns = snapshotArnsCopy;
     }
@@ -1077,7 +1077,7 @@ public class CreateCacheClusterRequest extends AmazonWebServiceRequest implement
         if (snapshotArns == null) {
             this.snapshotArns = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> snapshotArnsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(snapshotArns.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> snapshotArnsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(snapshotArns.size());
             snapshotArnsCopy.addAll(snapshotArns);
             this.snapshotArns = snapshotArnsCopy;
         }
@@ -1297,7 +1297,7 @@ public class CreateCacheClusterRequest extends AmazonWebServiceRequest implement
      */
     public java.util.List<String> getPreferredAvailabilityZones() {
         if (preferredAvailabilityZones == null) {
-              preferredAvailabilityZones = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              preferredAvailabilityZones = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               preferredAvailabilityZones.setAutoConstruct(true);
         }
         return preferredAvailabilityZones;
@@ -1341,7 +1341,7 @@ public class CreateCacheClusterRequest extends AmazonWebServiceRequest implement
             this.preferredAvailabilityZones = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> preferredAvailabilityZonesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(preferredAvailabilityZones.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> preferredAvailabilityZonesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(preferredAvailabilityZones.size());
         preferredAvailabilityZonesCopy.addAll(preferredAvailabilityZones);
         this.preferredAvailabilityZones = preferredAvailabilityZonesCopy;
     }
@@ -1434,7 +1434,7 @@ public class CreateCacheClusterRequest extends AmazonWebServiceRequest implement
         if (preferredAvailabilityZones == null) {
             this.preferredAvailabilityZones = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> preferredAvailabilityZonesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(preferredAvailabilityZones.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> preferredAvailabilityZonesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(preferredAvailabilityZones.size());
             preferredAvailabilityZonesCopy.addAll(preferredAvailabilityZones);
             this.preferredAvailabilityZones = preferredAvailabilityZonesCopy;
         }

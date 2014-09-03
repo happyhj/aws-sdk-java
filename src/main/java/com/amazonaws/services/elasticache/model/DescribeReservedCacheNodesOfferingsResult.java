@@ -33,7 +33,7 @@ public class DescribeReservedCacheNodesOfferingsResult implements Serializable {
      * A list of reserved cache node offerings. Each element in the list
      * contains detailed information about one offering.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ReservedCacheNodesOffering> reservedCacheNodesOfferings;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedCacheNodesOffering> reservedCacheNodesOfferings;
 
     /**
      * Provides an identifier to allow retrieval of paginated results.
@@ -77,7 +77,7 @@ public class DescribeReservedCacheNodesOfferingsResult implements Serializable {
      */
     public java.util.List<ReservedCacheNodesOffering> getReservedCacheNodesOfferings() {
         if (reservedCacheNodesOfferings == null) {
-              reservedCacheNodesOfferings = new com.amazonaws.internal.ListWithAutoConstructFlag<ReservedCacheNodesOffering>();
+              reservedCacheNodesOfferings = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedCacheNodesOffering>();
               reservedCacheNodesOfferings.setAutoConstruct(true);
         }
         return reservedCacheNodesOfferings;
@@ -95,7 +95,7 @@ public class DescribeReservedCacheNodesOfferingsResult implements Serializable {
             this.reservedCacheNodesOfferings = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ReservedCacheNodesOffering> reservedCacheNodesOfferingsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ReservedCacheNodesOffering>(reservedCacheNodesOfferings.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedCacheNodesOffering> reservedCacheNodesOfferingsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedCacheNodesOffering>(reservedCacheNodesOfferings.size());
         reservedCacheNodesOfferingsCopy.addAll(reservedCacheNodesOfferings);
         this.reservedCacheNodesOfferings = reservedCacheNodesOfferingsCopy;
     }
@@ -136,7 +136,7 @@ public class DescribeReservedCacheNodesOfferingsResult implements Serializable {
         if (reservedCacheNodesOfferings == null) {
             this.reservedCacheNodesOfferings = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ReservedCacheNodesOffering> reservedCacheNodesOfferingsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ReservedCacheNodesOffering>(reservedCacheNodesOfferings.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedCacheNodesOffering> reservedCacheNodesOfferingsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedCacheNodesOffering>(reservedCacheNodesOfferings.size());
             reservedCacheNodesOfferingsCopy.addAll(reservedCacheNodesOfferings);
             this.reservedCacheNodesOfferings = reservedCacheNodesOfferingsCopy;
         }

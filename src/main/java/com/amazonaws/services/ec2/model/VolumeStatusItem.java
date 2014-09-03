@@ -41,12 +41,12 @@ public class VolumeStatusItem implements Serializable {
     /**
      * A list of events associated with the volume.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<VolumeStatusEvent> events;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeStatusEvent> events;
 
     /**
      * The details of the operation.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<VolumeStatusAction> actions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeStatusAction> actions;
 
     /**
      * The volume ID.
@@ -154,7 +154,7 @@ public class VolumeStatusItem implements Serializable {
      */
     public java.util.List<VolumeStatusEvent> getEvents() {
         if (events == null) {
-              events = new com.amazonaws.internal.ListWithAutoConstructFlag<VolumeStatusEvent>();
+              events = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeStatusEvent>();
               events.setAutoConstruct(true);
         }
         return events;
@@ -170,7 +170,7 @@ public class VolumeStatusItem implements Serializable {
             this.events = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<VolumeStatusEvent> eventsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<VolumeStatusEvent>(events.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeStatusEvent> eventsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeStatusEvent>(events.size());
         eventsCopy.addAll(events);
         this.events = eventsCopy;
     }
@@ -207,7 +207,7 @@ public class VolumeStatusItem implements Serializable {
         if (events == null) {
             this.events = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<VolumeStatusEvent> eventsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<VolumeStatusEvent>(events.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeStatusEvent> eventsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeStatusEvent>(events.size());
             eventsCopy.addAll(events);
             this.events = eventsCopy;
         }
@@ -222,7 +222,7 @@ public class VolumeStatusItem implements Serializable {
      */
     public java.util.List<VolumeStatusAction> getActions() {
         if (actions == null) {
-              actions = new com.amazonaws.internal.ListWithAutoConstructFlag<VolumeStatusAction>();
+              actions = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeStatusAction>();
               actions.setAutoConstruct(true);
         }
         return actions;
@@ -238,7 +238,7 @@ public class VolumeStatusItem implements Serializable {
             this.actions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<VolumeStatusAction> actionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<VolumeStatusAction>(actions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeStatusAction> actionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeStatusAction>(actions.size());
         actionsCopy.addAll(actions);
         this.actions = actionsCopy;
     }
@@ -275,7 +275,7 @@ public class VolumeStatusItem implements Serializable {
         if (actions == null) {
             this.actions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<VolumeStatusAction> actionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<VolumeStatusAction>(actions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeStatusAction> actionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeStatusAction>(actions.size());
             actionsCopy.addAll(actions);
             this.actions = actionsCopy;
         }

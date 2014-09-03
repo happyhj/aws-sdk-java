@@ -26,7 +26,7 @@ public class ListIdentitiesResult implements Serializable {
     /**
      * A list of identities.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> identities;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> identities;
 
     /**
      * The token used for pagination.
@@ -40,7 +40,7 @@ public class ListIdentitiesResult implements Serializable {
      */
     public java.util.List<String> getIdentities() {
         if (identities == null) {
-              identities = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              identities = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               identities.setAutoConstruct(true);
         }
         return identities;
@@ -56,7 +56,7 @@ public class ListIdentitiesResult implements Serializable {
             this.identities = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> identitiesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(identities.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> identitiesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(identities.size());
         identitiesCopy.addAll(identities);
         this.identities = identitiesCopy;
     }
@@ -93,7 +93,7 @@ public class ListIdentitiesResult implements Serializable {
         if (identities == null) {
             this.identities = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> identitiesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(identities.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> identitiesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(identities.size());
             identitiesCopy.addAll(identities);
             this.identities = identitiesCopy;
         }

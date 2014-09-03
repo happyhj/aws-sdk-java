@@ -45,7 +45,7 @@ public class RemoveTagsRequest extends AmazonWebServiceRequest implements Serial
     /**
      * A list of tag keys to remove from a resource.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> tagKeys;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> tagKeys;
 
     /**
      * Default constructor for a new RemoveTagsRequest object.  Callers should use the
@@ -125,7 +125,7 @@ public class RemoveTagsRequest extends AmazonWebServiceRequest implements Serial
      */
     public java.util.List<String> getTagKeys() {
         if (tagKeys == null) {
-              tagKeys = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              tagKeys = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               tagKeys.setAutoConstruct(true);
         }
         return tagKeys;
@@ -141,7 +141,7 @@ public class RemoveTagsRequest extends AmazonWebServiceRequest implements Serial
             this.tagKeys = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> tagKeysCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(tagKeys.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> tagKeysCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(tagKeys.size());
         tagKeysCopy.addAll(tagKeys);
         this.tagKeys = tagKeysCopy;
     }
@@ -178,7 +178,7 @@ public class RemoveTagsRequest extends AmazonWebServiceRequest implements Serial
         if (tagKeys == null) {
             this.tagKeys = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> tagKeysCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(tagKeys.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> tagKeysCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(tagKeys.size());
             tagKeysCopy.addAll(tagKeys);
             this.tagKeys = tagKeysCopy;
         }

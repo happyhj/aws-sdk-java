@@ -50,7 +50,7 @@ public class TrustedAdvisorCheckDescription implements Serializable {
      * in the <b>Metadata</b> element of the
      * <a>TrustedAdvisorResourceDetail</a> for the check.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> metadata;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> metadata;
 
     /**
      * The unique identifier for the Trusted Advisor check.
@@ -203,7 +203,7 @@ public class TrustedAdvisorCheckDescription implements Serializable {
      */
     public java.util.List<String> getMetadata() {
         if (metadata == null) {
-              metadata = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              metadata = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               metadata.setAutoConstruct(true);
         }
         return metadata;
@@ -225,7 +225,7 @@ public class TrustedAdvisorCheckDescription implements Serializable {
             this.metadata = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> metadataCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(metadata.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> metadataCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(metadata.size());
         metadataCopy.addAll(metadata);
         this.metadata = metadataCopy;
     }
@@ -274,7 +274,7 @@ public class TrustedAdvisorCheckDescription implements Serializable {
         if (metadata == null) {
             this.metadata = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> metadataCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(metadata.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> metadataCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(metadata.size());
             metadataCopy.addAll(metadata);
             this.metadata = metadataCopy;
         }

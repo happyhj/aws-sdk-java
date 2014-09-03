@@ -24,7 +24,7 @@ public class DescribeReservedInstancesModificationsResult implements Serializabl
     /**
      * The Reserved Instance modification information.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ReservedInstancesModification> reservedInstancesModifications;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedInstancesModification> reservedInstancesModifications;
 
     /**
      * The token for the next page of data.
@@ -38,7 +38,7 @@ public class DescribeReservedInstancesModificationsResult implements Serializabl
      */
     public java.util.List<ReservedInstancesModification> getReservedInstancesModifications() {
         if (reservedInstancesModifications == null) {
-              reservedInstancesModifications = new com.amazonaws.internal.ListWithAutoConstructFlag<ReservedInstancesModification>();
+              reservedInstancesModifications = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedInstancesModification>();
               reservedInstancesModifications.setAutoConstruct(true);
         }
         return reservedInstancesModifications;
@@ -54,7 +54,7 @@ public class DescribeReservedInstancesModificationsResult implements Serializabl
             this.reservedInstancesModifications = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ReservedInstancesModification> reservedInstancesModificationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ReservedInstancesModification>(reservedInstancesModifications.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedInstancesModification> reservedInstancesModificationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedInstancesModification>(reservedInstancesModifications.size());
         reservedInstancesModificationsCopy.addAll(reservedInstancesModifications);
         this.reservedInstancesModifications = reservedInstancesModificationsCopy;
     }
@@ -91,7 +91,7 @@ public class DescribeReservedInstancesModificationsResult implements Serializabl
         if (reservedInstancesModifications == null) {
             this.reservedInstancesModifications = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ReservedInstancesModification> reservedInstancesModificationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ReservedInstancesModification>(reservedInstancesModifications.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedInstancesModification> reservedInstancesModificationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ReservedInstancesModification>(reservedInstancesModifications.size());
             reservedInstancesModificationsCopy.addAll(reservedInstancesModifications);
             this.reservedInstancesModifications = reservedInstancesModificationsCopy;
         }

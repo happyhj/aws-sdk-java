@@ -45,7 +45,7 @@ public class DetachLoadBalancerFromSubnetsRequest extends AmazonWebServiceReques
      * A list of subnet IDs to remove from the set of configured subnets for
      * the load balancer.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> subnets;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> subnets;
 
     /**
      * The name associated with the load balancer to be detached.
@@ -89,7 +89,7 @@ public class DetachLoadBalancerFromSubnetsRequest extends AmazonWebServiceReques
      */
     public java.util.List<String> getSubnets() {
         if (subnets == null) {
-              subnets = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              subnets = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               subnets.setAutoConstruct(true);
         }
         return subnets;
@@ -107,7 +107,7 @@ public class DetachLoadBalancerFromSubnetsRequest extends AmazonWebServiceReques
             this.subnets = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> subnetsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(subnets.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> subnetsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(subnets.size());
         subnetsCopy.addAll(subnets);
         this.subnets = subnetsCopy;
     }
@@ -148,7 +148,7 @@ public class DetachLoadBalancerFromSubnetsRequest extends AmazonWebServiceReques
         if (subnets == null) {
             this.subnets = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> subnetsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(subnets.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> subnetsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(subnets.size());
             subnetsCopy.addAll(subnets);
             this.subnets = subnetsCopy;
         }

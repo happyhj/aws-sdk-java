@@ -20,12 +20,12 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.support.model.CreateCaseRequest;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Create Case Request Marshaller
@@ -66,7 +66,7 @@ public class CreateCaseRequestMarshaller implements Marshaller<Request<CreateCas
                 jsonWriter.key("communicationBody").value(createCaseRequest.getCommunicationBody());
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> ccEmailAddressesList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(createCaseRequest.getCcEmailAddresses());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> ccEmailAddressesList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(createCaseRequest.getCcEmailAddresses());
             if (ccEmailAddressesList != null && !(ccEmailAddressesList.isAutoConstruct() && ccEmailAddressesList.isEmpty())) {
 
                 jsonWriter.key("ccEmailAddresses");

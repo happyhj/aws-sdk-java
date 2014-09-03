@@ -24,7 +24,7 @@ public class StopInstancesResult implements Serializable {
     /**
      * Information about one or more stopped instances.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<InstanceStateChange> stoppingInstances;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceStateChange> stoppingInstances;
 
     /**
      * Information about one or more stopped instances.
@@ -33,7 +33,7 @@ public class StopInstancesResult implements Serializable {
      */
     public java.util.List<InstanceStateChange> getStoppingInstances() {
         if (stoppingInstances == null) {
-              stoppingInstances = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceStateChange>();
+              stoppingInstances = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceStateChange>();
               stoppingInstances.setAutoConstruct(true);
         }
         return stoppingInstances;
@@ -49,7 +49,7 @@ public class StopInstancesResult implements Serializable {
             this.stoppingInstances = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<InstanceStateChange> stoppingInstancesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceStateChange>(stoppingInstances.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceStateChange> stoppingInstancesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceStateChange>(stoppingInstances.size());
         stoppingInstancesCopy.addAll(stoppingInstances);
         this.stoppingInstances = stoppingInstancesCopy;
     }
@@ -86,7 +86,7 @@ public class StopInstancesResult implements Serializable {
         if (stoppingInstances == null) {
             this.stoppingInstances = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<InstanceStateChange> stoppingInstancesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceStateChange>(stoppingInstances.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceStateChange> stoppingInstancesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceStateChange>(stoppingInstances.size());
             stoppingInstancesCopy.addAll(stoppingInstances);
             this.stoppingInstances = stoppingInstancesCopy;
         }

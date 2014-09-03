@@ -27,7 +27,7 @@ public class DescribeTrailsResult implements Serializable {
     /**
      * An array of <a>Trail</a> objects.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Trail> trailList;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Trail> trailList;
 
     /**
      * An array of <a>Trail</a> objects.
@@ -36,7 +36,7 @@ public class DescribeTrailsResult implements Serializable {
      */
     public java.util.List<Trail> getTrailList() {
         if (trailList == null) {
-              trailList = new com.amazonaws.internal.ListWithAutoConstructFlag<Trail>();
+              trailList = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Trail>();
               trailList.setAutoConstruct(true);
         }
         return trailList;
@@ -52,7 +52,7 @@ public class DescribeTrailsResult implements Serializable {
             this.trailList = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Trail> trailListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Trail>(trailList.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Trail> trailListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Trail>(trailList.size());
         trailListCopy.addAll(trailList);
         this.trailList = trailListCopy;
     }
@@ -89,7 +89,7 @@ public class DescribeTrailsResult implements Serializable {
         if (trailList == null) {
             this.trailList = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Trail> trailListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Trail>(trailList.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Trail> trailListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Trail>(trailList.size());
             trailListCopy.addAll(trailList);
             this.trailList = trailListCopy;
         }

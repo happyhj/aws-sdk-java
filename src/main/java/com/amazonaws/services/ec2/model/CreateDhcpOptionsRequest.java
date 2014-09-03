@@ -71,7 +71,7 @@ public class CreateDhcpOptionsRequest extends AmazonWebServiceRequest implements
     /**
      * A DHCP configuration option.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<DhcpConfiguration> dhcpConfigurations;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DhcpConfiguration> dhcpConfigurations;
 
     /**
      * Default constructor for a new CreateDhcpOptionsRequest object.  Callers should use the
@@ -97,7 +97,7 @@ public class CreateDhcpOptionsRequest extends AmazonWebServiceRequest implements
      */
     public java.util.List<DhcpConfiguration> getDhcpConfigurations() {
         if (dhcpConfigurations == null) {
-              dhcpConfigurations = new com.amazonaws.internal.ListWithAutoConstructFlag<DhcpConfiguration>();
+              dhcpConfigurations = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DhcpConfiguration>();
               dhcpConfigurations.setAutoConstruct(true);
         }
         return dhcpConfigurations;
@@ -113,7 +113,7 @@ public class CreateDhcpOptionsRequest extends AmazonWebServiceRequest implements
             this.dhcpConfigurations = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<DhcpConfiguration> dhcpConfigurationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DhcpConfiguration>(dhcpConfigurations.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DhcpConfiguration> dhcpConfigurationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DhcpConfiguration>(dhcpConfigurations.size());
         dhcpConfigurationsCopy.addAll(dhcpConfigurations);
         this.dhcpConfigurations = dhcpConfigurationsCopy;
     }
@@ -150,7 +150,7 @@ public class CreateDhcpOptionsRequest extends AmazonWebServiceRequest implements
         if (dhcpConfigurations == null) {
             this.dhcpConfigurations = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<DhcpConfiguration> dhcpConfigurationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DhcpConfiguration>(dhcpConfigurations.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DhcpConfiguration> dhcpConfigurationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DhcpConfiguration>(dhcpConfigurations.size());
             dhcpConfigurationsCopy.addAll(dhcpConfigurations);
             this.dhcpConfigurations = dhcpConfigurationsCopy;
         }

@@ -26,7 +26,7 @@ public class DescribeScalingProcessTypesResult implements Serializable {
     /**
      * A list of <a>ProcessType</a> names.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ProcessType> processes;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ProcessType> processes;
 
     /**
      * A list of <a>ProcessType</a> names.
@@ -35,7 +35,7 @@ public class DescribeScalingProcessTypesResult implements Serializable {
      */
     public java.util.List<ProcessType> getProcesses() {
         if (processes == null) {
-              processes = new com.amazonaws.internal.ListWithAutoConstructFlag<ProcessType>();
+              processes = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ProcessType>();
               processes.setAutoConstruct(true);
         }
         return processes;
@@ -51,7 +51,7 @@ public class DescribeScalingProcessTypesResult implements Serializable {
             this.processes = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ProcessType> processesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ProcessType>(processes.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ProcessType> processesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ProcessType>(processes.size());
         processesCopy.addAll(processes);
         this.processes = processesCopy;
     }
@@ -88,7 +88,7 @@ public class DescribeScalingProcessTypesResult implements Serializable {
         if (processes == null) {
             this.processes = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ProcessType> processesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ProcessType>(processes.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ProcessType> processesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ProcessType>(processes.size());
             processesCopy.addAll(processes);
             this.processes = processesCopy;
         }

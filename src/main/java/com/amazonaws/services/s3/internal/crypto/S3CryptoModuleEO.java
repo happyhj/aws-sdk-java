@@ -19,8 +19,8 @@ import static com.amazonaws.services.s3.model.CryptoMode.EncryptionOnly;
 import java.io.File;
 
 import com.amazonaws.authprovider.DefaultAWSCredentialsProviderChain;
+import com.amazonaws.client.util.sdk.SdkFilterInputStream;
 import com.amazonaws.credential.AWSCredentialsProvider;
-import com.amazonaws.sdkutil.SdkFilterInputStream;
 import com.amazonaws.services.s3.internal.S3Direct;
 import com.amazonaws.services.s3.model.CryptoConfiguration;
 import com.amazonaws.services.s3.model.EncryptionMaterialsProvider;

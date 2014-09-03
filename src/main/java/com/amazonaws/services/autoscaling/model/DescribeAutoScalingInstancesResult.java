@@ -26,7 +26,7 @@ public class DescribeAutoScalingInstancesResult implements Serializable {
     /**
      * A list of Auto Scaling instances.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<AutoScalingInstanceDetails> autoScalingInstances;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AutoScalingInstanceDetails> autoScalingInstances;
 
     /**
      * A string that marks the start of the next batch of returned results.
@@ -43,7 +43,7 @@ public class DescribeAutoScalingInstancesResult implements Serializable {
      */
     public java.util.List<AutoScalingInstanceDetails> getAutoScalingInstances() {
         if (autoScalingInstances == null) {
-              autoScalingInstances = new com.amazonaws.internal.ListWithAutoConstructFlag<AutoScalingInstanceDetails>();
+              autoScalingInstances = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AutoScalingInstanceDetails>();
               autoScalingInstances.setAutoConstruct(true);
         }
         return autoScalingInstances;
@@ -59,7 +59,7 @@ public class DescribeAutoScalingInstancesResult implements Serializable {
             this.autoScalingInstances = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<AutoScalingInstanceDetails> autoScalingInstancesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<AutoScalingInstanceDetails>(autoScalingInstances.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AutoScalingInstanceDetails> autoScalingInstancesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AutoScalingInstanceDetails>(autoScalingInstances.size());
         autoScalingInstancesCopy.addAll(autoScalingInstances);
         this.autoScalingInstances = autoScalingInstancesCopy;
     }
@@ -96,7 +96,7 @@ public class DescribeAutoScalingInstancesResult implements Serializable {
         if (autoScalingInstances == null) {
             this.autoScalingInstances = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<AutoScalingInstanceDetails> autoScalingInstancesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<AutoScalingInstanceDetails>(autoScalingInstances.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AutoScalingInstanceDetails> autoScalingInstancesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AutoScalingInstanceDetails>(autoScalingInstances.size());
             autoScalingInstancesCopy.addAll(autoScalingInstances);
             this.autoScalingInstances = autoScalingInstancesCopy;
         }

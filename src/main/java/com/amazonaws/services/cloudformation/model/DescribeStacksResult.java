@@ -26,7 +26,7 @@ public class DescribeStacksResult implements Serializable {
     /**
      * A list of stack structures.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Stack> stacks;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Stack> stacks;
 
     /**
      * String that identifies the start of the next list of stacks, if there
@@ -44,7 +44,7 @@ public class DescribeStacksResult implements Serializable {
      */
     public java.util.List<Stack> getStacks() {
         if (stacks == null) {
-              stacks = new com.amazonaws.internal.ListWithAutoConstructFlag<Stack>();
+              stacks = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Stack>();
               stacks.setAutoConstruct(true);
         }
         return stacks;
@@ -60,7 +60,7 @@ public class DescribeStacksResult implements Serializable {
             this.stacks = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Stack> stacksCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Stack>(stacks.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Stack> stacksCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Stack>(stacks.size());
         stacksCopy.addAll(stacks);
         this.stacks = stacksCopy;
     }
@@ -97,7 +97,7 @@ public class DescribeStacksResult implements Serializable {
         if (stacks == null) {
             this.stacks = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Stack> stacksCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Stack>(stacks.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Stack> stacksCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Stack>(stacks.size());
             stacksCopy.addAll(stacks);
             this.stacks = stacksCopy;
         }

@@ -26,7 +26,7 @@ public class ListEndpointsByPlatformApplicationResult implements Serializable {
     /**
      * Endpoints returned for ListEndpointsByPlatformApplication action.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Endpoint> endpoints;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Endpoint> endpoints;
 
     /**
      * NextToken string is returned when calling
@@ -42,7 +42,7 @@ public class ListEndpointsByPlatformApplicationResult implements Serializable {
      */
     public java.util.List<Endpoint> getEndpoints() {
         if (endpoints == null) {
-              endpoints = new com.amazonaws.internal.ListWithAutoConstructFlag<Endpoint>();
+              endpoints = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Endpoint>();
               endpoints.setAutoConstruct(true);
         }
         return endpoints;
@@ -58,7 +58,7 @@ public class ListEndpointsByPlatformApplicationResult implements Serializable {
             this.endpoints = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Endpoint> endpointsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Endpoint>(endpoints.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Endpoint> endpointsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Endpoint>(endpoints.size());
         endpointsCopy.addAll(endpoints);
         this.endpoints = endpointsCopy;
     }
@@ -95,7 +95,7 @@ public class ListEndpointsByPlatformApplicationResult implements Serializable {
         if (endpoints == null) {
             this.endpoints = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Endpoint> endpointsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Endpoint>(endpoints.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Endpoint> endpointsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Endpoint>(endpoints.size());
             endpointsCopy.addAll(endpoints);
             this.endpoints = endpointsCopy;
         }

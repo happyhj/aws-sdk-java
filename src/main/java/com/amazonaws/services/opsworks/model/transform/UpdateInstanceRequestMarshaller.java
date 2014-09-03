@@ -20,12 +20,12 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.opsworks.model.UpdateInstanceRequest;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Update Instance Request Marshaller
@@ -54,7 +54,7 @@ public class UpdateInstanceRequestMarshaller implements Marshaller<Request<Updat
                 jsonWriter.key("InstanceId").value(updateInstanceRequest.getInstanceId());
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> layerIdsList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(updateInstanceRequest.getLayerIds());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> layerIdsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(updateInstanceRequest.getLayerIds());
             if (layerIdsList != null && !(layerIdsList.isAutoConstruct() && layerIdsList.isEmpty())) {
 
                 jsonWriter.key("LayerIds");

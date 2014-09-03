@@ -26,7 +26,7 @@ public class DescribeVirtualInterfacesResult implements Serializable {
     /**
      * A list of virtual interfaces.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<VirtualInterface> virtualInterfaces;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VirtualInterface> virtualInterfaces;
 
     /**
      * A list of virtual interfaces.
@@ -35,7 +35,7 @@ public class DescribeVirtualInterfacesResult implements Serializable {
      */
     public java.util.List<VirtualInterface> getVirtualInterfaces() {
         if (virtualInterfaces == null) {
-              virtualInterfaces = new com.amazonaws.internal.ListWithAutoConstructFlag<VirtualInterface>();
+              virtualInterfaces = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VirtualInterface>();
               virtualInterfaces.setAutoConstruct(true);
         }
         return virtualInterfaces;
@@ -51,7 +51,7 @@ public class DescribeVirtualInterfacesResult implements Serializable {
             this.virtualInterfaces = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<VirtualInterface> virtualInterfacesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<VirtualInterface>(virtualInterfaces.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VirtualInterface> virtualInterfacesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VirtualInterface>(virtualInterfaces.size());
         virtualInterfacesCopy.addAll(virtualInterfaces);
         this.virtualInterfaces = virtualInterfacesCopy;
     }
@@ -88,7 +88,7 @@ public class DescribeVirtualInterfacesResult implements Serializable {
         if (virtualInterfaces == null) {
             this.virtualInterfaces = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<VirtualInterface> virtualInterfacesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<VirtualInterface>(virtualInterfaces.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VirtualInterface> virtualInterfacesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VirtualInterface>(virtualInterfaces.size());
             virtualInterfacesCopy.addAll(virtualInterfaces);
             this.virtualInterfaces = virtualInterfacesCopy;
         }

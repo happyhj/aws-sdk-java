@@ -26,7 +26,7 @@ public class ListVaultsResult implements Serializable {
     /**
      * List of vaults.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<DescribeVaultOutput> vaultList;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DescribeVaultOutput> vaultList;
 
     /**
      * The vault ARN at which to continue pagination of the results. You use
@@ -42,7 +42,7 @@ public class ListVaultsResult implements Serializable {
      */
     public java.util.List<DescribeVaultOutput> getVaultList() {
         if (vaultList == null) {
-              vaultList = new com.amazonaws.internal.ListWithAutoConstructFlag<DescribeVaultOutput>();
+              vaultList = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DescribeVaultOutput>();
               vaultList.setAutoConstruct(true);
         }
         return vaultList;
@@ -58,7 +58,7 @@ public class ListVaultsResult implements Serializable {
             this.vaultList = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<DescribeVaultOutput> vaultListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DescribeVaultOutput>(vaultList.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DescribeVaultOutput> vaultListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DescribeVaultOutput>(vaultList.size());
         vaultListCopy.addAll(vaultList);
         this.vaultList = vaultListCopy;
     }
@@ -95,7 +95,7 @@ public class ListVaultsResult implements Serializable {
         if (vaultList == null) {
             this.vaultList = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<DescribeVaultOutput> vaultListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<DescribeVaultOutput>(vaultList.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DescribeVaultOutput> vaultListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<DescribeVaultOutput>(vaultList.size());
             vaultListCopy.addAll(vaultList);
             this.vaultList = vaultListCopy;
         }

@@ -44,7 +44,7 @@ public class DescribeObjectsRequest extends AmazonWebServiceRequest implements S
      * described. You can pass as many as 25 identifiers in a single call to
      * DescribeObjects.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> objectIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> objectIds;
 
     /**
      * Indicates whether any expressions in the object should be evaluated
@@ -121,7 +121,7 @@ public class DescribeObjectsRequest extends AmazonWebServiceRequest implements S
      */
     public java.util.List<String> getObjectIds() {
         if (objectIds == null) {
-              objectIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              objectIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               objectIds.setAutoConstruct(true);
         }
         return objectIds;
@@ -141,7 +141,7 @@ public class DescribeObjectsRequest extends AmazonWebServiceRequest implements S
             this.objectIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> objectIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(objectIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> objectIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(objectIds.size());
         objectIdsCopy.addAll(objectIds);
         this.objectIds = objectIdsCopy;
     }
@@ -186,7 +186,7 @@ public class DescribeObjectsRequest extends AmazonWebServiceRequest implements S
         if (objectIds == null) {
             this.objectIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> objectIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(objectIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> objectIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(objectIds.size());
             objectIdsCopy.addAll(objectIds);
             this.objectIds = objectIdsCopy;
         }

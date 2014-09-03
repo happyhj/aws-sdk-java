@@ -29,7 +29,7 @@ public class History implements Serializable {
     /**
      * The list of history events.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<HistoryEvent> events;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<HistoryEvent> events;
 
     /**
      * The token for the next page. If set, the history consists of more than
@@ -48,7 +48,7 @@ public class History implements Serializable {
      */
     public java.util.List<HistoryEvent> getEvents() {
         if (events == null) {
-              events = new com.amazonaws.internal.ListWithAutoConstructFlag<HistoryEvent>();
+              events = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<HistoryEvent>();
               events.setAutoConstruct(true);
         }
         return events;
@@ -64,7 +64,7 @@ public class History implements Serializable {
             this.events = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<HistoryEvent> eventsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<HistoryEvent>(events.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<HistoryEvent> eventsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<HistoryEvent>(events.size());
         eventsCopy.addAll(events);
         this.events = eventsCopy;
     }
@@ -101,7 +101,7 @@ public class History implements Serializable {
         if (events == null) {
             this.events = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<HistoryEvent> eventsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<HistoryEvent>(events.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<HistoryEvent> eventsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<HistoryEvent>(events.size());
             eventsCopy.addAll(events);
             this.events = eventsCopy;
         }

@@ -23,14 +23,14 @@ import java.util.Map;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.cognitosync.model.RecordPatch;
 import com.amazonaws.services.cognitosync.model.UpdateRecordsRequest;
 import com.amazonaws.stringutil.StringUtils;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Update Records Request Marshaller
@@ -130,7 +130,7 @@ public class UpdateRecordsRequestMarshaller implements Marshaller<Request<Update
 
           jsonWriter.object();
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<RecordPatch> recordPatchesList = (com.amazonaws.internal.ListWithAutoConstructFlag<RecordPatch>)(updateRecordsRequest.getRecordPatches());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RecordPatch> recordPatchesList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RecordPatch>)(updateRecordsRequest.getRecordPatches());
             if (recordPatchesList != null && !(recordPatchesList.isAutoConstruct() && recordPatchesList.isEmpty())) {
 
                 jsonWriter.key("RecordPatches");

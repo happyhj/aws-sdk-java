@@ -35,7 +35,7 @@ public class ListIdentitiesResult implements Serializable {
     /**
      * An object containing a set of identities and associated mappings.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<IdentityDescription> identities;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IdentityDescription> identities;
 
     /**
      * A pagination token.
@@ -109,7 +109,7 @@ public class ListIdentitiesResult implements Serializable {
             this.identities = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<IdentityDescription> identitiesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<IdentityDescription>(identities.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IdentityDescription> identitiesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IdentityDescription>(identities.size());
         identitiesCopy.addAll(identities);
         this.identities = identitiesCopy;
     }
@@ -146,7 +146,7 @@ public class ListIdentitiesResult implements Serializable {
         if (identities == null) {
             this.identities = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<IdentityDescription> identitiesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<IdentityDescription>(identities.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IdentityDescription> identitiesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IdentityDescription>(identities.size());
             identitiesCopy.addAll(identities);
             this.identities = identitiesCopy;
         }

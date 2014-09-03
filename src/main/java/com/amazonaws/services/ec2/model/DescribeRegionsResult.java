@@ -24,7 +24,7 @@ public class DescribeRegionsResult implements Serializable {
     /**
      * Information about one or more regions.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Region> regions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Region> regions;
 
     /**
      * Information about one or more regions.
@@ -33,7 +33,7 @@ public class DescribeRegionsResult implements Serializable {
      */
     public java.util.List<Region> getRegions() {
         if (regions == null) {
-              regions = new com.amazonaws.internal.ListWithAutoConstructFlag<Region>();
+              regions = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Region>();
               regions.setAutoConstruct(true);
         }
         return regions;
@@ -49,7 +49,7 @@ public class DescribeRegionsResult implements Serializable {
             this.regions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Region> regionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Region>(regions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Region> regionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Region>(regions.size());
         regionsCopy.addAll(regions);
         this.regions = regionsCopy;
     }
@@ -86,7 +86,7 @@ public class DescribeRegionsResult implements Serializable {
         if (regions == null) {
             this.regions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Region> regionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Region>(regions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Region> regionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Region>(regions.size());
             regionsCopy.addAll(regions);
             this.regions = regionsCopy;
         }

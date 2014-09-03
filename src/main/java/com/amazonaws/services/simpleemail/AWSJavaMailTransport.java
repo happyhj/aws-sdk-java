@@ -37,7 +37,7 @@ import com.amazonaws.auth.BasicAWSCredentials;
 import com.amazonaws.network.request.AmazonWebServiceRequest;
 import com.amazonaws.services.simpleemail.model.RawMessage;
 import com.amazonaws.services.simpleemail.model.SendRawEmailRequest;
-import com.amazonaws.util.VersionInfoUtils;
+import com.amazonaws.utility.VersionInfoUtils;
 
 /**
  * A transport implementation using Amazon Web Service's E-mail Service. For

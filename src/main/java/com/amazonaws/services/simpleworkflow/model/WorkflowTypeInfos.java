@@ -27,7 +27,7 @@ public class WorkflowTypeInfos implements Serializable {
     /**
      * The list of workflow type information.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<WorkflowTypeInfo> typeInfos;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<WorkflowTypeInfo> typeInfos;
 
     /**
      * The token for the next page of type information. If set then the list
@@ -47,7 +47,7 @@ public class WorkflowTypeInfos implements Serializable {
      */
     public java.util.List<WorkflowTypeInfo> getTypeInfos() {
         if (typeInfos == null) {
-              typeInfos = new com.amazonaws.internal.ListWithAutoConstructFlag<WorkflowTypeInfo>();
+              typeInfos = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<WorkflowTypeInfo>();
               typeInfos.setAutoConstruct(true);
         }
         return typeInfos;
@@ -63,7 +63,7 @@ public class WorkflowTypeInfos implements Serializable {
             this.typeInfos = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<WorkflowTypeInfo> typeInfosCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<WorkflowTypeInfo>(typeInfos.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<WorkflowTypeInfo> typeInfosCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<WorkflowTypeInfo>(typeInfos.size());
         typeInfosCopy.addAll(typeInfos);
         this.typeInfos = typeInfosCopy;
     }
@@ -100,7 +100,7 @@ public class WorkflowTypeInfos implements Serializable {
         if (typeInfos == null) {
             this.typeInfos = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<WorkflowTypeInfo> typeInfosCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<WorkflowTypeInfo>(typeInfos.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<WorkflowTypeInfo> typeInfosCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<WorkflowTypeInfo>(typeInfos.size());
             typeInfosCopy.addAll(typeInfos);
             this.typeInfos = typeInfosCopy;
         }

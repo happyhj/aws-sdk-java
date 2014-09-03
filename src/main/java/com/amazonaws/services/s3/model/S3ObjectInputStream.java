@@ -24,8 +24,8 @@ import org.apache.http.conn.EofSensorInputStream;
 
 import com.amazonaws.client.metrics.AwsSdkMetrics;
 import com.amazonaws.client.metrics.MetricFilterInputStream;
-import com.amazonaws.internal.MetricAware;
-import com.amazonaws.sdkutil.SdkFilterInputStream;
+import com.amazonaws.client.util.sdk.SdkFilterInputStream;
+import com.amazonaws.serviceinternal.MetricAware;
 import com.amazonaws.services.s3.metrics.S3ServiceMetric;
 
 /**

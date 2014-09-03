@@ -24,8 +24,8 @@ import org.apache.commons.logging.LogFactory;
 import org.apache.http.conn.ClientConnectionRequest;
 
 import com.amazonaws.client.metrics.AwsSdkMetrics;
-import com.amazonaws.metricsprovider.ServiceLatencyProvider;
-import com.amazonaws.metricsutil.AWSServiceMetrics;
+import com.amazonaws.network.metrics.provider.ServiceLatencyProvider;
+import com.amazonaws.network.metrics.util.AWSServiceMetrics;
 
 class ClientConnectionRequestFactory {
     private static final Log log = LogFactory.getLog(ClientConnectionRequestFactory.class);

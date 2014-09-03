@@ -39,7 +39,7 @@ public class DescribeWorkingStorageResult implements Serializable {
      * length of 1 and maximum length of 300). If no local disks are
      * configured as working storage, then the DiskIds array is empty.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> diskIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> diskIds;
 
     /**
      * The total working storage in bytes in use by the gateway. If no
@@ -120,7 +120,7 @@ public class DescribeWorkingStorageResult implements Serializable {
      */
     public java.util.List<String> getDiskIds() {
         if (diskIds == null) {
-              diskIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              diskIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               diskIds.setAutoConstruct(true);
         }
         return diskIds;
@@ -142,7 +142,7 @@ public class DescribeWorkingStorageResult implements Serializable {
             this.diskIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> diskIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(diskIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> diskIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(diskIds.size());
         diskIdsCopy.addAll(diskIds);
         this.diskIds = diskIdsCopy;
     }
@@ -191,7 +191,7 @@ public class DescribeWorkingStorageResult implements Serializable {
         if (diskIds == null) {
             this.diskIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> diskIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(diskIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> diskIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(diskIds.size());
             diskIdsCopy.addAll(diskIds);
             this.diskIds = diskIdsCopy;
         }

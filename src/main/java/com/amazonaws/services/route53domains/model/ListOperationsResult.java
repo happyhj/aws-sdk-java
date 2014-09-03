@@ -28,7 +28,7 @@ public class ListOperationsResult implements Serializable {
      * list of operation summaries <p>Children: <code>OperationId</code>,
      * <code>Status</code>, <code>SubmittedDate</code>, <code>Type</code>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<OperationSummary> operations;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OperationSummary> operations;
 
     /**
      * If there are more operations than you specified for
@@ -53,7 +53,7 @@ public class ListOperationsResult implements Serializable {
      */
     public java.util.List<OperationSummary> getOperations() {
         if (operations == null) {
-              operations = new com.amazonaws.internal.ListWithAutoConstructFlag<OperationSummary>();
+              operations = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OperationSummary>();
               operations.setAutoConstruct(true);
         }
         return operations;
@@ -73,7 +73,7 @@ public class ListOperationsResult implements Serializable {
             this.operations = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<OperationSummary> operationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<OperationSummary>(operations.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OperationSummary> operationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OperationSummary>(operations.size());
         operationsCopy.addAll(operations);
         this.operations = operationsCopy;
     }
@@ -118,7 +118,7 @@ public class ListOperationsResult implements Serializable {
         if (operations == null) {
             this.operations = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<OperationSummary> operationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<OperationSummary>(operations.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OperationSummary> operationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OperationSummary>(operations.size());
             operationsCopy.addAll(operations);
             this.operations = operationsCopy;
         }

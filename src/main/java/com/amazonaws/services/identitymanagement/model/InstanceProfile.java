@@ -99,7 +99,7 @@ public class InstanceProfile implements Serializable {
     /**
      * The role associated with the instance profile.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Role> roles;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Role> roles;
 
     /**
      * Path to the instance profile. For more information about paths, see <a
@@ -366,7 +366,7 @@ public class InstanceProfile implements Serializable {
      */
     public java.util.List<Role> getRoles() {
         if (roles == null) {
-              roles = new com.amazonaws.internal.ListWithAutoConstructFlag<Role>();
+              roles = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Role>();
               roles.setAutoConstruct(true);
         }
         return roles;
@@ -382,7 +382,7 @@ public class InstanceProfile implements Serializable {
             this.roles = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Role> rolesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Role>(roles.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Role> rolesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Role>(roles.size());
         rolesCopy.addAll(roles);
         this.roles = rolesCopy;
     }
@@ -419,7 +419,7 @@ public class InstanceProfile implements Serializable {
         if (roles == null) {
             this.roles = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Role> rolesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Role>(roles.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Role> rolesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Role>(roles.size());
             rolesCopy.addAll(roles);
             this.roles = rolesCopy;
         }

@@ -77,12 +77,12 @@ public class AutoScalingGroup implements Serializable {
      * <b>Constraints:</b><br/>
      * <b>Length: </b>1 - <br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> availabilityZones;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> availabilityZones;
 
     /**
      * A list of load balancers associated with this Auto Scaling group.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> loadBalancerNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> loadBalancerNames;
 
     /**
      * The service of interest for the health status check, either "EC2" for
@@ -104,7 +104,7 @@ public class AutoScalingGroup implements Serializable {
     /**
      * Provides a summary list of Amazon EC2 instances.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Instance> instances;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Instance> instances;
 
     /**
      * Specifies the date and time the Auto Scaling group was created.
@@ -114,7 +114,7 @@ public class AutoScalingGroup implements Serializable {
     /**
      * Suspended processes associated with this Auto Scaling group.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<SuspendedProcess> suspendedProcesses;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SuspendedProcess> suspendedProcesses;
 
     /**
      * The name of the cluster placement group, if applicable. For more
@@ -144,7 +144,7 @@ public class AutoScalingGroup implements Serializable {
     /**
      * A list of metrics enabled for this Auto Scaling group.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<EnabledMetric> enabledMetrics;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EnabledMetric> enabledMetrics;
 
     /**
      * The current state of the Auto Scaling group when a
@@ -159,13 +159,13 @@ public class AutoScalingGroup implements Serializable {
     /**
      * A list of tags for the Auto Scaling group.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<TagDescription> tags;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TagDescription> tags;
 
     /**
      * A standalone termination policy or a list of termination policies for
      * this Auto Scaling group.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> terminationPolicies;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> terminationPolicies;
 
     /**
      * Specifies the name of the group.
@@ -450,7 +450,7 @@ public class AutoScalingGroup implements Serializable {
      */
     public java.util.List<String> getAvailabilityZones() {
         if (availabilityZones == null) {
-              availabilityZones = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              availabilityZones = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               availabilityZones.setAutoConstruct(true);
         }
         return availabilityZones;
@@ -469,7 +469,7 @@ public class AutoScalingGroup implements Serializable {
             this.availabilityZones = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> availabilityZonesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(availabilityZones.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> availabilityZonesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(availabilityZones.size());
         availabilityZonesCopy.addAll(availabilityZones);
         this.availabilityZones = availabilityZonesCopy;
     }
@@ -512,7 +512,7 @@ public class AutoScalingGroup implements Serializable {
         if (availabilityZones == null) {
             this.availabilityZones = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> availabilityZonesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(availabilityZones.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> availabilityZonesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(availabilityZones.size());
             availabilityZonesCopy.addAll(availabilityZones);
             this.availabilityZones = availabilityZonesCopy;
         }
@@ -527,7 +527,7 @@ public class AutoScalingGroup implements Serializable {
      */
     public java.util.List<String> getLoadBalancerNames() {
         if (loadBalancerNames == null) {
-              loadBalancerNames = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              loadBalancerNames = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               loadBalancerNames.setAutoConstruct(true);
         }
         return loadBalancerNames;
@@ -543,7 +543,7 @@ public class AutoScalingGroup implements Serializable {
             this.loadBalancerNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> loadBalancerNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(loadBalancerNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> loadBalancerNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(loadBalancerNames.size());
         loadBalancerNamesCopy.addAll(loadBalancerNames);
         this.loadBalancerNames = loadBalancerNamesCopy;
     }
@@ -580,7 +580,7 @@ public class AutoScalingGroup implements Serializable {
         if (loadBalancerNames == null) {
             this.loadBalancerNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> loadBalancerNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(loadBalancerNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> loadBalancerNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(loadBalancerNames.size());
             loadBalancerNamesCopy.addAll(loadBalancerNames);
             this.loadBalancerNames = loadBalancerNamesCopy;
         }
@@ -691,7 +691,7 @@ public class AutoScalingGroup implements Serializable {
      */
     public java.util.List<Instance> getInstances() {
         if (instances == null) {
-              instances = new com.amazonaws.internal.ListWithAutoConstructFlag<Instance>();
+              instances = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Instance>();
               instances.setAutoConstruct(true);
         }
         return instances;
@@ -707,7 +707,7 @@ public class AutoScalingGroup implements Serializable {
             this.instances = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Instance> instancesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Instance>(instances.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Instance> instancesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Instance>(instances.size());
         instancesCopy.addAll(instances);
         this.instances = instancesCopy;
     }
@@ -744,7 +744,7 @@ public class AutoScalingGroup implements Serializable {
         if (instances == null) {
             this.instances = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Instance> instancesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Instance>(instances.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Instance> instancesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Instance>(instances.size());
             instancesCopy.addAll(instances);
             this.instances = instancesCopy;
         }
@@ -792,7 +792,7 @@ public class AutoScalingGroup implements Serializable {
      */
     public java.util.List<SuspendedProcess> getSuspendedProcesses() {
         if (suspendedProcesses == null) {
-              suspendedProcesses = new com.amazonaws.internal.ListWithAutoConstructFlag<SuspendedProcess>();
+              suspendedProcesses = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SuspendedProcess>();
               suspendedProcesses.setAutoConstruct(true);
         }
         return suspendedProcesses;
@@ -808,7 +808,7 @@ public class AutoScalingGroup implements Serializable {
             this.suspendedProcesses = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<SuspendedProcess> suspendedProcessesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<SuspendedProcess>(suspendedProcesses.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SuspendedProcess> suspendedProcessesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SuspendedProcess>(suspendedProcesses.size());
         suspendedProcessesCopy.addAll(suspendedProcesses);
         this.suspendedProcesses = suspendedProcessesCopy;
     }
@@ -845,7 +845,7 @@ public class AutoScalingGroup implements Serializable {
         if (suspendedProcesses == null) {
             this.suspendedProcesses = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<SuspendedProcess> suspendedProcessesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<SuspendedProcess>(suspendedProcesses.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SuspendedProcess> suspendedProcessesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SuspendedProcess>(suspendedProcesses.size());
             suspendedProcessesCopy.addAll(suspendedProcesses);
             this.suspendedProcesses = suspendedProcessesCopy;
         }
@@ -992,7 +992,7 @@ public class AutoScalingGroup implements Serializable {
      */
     public java.util.List<EnabledMetric> getEnabledMetrics() {
         if (enabledMetrics == null) {
-              enabledMetrics = new com.amazonaws.internal.ListWithAutoConstructFlag<EnabledMetric>();
+              enabledMetrics = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EnabledMetric>();
               enabledMetrics.setAutoConstruct(true);
         }
         return enabledMetrics;
@@ -1008,7 +1008,7 @@ public class AutoScalingGroup implements Serializable {
             this.enabledMetrics = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<EnabledMetric> enabledMetricsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<EnabledMetric>(enabledMetrics.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EnabledMetric> enabledMetricsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EnabledMetric>(enabledMetrics.size());
         enabledMetricsCopy.addAll(enabledMetrics);
         this.enabledMetrics = enabledMetricsCopy;
     }
@@ -1045,7 +1045,7 @@ public class AutoScalingGroup implements Serializable {
         if (enabledMetrics == null) {
             this.enabledMetrics = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<EnabledMetric> enabledMetricsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<EnabledMetric>(enabledMetrics.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EnabledMetric> enabledMetricsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<EnabledMetric>(enabledMetrics.size());
             enabledMetricsCopy.addAll(enabledMetrics);
             this.enabledMetrics = enabledMetricsCopy;
         }
@@ -1111,7 +1111,7 @@ public class AutoScalingGroup implements Serializable {
      */
     public java.util.List<TagDescription> getTags() {
         if (tags == null) {
-              tags = new com.amazonaws.internal.ListWithAutoConstructFlag<TagDescription>();
+              tags = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TagDescription>();
               tags.setAutoConstruct(true);
         }
         return tags;
@@ -1127,7 +1127,7 @@ public class AutoScalingGroup implements Serializable {
             this.tags = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<TagDescription> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<TagDescription>(tags.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TagDescription> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TagDescription>(tags.size());
         tagsCopy.addAll(tags);
         this.tags = tagsCopy;
     }
@@ -1164,7 +1164,7 @@ public class AutoScalingGroup implements Serializable {
         if (tags == null) {
             this.tags = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<TagDescription> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<TagDescription>(tags.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TagDescription> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TagDescription>(tags.size());
             tagsCopy.addAll(tags);
             this.tags = tagsCopy;
         }
@@ -1181,7 +1181,7 @@ public class AutoScalingGroup implements Serializable {
      */
     public java.util.List<String> getTerminationPolicies() {
         if (terminationPolicies == null) {
-              terminationPolicies = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              terminationPolicies = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               terminationPolicies.setAutoConstruct(true);
         }
         return terminationPolicies;
@@ -1199,7 +1199,7 @@ public class AutoScalingGroup implements Serializable {
             this.terminationPolicies = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> terminationPoliciesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(terminationPolicies.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> terminationPoliciesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(terminationPolicies.size());
         terminationPoliciesCopy.addAll(terminationPolicies);
         this.terminationPolicies = terminationPoliciesCopy;
     }
@@ -1240,7 +1240,7 @@ public class AutoScalingGroup implements Serializable {
         if (terminationPolicies == null) {
             this.terminationPolicies = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> terminationPoliciesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(terminationPolicies.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> terminationPoliciesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(terminationPolicies.size());
             terminationPoliciesCopy.addAll(terminationPolicies);
             this.terminationPolicies = terminationPoliciesCopy;
         }

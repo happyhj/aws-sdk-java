@@ -67,7 +67,7 @@ public class CacheNodeTypeSpecificParameter implements Serializable {
      * A list of cache node types and their corresponding values for this
      * parameter.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<CacheNodeTypeSpecificValue> cacheNodeTypeSpecificValues;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheNodeTypeSpecificValue> cacheNodeTypeSpecificValues;
 
     /**
      * Default constructor for a new CacheNodeTypeSpecificParameter object.  Callers should use the
@@ -340,7 +340,7 @@ public class CacheNodeTypeSpecificParameter implements Serializable {
      */
     public java.util.List<CacheNodeTypeSpecificValue> getCacheNodeTypeSpecificValues() {
         if (cacheNodeTypeSpecificValues == null) {
-              cacheNodeTypeSpecificValues = new com.amazonaws.internal.ListWithAutoConstructFlag<CacheNodeTypeSpecificValue>();
+              cacheNodeTypeSpecificValues = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheNodeTypeSpecificValue>();
               cacheNodeTypeSpecificValues.setAutoConstruct(true);
         }
         return cacheNodeTypeSpecificValues;
@@ -358,7 +358,7 @@ public class CacheNodeTypeSpecificParameter implements Serializable {
             this.cacheNodeTypeSpecificValues = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<CacheNodeTypeSpecificValue> cacheNodeTypeSpecificValuesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CacheNodeTypeSpecificValue>(cacheNodeTypeSpecificValues.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheNodeTypeSpecificValue> cacheNodeTypeSpecificValuesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheNodeTypeSpecificValue>(cacheNodeTypeSpecificValues.size());
         cacheNodeTypeSpecificValuesCopy.addAll(cacheNodeTypeSpecificValues);
         this.cacheNodeTypeSpecificValues = cacheNodeTypeSpecificValuesCopy;
     }
@@ -399,7 +399,7 @@ public class CacheNodeTypeSpecificParameter implements Serializable {
         if (cacheNodeTypeSpecificValues == null) {
             this.cacheNodeTypeSpecificValues = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<CacheNodeTypeSpecificValue> cacheNodeTypeSpecificValuesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CacheNodeTypeSpecificValue>(cacheNodeTypeSpecificValues.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheNodeTypeSpecificValue> cacheNodeTypeSpecificValuesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheNodeTypeSpecificValue>(cacheNodeTypeSpecificValues.size());
             cacheNodeTypeSpecificValuesCopy.addAll(cacheNodeTypeSpecificValues);
             this.cacheNodeTypeSpecificValues = cacheNodeTypeSpecificValuesCopy;
         }

@@ -35,7 +35,7 @@ public class DescribeSnapshotsResult implements Serializable {
      * A list of snapshots. Each item in the list contains detailed
      * information about one snapshot.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Snapshot> snapshots;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Snapshot> snapshots;
 
     /**
      * An optional marker returned from a prior request. Use this marker for
@@ -97,7 +97,7 @@ public class DescribeSnapshotsResult implements Serializable {
      */
     public java.util.List<Snapshot> getSnapshots() {
         if (snapshots == null) {
-              snapshots = new com.amazonaws.internal.ListWithAutoConstructFlag<Snapshot>();
+              snapshots = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Snapshot>();
               snapshots.setAutoConstruct(true);
         }
         return snapshots;
@@ -115,7 +115,7 @@ public class DescribeSnapshotsResult implements Serializable {
             this.snapshots = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Snapshot> snapshotsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Snapshot>(snapshots.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Snapshot> snapshotsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Snapshot>(snapshots.size());
         snapshotsCopy.addAll(snapshots);
         this.snapshots = snapshotsCopy;
     }
@@ -156,7 +156,7 @@ public class DescribeSnapshotsResult implements Serializable {
         if (snapshots == null) {
             this.snapshots = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Snapshot> snapshotsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Snapshot>(snapshots.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Snapshot> snapshotsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Snapshot>(snapshots.size());
             snapshotsCopy.addAll(snapshots);
             this.snapshots = snapshotsCopy;
         }

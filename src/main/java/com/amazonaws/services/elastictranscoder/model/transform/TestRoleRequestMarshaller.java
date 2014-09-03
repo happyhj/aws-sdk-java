@@ -23,12 +23,12 @@ import java.util.Map;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.elastictranscoder.model.TestRoleRequest;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Test Role Request Marshaller
@@ -102,7 +102,7 @@ public class TestRoleRequestMarshaller implements Marshaller<Request<TestRoleReq
                 jsonWriter.key("OutputBucket").value(testRoleRequest.getOutputBucket());
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> topicsList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(testRoleRequest.getTopics());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> topicsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(testRoleRequest.getTopics());
             if (topicsList != null && !(topicsList.isAutoConstruct() && topicsList.isEmpty())) {
 
                 jsonWriter.key("Topics");

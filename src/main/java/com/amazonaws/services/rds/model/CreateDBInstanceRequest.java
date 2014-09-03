@@ -107,14 +107,14 @@ public class CreateDBInstanceRequest extends AmazonWebServiceRequest implements 
      * A list of DB security groups to associate with this DB instance. <p>
      * Default: The default DB security group for the database engine.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> dBSecurityGroups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> dBSecurityGroups;
 
     /**
      * A list of EC2 VPC security groups to associate with this DB instance.
      * <p> Default: The default EC2 VPC security group for the DB subnet
      * group's VPC.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> vpcSecurityGroupIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> vpcSecurityGroupIds;
 
     /**
      * The EC2 Availability Zone that the database instance will be created
@@ -259,7 +259,7 @@ public class CreateDBInstanceRequest extends AmazonWebServiceRequest implements 
     /**
      * A list of tags.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tags;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tags;
 
     /**
      * Default constructor for a new CreateDBInstanceRequest object.  Callers should use the
@@ -802,7 +802,7 @@ public class CreateDBInstanceRequest extends AmazonWebServiceRequest implements 
      */
     public java.util.List<String> getDBSecurityGroups() {
         if (dBSecurityGroups == null) {
-              dBSecurityGroups = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              dBSecurityGroups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               dBSecurityGroups.setAutoConstruct(true);
         }
         return dBSecurityGroups;
@@ -820,7 +820,7 @@ public class CreateDBInstanceRequest extends AmazonWebServiceRequest implements 
             this.dBSecurityGroups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> dBSecurityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(dBSecurityGroups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> dBSecurityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(dBSecurityGroups.size());
         dBSecurityGroupsCopy.addAll(dBSecurityGroups);
         this.dBSecurityGroups = dBSecurityGroupsCopy;
     }
@@ -861,7 +861,7 @@ public class CreateDBInstanceRequest extends AmazonWebServiceRequest implements 
         if (dBSecurityGroups == null) {
             this.dBSecurityGroups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> dBSecurityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(dBSecurityGroups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> dBSecurityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(dBSecurityGroups.size());
             dBSecurityGroupsCopy.addAll(dBSecurityGroups);
             this.dBSecurityGroups = dBSecurityGroupsCopy;
         }
@@ -880,7 +880,7 @@ public class CreateDBInstanceRequest extends AmazonWebServiceRequest implements 
      */
     public java.util.List<String> getVpcSecurityGroupIds() {
         if (vpcSecurityGroupIds == null) {
-              vpcSecurityGroupIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              vpcSecurityGroupIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               vpcSecurityGroupIds.setAutoConstruct(true);
         }
         return vpcSecurityGroupIds;
@@ -900,7 +900,7 @@ public class CreateDBInstanceRequest extends AmazonWebServiceRequest implements 
             this.vpcSecurityGroupIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> vpcSecurityGroupIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(vpcSecurityGroupIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> vpcSecurityGroupIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(vpcSecurityGroupIds.size());
         vpcSecurityGroupIdsCopy.addAll(vpcSecurityGroupIds);
         this.vpcSecurityGroupIds = vpcSecurityGroupIdsCopy;
     }
@@ -945,7 +945,7 @@ public class CreateDBInstanceRequest extends AmazonWebServiceRequest implements 
         if (vpcSecurityGroupIds == null) {
             this.vpcSecurityGroupIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> vpcSecurityGroupIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(vpcSecurityGroupIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> vpcSecurityGroupIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(vpcSecurityGroupIds.size());
             vpcSecurityGroupIdsCopy.addAll(vpcSecurityGroupIds);
             this.vpcSecurityGroupIds = vpcSecurityGroupIdsCopy;
         }
@@ -1904,7 +1904,7 @@ public class CreateDBInstanceRequest extends AmazonWebServiceRequest implements 
      */
     public java.util.List<Tag> getTags() {
         if (tags == null) {
-              tags = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>();
+              tags = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>();
               tags.setAutoConstruct(true);
         }
         return tags;
@@ -1920,7 +1920,7 @@ public class CreateDBInstanceRequest extends AmazonWebServiceRequest implements 
             this.tags = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tags.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tags.size());
         tagsCopy.addAll(tags);
         this.tags = tagsCopy;
     }
@@ -1957,7 +1957,7 @@ public class CreateDBInstanceRequest extends AmazonWebServiceRequest implements 
         if (tags == null) {
             this.tags = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tags.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tags.size());
             tagsCopy.addAll(tags);
             this.tags = tagsCopy;
         }

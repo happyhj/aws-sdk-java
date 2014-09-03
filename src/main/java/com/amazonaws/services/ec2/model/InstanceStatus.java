@@ -36,7 +36,7 @@ public class InstanceStatus implements Serializable {
     /**
      * Extra information regarding events associated with the instance.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<InstanceStatusEvent> events;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceStatusEvent> events;
 
     /**
      * The intended state of the instance. <a>DescribeInstanceStatus</a>
@@ -130,7 +130,7 @@ public class InstanceStatus implements Serializable {
      */
     public java.util.List<InstanceStatusEvent> getEvents() {
         if (events == null) {
-              events = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceStatusEvent>();
+              events = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceStatusEvent>();
               events.setAutoConstruct(true);
         }
         return events;
@@ -146,7 +146,7 @@ public class InstanceStatus implements Serializable {
             this.events = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<InstanceStatusEvent> eventsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceStatusEvent>(events.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceStatusEvent> eventsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceStatusEvent>(events.size());
         eventsCopy.addAll(events);
         this.events = eventsCopy;
     }
@@ -183,7 +183,7 @@ public class InstanceStatus implements Serializable {
         if (events == null) {
             this.events = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<InstanceStatusEvent> eventsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceStatusEvent>(events.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceStatusEvent> eventsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceStatusEvent>(events.size());
             eventsCopy.addAll(events);
             this.events = eventsCopy;
         }

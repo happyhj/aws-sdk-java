@@ -20,7 +20,7 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.elasticmapreduce.model.BootstrapActionConfig;
@@ -35,7 +35,7 @@ import com.amazonaws.services.elasticmapreduce.model.StepConfig;
 import com.amazonaws.services.elasticmapreduce.model.SupportedProductConfig;
 import com.amazonaws.services.elasticmapreduce.model.Tag;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Run Job Flow Request Marshaller
@@ -88,7 +88,7 @@ public class RunJobFlowRequestMarshaller implements Marshaller<Request<RunJobFlo
                     jsonWriter.key("InstanceCount").value(instances.getInstanceCount());
                 }
 
-                com.amazonaws.internal.ListWithAutoConstructFlag<InstanceGroupConfig> instanceGroupsList = (com.amazonaws.internal.ListWithAutoConstructFlag<InstanceGroupConfig>)(instances.getInstanceGroups());
+                com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceGroupConfig> instanceGroupsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceGroupConfig>)(instances.getInstanceGroups());
                 if (instanceGroupsList != null && !(instanceGroupsList.isAutoConstruct() && instanceGroupsList.isEmpty())) {
 
                     jsonWriter.key("InstanceGroups");
@@ -149,7 +149,7 @@ public class RunJobFlowRequestMarshaller implements Marshaller<Request<RunJobFlo
                 jsonWriter.endObject();
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<StepConfig> stepsList = (com.amazonaws.internal.ListWithAutoConstructFlag<StepConfig>)(runJobFlowRequest.getSteps());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StepConfig> stepsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StepConfig>)(runJobFlowRequest.getSteps());
             if (stepsList != null && !(stepsList.isAutoConstruct() && stepsList.isEmpty())) {
 
                 jsonWriter.key("Steps");
@@ -170,7 +170,7 @@ public class RunJobFlowRequestMarshaller implements Marshaller<Request<RunJobFlo
                             jsonWriter.key("HadoopJarStep");
                             jsonWriter.object();
 
-                            com.amazonaws.internal.ListWithAutoConstructFlag<KeyValue> propertiesList = (com.amazonaws.internal.ListWithAutoConstructFlag<KeyValue>)(hadoopJarStep.getProperties());
+                            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<KeyValue> propertiesList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<KeyValue>)(hadoopJarStep.getProperties());
                             if (propertiesList != null && !(propertiesList.isAutoConstruct() && propertiesList.isEmpty())) {
 
                                 jsonWriter.key("Properties");
@@ -197,7 +197,7 @@ public class RunJobFlowRequestMarshaller implements Marshaller<Request<RunJobFlo
                                 jsonWriter.key("MainClass").value(hadoopJarStep.getMainClass());
                             }
 
-                            com.amazonaws.internal.ListWithAutoConstructFlag<String> argsList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(hadoopJarStep.getArgs());
+                            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> argsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(hadoopJarStep.getArgs());
                             if (argsList != null && !(argsList.isAutoConstruct() && argsList.isEmpty())) {
 
                                 jsonWriter.key("Args");
@@ -218,7 +218,7 @@ public class RunJobFlowRequestMarshaller implements Marshaller<Request<RunJobFlo
                 jsonWriter.endArray();
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<BootstrapActionConfig> bootstrapActionsList = (com.amazonaws.internal.ListWithAutoConstructFlag<BootstrapActionConfig>)(runJobFlowRequest.getBootstrapActions());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BootstrapActionConfig> bootstrapActionsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BootstrapActionConfig>)(runJobFlowRequest.getBootstrapActions());
             if (bootstrapActionsList != null && !(bootstrapActionsList.isAutoConstruct() && bootstrapActionsList.isEmpty())) {
 
                 jsonWriter.key("BootstrapActions");
@@ -240,7 +240,7 @@ public class RunJobFlowRequestMarshaller implements Marshaller<Request<RunJobFlo
                                 jsonWriter.key("Path").value(scriptBootstrapAction.getPath());
                             }
 
-                            com.amazonaws.internal.ListWithAutoConstructFlag<String> argsList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(scriptBootstrapAction.getArgs());
+                            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> argsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(scriptBootstrapAction.getArgs());
                             if (argsList != null && !(argsList.isAutoConstruct() && argsList.isEmpty())) {
 
                                 jsonWriter.key("Args");
@@ -261,7 +261,7 @@ public class RunJobFlowRequestMarshaller implements Marshaller<Request<RunJobFlo
                 jsonWriter.endArray();
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> supportedProductsList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(runJobFlowRequest.getSupportedProducts());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> supportedProductsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(runJobFlowRequest.getSupportedProducts());
             if (supportedProductsList != null && !(supportedProductsList.isAutoConstruct() && supportedProductsList.isEmpty())) {
 
                 jsonWriter.key("SupportedProducts");
@@ -275,7 +275,7 @@ public class RunJobFlowRequestMarshaller implements Marshaller<Request<RunJobFlo
                 jsonWriter.endArray();
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<SupportedProductConfig> newSupportedProductsList = (com.amazonaws.internal.ListWithAutoConstructFlag<SupportedProductConfig>)(runJobFlowRequest.getNewSupportedProducts());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SupportedProductConfig> newSupportedProductsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SupportedProductConfig>)(runJobFlowRequest.getNewSupportedProducts());
             if (newSupportedProductsList != null && !(newSupportedProductsList.isAutoConstruct() && newSupportedProductsList.isEmpty())) {
 
                 jsonWriter.key("NewSupportedProducts");
@@ -288,7 +288,7 @@ public class RunJobFlowRequestMarshaller implements Marshaller<Request<RunJobFlo
                             jsonWriter.key("Name").value(newSupportedProductsListValue.getName());
                         }
 
-                        com.amazonaws.internal.ListWithAutoConstructFlag<String> argsList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(newSupportedProductsListValue.getArgs());
+                        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> argsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(newSupportedProductsListValue.getArgs());
                         if (argsList != null && !(argsList.isAutoConstruct() && argsList.isEmpty())) {
 
                             jsonWriter.key("Args");
@@ -316,7 +316,7 @@ public class RunJobFlowRequestMarshaller implements Marshaller<Request<RunJobFlo
                 jsonWriter.key("ServiceRole").value(runJobFlowRequest.getServiceRole());
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsList = (com.amazonaws.internal.ListWithAutoConstructFlag<Tag>)(runJobFlowRequest.getTags());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>)(runJobFlowRequest.getTags());
             if (tagsList != null && !(tagsList.isAutoConstruct() && tagsList.isEmpty())) {
 
                 jsonWriter.key("Tags");

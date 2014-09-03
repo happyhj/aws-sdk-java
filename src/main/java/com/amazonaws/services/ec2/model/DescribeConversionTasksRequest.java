@@ -36,12 +36,12 @@ public class DescribeConversionTasksRequest extends AmazonWebServiceRequest impl
     /**
      * 
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filters;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filters;
 
     /**
      * One or more conversion task IDs.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> conversionTaskIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> conversionTaskIds;
 
     /**
      * 
@@ -50,7 +50,7 @@ public class DescribeConversionTasksRequest extends AmazonWebServiceRequest impl
      */
     public java.util.List<Filter> getFilters() {
         if (filters == null) {
-              filters = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>();
+              filters = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>();
               filters.setAutoConstruct(true);
         }
         return filters;
@@ -66,7 +66,7 @@ public class DescribeConversionTasksRequest extends AmazonWebServiceRequest impl
             this.filters = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
         filtersCopy.addAll(filters);
         this.filters = filtersCopy;
     }
@@ -103,7 +103,7 @@ public class DescribeConversionTasksRequest extends AmazonWebServiceRequest impl
         if (filters == null) {
             this.filters = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
             filtersCopy.addAll(filters);
             this.filters = filtersCopy;
         }
@@ -118,7 +118,7 @@ public class DescribeConversionTasksRequest extends AmazonWebServiceRequest impl
      */
     public java.util.List<String> getConversionTaskIds() {
         if (conversionTaskIds == null) {
-              conversionTaskIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              conversionTaskIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               conversionTaskIds.setAutoConstruct(true);
         }
         return conversionTaskIds;
@@ -134,7 +134,7 @@ public class DescribeConversionTasksRequest extends AmazonWebServiceRequest impl
             this.conversionTaskIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> conversionTaskIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(conversionTaskIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> conversionTaskIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(conversionTaskIds.size());
         conversionTaskIdsCopy.addAll(conversionTaskIds);
         this.conversionTaskIds = conversionTaskIdsCopy;
     }
@@ -171,7 +171,7 @@ public class DescribeConversionTasksRequest extends AmazonWebServiceRequest impl
         if (conversionTaskIds == null) {
             this.conversionTaskIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> conversionTaskIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(conversionTaskIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> conversionTaskIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(conversionTaskIds.size());
             conversionTaskIdsCopy.addAll(conversionTaskIds);
             this.conversionTaskIds = conversionTaskIdsCopy;
         }

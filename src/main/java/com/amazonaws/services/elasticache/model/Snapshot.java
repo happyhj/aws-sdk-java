@@ -146,7 +146,7 @@ public class Snapshot implements Serializable {
     /**
      * A list of the cache nodes in the source cache cluster.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<NodeSnapshot> nodeSnapshots;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NodeSnapshot> nodeSnapshots;
 
     /**
      * The name of a snapshot. For an automatic snapshot, the name is
@@ -939,7 +939,7 @@ public class Snapshot implements Serializable {
      */
     public java.util.List<NodeSnapshot> getNodeSnapshots() {
         if (nodeSnapshots == null) {
-              nodeSnapshots = new com.amazonaws.internal.ListWithAutoConstructFlag<NodeSnapshot>();
+              nodeSnapshots = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NodeSnapshot>();
               nodeSnapshots.setAutoConstruct(true);
         }
         return nodeSnapshots;
@@ -955,7 +955,7 @@ public class Snapshot implements Serializable {
             this.nodeSnapshots = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<NodeSnapshot> nodeSnapshotsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<NodeSnapshot>(nodeSnapshots.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NodeSnapshot> nodeSnapshotsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NodeSnapshot>(nodeSnapshots.size());
         nodeSnapshotsCopy.addAll(nodeSnapshots);
         this.nodeSnapshots = nodeSnapshotsCopy;
     }
@@ -992,7 +992,7 @@ public class Snapshot implements Serializable {
         if (nodeSnapshots == null) {
             this.nodeSnapshots = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<NodeSnapshot> nodeSnapshotsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<NodeSnapshot>(nodeSnapshots.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NodeSnapshot> nodeSnapshotsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<NodeSnapshot>(nodeSnapshots.size());
             nodeSnapshotsCopy.addAll(nodeSnapshots);
             this.nodeSnapshots = nodeSnapshotsCopy;
         }

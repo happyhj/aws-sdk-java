@@ -28,7 +28,7 @@ public class DescribeAnalysisSchemesResult implements Serializable {
     /**
      * The analysis scheme descriptions.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<AnalysisSchemeStatus> analysisSchemes;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AnalysisSchemeStatus> analysisSchemes;
 
     /**
      * The analysis scheme descriptions.
@@ -37,7 +37,7 @@ public class DescribeAnalysisSchemesResult implements Serializable {
      */
     public java.util.List<AnalysisSchemeStatus> getAnalysisSchemes() {
         if (analysisSchemes == null) {
-              analysisSchemes = new com.amazonaws.internal.ListWithAutoConstructFlag<AnalysisSchemeStatus>();
+              analysisSchemes = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AnalysisSchemeStatus>();
               analysisSchemes.setAutoConstruct(true);
         }
         return analysisSchemes;
@@ -53,7 +53,7 @@ public class DescribeAnalysisSchemesResult implements Serializable {
             this.analysisSchemes = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<AnalysisSchemeStatus> analysisSchemesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<AnalysisSchemeStatus>(analysisSchemes.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AnalysisSchemeStatus> analysisSchemesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AnalysisSchemeStatus>(analysisSchemes.size());
         analysisSchemesCopy.addAll(analysisSchemes);
         this.analysisSchemes = analysisSchemesCopy;
     }
@@ -90,7 +90,7 @@ public class DescribeAnalysisSchemesResult implements Serializable {
         if (analysisSchemes == null) {
             this.analysisSchemes = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<AnalysisSchemeStatus> analysisSchemesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<AnalysisSchemeStatus>(analysisSchemes.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AnalysisSchemeStatus> analysisSchemesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AnalysisSchemeStatus>(analysisSchemes.size());
             analysisSchemesCopy.addAll(analysisSchemes);
             this.analysisSchemes = analysisSchemesCopy;
         }

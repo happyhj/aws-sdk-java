@@ -28,7 +28,7 @@ public class DescribeLoadBasedAutoScalingResult implements Serializable {
      * An array of <code>LoadBasedAutoScalingConfiguration</code> objects
      * that describe each layer's configuration.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<LoadBasedAutoScalingConfiguration> loadBasedAutoScalingConfigurations;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LoadBasedAutoScalingConfiguration> loadBasedAutoScalingConfigurations;
 
     /**
      * An array of <code>LoadBasedAutoScalingConfiguration</code> objects
@@ -39,7 +39,7 @@ public class DescribeLoadBasedAutoScalingResult implements Serializable {
      */
     public java.util.List<LoadBasedAutoScalingConfiguration> getLoadBasedAutoScalingConfigurations() {
         if (loadBasedAutoScalingConfigurations == null) {
-              loadBasedAutoScalingConfigurations = new com.amazonaws.internal.ListWithAutoConstructFlag<LoadBasedAutoScalingConfiguration>();
+              loadBasedAutoScalingConfigurations = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LoadBasedAutoScalingConfiguration>();
               loadBasedAutoScalingConfigurations.setAutoConstruct(true);
         }
         return loadBasedAutoScalingConfigurations;
@@ -57,7 +57,7 @@ public class DescribeLoadBasedAutoScalingResult implements Serializable {
             this.loadBasedAutoScalingConfigurations = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<LoadBasedAutoScalingConfiguration> loadBasedAutoScalingConfigurationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<LoadBasedAutoScalingConfiguration>(loadBasedAutoScalingConfigurations.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LoadBasedAutoScalingConfiguration> loadBasedAutoScalingConfigurationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LoadBasedAutoScalingConfiguration>(loadBasedAutoScalingConfigurations.size());
         loadBasedAutoScalingConfigurationsCopy.addAll(loadBasedAutoScalingConfigurations);
         this.loadBasedAutoScalingConfigurations = loadBasedAutoScalingConfigurationsCopy;
     }
@@ -98,7 +98,7 @@ public class DescribeLoadBasedAutoScalingResult implements Serializable {
         if (loadBasedAutoScalingConfigurations == null) {
             this.loadBasedAutoScalingConfigurations = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<LoadBasedAutoScalingConfiguration> loadBasedAutoScalingConfigurationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<LoadBasedAutoScalingConfiguration>(loadBasedAutoScalingConfigurations.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LoadBasedAutoScalingConfiguration> loadBasedAutoScalingConfigurationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LoadBasedAutoScalingConfiguration>(loadBasedAutoScalingConfigurations.size());
             loadBasedAutoScalingConfigurationsCopy.addAll(loadBasedAutoScalingConfigurations);
             this.loadBasedAutoScalingConfigurations = loadBasedAutoScalingConfigurationsCopy;
         }

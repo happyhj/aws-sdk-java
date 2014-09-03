@@ -39,14 +39,14 @@ import org.apache.commons.logging.LogFactory;
 import com.amazonaws.authprovider.DefaultAWSCredentialsProviderChain;
 import com.amazonaws.credential.AWSCredentials;
 import com.amazonaws.credential.AWSCredentialsProvider;
-import com.amazonaws.event.ProgressEvent;
-import com.amazonaws.event.ProgressEventFilter;
-import com.amazonaws.event.ProgressEventType;
-import com.amazonaws.event.ProgressListener;
-import com.amazonaws.event.ProgressListenerChain;
 import com.amazonaws.exception.AbortedException;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
+import com.amazonaws.network.event.ProgressEvent;
+import com.amazonaws.network.event.ProgressEventFilter;
+import com.amazonaws.network.event.ProgressEventType;
+import com.amazonaws.network.event.ProgressListener;
+import com.amazonaws.network.event.ProgressListenerChain;
 import com.amazonaws.network.request.AmazonWebServiceRequest;
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.AmazonS3Client;
@@ -83,7 +83,7 @@ import com.amazonaws.services.s3.transfer.internal.TransferStateChangeListener;
 import com.amazonaws.services.s3.transfer.internal.UploadCallable;
 import com.amazonaws.services.s3.transfer.internal.UploadImpl;
 import com.amazonaws.services.s3.transfer.internal.UploadMonitor;
-import com.amazonaws.util.VersionInfoUtils;
+import com.amazonaws.utility.VersionInfoUtils;
 
 /**
  * High level utility for managing transfers to Amazon S3.

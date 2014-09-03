@@ -14,18 +14,18 @@
  */
 package com.amazonaws.services.s3.transfer.internal;
 
-import static com.amazonaws.event.SDKProgressPublisher.publishProgress;
+import static com.amazonaws.network.event.SDKProgressPublisher.publishProgress;
 
 import java.util.Collection;
 import java.util.LinkedList;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 
-import com.amazonaws.event.ProgressEventType;
-import com.amazonaws.event.ProgressListener;
-import com.amazonaws.event.ProgressListenerChain;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
+import com.amazonaws.network.event.ProgressEventType;
+import com.amazonaws.network.event.ProgressListener;
+import com.amazonaws.network.event.ProgressListenerChain;
 import com.amazonaws.services.s3.model.LegacyS3ProgressListener;
 import com.amazonaws.services.s3.transfer.Transfer;
 import com.amazonaws.services.s3.transfer.TransferProgress;

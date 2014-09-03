@@ -39,7 +39,7 @@ public class DescribeDhcpOptionsRequest extends AmazonWebServiceRequest implemen
      * The IDs of one or more DHCP options sets. <p>Default: Describes all
      * your DHCP options sets.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> dhcpOptionsIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> dhcpOptionsIds;
 
     /**
      * One or more filters. <ul> <li> <p><code>dhcp-options-id</code> - The
@@ -60,7 +60,7 @@ public class DescribeDhcpOptionsRequest extends AmazonWebServiceRequest implemen
      * resource. This filter is independent of the <code>tag-key</code>
      * filter. </li> </ul>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filters;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filters;
 
     /**
      * The IDs of one or more DHCP options sets. <p>Default: Describes all
@@ -71,7 +71,7 @@ public class DescribeDhcpOptionsRequest extends AmazonWebServiceRequest implemen
      */
     public java.util.List<String> getDhcpOptionsIds() {
         if (dhcpOptionsIds == null) {
-              dhcpOptionsIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              dhcpOptionsIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               dhcpOptionsIds.setAutoConstruct(true);
         }
         return dhcpOptionsIds;
@@ -89,7 +89,7 @@ public class DescribeDhcpOptionsRequest extends AmazonWebServiceRequest implemen
             this.dhcpOptionsIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> dhcpOptionsIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(dhcpOptionsIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> dhcpOptionsIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(dhcpOptionsIds.size());
         dhcpOptionsIdsCopy.addAll(dhcpOptionsIds);
         this.dhcpOptionsIds = dhcpOptionsIdsCopy;
     }
@@ -130,7 +130,7 @@ public class DescribeDhcpOptionsRequest extends AmazonWebServiceRequest implemen
         if (dhcpOptionsIds == null) {
             this.dhcpOptionsIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> dhcpOptionsIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(dhcpOptionsIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> dhcpOptionsIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(dhcpOptionsIds.size());
             dhcpOptionsIdsCopy.addAll(dhcpOptionsIds);
             this.dhcpOptionsIds = dhcpOptionsIdsCopy;
         }
@@ -177,7 +177,7 @@ public class DescribeDhcpOptionsRequest extends AmazonWebServiceRequest implemen
      */
     public java.util.List<Filter> getFilters() {
         if (filters == null) {
-              filters = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>();
+              filters = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>();
               filters.setAutoConstruct(true);
         }
         return filters;
@@ -225,7 +225,7 @@ public class DescribeDhcpOptionsRequest extends AmazonWebServiceRequest implemen
             this.filters = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
         filtersCopy.addAll(filters);
         this.filters = filtersCopy;
     }
@@ -326,7 +326,7 @@ public class DescribeDhcpOptionsRequest extends AmazonWebServiceRequest implemen
         if (filters == null) {
             this.filters = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
             filtersCopy.addAll(filters);
             this.filters = filtersCopy;
         }

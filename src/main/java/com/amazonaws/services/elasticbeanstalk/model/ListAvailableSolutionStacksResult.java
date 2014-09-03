@@ -26,13 +26,13 @@ public class ListAvailableSolutionStacksResult implements Serializable {
     /**
      * A list of available solution stacks.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> solutionStacks;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> solutionStacks;
 
     /**
      * A list of available solution stacks and their
      * <a>SolutionStackDescription</a>.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<SolutionStackDescription> solutionStackDetails;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SolutionStackDescription> solutionStackDetails;
 
     /**
      * A list of available solution stacks.
@@ -41,7 +41,7 @@ public class ListAvailableSolutionStacksResult implements Serializable {
      */
     public java.util.List<String> getSolutionStacks() {
         if (solutionStacks == null) {
-              solutionStacks = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              solutionStacks = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               solutionStacks.setAutoConstruct(true);
         }
         return solutionStacks;
@@ -57,7 +57,7 @@ public class ListAvailableSolutionStacksResult implements Serializable {
             this.solutionStacks = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> solutionStacksCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(solutionStacks.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> solutionStacksCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(solutionStacks.size());
         solutionStacksCopy.addAll(solutionStacks);
         this.solutionStacks = solutionStacksCopy;
     }
@@ -94,7 +94,7 @@ public class ListAvailableSolutionStacksResult implements Serializable {
         if (solutionStacks == null) {
             this.solutionStacks = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> solutionStacksCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(solutionStacks.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> solutionStacksCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(solutionStacks.size());
             solutionStacksCopy.addAll(solutionStacks);
             this.solutionStacks = solutionStacksCopy;
         }
@@ -111,7 +111,7 @@ public class ListAvailableSolutionStacksResult implements Serializable {
      */
     public java.util.List<SolutionStackDescription> getSolutionStackDetails() {
         if (solutionStackDetails == null) {
-              solutionStackDetails = new com.amazonaws.internal.ListWithAutoConstructFlag<SolutionStackDescription>();
+              solutionStackDetails = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SolutionStackDescription>();
               solutionStackDetails.setAutoConstruct(true);
         }
         return solutionStackDetails;
@@ -129,7 +129,7 @@ public class ListAvailableSolutionStacksResult implements Serializable {
             this.solutionStackDetails = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<SolutionStackDescription> solutionStackDetailsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<SolutionStackDescription>(solutionStackDetails.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SolutionStackDescription> solutionStackDetailsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SolutionStackDescription>(solutionStackDetails.size());
         solutionStackDetailsCopy.addAll(solutionStackDetails);
         this.solutionStackDetails = solutionStackDetailsCopy;
     }
@@ -170,7 +170,7 @@ public class ListAvailableSolutionStacksResult implements Serializable {
         if (solutionStackDetails == null) {
             this.solutionStackDetails = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<SolutionStackDescription> solutionStackDetailsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<SolutionStackDescription>(solutionStackDetails.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SolutionStackDescription> solutionStackDetailsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SolutionStackDescription>(solutionStackDetails.size());
             solutionStackDetailsCopy.addAll(solutionStackDetails);
             this.solutionStackDetails = solutionStackDetailsCopy;
         }

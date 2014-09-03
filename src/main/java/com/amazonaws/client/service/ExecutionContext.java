@@ -23,7 +23,7 @@ import com.amazonaws.client.Signer;
 import com.amazonaws.client.handler.request.RequestHandler2;
 import com.amazonaws.client.metrics.support.AWSRequestMetricsFullSupport;
 import com.amazonaws.credential.AWSCredentials;
-import com.amazonaws.metricsutil.AWSRequestMetrics;
+import com.amazonaws.network.metrics.util.AWSRequestMetrics;
 
 @NotThreadSafe
 public class ExecutionContext {

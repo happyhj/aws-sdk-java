@@ -21,14 +21,14 @@ import java.util.Map;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.opsworks.model.CreateLayerRequest;
 import com.amazonaws.services.opsworks.model.Recipes;
 import com.amazonaws.services.opsworks.model.VolumeConfiguration;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Create Layer Request Marshaller
@@ -81,7 +81,7 @@ public class CreateLayerRequestMarshaller implements Marshaller<Request<CreateLa
                 jsonWriter.key("CustomInstanceProfileArn").value(createLayerRequest.getCustomInstanceProfileArn());
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> customSecurityGroupIdsList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(createLayerRequest.getCustomSecurityGroupIds());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> customSecurityGroupIdsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(createLayerRequest.getCustomSecurityGroupIds());
             if (customSecurityGroupIdsList != null && !(customSecurityGroupIdsList.isAutoConstruct() && customSecurityGroupIdsList.isEmpty())) {
 
                 jsonWriter.key("CustomSecurityGroupIds");
@@ -95,7 +95,7 @@ public class CreateLayerRequestMarshaller implements Marshaller<Request<CreateLa
                 jsonWriter.endArray();
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> packagesList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(createLayerRequest.getPackages());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> packagesList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(createLayerRequest.getPackages());
             if (packagesList != null && !(packagesList.isAutoConstruct() && packagesList.isEmpty())) {
 
                 jsonWriter.key("Packages");
@@ -109,7 +109,7 @@ public class CreateLayerRequestMarshaller implements Marshaller<Request<CreateLa
                 jsonWriter.endArray();
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<VolumeConfiguration> volumeConfigurationsList = (com.amazonaws.internal.ListWithAutoConstructFlag<VolumeConfiguration>)(createLayerRequest.getVolumeConfigurations());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeConfiguration> volumeConfigurationsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeConfiguration>)(createLayerRequest.getVolumeConfigurations());
             if (volumeConfigurationsList != null && !(volumeConfigurationsList.isAutoConstruct() && volumeConfigurationsList.isEmpty())) {
 
                 jsonWriter.key("VolumeConfigurations");
@@ -156,7 +156,7 @@ public class CreateLayerRequestMarshaller implements Marshaller<Request<CreateLa
                 jsonWriter.key("CustomRecipes");
                 jsonWriter.object();
 
-                com.amazonaws.internal.ListWithAutoConstructFlag<String> setupList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(customRecipes.getSetup());
+                com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> setupList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(customRecipes.getSetup());
                 if (setupList != null && !(setupList.isAutoConstruct() && setupList.isEmpty())) {
 
                     jsonWriter.key("Setup");
@@ -170,7 +170,7 @@ public class CreateLayerRequestMarshaller implements Marshaller<Request<CreateLa
                     jsonWriter.endArray();
                 }
 
-                com.amazonaws.internal.ListWithAutoConstructFlag<String> configureList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(customRecipes.getConfigure());
+                com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> configureList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(customRecipes.getConfigure());
                 if (configureList != null && !(configureList.isAutoConstruct() && configureList.isEmpty())) {
 
                     jsonWriter.key("Configure");
@@ -184,7 +184,7 @@ public class CreateLayerRequestMarshaller implements Marshaller<Request<CreateLa
                     jsonWriter.endArray();
                 }
 
-                com.amazonaws.internal.ListWithAutoConstructFlag<String> deployList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(customRecipes.getDeploy());
+                com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> deployList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(customRecipes.getDeploy());
                 if (deployList != null && !(deployList.isAutoConstruct() && deployList.isEmpty())) {
 
                     jsonWriter.key("Deploy");
@@ -198,7 +198,7 @@ public class CreateLayerRequestMarshaller implements Marshaller<Request<CreateLa
                     jsonWriter.endArray();
                 }
 
-                com.amazonaws.internal.ListWithAutoConstructFlag<String> undeployList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(customRecipes.getUndeploy());
+                com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> undeployList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(customRecipes.getUndeploy());
                 if (undeployList != null && !(undeployList.isAutoConstruct() && undeployList.isEmpty())) {
 
                     jsonWriter.key("Undeploy");
@@ -212,7 +212,7 @@ public class CreateLayerRequestMarshaller implements Marshaller<Request<CreateLa
                     jsonWriter.endArray();
                 }
 
-                com.amazonaws.internal.ListWithAutoConstructFlag<String> shutdownList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(customRecipes.getShutdown());
+                com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> shutdownList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(customRecipes.getShutdown());
                 if (shutdownList != null && !(shutdownList.isAutoConstruct() && shutdownList.isEmpty())) {
 
                     jsonWriter.key("Shutdown");

@@ -59,7 +59,7 @@ public class DescribeDeploymentsRequest extends AmazonWebServiceRequest implemen
      * the specified deployments. Otherwise, it returns a description of
      * every deployment.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> deploymentIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> deploymentIds;
 
     /**
      * The stack ID. If you include this parameter,
@@ -164,7 +164,7 @@ public class DescribeDeploymentsRequest extends AmazonWebServiceRequest implemen
      */
     public java.util.List<String> getDeploymentIds() {
         if (deploymentIds == null) {
-              deploymentIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              deploymentIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               deploymentIds.setAutoConstruct(true);
         }
         return deploymentIds;
@@ -186,7 +186,7 @@ public class DescribeDeploymentsRequest extends AmazonWebServiceRequest implemen
             this.deploymentIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> deploymentIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(deploymentIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> deploymentIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(deploymentIds.size());
         deploymentIdsCopy.addAll(deploymentIds);
         this.deploymentIds = deploymentIdsCopy;
     }
@@ -235,7 +235,7 @@ public class DescribeDeploymentsRequest extends AmazonWebServiceRequest implemen
         if (deploymentIds == null) {
             this.deploymentIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> deploymentIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(deploymentIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> deploymentIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(deploymentIds.size());
             deploymentIdsCopy.addAll(deploymentIds);
             this.deploymentIds = deploymentIdsCopy;
         }

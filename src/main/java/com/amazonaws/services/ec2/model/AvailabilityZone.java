@@ -44,7 +44,7 @@ public class AvailabilityZone implements Serializable {
     /**
      * Any messages about the Availability Zone.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<AvailabilityZoneMessage> messages;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AvailabilityZoneMessage> messages;
 
     /**
      * The name of the Availability Zone.
@@ -201,7 +201,7 @@ public class AvailabilityZone implements Serializable {
      */
     public java.util.List<AvailabilityZoneMessage> getMessages() {
         if (messages == null) {
-              messages = new com.amazonaws.internal.ListWithAutoConstructFlag<AvailabilityZoneMessage>();
+              messages = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AvailabilityZoneMessage>();
               messages.setAutoConstruct(true);
         }
         return messages;
@@ -217,7 +217,7 @@ public class AvailabilityZone implements Serializable {
             this.messages = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<AvailabilityZoneMessage> messagesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<AvailabilityZoneMessage>(messages.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AvailabilityZoneMessage> messagesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AvailabilityZoneMessage>(messages.size());
         messagesCopy.addAll(messages);
         this.messages = messagesCopy;
     }
@@ -254,7 +254,7 @@ public class AvailabilityZone implements Serializable {
         if (messages == null) {
             this.messages = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<AvailabilityZoneMessage> messagesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<AvailabilityZoneMessage>(messages.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AvailabilityZoneMessage> messagesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AvailabilityZoneMessage>(messages.size());
             messagesCopy.addAll(messages);
             this.messages = messagesCopy;
         }

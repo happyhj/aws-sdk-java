@@ -83,19 +83,19 @@ public class DescribeSnapshotsRequest extends AmazonWebServiceRequest implements
      * One or more snapshot IDs. <p>Default: Describes snapshots for which
      * you have launch permissions.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> snapshotIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> snapshotIds;
 
     /**
      * Returns the snapshots owned by the specified owner. Multiple owners
      * can be specified.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> ownerIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> ownerIds;
 
     /**
      * One or more AWS accounts IDs that can create volumes from the
      * snapshot.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> restorableByUserIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> restorableByUserIds;
 
     /**
      * One or more filters. <ul> <li> <p><code>description</code> - A
@@ -125,7 +125,7 @@ public class DescribeSnapshotsRequest extends AmazonWebServiceRequest implements
      * the snapshot is for. </li> <li> <p><code>volume-size</code> - The size
      * of the volume, in GiB. </li> </ul>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filters;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filters;
 
     /**
      * One or more snapshot IDs. <p>Default: Describes snapshots for which
@@ -136,7 +136,7 @@ public class DescribeSnapshotsRequest extends AmazonWebServiceRequest implements
      */
     public java.util.List<String> getSnapshotIds() {
         if (snapshotIds == null) {
-              snapshotIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              snapshotIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               snapshotIds.setAutoConstruct(true);
         }
         return snapshotIds;
@@ -154,7 +154,7 @@ public class DescribeSnapshotsRequest extends AmazonWebServiceRequest implements
             this.snapshotIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> snapshotIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(snapshotIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> snapshotIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(snapshotIds.size());
         snapshotIdsCopy.addAll(snapshotIds);
         this.snapshotIds = snapshotIdsCopy;
     }
@@ -195,7 +195,7 @@ public class DescribeSnapshotsRequest extends AmazonWebServiceRequest implements
         if (snapshotIds == null) {
             this.snapshotIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> snapshotIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(snapshotIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> snapshotIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(snapshotIds.size());
             snapshotIdsCopy.addAll(snapshotIds);
             this.snapshotIds = snapshotIdsCopy;
         }
@@ -212,7 +212,7 @@ public class DescribeSnapshotsRequest extends AmazonWebServiceRequest implements
      */
     public java.util.List<String> getOwnerIds() {
         if (ownerIds == null) {
-              ownerIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              ownerIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               ownerIds.setAutoConstruct(true);
         }
         return ownerIds;
@@ -230,7 +230,7 @@ public class DescribeSnapshotsRequest extends AmazonWebServiceRequest implements
             this.ownerIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> ownerIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(ownerIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> ownerIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(ownerIds.size());
         ownerIdsCopy.addAll(ownerIds);
         this.ownerIds = ownerIdsCopy;
     }
@@ -271,7 +271,7 @@ public class DescribeSnapshotsRequest extends AmazonWebServiceRequest implements
         if (ownerIds == null) {
             this.ownerIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> ownerIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(ownerIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> ownerIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(ownerIds.size());
             ownerIdsCopy.addAll(ownerIds);
             this.ownerIds = ownerIdsCopy;
         }
@@ -288,7 +288,7 @@ public class DescribeSnapshotsRequest extends AmazonWebServiceRequest implements
      */
     public java.util.List<String> getRestorableByUserIds() {
         if (restorableByUserIds == null) {
-              restorableByUserIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              restorableByUserIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               restorableByUserIds.setAutoConstruct(true);
         }
         return restorableByUserIds;
@@ -306,7 +306,7 @@ public class DescribeSnapshotsRequest extends AmazonWebServiceRequest implements
             this.restorableByUserIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> restorableByUserIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(restorableByUserIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> restorableByUserIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(restorableByUserIds.size());
         restorableByUserIdsCopy.addAll(restorableByUserIds);
         this.restorableByUserIds = restorableByUserIdsCopy;
     }
@@ -347,7 +347,7 @@ public class DescribeSnapshotsRequest extends AmazonWebServiceRequest implements
         if (restorableByUserIds == null) {
             this.restorableByUserIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> restorableByUserIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(restorableByUserIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> restorableByUserIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(restorableByUserIds.size());
             restorableByUserIdsCopy.addAll(restorableByUserIds);
             this.restorableByUserIds = restorableByUserIdsCopy;
         }
@@ -412,7 +412,7 @@ public class DescribeSnapshotsRequest extends AmazonWebServiceRequest implements
      */
     public java.util.List<Filter> getFilters() {
         if (filters == null) {
-              filters = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>();
+              filters = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>();
               filters.setAutoConstruct(true);
         }
         return filters;
@@ -478,7 +478,7 @@ public class DescribeSnapshotsRequest extends AmazonWebServiceRequest implements
             this.filters = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
         filtersCopy.addAll(filters);
         this.filters = filtersCopy;
     }
@@ -615,7 +615,7 @@ public class DescribeSnapshotsRequest extends AmazonWebServiceRequest implements
         if (filters == null) {
             this.filters = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
             filtersCopy.addAll(filters);
             this.filters = filtersCopy;
         }

@@ -31,7 +31,7 @@ public class DescribeExportTasksRequest extends AmazonWebServiceRequest implemen
     /**
      * One or more export task IDs.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> exportTaskIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> exportTaskIds;
 
     /**
      * One or more export task IDs.
@@ -40,7 +40,7 @@ public class DescribeExportTasksRequest extends AmazonWebServiceRequest implemen
      */
     public java.util.List<String> getExportTaskIds() {
         if (exportTaskIds == null) {
-              exportTaskIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              exportTaskIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               exportTaskIds.setAutoConstruct(true);
         }
         return exportTaskIds;
@@ -56,7 +56,7 @@ public class DescribeExportTasksRequest extends AmazonWebServiceRequest implemen
             this.exportTaskIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> exportTaskIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(exportTaskIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> exportTaskIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(exportTaskIds.size());
         exportTaskIdsCopy.addAll(exportTaskIds);
         this.exportTaskIds = exportTaskIdsCopy;
     }
@@ -93,7 +93,7 @@ public class DescribeExportTasksRequest extends AmazonWebServiceRequest implemen
         if (exportTaskIds == null) {
             this.exportTaskIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> exportTaskIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(exportTaskIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> exportTaskIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(exportTaskIds.size());
             exportTaskIdsCopy.addAll(exportTaskIds);
             this.exportTaskIds = exportTaskIdsCopy;
         }

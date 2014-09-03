@@ -27,7 +27,7 @@ public class ListInstanceProfilesResult implements Serializable {
     /**
      * A list of instance profiles.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<InstanceProfile> instanceProfiles;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceProfile> instanceProfiles;
 
     /**
      * A flag that indicates whether there are more instance profiles to
@@ -55,7 +55,7 @@ public class ListInstanceProfilesResult implements Serializable {
      */
     public java.util.List<InstanceProfile> getInstanceProfiles() {
         if (instanceProfiles == null) {
-              instanceProfiles = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceProfile>();
+              instanceProfiles = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceProfile>();
               instanceProfiles.setAutoConstruct(true);
         }
         return instanceProfiles;
@@ -71,7 +71,7 @@ public class ListInstanceProfilesResult implements Serializable {
             this.instanceProfiles = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<InstanceProfile> instanceProfilesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceProfile>(instanceProfiles.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceProfile> instanceProfilesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceProfile>(instanceProfiles.size());
         instanceProfilesCopy.addAll(instanceProfiles);
         this.instanceProfiles = instanceProfilesCopy;
     }
@@ -108,7 +108,7 @@ public class ListInstanceProfilesResult implements Serializable {
         if (instanceProfiles == null) {
             this.instanceProfiles = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<InstanceProfile> instanceProfilesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InstanceProfile>(instanceProfiles.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceProfile> instanceProfilesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InstanceProfile>(instanceProfiles.size());
             instanceProfilesCopy.addAll(instanceProfiles);
             this.instanceProfiles = instanceProfilesCopy;
         }

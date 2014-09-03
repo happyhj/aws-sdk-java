@@ -144,7 +144,7 @@ public class RestoreFromClusterSnapshotRequest extends AmazonWebServiceRequest i
      * Default: The default cluster security group for Amazon Redshift.
      * <p>Cluster security groups only apply to clusters outside of VPCs.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> clusterSecurityGroups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> clusterSecurityGroups;
 
     /**
      * A list of Virtual Private Cloud (VPC) security groups to be associated
@@ -152,7 +152,7 @@ public class RestoreFromClusterSnapshotRequest extends AmazonWebServiceRequest i
      * associated with the cluster. <p> VPC security groups only apply to
      * clusters in VPCs.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> vpcSecurityGroupIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> vpcSecurityGroupIds;
 
     /**
      * The weekly time range (in UTC) during which automated cluster
@@ -831,7 +831,7 @@ public class RestoreFromClusterSnapshotRequest extends AmazonWebServiceRequest i
      */
     public java.util.List<String> getClusterSecurityGroups() {
         if (clusterSecurityGroups == null) {
-              clusterSecurityGroups = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              clusterSecurityGroups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               clusterSecurityGroups.setAutoConstruct(true);
         }
         return clusterSecurityGroups;
@@ -851,7 +851,7 @@ public class RestoreFromClusterSnapshotRequest extends AmazonWebServiceRequest i
             this.clusterSecurityGroups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> clusterSecurityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(clusterSecurityGroups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> clusterSecurityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(clusterSecurityGroups.size());
         clusterSecurityGroupsCopy.addAll(clusterSecurityGroups);
         this.clusterSecurityGroups = clusterSecurityGroupsCopy;
     }
@@ -896,7 +896,7 @@ public class RestoreFromClusterSnapshotRequest extends AmazonWebServiceRequest i
         if (clusterSecurityGroups == null) {
             this.clusterSecurityGroups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> clusterSecurityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(clusterSecurityGroups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> clusterSecurityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(clusterSecurityGroups.size());
             clusterSecurityGroupsCopy.addAll(clusterSecurityGroups);
             this.clusterSecurityGroups = clusterSecurityGroupsCopy;
         }
@@ -917,7 +917,7 @@ public class RestoreFromClusterSnapshotRequest extends AmazonWebServiceRequest i
      */
     public java.util.List<String> getVpcSecurityGroupIds() {
         if (vpcSecurityGroupIds == null) {
-              vpcSecurityGroupIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              vpcSecurityGroupIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               vpcSecurityGroupIds.setAutoConstruct(true);
         }
         return vpcSecurityGroupIds;
@@ -939,7 +939,7 @@ public class RestoreFromClusterSnapshotRequest extends AmazonWebServiceRequest i
             this.vpcSecurityGroupIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> vpcSecurityGroupIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(vpcSecurityGroupIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> vpcSecurityGroupIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(vpcSecurityGroupIds.size());
         vpcSecurityGroupIdsCopy.addAll(vpcSecurityGroupIds);
         this.vpcSecurityGroupIds = vpcSecurityGroupIdsCopy;
     }
@@ -988,7 +988,7 @@ public class RestoreFromClusterSnapshotRequest extends AmazonWebServiceRequest i
         if (vpcSecurityGroupIds == null) {
             this.vpcSecurityGroupIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> vpcSecurityGroupIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(vpcSecurityGroupIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> vpcSecurityGroupIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(vpcSecurityGroupIds.size());
             vpcSecurityGroupIdsCopy.addAll(vpcSecurityGroupIds);
             this.vpcSecurityGroupIds = vpcSecurityGroupIdsCopy;
         }

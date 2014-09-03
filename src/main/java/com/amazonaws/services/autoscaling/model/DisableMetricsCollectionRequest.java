@@ -49,7 +49,7 @@ public class DisableMetricsCollectionRequest extends AmazonWebServiceRequest imp
      * <li><p>GroupTerminatingInstances</li> <li><p>GroupTotalInstances</li>
      * </ul>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> metrics;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> metrics;
 
     /**
      * The name or ARN of the Auto Scaling Group.
@@ -115,7 +115,7 @@ public class DisableMetricsCollectionRequest extends AmazonWebServiceRequest imp
      */
     public java.util.List<String> getMetrics() {
         if (metrics == null) {
-              metrics = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              metrics = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               metrics.setAutoConstruct(true);
         }
         return metrics;
@@ -143,7 +143,7 @@ public class DisableMetricsCollectionRequest extends AmazonWebServiceRequest imp
             this.metrics = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> metricsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(metrics.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> metricsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(metrics.size());
         metricsCopy.addAll(metrics);
         this.metrics = metricsCopy;
     }
@@ -204,7 +204,7 @@ public class DisableMetricsCollectionRequest extends AmazonWebServiceRequest imp
         if (metrics == null) {
             this.metrics = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> metricsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(metrics.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> metricsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(metrics.size());
             metricsCopy.addAll(metrics);
             this.metrics = metricsCopy;
         }

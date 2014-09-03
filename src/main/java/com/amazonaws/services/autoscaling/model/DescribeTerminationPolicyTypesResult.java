@@ -29,7 +29,7 @@ public class DescribeTerminationPolicyTypesResult implements Serializable {
      * <code>NewestInstance</code>, <code>ClosestToNextInstanceHour</code>,
      * <code>Default</code>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> terminationPolicyTypes;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> terminationPolicyTypes;
 
     /**
      * Termination policies supported by Auto Scaling. They are:
@@ -44,7 +44,7 @@ public class DescribeTerminationPolicyTypesResult implements Serializable {
      */
     public java.util.List<String> getTerminationPolicyTypes() {
         if (terminationPolicyTypes == null) {
-              terminationPolicyTypes = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              terminationPolicyTypes = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               terminationPolicyTypes.setAutoConstruct(true);
         }
         return terminationPolicyTypes;
@@ -66,7 +66,7 @@ public class DescribeTerminationPolicyTypesResult implements Serializable {
             this.terminationPolicyTypes = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> terminationPolicyTypesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(terminationPolicyTypes.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> terminationPolicyTypesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(terminationPolicyTypes.size());
         terminationPolicyTypesCopy.addAll(terminationPolicyTypes);
         this.terminationPolicyTypes = terminationPolicyTypesCopy;
     }
@@ -115,7 +115,7 @@ public class DescribeTerminationPolicyTypesResult implements Serializable {
         if (terminationPolicyTypes == null) {
             this.terminationPolicyTypes = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> terminationPolicyTypesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(terminationPolicyTypes.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> terminationPolicyTypesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(terminationPolicyTypes.size());
             terminationPolicyTypesCopy.addAll(terminationPolicyTypes);
             this.terminationPolicyTypes = terminationPolicyTypesCopy;
         }

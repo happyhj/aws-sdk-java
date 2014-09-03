@@ -77,19 +77,19 @@ public class JobFlowDetail implements Serializable {
     /**
      * A list of steps run by the job flow.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<StepDetail> steps;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StepDetail> steps;
 
     /**
      * A list of the bootstrap actions run by the job flow.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<BootstrapActionDetail> bootstrapActions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BootstrapActionDetail> bootstrapActions;
 
     /**
      * A list of strings set by third party software when the job flow is
      * launched. If you are not using third party software to manage the job
      * flow this value is empty.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> supportedProducts;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> supportedProducts;
 
     /**
      * Specifies whether the job flow is visible to all IAM users of the AWS
@@ -429,7 +429,7 @@ public class JobFlowDetail implements Serializable {
      */
     public java.util.List<StepDetail> getSteps() {
         if (steps == null) {
-              steps = new com.amazonaws.internal.ListWithAutoConstructFlag<StepDetail>();
+              steps = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StepDetail>();
               steps.setAutoConstruct(true);
         }
         return steps;
@@ -445,7 +445,7 @@ public class JobFlowDetail implements Serializable {
             this.steps = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<StepDetail> stepsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<StepDetail>(steps.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StepDetail> stepsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StepDetail>(steps.size());
         stepsCopy.addAll(steps);
         this.steps = stepsCopy;
     }
@@ -482,7 +482,7 @@ public class JobFlowDetail implements Serializable {
         if (steps == null) {
             this.steps = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<StepDetail> stepsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<StepDetail>(steps.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StepDetail> stepsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StepDetail>(steps.size());
             stepsCopy.addAll(steps);
             this.steps = stepsCopy;
         }
@@ -497,7 +497,7 @@ public class JobFlowDetail implements Serializable {
      */
     public java.util.List<BootstrapActionDetail> getBootstrapActions() {
         if (bootstrapActions == null) {
-              bootstrapActions = new com.amazonaws.internal.ListWithAutoConstructFlag<BootstrapActionDetail>();
+              bootstrapActions = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BootstrapActionDetail>();
               bootstrapActions.setAutoConstruct(true);
         }
         return bootstrapActions;
@@ -513,7 +513,7 @@ public class JobFlowDetail implements Serializable {
             this.bootstrapActions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<BootstrapActionDetail> bootstrapActionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<BootstrapActionDetail>(bootstrapActions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BootstrapActionDetail> bootstrapActionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BootstrapActionDetail>(bootstrapActions.size());
         bootstrapActionsCopy.addAll(bootstrapActions);
         this.bootstrapActions = bootstrapActionsCopy;
     }
@@ -550,7 +550,7 @@ public class JobFlowDetail implements Serializable {
         if (bootstrapActions == null) {
             this.bootstrapActions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<BootstrapActionDetail> bootstrapActionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<BootstrapActionDetail>(bootstrapActions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BootstrapActionDetail> bootstrapActionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<BootstrapActionDetail>(bootstrapActions.size());
             bootstrapActionsCopy.addAll(bootstrapActions);
             this.bootstrapActions = bootstrapActionsCopy;
         }
@@ -569,7 +569,7 @@ public class JobFlowDetail implements Serializable {
      */
     public java.util.List<String> getSupportedProducts() {
         if (supportedProducts == null) {
-              supportedProducts = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              supportedProducts = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               supportedProducts.setAutoConstruct(true);
         }
         return supportedProducts;
@@ -589,7 +589,7 @@ public class JobFlowDetail implements Serializable {
             this.supportedProducts = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> supportedProductsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(supportedProducts.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> supportedProductsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(supportedProducts.size());
         supportedProductsCopy.addAll(supportedProducts);
         this.supportedProducts = supportedProductsCopy;
     }
@@ -634,7 +634,7 @@ public class JobFlowDetail implements Serializable {
         if (supportedProducts == null) {
             this.supportedProducts = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> supportedProductsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(supportedProducts.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> supportedProductsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(supportedProducts.size());
             supportedProductsCopy.addAll(supportedProducts);
             this.supportedProducts = supportedProductsCopy;
         }

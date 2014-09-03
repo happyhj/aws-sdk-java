@@ -34,7 +34,7 @@ public class DescribePermissionsResult implements Serializable {
      * single <code>Permission</code> object with permissions for the
      * specified stack and IAM ARN.</li> </ul>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Permission> permissions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Permission> permissions;
 
     /**
      * An array of <code>Permission</code> objects that describe the stack
@@ -59,7 +59,7 @@ public class DescribePermissionsResult implements Serializable {
      */
     public java.util.List<Permission> getPermissions() {
         if (permissions == null) {
-              permissions = new com.amazonaws.internal.ListWithAutoConstructFlag<Permission>();
+              permissions = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Permission>();
               permissions.setAutoConstruct(true);
         }
         return permissions;
@@ -91,7 +91,7 @@ public class DescribePermissionsResult implements Serializable {
             this.permissions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Permission> permissionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Permission>(permissions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Permission> permissionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Permission>(permissions.size());
         permissionsCopy.addAll(permissions);
         this.permissions = permissionsCopy;
     }
@@ -160,7 +160,7 @@ public class DescribePermissionsResult implements Serializable {
         if (permissions == null) {
             this.permissions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Permission> permissionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Permission>(permissions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Permission> permissionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Permission>(permissions.size());
             permissionsCopy.addAll(permissions);
             this.permissions = permissionsCopy;
         }

@@ -27,7 +27,7 @@ public class ListGroupPoliciesResult implements Serializable {
     /**
      * A list of policy names.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> policyNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> policyNames;
 
     /**
      * A flag that indicates whether there are more policy names to list. If
@@ -55,7 +55,7 @@ public class ListGroupPoliciesResult implements Serializable {
      */
     public java.util.List<String> getPolicyNames() {
         if (policyNames == null) {
-              policyNames = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              policyNames = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               policyNames.setAutoConstruct(true);
         }
         return policyNames;
@@ -71,7 +71,7 @@ public class ListGroupPoliciesResult implements Serializable {
             this.policyNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> policyNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(policyNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> policyNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(policyNames.size());
         policyNamesCopy.addAll(policyNames);
         this.policyNames = policyNamesCopy;
     }
@@ -108,7 +108,7 @@ public class ListGroupPoliciesResult implements Serializable {
         if (policyNames == null) {
             this.policyNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> policyNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(policyNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> policyNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(policyNames.size());
             policyNamesCopy.addAll(policyNames);
             this.policyNames = policyNamesCopy;
         }

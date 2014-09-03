@@ -26,7 +26,7 @@ public class ListRecordsResult implements Serializable {
     /**
      * A list of all records.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Record> records;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Record> records;
 
     /**
      * A pagination token for obtaining the next page of results.
@@ -48,7 +48,7 @@ public class ListRecordsResult implements Serializable {
     /**
      * Names of merged datasets.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> mergedDatasetNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> mergedDatasetNames;
 
     /**
      * Indicates whether the dataset exists.
@@ -72,7 +72,7 @@ public class ListRecordsResult implements Serializable {
      */
     public java.util.List<Record> getRecords() {
         if (records == null) {
-              records = new com.amazonaws.internal.ListWithAutoConstructFlag<Record>();
+              records = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Record>();
               records.setAutoConstruct(true);
         }
         return records;
@@ -88,7 +88,7 @@ public class ListRecordsResult implements Serializable {
             this.records = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Record> recordsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Record>(records.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Record> recordsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Record>(records.size());
         recordsCopy.addAll(records);
         this.records = recordsCopy;
     }
@@ -125,7 +125,7 @@ public class ListRecordsResult implements Serializable {
         if (records == null) {
             this.records = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Record> recordsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Record>(records.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Record> recordsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Record>(records.size());
             recordsCopy.addAll(records);
             this.records = recordsCopy;
         }
@@ -272,7 +272,7 @@ public class ListRecordsResult implements Serializable {
      */
     public java.util.List<String> getMergedDatasetNames() {
         if (mergedDatasetNames == null) {
-              mergedDatasetNames = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              mergedDatasetNames = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               mergedDatasetNames.setAutoConstruct(true);
         }
         return mergedDatasetNames;
@@ -288,7 +288,7 @@ public class ListRecordsResult implements Serializable {
             this.mergedDatasetNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> mergedDatasetNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(mergedDatasetNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> mergedDatasetNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(mergedDatasetNames.size());
         mergedDatasetNamesCopy.addAll(mergedDatasetNames);
         this.mergedDatasetNames = mergedDatasetNamesCopy;
     }
@@ -325,7 +325,7 @@ public class ListRecordsResult implements Serializable {
         if (mergedDatasetNames == null) {
             this.mergedDatasetNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> mergedDatasetNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(mergedDatasetNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> mergedDatasetNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(mergedDatasetNames.size());
             mergedDatasetNamesCopy.addAll(mergedDatasetNames);
             this.mergedDatasetNames = mergedDatasetNamesCopy;
         }

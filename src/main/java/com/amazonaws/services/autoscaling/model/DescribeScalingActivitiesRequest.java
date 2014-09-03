@@ -48,7 +48,7 @@ public class DescribeScalingActivitiesRequest extends AmazonWebServiceRequest im
      * than 50 items. If unknown activities are requested, they are ignored
      * with no error.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> activityIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> activityIds;
 
     /**
      * The name of the <a>AutoScalingGroup</a>.
@@ -90,7 +90,7 @@ public class DescribeScalingActivitiesRequest extends AmazonWebServiceRequest im
      */
     public java.util.List<String> getActivityIds() {
         if (activityIds == null) {
-              activityIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              activityIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               activityIds.setAutoConstruct(true);
         }
         return activityIds;
@@ -116,7 +116,7 @@ public class DescribeScalingActivitiesRequest extends AmazonWebServiceRequest im
             this.activityIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> activityIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(activityIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> activityIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(activityIds.size());
         activityIdsCopy.addAll(activityIds);
         this.activityIds = activityIdsCopy;
     }
@@ -173,7 +173,7 @@ public class DescribeScalingActivitiesRequest extends AmazonWebServiceRequest im
         if (activityIds == null) {
             this.activityIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> activityIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(activityIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> activityIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(activityIds.size());
             activityIdsCopy.addAll(activityIds);
             this.activityIds = activityIdsCopy;
         }

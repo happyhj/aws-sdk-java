@@ -41,7 +41,7 @@ public class DescribeImagesRequest extends AmazonWebServiceRequest implements Se
      * One or more image IDs. <p>Default: Describes all images available to
      * you.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> imageIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> imageIds;
 
     /**
      * Filters the images by the owner. Specify an AWS account ID,
@@ -49,14 +49,14 @@ public class DescribeImagesRequest extends AmazonWebServiceRequest implements Se
      * (owner is AWS Marketplace), <code>self</code> (owner is the sender of
      * the request), or <code>all</code> (all owners).
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> owners;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> owners;
 
     /**
      * Scopes the images by users with explicit launch permissions. Specify
      * an AWS account ID, <code>self</code> (the sender of the request), or
      * <code>all</code> (public AMIs).
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> executableUsers;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> executableUsers;
 
     /**
      * One or more filters. <ul> <li> <p><code>architecture</code> - The
@@ -116,7 +116,7 @@ public class DescribeImagesRequest extends AmazonWebServiceRequest implements Se
      * virtualization type (<code>paravirtual</code> | <code>hvm</code>).
      * </li> </ul>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filters;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filters;
 
     /**
      * One or more image IDs. <p>Default: Describes all images available to
@@ -127,7 +127,7 @@ public class DescribeImagesRequest extends AmazonWebServiceRequest implements Se
      */
     public java.util.List<String> getImageIds() {
         if (imageIds == null) {
-              imageIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              imageIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               imageIds.setAutoConstruct(true);
         }
         return imageIds;
@@ -145,7 +145,7 @@ public class DescribeImagesRequest extends AmazonWebServiceRequest implements Se
             this.imageIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> imageIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(imageIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> imageIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(imageIds.size());
         imageIdsCopy.addAll(imageIds);
         this.imageIds = imageIdsCopy;
     }
@@ -186,7 +186,7 @@ public class DescribeImagesRequest extends AmazonWebServiceRequest implements Se
         if (imageIds == null) {
             this.imageIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> imageIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(imageIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> imageIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(imageIds.size());
             imageIdsCopy.addAll(imageIds);
             this.imageIds = imageIdsCopy;
         }
@@ -207,7 +207,7 @@ public class DescribeImagesRequest extends AmazonWebServiceRequest implements Se
      */
     public java.util.List<String> getOwners() {
         if (owners == null) {
-              owners = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              owners = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               owners.setAutoConstruct(true);
         }
         return owners;
@@ -229,7 +229,7 @@ public class DescribeImagesRequest extends AmazonWebServiceRequest implements Se
             this.owners = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> ownersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(owners.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> ownersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(owners.size());
         ownersCopy.addAll(owners);
         this.owners = ownersCopy;
     }
@@ -278,7 +278,7 @@ public class DescribeImagesRequest extends AmazonWebServiceRequest implements Se
         if (owners == null) {
             this.owners = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> ownersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(owners.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> ownersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(owners.size());
             ownersCopy.addAll(owners);
             this.owners = ownersCopy;
         }
@@ -297,7 +297,7 @@ public class DescribeImagesRequest extends AmazonWebServiceRequest implements Se
      */
     public java.util.List<String> getExecutableUsers() {
         if (executableUsers == null) {
-              executableUsers = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              executableUsers = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               executableUsers.setAutoConstruct(true);
         }
         return executableUsers;
@@ -317,7 +317,7 @@ public class DescribeImagesRequest extends AmazonWebServiceRequest implements Se
             this.executableUsers = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> executableUsersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(executableUsers.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> executableUsersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(executableUsers.size());
         executableUsersCopy.addAll(executableUsers);
         this.executableUsers = executableUsersCopy;
     }
@@ -362,7 +362,7 @@ public class DescribeImagesRequest extends AmazonWebServiceRequest implements Se
         if (executableUsers == null) {
             this.executableUsers = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> executableUsersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(executableUsers.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> executableUsersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(executableUsers.size());
             executableUsersCopy.addAll(executableUsers);
             this.executableUsers = executableUsersCopy;
         }
@@ -487,7 +487,7 @@ public class DescribeImagesRequest extends AmazonWebServiceRequest implements Se
      */
     public java.util.List<Filter> getFilters() {
         if (filters == null) {
-              filters = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>();
+              filters = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>();
               filters.setAutoConstruct(true);
         }
         return filters;
@@ -613,7 +613,7 @@ public class DescribeImagesRequest extends AmazonWebServiceRequest implements Se
             this.filters = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
         filtersCopy.addAll(filters);
         this.filters = filtersCopy;
     }
@@ -870,7 +870,7 @@ public class DescribeImagesRequest extends AmazonWebServiceRequest implements Se
         if (filters == null) {
             this.filters = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
             filtersCopy.addAll(filters);
             this.filters = filtersCopy;
         }

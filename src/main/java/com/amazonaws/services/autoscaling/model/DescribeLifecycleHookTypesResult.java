@@ -27,7 +27,7 @@ public class DescribeLifecycleHookTypesResult implements Serializable {
      * <li><p><code>autoscaling:EC2_INSTANCE_LAUNCHING</code></li>
      * <li><p><code>autoscaling:EC2_INSTANCE_TERMINATING</code></li> </ul>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> lifecycleHookTypes;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> lifecycleHookTypes;
 
     /**
      * Returns a list of all notification types supported by Auto Scaling.
@@ -42,7 +42,7 @@ public class DescribeLifecycleHookTypesResult implements Serializable {
      */
     public java.util.List<String> getLifecycleHookTypes() {
         if (lifecycleHookTypes == null) {
-              lifecycleHookTypes = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              lifecycleHookTypes = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               lifecycleHookTypes.setAutoConstruct(true);
         }
         return lifecycleHookTypes;
@@ -64,7 +64,7 @@ public class DescribeLifecycleHookTypesResult implements Serializable {
             this.lifecycleHookTypes = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> lifecycleHookTypesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(lifecycleHookTypes.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> lifecycleHookTypesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(lifecycleHookTypes.size());
         lifecycleHookTypesCopy.addAll(lifecycleHookTypes);
         this.lifecycleHookTypes = lifecycleHookTypesCopy;
     }
@@ -113,7 +113,7 @@ public class DescribeLifecycleHookTypesResult implements Serializable {
         if (lifecycleHookTypes == null) {
             this.lifecycleHookTypes = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> lifecycleHookTypesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(lifecycleHookTypes.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> lifecycleHookTypesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(lifecycleHookTypes.size());
             lifecycleHookTypesCopy.addAll(lifecycleHookTypes);
             this.lifecycleHookTypes = lifecycleHookTypesCopy;
         }

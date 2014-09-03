@@ -25,8 +25,8 @@ import org.apache.http.entity.InputStreamEntity;
 
 import com.amazonaws.client.metrics.MetricInputStreamEntity;
 import com.amazonaws.client.metrics.internal.ServiceMetricTypeGuesser;
-import com.amazonaws.metricstype.ServiceMetricType;
-import com.amazonaws.metricstype.ThroughputMetricType;
+import com.amazonaws.network.metrics.util.type.ServiceMetricType;
+import com.amazonaws.network.metrics.util.type.ThroughputMetricType;
 import com.amazonaws.network.type.Request;
 
 /**

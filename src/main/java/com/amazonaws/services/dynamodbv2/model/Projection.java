@@ -50,7 +50,7 @@ public class Projection implements Serializable {
      * <b>Constraints:</b><br/>
      * <b>Length: </b>1 - 20<br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> nonKeyAttributes;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> nonKeyAttributes;
 
     /**
      * The set of attributes that are projected into the index: <ul> <li>
@@ -239,7 +239,7 @@ public class Projection implements Serializable {
             this.nonKeyAttributes = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> nonKeyAttributesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(nonKeyAttributes.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> nonKeyAttributesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(nonKeyAttributes.size());
         nonKeyAttributesCopy.addAll(nonKeyAttributes);
         this.nonKeyAttributes = nonKeyAttributesCopy;
     }
@@ -302,7 +302,7 @@ public class Projection implements Serializable {
         if (nonKeyAttributes == null) {
             this.nonKeyAttributes = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> nonKeyAttributesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(nonKeyAttributes.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> nonKeyAttributesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(nonKeyAttributes.size());
             nonKeyAttributesCopy.addAll(nonKeyAttributes);
             this.nonKeyAttributes = nonKeyAttributesCopy;
         }

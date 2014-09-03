@@ -33,7 +33,7 @@ public class VaultNotificationConfig implements Serializable {
      * A list of one or more events for which Amazon Glacier will send a
      * notification to the specified Amazon SNS topic.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> events;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> events;
 
     /**
      * Default constructor for a new VaultNotificationConfig object.  Callers should use the
@@ -104,7 +104,7 @@ public class VaultNotificationConfig implements Serializable {
      */
     public java.util.List<String> getEvents() {
         if (events == null) {
-              events = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              events = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               events.setAutoConstruct(true);
         }
         return events;
@@ -122,7 +122,7 @@ public class VaultNotificationConfig implements Serializable {
             this.events = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> eventsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(events.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> eventsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(events.size());
         eventsCopy.addAll(events);
         this.events = eventsCopy;
     }
@@ -163,7 +163,7 @@ public class VaultNotificationConfig implements Serializable {
         if (events == null) {
             this.events = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> eventsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(events.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> eventsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(events.size());
             eventsCopy.addAll(events);
             this.events = eventsCopy;
         }

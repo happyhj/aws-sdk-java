@@ -52,7 +52,7 @@ public class CreateReservedInstancesListingRequest extends AmazonWebServiceReque
      * A list specifying the price of the Reserved Instance for each month
      * remaining in the Reserved Instance term.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<PriceScheduleSpecification> priceSchedules;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PriceScheduleSpecification> priceSchedules;
 
     /**
      * Unique, case-sensitive identifier you provide to ensure idempotency of
@@ -156,7 +156,7 @@ public class CreateReservedInstancesListingRequest extends AmazonWebServiceReque
      */
     public java.util.List<PriceScheduleSpecification> getPriceSchedules() {
         if (priceSchedules == null) {
-              priceSchedules = new com.amazonaws.internal.ListWithAutoConstructFlag<PriceScheduleSpecification>();
+              priceSchedules = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PriceScheduleSpecification>();
               priceSchedules.setAutoConstruct(true);
         }
         return priceSchedules;
@@ -174,7 +174,7 @@ public class CreateReservedInstancesListingRequest extends AmazonWebServiceReque
             this.priceSchedules = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<PriceScheduleSpecification> priceSchedulesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<PriceScheduleSpecification>(priceSchedules.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PriceScheduleSpecification> priceSchedulesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PriceScheduleSpecification>(priceSchedules.size());
         priceSchedulesCopy.addAll(priceSchedules);
         this.priceSchedules = priceSchedulesCopy;
     }
@@ -215,7 +215,7 @@ public class CreateReservedInstancesListingRequest extends AmazonWebServiceReque
         if (priceSchedules == null) {
             this.priceSchedules = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<PriceScheduleSpecification> priceSchedulesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<PriceScheduleSpecification>(priceSchedules.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PriceScheduleSpecification> priceSchedulesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PriceScheduleSpecification>(priceSchedules.size());
             priceSchedulesCopy.addAll(priceSchedules);
             this.priceSchedules = priceSchedulesCopy;
         }

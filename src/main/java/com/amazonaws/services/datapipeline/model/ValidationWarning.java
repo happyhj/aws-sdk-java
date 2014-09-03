@@ -38,7 +38,7 @@ public class ValidationWarning implements Serializable {
     /**
      * A description of the validation warning.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> warnings;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> warnings;
 
     /**
      * The identifier of the object that contains the validation warning.
@@ -92,7 +92,7 @@ public class ValidationWarning implements Serializable {
      */
     public java.util.List<String> getWarnings() {
         if (warnings == null) {
-              warnings = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              warnings = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               warnings.setAutoConstruct(true);
         }
         return warnings;
@@ -108,7 +108,7 @@ public class ValidationWarning implements Serializable {
             this.warnings = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> warningsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(warnings.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> warningsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(warnings.size());
         warningsCopy.addAll(warnings);
         this.warnings = warningsCopy;
     }
@@ -145,7 +145,7 @@ public class ValidationWarning implements Serializable {
         if (warnings == null) {
             this.warnings = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> warningsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(warnings.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> warningsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(warnings.size());
             warningsCopy.addAll(warnings);
             this.warnings = warningsCopy;
         }

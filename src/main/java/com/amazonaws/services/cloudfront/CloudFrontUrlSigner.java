@@ -33,11 +33,11 @@ import java.util.Date;
 
 import com.amazonaws.auth.PEM;
 import com.amazonaws.auth.RSA;
-import com.amazonaws.codec.Base64;
-import com.amazonaws.dateutil.DateUtils;
+import com.amazonaws.client.util.sdk.IOUtils;
 import com.amazonaws.exception.AmazonClientException;
-import com.amazonaws.sdkutil.IOUtils;
+import com.amazonaws.json.codec.Base64;
 import com.amazonaws.stringutil.StringUtils;
+import com.amazonaws.utility.date.DateUtils;
 
 // The source code originated from the .NET implementation at
 // https://github.com/aws/aws-sdk-net/blob/master/AWSSDK_DotNet35/Amazon.CloudFront/AmazonCloudFrontUrlSigner.cs

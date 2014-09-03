@@ -38,7 +38,7 @@ public class DescribeRegionsRequest extends AmazonWebServiceRequest implements S
     /**
      * The names of one or more regions.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> regionNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> regionNames;
 
     /**
      * One or more filters. <ul> <li> <p><code>endpoint</code> - The endpoint
@@ -46,7 +46,7 @@ public class DescribeRegionsRequest extends AmazonWebServiceRequest implements S
      * </li> <li> <p><code>region-name</code> - The name of the region (for
      * example, <code>us-east-1</code>). </li> </ul>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filters;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filters;
 
     /**
      * The names of one or more regions.
@@ -55,7 +55,7 @@ public class DescribeRegionsRequest extends AmazonWebServiceRequest implements S
      */
     public java.util.List<String> getRegionNames() {
         if (regionNames == null) {
-              regionNames = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              regionNames = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               regionNames.setAutoConstruct(true);
         }
         return regionNames;
@@ -71,7 +71,7 @@ public class DescribeRegionsRequest extends AmazonWebServiceRequest implements S
             this.regionNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> regionNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(regionNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> regionNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(regionNames.size());
         regionNamesCopy.addAll(regionNames);
         this.regionNames = regionNamesCopy;
     }
@@ -108,7 +108,7 @@ public class DescribeRegionsRequest extends AmazonWebServiceRequest implements S
         if (regionNames == null) {
             this.regionNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> regionNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(regionNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> regionNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(regionNames.size());
             regionNamesCopy.addAll(regionNames);
             this.regionNames = regionNamesCopy;
         }
@@ -129,7 +129,7 @@ public class DescribeRegionsRequest extends AmazonWebServiceRequest implements S
      */
     public java.util.List<Filter> getFilters() {
         if (filters == null) {
-              filters = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>();
+              filters = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>();
               filters.setAutoConstruct(true);
         }
         return filters;
@@ -151,7 +151,7 @@ public class DescribeRegionsRequest extends AmazonWebServiceRequest implements S
             this.filters = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
         filtersCopy.addAll(filters);
         this.filters = filtersCopy;
     }
@@ -200,7 +200,7 @@ public class DescribeRegionsRequest extends AmazonWebServiceRequest implements S
         if (filters == null) {
             this.filters = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Filter>(filters.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter> filtersCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Filter>(filters.size());
             filtersCopy.addAll(filters);
             this.filters = filtersCopy;
         }

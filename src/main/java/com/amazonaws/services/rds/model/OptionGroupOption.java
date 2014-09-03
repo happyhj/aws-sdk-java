@@ -62,7 +62,7 @@ public class OptionGroupOption implements Serializable {
     /**
      * List of all options that are prerequisites for this option.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> optionsDependedOn;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> optionsDependedOn;
 
     /**
      * A persistent option cannot be removed from the option group once the
@@ -83,7 +83,7 @@ public class OptionGroupOption implements Serializable {
      * Specifies the option settings that are available (and the default
      * value) for each option in an option group.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<OptionGroupOptionSetting> optionGroupOptionSettings;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionGroupOptionSetting> optionGroupOptionSettings;
 
     /**
      * The name of the option.
@@ -338,7 +338,7 @@ public class OptionGroupOption implements Serializable {
      */
     public java.util.List<String> getOptionsDependedOn() {
         if (optionsDependedOn == null) {
-              optionsDependedOn = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              optionsDependedOn = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               optionsDependedOn.setAutoConstruct(true);
         }
         return optionsDependedOn;
@@ -354,7 +354,7 @@ public class OptionGroupOption implements Serializable {
             this.optionsDependedOn = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> optionsDependedOnCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(optionsDependedOn.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> optionsDependedOnCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(optionsDependedOn.size());
         optionsDependedOnCopy.addAll(optionsDependedOn);
         this.optionsDependedOn = optionsDependedOnCopy;
     }
@@ -391,7 +391,7 @@ public class OptionGroupOption implements Serializable {
         if (optionsDependedOn == null) {
             this.optionsDependedOn = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> optionsDependedOnCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(optionsDependedOn.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> optionsDependedOnCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(optionsDependedOn.size());
             optionsDependedOnCopy.addAll(optionsDependedOn);
             this.optionsDependedOn = optionsDependedOnCopy;
         }
@@ -532,7 +532,7 @@ public class OptionGroupOption implements Serializable {
      */
     public java.util.List<OptionGroupOptionSetting> getOptionGroupOptionSettings() {
         if (optionGroupOptionSettings == null) {
-              optionGroupOptionSettings = new com.amazonaws.internal.ListWithAutoConstructFlag<OptionGroupOptionSetting>();
+              optionGroupOptionSettings = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionGroupOptionSetting>();
               optionGroupOptionSettings.setAutoConstruct(true);
         }
         return optionGroupOptionSettings;
@@ -550,7 +550,7 @@ public class OptionGroupOption implements Serializable {
             this.optionGroupOptionSettings = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<OptionGroupOptionSetting> optionGroupOptionSettingsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<OptionGroupOptionSetting>(optionGroupOptionSettings.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionGroupOptionSetting> optionGroupOptionSettingsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionGroupOptionSetting>(optionGroupOptionSettings.size());
         optionGroupOptionSettingsCopy.addAll(optionGroupOptionSettings);
         this.optionGroupOptionSettings = optionGroupOptionSettingsCopy;
     }
@@ -591,7 +591,7 @@ public class OptionGroupOption implements Serializable {
         if (optionGroupOptionSettings == null) {
             this.optionGroupOptionSettings = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<OptionGroupOptionSetting> optionGroupOptionSettingsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<OptionGroupOptionSetting>(optionGroupOptionSettings.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionGroupOptionSetting> optionGroupOptionSettingsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<OptionGroupOptionSetting>(optionGroupOptionSettings.size());
             optionGroupOptionSettingsCopy.addAll(optionGroupOptionSettings);
             this.optionGroupOptionSettings = optionGroupOptionSettingsCopy;
         }

@@ -58,7 +58,7 @@ public class StreamingDistributionList implements Serializable {
      * A complex type that contains one StreamingDistributionSummary element
      * for each distribution that was created by the current AWS account.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<StreamingDistributionSummary> items;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StreamingDistributionSummary> items;
 
     /**
      * Default constructor for a new StreamingDistributionList object.  Callers should use the
@@ -291,7 +291,7 @@ public class StreamingDistributionList implements Serializable {
      */
     public java.util.List<StreamingDistributionSummary> getItems() {
         if (items == null) {
-              items = new com.amazonaws.internal.ListWithAutoConstructFlag<StreamingDistributionSummary>();
+              items = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StreamingDistributionSummary>();
               items.setAutoConstruct(true);
         }
         return items;
@@ -309,7 +309,7 @@ public class StreamingDistributionList implements Serializable {
             this.items = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<StreamingDistributionSummary> itemsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<StreamingDistributionSummary>(items.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StreamingDistributionSummary> itemsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StreamingDistributionSummary>(items.size());
         itemsCopy.addAll(items);
         this.items = itemsCopy;
     }
@@ -350,7 +350,7 @@ public class StreamingDistributionList implements Serializable {
         if (items == null) {
             this.items = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<StreamingDistributionSummary> itemsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<StreamingDistributionSummary>(items.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StreamingDistributionSummary> itemsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StreamingDistributionSummary>(items.size());
             itemsCopy.addAll(items);
             this.items = itemsCopy;
         }

@@ -18,8 +18,8 @@ import java.io.InputStream;
 import java.net.URI;
 import java.util.Map;
 
-import com.amazonaws.method.HttpMethodName;
-import com.amazonaws.metricsutil.AWSRequestMetrics;
+import com.amazonaws.network.HttpMethodName;
+import com.amazonaws.network.metrics.util.AWSRequestMetrics;
 import com.amazonaws.network.request.AmazonWebServiceRequest;
 
 /**

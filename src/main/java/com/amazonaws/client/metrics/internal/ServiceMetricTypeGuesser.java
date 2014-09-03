@@ -15,9 +15,9 @@
 package com.amazonaws.client.metrics.internal;
 
 import com.amazonaws.client.metrics.AwsSdkMetrics;
-import com.amazonaws.metricstype.ServiceMetricType;
-import com.amazonaws.metricstype.SimpleThroughputMetricType;
-import com.amazonaws.metricstype.ThroughputMetricType;
+import com.amazonaws.network.metrics.util.type.ServiceMetricType;
+import com.amazonaws.network.metrics.util.type.SimpleThroughputMetricType;
+import com.amazonaws.network.metrics.util.type.ThroughputMetricType;
 import com.amazonaws.network.request.AmazonWebServiceRequest;
 import com.amazonaws.network.type.Request;
 

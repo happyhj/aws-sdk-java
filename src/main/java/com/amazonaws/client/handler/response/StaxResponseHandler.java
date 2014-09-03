@@ -25,7 +25,7 @@ import javax.xml.stream.XMLStreamException;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import com.amazonaws.ResponseMetadata;
+import com.amazonaws.network.ResponseMetadata;
 import com.amazonaws.network.response.AmazonWebServiceResponse;
 import com.amazonaws.network.response.HttpResponse;
 import com.amazonaws.transform.StaxUnmarshallerContext;

@@ -48,7 +48,7 @@ public class DescribeServicesRequest extends AmazonWebServiceRequest implements 
      * <b>Constraints:</b><br/>
      * <b>Length: </b>0 - 100<br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> serviceCodeList;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> serviceCodeList;
 
     /**
      * The ISO 639-1 code for the language in which AWS provides support. AWS
@@ -68,7 +68,7 @@ public class DescribeServicesRequest extends AmazonWebServiceRequest implements 
      */
     public java.util.List<String> getServiceCodeList() {
         if (serviceCodeList == null) {
-              serviceCodeList = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              serviceCodeList = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               serviceCodeList.setAutoConstruct(true);
         }
         return serviceCodeList;
@@ -87,7 +87,7 @@ public class DescribeServicesRequest extends AmazonWebServiceRequest implements 
             this.serviceCodeList = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> serviceCodeListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(serviceCodeList.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> serviceCodeListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(serviceCodeList.size());
         serviceCodeListCopy.addAll(serviceCodeList);
         this.serviceCodeList = serviceCodeListCopy;
     }
@@ -130,7 +130,7 @@ public class DescribeServicesRequest extends AmazonWebServiceRequest implements 
         if (serviceCodeList == null) {
             this.serviceCodeList = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> serviceCodeListCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(serviceCodeList.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> serviceCodeListCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(serviceCodeList.size());
             serviceCodeListCopy.addAll(serviceCodeList);
             this.serviceCodeList = serviceCodeListCopy;
         }

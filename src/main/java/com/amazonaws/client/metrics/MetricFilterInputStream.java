@@ -17,8 +17,8 @@ package com.amazonaws.client.metrics;
 import java.io.IOException;
 import java.io.InputStream;
 
-import com.amazonaws.metricstype.ThroughputMetricType;
-import com.amazonaws.sdkutil.SdkFilterInputStream;
+import com.amazonaws.client.util.sdk.SdkFilterInputStream;
+import com.amazonaws.network.metrics.util.type.ThroughputMetricType;
 
 /**
  * Used to capture the input stream throughput metrics, but excluding the

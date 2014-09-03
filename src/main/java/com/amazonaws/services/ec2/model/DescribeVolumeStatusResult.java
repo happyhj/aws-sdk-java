@@ -24,7 +24,7 @@ public class DescribeVolumeStatusResult implements Serializable {
     /**
      * A list of volumes.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<VolumeStatusItem> volumeStatuses;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeStatusItem> volumeStatuses;
 
     /**
      * The next paginated set of results to return.
@@ -38,7 +38,7 @@ public class DescribeVolumeStatusResult implements Serializable {
      */
     public java.util.List<VolumeStatusItem> getVolumeStatuses() {
         if (volumeStatuses == null) {
-              volumeStatuses = new com.amazonaws.internal.ListWithAutoConstructFlag<VolumeStatusItem>();
+              volumeStatuses = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeStatusItem>();
               volumeStatuses.setAutoConstruct(true);
         }
         return volumeStatuses;
@@ -54,7 +54,7 @@ public class DescribeVolumeStatusResult implements Serializable {
             this.volumeStatuses = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<VolumeStatusItem> volumeStatusesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<VolumeStatusItem>(volumeStatuses.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeStatusItem> volumeStatusesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeStatusItem>(volumeStatuses.size());
         volumeStatusesCopy.addAll(volumeStatuses);
         this.volumeStatuses = volumeStatusesCopy;
     }
@@ -91,7 +91,7 @@ public class DescribeVolumeStatusResult implements Serializable {
         if (volumeStatuses == null) {
             this.volumeStatuses = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<VolumeStatusItem> volumeStatusesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<VolumeStatusItem>(volumeStatuses.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeStatusItem> volumeStatusesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VolumeStatusItem>(volumeStatuses.size());
             volumeStatusesCopy.addAll(volumeStatuses);
             this.volumeStatuses = volumeStatusesCopy;
         }

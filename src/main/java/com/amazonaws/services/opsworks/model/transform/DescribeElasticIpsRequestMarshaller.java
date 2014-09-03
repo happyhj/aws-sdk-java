@@ -20,12 +20,12 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.opsworks.model.DescribeElasticIpsRequest;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Describe Elastic Ips Request Marshaller
@@ -57,7 +57,7 @@ public class DescribeElasticIpsRequestMarshaller implements Marshaller<Request<D
                 jsonWriter.key("StackId").value(describeElasticIpsRequest.getStackId());
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> ipsList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(describeElasticIpsRequest.getIps());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> ipsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(describeElasticIpsRequest.getIps());
             if (ipsList != null && !(ipsList.isAutoConstruct() && ipsList.isEmpty())) {
 
                 jsonWriter.key("Ips");

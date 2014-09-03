@@ -90,12 +90,12 @@ public class Cluster implements Serializable {
     /**
      * The applications installed on this cluster.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Application> applications;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Application> applications;
 
     /**
      * A list of tags associated with a cluster.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tags;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tags;
 
     /**
      * The IAM role that will be assumed by the Amazon EMR service to access
@@ -569,7 +569,7 @@ public class Cluster implements Serializable {
      */
     public java.util.List<Application> getApplications() {
         if (applications == null) {
-              applications = new com.amazonaws.internal.ListWithAutoConstructFlag<Application>();
+              applications = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Application>();
               applications.setAutoConstruct(true);
         }
         return applications;
@@ -585,7 +585,7 @@ public class Cluster implements Serializable {
             this.applications = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Application> applicationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Application>(applications.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Application> applicationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Application>(applications.size());
         applicationsCopy.addAll(applications);
         this.applications = applicationsCopy;
     }
@@ -622,7 +622,7 @@ public class Cluster implements Serializable {
         if (applications == null) {
             this.applications = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Application> applicationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Application>(applications.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Application> applicationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Application>(applications.size());
             applicationsCopy.addAll(applications);
             this.applications = applicationsCopy;
         }
@@ -637,7 +637,7 @@ public class Cluster implements Serializable {
      */
     public java.util.List<Tag> getTags() {
         if (tags == null) {
-              tags = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>();
+              tags = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>();
               tags.setAutoConstruct(true);
         }
         return tags;
@@ -653,7 +653,7 @@ public class Cluster implements Serializable {
             this.tags = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tags.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tags.size());
         tagsCopy.addAll(tags);
         this.tags = tagsCopy;
     }
@@ -690,7 +690,7 @@ public class Cluster implements Serializable {
         if (tags == null) {
             this.tags = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Tag>(tags.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag> tagsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Tag>(tags.size());
             tagsCopy.addAll(tags);
             this.tags = tagsCopy;
         }

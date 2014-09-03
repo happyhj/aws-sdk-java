@@ -47,7 +47,7 @@ public class DescribeExpressionsRequest extends AmazonWebServiceRequest implemen
      * Limits the <code><a>DescribeExpressions</a></code> response to the
      * specified expressions. If not specified, all expressions are shown.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> expressionNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> expressionNames;
 
     /**
      * Whether to display the deployed configuration (<code>true</code>) or
@@ -110,7 +110,7 @@ public class DescribeExpressionsRequest extends AmazonWebServiceRequest implemen
      */
     public java.util.List<String> getExpressionNames() {
         if (expressionNames == null) {
-              expressionNames = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              expressionNames = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               expressionNames.setAutoConstruct(true);
         }
         return expressionNames;
@@ -128,7 +128,7 @@ public class DescribeExpressionsRequest extends AmazonWebServiceRequest implemen
             this.expressionNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> expressionNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(expressionNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> expressionNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(expressionNames.size());
         expressionNamesCopy.addAll(expressionNames);
         this.expressionNames = expressionNamesCopy;
     }
@@ -169,7 +169,7 @@ public class DescribeExpressionsRequest extends AmazonWebServiceRequest implemen
         if (expressionNames == null) {
             this.expressionNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> expressionNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(expressionNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> expressionNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(expressionNames.size());
             expressionNamesCopy.addAll(expressionNames);
             this.expressionNames = expressionNamesCopy;
         }

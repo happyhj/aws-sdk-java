@@ -23,7 +23,7 @@ import java.util.Map;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.elastictranscoder.model.AudioCodecOptions;
@@ -33,7 +33,7 @@ import com.amazonaws.services.elastictranscoder.model.PresetWatermark;
 import com.amazonaws.services.elastictranscoder.model.Thumbnails;
 import com.amazonaws.services.elastictranscoder.model.VideoParameters;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Create Preset Request Marshaller
@@ -164,7 +164,7 @@ public class CreatePresetRequestMarshaller implements Marshaller<Request<CreateP
                     jsonWriter.key("PaddingPolicy").value(video.getPaddingPolicy());
                 }
 
-                com.amazonaws.internal.ListWithAutoConstructFlag<PresetWatermark> watermarksList = (com.amazonaws.internal.ListWithAutoConstructFlag<PresetWatermark>)(video.getWatermarks());
+                com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PresetWatermark> watermarksList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PresetWatermark>)(video.getWatermarks());
                 if (watermarksList != null && !(watermarksList.isAutoConstruct() && watermarksList.isEmpty())) {
 
                     jsonWriter.key("Watermarks");

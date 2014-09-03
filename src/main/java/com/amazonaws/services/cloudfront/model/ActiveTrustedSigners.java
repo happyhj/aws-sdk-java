@@ -45,7 +45,7 @@ public class ActiveTrustedSigners implements Serializable {
      * including trusted signers in the default cache behavior and in all of
      * the other cache behaviors.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Signer> items;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Signer> items;
 
     /**
      * Default constructor for a new ActiveTrustedSigners object.  Callers should use the
@@ -167,7 +167,7 @@ public class ActiveTrustedSigners implements Serializable {
      */
     public java.util.List<Signer> getItems() {
         if (items == null) {
-              items = new com.amazonaws.internal.ListWithAutoConstructFlag<Signer>();
+              items = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Signer>();
               items.setAutoConstruct(true);
         }
         return items;
@@ -189,7 +189,7 @@ public class ActiveTrustedSigners implements Serializable {
             this.items = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Signer> itemsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Signer>(items.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Signer> itemsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Signer>(items.size());
         itemsCopy.addAll(items);
         this.items = itemsCopy;
     }
@@ -238,7 +238,7 @@ public class ActiveTrustedSigners implements Serializable {
         if (items == null) {
             this.items = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Signer> itemsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Signer>(items.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Signer> itemsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Signer>(items.size());
             itemsCopy.addAll(items);
             this.items = itemsCopy;
         }

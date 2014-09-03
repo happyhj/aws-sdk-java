@@ -94,7 +94,7 @@ public class ModifyDBInstanceRequest extends AmazonWebServiceRequest implements 
      * must be a letter</li> <li>Cannot end with a hyphen or contain two
      * consecutive hyphens</li> </ul>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> dBSecurityGroups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> dBSecurityGroups;
 
     /**
      * A list of EC2 VPC security groups to authorize on this DB instance.
@@ -103,7 +103,7 @@ public class ModifyDBInstanceRequest extends AmazonWebServiceRequest implements 
      * <li>First character must be a letter</li> <li>Cannot end with a hyphen
      * or contain two consecutive hyphens</li> </ul>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> vpcSecurityGroupIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> vpcSecurityGroupIds;
 
     /**
      * Specifies whether or not the modifications in this request and any
@@ -668,7 +668,7 @@ public class ModifyDBInstanceRequest extends AmazonWebServiceRequest implements 
      */
     public java.util.List<String> getDBSecurityGroups() {
         if (dBSecurityGroups == null) {
-              dBSecurityGroups = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              dBSecurityGroups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               dBSecurityGroups.setAutoConstruct(true);
         }
         return dBSecurityGroups;
@@ -694,7 +694,7 @@ public class ModifyDBInstanceRequest extends AmazonWebServiceRequest implements 
             this.dBSecurityGroups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> dBSecurityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(dBSecurityGroups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> dBSecurityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(dBSecurityGroups.size());
         dBSecurityGroupsCopy.addAll(dBSecurityGroups);
         this.dBSecurityGroups = dBSecurityGroupsCopy;
     }
@@ -751,7 +751,7 @@ public class ModifyDBInstanceRequest extends AmazonWebServiceRequest implements 
         if (dBSecurityGroups == null) {
             this.dBSecurityGroups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> dBSecurityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(dBSecurityGroups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> dBSecurityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(dBSecurityGroups.size());
             dBSecurityGroupsCopy.addAll(dBSecurityGroups);
             this.dBSecurityGroups = dBSecurityGroupsCopy;
         }
@@ -774,7 +774,7 @@ public class ModifyDBInstanceRequest extends AmazonWebServiceRequest implements 
      */
     public java.util.List<String> getVpcSecurityGroupIds() {
         if (vpcSecurityGroupIds == null) {
-              vpcSecurityGroupIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              vpcSecurityGroupIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               vpcSecurityGroupIds.setAutoConstruct(true);
         }
         return vpcSecurityGroupIds;
@@ -798,7 +798,7 @@ public class ModifyDBInstanceRequest extends AmazonWebServiceRequest implements 
             this.vpcSecurityGroupIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> vpcSecurityGroupIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(vpcSecurityGroupIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> vpcSecurityGroupIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(vpcSecurityGroupIds.size());
         vpcSecurityGroupIdsCopy.addAll(vpcSecurityGroupIds);
         this.vpcSecurityGroupIds = vpcSecurityGroupIdsCopy;
     }
@@ -851,7 +851,7 @@ public class ModifyDBInstanceRequest extends AmazonWebServiceRequest implements 
         if (vpcSecurityGroupIds == null) {
             this.vpcSecurityGroupIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> vpcSecurityGroupIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(vpcSecurityGroupIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> vpcSecurityGroupIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(vpcSecurityGroupIds.size());
             vpcSecurityGroupIdsCopy.addAll(vpcSecurityGroupIds);
             this.vpcSecurityGroupIds = vpcSecurityGroupIdsCopy;
         }

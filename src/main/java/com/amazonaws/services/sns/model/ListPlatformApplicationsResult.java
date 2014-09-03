@@ -27,7 +27,7 @@ public class ListPlatformApplicationsResult implements Serializable {
      * Platform applications returned when calling ListPlatformApplications
      * action.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<PlatformApplication> platformApplications;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PlatformApplication> platformApplications;
 
     /**
      * NextToken string is returned when calling ListPlatformApplications
@@ -45,7 +45,7 @@ public class ListPlatformApplicationsResult implements Serializable {
      */
     public java.util.List<PlatformApplication> getPlatformApplications() {
         if (platformApplications == null) {
-              platformApplications = new com.amazonaws.internal.ListWithAutoConstructFlag<PlatformApplication>();
+              platformApplications = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PlatformApplication>();
               platformApplications.setAutoConstruct(true);
         }
         return platformApplications;
@@ -63,7 +63,7 @@ public class ListPlatformApplicationsResult implements Serializable {
             this.platformApplications = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<PlatformApplication> platformApplicationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<PlatformApplication>(platformApplications.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PlatformApplication> platformApplicationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PlatformApplication>(platformApplications.size());
         platformApplicationsCopy.addAll(platformApplications);
         this.platformApplications = platformApplicationsCopy;
     }
@@ -104,7 +104,7 @@ public class ListPlatformApplicationsResult implements Serializable {
         if (platformApplications == null) {
             this.platformApplications = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<PlatformApplication> platformApplicationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<PlatformApplication>(platformApplications.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PlatformApplication> platformApplicationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PlatformApplication>(platformApplications.size());
             platformApplicationsCopy.addAll(platformApplications);
             this.platformApplications = platformApplicationsCopy;
         }

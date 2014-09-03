@@ -26,7 +26,7 @@ public class DescribeStackEventsResult implements Serializable {
     /**
      * A list of <code>StackEvents</code> structures.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<StackEvent> stackEvents;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StackEvent> stackEvents;
 
     /**
      * String that identifies the start of the next list of events, if there
@@ -44,7 +44,7 @@ public class DescribeStackEventsResult implements Serializable {
      */
     public java.util.List<StackEvent> getStackEvents() {
         if (stackEvents == null) {
-              stackEvents = new com.amazonaws.internal.ListWithAutoConstructFlag<StackEvent>();
+              stackEvents = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StackEvent>();
               stackEvents.setAutoConstruct(true);
         }
         return stackEvents;
@@ -60,7 +60,7 @@ public class DescribeStackEventsResult implements Serializable {
             this.stackEvents = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<StackEvent> stackEventsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<StackEvent>(stackEvents.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StackEvent> stackEventsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StackEvent>(stackEvents.size());
         stackEventsCopy.addAll(stackEvents);
         this.stackEvents = stackEventsCopy;
     }
@@ -97,7 +97,7 @@ public class DescribeStackEventsResult implements Serializable {
         if (stackEvents == null) {
             this.stackEvents = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<StackEvent> stackEventsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<StackEvent>(stackEvents.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StackEvent> stackEventsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<StackEvent>(stackEvents.size());
             stackEventsCopy.addAll(stackEvents);
             this.stackEvents = stackEventsCopy;
         }

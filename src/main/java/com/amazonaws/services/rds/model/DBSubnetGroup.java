@@ -59,7 +59,7 @@ public class DBSubnetGroup implements Serializable {
     /**
      * Contains a list of <a>Subnet</a> elements.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Subnet> subnets;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Subnet> subnets;
 
     /**
      * Specifies the name of the DB subnet group.
@@ -200,7 +200,7 @@ public class DBSubnetGroup implements Serializable {
      */
     public java.util.List<Subnet> getSubnets() {
         if (subnets == null) {
-              subnets = new com.amazonaws.internal.ListWithAutoConstructFlag<Subnet>();
+              subnets = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Subnet>();
               subnets.setAutoConstruct(true);
         }
         return subnets;
@@ -216,7 +216,7 @@ public class DBSubnetGroup implements Serializable {
             this.subnets = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Subnet> subnetsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Subnet>(subnets.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Subnet> subnetsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Subnet>(subnets.size());
         subnetsCopy.addAll(subnets);
         this.subnets = subnetsCopy;
     }
@@ -253,7 +253,7 @@ public class DBSubnetGroup implements Serializable {
         if (subnets == null) {
             this.subnets = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Subnet> subnetsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Subnet>(subnets.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Subnet> subnetsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Subnet>(subnets.size());
             subnetsCopy.addAll(subnets);
             this.subnets = subnetsCopy;
         }

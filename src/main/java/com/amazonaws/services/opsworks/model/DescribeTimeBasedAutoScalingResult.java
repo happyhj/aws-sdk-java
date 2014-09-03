@@ -28,7 +28,7 @@ public class DescribeTimeBasedAutoScalingResult implements Serializable {
      * An array of <code>TimeBasedAutoScalingConfiguration</code> objects
      * that describe the configuration for the specified instances.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<TimeBasedAutoScalingConfiguration> timeBasedAutoScalingConfigurations;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TimeBasedAutoScalingConfiguration> timeBasedAutoScalingConfigurations;
 
     /**
      * An array of <code>TimeBasedAutoScalingConfiguration</code> objects
@@ -39,7 +39,7 @@ public class DescribeTimeBasedAutoScalingResult implements Serializable {
      */
     public java.util.List<TimeBasedAutoScalingConfiguration> getTimeBasedAutoScalingConfigurations() {
         if (timeBasedAutoScalingConfigurations == null) {
-              timeBasedAutoScalingConfigurations = new com.amazonaws.internal.ListWithAutoConstructFlag<TimeBasedAutoScalingConfiguration>();
+              timeBasedAutoScalingConfigurations = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TimeBasedAutoScalingConfiguration>();
               timeBasedAutoScalingConfigurations.setAutoConstruct(true);
         }
         return timeBasedAutoScalingConfigurations;
@@ -57,7 +57,7 @@ public class DescribeTimeBasedAutoScalingResult implements Serializable {
             this.timeBasedAutoScalingConfigurations = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<TimeBasedAutoScalingConfiguration> timeBasedAutoScalingConfigurationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<TimeBasedAutoScalingConfiguration>(timeBasedAutoScalingConfigurations.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TimeBasedAutoScalingConfiguration> timeBasedAutoScalingConfigurationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TimeBasedAutoScalingConfiguration>(timeBasedAutoScalingConfigurations.size());
         timeBasedAutoScalingConfigurationsCopy.addAll(timeBasedAutoScalingConfigurations);
         this.timeBasedAutoScalingConfigurations = timeBasedAutoScalingConfigurationsCopy;
     }
@@ -98,7 +98,7 @@ public class DescribeTimeBasedAutoScalingResult implements Serializable {
         if (timeBasedAutoScalingConfigurations == null) {
             this.timeBasedAutoScalingConfigurations = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<TimeBasedAutoScalingConfiguration> timeBasedAutoScalingConfigurationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<TimeBasedAutoScalingConfiguration>(timeBasedAutoScalingConfigurations.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TimeBasedAutoScalingConfiguration> timeBasedAutoScalingConfigurationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TimeBasedAutoScalingConfiguration>(timeBasedAutoScalingConfigurations.size());
             timeBasedAutoScalingConfigurationsCopy.addAll(timeBasedAutoScalingConfigurations);
             this.timeBasedAutoScalingConfigurations = timeBasedAutoScalingConfigurationsCopy;
         }

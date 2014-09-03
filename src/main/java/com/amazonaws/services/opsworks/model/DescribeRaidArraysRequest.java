@@ -51,7 +51,7 @@ public class DescribeRaidArraysRequest extends AmazonWebServiceRequest implement
      * <code>DescribeRaidArrays</code> returns descriptions of the specified
      * arrays. Otherwise, it returns a description of every array.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> raidArrayIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> raidArrayIds;
 
     /**
      * The instance ID. If you use this parameter,
@@ -109,7 +109,7 @@ public class DescribeRaidArraysRequest extends AmazonWebServiceRequest implement
      */
     public java.util.List<String> getRaidArrayIds() {
         if (raidArrayIds == null) {
-              raidArrayIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              raidArrayIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               raidArrayIds.setAutoConstruct(true);
         }
         return raidArrayIds;
@@ -129,7 +129,7 @@ public class DescribeRaidArraysRequest extends AmazonWebServiceRequest implement
             this.raidArrayIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> raidArrayIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(raidArrayIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> raidArrayIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(raidArrayIds.size());
         raidArrayIdsCopy.addAll(raidArrayIds);
         this.raidArrayIds = raidArrayIdsCopy;
     }
@@ -174,7 +174,7 @@ public class DescribeRaidArraysRequest extends AmazonWebServiceRequest implement
         if (raidArrayIds == null) {
             this.raidArrayIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> raidArrayIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(raidArrayIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> raidArrayIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(raidArrayIds.size());
             raidArrayIdsCopy.addAll(raidArrayIds);
             this.raidArrayIds = raidArrayIdsCopy;
         }

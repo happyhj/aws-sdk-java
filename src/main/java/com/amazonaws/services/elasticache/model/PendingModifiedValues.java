@@ -34,7 +34,7 @@ public class PendingModifiedValues implements Serializable {
      * from the cache cluster. A node ID is a numeric identifier (0001, 0002,
      * etc.).
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> cacheNodeIdsToRemove;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> cacheNodeIdsToRemove;
 
     /**
      * The new cache engine version that the cache cluster will run.
@@ -91,7 +91,7 @@ public class PendingModifiedValues implements Serializable {
      */
     public java.util.List<String> getCacheNodeIdsToRemove() {
         if (cacheNodeIdsToRemove == null) {
-              cacheNodeIdsToRemove = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              cacheNodeIdsToRemove = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               cacheNodeIdsToRemove.setAutoConstruct(true);
         }
         return cacheNodeIdsToRemove;
@@ -111,7 +111,7 @@ public class PendingModifiedValues implements Serializable {
             this.cacheNodeIdsToRemove = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> cacheNodeIdsToRemoveCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(cacheNodeIdsToRemove.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> cacheNodeIdsToRemoveCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(cacheNodeIdsToRemove.size());
         cacheNodeIdsToRemoveCopy.addAll(cacheNodeIdsToRemove);
         this.cacheNodeIdsToRemove = cacheNodeIdsToRemoveCopy;
     }
@@ -156,7 +156,7 @@ public class PendingModifiedValues implements Serializable {
         if (cacheNodeIdsToRemove == null) {
             this.cacheNodeIdsToRemove = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> cacheNodeIdsToRemoveCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(cacheNodeIdsToRemove.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> cacheNodeIdsToRemoveCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(cacheNodeIdsToRemove.size());
             cacheNodeIdsToRemoveCopy.addAll(cacheNodeIdsToRemove);
             this.cacheNodeIdsToRemove = cacheNodeIdsToRemoveCopy;
         }

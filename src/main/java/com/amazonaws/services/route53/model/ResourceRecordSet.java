@@ -117,7 +117,7 @@ public class ResourceRecordSet implements Serializable {
      * <b>Constraints:</b><br/>
      * <b>Length: </b>1 - <br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ResourceRecord> resourceRecords;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ResourceRecord> resourceRecords;
 
     /**
      * <i>Alias resource record sets only:</i> Information about the AWS
@@ -843,7 +843,7 @@ public class ResourceRecordSet implements Serializable {
      */
     public java.util.List<ResourceRecord> getResourceRecords() {
         if (resourceRecords == null) {
-              resourceRecords = new com.amazonaws.internal.ListWithAutoConstructFlag<ResourceRecord>();
+              resourceRecords = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ResourceRecord>();
               resourceRecords.setAutoConstruct(true);
         }
         return resourceRecords;
@@ -864,7 +864,7 @@ public class ResourceRecordSet implements Serializable {
             this.resourceRecords = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ResourceRecord> resourceRecordsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ResourceRecord>(resourceRecords.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ResourceRecord> resourceRecordsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ResourceRecord>(resourceRecords.size());
         resourceRecordsCopy.addAll(resourceRecords);
         this.resourceRecords = resourceRecordsCopy;
     }
@@ -911,7 +911,7 @@ public class ResourceRecordSet implements Serializable {
         if (resourceRecords == null) {
             this.resourceRecords = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ResourceRecord> resourceRecordsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ResourceRecord>(resourceRecords.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ResourceRecord> resourceRecordsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ResourceRecord>(resourceRecords.size());
             resourceRecordsCopy.addAll(resourceRecords);
             this.resourceRecords = resourceRecordsCopy;
         }

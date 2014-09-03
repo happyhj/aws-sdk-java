@@ -41,7 +41,7 @@ public class ModifyCacheParameterGroupRequest extends AmazonWebServiceRequest im
      * arguments are optional. A maximum of 20 parameters may be modified per
      * request.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ParameterNameValue> parameterNameValues;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ParameterNameValue> parameterNameValues;
 
     /**
      * Default constructor for a new ModifyCacheParameterGroupRequest object.  Callers should use the
@@ -112,7 +112,7 @@ public class ModifyCacheParameterGroupRequest extends AmazonWebServiceRequest im
      */
     public java.util.List<ParameterNameValue> getParameterNameValues() {
         if (parameterNameValues == null) {
-              parameterNameValues = new com.amazonaws.internal.ListWithAutoConstructFlag<ParameterNameValue>();
+              parameterNameValues = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ParameterNameValue>();
               parameterNameValues.setAutoConstruct(true);
         }
         return parameterNameValues;
@@ -134,7 +134,7 @@ public class ModifyCacheParameterGroupRequest extends AmazonWebServiceRequest im
             this.parameterNameValues = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ParameterNameValue> parameterNameValuesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ParameterNameValue>(parameterNameValues.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ParameterNameValue> parameterNameValuesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ParameterNameValue>(parameterNameValues.size());
         parameterNameValuesCopy.addAll(parameterNameValues);
         this.parameterNameValues = parameterNameValuesCopy;
     }
@@ -183,7 +183,7 @@ public class ModifyCacheParameterGroupRequest extends AmazonWebServiceRequest im
         if (parameterNameValues == null) {
             this.parameterNameValues = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ParameterNameValue> parameterNameValuesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ParameterNameValue>(parameterNameValues.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ParameterNameValue> parameterNameValuesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ParameterNameValue>(parameterNameValues.size());
             parameterNameValuesCopy.addAll(parameterNameValues);
             this.parameterNameValues = parameterNameValuesCopy;
         }

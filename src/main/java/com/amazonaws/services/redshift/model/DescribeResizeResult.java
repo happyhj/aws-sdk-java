@@ -52,19 +52,19 @@ public class DescribeResizeResult implements Serializable {
      * The names of tables that have been completely imported . <p>Valid
      * Values: List of table names.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> importTablesCompleted;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> importTablesCompleted;
 
     /**
      * The names of tables that are being currently imported. <p>Valid
      * Values: List of table names.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> importTablesInProgress;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> importTablesInProgress;
 
     /**
      * The names of tables that have not been yet imported. <p>Valid Values:
      * List of table names
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> importTablesNotStarted;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> importTablesNotStarted;
 
     /**
      * The average rate of the resize operation over the last few minutes,
@@ -276,7 +276,7 @@ public class DescribeResizeResult implements Serializable {
      */
     public java.util.List<String> getImportTablesCompleted() {
         if (importTablesCompleted == null) {
-              importTablesCompleted = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              importTablesCompleted = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               importTablesCompleted.setAutoConstruct(true);
         }
         return importTablesCompleted;
@@ -294,7 +294,7 @@ public class DescribeResizeResult implements Serializable {
             this.importTablesCompleted = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> importTablesCompletedCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(importTablesCompleted.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> importTablesCompletedCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(importTablesCompleted.size());
         importTablesCompletedCopy.addAll(importTablesCompleted);
         this.importTablesCompleted = importTablesCompletedCopy;
     }
@@ -335,7 +335,7 @@ public class DescribeResizeResult implements Serializable {
         if (importTablesCompleted == null) {
             this.importTablesCompleted = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> importTablesCompletedCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(importTablesCompleted.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> importTablesCompletedCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(importTablesCompleted.size());
             importTablesCompletedCopy.addAll(importTablesCompleted);
             this.importTablesCompleted = importTablesCompletedCopy;
         }
@@ -352,7 +352,7 @@ public class DescribeResizeResult implements Serializable {
      */
     public java.util.List<String> getImportTablesInProgress() {
         if (importTablesInProgress == null) {
-              importTablesInProgress = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              importTablesInProgress = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               importTablesInProgress.setAutoConstruct(true);
         }
         return importTablesInProgress;
@@ -370,7 +370,7 @@ public class DescribeResizeResult implements Serializable {
             this.importTablesInProgress = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> importTablesInProgressCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(importTablesInProgress.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> importTablesInProgressCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(importTablesInProgress.size());
         importTablesInProgressCopy.addAll(importTablesInProgress);
         this.importTablesInProgress = importTablesInProgressCopy;
     }
@@ -411,7 +411,7 @@ public class DescribeResizeResult implements Serializable {
         if (importTablesInProgress == null) {
             this.importTablesInProgress = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> importTablesInProgressCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(importTablesInProgress.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> importTablesInProgressCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(importTablesInProgress.size());
             importTablesInProgressCopy.addAll(importTablesInProgress);
             this.importTablesInProgress = importTablesInProgressCopy;
         }
@@ -428,7 +428,7 @@ public class DescribeResizeResult implements Serializable {
      */
     public java.util.List<String> getImportTablesNotStarted() {
         if (importTablesNotStarted == null) {
-              importTablesNotStarted = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              importTablesNotStarted = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               importTablesNotStarted.setAutoConstruct(true);
         }
         return importTablesNotStarted;
@@ -446,7 +446,7 @@ public class DescribeResizeResult implements Serializable {
             this.importTablesNotStarted = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> importTablesNotStartedCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(importTablesNotStarted.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> importTablesNotStartedCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(importTablesNotStarted.size());
         importTablesNotStartedCopy.addAll(importTablesNotStarted);
         this.importTablesNotStarted = importTablesNotStartedCopy;
     }
@@ -487,7 +487,7 @@ public class DescribeResizeResult implements Serializable {
         if (importTablesNotStarted == null) {
             this.importTablesNotStarted = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> importTablesNotStartedCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(importTablesNotStarted.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> importTablesNotStartedCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(importTablesNotStarted.size());
             importTablesNotStartedCopy.addAll(importTablesNotStarted);
             this.importTablesNotStarted = importTablesNotStartedCopy;
         }

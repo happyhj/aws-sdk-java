@@ -14,7 +14,7 @@
  */
 package com.amazonaws.network.response;
 
-import com.amazonaws.ResponseMetadata;
+import com.amazonaws.network.ResponseMetadata;
 
 /**
  * Represents the response from an AWS service, including the result payload and

@@ -100,13 +100,13 @@ public class ModifyClusterRequest extends AmazonWebServiceRequest implements Ser
      * <li>First character must be a letter</li> <li>Cannot end with a hyphen
      * or contain two consecutive hyphens</li> </ul>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> clusterSecurityGroups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> clusterSecurityGroups;
 
     /**
      * A list of virtual private cloud (VPC) security groups to be associated
      * with the cluster.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> vpcSecurityGroupIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> vpcSecurityGroupIds;
 
     /**
      * The new password for the cluster master user. This change is
@@ -523,7 +523,7 @@ public class ModifyClusterRequest extends AmazonWebServiceRequest implements Ser
      */
     public java.util.List<String> getClusterSecurityGroups() {
         if (clusterSecurityGroups == null) {
-              clusterSecurityGroups = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              clusterSecurityGroups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               clusterSecurityGroups.setAutoConstruct(true);
         }
         return clusterSecurityGroups;
@@ -551,7 +551,7 @@ public class ModifyClusterRequest extends AmazonWebServiceRequest implements Ser
             this.clusterSecurityGroups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> clusterSecurityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(clusterSecurityGroups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> clusterSecurityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(clusterSecurityGroups.size());
         clusterSecurityGroupsCopy.addAll(clusterSecurityGroups);
         this.clusterSecurityGroups = clusterSecurityGroupsCopy;
     }
@@ -612,7 +612,7 @@ public class ModifyClusterRequest extends AmazonWebServiceRequest implements Ser
         if (clusterSecurityGroups == null) {
             this.clusterSecurityGroups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> clusterSecurityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(clusterSecurityGroups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> clusterSecurityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(clusterSecurityGroups.size());
             clusterSecurityGroupsCopy.addAll(clusterSecurityGroups);
             this.clusterSecurityGroups = clusterSecurityGroupsCopy;
         }
@@ -629,7 +629,7 @@ public class ModifyClusterRequest extends AmazonWebServiceRequest implements Ser
      */
     public java.util.List<String> getVpcSecurityGroupIds() {
         if (vpcSecurityGroupIds == null) {
-              vpcSecurityGroupIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              vpcSecurityGroupIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               vpcSecurityGroupIds.setAutoConstruct(true);
         }
         return vpcSecurityGroupIds;
@@ -647,7 +647,7 @@ public class ModifyClusterRequest extends AmazonWebServiceRequest implements Ser
             this.vpcSecurityGroupIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> vpcSecurityGroupIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(vpcSecurityGroupIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> vpcSecurityGroupIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(vpcSecurityGroupIds.size());
         vpcSecurityGroupIdsCopy.addAll(vpcSecurityGroupIds);
         this.vpcSecurityGroupIds = vpcSecurityGroupIdsCopy;
     }
@@ -688,7 +688,7 @@ public class ModifyClusterRequest extends AmazonWebServiceRequest implements Ser
         if (vpcSecurityGroupIds == null) {
             this.vpcSecurityGroupIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> vpcSecurityGroupIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(vpcSecurityGroupIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> vpcSecurityGroupIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(vpcSecurityGroupIds.size());
             vpcSecurityGroupIdsCopy.addAll(vpcSecurityGroupIds);
             this.vpcSecurityGroupIds = vpcSecurityGroupIdsCopy;
         }

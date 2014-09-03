@@ -15,7 +15,7 @@
 package com.amazonaws.client.handler.request;
 
 import com.amazonaws.network.type.Request;
-import com.amazonaws.util.TimingInfo;
+import com.amazonaws.utility.TimingInfo;
 
 /**
  * @deprecated by {@link RequestHandler2}.

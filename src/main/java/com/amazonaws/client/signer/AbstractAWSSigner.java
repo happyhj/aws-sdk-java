@@ -38,12 +38,12 @@ import com.amazonaws.auth.BasicSessionCredentials;
 import com.amazonaws.auth.SigningAlgorithm;
 import com.amazonaws.client.HttpUtils;
 import com.amazonaws.client.Signer;
-import com.amazonaws.codec.Base64;
+import com.amazonaws.client.util.io.ProgressInputStream;
+import com.amazonaws.client.util.sdk.SdkDigestInputStream;
 import com.amazonaws.credential.AWSCredentials;
 import com.amazonaws.exception.AmazonClientException;
-import com.amazonaws.ioutil.ProgressInputStream;
+import com.amazonaws.json.codec.Base64;
 import com.amazonaws.network.type.Request;
-import com.amazonaws.sdkutil.SdkDigestInputStream;
 
 /**
  * Abstract base class for AWS signing protocol implementations. Provides

@@ -24,7 +24,7 @@ public class SelectResult implements Serializable {
     /**
      * A list of items that match the select expression.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Item> items;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Item> items;
 
     /**
      * An opaque token indicating that more items than
@@ -40,7 +40,7 @@ public class SelectResult implements Serializable {
      */
     public java.util.List<Item> getItems() {
         if (items == null) {
-              items = new com.amazonaws.internal.ListWithAutoConstructFlag<Item>();
+              items = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Item>();
               items.setAutoConstruct(true);
         }
         return items;
@@ -56,7 +56,7 @@ public class SelectResult implements Serializable {
             this.items = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Item> itemsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Item>(items.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Item> itemsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Item>(items.size());
         itemsCopy.addAll(items);
         this.items = itemsCopy;
     }
@@ -93,7 +93,7 @@ public class SelectResult implements Serializable {
         if (items == null) {
             this.items = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Item> itemsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Item>(items.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Item> itemsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Item>(items.size());
             itemsCopy.addAll(items);
             this.items = itemsCopy;
         }

@@ -20,12 +20,12 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.elasticmapreduce.model.ListStepsRequest;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * List Steps Request Marshaller
@@ -54,7 +54,7 @@ public class ListStepsRequestMarshaller implements Marshaller<Request<ListStepsR
                 jsonWriter.key("ClusterId").value(listStepsRequest.getClusterId());
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> stepStatesList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(listStepsRequest.getStepStates());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> stepStatesList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(listStepsRequest.getStepStates());
             if (stepStatesList != null && !(stepStatesList.isAutoConstruct() && stepStatesList.isEmpty())) {
 
                 jsonWriter.key("StepStates");

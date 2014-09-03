@@ -62,7 +62,7 @@ public class PutLogEventsRequest extends AmazonWebServiceRequest implements Seri
      * <b>Constraints:</b><br/>
      * <b>Length: </b>1 - 1000<br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<InputLogEvent> logEvents;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InputLogEvent> logEvents;
 
     /**
      * A string token that must be obtained from the response of the previous
@@ -194,7 +194,7 @@ public class PutLogEventsRequest extends AmazonWebServiceRequest implements Seri
      */
     public java.util.List<InputLogEvent> getLogEvents() {
         if (logEvents == null) {
-              logEvents = new com.amazonaws.internal.ListWithAutoConstructFlag<InputLogEvent>();
+              logEvents = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InputLogEvent>();
               logEvents.setAutoConstruct(true);
         }
         return logEvents;
@@ -213,7 +213,7 @@ public class PutLogEventsRequest extends AmazonWebServiceRequest implements Seri
             this.logEvents = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<InputLogEvent> logEventsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InputLogEvent>(logEvents.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InputLogEvent> logEventsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InputLogEvent>(logEvents.size());
         logEventsCopy.addAll(logEvents);
         this.logEvents = logEventsCopy;
     }
@@ -256,7 +256,7 @@ public class PutLogEventsRequest extends AmazonWebServiceRequest implements Seri
         if (logEvents == null) {
             this.logEvents = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<InputLogEvent> logEventsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InputLogEvent>(logEvents.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InputLogEvent> logEventsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InputLogEvent>(logEvents.size());
             logEventsCopy.addAll(logEvents);
             this.logEvents = logEventsCopy;
         }

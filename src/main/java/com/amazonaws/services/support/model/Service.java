@@ -41,7 +41,7 @@ public class Service implements Serializable {
      * Category names and codes are passed to AWS Support when you call
      * <a>CreateCase</a>.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Category> categories;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Category> categories;
 
     /**
      * The code for an AWS service returned by <a>DescribeServices</a>
@@ -134,7 +134,7 @@ public class Service implements Serializable {
      */
     public java.util.List<Category> getCategories() {
         if (categories == null) {
-              categories = new com.amazonaws.internal.ListWithAutoConstructFlag<Category>();
+              categories = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Category>();
               categories.setAutoConstruct(true);
         }
         return categories;
@@ -156,7 +156,7 @@ public class Service implements Serializable {
             this.categories = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Category> categoriesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Category>(categories.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Category> categoriesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Category>(categories.size());
         categoriesCopy.addAll(categories);
         this.categories = categoriesCopy;
     }
@@ -205,7 +205,7 @@ public class Service implements Serializable {
         if (categories == null) {
             this.categories = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Category> categoriesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Category>(categories.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Category> categoriesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Category>(categories.size());
             categoriesCopy.addAll(categories);
             this.categories = categoriesCopy;
         }

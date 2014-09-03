@@ -34,7 +34,7 @@ import org.apache.http.params.CoreProtocolPNames;
 import com.amazonaws.client.ClientConfiguration;
 import com.amazonaws.client.HttpUtils;
 import com.amazonaws.exception.AmazonClientException;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.type.Request;
 
 /** Responsible for creating Apache HttpClient 4 request objects. */

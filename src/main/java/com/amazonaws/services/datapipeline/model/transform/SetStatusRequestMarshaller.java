@@ -20,12 +20,12 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.datapipeline.model.SetStatusRequest;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Set Status Request Marshaller
@@ -54,7 +54,7 @@ public class SetStatusRequestMarshaller implements Marshaller<Request<SetStatusR
                 jsonWriter.key("pipelineId").value(setStatusRequest.getPipelineId());
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> objectIdsList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(setStatusRequest.getObjectIds());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> objectIdsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(setStatusRequest.getObjectIds());
             if (objectIdsList != null && !(objectIdsList.isAutoConstruct() && objectIdsList.isEmpty())) {
 
                 jsonWriter.key("objectIds");

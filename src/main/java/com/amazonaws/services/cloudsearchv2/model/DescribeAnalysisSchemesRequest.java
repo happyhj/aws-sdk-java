@@ -48,7 +48,7 @@ public class DescribeAnalysisSchemesRequest extends AmazonWebServiceRequest impl
     /**
      * The analysis schemes you want to describe.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> analysisSchemeNames;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> analysisSchemeNames;
 
     /**
      * Whether to display the deployed configuration (<code>true</code>) or
@@ -109,7 +109,7 @@ public class DescribeAnalysisSchemesRequest extends AmazonWebServiceRequest impl
      */
     public java.util.List<String> getAnalysisSchemeNames() {
         if (analysisSchemeNames == null) {
-              analysisSchemeNames = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              analysisSchemeNames = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               analysisSchemeNames.setAutoConstruct(true);
         }
         return analysisSchemeNames;
@@ -125,7 +125,7 @@ public class DescribeAnalysisSchemesRequest extends AmazonWebServiceRequest impl
             this.analysisSchemeNames = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> analysisSchemeNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(analysisSchemeNames.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> analysisSchemeNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(analysisSchemeNames.size());
         analysisSchemeNamesCopy.addAll(analysisSchemeNames);
         this.analysisSchemeNames = analysisSchemeNamesCopy;
     }
@@ -162,7 +162,7 @@ public class DescribeAnalysisSchemesRequest extends AmazonWebServiceRequest impl
         if (analysisSchemeNames == null) {
             this.analysisSchemeNames = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> analysisSchemeNamesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(analysisSchemeNames.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> analysisSchemeNamesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(analysisSchemeNames.size());
             analysisSchemeNamesCopy.addAll(analysisSchemeNames);
             this.analysisSchemeNames = analysisSchemeNamesCopy;
         }

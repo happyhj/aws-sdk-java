@@ -320,7 +320,7 @@ public class VideoParameters implements Serializable {
      * allows you to use the same preset for up to four watermarks that have
      * different dimensions.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<PresetWatermark> watermarks;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PresetWatermark> watermarks;
 
     /**
      * The video codec for the output file. Valid values include
@@ -2036,7 +2036,7 @@ public class VideoParameters implements Serializable {
      */
     public java.util.List<PresetWatermark> getWatermarks() {
         if (watermarks == null) {
-              watermarks = new com.amazonaws.internal.ListWithAutoConstructFlag<PresetWatermark>();
+              watermarks = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PresetWatermark>();
               watermarks.setAutoConstruct(true);
         }
         return watermarks;
@@ -2076,7 +2076,7 @@ public class VideoParameters implements Serializable {
             this.watermarks = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<PresetWatermark> watermarksCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<PresetWatermark>(watermarks.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PresetWatermark> watermarksCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PresetWatermark>(watermarks.size());
         watermarksCopy.addAll(watermarks);
         this.watermarks = watermarksCopy;
     }
@@ -2161,7 +2161,7 @@ public class VideoParameters implements Serializable {
         if (watermarks == null) {
             this.watermarks = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<PresetWatermark> watermarksCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<PresetWatermark>(watermarks.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PresetWatermark> watermarksCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<PresetWatermark>(watermarks.size());
             watermarksCopy.addAll(watermarks);
             this.watermarks = watermarksCopy;
         }

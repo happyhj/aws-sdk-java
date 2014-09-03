@@ -14,12 +14,12 @@
  */
 package com.amazonaws.services.glacier.transfer;
 
-import static com.amazonaws.event.SDKProgressPublisher.publishProgress;
-import static com.amazonaws.event.SDKProgressPublisher.publishResponseBytesDiscarded;
-import static com.amazonaws.sdkutil.IOUtils.closeQuietly;
-import static com.amazonaws.sdkutil.IOUtils.release;
-import static com.amazonaws.sdkutil.ResettableInputStream.newResettableInputStream;
-import static com.amazonaws.util.Throwables.failure;
+import static com.amazonaws.client.util.sdk.IOUtils.closeQuietly;
+import static com.amazonaws.client.util.sdk.IOUtils.release;
+import static com.amazonaws.client.util.sdk.ResettableInputStream.newResettableInputStream;
+import static com.amazonaws.network.event.SDKProgressPublisher.publishProgress;
+import static com.amazonaws.network.event.SDKProgressPublisher.publishResponseBytesDiscarded;
+import static com.amazonaws.utility.Throwables.failure;
 
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -35,15 +35,15 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 import com.amazonaws.client.ClientConfiguration;
-import com.amazonaws.codec.BinaryUtils;
+import com.amazonaws.client.util.sdk.ResettableInputStream;
 import com.amazonaws.credential.AWSCredentials;
 import com.amazonaws.credential.AWSCredentialsProvider;
 import com.amazonaws.credential.StaticCredentialsProvider;
-import com.amazonaws.event.ProgressEventType;
-import com.amazonaws.event.ProgressListener;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
-import com.amazonaws.sdkutil.ResettableInputStream;
+import com.amazonaws.json.codec.BinaryUtils;
+import com.amazonaws.network.event.ProgressEventType;
+import com.amazonaws.network.event.ProgressListener;
 import com.amazonaws.services.glacier.AmazonGlacier;
 import com.amazonaws.services.glacier.AmazonGlacierClient;
 import com.amazonaws.services.glacier.TreeHashGenerator;

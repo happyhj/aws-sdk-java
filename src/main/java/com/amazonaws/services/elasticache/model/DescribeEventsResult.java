@@ -32,7 +32,7 @@ public class DescribeEventsResult implements Serializable {
      * A list of events. Each element in the list contains detailed
      * information about one event.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Event> events;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Event> events;
 
     /**
      * Provides an identifier to allow retrieval of paginated results.
@@ -76,7 +76,7 @@ public class DescribeEventsResult implements Serializable {
      */
     public java.util.List<Event> getEvents() {
         if (events == null) {
-              events = new com.amazonaws.internal.ListWithAutoConstructFlag<Event>();
+              events = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Event>();
               events.setAutoConstruct(true);
         }
         return events;
@@ -94,7 +94,7 @@ public class DescribeEventsResult implements Serializable {
             this.events = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Event> eventsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Event>(events.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Event> eventsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Event>(events.size());
         eventsCopy.addAll(events);
         this.events = eventsCopy;
     }
@@ -135,7 +135,7 @@ public class DescribeEventsResult implements Serializable {
         if (events == null) {
             this.events = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Event> eventsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Event>(events.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Event> eventsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Event>(events.size());
             eventsCopy.addAll(events);
             this.events = eventsCopy;
         }

@@ -51,7 +51,7 @@ public class CreateTableRequest extends AmazonWebServiceRequest implements Seria
      * An array of attributes that describe the key schema for the table and
      * indexes.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<AttributeDefinition> attributeDefinitions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AttributeDefinition> attributeDefinitions;
 
     /**
      * The name of the table to create.
@@ -85,7 +85,7 @@ public class CreateTableRequest extends AmazonWebServiceRequest implements Seria
      * <b>Constraints:</b><br/>
      * <b>Length: </b>1 - 2<br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<KeySchemaElement> keySchema;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<KeySchemaElement> keySchema;
 
     /**
      * One or more local secondary indexes (the maximum is five) to be
@@ -115,7 +115,7 @@ public class CreateTableRequest extends AmazonWebServiceRequest implements Seria
      * different indexes, this counts as two distinct attributes when
      * determining the total. </li> </ul> </li> </ul>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<LocalSecondaryIndex> localSecondaryIndexes;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LocalSecondaryIndex> localSecondaryIndexes;
 
     /**
      * One or more global secondary indexes (the maximum is five) to be
@@ -144,7 +144,7 @@ public class CreateTableRequest extends AmazonWebServiceRequest implements Seria
      * for the global secondary index, consisting of read and write capacity
      * units. </li> </ul>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<GlobalSecondaryIndex> globalSecondaryIndexes;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GlobalSecondaryIndex> globalSecondaryIndexes;
 
     /**
      * Represents the provisioned throughput settings for a specified table
@@ -257,7 +257,7 @@ public class CreateTableRequest extends AmazonWebServiceRequest implements Seria
             this.attributeDefinitions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<AttributeDefinition> attributeDefinitionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<AttributeDefinition>(attributeDefinitions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AttributeDefinition> attributeDefinitionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AttributeDefinition>(attributeDefinitions.size());
         attributeDefinitionsCopy.addAll(attributeDefinitions);
         this.attributeDefinitions = attributeDefinitionsCopy;
     }
@@ -298,7 +298,7 @@ public class CreateTableRequest extends AmazonWebServiceRequest implements Seria
         if (attributeDefinitions == null) {
             this.attributeDefinitions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<AttributeDefinition> attributeDefinitionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<AttributeDefinition>(attributeDefinitions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AttributeDefinition> attributeDefinitionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<AttributeDefinition>(attributeDefinitions.size());
             attributeDefinitionsCopy.addAll(attributeDefinitions);
             this.attributeDefinitions = attributeDefinitionsCopy;
         }
@@ -444,7 +444,7 @@ public class CreateTableRequest extends AmazonWebServiceRequest implements Seria
             this.keySchema = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<KeySchemaElement> keySchemaCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<KeySchemaElement>(keySchema.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<KeySchemaElement> keySchemaCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<KeySchemaElement>(keySchema.size());
         keySchemaCopy.addAll(keySchema);
         this.keySchema = keySchemaCopy;
     }
@@ -555,7 +555,7 @@ public class CreateTableRequest extends AmazonWebServiceRequest implements Seria
         if (keySchema == null) {
             this.keySchema = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<KeySchemaElement> keySchemaCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<KeySchemaElement>(keySchema.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<KeySchemaElement> keySchemaCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<KeySchemaElement>(keySchema.size());
             keySchemaCopy.addAll(keySchema);
             this.keySchema = keySchemaCopy;
         }
@@ -682,7 +682,7 @@ public class CreateTableRequest extends AmazonWebServiceRequest implements Seria
             this.localSecondaryIndexes = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<LocalSecondaryIndex> localSecondaryIndexesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<LocalSecondaryIndex>(localSecondaryIndexes.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LocalSecondaryIndex> localSecondaryIndexesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LocalSecondaryIndex>(localSecondaryIndexes.size());
         localSecondaryIndexesCopy.addAll(localSecondaryIndexes);
         this.localSecondaryIndexes = localSecondaryIndexesCopy;
     }
@@ -819,7 +819,7 @@ public class CreateTableRequest extends AmazonWebServiceRequest implements Seria
         if (localSecondaryIndexes == null) {
             this.localSecondaryIndexes = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<LocalSecondaryIndex> localSecondaryIndexesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<LocalSecondaryIndex>(localSecondaryIndexes.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LocalSecondaryIndex> localSecondaryIndexesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<LocalSecondaryIndex>(localSecondaryIndexes.size());
             localSecondaryIndexesCopy.addAll(localSecondaryIndexes);
             this.localSecondaryIndexes = localSecondaryIndexesCopy;
         }
@@ -942,7 +942,7 @@ public class CreateTableRequest extends AmazonWebServiceRequest implements Seria
             this.globalSecondaryIndexes = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<GlobalSecondaryIndex> globalSecondaryIndexesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<GlobalSecondaryIndex>(globalSecondaryIndexes.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GlobalSecondaryIndex> globalSecondaryIndexesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GlobalSecondaryIndex>(globalSecondaryIndexes.size());
         globalSecondaryIndexesCopy.addAll(globalSecondaryIndexes);
         this.globalSecondaryIndexes = globalSecondaryIndexesCopy;
     }
@@ -1075,7 +1075,7 @@ public class CreateTableRequest extends AmazonWebServiceRequest implements Seria
         if (globalSecondaryIndexes == null) {
             this.globalSecondaryIndexes = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<GlobalSecondaryIndex> globalSecondaryIndexesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<GlobalSecondaryIndex>(globalSecondaryIndexes.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GlobalSecondaryIndex> globalSecondaryIndexesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<GlobalSecondaryIndex>(globalSecondaryIndexes.size());
             globalSecondaryIndexesCopy.addAll(globalSecondaryIndexes);
             this.globalSecondaryIndexes = globalSecondaryIndexesCopy;
         }

@@ -81,7 +81,7 @@ public class SendRawEmailRequest extends AmazonWebServiceRequest implements Seri
      * A list of destinations for the message, consisting of To:, CC:, and
      * BCC: addresses.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> destinations;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> destinations;
 
     /**
      * The raw text of the message. The client is responsible for ensuring
@@ -224,7 +224,7 @@ public class SendRawEmailRequest extends AmazonWebServiceRequest implements Seri
      */
     public java.util.List<String> getDestinations() {
         if (destinations == null) {
-              destinations = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              destinations = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               destinations.setAutoConstruct(true);
         }
         return destinations;
@@ -242,7 +242,7 @@ public class SendRawEmailRequest extends AmazonWebServiceRequest implements Seri
             this.destinations = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> destinationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(destinations.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> destinationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(destinations.size());
         destinationsCopy.addAll(destinations);
         this.destinations = destinationsCopy;
     }
@@ -283,7 +283,7 @@ public class SendRawEmailRequest extends AmazonWebServiceRequest implements Seri
         if (destinations == null) {
             this.destinations = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> destinationsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(destinations.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> destinationsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(destinations.size());
             destinationsCopy.addAll(destinations);
             this.destinations = destinationsCopy;
         }

@@ -27,7 +27,7 @@ public class ListRolesResult implements Serializable {
     /**
      * A list of roles.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Role> roles;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Role> roles;
 
     /**
      * A flag that indicates whether there are more roles to list. If your
@@ -55,7 +55,7 @@ public class ListRolesResult implements Serializable {
      */
     public java.util.List<Role> getRoles() {
         if (roles == null) {
-              roles = new com.amazonaws.internal.ListWithAutoConstructFlag<Role>();
+              roles = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Role>();
               roles.setAutoConstruct(true);
         }
         return roles;
@@ -71,7 +71,7 @@ public class ListRolesResult implements Serializable {
             this.roles = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Role> rolesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Role>(roles.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Role> rolesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Role>(roles.size());
         rolesCopy.addAll(roles);
         this.roles = rolesCopy;
     }
@@ -108,7 +108,7 @@ public class ListRolesResult implements Serializable {
         if (roles == null) {
             this.roles = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Role> rolesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Role>(roles.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Role> rolesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Role>(roles.size());
             rolesCopy.addAll(roles);
             this.roles = rolesCopy;
         }

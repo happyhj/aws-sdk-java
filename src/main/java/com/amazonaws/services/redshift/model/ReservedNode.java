@@ -88,7 +88,7 @@ public class ReservedNode implements Serializable {
     /**
      * The recurring charges for the reserved node.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<RecurringCharge> recurringCharges;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RecurringCharge> recurringCharges;
 
     /**
      * The unique identifier for the reservation.
@@ -502,7 +502,7 @@ public class ReservedNode implements Serializable {
      */
     public java.util.List<RecurringCharge> getRecurringCharges() {
         if (recurringCharges == null) {
-              recurringCharges = new com.amazonaws.internal.ListWithAutoConstructFlag<RecurringCharge>();
+              recurringCharges = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RecurringCharge>();
               recurringCharges.setAutoConstruct(true);
         }
         return recurringCharges;
@@ -518,7 +518,7 @@ public class ReservedNode implements Serializable {
             this.recurringCharges = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<RecurringCharge> recurringChargesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<RecurringCharge>(recurringCharges.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RecurringCharge> recurringChargesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RecurringCharge>(recurringCharges.size());
         recurringChargesCopy.addAll(recurringCharges);
         this.recurringCharges = recurringChargesCopy;
     }
@@ -555,7 +555,7 @@ public class ReservedNode implements Serializable {
         if (recurringCharges == null) {
             this.recurringCharges = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<RecurringCharge> recurringChargesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<RecurringCharge>(recurringCharges.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RecurringCharge> recurringChargesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<RecurringCharge>(recurringCharges.size());
             recurringChargesCopy.addAll(recurringCharges);
             this.recurringCharges = recurringChargesCopy;
         }

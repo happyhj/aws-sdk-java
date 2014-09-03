@@ -36,17 +36,17 @@ public class Destination implements Serializable {
     /**
      * The To: field(s) of the message.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> toAddresses;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> toAddresses;
 
     /**
      * The CC: field(s) of the message.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> ccAddresses;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> ccAddresses;
 
     /**
      * The BCC: field(s) of the message.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> bccAddresses;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> bccAddresses;
 
     /**
      * Default constructor for a new Destination object.  Callers should use the
@@ -72,7 +72,7 @@ public class Destination implements Serializable {
      */
     public java.util.List<String> getToAddresses() {
         if (toAddresses == null) {
-              toAddresses = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              toAddresses = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               toAddresses.setAutoConstruct(true);
         }
         return toAddresses;
@@ -88,7 +88,7 @@ public class Destination implements Serializable {
             this.toAddresses = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> toAddressesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(toAddresses.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> toAddressesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(toAddresses.size());
         toAddressesCopy.addAll(toAddresses);
         this.toAddresses = toAddressesCopy;
     }
@@ -125,7 +125,7 @@ public class Destination implements Serializable {
         if (toAddresses == null) {
             this.toAddresses = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> toAddressesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(toAddresses.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> toAddressesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(toAddresses.size());
             toAddressesCopy.addAll(toAddresses);
             this.toAddresses = toAddressesCopy;
         }
@@ -140,7 +140,7 @@ public class Destination implements Serializable {
      */
     public java.util.List<String> getCcAddresses() {
         if (ccAddresses == null) {
-              ccAddresses = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              ccAddresses = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               ccAddresses.setAutoConstruct(true);
         }
         return ccAddresses;
@@ -156,7 +156,7 @@ public class Destination implements Serializable {
             this.ccAddresses = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> ccAddressesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(ccAddresses.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> ccAddressesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(ccAddresses.size());
         ccAddressesCopy.addAll(ccAddresses);
         this.ccAddresses = ccAddressesCopy;
     }
@@ -193,7 +193,7 @@ public class Destination implements Serializable {
         if (ccAddresses == null) {
             this.ccAddresses = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> ccAddressesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(ccAddresses.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> ccAddressesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(ccAddresses.size());
             ccAddressesCopy.addAll(ccAddresses);
             this.ccAddresses = ccAddressesCopy;
         }
@@ -208,7 +208,7 @@ public class Destination implements Serializable {
      */
     public java.util.List<String> getBccAddresses() {
         if (bccAddresses == null) {
-              bccAddresses = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              bccAddresses = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               bccAddresses.setAutoConstruct(true);
         }
         return bccAddresses;
@@ -224,7 +224,7 @@ public class Destination implements Serializable {
             this.bccAddresses = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> bccAddressesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(bccAddresses.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> bccAddressesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(bccAddresses.size());
         bccAddressesCopy.addAll(bccAddresses);
         this.bccAddresses = bccAddressesCopy;
     }
@@ -261,7 +261,7 @@ public class Destination implements Serializable {
         if (bccAddresses == null) {
             this.bccAddresses = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> bccAddressesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(bccAddresses.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> bccAddressesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(bccAddresses.size());
             bccAddressesCopy.addAll(bccAddresses);
             this.bccAddresses = bccAddressesCopy;
         }

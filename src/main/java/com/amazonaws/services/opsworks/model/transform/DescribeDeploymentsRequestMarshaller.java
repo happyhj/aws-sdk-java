@@ -20,12 +20,12 @@ import java.io.StringWriter;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.JSONWriter;
-import com.amazonaws.method.HttpMethodName;
+import com.amazonaws.network.HttpMethodName;
 import com.amazonaws.network.request.DefaultRequest;
 import com.amazonaws.network.type.Request;
 import com.amazonaws.services.opsworks.model.DescribeDeploymentsRequest;
 import com.amazonaws.transform.Marshaller;
-import com.amazonaws.util.StringInputStream;
+import com.amazonaws.utility.StringInputStream;
 
 /**
  * Describe Deployments Request Marshaller
@@ -57,7 +57,7 @@ public class DescribeDeploymentsRequestMarshaller implements Marshaller<Request<
                 jsonWriter.key("AppId").value(describeDeploymentsRequest.getAppId());
             }
 
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> deploymentIdsList = (com.amazonaws.internal.ListWithAutoConstructFlag<String>)(describeDeploymentsRequest.getDeploymentIds());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> deploymentIdsList = (com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>)(describeDeploymentsRequest.getDeploymentIds());
             if (deploymentIdsList != null && !(deploymentIdsList.isAutoConstruct() && deploymentIdsList.isEmpty())) {
 
                 jsonWriter.key("DeploymentIds");

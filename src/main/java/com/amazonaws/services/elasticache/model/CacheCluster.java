@@ -105,7 +105,7 @@ public class CacheCluster implements Serializable {
      * A list of cache security group elements, composed of name and status
      * sub-elements.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<CacheSecurityGroupMembership> cacheSecurityGroups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheSecurityGroupMembership> cacheSecurityGroups;
 
     /**
      * The status of the cache parameter group.
@@ -120,7 +120,7 @@ public class CacheCluster implements Serializable {
     /**
      * A list of cache nodes that are members of the cache cluster.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<CacheNode> cacheNodes;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheNode> cacheNodes;
 
     /**
      * If <code>true</code>, then minor version patches are applied
@@ -132,7 +132,7 @@ public class CacheCluster implements Serializable {
     /**
      * A list of VPC Security Groups associated with the cache cluster.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<SecurityGroupMembership> securityGroups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SecurityGroupMembership> securityGroups;
 
     /**
      * The replication group to which this cache cluster belongs. If this
@@ -674,7 +674,7 @@ public class CacheCluster implements Serializable {
      */
     public java.util.List<CacheSecurityGroupMembership> getCacheSecurityGroups() {
         if (cacheSecurityGroups == null) {
-              cacheSecurityGroups = new com.amazonaws.internal.ListWithAutoConstructFlag<CacheSecurityGroupMembership>();
+              cacheSecurityGroups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheSecurityGroupMembership>();
               cacheSecurityGroups.setAutoConstruct(true);
         }
         return cacheSecurityGroups;
@@ -692,7 +692,7 @@ public class CacheCluster implements Serializable {
             this.cacheSecurityGroups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<CacheSecurityGroupMembership> cacheSecurityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CacheSecurityGroupMembership>(cacheSecurityGroups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheSecurityGroupMembership> cacheSecurityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheSecurityGroupMembership>(cacheSecurityGroups.size());
         cacheSecurityGroupsCopy.addAll(cacheSecurityGroups);
         this.cacheSecurityGroups = cacheSecurityGroupsCopy;
     }
@@ -733,7 +733,7 @@ public class CacheCluster implements Serializable {
         if (cacheSecurityGroups == null) {
             this.cacheSecurityGroups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<CacheSecurityGroupMembership> cacheSecurityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CacheSecurityGroupMembership>(cacheSecurityGroups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheSecurityGroupMembership> cacheSecurityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheSecurityGroupMembership>(cacheSecurityGroups.size());
             cacheSecurityGroupsCopy.addAll(cacheSecurityGroups);
             this.cacheSecurityGroups = cacheSecurityGroupsCopy;
         }
@@ -814,7 +814,7 @@ public class CacheCluster implements Serializable {
      */
     public java.util.List<CacheNode> getCacheNodes() {
         if (cacheNodes == null) {
-              cacheNodes = new com.amazonaws.internal.ListWithAutoConstructFlag<CacheNode>();
+              cacheNodes = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheNode>();
               cacheNodes.setAutoConstruct(true);
         }
         return cacheNodes;
@@ -830,7 +830,7 @@ public class CacheCluster implements Serializable {
             this.cacheNodes = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<CacheNode> cacheNodesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CacheNode>(cacheNodes.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheNode> cacheNodesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheNode>(cacheNodes.size());
         cacheNodesCopy.addAll(cacheNodes);
         this.cacheNodes = cacheNodesCopy;
     }
@@ -867,7 +867,7 @@ public class CacheCluster implements Serializable {
         if (cacheNodes == null) {
             this.cacheNodes = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<CacheNode> cacheNodesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<CacheNode>(cacheNodes.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheNode> cacheNodesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<CacheNode>(cacheNodes.size());
             cacheNodesCopy.addAll(cacheNodes);
             this.cacheNodes = cacheNodesCopy;
         }
@@ -940,7 +940,7 @@ public class CacheCluster implements Serializable {
      */
     public java.util.List<SecurityGroupMembership> getSecurityGroups() {
         if (securityGroups == null) {
-              securityGroups = new com.amazonaws.internal.ListWithAutoConstructFlag<SecurityGroupMembership>();
+              securityGroups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SecurityGroupMembership>();
               securityGroups.setAutoConstruct(true);
         }
         return securityGroups;
@@ -956,7 +956,7 @@ public class CacheCluster implements Serializable {
             this.securityGroups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<SecurityGroupMembership> securityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<SecurityGroupMembership>(securityGroups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SecurityGroupMembership> securityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SecurityGroupMembership>(securityGroups.size());
         securityGroupsCopy.addAll(securityGroups);
         this.securityGroups = securityGroupsCopy;
     }
@@ -993,7 +993,7 @@ public class CacheCluster implements Serializable {
         if (securityGroups == null) {
             this.securityGroups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<SecurityGroupMembership> securityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<SecurityGroupMembership>(securityGroups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SecurityGroupMembership> securityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SecurityGroupMembership>(securityGroups.size());
             securityGroupsCopy.addAll(securityGroups);
             this.securityGroups = securityGroupsCopy;
         }

@@ -27,7 +27,7 @@ public class DescribeIndexFieldsResult implements Serializable {
     /**
      * The index fields configured for the domain.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<IndexFieldStatus> indexFields;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IndexFieldStatus> indexFields;
 
     /**
      * The index fields configured for the domain.
@@ -36,7 +36,7 @@ public class DescribeIndexFieldsResult implements Serializable {
      */
     public java.util.List<IndexFieldStatus> getIndexFields() {
         if (indexFields == null) {
-              indexFields = new com.amazonaws.internal.ListWithAutoConstructFlag<IndexFieldStatus>();
+              indexFields = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IndexFieldStatus>();
               indexFields.setAutoConstruct(true);
         }
         return indexFields;
@@ -52,7 +52,7 @@ public class DescribeIndexFieldsResult implements Serializable {
             this.indexFields = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<IndexFieldStatus> indexFieldsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<IndexFieldStatus>(indexFields.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IndexFieldStatus> indexFieldsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IndexFieldStatus>(indexFields.size());
         indexFieldsCopy.addAll(indexFields);
         this.indexFields = indexFieldsCopy;
     }
@@ -89,7 +89,7 @@ public class DescribeIndexFieldsResult implements Serializable {
         if (indexFields == null) {
             this.indexFields = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<IndexFieldStatus> indexFieldsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<IndexFieldStatus>(indexFields.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IndexFieldStatus> indexFieldsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<IndexFieldStatus>(indexFields.size());
             indexFieldsCopy.addAll(indexFields);
             this.indexFields = indexFieldsCopy;
         }

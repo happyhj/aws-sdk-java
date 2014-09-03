@@ -26,7 +26,7 @@ public class DescribeTagsResult implements Serializable {
     /**
      * A list of tag description structures.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<TagDescription> tagDescriptions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TagDescription> tagDescriptions;
 
     /**
      * A list of tag description structures.
@@ -35,7 +35,7 @@ public class DescribeTagsResult implements Serializable {
      */
     public java.util.List<TagDescription> getTagDescriptions() {
         if (tagDescriptions == null) {
-              tagDescriptions = new com.amazonaws.internal.ListWithAutoConstructFlag<TagDescription>();
+              tagDescriptions = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TagDescription>();
               tagDescriptions.setAutoConstruct(true);
         }
         return tagDescriptions;
@@ -51,7 +51,7 @@ public class DescribeTagsResult implements Serializable {
             this.tagDescriptions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<TagDescription> tagDescriptionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<TagDescription>(tagDescriptions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TagDescription> tagDescriptionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TagDescription>(tagDescriptions.size());
         tagDescriptionsCopy.addAll(tagDescriptions);
         this.tagDescriptions = tagDescriptionsCopy;
     }
@@ -88,7 +88,7 @@ public class DescribeTagsResult implements Serializable {
         if (tagDescriptions == null) {
             this.tagDescriptions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<TagDescription> tagDescriptionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<TagDescription>(tagDescriptions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TagDescription> tagDescriptionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<TagDescription>(tagDescriptions.size());
             tagDescriptionsCopy.addAll(tagDescriptions);
             this.tagDescriptions = tagDescriptionsCopy;
         }

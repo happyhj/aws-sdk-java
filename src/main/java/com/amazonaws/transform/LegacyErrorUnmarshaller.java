@@ -14,8 +14,8 @@
  */
 package com.amazonaws.transform;
 
-import static com.amazonaws.util.XpathUtils.asString;
-import static com.amazonaws.util.XpathUtils.xpath;
+import static com.amazonaws.utility.XpathUtils.asString;
+import static com.amazonaws.utility.XpathUtils.xpath;
 
 import java.lang.reflect.Constructor;
 

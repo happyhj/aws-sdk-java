@@ -22,8 +22,8 @@ import java.util.Map;
 
 import org.apache.http.annotation.NotThreadSafe;
 
-import com.amazonaws.method.HttpMethodName;
-import com.amazonaws.metricsutil.AWSRequestMetrics;
+import com.amazonaws.network.HttpMethodName;
+import com.amazonaws.network.metrics.util.AWSRequestMetrics;
 import com.amazonaws.network.type.Request;
 
 /**
@@ -172,7 +172,7 @@ public class DefaultRequest<T> implements Request<T> {
     }
 
     /**
-     * @see com.amazonaws.network.type.Request#setHttpMethod(com.amazonaws.method.HttpMethodName)
+     * @see com.amazonaws.network.type.Request#setHttpMethod(com.amazonaws.network.HttpMethodName)
      */
     public void setHttpMethod(HttpMethodName httpMethod) {
         this.httpMethod = httpMethod;

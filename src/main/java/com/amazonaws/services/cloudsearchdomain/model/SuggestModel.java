@@ -37,7 +37,7 @@ public class SuggestModel implements Serializable {
     /**
      * The documents that match the query string.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<SuggestionMatch> suggestions;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SuggestionMatch> suggestions;
 
     /**
      * The query string specified in the suggest request.
@@ -112,7 +112,7 @@ public class SuggestModel implements Serializable {
      */
     public java.util.List<SuggestionMatch> getSuggestions() {
         if (suggestions == null) {
-              suggestions = new com.amazonaws.internal.ListWithAutoConstructFlag<SuggestionMatch>();
+              suggestions = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SuggestionMatch>();
               suggestions.setAutoConstruct(true);
         }
         return suggestions;
@@ -128,7 +128,7 @@ public class SuggestModel implements Serializable {
             this.suggestions = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<SuggestionMatch> suggestionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<SuggestionMatch>(suggestions.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SuggestionMatch> suggestionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SuggestionMatch>(suggestions.size());
         suggestionsCopy.addAll(suggestions);
         this.suggestions = suggestionsCopy;
     }
@@ -165,7 +165,7 @@ public class SuggestModel implements Serializable {
         if (suggestions == null) {
             this.suggestions = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<SuggestionMatch> suggestionsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<SuggestionMatch>(suggestions.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SuggestionMatch> suggestionsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<SuggestionMatch>(suggestions.size());
             suggestionsCopy.addAll(suggestions);
             this.suggestions = suggestionsCopy;
         }

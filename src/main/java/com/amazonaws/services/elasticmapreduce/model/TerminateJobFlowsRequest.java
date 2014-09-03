@@ -41,7 +41,7 @@ public class TerminateJobFlowsRequest extends AmazonWebServiceRequest implements
     /**
      * A list of job flows to be shutdown.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> jobFlowIds;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> jobFlowIds;
 
     /**
      * Default constructor for a new TerminateJobFlowsRequest object.  Callers should use the
@@ -67,7 +67,7 @@ public class TerminateJobFlowsRequest extends AmazonWebServiceRequest implements
      */
     public java.util.List<String> getJobFlowIds() {
         if (jobFlowIds == null) {
-              jobFlowIds = new com.amazonaws.internal.ListWithAutoConstructFlag<String>();
+              jobFlowIds = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>();
               jobFlowIds.setAutoConstruct(true);
         }
         return jobFlowIds;
@@ -83,7 +83,7 @@ public class TerminateJobFlowsRequest extends AmazonWebServiceRequest implements
             this.jobFlowIds = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> jobFlowIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(jobFlowIds.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> jobFlowIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(jobFlowIds.size());
         jobFlowIdsCopy.addAll(jobFlowIds);
         this.jobFlowIds = jobFlowIdsCopy;
     }
@@ -120,7 +120,7 @@ public class TerminateJobFlowsRequest extends AmazonWebServiceRequest implements
         if (jobFlowIds == null) {
             this.jobFlowIds = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> jobFlowIdsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(jobFlowIds.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> jobFlowIdsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(jobFlowIds.size());
             jobFlowIdsCopy.addAll(jobFlowIds);
             this.jobFlowIds = jobFlowIdsCopy;
         }

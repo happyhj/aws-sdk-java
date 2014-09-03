@@ -26,7 +26,7 @@ public class ValidateConfigurationSettingsResult implements Serializable {
     /**
      * A list of <a>ValidationMessage</a>.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ValidationMessage> messages;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ValidationMessage> messages;
 
     /**
      * A list of <a>ValidationMessage</a>.
@@ -35,7 +35,7 @@ public class ValidateConfigurationSettingsResult implements Serializable {
      */
     public java.util.List<ValidationMessage> getMessages() {
         if (messages == null) {
-              messages = new com.amazonaws.internal.ListWithAutoConstructFlag<ValidationMessage>();
+              messages = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ValidationMessage>();
               messages.setAutoConstruct(true);
         }
         return messages;
@@ -51,7 +51,7 @@ public class ValidateConfigurationSettingsResult implements Serializable {
             this.messages = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ValidationMessage> messagesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ValidationMessage>(messages.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ValidationMessage> messagesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ValidationMessage>(messages.size());
         messagesCopy.addAll(messages);
         this.messages = messagesCopy;
     }
@@ -88,7 +88,7 @@ public class ValidateConfigurationSettingsResult implements Serializable {
         if (messages == null) {
             this.messages = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ValidationMessage> messagesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ValidationMessage>(messages.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ValidationMessage> messagesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ValidationMessage>(messages.size());
             messagesCopy.addAll(messages);
             this.messages = messagesCopy;
         }

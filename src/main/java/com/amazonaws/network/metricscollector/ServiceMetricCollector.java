@@ -14,8 +14,8 @@
  */
 package com.amazonaws.network.metricscollector;
 
-import com.amazonaws.metricsprovider.ByteThroughputProvider;
-import com.amazonaws.metricsprovider.ServiceLatencyProvider;
+import com.amazonaws.network.metrics.provider.ByteThroughputProvider;
+import com.amazonaws.network.metrics.provider.ServiceLatencyProvider;
 
 /**
  * A service provider interface that can be used to implement an AWS SDK

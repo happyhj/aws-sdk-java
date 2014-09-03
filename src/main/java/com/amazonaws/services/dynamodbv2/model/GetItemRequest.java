@@ -64,7 +64,7 @@ public class GetItemRequest extends AmazonWebServiceRequest implements Serializa
      * <b>Constraints:</b><br/>
      * <b>Length: </b>1 - <br/>
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<String> attributesToGet;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> attributesToGet;
 
     /**
      * If set to <code>true</code>, then the operation uses strongly
@@ -326,7 +326,7 @@ public class GetItemRequest extends AmazonWebServiceRequest implements Serializa
             this.attributesToGet = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<String> attributesToGetCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(attributesToGet.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> attributesToGetCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(attributesToGet.size());
         attributesToGetCopy.addAll(attributesToGet);
         this.attributesToGet = attributesToGetCopy;
     }
@@ -393,7 +393,7 @@ public class GetItemRequest extends AmazonWebServiceRequest implements Serializa
         if (attributesToGet == null) {
             this.attributesToGet = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<String> attributesToGetCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<String>(attributesToGet.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String> attributesToGetCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<String>(attributesToGet.size());
             attributesToGetCopy.addAll(attributesToGet);
             this.attributesToGet = attributesToGetCopy;
         }

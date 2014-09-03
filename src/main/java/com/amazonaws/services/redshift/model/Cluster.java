@@ -84,20 +84,20 @@ public class Cluster implements Serializable {
      * Clusters that are created in a VPC use VPC security groups, which are
      * listed by the <b>VpcSecurityGroups</b> parameter.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ClusterSecurityGroupMembership> clusterSecurityGroups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterSecurityGroupMembership> clusterSecurityGroups;
 
     /**
      * A list of Virtual Private Cloud (VPC) security groups that are
      * associated with the cluster. This parameter is returned only if the
      * cluster is in a VPC.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<VpcSecurityGroupMembership> vpcSecurityGroups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VpcSecurityGroupMembership> vpcSecurityGroups;
 
     /**
      * The list of cluster parameter groups that are associated with this
      * cluster.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ClusterParameterGroupStatus> clusterParameterGroups;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterParameterGroupStatus> clusterParameterGroups;
 
     /**
      * The name of the subnet group that is associated with the cluster. This
@@ -183,7 +183,7 @@ public class Cluster implements Serializable {
     /**
      * The nodes in a cluster.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<ClusterNode> clusterNodes;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterNode> clusterNodes;
 
     /**
      * Describes the status of the elastic IP (EIP) address.
@@ -553,7 +553,7 @@ public class Cluster implements Serializable {
      */
     public java.util.List<ClusterSecurityGroupMembership> getClusterSecurityGroups() {
         if (clusterSecurityGroups == null) {
-              clusterSecurityGroups = new com.amazonaws.internal.ListWithAutoConstructFlag<ClusterSecurityGroupMembership>();
+              clusterSecurityGroups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterSecurityGroupMembership>();
               clusterSecurityGroups.setAutoConstruct(true);
         }
         return clusterSecurityGroups;
@@ -581,7 +581,7 @@ public class Cluster implements Serializable {
             this.clusterSecurityGroups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ClusterSecurityGroupMembership> clusterSecurityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ClusterSecurityGroupMembership>(clusterSecurityGroups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterSecurityGroupMembership> clusterSecurityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterSecurityGroupMembership>(clusterSecurityGroups.size());
         clusterSecurityGroupsCopy.addAll(clusterSecurityGroups);
         this.clusterSecurityGroups = clusterSecurityGroupsCopy;
     }
@@ -642,7 +642,7 @@ public class Cluster implements Serializable {
         if (clusterSecurityGroups == null) {
             this.clusterSecurityGroups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ClusterSecurityGroupMembership> clusterSecurityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ClusterSecurityGroupMembership>(clusterSecurityGroups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterSecurityGroupMembership> clusterSecurityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterSecurityGroupMembership>(clusterSecurityGroups.size());
             clusterSecurityGroupsCopy.addAll(clusterSecurityGroups);
             this.clusterSecurityGroups = clusterSecurityGroupsCopy;
         }
@@ -661,7 +661,7 @@ public class Cluster implements Serializable {
      */
     public java.util.List<VpcSecurityGroupMembership> getVpcSecurityGroups() {
         if (vpcSecurityGroups == null) {
-              vpcSecurityGroups = new com.amazonaws.internal.ListWithAutoConstructFlag<VpcSecurityGroupMembership>();
+              vpcSecurityGroups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VpcSecurityGroupMembership>();
               vpcSecurityGroups.setAutoConstruct(true);
         }
         return vpcSecurityGroups;
@@ -681,7 +681,7 @@ public class Cluster implements Serializable {
             this.vpcSecurityGroups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<VpcSecurityGroupMembership> vpcSecurityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<VpcSecurityGroupMembership>(vpcSecurityGroups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VpcSecurityGroupMembership> vpcSecurityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VpcSecurityGroupMembership>(vpcSecurityGroups.size());
         vpcSecurityGroupsCopy.addAll(vpcSecurityGroups);
         this.vpcSecurityGroups = vpcSecurityGroupsCopy;
     }
@@ -726,7 +726,7 @@ public class Cluster implements Serializable {
         if (vpcSecurityGroups == null) {
             this.vpcSecurityGroups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<VpcSecurityGroupMembership> vpcSecurityGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<VpcSecurityGroupMembership>(vpcSecurityGroups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VpcSecurityGroupMembership> vpcSecurityGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<VpcSecurityGroupMembership>(vpcSecurityGroups.size());
             vpcSecurityGroupsCopy.addAll(vpcSecurityGroups);
             this.vpcSecurityGroups = vpcSecurityGroupsCopy;
         }
@@ -743,7 +743,7 @@ public class Cluster implements Serializable {
      */
     public java.util.List<ClusterParameterGroupStatus> getClusterParameterGroups() {
         if (clusterParameterGroups == null) {
-              clusterParameterGroups = new com.amazonaws.internal.ListWithAutoConstructFlag<ClusterParameterGroupStatus>();
+              clusterParameterGroups = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterParameterGroupStatus>();
               clusterParameterGroups.setAutoConstruct(true);
         }
         return clusterParameterGroups;
@@ -761,7 +761,7 @@ public class Cluster implements Serializable {
             this.clusterParameterGroups = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ClusterParameterGroupStatus> clusterParameterGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ClusterParameterGroupStatus>(clusterParameterGroups.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterParameterGroupStatus> clusterParameterGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterParameterGroupStatus>(clusterParameterGroups.size());
         clusterParameterGroupsCopy.addAll(clusterParameterGroups);
         this.clusterParameterGroups = clusterParameterGroupsCopy;
     }
@@ -802,7 +802,7 @@ public class Cluster implements Serializable {
         if (clusterParameterGroups == null) {
             this.clusterParameterGroups = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ClusterParameterGroupStatus> clusterParameterGroupsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ClusterParameterGroupStatus>(clusterParameterGroups.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterParameterGroupStatus> clusterParameterGroupsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterParameterGroupStatus>(clusterParameterGroups.size());
             clusterParameterGroupsCopy.addAll(clusterParameterGroups);
             this.clusterParameterGroups = clusterParameterGroupsCopy;
         }
@@ -1376,7 +1376,7 @@ public class Cluster implements Serializable {
      */
     public java.util.List<ClusterNode> getClusterNodes() {
         if (clusterNodes == null) {
-              clusterNodes = new com.amazonaws.internal.ListWithAutoConstructFlag<ClusterNode>();
+              clusterNodes = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterNode>();
               clusterNodes.setAutoConstruct(true);
         }
         return clusterNodes;
@@ -1392,7 +1392,7 @@ public class Cluster implements Serializable {
             this.clusterNodes = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<ClusterNode> clusterNodesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ClusterNode>(clusterNodes.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterNode> clusterNodesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterNode>(clusterNodes.size());
         clusterNodesCopy.addAll(clusterNodes);
         this.clusterNodes = clusterNodesCopy;
     }
@@ -1429,7 +1429,7 @@ public class Cluster implements Serializable {
         if (clusterNodes == null) {
             this.clusterNodes = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<ClusterNode> clusterNodesCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<ClusterNode>(clusterNodes.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterNode> clusterNodesCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<ClusterNode>(clusterNodes.size());
             clusterNodesCopy.addAll(clusterNodes);
             this.clusterNodes = clusterNodesCopy;
         }

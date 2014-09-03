@@ -16,7 +16,7 @@ package com.amazonaws.services.s3;
 
 import java.util.Map;
 
-import com.amazonaws.ResponseMetadata;
+import com.amazonaws.network.ResponseMetadata;
 
 /**
  * Extension of {@link ResponseMetadata} with Amazon S3 specific data. In

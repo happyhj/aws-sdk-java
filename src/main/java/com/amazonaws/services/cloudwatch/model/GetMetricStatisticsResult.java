@@ -31,7 +31,7 @@ public class GetMetricStatisticsResult implements Serializable {
     /**
      * The datapoints for the specified metric.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<Datapoint> datapoints;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Datapoint> datapoints;
 
     /**
      * A label describing the specified metric.
@@ -73,7 +73,7 @@ public class GetMetricStatisticsResult implements Serializable {
      */
     public java.util.List<Datapoint> getDatapoints() {
         if (datapoints == null) {
-              datapoints = new com.amazonaws.internal.ListWithAutoConstructFlag<Datapoint>();
+              datapoints = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Datapoint>();
               datapoints.setAutoConstruct(true);
         }
         return datapoints;
@@ -89,7 +89,7 @@ public class GetMetricStatisticsResult implements Serializable {
             this.datapoints = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<Datapoint> datapointsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Datapoint>(datapoints.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Datapoint> datapointsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Datapoint>(datapoints.size());
         datapointsCopy.addAll(datapoints);
         this.datapoints = datapointsCopy;
     }
@@ -126,7 +126,7 @@ public class GetMetricStatisticsResult implements Serializable {
         if (datapoints == null) {
             this.datapoints = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<Datapoint> datapointsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<Datapoint>(datapoints.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Datapoint> datapointsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<Datapoint>(datapoints.size());
             datapointsCopy.addAll(datapoints);
             this.datapoints = datapointsCopy;
         }

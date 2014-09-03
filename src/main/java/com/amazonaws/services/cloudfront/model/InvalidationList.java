@@ -58,7 +58,7 @@ public class InvalidationList implements Serializable {
      * A complex type that contains one InvalidationSummary element for each
      * invalidation batch that was created by the current AWS account.
      */
-    private com.amazonaws.internal.ListWithAutoConstructFlag<InvalidationSummary> items;
+    private com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InvalidationSummary> items;
 
     /**
      * Default constructor for a new InvalidationList object.  Callers should use the
@@ -291,7 +291,7 @@ public class InvalidationList implements Serializable {
      */
     public java.util.List<InvalidationSummary> getItems() {
         if (items == null) {
-              items = new com.amazonaws.internal.ListWithAutoConstructFlag<InvalidationSummary>();
+              items = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InvalidationSummary>();
               items.setAutoConstruct(true);
         }
         return items;
@@ -309,7 +309,7 @@ public class InvalidationList implements Serializable {
             this.items = null;
             return;
         }
-        com.amazonaws.internal.ListWithAutoConstructFlag<InvalidationSummary> itemsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InvalidationSummary>(items.size());
+        com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InvalidationSummary> itemsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InvalidationSummary>(items.size());
         itemsCopy.addAll(items);
         this.items = itemsCopy;
     }
@@ -350,7 +350,7 @@ public class InvalidationList implements Serializable {
         if (items == null) {
             this.items = null;
         } else {
-            com.amazonaws.internal.ListWithAutoConstructFlag<InvalidationSummary> itemsCopy = new com.amazonaws.internal.ListWithAutoConstructFlag<InvalidationSummary>(items.size());
+            com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InvalidationSummary> itemsCopy = new com.amazonaws.serviceinternal.ListWithAutoConstructFlag<InvalidationSummary>(items.size());
             itemsCopy.addAll(items);
             this.items = itemsCopy;
         }

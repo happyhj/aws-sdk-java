@@ -16,7 +16,7 @@ package com.amazonaws.client.handler.request;
 
 import com.amazonaws.network.response.Response;
 import com.amazonaws.network.type.Request;
-import com.amazonaws.util.TimingInfo;
+import com.amazonaws.utility.TimingInfo;
 
 /**
  * Interface for addition request handling in clients. A request handler is
