@@ -31,10 +31,10 @@ import com.amazonaws.metricsinternalcloudwatch.spi.Dimensions;
 import com.amazonaws.metricstype.MetricType;
 import com.amazonaws.metricsutil.AWSRequestMetrics;
 import com.amazonaws.metricsutil.AWSRequestMetrics.Field;
+import com.amazonaws.network.metricscollector.RequestMetricCollector;
 import com.amazonaws.network.request.AmazonWebServiceRequest;
-import com.amazonaws.network.request.RequestMetricCollector;
+import com.amazonaws.network.response.Response;
 import com.amazonaws.network.type.Request;
-import com.amazonaws.network.type.Response;
 import com.amazonaws.services.cloudwatch.model.Dimension;
 import com.amazonaws.services.cloudwatch.model.MetricDatum;
 import com.amazonaws.services.cloudwatch.model.StandardUnit;
@@ -103,8 +103,8 @@ public class PredefinedMetricTransformer {
             }
         }
         if (log.isDebugEnabled()) {
-            AmazonWebServiceRequest origReq = request == null ? null : request
-                    .getOriginalRequest();
+            AmazonWebServiceRequest origReq = (AmazonWebServiceRequest) (request == null ? null : request
+                    .getOriginalRequest());
             String reqClassName = origReq == null ? null : origReq.getClass().getName();
             log.debug("No request metric transformer can be found for metric type "
                     + metricType.name() + " for " + reqClassName);

@@ -22,6 +22,7 @@ import org.apache.http.annotation.NotThreadSafe;
 import com.amazonaws.RequestClientOptions;
 import com.amazonaws.credential.AWSCredentials;
 import com.amazonaws.event.ProgressListener;
+import com.amazonaws.network.metricscollector.RequestMetricCollector;
 
 /**
  * Base class for all user facing web service requests.

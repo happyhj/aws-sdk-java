@@ -34,12 +34,12 @@ import com.amazonaws.client.Regions;
 import com.amazonaws.client.metrics.jmx.spi.SdkMBeanRegistry;
 import com.amazonaws.credential.AWSCredentials;
 import com.amazonaws.credential.AWSCredentialsProvider;
-import com.amazonaws.metricscollector.MetricCollector;
-import com.amazonaws.metricscollector.ServiceMetricCollector;
 import com.amazonaws.metricstype.MetricType;
 import com.amazonaws.metricsutil.AWSServiceMetrics;
 import com.amazonaws.metricsutil.AWSRequestMetrics.Field;
-import com.amazonaws.network.request.RequestMetricCollector;
+import com.amazonaws.network.metricscollector.MetricCollector;
+import com.amazonaws.network.metricscollector.RequestMetricCollector;
+import com.amazonaws.network.metricscollector.ServiceMetricCollector;
 
 /**
  * Used to control the default AWS SDK metric collection system.

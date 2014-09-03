@@ -28,7 +28,7 @@ import java.util.concurrent.TimeUnit;
 import com.amazonaws.client.metrics.AwsSdkMetrics;
 import com.amazonaws.json.Jackson;
 import com.amazonaws.metricsinternalcloudwatch.spi.Dimensions;
-import com.amazonaws.network.request.RequestMetricCollector;
+import com.amazonaws.network.metricscollector.RequestMetricCollector;
 import com.amazonaws.services.cloudwatch.model.Dimension;
 import com.amazonaws.services.cloudwatch.model.MetricDatum;
 import com.amazonaws.services.cloudwatch.model.PutMetricDataRequest;

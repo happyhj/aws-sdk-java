@@ -18,8 +18,8 @@ import java.util.Date;
 import java.util.List;
 
 import com.amazonaws.metricstype.MetricType;
+import com.amazonaws.network.response.Response;
 import com.amazonaws.network.type.Request;
-import com.amazonaws.network.type.Response;
 import com.amazonaws.services.cloudwatch.model.MetricDatum;
 import com.amazonaws.util.TimingInfo;
 

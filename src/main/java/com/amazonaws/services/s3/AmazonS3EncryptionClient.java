@@ -22,7 +22,7 @@ import com.amazonaws.credential.AWSCredentialsProvider;
 import com.amazonaws.credential.StaticCredentialsProvider;
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.exception.AmazonServiceException;
-import com.amazonaws.network.request.RequestMetricCollector;
+import com.amazonaws.network.metricscollector.RequestMetricCollector;
 import com.amazonaws.services.s3.internal.S3Direct;
 import com.amazonaws.services.s3.internal.crypto.CryptoModuleDispatcher;
 import com.amazonaws.services.s3.internal.crypto.S3CryptoModule;

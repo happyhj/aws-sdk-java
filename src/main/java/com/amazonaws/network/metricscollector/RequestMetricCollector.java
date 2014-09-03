@@ -13,11 +13,11 @@
  * permissions and limitations under the License.
  */
 
-package com.amazonaws.network.request;
+package com.amazonaws.network.metricscollector;
 
 import com.amazonaws.client.metrics.AwsSdkMetrics;
+import com.amazonaws.network.response.Response;
 import com.amazonaws.network.type.Request;
-import com.amazonaws.network.type.Response;
 
 /**
  * A service provider interface that can be used to implement an AWS SDK

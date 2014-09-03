@@ -16,9 +16,9 @@ package com.amazonaws.client.metrics;
 
 import java.util.concurrent.TimeUnit;
 
-import com.amazonaws.metricscollector.ServiceMetricCollector;
 import com.amazonaws.metricsprovider.ByteThroughputProvider;
 import com.amazonaws.metricstype.ThroughputMetricType;
+import com.amazonaws.network.metricscollector.ServiceMetricCollector;
 
 /**
  * Helper class to capture the byte throughput.

@@ -24,8 +24,8 @@ import com.amazonaws.client.handler.request.CredentialsRequestHandler;
 import com.amazonaws.client.signer.AWS4Signer;
 import com.amazonaws.method.HttpMethodName;
 import com.amazonaws.network.request.AmazonWebServiceRequest;
+import com.amazonaws.network.response.Response;
 import com.amazonaws.network.type.Request;
-import com.amazonaws.network.type.Response;
 import com.amazonaws.services.ec2.model.CopySnapshotRequest;
 import com.amazonaws.stringutil.StringUtils;
 

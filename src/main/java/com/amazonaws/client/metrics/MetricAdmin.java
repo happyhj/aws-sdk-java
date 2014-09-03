@@ -18,9 +18,9 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import com.amazonaws.client.Regions;
-import com.amazonaws.metricscollector.MetricCollector;
-import com.amazonaws.metricscollector.ServiceMetricCollector;
-import com.amazonaws.network.request.RequestMetricCollector;
+import com.amazonaws.network.metricscollector.MetricCollector;
+import com.amazonaws.network.metricscollector.RequestMetricCollector;
+import com.amazonaws.network.metricscollector.ServiceMetricCollector;
 
 /**
  *  Administration of AwsSdkMetrics as an MBean.

@@ -14,8 +14,8 @@
  */
 package com.amazonaws.client.handler.request;
 
+import com.amazonaws.network.response.Response;
 import com.amazonaws.network.type.Request;
-import com.amazonaws.network.type.Response;
 import com.amazonaws.util.TimingInfo;
 
 /**

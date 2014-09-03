@@ -22,7 +22,7 @@ import java.net.URL;
 
 import com.amazonaws.exception.AmazonClientException;
 import com.amazonaws.json.Jackson;
-import com.amazonaws.network.request.RequestMetricCollector;
+import com.amazonaws.network.metricscollector.RequestMetricCollector;
 import com.amazonaws.services.s3.AmazonS3Client;
 import com.amazonaws.services.s3.internal.BucketNameUtils;
 import com.amazonaws.services.s3.model.AccessControlList;

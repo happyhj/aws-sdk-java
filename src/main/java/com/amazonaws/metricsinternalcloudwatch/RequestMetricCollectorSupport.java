@@ -24,9 +24,9 @@ import com.amazonaws.client.metrics.AwsSdkMetrics;
 import com.amazonaws.metricstype.MetricType;
 import com.amazonaws.metricstype.RequestMetricType;
 import com.amazonaws.metricsutil.AWSRequestMetrics;
-import com.amazonaws.network.request.RequestMetricCollector;
+import com.amazonaws.network.metricscollector.RequestMetricCollector;
+import com.amazonaws.network.response.Response;
 import com.amazonaws.network.type.Request;
-import com.amazonaws.network.type.Response;
 import com.amazonaws.services.cloudwatch.model.MetricDatum;
 
 /**

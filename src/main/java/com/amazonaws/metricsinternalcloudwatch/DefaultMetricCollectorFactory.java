@@ -18,7 +18,7 @@ import com.amazonaws.SDKGlobalConfiguration;
 import com.amazonaws.client.Regions;
 import com.amazonaws.client.metrics.AwsSdkMetrics;
 import com.amazonaws.credential.AWSCredentialsProvider;
-import com.amazonaws.metricscollector.MetricCollector;
+import com.amazonaws.network.metricscollector.MetricCollector;
 
 /**
  * The default AWS SDK metric collector factory.  This class is instantiated

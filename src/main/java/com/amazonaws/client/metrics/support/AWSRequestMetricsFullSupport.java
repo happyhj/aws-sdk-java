@@ -28,7 +28,7 @@ import org.apache.http.annotation.NotThreadSafe;
 import com.amazonaws.client.metrics.AwsSdkMetrics;
 import com.amazonaws.metricstype.MetricType;
 import com.amazonaws.metricsutil.AWSRequestMetrics;
-import com.amazonaws.network.request.RequestMetricCollector;
+import com.amazonaws.network.metricscollector.RequestMetricCollector;
 import com.amazonaws.util.TimingInfo;
 
 /**

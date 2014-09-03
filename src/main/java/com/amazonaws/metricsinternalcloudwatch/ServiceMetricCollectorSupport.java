@@ -23,14 +23,14 @@ import org.apache.commons.logging.LogFactory;
 import org.apache.http.annotation.ThreadSafe;
 
 import com.amazonaws.client.metrics.AwsSdkMetrics;
-import com.amazonaws.metricscollector.ServiceMetricCollector;
 import com.amazonaws.metricsinternalcloudwatch.spi.Dimensions;
 import com.amazonaws.metricsprovider.ByteThroughputProvider;
 import com.amazonaws.metricsprovider.ServiceLatencyProvider;
 import com.amazonaws.metricstype.MetricType;
 import com.amazonaws.metricstype.ServiceMetricType;
 import com.amazonaws.metricstype.ThroughputMetricType;
-import com.amazonaws.network.request.RequestMetricCollector;
+import com.amazonaws.network.metricscollector.RequestMetricCollector;
+import com.amazonaws.network.metricscollector.ServiceMetricCollector;
 import com.amazonaws.services.cloudwatch.model.Dimension;
 import com.amazonaws.services.cloudwatch.model.MetricDatum;
 import com.amazonaws.services.cloudwatch.model.StandardUnit;

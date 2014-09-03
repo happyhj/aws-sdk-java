@@ -21,9 +21,9 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.http.annotation.ThreadSafe;
 
-import com.amazonaws.metricscollector.MetricCollector;
-import com.amazonaws.metricscollector.ServiceMetricCollector;
-import com.amazonaws.network.request.RequestMetricCollector;
+import com.amazonaws.network.metricscollector.MetricCollector;
+import com.amazonaws.network.metricscollector.RequestMetricCollector;
+import com.amazonaws.network.metricscollector.ServiceMetricCollector;
 import com.amazonaws.services.cloudwatch.AmazonCloudWatchClient;
 import com.amazonaws.services.cloudwatch.model.MetricDatum;
 

@@ -12,7 +12,7 @@
  * express or implied. See the License for the specific language governing
  * permissions and limitations under the License.
  */
-package com.amazonaws.metricscollector;
+package com.amazonaws.network.metricscollector;
 
 import com.amazonaws.metricsprovider.ByteThroughputProvider;
 import com.amazonaws.metricsprovider.ServiceLatencyProvider;

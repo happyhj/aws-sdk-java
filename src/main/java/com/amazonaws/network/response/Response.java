@@ -12,9 +12,9 @@
  * express or implied. See the License for the specific language governing
  * permissions and limitations under the License.
  */
-package com.amazonaws.network.type;
+package com.amazonaws.network.response;
 
-import com.amazonaws.network.response.HttpResponse;
+
 
 
 /**
